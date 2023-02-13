@@ -8,10 +8,12 @@ var countOdds = function (low, high) {
 
     let count = 0;
 
-    for (let i = low; i <= high; i++) {
-        if (odd(i)) {
-            count++;
-        }
+    if (!odd(low)) {
+        low += 1;
+    }
+
+    for (let i = low; i <= high; i += 2) {
+        count++;
     }
 
     return count;
