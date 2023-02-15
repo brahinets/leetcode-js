@@ -20,7 +20,6 @@ Return the running sum of `nums`
 **Input:** `nums = [3,1,2,10,1]`
 **Output:** `[3,4,6,16,17]`
 
-## Constraints:
-
-* `1 <= nums.length <= 1000`
-* `-10^6 <= nums[i] <= 10^6`
+### Constraints:
+`1 <= nums.length <= 1000`
+`-10^6 <= nums[i] <= 10^6`
