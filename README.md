@@ -2,6 +2,7 @@
 LeetCode with JavaScript
 
 - [4. Median of Two Sorted Arrays](./4.%20Median%20of%20Two%20Sorted%20Arrays/script.js)
+- [9. Palindrome Number](./9.%20Palindrome%20Number/script.js)
 - [67. Add Binary](./67.%20Add%20Binary/script.js)
 - [104. Maximum Depth of Binary Tree](./104.%20Maximum%20Depth%20of%20Binary%20Tree/script.js)
 - [989. Add to Array-Form of Integer](./989.%20Add%20to%20Array-Form%20of%20Integer/script.js)
