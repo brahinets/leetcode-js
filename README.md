@@ -1,5 +1,5 @@
-# leetcode-js
-LeetCode with JavaScript
+# LeetCode with JavaScript: give your brain a workout
+![image](https://user-images.githubusercontent.com/4119411/219785121-7a80a215-fb7d-46cb-bc66-1d9fd34302c5.png)
 
 - [4. Median of Two Sorted Arrays](4.%20Median%20of%20Two%20Sorted%20Arrays/script.js)
 - [9. Palindrome Number](9.%20Palindrome%20Number/script.js)
