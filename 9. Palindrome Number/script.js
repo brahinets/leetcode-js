@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = function (x) {
+const isPalindrome = function (x) {
     let str = String(x);
     let middle = str.length / 2;
 
