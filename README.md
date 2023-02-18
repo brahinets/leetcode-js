@@ -5,6 +5,7 @@
 - [9. Palindrome Number](9.%20Palindrome%20Number/script.js)
 - [67. Add Binary](67.%20Add%20Binary/script.js)
 - [104. Maximum Depth of Binary Tree](104.%20Maximum%20Depth%20of%20Binary%20Tree/script.js)
+- [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.js)
 - [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.js)
 - [989. Add to Array-Form of Integer](989.%20Add%20to%20Array-Form%20of%20Integer/script.js)
 - [1480. Running Sum of 1d Array](1480.%20Running%20Sum%20of%201d%20Array/script.js)
