@@ -1,6 +1,7 @@
 # LeetCode with JavaScript: give your brain a workout
 ![image](https://user-images.githubusercontent.com/4119411/219785121-7a80a215-fb7d-46cb-bc66-1d9fd34302c5.png)
 
+- [1. Two Sum](1.%20Two%20Sum/script.js)
 - [4. Median of Two Sorted Arrays](4.%20Median%20of%20Two%20Sorted%20Arrays/script.js)
 - [9. Palindrome Number](9.%20Palindrome%20Number/script.js)
 - [67. Add Binary](67.%20Add%20Binary/script.js)
