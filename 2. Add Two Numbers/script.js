@@ -12,39 +12,51 @@ class ListNode {
     }
 }
 
-const toNumber = node => {
-    let result = 0;
-    let radix = 1;
-    let n2 = node;
+const toDigits = reversedList => {
+    let digits = [];
 
+    let n2 = reversedList;
     while (n2.next) {
-        result += radix * n2.val;
+        digits.unshift(n2.val);
         n2 = n2.next;
-        radix *= 10;
     }
+    digits.unshift(n2.val);
 
-    result += n2.val * radix;
-    return result;
+    return digits;
 };
 
-const toLinkedList = number => {
-    let digits = number.toString().split("");
+const toLinkedList = digits => {
     let result = null;
 
     let i = 0;
     while (i < digits.length) {
-        result = {val: Number(digits[i]), next: result};
+        result = {val: digits[i], next: result};
         i++;
     }
 
     return result;
 }
 
-/**
- * @param {ListNode} l1
- * @param {ListNode} l2
- * @return {ListNode}
- */
+const sumByDigits = (digits1, digits2) => {
+    let longer = (digits1.length > digits2.length ? digits1 : digits2).reverse();
+    let shorter = (digits2.length >= digits1.length ? digits1 : digits2).reverse();
+
+    let incrementNextRadix = false;
+    let result = [];
+    for (let i = 0; i < longer.length; i++) {
+        let sum = incrementNextRadix + longer[i] + (shorter[i] ?? 0);
+
+        result.push(sum % 10);
+        incrementNextRadix = sum >= 10;
+    }
+
+    if (incrementNextRadix) {
+        result.push(1);
+    }
+
+    return result.reverse();
+}
+
 const addTwoNumbers = function (l1, l2) {
-    return toLinkedList(toNumber(l1) + toNumber(l2));
+    return toLinkedList(sumByDigits(toDigits(l1), toDigits(l2)));
 };
