@@ -4,7 +4,7 @@
  */
 const singleNonDuplicate = function (nums) {
     const counting = nums.reduce((count, num) => {
-        count[num] = count[num] ? count[num] + 1 : 1;
+        count[num] = (count[num] || 0) + 1;
         return count;
     }, {});
 
