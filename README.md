@@ -9,6 +9,7 @@
 1. № [103. Binary Tree Zigzag Level Order Traversal](103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/script.js)
 1. № [104. Maximum Depth of Binary Tree](104.%20Maximum%20Depth%20of%20Binary%20Tree/script.js)
 1. № [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.js)
+1. № [540. Single Element in a Sorted Array](540.%20Single%20Element%20in%20a%20Sorted%20Array/script.js)
 1. № [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.js)
 1. № [989. Add to Array-Form of Integer](989.%20Add%20to%20Array-Form%20of%20Integer/script.js)
 1. № [1480. Running Sum of 1d Array](1480.%20Running%20Sum%20of%201d%20Array/script.js)
