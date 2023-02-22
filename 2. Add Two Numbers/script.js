@@ -10,6 +10,17 @@ class ListNode {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
+
+    toString() {
+        let node = this;
+        let res = [];
+        while (node) {
+            res.push(node.val)
+            node = node.next;
+        }
+
+        return res;
+    }
 }
 
 const toDigits = reversedList => {
@@ -30,7 +41,7 @@ const toLinkedList = digits => {
 
     let i = 0;
     while (i < digits.length) {
-        result = {val: digits[i], next: result};
+        result = new ListNode(digits[i], result);
         i++;
     }
 
