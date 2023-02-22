@@ -28,29 +28,30 @@ const toDigits = reversedList => {
 
     let n2 = reversedList;
     while (n2.next) {
-        digits.unshift(n2.val);
+        digits.push(n2.val);
         n2 = n2.next;
     }
-    digits.unshift(n2.val);
+    digits.push(n2.val);
 
     return digits;
 };
 
 const toLinkedList = digits => {
-    let result = null;
-
-    let i = 0;
-    while (i < digits.length) {
-        result = new ListNode(digits[i], result);
-        i++;
+    let head = null;
+    let i = digits.length - 1;
+    while (i >= 0) {
+        let node = new ListNode(digits[i])
+        node.next = head;
+        head = node;
+        i--;
     }
 
-    return result;
+    return head;
 }
 
 const sumByDigits = (digits1, digits2) => {
-    let longer = (digits1.length > digits2.length ? digits1 : digits2).reverse();
-    let shorter = (digits2.length >= digits1.length ? digits1 : digits2).reverse();
+    let longer = (digits1.length > digits2.length ? digits1 : digits2);
+    let shorter = (digits2.length >= digits1.length ? digits1 : digits2);
 
     let incrementNextRadix = false;
     let result = [];
@@ -65,7 +66,7 @@ const sumByDigits = (digits1, digits2) => {
         result.push(1);
     }
 
-    return result.reverse();
+    return result;
 }
 
 const addTwoNumbers = function (l1, l2) {
