@@ -27,7 +27,7 @@ var romanToInt = function (roman) {
     for (let i = 0; i < roman.length; i++) {
         let val = 0;
 
-        if (SPECIAL_ROMAN[roman[i] + roman[i + 1]]) {
+        if (i < roman.length - 1 && SPECIAL_ROMAN[roman[i] + roman[i + 1]]) {
             val += SPECIAL_ROMAN[roman[i] + roman[i + 1]];
             i += 1;
         } else {
