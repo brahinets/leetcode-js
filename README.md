@@ -5,6 +5,7 @@
 1. № [2. Add Two Numbers](2.%20Add%20Two%20Numbers/script.js)
 1. № [4. Median of Two Sorted Arrays](4.%20Median%20of%20Two%20Sorted%20Arrays/script.js)
 1. № [9. Palindrome Number](9.%20Palindrome%20Number/script.js)
+1. № [13. Roman to Integer](13.%20Roman%20to%20Integer/script.js)
 1. № [35. Search Insert Position](35.%20Search%20Insert%20Position/script.js)
 1. № [67. Add Binary](67.%20Add%20Binary/script.js)
 1. № [103. Binary Tree Zigzag Level Order Traversal](103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/script.js)
