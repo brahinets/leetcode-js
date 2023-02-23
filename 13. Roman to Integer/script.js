@@ -24,16 +24,14 @@ const REGULAR_ROMAN = {
 var romanToInt = function (roman) {
     let result = 0;
 
-    let cursor = 0;
-    while (cursor < roman.length) {
+    for (let i = 0; i < roman.length; i++) {
         let val = 0;
 
-        if (SPECIAL_ROMAN[roman[cursor] + roman[cursor + 1]]) {
-            val += SPECIAL_ROMAN[roman[cursor] + roman[cursor + 1]];
-            cursor += 2;
+        if (SPECIAL_ROMAN[roman[i] + roman[i + 1]]) {
+            val += SPECIAL_ROMAN[roman[i] + roman[i + 1]];
+            i += 1;
         } else {
-            val += REGULAR_ROMAN[roman[cursor]];
-            cursor += 1;
+            val += REGULAR_ROMAN[roman[i]];
         }
 
         result += val;
