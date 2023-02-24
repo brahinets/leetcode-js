@@ -5,13 +5,13 @@
 const isValid = function (s) {
     const getKeyByValue = (object, value) => {
         return Object.keys(object).find(key => object[key] === value);
-    }
+    };
 
     const pairs = {
         "[": "]",
         "{": "}",
         "(": ")",
-    }
+    };
 
     let stack = [];
     for (let ch of s) {
@@ -25,7 +25,7 @@ const isValid = function (s) {
                 return false;
             }
         } else {
-            throw new Error(`Unsupported character: ${ch}`)
+            throw new Error(`Unsupported character: ${ch}`);
         }
     }
 
