@@ -14,9 +14,6 @@ const maxProfit = function (prices) {
     let profits = [];
 
     for (let i = 0; i < prices.length - 1; i++) {
-        console.log(prices)
-        console.log(prices.slice(i + 1))
-
         const buyoutPrice = prices[i];
         const maxSellPrice = max(prices.slice(i + 1));
         const profit = maxSellPrice - buyoutPrice;
