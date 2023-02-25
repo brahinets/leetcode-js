@@ -1,9 +1,18 @@
-function max(numbers) {
+function max(numbers, startFromInclusive) {
     if (numbers.length === 0) {
         throw new Error("Arrays is empty");
     }
+    if (numbers.length < startFromInclusive) {
+        throw new Error("Arrays is not long enough");
+    }
+    let max = numbers[startFromInclusive];
+    for (let i = startFromInclusive + 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+    }
 
-    return numbers.reduce((prev, curr) => curr > prev ? curr : prev)
+    return max;
 }
 
 /**
@@ -15,7 +24,7 @@ const maxProfit = function (prices) {
 
     for (let i = 0; i < prices.length - 1; i++) {
         const buyoutPrice = prices[i];
-        const maxSellPrice = max(prices.slice(i + 1));
+        const maxSellPrice = max(prices, i + 1);
         const profit = maxSellPrice - buyoutPrice;
 
         if (profit > maxProfit) {
