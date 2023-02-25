@@ -11,17 +11,17 @@ function max(numbers) {
  * @return {number}
  */
 const maxProfit = function (prices) {
-    let profits = [];
+    let maxProfit = 0;
 
     for (let i = 0; i < prices.length - 1; i++) {
         const buyoutPrice = prices[i];
         const maxSellPrice = max(prices.slice(i + 1));
         const profit = maxSellPrice - buyoutPrice;
 
-        if (profit > 0) {
-            profits.push(profit);
+        if (profit > maxProfit) {
+            maxProfit = profit;
         }
     }
 
-    return profits.length > 0 ? max(profits) : 0;
+    return maxProfit;
 };
