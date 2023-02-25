@@ -11,6 +11,7 @@
 1. № [67. Add Binary](67.%20Add%20Binary/script.js)
 1. № [103. Binary Tree Zigzag Level Order Traversal](103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/script.js)
 1. № [104. Maximum Depth of Binary Tree](104.%20Maximum%20Depth%20of%20Binary%20Tree/script.js)
+1. № [121. Best Time to Buy and Sell Stock](121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/script.js)
 1. № [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.js)
 1. № [540. Single Element in a Sorted Array](540.%20Single%20Element%20in%20a%20Sorted%20Array/script.js)
 1. № [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.js)
