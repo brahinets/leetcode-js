@@ -4,6 +4,7 @@
 1. № [1. Two Sum](1.%20Two%20Sum/script.js)
 1. № [2. Add Two Numbers](2.%20Add%20Two%20Numbers/script.js)
 1. № [4. Median of Two Sorted Arrays](4.%20Median%20of%20Two%20Sorted%20Arrays/script.js)
+1. № [7. Reverse Integer](7.%20Reverse%20Integer/script.js)
 1. № [9. Palindrome Number](9.%20Palindrome%20Number/script.js)
 1. № [13. Roman to Integer](13.%20Roman%20to%20Integer/script.js)
 1. № [20. Valid Parentheses](20.%20Valid%20Parentheses/script.js)
