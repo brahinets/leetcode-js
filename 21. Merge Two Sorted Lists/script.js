@@ -34,7 +34,7 @@ const mergeTwoLists = function (list1, list2) {
         let first = list1;
         let second = list2;
 
-        if (first && second) {
+        if (first?.val != null && second?.val != null) {
             if (first.val > second.val) {
                 result.push(second.val);
                 list2 = second.next;
@@ -43,10 +43,10 @@ const mergeTwoLists = function (list1, list2) {
                 list1 = first.next;
             }
         } else {
-            if (first) {
+            if (first?.val != null) {
                 result.push(first.val);
                 list1 = first.next;
-            } else if (second) {
+            } else if (second?.val != null) {
                 result.push(second.val);
                 list2 = second.next;
             } else {
