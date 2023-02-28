@@ -22,45 +22,43 @@ class ListNode {
         return res;
     }
 }
+
 /**
  * @param {ListNode} list1
  * @param {ListNode} list2
  * @return {ListNode}
  */
 const mergeTwoLists = function (list1, list2) {
-    let merged = [];
-
+    let node = new ListNode();
+    let head = node;
     do {
         let first = list1;
         let second = list2;
+        let value;
 
         if (first?.val != null && second?.val != null) {
             if (first.val > second.val) {
-                merged.push(second.val);
+                value = second.val;
                 list2 = second.next;
             } else {
-                merged.push(first.val);
+                value = first.val;
                 list1 = first.next;
             }
         } else {
             if (first?.val != null) {
-                merged.push(first.val);
+                value = first.val;
                 list1 = first.next;
             } else if (second?.val != null) {
-                merged.push(second.val);
+                value = second.val;
                 list2 = second.next;
             } else {
                 break;
             }
         }
-    } while (list1 || list2);
 
-    let node = new ListNode();
-    let head = node;
-    for (let i = 0; i < merged.length; i++) {
-        head.next = new ListNode(merged[i]);
+        head.next = new ListNode(value);
         head = head.next;
-    }
+    } while (list1 || list2);
 
     return node.next;
 };
