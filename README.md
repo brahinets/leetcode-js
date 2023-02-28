@@ -8,6 +8,7 @@
 1. № [9. Palindrome Number](9.%20Palindrome%20Number/script.js)
 1. № [13. Roman to Integer](13.%20Roman%20to%20Integer/script.js)
 1. № [20. Valid Parentheses](20.%20Valid%20Parentheses/script.js)
+1. № [21. Merge Two Sorted Lists](21.%20Merge%20Two%20Sorted%20Lists/script.js)
 1. № [35. Search Insert Position](35.%20Search%20Insert%20Position/script.js)
 1. № [67. Add Binary](67.%20Add%20Binary/script.js)
 1. № [103. Binary Tree Zigzag Level Order Traversal](103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/script.js)
