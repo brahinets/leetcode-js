@@ -28,7 +28,7 @@ class ListNode {
  * @return {ListNode}
  */
 const mergeTwoLists = function (list1, list2) {
-    let result = [];
+    let merged = [];
 
     do {
         let first = list1;
@@ -36,18 +36,18 @@ const mergeTwoLists = function (list1, list2) {
 
         if (first?.val != null && second?.val != null) {
             if (first.val > second.val) {
-                result.push(second.val);
+                merged.push(second.val);
                 list2 = second.next;
             } else {
-                result.push(first.val);
+                merged.push(first.val);
                 list1 = first.next;
             }
         } else {
             if (first?.val != null) {
-                result.push(first.val);
+                merged.push(first.val);
                 list1 = first.next;
             } else if (second?.val != null) {
-                result.push(second.val);
+                merged.push(second.val);
                 list2 = second.next;
             } else {
                 break;
@@ -55,7 +55,6 @@ const mergeTwoLists = function (list1, list2) {
         }
     } while (list1 || list2);
 
-    let merged = result.filter(val => val !== null);
     let node = new ListNode();
     let head = node;
     for (let i = 0; i < merged.length; i++) {
