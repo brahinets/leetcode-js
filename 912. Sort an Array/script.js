@@ -6,28 +6,28 @@ var sortArray = function (nums) {
     return mergeSort(nums);
 };
 
-function mergeSort(arr) {
-    if (arr.length <= 1) {
-        return arr;
+function mergeSort(nums) {
+    if (nums.length <= 1) {
+        return nums;
     }
 
-    const mid = Math.floor(arr.length / 2)
-    const left = mergeSort(arr.slice(0, mid))
-    const right = mergeSort(arr.slice(mid))
+    const mid = Math.floor(nums.length / 2);
+    const left = mergeSort(nums.slice(0, mid));
+    const right = mergeSort(nums.slice(mid));
 
-    return merge(left, right)
+    return merge(left, right);
 }
 
 function merge(left, right) {
-    const sortedArr = [];
+    const sorted = [];
 
     while (left.length && right.length) {
         if (left[0] < right[0]) {
-            sortedArr.push(left.shift())
+            sorted.push(left.shift());
         } else {
-            sortedArr.push(right.shift())
+            sorted.push(right.shift());
         }
     }
 
-    return [...sortedArr, ...left, ...right]
+    return [...sorted, ...left, ...right];
 }
