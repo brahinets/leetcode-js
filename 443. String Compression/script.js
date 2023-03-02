@@ -2,7 +2,7 @@
  * @param {character[]} chars
  * @return {number}
  */
-var compress = function (chars) {
+const compress = function (chars) {
     const result = [];
 
     for (let i = 0; i < chars.length;) {
@@ -21,7 +21,7 @@ var compress = function (chars) {
     }
 
     chars.length = 0;
-    chars.push(...result)
+    chars.push(...result);
 
     return result.length;
 };
