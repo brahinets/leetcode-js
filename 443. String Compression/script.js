@@ -16,8 +16,7 @@ var compress = function (chars) {
 
         result.push(char);
         if (count > 1) {
-            let items = String(count);
-            result.push(...items.split(""))
+            result.push(...String(count));
         }
     }
 
