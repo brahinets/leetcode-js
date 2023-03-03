@@ -28,7 +28,7 @@ const convert = function (s, numRows) {
                         let char = chars.shift();
                         matrix[i].push(char);
                     } else {
-                        matrix[i].push(" ");
+                        matrix[i].push("");
                     }
                 }
             }
@@ -37,5 +37,5 @@ const convert = function (s, numRows) {
         }
     }
 
-    return matrix.reduce((str, row) => str + row.join(" "), "").replaceAll(" ", "");
+    return matrix.reduce((str, row) => str + row.join(""), "");
 };
