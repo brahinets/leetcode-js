@@ -7,26 +7,22 @@ const MIN_INT32 = -1 * 2 ** 31;
  * @return {number}
  */
 const myAtoi = function (s) {
-    s = s.trim();
+    let digits = "";
 
-    let result = "";
-    let sign = 1;
-    if (s[0] === '-') {
-        s = s.substring(1);
-        sign = -1;
-    } else if (s[0] === '+') {
-        s = s.substring(1);
-        sign = 1;
-    }
-
-    for (let char of s) {
-        if (isDigit(char)) {
-            result += char;
+    for (let char of s.trim()) {
+        if (char === '-' || char === '+') {
+            if (digits) {
+                break;
+            } else {
+                digits += char;
+            }
+        } else if (isNumber(char)) {
+            digits += char;
         } else {
             break;
         }
     }
 
-    const number = sign * Number(result);
+    const number = Number(digits) ? Number(digits) : 0;
     return number > MAX_INT32 ? MAX_INT32 : number < MIN_INT32 ? MIN_INT32 : number;
 };
