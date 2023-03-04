@@ -6,6 +6,7 @@
 1. № [4. Median of Two Sorted Arrays](4.%20Median%20of%20Two%20Sorted%20Arrays/script.js)
 1. № [6. Zigzag Conversion](6.%20Zigzag%20Conversion/script.js)
 1. № [7. Reverse Integer](7.%20Reverse%20Integer/script.js)
+1. № [8. String to Integer (atoi)](8.%20String%20to%20Integer%20%28atoi%29/script.js)
 1. № [9. Palindrome Number](9.%20Palindrome%20Number/script.js)
 1. № [13. Roman to Integer](13.%20Roman%20to%20Integer/script.js)
 1. № [20. Valid Parentheses](20.%20Valid%20Parentheses/script.js)
