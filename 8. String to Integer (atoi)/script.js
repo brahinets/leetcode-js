@@ -1,4 +1,4 @@
-const isDigit = (char) => char.match(/^\d+$/);
+const isDigit = (char) => !isNaN(char);
 const MAX_INT32 = 2 ** 31 - 1;
 const MIN_INT32 = -1 * 2 ** 31;
 
