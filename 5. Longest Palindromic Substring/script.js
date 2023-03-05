@@ -1,8 +1,16 @@
 /**
  * @param {string} string
- * @return {string} reversed string
+ * @return {boolean} is string palindrome
  */
-const reverse = (string) => string.split("").reverse().join("");
+const isPalindrome = (string) => {
+    for (let i = 0; i < string.length / 2; i++) {
+        if (string.charAt(i) !== string.charAt(string.length - 1 - i)) {
+            return false
+        }
+    }
+
+    return true;
+};
 
 /**
  * @param {string} s
@@ -14,7 +22,7 @@ const longestPalindrome = function (s) {
     for (let i = 0; i < s.length && i < s.length - maxPalindrome.length; i++) {
         for (let j = i; j < s.length; j++) {
             let checked = s.substring(i, j + 1);
-            if (checked === reverse(checked) && checked.length > maxPalindrome.length) {
+            if (isPalindrome(checked) && checked.length > maxPalindrome.length) {
                 maxPalindrome = checked;
             }
         }
