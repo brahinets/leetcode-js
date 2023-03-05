@@ -9,7 +9,11 @@
     "type": "git",
     "url": "git+https://github.com/brahinets/leetcode-js.git"
   },
-  "keywords": ["leetcode", "typescript", "javascript"],
+  "keywords": [
+    "leetcode",
+    "typescript",
+    "javascript"
+  ],
   "author": {
     "name": "Yaroslav Brahinets",
     "email": "y.brahinets@gmail.com"
@@ -18,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/brahinets/leetcode-js/issues"
   },
-  "homepage": "https://github.com/brahinets/leetcode-js#readme"
+  "homepage": "https://github.com/brahinets/leetcode-js#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
 }
