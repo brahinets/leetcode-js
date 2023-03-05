@@ -16,7 +16,7 @@ const isPalindrome = (string) => {
  * @param {string} s
  * @return {string}
  */
-const longestPalindrome = function (s) {
+const longestPalindrome = (s) => {
     let maxPalindrome = "";
 
     for (let i = 0; i < s.length && i < s.length - maxPalindrome.length; i++) {
