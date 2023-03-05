@@ -4,6 +4,7 @@
 1. № [1. Two Sum](1.%20Two%20Sum/script.js)
 1. № [2. Add Two Numbers](2.%20Add%20Two%20Numbers/script.js)
 1. № [4. Median of Two Sorted Arrays](4.%20Median%20of%20Two%20Sorted%20Arrays/script.js)
+1. № [5. Longest Palindromic Substring](5.%20Longest%20Palindromic%20Substring/script.js)
 1. № [6. Zigzag Conversion](6.%20Zigzag%20Conversion/script.js)
 1. № [7. Reverse Integer](7.%20Reverse%20Integer/script.js)
 1. № [8. String to Integer (atoi)](8.%20String%20to%20Integer%20%28atoi%29/script.js)
