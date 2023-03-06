@@ -1,14 +1,14 @@
 const findKthPositive = (arr: number[], k: number): number => {
-    let missed: number[] = [];
+    let missedCount: number = 0;
     let guess: number = 1;
 
-    while (missed.length < k) {
+    while (missedCount < k) {
         if (!arr.includes(guess)) {
-            missed.push(guess);
+            missedCount++;
         }
 
         guess++;
     }
 
-    return missed.pop() || -1;
+    return guess - 1;
 };
