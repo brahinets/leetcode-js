@@ -1,7 +1,7 @@
 # LeetCode with JavaScript: give your brain a workout
 ![image](https://user-images.githubusercontent.com/4119411/219785121-7a80a215-fb7d-46cb-bc66-1d9fd34302c5.png)
 
-1. № [1. Two Sum](1.%20Two%20Sum/script.js)
+1. № [1. Two Sum](1.%20Two%20Sum/script.ts)
 1. № [2. Add Two Numbers](2.%20Add%20Two%20Numbers/script.js)
 1. № [4. Median of Two Sorted Arrays](4.%20Median%20of%20Two%20Sorted%20Arrays/script.js)
 1. № [5. Longest Palindromic Substring](5.%20Longest%20Palindromic%20Substring/script.js)
