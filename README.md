@@ -22,6 +22,7 @@
 1. № [443. String Compression](443.%20String%20Compression/script.js)
 1. № [540. Single Element in a Sorted Array](540.%20Single%20Element%20in%20a%20Sorted%20Array/script.js)
 1. № [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.js)
+1. № [875. Koko Eating Bananas](875.%20Koko%20Eating%20Bananas/script.ts)
 1. № [912. Sort an Array](912.%20Sort%20an%20Array/script.js)
 1. № [989. Add to Array-Form of Integer](989.%20Add%20to%20Array-Form%20of%20Integer/script.js)
 1. № [1480. Running Sum of 1d Array](1480.%20Running%20Sum%20of%201d%20Array/script.js)
