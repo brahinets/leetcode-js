@@ -16,12 +16,11 @@ function detectCycle(head: ListNode | null): ListNode | null {
         hare = hare?.next?.next;
         tortoise = tortoise?.next;
 
-        let loopDetected: boolean = hare === tortoise;
-
+        const loopDetected: boolean = hare === tortoise;
         if (loopDetected) {
             tortoise = head;
 
-            while (tortoise != hare) {
+            while (tortoise !== hare) {
                 hare = hare?.next;
                 tortoise = tortoise?.next;
             }
