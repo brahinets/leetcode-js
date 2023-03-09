@@ -9,24 +9,24 @@ class ListNode {
 }
 
 function detectCycle(head: ListNode | null): ListNode | null {
-    let fast: ListNode | null | undefined = head;
-    let slow: ListNode | null | undefined = head;
+    let hare: ListNode | null | undefined = head;
+    let tortoise: ListNode | null | undefined = head;
 
-    while (fast && fast.next) {
-        fast = fast?.next?.next;
-        slow = slow?.next;
+    while (hare && hare.next) {
+        hare = hare?.next?.next;
+        tortoise = tortoise?.next;
 
-        let loopDetected: boolean = fast === slow;
+        let loopDetected: boolean = hare === tortoise;
 
         if (loopDetected) {
-            slow = head;
+            tortoise = head;
 
-            while (slow != fast) {
-                fast = fast?.next;
-                slow = slow?.next;
+            while (tortoise != hare) {
+                hare = hare?.next;
+                tortoise = tortoise?.next;
             }
 
-            return slow || null;
+            return tortoise || null;
         }
     }
 
