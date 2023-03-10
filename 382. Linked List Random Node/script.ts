@@ -1,6 +1,6 @@
 class ListNode {
-    val: number
-    next: ListNode | null
+    readonly val: number
+    readonly next: ListNode | null
 
     constructor(val ?: number, next ?: ListNode | null) {
         this.val = (val === undefined ? 0 : val)
