@@ -20,6 +20,7 @@
 1. № [121. Best Time to Buy and Sell Stock](121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/script.ts)
 1. № [142. Linked List Cycle II](142.%20Linked%20List%20Cycle%20II/script.ts)
 1. № [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.js)
+1. № [382. Linked List Random Node](382.%20Linked%20List%20Random%20Node/script.ts)
 1. № [443. String Compression](443.%20String%20Compression/script.js)
 1. № [540. Single Element in a Sorted Array](540.%20Single%20Element%20in%20a%20Sorted%20Array/script.js)
 1. № [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.js)
