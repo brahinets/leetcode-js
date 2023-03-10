@@ -9,12 +9,18 @@ class ListNode {
 }
 
 class Solution {
-    private readonly data: number[];
+    private readonly list: ListNode;
+    private readonly size: number;
 
     constructor(head: ListNode | null) {
-        this.data = [];
+        if (!head) {
+            throw new Error("List cannot be empty");
+        }
+
+        this.list = head;
+        this.size = 0;
         while (head) {
-            this.data.push(head.val);
+            this.size++;
             head = head.next;
         }
     }
@@ -24,7 +30,15 @@ class Solution {
     }
 
     getRandom(): number {
-        let randomIndex: number = this.getRandomInt(this.data.length);
-        return this.data[randomIndex];
+        let randomIndex: number = this.getRandomInt(this.size);
+        let index: number = 0;
+
+        let node: ListNode = this.list;
+        while (index < randomIndex && node.next) {
+            node = node.next;
+            index++;
+        }
+
+        return node.val;
     }
 }
