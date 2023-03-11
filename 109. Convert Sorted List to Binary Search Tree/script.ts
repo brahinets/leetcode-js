@@ -33,10 +33,6 @@ function sortedListToBST(head: ListNode | null): TreeNode | null {
 function toNode(data: number[]): TreeNode | null {
     if (data.length === 0) {
         return null;
-    } else if (data.length === 1) {
-        return new TreeNode(data[0]);
-    } else if (data.length === 2) {
-        return new TreeNode(data[0], null, new TreeNode(data[1]))
     } else {
         let left: number[] = [];
         let right: number[] = [];
@@ -54,8 +50,8 @@ function toNode(data: number[]): TreeNode | null {
             }
         }
 
-        if (val === null || left.length === 0 || right.length === 0) {
-            throw new Error("Parts are not fulfilled");
+        if (val === null) {
+            throw new Error("Val is not defined. Illegal state");
         }
 
         return new TreeNode(val, toNode(left), toNode(right));
