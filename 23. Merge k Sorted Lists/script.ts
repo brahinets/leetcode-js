@@ -1,5 +1,7 @@
 import {ListNode} from "../common/ListNode";
 
+export {mergeKLists};
+
 function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
     return lists.reduce((prev: ListNode | null, curr: ListNode | null) => mergeTwoLists(prev, curr), null);
 }
