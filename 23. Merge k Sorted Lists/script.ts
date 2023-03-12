@@ -12,7 +12,7 @@ const mergeTwoLists = function (list1: ListNode | null, list2: ListNode | null):
     do {
         let first: ListNode | null = list1;
         let second: ListNode | null = list2;
-        let value;
+        let value: number;
 
         if (first?.val != null && second?.val != null) {
             if (first.val > second.val) {
