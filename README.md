@@ -30,6 +30,7 @@
 1. № [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.js)
 1. № [875. Koko Eating Bananas](875.%20Koko%20Eating%20Bananas/script.ts)
 1. № [912. Sort an Array](912.%20Sort%20an%20Array/script.js)
+1. № [958. Check Completeness of a Binary Tree](958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
 1. № [989. Add to Array-Form of Integer](989.%20Add%20to%20Array-Form%20of%20Integer/script.js)
 1. № [1480. Running Sum of 1d Array](1480.%20Running%20Sum%20of%201d%20Array/script.js)
 1. № [1523. Count Odd Numbers in an Interval Range](1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.js)
