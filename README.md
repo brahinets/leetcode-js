@@ -37,4 +37,4 @@
 1. № [1539. Kth Missing Positive Number](1539.%20Kth%20Missing%20Positive%20Number/script.ts)
 1. № [2187. Minimum Time to Complete Trips](2187.%20Minimum%20Time%20to%20Complete%20Trips/script.ts)
 1. № [2235. Add Two Integers](2235.%20Add%20Two%20Integers/script.js)
-1. № [2236. Root Equals Sum of Children](2236.%20Root%20Equals%20Sum%20of%20Children/script.js)
+1. № [2236. Root Equals Sum of Children](2236.%20Root%20Equals%20Sum%20of%20Children/script.ts)
