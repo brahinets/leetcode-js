@@ -1,12 +1,4 @@
-class ListNode {
-    val: number
-    next: ListNode | null
-
-    constructor(val ?: number, next ?: ListNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.next = (next === undefined ? null : next)
-    }
-}
+import {ListNode} from "../common/ListNode";
 
 function detectCycle(head: ListNode | null): ListNode | null {
     let hare: ListNode | null | undefined = head;
