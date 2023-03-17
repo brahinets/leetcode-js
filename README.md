@@ -23,6 +23,7 @@
 1. № [121. Best Time to Buy and Sell Stock](121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/script.ts)
 1. № [129. Sum Root to Leaf Numbers](129.%20Sum%20Root%20to%20Leaf%20Numbers/script.ts)
 1. № [142. Linked List Cycle II](142.%20Linked%20List%20Cycle%20II/script.ts)
+1. № [208. Implement Trie (Prefix Tree)](208.%20Implement%20Trie%20%28Prefix%20Tree%29/script.ts)
 1. № [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.ts)
 1. № [382. Linked List Random Node](382.%20Linked%20List%20Random%20Node/script.ts)
 1. № [443. String Compression](443.%20String%20Compression/script.js)
