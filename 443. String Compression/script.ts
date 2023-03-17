@@ -1,14 +1,10 @@
-/**
- * @param {character[]} chars
- * @return {number}
- */
-const compress = function (chars) {
-    const result = [];
+function compress(chars: string[]): number {
+    const result: string[] = [];
 
-    for (let i = 0; i < chars.length;) {
-        const char = chars[i];
+    for (let i: number = 0; i < chars.length;) {
+        const char: string = chars[i];
 
-        let count = 0;
+        let count: number = 0;
         while (chars[i] === char) {
             count++;
             i++;
@@ -24,4 +20,4 @@ const compress = function (chars) {
     chars.push(...result);
 
     return result.length;
-};
+}
