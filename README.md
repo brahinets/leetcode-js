@@ -33,6 +33,7 @@
 1. № [912. Sort an Array](912.%20Sort%20an%20Array/script.js)
 1. № [958. Check Completeness of a Binary Tree](958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
 1. № [989. Add to Array-Form of Integer](989.%20Add%20to%20Array-Form%20of%20Integer/script.js)
+1. № [1472. Design Browser History](1472.%20Design%20Browser%20History/script.ts)
 1. № [1480. Running Sum of 1d Array](1480.%20Running%20Sum%20of%201d%20Array/script.js)
 1. № [1523. Count Odd Numbers in an Interval Range](1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.js)
 1. № [1539. Kth Missing Positive Number](1539.%20Kth%20Missing%20Positive%20Number/script.ts)
