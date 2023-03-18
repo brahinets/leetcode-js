@@ -28,6 +28,7 @@
 1. № [382. Linked List Random Node](382.%20Linked%20List%20Random%20Node/script.ts)
 1. № [443. String Compression](443.%20String%20Compression/script.ts)
 1. № [540. Single Element in a Sorted Array](540.%20Single%20Element%20in%20a%20Sorted%20Array/script.js)
+1. № [724. Find Pivot Index](724.%20Find%20Pivot%20Index/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
 1. № [875. Koko Eating Bananas](875.%20Koko%20Eating%20Bananas/script.ts)
 1. № [912. Sort an Array](912.%20Sort%20an%20Array/script.ts)
