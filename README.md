@@ -28,6 +28,7 @@
 1. № [208. Implement Trie (Prefix Tree)](208.%20Implement%20Trie%20%28Prefix%20Tree%29/script.ts)
 1. № [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.ts)
 1. № [382. Linked List Random Node](382.%20Linked%20List%20Random%20Node/script.ts)
+1. № [392. Is Subsequence](392.%20Is%20Subsequence/script.ts)
 1. № [443. String Compression](443.%20String%20Compression/script.ts)
 1. № [540. Single Element in a Sorted Array](540.%20Single%20Element%20in%20a%20Sorted%20Array/script.js)
 1. № [724. Find Pivot Index](724.%20Find%20Pivot%20Index/script.ts)
