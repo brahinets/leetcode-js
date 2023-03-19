@@ -10,6 +10,31 @@ class WordDictionary {
     }
 
     search(word: string): boolean {
-        return [...this.words].find((s: string) => s.length === word.length && s.match(word)) !== undefined;
+        for (let w of this.words) {
+            if (this.match(word, w)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private match(target: string, word: string): boolean {
+        if (target.length !== word.length) {
+            return false;
+        }
+
+        const len: number = target.length;
+        for (let i: number = 0; i < len; i++) {
+            if (target[i] === ".") {
+                continue;
+            }
+
+            if (target[i] !== word[i]) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
