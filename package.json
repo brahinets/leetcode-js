@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "![image](https://user-images.githubusercontent.com/4119411/219785121-7a80a215-fb7d-46cb-bc66-1d9fd34302c5.png)",
   "scripts": {
-    "test": "echo \"Error: no test specified yet\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/brahinets/leetcode-js#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   }
