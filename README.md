@@ -24,6 +24,7 @@
 1. № [129. Sum Root to Leaf Numbers](129.%20Sum%20Root%20to%20Leaf%20Numbers/script.ts)
 1. № [142. Linked List Cycle II](142.%20Linked%20List%20Cycle%20II/script.ts)
 1. № [205. Find the Index of the First Occurrence in a String](205.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/script.ts)
+1. № [206. Reverse Linked List](206.%20Reverse%20Linked%20List/script.ts)
 1. № [211. Design Add and Search Words Data Structure](211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure/script.ts)
 1. № [208. Implement Trie (Prefix Tree)](208.%20Implement%20Trie%20%28Prefix%20Tree%29/script.ts)
 1. № [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.ts)
