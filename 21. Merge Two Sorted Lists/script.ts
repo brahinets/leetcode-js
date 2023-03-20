@@ -1,6 +1,7 @@
-import {mergeKLists} from "../23. Merge k Sorted Lists/script";
-import {ListNode} from "../common/ListNode";
+import {mergeKLists, ListNode} from "../23. Merge k Sorted Lists/script";
 
-const mergeTwoLists = function (list1: ListNode, list2: ListNode): ListNode | null {
+export {mergeTwoLists, ListNode}
+
+const mergeTwoLists = function (list1: ListNode | null, list2: ListNode | null): ListNode | null {
     return mergeKLists([list1, list2]);
 }
