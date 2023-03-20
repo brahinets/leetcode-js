@@ -1,4 +1,4 @@
-function isSubsequence(s: string, t: string): boolean {
+export const isSubsequence = (s: string, t: string): boolean => {
     let matched: number = 0;
     let i: number = 0;
 
