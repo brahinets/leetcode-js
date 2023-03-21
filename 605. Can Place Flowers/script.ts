@@ -14,8 +14,9 @@ export function canPlaceFlowers(flowerbed: number[], n: number): boolean {
         const norRightBlockers: boolean = next >= flowerbed.length || flowerbed[next] === 0;
 
         if (noLeftBlockers && norRightBlockers) {
-            flowerbed[i] = 1;
+            i += 2;
             canMore++;
+            continue;
         }
 
         i++;
