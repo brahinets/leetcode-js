@@ -1,5 +1,7 @@
 import {ListNode} from "../common/ListNode";
 
+export {detectCycle, ListNode}
+
 function detectCycle(head: ListNode | null): ListNode | null {
     let hare: ListNode | null | undefined = head;
     let tortoise: ListNode | null | undefined = head;
