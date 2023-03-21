@@ -13,7 +13,7 @@ describe('605. Can Place Flowers', (): void => {
         expect(canPlaceFlowers([0], 1)).toBe(true);
     });
 
-    it('Can place two flowers', (): void => {
+    it('Cannot place two flowers', (): void => {
         expect(canPlaceFlowers([1, 0, 0, 0, 1], 2)).toBe(false);
     });
 });
