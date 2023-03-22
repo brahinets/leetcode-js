@@ -1,4 +1,4 @@
-const maxProfit = function (prices: number[]): number {
+export const maxProfit = function (prices: number[]): number {
     let minPrice: number = prices[0];
     let maxProfit: number = 0;
 
