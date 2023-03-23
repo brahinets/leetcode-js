@@ -33,6 +33,7 @@
 1. № [409. Longest Palindrome](409.%20Longest%20Palindrome/script.ts)
 1. № [443. String Compression](443.%20String%20Compression/script.ts)
 1. № [540. Single Element in a Sorted Array](540.%20Single%20Element%20in%20a%20Sorted%20Array/script.js)
+1. № [589. N-ary Tree Preorder Traversal](589.%20N-ary%20Tree%20Preorder%20Traversal/script.ts)
 1. № [605. Can Place Flowers](605.%20Can%20Place%20Flowers/script.ts)
 1. № [724. Find Pivot Index](724.%20Find%20Pivot%20Index/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
