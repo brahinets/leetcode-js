@@ -29,6 +29,7 @@
 1. № [208. Implement Trie (Prefix Tree)](208.%20Implement%20Trie%20%28Prefix%20Tree%29/script.ts)
 1. № [211. Design Add and Search Words Data Structure](211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure/script.ts)
 1. № [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.ts)
+1. № [278. First Bad Version](278.%20First%20Bad%20Version/script.ts)
 1. № [382. Linked List Random Node](382.%20Linked%20List%20Random%20Node/script.ts)
 1. № [392. Is Subsequence](392.%20Is%20Subsequence/script.ts)
 1. № [409. Longest Palindrome](409.%20Longest%20Palindrome/script.ts)
