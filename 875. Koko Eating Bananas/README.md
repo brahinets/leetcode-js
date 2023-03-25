@@ -10,6 +10,6 @@ bananas before the guards return. Return the minimum integer `k` such that she c
 
 ### Constraints:
 
-`1 <= piles.length <= 104`  
-`piles.length <= h <= 109`  
-`1 <= piles[i] <= 109`  
+`1 <= piles.length <= 10^4`  
+`piles.length <= h <= 10^9`  
+`1 <= piles[i] <= 10^9`  

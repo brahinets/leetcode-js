@@ -8,8 +8,10 @@ function minEatingSpeed(piles: number[], h: number): number {
     while (left < right) {
         const mid: number = Math.floor((left + right) / 2);
 
-        let time: number = piles.map(e => Math.ceil(e / mid))
+        const time: number = piles
+            .map((pile: number) => Math.ceil(pile / mid))
             .reduce((s: number, e: number) => s + e, 0);
+
         if (time <= h) {
             right = mid;
         } else {
