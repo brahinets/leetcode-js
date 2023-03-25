@@ -1,3 +1,5 @@
+export {minEatingSpeed}
+
 function minEatingSpeed(piles: number[], h: number): number {
     let left: number = 1;
     let right: number = piles
