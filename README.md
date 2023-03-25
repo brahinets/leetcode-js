@@ -16,6 +16,7 @@
 1. № [28. Find the Index of the First Occurrence in a String](28.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/script.js)
 1. № [35. Search Insert Position](35.%20Search%20Insert%20Position/script.js)
 1. № [67. Add Binary](67.%20Add%20Binary/script.js)
+1. № [98. Validate Binary Search Tree](98.%20Validate%20Binary%20Search%20Tree/script.ts)
 1. № [103. Binary Tree Zigzag Level Order Traversal](103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/script.ts)
 1. № [104. Maximum Depth of Binary Tree](104.%20Maximum%20Depth%20of%20Binary%20Tree/script.ts)
 1. № [109. Convert Sorted List to Binary Search Tree](109.%20Convert%20Sorted%20List%20to%20Binary%20Search%20Tree/script.ts)
