@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "![image](https://user-images.githubusercontent.com/4119411/219785121-7a80a215-fb7d-46cb-bc66-1d9fd34302c5.png)",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
   "homepage": "https://github.com/brahinets/leetcode-js#readme",
   "devDependencies": {
     "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
     "jest": "^29.5.0",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
