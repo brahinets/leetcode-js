@@ -3,33 +3,35 @@ export {floodFill}
 function floodFill(image: number[][], sr: number, sc: number, color: number): number[][] {
     const startColor: number = image[sr][sc];
 
-    if (startColor !== color) {
-        floodFills(image, sr, sc, color, startColor);
+    if (startColor === color) {
+        return image;
     }
 
-    return image;
+    return floodFills(image, sr, sc, color, startColor);
 }
 
 function floodFills(image: number[][], sr: number, sc: number, newColor: number, startColor: number): number[][] {
-    if (startColor === image[sr][sc]) {
-        image[sr][sc] = newColor;
+    let imageCopy: number[][] = JSON.parse(JSON.stringify(image));
+
+    if (startColor === imageCopy[sr][sc]) {
+        imageCopy[sr][sc] = newColor;
 
         if (sr > 0) {
-            floodFills(image, sr - 1, sc, newColor, startColor);
+            imageCopy = floodFills(imageCopy, sr - 1, sc, newColor, startColor);
         }
 
         if (sc > 0) {
-            floodFills(image, sr, sc - 1, newColor, startColor);
+            imageCopy = floodFills(imageCopy, sr, sc - 1, newColor, startColor);
         }
 
-        if (sr < image.length - 1) {
-            floodFills(image, sr + 1, sc, newColor, startColor);
+        if (sr < imageCopy.length - 1) {
+            imageCopy = floodFills(imageCopy, sr + 1, sc, newColor, startColor);
         }
 
-        if (sc < image[0].length - 1) {
-            floodFills(image, sr, sc + 1, newColor, startColor);
+        if (sc < imageCopy[0].length - 1) {
+            imageCopy = floodFills(imageCopy, sr, sc + 1, newColor, startColor);
         }
     }
 
-    return image;
+    return imageCopy;
 }
