@@ -30,26 +30,19 @@ function numIslands(grid: string[][]): number {
 }
 
 function visitIsland(grid: string[][], islandCoordinateX: number, islandCoordinateY: number): string[][] {
+    if (islandCoordinateX < 0 || islandCoordinateY < 0 || islandCoordinateX >= grid.length || islandCoordinateY >= grid[0].length) {
+        return grid;
+    }
+
     let gridCopy: string[][] = JSON.parse(JSON.stringify(grid));
 
     if ('1' === gridCopy[islandCoordinateX][islandCoordinateY]) {
         gridCopy[islandCoordinateX][islandCoordinateY] = '0';
 
-        if (islandCoordinateX > 0) {
-            gridCopy = visitIsland(gridCopy, islandCoordinateX - 1, islandCoordinateY);
-        }
-
-        if (islandCoordinateY > 0) {
-            gridCopy = visitIsland(gridCopy, islandCoordinateX, islandCoordinateY - 1);
-        }
-
-        if (islandCoordinateX < gridCopy.length - 1) {
-            gridCopy = visitIsland(gridCopy, islandCoordinateX + 1, islandCoordinateY);
-        }
-
-        if (islandCoordinateY < gridCopy[0].length - 1) {
-            gridCopy = visitIsland(gridCopy, islandCoordinateX, islandCoordinateY + 1);
-        }
+        gridCopy = visitIsland(gridCopy, islandCoordinateX - 1, islandCoordinateY);
+        gridCopy = visitIsland(gridCopy, islandCoordinateX, islandCoordinateY - 1);
+        gridCopy = visitIsland(gridCopy, islandCoordinateX + 1, islandCoordinateY);
+        gridCopy = visitIsland(gridCopy, islandCoordinateX, islandCoordinateY + 1);
     }
 
     return gridCopy;
