@@ -1,6 +1,10 @@
 import {numIslands} from '../script'
 
 describe('200. Number of Islands', (): void => {
+    it('No islands. Empty sea', (): void => {
+        expect(numIslands([])).toBe(0);
+    });
+
     it('No islands', (): void => {
         expect(numIslands([
             ["0", "0", "0", "0", "0"],
