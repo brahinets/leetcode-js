@@ -1,6 +1,6 @@
 export {climbStairs}
 
-function climbStairs(n: number): number {
+function climbStairs(n: number, memo: Map<number, number> = new Map<number, number>()): number {
     if (n === 0 || n === 1) {
         return 1;
     }
@@ -9,5 +9,11 @@ function climbStairs(n: number): number {
         return 2;
     }
 
-    return climbStairs(n - 1) + climbStairs(n - 2);
+    let value: number | undefined = memo.get(n);
+    if (!value) {
+        value = climbStairs(n - 1, memo) + climbStairs(n - 2, memo);
+        memo.set(n, value);
+    }
+
+    return value;
 }
