@@ -1,6 +1,6 @@
 import {isSubsequence} from '../script'
 
-describe('A subsequence verification', (): void => {
+describe('392. Is Subsequence', (): void => {
     it('`abc` is a subsequence of `ahbgdc`', (): void => {
         expect(isSubsequence("abc", "ahbgdc")).toBe(true);
     });
