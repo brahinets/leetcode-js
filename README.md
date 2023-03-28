@@ -15,6 +15,7 @@
 1. № [23. Merge k Sorted Lists](23.%20Merge%20k%20Sorted%20Lists/script.ts)
 1. № [28. Find the Index of the First Occurrence in a String](28.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/script.js)
 1. № [35. Search Insert Position](35.%20Search%20Insert%20Position/script.js)
+1. № [62. Unique Paths](62.%20Unique%20Paths/script.ts)
 1. № [67. Add Binary](67.%20Add%20Binary/script.js)
 1. № [70. Climbing Stairs](70.%20Climbing%20Stairs/script.ts)
 1. № [98. Validate Binary Search Tree](98.%20Validate%20Binary%20Search%20Tree/script.ts)
