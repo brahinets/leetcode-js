@@ -1,19 +1,16 @@
 export {minCostClimbingStairs}
 
 function minCostClimbingStairs(cost: number[]): number {
-    const path: number[] = [];
+    return minCostClimbingToStair(cost, cost.length);
+}
 
-    let position: number = cost.length;
-
-    while (position > 1) {
-        if (cost[position - 1] < cost[position - 2]) {
-            position -= 1;
-            path.push(cost[position]);
-        } else {
-            position -= 2;
-            path.push(cost[position]);
-        }
+function minCostClimbingToStair(cost: number[], stair: number): number {
+    if (stair <= 1) {
+        return Math.min(0, cost[0]);
     }
 
-    return path.reduce((totalCost: number, stepCost: number) => totalCost + stepCost, 0);
+    const shortStep: number = minCostClimbingToStair(cost, stair - 1) + cost[stair - 1];
+    const bigStep: number = minCostClimbingToStair(cost, stair - 2) + cost[stair - 2];
+
+    return Math.min(shortStep, bigStep);
 }
