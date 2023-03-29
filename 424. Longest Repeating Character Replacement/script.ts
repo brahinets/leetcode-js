@@ -6,29 +6,25 @@ function characterReplacement(s: string, k: number): number {
 
     for (let char of chars) {
         let start: number = 0;
+        let validChars: number = 0;
 
         for (let end: number = 0; end < s.length; end++) {
-            while (!isValid(s.substring(start, end + 1), char, k)) {
-                start++;
+            if (s[end] === char) {
+                validChars++;
             }
 
-            const windowSize: number = end + 1 - start;
+            let windowSize: number = end + 1 - start;
+            while (windowSize - validChars > k) {
+                if (s[start] === char) {
+                    validChars--;
+                }
+                start++;
+                windowSize--;
+            }
 
             maxWindowSize = Math.max(maxWindowSize, windowSize);
         }
     }
 
     return maxWindowSize;
-}
-
-function isValid(str: string, baseChar: string, allowedReplacements: number): boolean {
-    let requiredReplacements: number = 0;
-
-    for (let i: number = 0; i < str.length; i++) {
-        if (str[i] !== baseChar) {
-            requiredReplacements++;
-        }
-    }
-
-    return requiredReplacements <= allowedReplacements;
 }
