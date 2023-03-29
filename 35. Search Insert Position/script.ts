@@ -1,3 +1,5 @@
+export {searchInsert}
+
 const searchInsert = function (nums: number[], target: number): number {
     let start: number = 0;
     let end: number = nums.length - 1;
