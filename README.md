@@ -35,6 +35,7 @@
 1. № [226. Invert Binary Tree](226.%20Invert%20Binary%20Tree/script.ts)
 1. № [235. Lowest Common Ancestor of a Binary Search Tree](235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree/script.ts)
 1. № [278. First Bad Version](278.%20First%20Bad%20Version/script.ts)
+1. № [299. Bulls and Cows](299.%20Bulls%20and%20Cows/script.ts)
 1. № [382. Linked List Random Node](382.%20Linked%20List%20Random%20Node/script.ts)
 1. № [392. Is Subsequence](392.%20Is%20Subsequence/script.ts)
 1. № [409. Longest Palindrome](409.%20Longest%20Palindrome/script.ts)
