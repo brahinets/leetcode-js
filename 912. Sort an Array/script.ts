@@ -1,3 +1,5 @@
+export {sortArray}
+
 const sortArray = (nums: number[]): number[] => {
     return mergeSort(nums);
 };
