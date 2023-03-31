@@ -51,6 +51,7 @@
 1. № [733. Flood Fill](733.%20Flood%20Fill/script.ts)
 1. № [746. Min Cost Climbing Stairs](746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
+1. № [844. Backspace String Compare](844.%20Backspace%20String%20Compare/script.ts)
 1. № [875. Koko Eating Bananas](875.%20Koko%20Eating%20Bananas/script.ts)
 1. № [876. Middle of the Linked List](876.%20Middle%20of%20the%20Linked%20List/script.ts)
 1. № [912. Sort an Array](912.%20Sort%20an%20Array/script.ts)
