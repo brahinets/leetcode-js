@@ -47,6 +47,7 @@
 1. № [540. Single Element in a Sorted Array](540.%20Single%20Element%20in%20a%20Sorted%20Array/script.js)
 1. № [589. N-ary Tree Preorder Traversal](589.%20N-ary%20Tree%20Preorder%20Traversal/script.ts)
 1. № [605. Can Place Flowers](605.%20Can%20Place%20Flowers/script.ts)
+1. № [692. Top K Frequent Words](692.%20Top%20K%20Frequent%20Words/script.ts)
 1. № [704. Binary Search](704.%20Binary%20Search/script.ts)
 1. № [724. Find Pivot Index](724.%20Find%20Pivot%20Index/script.ts)
 1. № [733. Flood Fill](733.%20Flood%20Fill/script.ts)
