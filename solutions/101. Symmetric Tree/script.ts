@@ -1,4 +1,4 @@
-import {TreeNode} from '../common/TreeNode'
+import {TreeNode} from '../../common/TreeNode'
 
 const isSymmetric = (root: TreeNode | null): boolean => {
     if (!root) {

@@ -1,4 +1,4 @@
-import {TreeNode} from '../common/TreeNode'
+import {TreeNode} from '../../common/TreeNode'
 
 function checkTree(root: TreeNode): boolean {
     if (root && root.left && root.right) {

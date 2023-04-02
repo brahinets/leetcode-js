@@ -1,4 +1,4 @@
-import {TreeNode} from "../common/TreeNode";
+import {TreeNode} from "../../common/TreeNode";
 
 const invertTree = function (root: TreeNode | null): TreeNode | null {
     if (!root) {

@@ -1,4 +1,4 @@
-import {ListNode} from "../common/ListNode";
+import {ListNode} from "../../common/ListNode";
 
 export {reverseList, ListNode};
 

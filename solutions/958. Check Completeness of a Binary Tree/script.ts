@@ -1,4 +1,4 @@
-import {TreeNode} from "../common/TreeNode";
+import {TreeNode} from "../../common/TreeNode";
 
 function isCompleteTree(root: TreeNode | null): boolean {
     const nodesCount: number = countNodes(root);

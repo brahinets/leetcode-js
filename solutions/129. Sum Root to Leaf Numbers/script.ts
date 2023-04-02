@@ -1,4 +1,4 @@
-import {TreeNode} from '../common/TreeNode'
+import {TreeNode} from '../../common/TreeNode'
 
 const collectPaths = (node: TreeNode, parentPath: string): string [] => {
     let paths: string[] = [];

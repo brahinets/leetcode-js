@@ -1,4 +1,4 @@
-import {TreeNode} from "../common/TreeNode";
+import {TreeNode} from "../../common/TreeNode";
 
 const collectValues = function (root: TreeNode): number[] {
     let values: number[] = [root.val];

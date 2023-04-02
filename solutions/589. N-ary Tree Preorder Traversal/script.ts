@@ -1,4 +1,4 @@
-import {Node} from '../common/Node'
+import {Node} from '../../common/Node'
 
 export {preorder, Node}
 
