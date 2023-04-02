@@ -67,4 +67,5 @@
 1. № [2187. Minimum Time to Complete Trips](2187.%20Minimum%20Time%20to%20Complete%20Trips/script.ts)
 1. № [2235. Add Two Integers](2235.%20Add%20Two%20Integers/script.ts)
 1. № [2236. Root Equals Sum of Children](2236.%20Root%20Equals%20Sum%20of%20Children/script.ts)
+1. № [2300. Successful Pairs of Spells and Potions](2300.%20Successful%20Pairs%20of%20Spells%20and%20Potions/script.ts)
 1. № [2348. Number of Zero-Filled Sub-arrays](2348.%20Number%20of%20Zero-Filled%20Sub-arrays/script.ts)
