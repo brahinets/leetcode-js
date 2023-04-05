@@ -1,18 +1,14 @@
 export {minimizeArrayValue}
 
 function minimizeArrayValue(nums: number[]): number {
-    let swapped: boolean;
-    do {
-        swapped = false;
+    let prefixSum: number = 0;
+    let max: number = 0;
 
-        for (let i: number = 1; i < nums.length; i++) {
-            if (nums[i - 1] < nums[i]) {
-                nums[i]--;
-                nums[i - 1]++;
-                swapped = true;
-            }
-        }
-    } while (swapped)
+    for (let i: number = 0; i < nums.length; i++) {
+        prefixSum += nums[i];
 
-    return Math.max(...nums);
+        max = Math.max(max, Math.floor((prefixSum + i) / (i + 1)));
+    }
+
+    return max;
 }
