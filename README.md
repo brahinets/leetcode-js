@@ -61,6 +61,7 @@
 1. № [958. Check Completeness of a Binary Tree](solutions/958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
 1. № [989. Add to Array-Form of Integer](solutions/989.%20Add%20to%20Array-Form%20of%20Integer/script.js)
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
+1. № [1254. Number of Closed Islands](solutions/1254.%20Number%20of%20Closed%20Islands/script.ts)
 1. № [1472. Design Browser History](solutions/1472.%20Design%20Browser%20History/script.ts)
 1. № [1480. Running Sum of 1d Array](solutions/1480.%20Running%20Sum%20of%201d%20Array/script.ts)
 1. № [1523. Count Odd Numbers in an Interval Range](solutions/1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.js)
