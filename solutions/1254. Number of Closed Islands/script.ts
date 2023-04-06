@@ -14,10 +14,8 @@ function closedIsland(grid: number[][]): number {
         const [islandCoordinateX, islandCoordinateY]: number[] = findIslandCoordinates(sea);
 
         isIsland = islandCoordinateX !== -1 && islandCoordinateY !== -1;
-        if (isIsland) {
-            if (isClosedIsland(sea, islandCoordinateX, islandCoordinateY)) {
-                closedIslandsCount++;
-            }
+        if (isIsland && isClosedIsland(sea, islandCoordinateX, islandCoordinateY)) {
+            closedIslandsCount++;
         }
     } while (isIsland)
 
@@ -47,8 +45,10 @@ function isClosedIsland(sea: number[][], islandCoordinateX: number, islandCoordi
 
     sea[islandCoordinateX][islandCoordinateY] = VISITED;
 
-    return isClosedIsland(sea, islandCoordinateX - 1, islandCoordinateY)
-        && isClosedIsland(sea, islandCoordinateX + 1, islandCoordinateY)
-        && isClosedIsland(sea, islandCoordinateX, islandCoordinateY - 1)
-        && isClosedIsland(sea, islandCoordinateX, islandCoordinateY + 1);
+    const north: boolean = isClosedIsland(sea, islandCoordinateX - 1, islandCoordinateY);
+    const south: boolean = isClosedIsland(sea, islandCoordinateX + 1, islandCoordinateY);
+    const west: boolean = isClosedIsland(sea, islandCoordinateX, islandCoordinateY - 1);
+    const east: boolean = isClosedIsland(sea, islandCoordinateX, islandCoordinateY + 1);
+
+    return north && south && west && east;
 }
