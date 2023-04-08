@@ -1,3 +1,5 @@
+export {romanToInt}
+
 const ROMAN: Map<string, number> = new Map<string, number>([
     ["I", 1],
     ["V", 5],
