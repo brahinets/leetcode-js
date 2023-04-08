@@ -10,7 +10,7 @@
 1. № [8. String to Integer (atoi)](solutions/8.%20String%20to%20Integer%20(atoi)/script.js)
 1. № [9. Palindrome Number](solutions/9.%20Palindrome%20Number/script.js)
 1. № [12. Integer to Roman](solutions/12.%20Integer%20to%20Roman/script.ts)
-1. № [13. Roman to Integer](solutions/13.%20Roman%20to%20Integer/script.js)
+1. № [13. Roman to Integer](solutions/13.%20Roman%20to%20Integer/script.ts)
 1. № [20. Valid Parentheses](solutions/20.%20Valid%20Parentheses/script.js)
 1. № [21. Merge Two Sorted Lists](solutions/21.%20Merge%20Two%20Sorted%20Lists/script.ts)
 1. № [23. Merge k Sorted Lists](solutions/23.%20Merge%20k%20Sorted%20Lists/script.ts)
