@@ -1,3 +1,4 @@
+export {isSymmetric, TreeNode}
 import {TreeNode} from '../../common/TreeNode'
 
 const isSymmetric = (root: TreeNode | null): boolean => {
