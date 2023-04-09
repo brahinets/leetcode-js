@@ -3,16 +3,17 @@ export class ListNode {
     next: ListNode | null;
 
     constructor(val?: number, next?: ListNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.next = (next === undefined ? null : next)
+        this.val = (val === undefined ? 0 : val);
+        this.next = (next === undefined ? null : next);
     }
 
     toArray(): number[] {
-        let node: ListNode | null = this;
-        let res: number[] = [];
-        while (node) {
-            res.push(node.val)
-            node = node.next;
+        const res: number[] = [this.val];
+
+        let next: ListNode | null = this.next;
+        while (next) {
+            res.push(next.val);
+            next = next.next;
         }
 
         return res;
