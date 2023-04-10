@@ -1,13 +1,13 @@
 export {backspaceCompare}
 
-function backspaceCompare(s: string, t: string): boolean {
-    return process(s) === process(t);
+function backspaceCompare(first: string, second: string): boolean {
+    return process(first) === process(second);
 }
 
 function process(s: string): string {
-    let data: string[] = [];
+    const data: string[] = [];
 
-    for (let char of s) {
+    for (const char of s) {
         if (char === "#") {
             data.pop();
         } else {
