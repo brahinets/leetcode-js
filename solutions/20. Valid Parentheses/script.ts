@@ -24,8 +24,8 @@ const isValid = function (s: string): boolean {
             const opening: string | null = getKeyByValue(BRACES, ch);
 
             if (opening) {
-                let closed: string | null = opening;
-                let opened: string | null = stack.pop() || null;
+                const closed: string | null = opening;
+                const opened: string | null = stack.pop() || null;
 
                 if (opened !== closed) {
                     return false;
