@@ -73,5 +73,6 @@
 1. № [2236. Root Equals Sum of Children](solutions/2236.%20Root%20Equals%20Sum%20of%20Children/script.ts)
 1. № [2300. Successful Pairs of Spells and Potions](solutions/2300.%20Successful%20Pairs%20of%20Spells%20and%20Potions/script.ts)
 1. № [2348. Number of Zero-Filled Sub-arrays](solutions/2348.%20Number%20of%20Zero-Filled%20Sub-arrays/script.ts)
+1. № [2390. Removing Stars From a String](solutions/2390.%20Removing%20Stars%20From%20a%20String/script.ts)
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
 1. № [2439. Minimize Maximum of Array](solutions/2439.%20Minimize%20Maximum%20of%20Array/script.ts)
