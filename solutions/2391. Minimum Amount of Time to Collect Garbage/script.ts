@@ -1,5 +1,6 @@
 export {garbageCollection}
 
+const HOUSE_CLEANING_COTS: number = 1;
 const GARBAGE_TYPES: string[] = ["G", "P", "M"];
 
 function calculateTravelCost(travelCosts: number[], houseNumber: number): number {
@@ -26,20 +27,20 @@ function removeChar(string: string, garbageType: string): string {
 }
 
 function garbageCollection(garbage: string[], travel: number[]): number {
-    let sum: number = 0;
+    let totalCost: number = 0;
 
     for (const garbageType of GARBAGE_TYPES) {
         let maxVisitedHouse: number = 0;
         for (let i: number = 0; i < garbage.length; i++) {
             while (garbage[i].includes(garbageType)) {
                 garbage[i] = removeChar(garbage[i], garbageType);
-                sum += 1;
+                totalCost += HOUSE_CLEANING_COTS;
                 maxVisitedHouse = i;
             }
         }
 
-        sum += calculateTravelCost(travel, maxVisitedHouse);
+        totalCost += calculateTravelCost(travel, maxVisitedHouse);
     }
 
-    return sum;
+    return totalCost;
 }
