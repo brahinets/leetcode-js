@@ -13,8 +13,8 @@ function simplifyPath(path: string): string {
 
 
 function normalize(path: string): string {
-    let segments: string[] = path.split(SEPARATOR);
-    let resultSegments: string[] = [];
+    const segments: string[] = path.split(SEPARATOR);
+    const resultSegments: string[] = [];
 
 
     for (let i: number = 0; i < segments.length; i++) {
@@ -44,7 +44,7 @@ function cleanUpTrailingSlashes(path: string): string {
 
 function cleanUpDuplicatedSlashes(path: string): string {
     while (path.includes("//")) {
-        let start: number = path.indexOf("//");
+        const start: number = path.indexOf("//");
         path = path.substring(0, start) + path.substring(start + 1);
     }
 
