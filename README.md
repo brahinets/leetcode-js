@@ -19,6 +19,7 @@
 1. № [62. Unique Paths](solutions/62.%20Unique%20Paths/script.ts)
 1. № [67. Add Binary](solutions/67.%20Add%20Binary/script.js)
 1. № [70. Climbing Stairs](solutions/70.%20Climbing%20Stairs/script.ts)
+1. № [71. Simplify Path](solutions/71.%20Simplify%20Path/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
 1. № [103. Binary Tree Zigzag Level Order Traversal](solutions/103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/script.ts)
 1. № [104. Maximum Depth of Binary Tree](solutions/104.%20Maximum%20Depth%20of%20Binary%20Tree/script.ts)
