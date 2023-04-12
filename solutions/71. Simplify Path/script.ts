@@ -7,15 +7,12 @@ function simplifyPath(path: string): string {
     const segments: string[] = path.split(SEPARATOR);
     const resultSegments: string[] = [];
 
-
     for (let i: number = 0; i < segments.length; i++) {
-        if (segments[i].length === 0) {
+        if (segments[i].length === 0 || segments[i] === ".") {
             continue;
         }
 
-        if (segments[i] === ".") {
-            // skip;
-        } else if (segments[i] === "..") {
+        if (segments[i] === "..") {
             resultSegments.pop();
         } else {
             resultSegments.push(segments[i])
