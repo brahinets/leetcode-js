@@ -10,20 +10,20 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
         canPop = false;
 
         const elementThatCanBePopped: number | undefined = popped.shift();
-        if (elementThatCanBePopped) {
+        if (elementThatCanBePopped !== undefined) {
             let elementThatNeedBePopped: number | undefined = result.pop();
-            if (elementThatNeedBePopped && elementThatNeedBePopped === elementThatCanBePopped) {
+            if (elementThatNeedBePopped !== undefined && elementThatNeedBePopped === elementThatCanBePopped) {
                 canPop = true;
             } else {
                 popped.unshift(elementThatCanBePopped);
-                if (elementThatNeedBePopped) {
+                if (elementThatNeedBePopped !== undefined) {
                     result.push(elementThatNeedBePopped)
                 }
             }
         }
 
         const elementThatCanBePushed: number | undefined = pushed.shift();
-        if (elementThatCanBePushed) {
+        if (elementThatCanBePushed !== undefined) {
             result.push(elementThatCanBePushed)
             canPush = true;
         }
