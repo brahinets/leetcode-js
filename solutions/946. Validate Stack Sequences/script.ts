@@ -22,10 +22,12 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
             }
         }
 
-        const elementThatCanBePushed: number | undefined = pushed.shift();
-        if (elementThatCanBePushed !== undefined) {
-            result.push(elementThatCanBePushed)
-            canPush = true;
+        if (!canPop) {
+            const elementThatCanBePushed: number | undefined = pushed.shift();
+            if (elementThatCanBePushed !== undefined) {
+                result.push(elementThatCanBePushed)
+                canPush = true;
+            }
         }
     } while (canPush || canPop)
 
