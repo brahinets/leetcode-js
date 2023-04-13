@@ -1,0 +1,33 @@
+export {validateStackSequences}
+
+function validateStackSequences(pushed: number[], popped: number[]): boolean {
+    const result: number[] = [];
+    let canPush: boolean;
+    let canPop: boolean;
+
+    do {
+        canPush = false;
+        canPop = false;
+
+        const elementThatCanBePopped: number | undefined = popped.shift();
+        if (elementThatCanBePopped) {
+            let elementThatNeedBePopped: number | undefined = result.pop();
+            if (elementThatNeedBePopped && elementThatNeedBePopped === elementThatCanBePopped) {
+                canPop = true;
+            } else {
+                popped.unshift(elementThatCanBePopped);
+                if (elementThatNeedBePopped) {
+                    result.push(elementThatNeedBePopped)
+                }
+            }
+        }
+
+        const elementThatCanBePushed: number | undefined = pushed.shift();
+        if (elementThatCanBePushed) {
+            result.push(elementThatCanBePushed)
+            canPush = true;
+        }
+    } while (canPush || canPop)
+
+    return result.length === 0 && pushed.length === 0 && popped.length === 0;
+}
