@@ -1,6 +1,6 @@
 import {longestPalindromeSubseq} from '../script'
 
-describe('5. Longest Palindromic Substring', (): void => {
+describe('516. Longest Palindromic Subsequence', (): void => {
     it('Keep as is', (): void => {
         expect(longestPalindromeSubseq("cbbd")).toBe(2);
     });
