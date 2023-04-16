@@ -12,4 +12,8 @@ describe('516. Longest Palindromic Subsequence', (): void => {
     it('Remove multiple chars', (): void => {
         expect(longestPalindromeSubseq("abcabcabcabc")).toBe(7);
     });
+
+    it('Remove no chars', (): void => {
+        expect(longestPalindromeSubseq("aaaaaaaaaaaaaaaaaaaaa")).toBe(21);
+    });
 });

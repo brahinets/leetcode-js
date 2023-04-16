@@ -14,37 +14,24 @@ function longestPalindromeSubseq(s: string): number {
 }
 
 function generateAllSubsequences(string: string): string[] {
-    const bitmasks: number[][] = generateBitmasks(string.length);
+    const bits: number = string.length;
+    const bitsCombinations: number = Math.pow(2, bits);
     const chars: string[] = string.split("");
 
     const result: string[] = [];
-    for (const bitmask of bitmasks) {
+    for (let i: number = 0; i < bitsCombinations; i++) {
         let str: string = "";
 
-        for (let i: number = 0; i < bitmask.length; i++) {
-            str += (bitmask[i] === 1 ? chars[i] : "");
+        for (let j: number = 0; j < bits; j++) {
+            if ((i & (1 << j)) !== 0) {
+                str += chars[j];
+            }
         }
 
         result.push(str);
     }
 
     return result;
-}
-
-function generateBitmasks(bits: number): number[][] {
-    const bitmasks: number[][] = [];
-
-    for (let i: number = 0; i < Math.pow(2, bits); i++) {
-        const bitmask: number[] = [];
-
-        for (let j: number = 0; j < bits; j++) {
-            bitmask.push((i & (1 << j)) !== 0 ? 1 : 0);
-        }
-
-        bitmasks.push(bitmask);
-    }
-
-    return bitmasks;
 }
 
 const isPalindrome = (string: string): boolean => {
