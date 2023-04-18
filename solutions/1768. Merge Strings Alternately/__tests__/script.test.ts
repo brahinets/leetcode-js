@@ -3,16 +3,16 @@ import {mergeAlternately} from '../script'
 describe('1768. Merge Strings Alternately', (): void => {
     it('Equal length', (): void => {
         expect(mergeAlternately("abc", "pqr"))
-            .toStrictEqual("apbqcr");
+            .toBe("apbqcr");
     });
 
     it('First shorter', (): void => {
         expect(mergeAlternately("ab", "pqrs"))
-            .toStrictEqual("apbqrs");
+            .toBe("apbqrs");
     });
 
     it('Second shorter', (): void => {
         expect(mergeAlternately("abcd", "pq"))
-            .toStrictEqual("apbqcd");
+            .toBe("apbqcd");
     });
 })
