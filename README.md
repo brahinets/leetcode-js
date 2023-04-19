@@ -67,6 +67,7 @@
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
 1. № [1254. Number of Closed Islands](solutions/1254.%20Number%20of%20Closed%20Islands/script.ts)
+1. № [1372. Longest ZigZag Path in a Binary Tree](solutions/1372.%20Longest%20ZigZag%20Path%20in%20a%20Binary%20Tree/script.ts)
 1. № [1431. Kids With the Greatest Number of Candies](solutions/1431.%20Kids%20With%20the%20Greatest%20Number%20of%20Candies/script.ts)
 1. № [1472. Design Browser History](solutions/1472.%20Design%20Browser%20History/script.ts)
 1. № [1480. Running Sum of 1d Array](solutions/1480.%20Running%20Sum%20of%201d%20Array/script.ts)
