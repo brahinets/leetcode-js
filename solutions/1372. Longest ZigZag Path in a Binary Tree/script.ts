@@ -2,29 +2,20 @@ import {TreeNode} from "../../common/TreeNode";
 
 export {TreeNode, longestZigZag};
 
-const maxDepth = (root: TreeNode | null, toLeft: boolean, depth: number): number => {
-    if (!root) {
-        return depth;
+const maxDepth = (node: TreeNode | null, toLeft: boolean, depth: number): number => {
+    if (!node) {
+        return depth - 1;
     }
 
-    let keep: number = depth;
-    let start: number = 0;
+    const keepGoing: number = toLeft ?
+        maxDepth(node.left, false, depth + 1) :
+        maxDepth(node.right, true, depth + 1);
 
-    if (toLeft) {
-        if (root.left) {
-            keep = maxDepth(root.left, false, depth + 1);
-        } else {
-            start = maxDepth(root.right, false, 0);
-        }
-    } else {
-        if (root.right) {
-            keep = maxDepth(root.right, true, depth + 1);
-        } else {
-            start = maxDepth(root.left, true, 0);
-        }
-    }
+    const startFromNode: number = toLeft ?
+        maxDepth(node.right, true, 1) :
+        maxDepth(node.left, false, 1);
 
-    return Math.max(start, keep);
+    return Math.max(startFromNode, keepGoing);
 }
 
 function longestZigZag(root: TreeNode | null): number {
