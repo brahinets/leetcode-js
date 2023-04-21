@@ -3,7 +3,7 @@ import {TreeNode} from '../../common/TreeNode'
 export {levelOrder, TreeNode}
 
 function levelOrder(root: TreeNode | null): number[][] {
-    let result: number[][] = [];
+    const result: number[][] = [];
 
     collect(root, 0, result);
 
