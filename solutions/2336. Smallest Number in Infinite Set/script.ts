@@ -23,6 +23,21 @@ class SmallestInfiniteSet {
         return min;
     }
 
+    findRangeIncluding(number: number): number | undefined {
+        let index: number | undefined;
+
+        for (let i: number = 0; i < this.ranges.length; i++) {
+            if (this.ranges[i].start <= number) {
+                let end: number | undefined = this.ranges[i].end;
+                if (end === undefined || end >= number) {
+                    index = i;
+                }
+            }
+        }
+
+        return index;
+    }
+
     popSmallest(): number {
         const index: number = this.findRangeBiggerThan(0);
         const min: Range = this.ranges[index];
@@ -36,6 +51,15 @@ class SmallestInfiniteSet {
         }
 
         return min.start;
+    }
+
+    addBack(num: number): void {
+        const index: number | undefined = this.findRangeIncluding(num);
+        if (index !== undefined) {
+            return;
+        }
+
+        this.ranges.push(new Range(num, num));
     }
 }
 

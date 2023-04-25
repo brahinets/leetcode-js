@@ -5,6 +5,8 @@ describe('2336. Smallest Number in Infinite Set', (): void => {
         const set: SmallestInfiniteSet = new SmallestInfiniteSet()
         let number;
 
+        set.addBack(2);
+
         number = set.popSmallest();
         expect(number).toBe(1);
 
