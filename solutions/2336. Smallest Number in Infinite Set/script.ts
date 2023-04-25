@@ -11,7 +11,7 @@ class SmallestInfiniteSet {
     findRangeBiggerThan(number: number): number {
         let min: number | undefined;
         for (let i: number = 0; i < this.ranges.length; i++) {
-            if (min === undefined || this.ranges[i].start < number && this.ranges[i].start < this.ranges[i].start) {
+            if (min === undefined || this.ranges[i].start > number && this.ranges[i].start < this.ranges[min].start) {
                 min = i;
             }
         }

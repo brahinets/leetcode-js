@@ -16,6 +16,11 @@ describe('2336. Smallest Number in Infinite Set', (): void => {
         number = set.popSmallest();
         expect(number).toBe(3);
 
+        set.addBack(1);
+
+        number = set.popSmallest();
+        expect(number).toBe(1);
+
         number = set.popSmallest();
         expect(number).toBe(4);
 
