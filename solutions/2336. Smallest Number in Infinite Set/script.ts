@@ -59,7 +59,15 @@ class SmallestInfiniteSet {
             return;
         }
 
-        this.ranges.push(new Range(num, num));
+        const bigger: number = this.findRangeBiggerThan(num);
+        if (this.ranges[bigger].start === num + 1) {
+            const before: Range[] = this.ranges.slice(0, bigger)
+            const after: Range[] = this.ranges.slice(bigger + 1);
+
+            this.ranges = [...before, new Range(num, this.ranges[bigger].end), ...after];
+        } else {
+            this.ranges.push(new Range(num, num));
+        }
     }
 }
 
