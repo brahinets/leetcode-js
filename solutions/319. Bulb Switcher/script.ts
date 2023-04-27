@@ -1,13 +1,12 @@
 export {bulbSwitch}
 
 function bulbSwitch(n: number): number {
-    const bulbs: number[] = new Array<number>(n);
-
-    for (let j: number = 0; j < bulbs.length; j++) {
-        bulbs[j] = calculateState(j + 1, n);
+    let on: number = 0;
+    for (let j: number = 0; j < n; j++) {
+        on += calculateState(j + 1, n);
     }
 
-    return bulbs.filter((bulb: number): boolean => bulb === 1).length;
+    return on;
 }
 
 function calculateState(bulb: number, total: number): number {
