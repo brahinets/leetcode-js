@@ -39,6 +39,7 @@
 1. № [258. Add Digits](solutions/258.%20Add%20Digits/script.ts)
 1. № [278. First Bad Version](solutions/278.%20First%20Bad%20Version/script.ts)
 1. № [299. Bulls and Cows](solutions/299.%20Bulls%20and%20Cows/script.ts)
+1. № [319. Bulb Switcher](solutions/319.%20Bulb%20Switcher/script.ts)
 1. № [382. Linked List Random Node](solutions/382.%20Linked%20List%20Random%20Node/script.ts)
 1. № [392. Is Subsequence](solutions/392.%20Is%20Subsequence/script.ts)
 1. № [394. Decode String](solutions/394.%20Decode%20String/script.ts)
