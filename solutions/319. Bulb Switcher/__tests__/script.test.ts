@@ -15,4 +15,9 @@ describe('319. Bulb Switcher', (): void => {
         expect(bulbSwitch(3))
             .toBe(1);
     });
+
+    it('On some more', (): void => {
+        expect(bulbSwitch(4))
+            .toBe(2);
+    });
 })
