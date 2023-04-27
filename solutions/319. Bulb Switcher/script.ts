@@ -1,20 +1,22 @@
 export {bulbSwitch}
 
 function bulbSwitch(n: number): number {
-    const bulbs: number[] = new Array<number>(n + 1);
+    const bulbs: number[] = new Array<number>(n);
 
-    let step: number = 0;
-    while (step <= n) {
-        for (let j: number = 0; j < bulbs.length; j++) {
-            if (step === 0) {
-                bulbs[j] = 0;
-            } else if (j % step === 0 && j > 0) {
-                bulbs[j] = (bulbs[j] + 1) % 2;
-            }
-        }
-
-        step++;
+    for (let j: number = 0; j < bulbs.length; j++) {
+        bulbs[j] = calculateState(j + 1, n);
     }
 
-    return bulbs.slice(1).filter((bulb: number): boolean => bulb === 1).length;
+    return bulbs.filter((bulb: number): boolean => bulb === 1).length;
+}
+
+function calculateState(bulb: number, total: number): number {
+    let state: boolean = false;
+    for (let step: number = 1; step <= total; step++) {
+        if (bulb % step === 0) {
+            state = !state;
+        }
+    }
+
+    return state ? 1 : 0;
 }
