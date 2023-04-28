@@ -19,9 +19,5 @@ function bulbSwitch(n: number): number {
  * @return end state of bulb
  */
 function isOn(bulb: number): boolean {
-    if (Math.floor(Math.sqrt(bulb)) * Math.floor(Math.sqrt(bulb)) === bulb) {
-        return true;
-    } else {
-        return false;
-    }
+    return Math.floor(Math.sqrt(bulb)) * Math.floor(Math.sqrt(bulb)) === bulb;
 }
