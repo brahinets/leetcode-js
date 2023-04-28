@@ -20,4 +20,9 @@ describe('319. Bulb Switcher', (): void => {
         expect(bulbSwitch(4))
             .toBe(2);
     });
+
+    it('Performance test', (): void => {
+        expect(bulbSwitch(99999))
+            .toBe(316);
+    });
 })
