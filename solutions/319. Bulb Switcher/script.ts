@@ -3,19 +3,25 @@ export {bulbSwitch}
 function bulbSwitch(n: number): number {
     let on: number = 0;
     for (let j: number = 0; j < n; j++) {
-        on += calculateState(j + 1);
+        if (isOn(j + 1)) {
+            on++;
+        }
     }
 
     return on;
 }
 
-function calculateState(bulb: number): number {
-    let state: boolean = false;
-    for (let step: number = 1; step <= bulb; step++) {
-        if (bulb % step === 0) {
-            state = !state;
-        }
+/**
+ * Number has odd number of divisors if and only if it is a perfect square, because each divisor less than the
+ * square root of the number corresponds to a divisor greater than the square root of the number.
+ *
+ * @param bulb - bulb index, starting from 1
+ * @return end state of bulb
+ */
+function isOn(bulb: number): boolean {
+    if (Math.floor(Math.sqrt(bulb)) * Math.floor(Math.sqrt(bulb)) === bulb) {
+        return true;
+    } else {
+        return false;
     }
-
-    return state ? 1 : 0;
 }
