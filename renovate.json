@@ -2,5 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
-  ]
+  ],
+  "schedule": "every Saturday at 10am",
+  "timezone": "Europe/Kyiv"
 }
