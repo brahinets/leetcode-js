@@ -6,13 +6,10 @@ function middleNode(head: ListNode | null): ListNode | null {
     let long: ListNode | null = head;
     let result: ListNode | null = head;
 
-    while (long) {
-        long = long?.next || null;
-        if (long) {
-            result = result?.next || null;
-        }
+    while (long && long.next && result) {
+        long = long.next.next;
 
-        long = long?.next || null;
+        result = result.next;
     }
 
     return result;
