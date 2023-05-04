@@ -9,7 +9,7 @@ function canVote(member: string): boolean {
 }
 
 function hasVoters(members: string[]): boolean {
-    return members.filter((e: string): boolean => e !== BAN).length > 1;
+    return new Set(members.filter((e: string): boolean => e !== BAN)).size > 1;
 }
 
 function predictPartyVictory(senate: string): string {
