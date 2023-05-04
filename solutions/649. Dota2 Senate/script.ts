@@ -1,15 +1,17 @@
 export {predictPartyVictory}
 
 const BAN: string = "BAN";
-const RADIANT:string = "R";
-const DIRE:string = "D";
+const RADIANT: string = "R";
+const DIRE: string = "D";
 
 function canVote(member: string): boolean {
     return member !== BAN;
 }
 
 function hasVoters(members: string[]): boolean {
-    return new Set(members.filter((e: string): boolean => e !== BAN)).size > 1;
+    const hasRadiant: boolean = members.find((member: string): boolean => member === RADIANT) !== undefined;
+    const hasDire: boolean = members.find((member: string): boolean => member === DIRE) !== undefined;
+    return hasRadiant && hasDire;
 }
 
 function predictPartyVictory(senate: string): string {
