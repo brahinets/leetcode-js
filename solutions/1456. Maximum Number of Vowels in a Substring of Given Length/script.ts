@@ -8,13 +8,22 @@ function isVowel(letter: string): boolean {
 
 function maxVowels(s: string, k: number): number {
     let max: number = 0;
+    let count: number = 0;
 
-    for (let i: number = 0; i <= s.length - k; i++) {
-        let count: number = 0;
-        for (let j: number = i; j < i + k; j++) {
-            if (isVowel(s[j])) {
-                count++;
-            }
+    for (let i: number = 0; i < k; i++) {
+        if (isVowel(s[i])) {
+            count++;
+        }
+    }
+    max = count;
+
+    for (let i: number = k; i < s.length; i++) {
+        if (isVowel(s[i - k])) {
+            count--;
+        }
+
+        if (isVowel(s[i])) {
+            count++;
         }
 
         if (count > max) {
