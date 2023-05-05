@@ -74,6 +74,7 @@
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
 1. № [1372. Longest ZigZag Path in a Binary Tree](solutions/1372.%20Longest%20ZigZag%20Path%20in%20a%20Binary%20Tree/script.ts)
 1. № [1431. Kids With the Greatest Number of Candies](solutions/1431.%20Kids%20With%20the%20Greatest%20Number%20of%20Candies/script.ts)
+1. № [1456. Maximum Number of Vowels in a Substring of Given Length](solutions/1456.%20Maximum%20Number%20of%20Vowels%20in%20a%20Substring%20of%20Given%20Length/script.ts)
 1. № [1472. Design Browser History](solutions/1472.%20Design%20Browser%20History/script.ts)
 1. № [1480. Running Sum of 1d Array](solutions/1480.%20Running%20Sum%20of%201d%20Array/script.ts)
 1. № [1491. Average Salary Excluding the Minimum and Maximum Salary](solutions/1491.%20Average%20Salary%20Excluding%20the%20Minimum%20and%20Maximum%20Salary/script.ts)
