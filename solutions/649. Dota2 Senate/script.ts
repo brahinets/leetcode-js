@@ -1,8 +1,8 @@
 export {predictPartyVictory}
 
 const BAN: string = "BAN";
-const RADIANT: string = "R";
-const DIRE: string = "D";
+const RADIANT= "R";
+const DIRE= "D";
 
 function canVote(member: string): boolean {
     return member !== BAN;
@@ -14,21 +14,27 @@ function hasVoters(members: string[]): boolean {
     return hasRadiant && hasDire;
 }
 
+function findNextOpponentToBan(attackerIndex: number, members: string[], toBan: "R" | "D"):number {
+    let next: number = attackerIndex + 1;
+
+    while (members[next] !== toBan) {
+        next = (next + 1) % members.length;
+    }
+
+    return next;
+}
+
 function predictPartyVictory(senate: string): string {
     const members: string[] = senate.split("");
     const roundCounter: RoundCounter = new RoundCounter(members.length);
 
     while (hasVoters(members)) {
         const member: string = members[roundCounter.get()];
-        const toBan: string = member === RADIANT ? DIRE : RADIANT;
+        const toBan: "R" | "D" = member === RADIANT ? DIRE : RADIANT;
 
         if (canVote(member)) {
-            let next: number = roundCounter.next();
-            while (members[next] !== toBan) {
-                next = (next + 1) % members.length;
-            }
-
-            members[next] = BAN;
+            const opponentToBan: number = findNextOpponentToBan(roundCounter.next(), members, toBan);
+            members[opponentToBan] = BAN;
         }
 
         roundCounter.increment();
