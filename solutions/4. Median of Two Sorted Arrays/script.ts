@@ -1,5 +1,5 @@
-const findMedianSortedArrays = function (nums1: number[], nums2: number[]) {
-    let numbers: number[] = [...nums1, ...nums2]
+const findMedianSortedArrays = function (nums1: number[], nums2: number[]):number {
+    const numbers: number[] = [...nums1, ...nums2]
         .sort((a: number, b: number) => a - b);
 
     if (numbers.length % 2 === 0) {
@@ -7,4 +7,4 @@ const findMedianSortedArrays = function (nums1: number[], nums2: number[]) {
     } else {
         return numbers[Math.floor(numbers.length / 2)];
     }
-};
+}
