@@ -78,6 +78,7 @@
 1. № [1472. Design Browser History](solutions/1472.%20Design%20Browser%20History/script.ts)
 1. № [1480. Running Sum of 1d Array](solutions/1480.%20Running%20Sum%20of%201d%20Array/script.ts)
 1. № [1491. Average Salary Excluding the Minimum and Maximum Salary](solutions/1491.%20Average%20Salary%20Excluding%20the%20Minimum%20and%20Maximum%20Salary/script.ts)
+1. № [1498. Number of Subsequences That Satisfy the Given Sum Condition](solutions/1498.%20Number%20of%20Subsequences%20That%20Satisfy%20the%20Given%20Sum%20Condition/script.ts)
 1. № [1523. Count Odd Numbers in an Interval Range](solutions/1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.ts)
 1. № [1539. Kth Missing Positive Number](solutions/1539.%20Kth%20Missing%20Positive%20Number/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
