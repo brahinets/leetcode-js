@@ -1,3 +1,5 @@
+export {findMedianSortedArrays}
+
 const findMedianSortedArrays = function (nums1: number[], nums2: number[]):number {
     const numbers: number[] = [...nums1, ...nums2]
         .sort((a: number, b: number) => a - b);
