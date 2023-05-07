@@ -8,12 +8,12 @@ function numSubseq(nums: number[], target: number): number {
     for (let left: number = 0; left < nums.length; left++) {
         const right: number = binarySearch(nums, target - nums[left]) - 1;
         if (left <= right) {
-            const validCombinations: number = 2 ** (right - left);
-            answer += validCombinations;
+            const validCombinationsBetween: number = 2 ** (right - left) % mod;
+            answer = (answer + validCombinationsBetween) % mod;
         }
-
     }
-    return answer % mod;
+
+    return answer;
 }
 
 function binarySearch(nums: number[], target: number): number {
