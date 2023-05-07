@@ -1,3 +1,5 @@
+export {reverse}
+
 const MAX_INT32: number = 2 ** 31 - 1;
 const MIN_INT32: number = -1 * 2 ** 31;
 
