@@ -5,7 +5,10 @@ function diagonalSum(mat: number[][]): number {
 
     for (let i: number = 0; i < mat.length; i++) {
         for (let j: number = 0; j < mat.length; j++) {
-            if (i === j || i + j === mat.length - 1) {
+            const mainDiagonal:boolean = i === j;
+            const secondaryDiagonal:boolean = i + j === mat.length - 1;
+
+            if (mainDiagonal || secondaryDiagonal) {
                 sum += mat[i][j];
             }
         }
