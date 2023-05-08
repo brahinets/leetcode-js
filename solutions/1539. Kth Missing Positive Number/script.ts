@@ -1,3 +1,4 @@
+export {findKthPositive}
 const findKthPositive = (arr: number[], k: number): number => {
     let missedCount: number = 0;
     let guess: number = 1;
@@ -11,4 +12,4 @@ const findKthPositive = (arr: number[], k: number): number => {
     }
 
     return guess - 1;
-};
+}
