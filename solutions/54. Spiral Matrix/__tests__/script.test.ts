@@ -33,6 +33,20 @@ describe('54. Spiral Matrix', (): void => {
         ])).toStrictEqual([7, 9, 6]);
     });
 
+    it('Square small', (): void => {
+        expect(spiralOrder([
+            [1, 2],
+            [3, 4]
+        ])).toStrictEqual([1, 2, 4, 3]);
+    });
+
+    it('Non square small', (): void => {
+        expect(spiralOrder([
+            [2, 5, 8],
+            [4, 0, -1]
+        ])).toStrictEqual([2, 5, 8, -1, 0, 4]);
+    });
+
     it('Square', (): void => {
         expect(spiralOrder([
             [1, 2, 3],
