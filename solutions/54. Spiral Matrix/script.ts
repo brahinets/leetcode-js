@@ -1,4 +1,4 @@
-export {spiralOrder, matrixBorder}
+export {spiralOrder}
 
 function spiralOrder(matrix: number[][]): number[] {
     const result: number[] = [];
