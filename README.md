@@ -17,6 +17,7 @@
 1. № [28. Find the Index of the First Occurrence in a String](solutions/28.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/script.js)
 1. № [35. Search Insert Position](solutions/35.%20Search%20Insert%20Position/script.ts)
 1. № [54. Spiral Matrix](solutions/54.%20Spiral%20Matrix/script.ts)
+1. № [59. Spiral Matrix II](solutions/59.%20Spiral%20Matrix%20II/script.ts)
 1. № [62. Unique Paths](solutions/62.%20Unique%20Paths/script.ts)
 1. № [67. Add Binary](solutions/67.%20Add%20Binary/script.js)
 1. № [70. Climbing Stairs](solutions/70.%20Climbing%20Stairs/script.ts)
