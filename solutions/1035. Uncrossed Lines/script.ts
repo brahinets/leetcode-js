@@ -1,19 +1,17 @@
-import {matrixOfZeros} from "../../common/array-utils";
-
 export {maxUncrossedLines}
 
 function maxUncrossedLines(up: number[], bottom: number[]): number {
-    const crossingsUntil: number[][] = matrixOfZeros(up.length + 1, bottom.length + 1);
+    return uncrossedLines(up, bottom, 0, 0);
+}
 
-    for (let i: number = 1; i <= up.length; i++) {
-        for (let j: number = 1; j <= bottom.length; j++) {
-            if (up[i - 1] === bottom[j - 1]) {
-                crossingsUntil[i][j] = 1 + crossingsUntil[i - 1][j - 1];
-            } else {
-                crossingsUntil[i][j] = Math.max(crossingsUntil[i - 1][j], crossingsUntil[i][j - 1]);
-            }
-        }
+function uncrossedLines(up: number[], bottom: number[], start: number, end: number): number {
+    if (start === up.length || end === bottom.length) {
+        return 0;
     }
 
-    return crossingsUntil[up.length][bottom.length]
+    if (up[start] === bottom[end]) {
+        return 1 + uncrossedLines(up, bottom, start + 1, end + 1);
+    } else {
+        return Math.max(uncrossedLines(up, bottom, start + 1, end), uncrossedLines(up, bottom, start, end + 1));
+    }
 }
