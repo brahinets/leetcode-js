@@ -1,16 +1,9 @@
+import {matrixOfZeros} from "../../common/array-utils";
+
 export {uniquePaths}
 
-function createZerosMatrix(m: number, n: number): number[][] {
-    const matrix: number[][] = [];
-    for (let i: number = 0; i < m; i++) {
-        matrix.push(new Array(n).fill(0));
-    }
-
-    return matrix;
-}
-
 function uniquePaths(m: number, n: number): number {
-    const matrix: number[][] = createZerosMatrix(m, n);
+    const matrix: number[][] = matrixOfZeros(m, n);
 
     matrix[0][0] = 1;
 
