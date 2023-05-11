@@ -71,6 +71,7 @@
 1. № [958. Check Completeness of a Binary Tree](solutions/958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
 1. № [989. Add to Array-Form of Integer](solutions/989.%20Add%20to%20Array-Form%20of%20Integer/script.js)
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
+1. № [1035. Uncrossed Lines](solutions/1035.%20Uncrossed%20Lines/script.ts)
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
 1. № [1254. Number of Closed Islands](solutions/1254.%20Number%20of%20Closed%20Islands/script.ts)
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
