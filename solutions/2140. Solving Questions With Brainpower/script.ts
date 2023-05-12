@@ -1,7 +1,9 @@
+import {arrayOfZeros} from '../../common/array-utils'
+
 export {mostPoints}
 
 function mostPoints(questions: number[][]): number {
-    const maxPointStartingFrom: number[] = new Array<number>(questions.length).fill(0);
+    const maxPointStartingFrom: number[] = arrayOfZeros(questions.length);
 
     maxPointStartingFrom[questions.length - 1] = questions[questions.length - 1][0];
     for (let i: number = questions.length - 2; i >= 0; i--) {
