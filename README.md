@@ -87,6 +87,7 @@
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
 1. № [1822. Sign of the Product of an Array](solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array/script.ts)
+1. № [2140. Solving Questions With Brainpower](solutions/2140.%20Solving%20Questions%20With%20Brainpower/script.ts)
 1. № [2187. Minimum Time to Complete Trips](solutions/2187.%20Minimum%20Time%20to%20Complete%20Trips/script.ts)
 1. № [2215. Find the Difference of Two Arrays](solutions/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/script.ts)
 1. № [2235. Add Two Integers](solutions/2235.%20Add%20Two%20Integers/script.ts)
