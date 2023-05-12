@@ -1,12 +1,14 @@
-export function matrixOfZeros(rows: number, cols: number): number[][] {
+export {matrixOf, matrixOfZeros, matrixOfEmptyStrings}
+
+function matrixOfZeros(rows: number, cols: number): number[][] {
     return matrixOf(0, rows, cols);
 }
 
-export function matrixOfEmptyStrings(rows: number, cols: number): string[][] {
+function matrixOfEmptyStrings(rows: number, cols: number): string[][] {
     return matrixOf("", rows, cols);
 }
 
-export function matrixOf<Type>(val: Type, rows: number, cols: number): Type[][] {
+function matrixOf<Type>(val: Type, rows: number, cols: number): Type[][] {
     const matrix: Type[][] = [];
 
     for (let i: number = 0; i < rows; i++) {
