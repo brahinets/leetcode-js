@@ -5,11 +5,14 @@ function maxScore(nums: number[]): number {
 
     for (let i: number = nums.length / 2; i > 0; i--) {
         const pair: number[] = getPairWithBiggestGcd(nums);
+        const first: number = pair[0];
+        const second: number = pair[1];
+        const gcd: number = pair[2];
 
-        sum += (i * gcd(nums[pair[0]], nums[pair[1]]))
+        sum += (i * gcd);
 
-        const higher: number = Math.max(pair[0], pair[1]);
-        const lower: number = Math.min(pair[0], pair[1]);
+        const higher: number = Math.max(first, second);
+        const lower: number = Math.min(first, second);
         nums.splice(higher, 1)
         nums.splice(lower, 1)
     }
@@ -44,9 +47,9 @@ function getPairWithBiggestGcd(nums: number[]): number[] {
         }
     }
 
-    if (first === undefined || second === undefined) {
+    if (first === undefined || second === undefined || maxGcd === -1) {
         throw new Error("GCD not found");
     }
 
-    return [first, second];
+    return [first, second, maxGcd];
 }
