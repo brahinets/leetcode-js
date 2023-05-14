@@ -34,15 +34,13 @@ function getPairWithBiggestGcd(nums: number[]): number[] {
     let maxGcd: number = -1;
 
     for (let i: number = 0; i < nums.length; i++) {
-        for (let j: number = 0; j < nums.length; j++) {
-            if (i !== j) {
-                const gcdOf: number = gcd(nums[i], nums[j]);
+        for (let j: number = i + 1; j < nums.length; j++) {
+            const gcdOf: number = gcd(nums[i], nums[j]);
 
-                if (gcdOf > maxGcd) {
-                    maxGcd = gcdOf;
-                    first = i;
-                    second = j;
-                }
+            if (gcdOf > maxGcd) {
+                maxGcd = gcdOf;
+                first = i;
+                second = j;
             }
         }
     }
