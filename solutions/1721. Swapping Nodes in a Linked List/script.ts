@@ -1,6 +1,6 @@
 import {ListNode} from "../../common/ListNode";
 
-export {swapNodes, ListNode};
+export {swapNodes};
 
 function swapNodes(head: ListNode | null, k: number): ListNode | null {
     let count: number = 1;
