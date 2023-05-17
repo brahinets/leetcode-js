@@ -1,4 +1,4 @@
-import {linkedListOf, ListNode} from '../list-utils'
+import {linkedListOf, linkedListToArray, ListNode} from '../list-utils'
 
 describe('Linked List Factory', (): void => {
     it('Null to list', (): void => {
@@ -18,5 +18,25 @@ describe('Linked List Factory', (): void => {
                     new ListNode(2,
                         new ListNode(3)))
             );
+    });
+})
+
+describe('Linked List To Array', (): void => {
+    it('Null to array', (): void => {
+        expect(linkedListToArray(null))
+            .toStrictEqual(null);
+    });
+
+    it('Singleton list to array', (): void => {
+        expect(linkedListToArray(new ListNode(1)))
+            .toStrictEqual([1]);
+    });
+
+    it('Non-empty list to array', (): void => {
+        expect(linkedListToArray(
+            new ListNode(1,
+                new ListNode(2,
+                    new ListNode(3))))
+        ).toStrictEqual([1, 2, 3]);
     });
 })

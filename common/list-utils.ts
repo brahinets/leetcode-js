@@ -1,6 +1,6 @@
 import {ListNode} from "./ListNode";
 
-export {linkedListOf, ListNode}
+export {linkedListOf, linkedListToArray, ListNode}
 
 function linkedListOf(values: number[] | null): ListNode | null {
     if (!values || values.length === 0) {
@@ -15,4 +15,19 @@ function linkedListOf(values: number[] | null): ListNode | null {
     }
 
     return head;
+}
+
+function linkedListToArray(head: ListNode | null): number[] | null {
+    if (!head) {
+        return null;
+    }
+
+    const result: number[] = [];
+
+    while (head) {
+        result.push(head.val);
+        head = head.next;
+    }
+
+    return result;
 }
