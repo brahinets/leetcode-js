@@ -1,15 +1,11 @@
-const isNumber = (char) => char.match(/^\d+$/);
-const MAX_INT32 = 2 ** 31 - 1;
-const MIN_INT32 = -1 * 2 ** 31;
+const isNumber = (char: string): boolean => char.match(/^\d+$/) !== null;
+const MAX_INT32: number = 2 ** 31 - 1;
+const MIN_INT32: number = -1 * 2 ** 31;
 
-/**
- * @param {string} s
- * @return {number}
- */
-const myAtoi = function (s) {
-    let digits = "";
+function myAtoi(s: string): number {
+    let digits: string = "";
 
-    for (let char of s.trim()) {
+    for (const char of s.trim()) {
         if (char === '-' || char === '+') {
             if (digits) {
                 break;
@@ -23,6 +19,6 @@ const myAtoi = function (s) {
         }
     }
 
-    const number = Number(digits) ? Number(digits) : 0;
+    const number: number = Number(digits) ? Number(digits) : 0;
     return number > MAX_INT32 ? MAX_INT32 : number < MIN_INT32 ? MIN_INT32 : number;
-};
+}
