@@ -3,6 +3,10 @@
   "extends": [
     "config:base"
   ],
-  "schedule": "after 10am and before 11am",
+  "schedule": [
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend"
+  ],
   "timezone": "Europe/Kyiv"
 }
