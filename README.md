@@ -1,6 +1,9 @@
 # LeetCode with JavaScript: give your brain a workout
 ![image](https://user-images.githubusercontent.com/4119411/219785121-7a80a215-fb7d-46cb-bc66-1d9fd34302c5.png)
 
+<details>
+  <summary>All Solutions</summary>
+
 1. № [1. Two Sum](solutions/1.%20Two%20Sum/script.ts)
 1. № [2. Add Two Numbers](solutions/2.%20Add%20Two%20Numbers/script.ts)
 1. № [4. Median of Two Sorted Arrays](solutions/4.%20Median%20of%20Two%20Sorted%20Arrays/script.ts)
@@ -104,3 +107,5 @@
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
 1. № [2439. Minimize Maximum of Array](solutions/2439.%20Minimize%20Maximum%20of%20Array/script.ts)
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
+
+</details>
