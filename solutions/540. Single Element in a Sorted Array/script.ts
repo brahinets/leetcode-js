@@ -1,3 +1,5 @@
+export {singleNonDuplicate}
+
 function singleNonDuplicate(nums: number[]): number {
     const counts: Map<number, number> = count(nums);
 
