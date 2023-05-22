@@ -2,14 +2,14 @@ import {count} from '../../common/array-utils'
 
 export {topKFrequent}
 
-function topKFrequent(words: string[], k: number): string[] {
-    const counting: Map<string, number> = count(words);
-    words = sort(words, counting);
+function topKFrequent(values: string[], k: number): string[] {
+    const counting: Map<string, number> = count(values);
+    values = sort(values, counting);
 
     const result: string[] = [];
     let i: number = 0;
-    while (result.length < k && i < words.length) {
-        const word: string = words[words.length - 1 - i];
+    while (result.length < k && i < values.length) {
+        const word: string = values[values.length - 1 - i];
 
         if (!arrayContains(result, word)) {
             result.push(word);
@@ -21,20 +21,20 @@ function topKFrequent(words: string[], k: number): string[] {
     return result;
 }
 
-function arrayContains(words: string[], targetWord: string): boolean {
-    return words.some((word: string): boolean => word === targetWord);
+function arrayContains(values: string[], targetValue: string): boolean {
+    return values.some((value: string): boolean => value === targetValue);
 }
 
-function sort(words: string[], counting: Map<string, number>): string[] {
-    const strings: string[] = [...words];
+function sort(values: string[], counting: Map<string, number>): string[] {
+    const valuesCopy: string[] = [...values];
 
-    return strings.sort((s1: string, s2: string): number => {
-        let counter: number = (counting.get(s1) || 0) - (counting.get(s2) || 0);
+    return valuesCopy.sort((v1: string, v2: string): number => {
+        let counter: number = (counting.get(v1) || 0) - (counting.get(v2) || 0);
 
         if (counter !== 0) {
             return counter;
         }
 
-        return s2.localeCompare(s1);
+        return v2.localeCompare(v1);
     })
 }
