@@ -1,3 +1,5 @@
+import {count} from '../../common/array-utils'
+
 export {topKFrequent}
 
 function topKFrequent(nums: number[], k: number): number[] {
@@ -35,11 +37,4 @@ function sort(nums: number[], counting: Map<number, number>): number[] {
 
         return 1;
     })
-}
-
-function count(nums: number[]): Map<number, number> {
-    return nums.reduce((count: Map<number, number>, num: number) => {
-        count.set(num, (count.get(num) || 0) + 1);
-        return count;
-    }, new Map<number, number>());
 }

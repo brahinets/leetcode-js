@@ -1,5 +1,6 @@
 export {matrixOf, matrixOfZeros, matrixOfEmptyStrings}
 export {arrayOf, arrayOfZeros}
+export {count}
 
 function matrixOfZeros(rows: number, cols: number): number[][] {
     return matrixOf(0, rows, cols);
@@ -30,4 +31,11 @@ function arrayOfZeros<Type>(size: number): number[] {
 
 function arrayOf<Type>(val: Type, size: number): Type[] {
     return new Array<Type>(size).fill(val);
+}
+
+function count<Type>(nums: Type[]): Map<Type, number> {
+    return nums.reduce((count: Map<Type, number>, num: Type) => {
+        count.set(num, (count.get(num) || 0) + 1);
+        return count;
+    }, new Map<Type, number>());
 }
