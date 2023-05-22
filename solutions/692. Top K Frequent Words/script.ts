@@ -7,15 +7,12 @@ function topKFrequent(values: string[], k: number): string[] {
     values = sort(values, counting);
 
     const result: string[] = [];
-    let i: number = 0;
-    while (result.length < k && i < values.length) {
+    for (let i: number = 0; i < values.length && result.length < k; i++) {
         const word: string = values[values.length - 1 - i];
 
         if (!arrayContains(result, word)) {
             result.push(word);
         }
-
-        i++;
     }
 
     return result;
