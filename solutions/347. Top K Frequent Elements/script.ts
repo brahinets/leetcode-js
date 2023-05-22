@@ -7,15 +7,12 @@ function topKFrequent(values: number[], k: number): number[] {
     values = sort(values, counting);
 
     const result: number[] = [];
-    let i: number = 0;
-    while (result.length < k && i < values.length) {
+    for (let i: number = 0; i < values.length && result.length < k; i++) {
         const num: number = values[values.length - 1 - i];
 
         if (!arrayContains(result, num)) {
             result.push(num);
         }
-
-        i++;
     }
 
     return result;
