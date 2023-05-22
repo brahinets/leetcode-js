@@ -1,3 +1,5 @@
+import {count} from '../../common/array-utils'
+
 export {topKFrequent}
 
 function topKFrequent(words: string[], k: number): string[] {
@@ -35,11 +37,4 @@ function sort(words: string[], counting: Map<string, number>): string[] {
 
         return s2.localeCompare(s1);
     })
-}
-
-function count(words: string[]): Map<string, number> {
-    return words.reduce((count: Map<string, number>, word: string) => {
-        count.set(word, (count.get(word) || 0) + 1);
-        return count;
-    }, new Map<string, number>());
 }
