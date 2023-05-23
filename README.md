@@ -23,7 +23,7 @@
 1. № [54. Spiral Matrix](solutions/54.%20Spiral%20Matrix/script.ts)
 1. № [59. Spiral Matrix II](solutions/59.%20Spiral%20Matrix%20II/script.ts)
 1. № [62. Unique Paths](solutions/62.%20Unique%20Paths/script.ts)
-1. № [67. Add Binary](solutions/67.%20Add%20Binary/script.js)
+1. № [67. Add Binary](solutions/67.%20Add%20Binary/script.ts)
 1. № [70. Climbing Stairs](solutions/70.%20Climbing%20Stairs/script.ts)
 1. № [71. Simplify Path](solutions/71.%20Simplify%20Path/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
