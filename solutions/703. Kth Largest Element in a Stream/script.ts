@@ -23,6 +23,6 @@ class KthLargest {
 
         numbers.sort((a: number, b: number): number => a - b);
 
-        return numbers.splice(numbers.length - this.limit);
+        return numbers.splice(Math.max(numbers.length - this.limit, 0));
     }
 }

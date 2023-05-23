@@ -21,4 +21,24 @@ describe('703. Kth Largest Element in a Stream', (): void => {
         result = data.add(4);
         expect(result).toBe(8);
     });
+
+    it('Verify with smaller initial size', (): void => {
+        const data: KthLargest = new KthLargest(3,[5,-1]);
+
+        let result;
+        result = data.add(2);
+        expect(result).toBe(-1);
+
+        result = data.add(1);
+        expect(result).toBe(1);
+
+        result = data.add(-1);
+        expect(result).toBe(1);
+
+        result = data.add(3);
+        expect(result).toBe(2);
+
+        result = data.add(4);
+        expect(result).toBe(3);
+    });
 })
