@@ -1,3 +1,5 @@
+export {isPalindrome}
+
 const isPalindrome = function (x: number): boolean {
     const str: string = String(x);
     const middle: number = str.length / 2;
