@@ -11,13 +11,15 @@ function longestCommonPrefix(strs: string[]): string {
     const minLength: number = strs[0].length;
 
     for (let shift: number = 0; shift < minLength; shift++) {
-        const chars:Set<string> = new Set<string>();
+        const chars: Set<string> = new Set<string>();
 
         for (const s of strs) {
             chars.add(s.charAt(shift))
         }
 
-        if(chars.size === 1) {
+        const allLettersTheSame: boolean = chars.size === 1;
+
+        if (allLettersTheSame) {
             const [char] = chars;
             prefix += char;
         } else {
