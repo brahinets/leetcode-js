@@ -12,7 +12,7 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
         subsequence.sort((p1: Pair, p2: Pair): number => p2.summer - p1.summer);
 
         if (subsequence.length > k) {
-            subsequence.splice(subsequence.length - 1, 1);
+            subsequence.pop();
         }
 
         if (subsequence.length === k) {
