@@ -9,12 +9,16 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
     const subsequence: Pair[] = [];
 
     for (const pair of data) {
-        subsequence.push(pair);
-        subsequence.sort((p1: Pair, p2: Pair): number => p2.summer - p1.summer);
-        sum += pair.summer;
+        let i: number = 0;
+        while (i < subsequence.length && pair.summer > subsequence[i].summer) {
+            i++;
+        }
+        subsequence.splice(i, 0, pair);
 
+        sum += pair.summer;
         if (subsequence.length > k) {
-            sum -= (subsequence.pop()?.summer ?? 0);
+            let pairs = subsequence.splice(0, 1);
+            sum -= (pairs[0]?.summer ?? 0);
         }
 
         if (subsequence.length === k) {
