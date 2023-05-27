@@ -17,15 +17,9 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
             sum -= (subsequence.pop()?.summer ?? 0);
         }
 
-
         if (subsequence.length === k) {
-            const res: number = pair.multiplier * sum;
-
-            if (res > max) {
-                max = res;
-            }
+            max = Math.max(max, pair.multiplier * sum);
         }
-
     }
 
     return max;
