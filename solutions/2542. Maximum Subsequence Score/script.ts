@@ -5,19 +5,21 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
         .sort((p1: Pair, p2: Pair): number => p2.multiplier - p1.multiplier);
 
     let max: number = 0;
+    let sum: number = 0;
     const subsequence: Pair[] = [];
 
     for (const pair of data) {
         subsequence.push(pair);
         subsequence.sort((p1: Pair, p2: Pair): number => p2.summer - p1.summer);
+        sum += pair.summer;
 
         if (subsequence.length > k) {
-            subsequence.pop();
+            sum -= (subsequence.pop()?.summer ?? 0);
         }
 
+
         if (subsequence.length === k) {
-            const res: number = pair.multiplier * subsequence
-                .reduce((sum: number, elem: Pair): number => sum + elem.summer, 0);
+            const res: number = pair.multiplier * sum;
 
             if (res > max) {
                 max = res;
