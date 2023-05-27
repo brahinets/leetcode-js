@@ -112,5 +112,6 @@
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
 1. № [2439. Minimize Maximum of Array](solutions/2439.%20Minimize%20Maximum%20of%20Array/script.ts)
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
+1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 
 </details>
