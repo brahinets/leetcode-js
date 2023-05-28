@@ -9,16 +9,11 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
     const subsequence: Pair[] = [];
 
     for (const pair of data) {
-        let i: number = 0;
-        while (i < subsequence.length && pair.summer > subsequence[i].summer) {
-            i++;
-        }
-        subsequence.splice(i, 0, pair);
-
         sum += pair.summer;
-        if (subsequence.length > k) {
-            let pairs = subsequence.splice(0, 1);
-            sum -= (pairs[0]?.summer ?? 0);
+
+        let deleted: number | null = insertSorted(subsequence, k, pair);
+        if (deleted) {
+            sum -= deleted;
         }
 
         if (subsequence.length === k) {
@@ -38,6 +33,21 @@ function doPairing(nums1: number[], nums2: number[]) {
     }
 
     return result;
+}
+
+function insertSorted(subsequence: Pair[], limit: number, pair: Pair): number | null {
+    let i: number = 0;
+    while (i < subsequence.length && pair.summer > subsequence[i].summer) {
+        i++;
+    }
+    subsequence.splice(i, 0, pair);
+
+    if (subsequence.length > limit) {
+        let pairs: Pair[] = subsequence.splice(0, 1);
+        return pairs[0]?.summer;
+    }
+
+    return null;
 }
 
 class Pair {
