@@ -1,3 +1,5 @@
+import {SortedNumbersList} from "./SortedNumbersList";
+
 export {maxScore}
 
 function maxScore(nums1: number[], nums2: number[], k: number): number {
@@ -6,7 +8,7 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
 
     let max: number = 0;
     let sum: number = 0;
-    const subsequence: Pair[] = [];
+    const subsequence: SortedNumbersList = new SortedNumbersList();
 
     for (const pair of data) {
         sum += pair.summer;
@@ -16,7 +18,7 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
             sum -= deleted;
         }
 
-        if (subsequence.length === k) {
+        if (subsequence.getSize() === k) {
             max = Math.max(max, pair.multiplier * sum);
         }
     }
@@ -35,16 +37,13 @@ function doPairing(nums1: number[], nums2: number[]) {
     return result;
 }
 
-function insertSorted(subsequence: Pair[], limit: number, pair: Pair): number | null {
-    let i: number = 0;
-    while (i < subsequence.length && pair.summer > subsequence[i].summer) {
-        i++;
-    }
-    subsequence.splice(i, 0, pair);
+function insertSorted(subsequence: SortedNumbersList, limit: number, pair: Pair): number | null {
+    subsequence.add(pair.summer);
 
-    if (subsequence.length > limit) {
-        let pairs: Pair[] = subsequence.splice(0, 1);
-        return pairs[0]?.summer;
+    if (subsequence.getSize() > limit) {
+        const min: number = subsequence.toArray()[0];
+        subsequence.removeAt(0);
+        return min;
     }
 
     return null;
