@@ -41,9 +41,7 @@ function insertSorted(subsequence: SortedNumbersList, limit: number, pair: Pair)
     subsequence.add(pair.summer);
 
     if (subsequence.getSize() > limit) {
-        const min: number = subsequence.toArray()[0];
-        subsequence.removeAt(0);
-        return min;
+        return subsequence.removeAt(0);
     }
 
     return null;
