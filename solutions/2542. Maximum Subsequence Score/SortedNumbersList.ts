@@ -13,7 +13,7 @@ export class SortedNumbersList {
         let cursor: ListNode | null = this.head;
         let prev: ListNode | null = null;
 
-        while (cursor && cursor?.val < val) {
+        while (cursor && cursor.val < val) {
             prev = cursor;
             cursor = cursor.next;
         }
@@ -41,10 +41,10 @@ export class SortedNumbersList {
 
         if (i === index && cursor) {
             if (prev) {
-                prev.next = cursor?.next ?? null;
+                prev.next = cursor.next;
                 this.size--;
             } else {
-                if (cursor?.next) {
+                if (cursor.next) {
                     this.head = cursor.next;
                     this.size--;
                 } else {
@@ -53,7 +53,7 @@ export class SortedNumbersList {
                 }
             }
 
-            return cursor?.val ?? null;
+            return cursor.val;
         }
 
         throw new Error("Index Out Of Bound");
