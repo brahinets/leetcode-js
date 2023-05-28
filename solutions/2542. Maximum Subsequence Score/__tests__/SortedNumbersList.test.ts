@@ -57,15 +57,23 @@ describe('Sorted Numbers List', (): void => {
         expect(list.toArray())
             .toStrictEqual([0, 1, 2, 3]);
 
-        list.removeAt(3);
+        let removed: number | null;
+
+        removed = list.removeAt(3);
+        expect(removed)
+            .toBe(3);
         expect(list.toArray())
             .toStrictEqual([0, 1, 2]);
 
-        list.removeAt(1);
+        removed = list.removeAt(1);
+        expect(removed)
+            .toBe(1);
         expect(list.toArray())
             .toStrictEqual([0, 2]);
 
-        list.removeAt(0);
+        removed = list.removeAt(0);
+        expect(removed)
+            .toBe(0);
         expect(list.toArray())
             .toStrictEqual([2]);
     });

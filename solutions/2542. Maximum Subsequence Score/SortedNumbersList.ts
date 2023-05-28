@@ -28,7 +28,7 @@ export class SortedNumbersList {
         this.size++;
     }
 
-    removeAt(index: number): void {
+    removeAt(index: number): number | null {
         let cursor: ListNode | null = this.head;
         let prev: ListNode | null = null;
         let i: number = 0;
@@ -52,7 +52,11 @@ export class SortedNumbersList {
                     this.size = 0;
                 }
             }
+
+            return cursor?.val ?? null;
         }
+
+        return cursor?.val ?? null;;
     }
 
     getSize(): number {
