@@ -77,4 +77,11 @@ describe('Sorted Numbers List', (): void => {
         expect(list.toArray())
             .toStrictEqual([2]);
     });
+
+    it('Removal of non existing should fail', (): void => {
+        const list: SortedNumbersList = new SortedNumbersList();
+
+        expect(() => list.removeAt(0))
+            .toThrowError("Index Out Of Bound");
+    });
 })

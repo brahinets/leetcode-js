@@ -39,7 +39,7 @@ export class SortedNumbersList {
             i++;
         }
 
-        if (i === index) {
+        if (i === index && cursor) {
             if (prev) {
                 prev.next = cursor?.next ?? null;
                 this.size--;
@@ -56,7 +56,7 @@ export class SortedNumbersList {
             return cursor?.val ?? null;
         }
 
-        return cursor?.val ?? null;;
+        throw new Error("Index Out Of Bound");
     }
 
     getSize(): number {
