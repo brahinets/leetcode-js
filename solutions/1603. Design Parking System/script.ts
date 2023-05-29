@@ -1,24 +1,32 @@
 export {ParkingSystem}
 
+
+enum CarType {
+    SmallCar = 1,
+    MediumCar = 2,
+    BigCar = 3
+}
+
 class ParkingSystem {
-    private bigCapacity: number;
-    private mediumCapacity: number;
-    private smallCapacity: number;
+
+    private capacity: Map<CarType, number>;
 
     constructor(small: number, medium: number, big: number) {
-        this.smallCapacity = small;
-        this.mediumCapacity = medium;
-        this.bigCapacity = big;
+        this.capacity = new Map<CarType, number>();
+        this.capacity.set(CarType.SmallCar, small)
+        this.capacity.set(CarType.MediumCar, medium)
+        this.capacity.set(CarType.BigCar, big)
     }
 
     addCar(carType: number): boolean {
-        switch (carType) {
-            case 1:
-                return --this.smallCapacity >= 0;
-            case 2:
-                return --this.mediumCapacity >= 0;
-            case 3:
-                return --this.bigCapacity >= 0;
+        const car: CarType = carType;
+
+        let capacity:number | undefined = this.capacity.get(car);
+        if(capacity !== undefined) {
+            capacity--;
+
+            this.capacity.set(car, capacity);
+            return capacity >=0;
         }
 
         throw new Error("Unsupported car type provided");
