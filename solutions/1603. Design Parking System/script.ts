@@ -21,12 +21,14 @@ class ParkingSystem {
     addCar(carType: number): boolean {
         const car: CarType = carType;
 
-        let capacity:number | undefined = this.capacity.get(car);
+        const capacity:number | undefined = this.capacity.get(car);
         if(capacity !== undefined) {
-            capacity--;
+            if(capacity === 0) {
+                return false;
+            }
 
-            this.capacity.set(car, capacity);
-            return capacity >=0;
+            this.capacity.set(car, capacity - 1);
+            return true;
         }
 
         throw new Error("Unsupported car type provided");
