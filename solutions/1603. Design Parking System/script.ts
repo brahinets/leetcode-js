@@ -1,24 +1,24 @@
 export {ParkingSystem}
 
 class ParkingSystem {
-    private big: number;
-    private medium: number;
-    private small: number;
+    private bigCapacity: number;
+    private mediumCapacity: number;
+    private smallCapacity: number;
 
     constructor(small: number, medium: number, big: number) {
-        this.small = small;
-        this.medium = medium;
-        this.big = big;
+        this.smallCapacity = small;
+        this.mediumCapacity = medium;
+        this.bigCapacity = big;
     }
 
     addCar(carType: number): boolean {
         switch (carType) {
             case 1:
-                return --this.small >= 0;
+                return --this.smallCapacity >= 0;
             case 2:
-                return --this.medium >= 0;
+                return --this.mediumCapacity >= 0;
             case 3:
-                return --this.big >= 0;
+                return --this.bigCapacity >= 0;
         }
 
         throw new Error("Unsupported car type provided");
