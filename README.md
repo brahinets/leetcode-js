@@ -66,6 +66,7 @@
 1. № [692. Top K Frequent Words](solutions/692.%20Top%20K%20Frequent%20Words/script.ts)
 1. № [703. Kth Largest Element in a Stream](solutions/703.%20Kth%20Largest%20Element%20in%20a%20Stream/script.ts)
 1. № [704. Binary Search](solutions/704.%20Binary%20Search/script.ts)
+1. № [705. Design HashSet](solutions/705.%20Design%20HashSet/script.ts)
 1. № [724. Find Pivot Index](solutions/724.%20Find%20Pivot%20Index/script.ts)
 1. № [733. Flood Fill](solutions/733.%20Flood%20Fill/script.ts)
 1. № [746. Min Cost Climbing Stairs](solutions/746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
