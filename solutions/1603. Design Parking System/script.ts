@@ -19,15 +19,14 @@ class ParkingSystem {
     }
 
     addCar(carType: number): boolean {
-        const car: CarType = carType;
+        const capacity: number | undefined = this.capacity.get(carType);
 
-        const capacity:number | undefined = this.capacity.get(car);
-        if(capacity !== undefined) {
-            if(capacity === 0) {
+        if (capacity !== undefined) {
+            if (capacity === 0) {
                 return false;
             }
 
-            this.capacity.set(car, capacity - 1);
+            this.capacity.set(carType, capacity - 1);
             return true;
         }
 
