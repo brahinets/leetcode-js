@@ -11,7 +11,9 @@ class UndergroundSystem {
         const trips: Trip[] = this.trips.get(id) ?? [];
 
         for (const trip of trips) {
-            if (!trip.end) {
+            const tripIncomplete: boolean = !trip.end && !trip.endAt;
+            
+            if (tripIncomplete) {
                 throw new Error("Client is already commuting");
             }
         }
@@ -24,7 +26,9 @@ class UndergroundSystem {
         const trips: Trip[] = this.trips.get(id) ?? [];
 
         for (const trip of trips) {
-            if (!(trip.end !== undefined && trip.endAt !== undefined)) {
+            const tripIncomplete: boolean = !trip.end && !trip.endAt;
+
+            if (tripIncomplete) {
                 trip.end = stationName;
                 trip.endAt = t;
                 return;
@@ -35,8 +39,8 @@ class UndergroundSystem {
     }
 
     getAverageTime(startStation: string, endStation: string): number {
-        let totalDuration:number = 0;
-        let totalCount:number = 0;
+        let totalDuration: number = 0;
+        let totalCount: number = 0;
 
         for (const clientTrips of this.trips.values()) {
             for (const trip of clientTrips) {
