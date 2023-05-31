@@ -12,7 +12,7 @@ class UndergroundSystem {
 
         for (const trip of trips) {
             const tripIncomplete: boolean = !trip.end && !trip.endAt;
-            
+
             if (tripIncomplete) {
                 throw new Error("Client is already commuting");
             }
@@ -49,6 +49,10 @@ class UndergroundSystem {
                     totalCount++;
                 }
             }
+        }
+
+        if (totalCount === 0) {
+            return 0;
         }
 
         return totalDuration / totalCount;

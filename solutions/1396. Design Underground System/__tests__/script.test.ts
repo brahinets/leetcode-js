@@ -38,4 +38,11 @@ describe('1396. Design Underground System', (): void => {
         expect(() => undergroundSystem.checkOut(10, "Leyton", 6))
             .toThrowError("Client is not commuting");
     });
+
+    it('Average is zero when no commutes found for station', (): void => {
+        const undergroundSystem: UndergroundSystem = new UndergroundSystem()
+
+        const average: number = undergroundSystem.getAverageTime("Leyton", "Paradise");
+        expect(average).toBe(0);
+    });
 })
