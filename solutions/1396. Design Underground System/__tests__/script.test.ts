@@ -20,4 +20,12 @@ describe('1396. Design Underground System', (): void => {
         average = undergroundSystem.getAverageTime("Leyton", "Paradise");
         expect(average).toBeCloseTo(6.66667, 5);
     });
+
+    it('Client cannot commute in two places simultaneously', (): void => {
+        const undergroundSystem: UndergroundSystem = new UndergroundSystem()
+
+        undergroundSystem.checkIn(10, "Leyton", 3);
+        expect(() => undergroundSystem.checkIn(10, "Leyton", 21))
+            .toThrowError("Client in already commuting");
+    });
 })
