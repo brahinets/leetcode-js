@@ -12,7 +12,7 @@ class UndergroundSystem {
 
         for (const trip of trips) {
             if (!trip.end) {
-                throw new Error("Client in already commuting");
+                throw new Error("Client is already commuting");
             }
         }
 

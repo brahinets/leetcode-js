@@ -26,7 +26,7 @@ describe('1396. Design Underground System', (): void => {
 
         undergroundSystem.checkIn(10, "Leyton", 3);
         expect(() => undergroundSystem.checkIn(10, "Leyton", 21))
-            .toThrowError("Client in already commuting");
+            .toThrowError("Client is already commuting");
     });
 
     it('Client cannot finish commute when idle', (): void => {
