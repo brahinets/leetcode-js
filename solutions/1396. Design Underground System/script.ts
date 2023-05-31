@@ -30,6 +30,8 @@ class UndergroundSystem {
                 return;
             }
         }
+
+        throw new Error("Client is not commuting");
     }
 
     getAverageTime(startStation: string, endStation: string): number {
