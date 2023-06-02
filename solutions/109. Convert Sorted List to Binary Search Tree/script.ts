@@ -2,7 +2,7 @@ import {ListNode} from "../../common/ListNode";
 import {TreeNode} from "../../common/TreeNode";
 
 function sortedListToBST(head: ListNode | null): TreeNode | null {
-    let data: number[] = [];
+    const data: number[] = [];
     while (head) {
         data.push(head.val);
         head = head.next;
@@ -15,11 +15,11 @@ function toNode(data: number[]): TreeNode | null {
     if (data.length === 0) {
         return null;
     } else {
-        let left: number[] = [];
-        let right: number[] = [];
+        const left: number[] = [];
+        const right: number[] = [];
         let val: number | null = null;
 
-        let middle = Math.floor(data.length / 2);
+        const middle: number = Math.floor(data.length / 2);
 
         for (let i: number = 0; i < data.length; i++) {
             if (i < middle) {
