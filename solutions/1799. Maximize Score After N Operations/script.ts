@@ -1,6 +1,8 @@
 export {maxScore}
 
 function maxScore(nums: number[]): number {
+    nums = nums.sort((a: number, b: number): number => b - a)
+
     let sum: number = 0;
 
     for (let i: number = nums.length / 2; i > 0; i--) {
