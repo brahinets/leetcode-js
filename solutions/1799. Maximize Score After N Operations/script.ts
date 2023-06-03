@@ -7,14 +7,12 @@ function maxScore(nums: number[]): number {
 
     for (let i: number = nums.length / 2; i > 0; i--) {
         const pair: number[] = getPairWithBiggestGcd(nums);
-        const first: number = pair[0];
-        const second: number = pair[1];
-        const gcd: number = pair[2];
+        const [firstIndex, secondIndex, gcd] = pair;
 
         sum += (i * gcd);
 
-        const higher: number = Math.max(first, second);
-        const lower: number = Math.min(first, second);
+        const higher: number = Math.max(firstIndex, secondIndex);
+        const lower: number = Math.min(firstIndex, secondIndex);
         nums.splice(higher, 1)
         nums.splice(lower, 1)
     }
