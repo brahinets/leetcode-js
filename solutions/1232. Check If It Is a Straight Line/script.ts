@@ -1,7 +1,11 @@
 export {checkStraightLine}
 
 function checkStraightLine(coordinates: number[][]): boolean {
-    coordinates.sort((a: number[], b: number[]): number => a[0] - b[0]);
+    coordinates.sort((a: number[], b: number[]): number => {
+        const xDelta:number = a[0] - b[0];
+        const yDelta:number = a[1] - b[1];
+        return xDelta !== 0 ? xDelta : yDelta;
+    });
 
     for (let i: number = 2; i < coordinates.length; i++) {
         const [x0, y0] = coordinates[i - 2];
