@@ -21,7 +21,12 @@ describe('1232. Check If It Is a Straight Line', (): void => {
             .toBe(false);
     });
 
-    it('Not the same line with negative coordinates', (): void => {
+    it('The same line with different delta', (): void => {
+        expect(checkStraightLine([[0, 1], [1, 3], [-4, -7], [5, 11]]))
+            .toBe(true);
+    });
+
+    it('The same line with negative coordinates', (): void => {
         expect(checkStraightLine([[0, 0], [0, 1], [0, -2]]))
             .toBe(true);
     });
