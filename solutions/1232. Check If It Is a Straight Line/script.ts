@@ -5,12 +5,6 @@ function checkStraightLine(coordinates: number[][]): boolean {
         return true;
     }
 
-    coordinates.sort((a: number[], b: number[]): number => {
-        const xDelta: number = a[0] - b[0];
-        const yDelta: number = a[1] - b[1];
-        return xDelta !== 0 ? xDelta : yDelta;
-    });
-
     const [x0, y0] = coordinates[0];
     const [x1, y1] = coordinates[1];
 
