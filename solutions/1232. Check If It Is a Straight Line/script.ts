@@ -3,11 +3,12 @@ export {checkStraightLine}
 function checkStraightLine(coordinates: number[][]): boolean {
     coordinates.sort((a: number[], b: number[]): number => a[0] - b[0]);
 
-    for (let i: number = 1; i < coordinates.length; i++) {
-        const [x0, y0] = coordinates[i - 1];
-        const [x1, y1] = coordinates[i];
+    for (let i: number = 2; i < coordinates.length; i++) {
+        const [x0, y0] = coordinates[i - 2];
+        const [x1, y1] = coordinates[i - 1];
+        const [x2, y2] = coordinates[i];
 
-        if (x1 - x0 !== y1 - y0) {
+        if (y2 - y1 !== y1 - y0 || x2 - x1 !== x1 - x0) {
             return false;
         }
     }
