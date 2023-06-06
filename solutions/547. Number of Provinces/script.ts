@@ -14,7 +14,7 @@ function findCircleNum(isConnected: number[][]): number {
 
         hasProvince = id !== -1;
         if (hasProvince) {
-            gatherNeighbors(map, id);
+            gatherProvince(map, id);
             provincesCount++;
         }
     } while (hasProvince)
@@ -32,17 +32,21 @@ function findProvinceCoordinates(map: number[][]): number {
     return -1;
 }
 
-function gatherNeighbors(map: number[][], provinceId: number): void {
-    const neighbours: number[] = map[provinceId];
-    map[provinceId][provinceId] = VISITED;
+function gatherProvince(map: number[][], cityId: number): number[] {
+    const province: number[] = [cityId];
+    map[cityId][cityId] = VISITED;
 
+    const neighbours: number[] = map[cityId];
     for (let neighbourId:number = 0; neighbourId < neighbours.length; neighbourId++) {
-        if(map[provinceId][neighbourId] === PROVINCE) {
-            map[provinceId][neighbourId] = VISITED;
+        if(map[cityId][neighbourId] === PROVINCE) {
+            map[cityId][neighbourId] = VISITED;
+            province.push(neighbourId);
 
-            if (neighbourId !== provinceId) {
-                gatherNeighbors(map, neighbourId);
+            if (neighbourId !== cityId) {
+                province.push(...gatherProvince(map, neighbourId));
             }
         }
     }
+
+    return province;
 }
