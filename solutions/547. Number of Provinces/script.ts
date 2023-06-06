@@ -10,40 +10,39 @@ function findCircleNum(isConnected: number[][]): number {
     let hasProvince: boolean;
 
     do {
-        const [coordinateX, coordinateY]: number[] = findProvinceCoordinates(map);
+        const id: number = findProvinceCoordinates(map);
 
-        hasProvince = coordinateX !== -1 && coordinateY !== -1;
+        hasProvince = id !== -1;
         if (hasProvince) {
-            visitProvince(map, coordinateX, coordinateY);
+            gatherNeighbors(map, id);
             provincesCount++;
         }
     } while (hasProvince)
 
     return provincesCount;
 }
-function findProvinceCoordinates(map: number[][]): number[] {
+
+function findProvinceCoordinates(map: number[][]): number {
     for (let i: number = 0; i < map.length; i++) {
-        for (let j: number = 0; j < map[0].length; j++) {
-            if (map[i][j] === PROVINCE) {
-                return [i, j]
-            }
+        if (map[i][i] === PROVINCE) {
+            return i;
         }
     }
 
-    return [-1, -1];
+    return -1;
 }
 
-function visitProvince(map: number[][], coordinateX: number, coordinateY: number): void {
-    if (coordinateX < 0 || coordinateY < 0 || coordinateX >= map.length || coordinateY >= map[0].length) {
-        return;
-    }
+function gatherNeighbors(map: number[][], provinceId: number): void {
+    const neighbours: number[] = map[provinceId];
+    map[provinceId][provinceId] = VISITED;
 
-    if (PROVINCE === map[coordinateX][coordinateY]) {
-        map[coordinateX][coordinateY] = VISITED;
+    for (let neighbourId:number = 0; neighbourId < neighbours.length; neighbourId++) {
+        if(map[provinceId][neighbourId] === PROVINCE) {
+            map[provinceId][neighbourId] = VISITED;
 
-        visitProvince(map, coordinateX - 1, coordinateY);
-        visitProvince(map, coordinateX, coordinateY - 1);
-        visitProvince(map, coordinateX + 1, coordinateY);
-        visitProvince(map, coordinateX, coordinateY + 1);
+            if (neighbourId !== provinceId) {
+                gatherNeighbors(map, neighbourId);
+            }
+        }
     }
 }

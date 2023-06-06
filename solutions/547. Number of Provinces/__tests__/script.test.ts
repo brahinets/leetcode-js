@@ -5,10 +5,19 @@ describe('547. Number of Provinces', (): void => {
         expect(findCircleNum([])).toBe(0);
     });
 
-    it('One province', (): void => {
+    it('One small province', (): void => {
         expect(findCircleNum([
             [1, 1],
             [1, 1]
+        ])).toBe(1);
+    });
+
+    it('One big province', (): void => {
+        expect(findCircleNum([
+            [1, 0, 0, 1],
+            [0, 1, 1, 0],
+            [0, 1, 1, 1],
+            [1, 0, 1, 1]
         ])).toBe(1);
     });
 
