@@ -23,7 +23,9 @@ function minFlips(a: number, b: number, c: number): number {
                 bits = 1;
             }
         } else {
-            if (aBinaryPadded.charAt(i) === "1" && bBinaryPadded.charAt(i) === "1") {
+            if (aBinaryPadded.charAt(i) === "0" && bBinaryPadded.charAt(i) === "0") {
+                bits = 0;
+            } else if (aBinaryPadded.charAt(i) === "1" && bBinaryPadded.charAt(i) === "1") {
                 bits = 2;
             } else {
                 bits = 1;
