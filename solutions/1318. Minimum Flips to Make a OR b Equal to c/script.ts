@@ -23,9 +23,11 @@ function minFlips(a: number, b: number, c: number): number {
                 bits = 1;
             }
         } else {
-            bits = 0;
-            bits += Number(aBinaryPadded.charAt(i));
-            bits += Number(bBinaryPadded.charAt(i));
+            if (aBinaryPadded.charAt(i) === "1" && bBinaryPadded.charAt(i) === "1") {
+                bits = 2;
+            } else {
+                bits = 1;
+            }
         }
 
         flipsRequired += bits;
