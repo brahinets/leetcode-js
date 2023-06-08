@@ -3,11 +3,11 @@ export {countNegatives}
 function countNegatives(grid: number[][]): number {
     let count: number = 0;
 
-    for (let i: number = 0; i < grid.length; i++) {
-        for (let j: number = 0; j < grid[0].length; j++) {
-            if (grid[i][j] < 0) {
-                count++;
-            }
+    for (let i: number = grid.length - 1; i >= 0; i--) {
+        let j: number = grid[0].length - 1;
+        while (grid[i][j] < 0 && j >= 0) {
+            count++;
+            j--;
         }
     }
 
