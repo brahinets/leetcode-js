@@ -4,9 +4,13 @@ const DIRECTIONS: number[][] = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1,
 
 function shortestPathBinaryMatrix(grid: number[][]): number {
     const emptyGrid:boolean = grid.length === 0 || grid[0].length === 0;
+    if(emptyGrid) {
+        return -1;
+    }
+
     const hasStart:boolean = grid[0][0] === 0;
     const hasEnd:boolean = grid[grid.length - 1][grid[0].length - 1] === 0;
-    if (emptyGrid || !hasStart || !hasEnd) {
+    if (!hasStart || !hasEnd) {
         return -1;
     }
 
