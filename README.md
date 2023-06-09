@@ -70,6 +70,7 @@
 1. № [705. Design HashSet](solutions/705.%20Design%20HashSet/script.ts)
 1. № [724. Find Pivot Index](solutions/724.%20Find%20Pivot%20Index/script.ts)
 1. № [733. Flood Fill](solutions/733.%20Flood%20Fill/script.ts)
+1. № [744. Find Smallest Letter Greater Than Target](solutions/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target/script.ts)
 1. № [746. Min Cost Climbing Stairs](solutions/746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
