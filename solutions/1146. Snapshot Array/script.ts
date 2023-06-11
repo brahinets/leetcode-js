@@ -4,15 +4,17 @@ class SnapshotArray {
     private readonly deltas: Map<number, Map<number, number>>;
     private readonly length: number;
     private delta: Map<number, number>;
+    private snaps:number;
 
     constructor(length: number) {
         this.deltas = new Map<number, Map<number, number>>();
         this.delta = new Map<number, number>();
         this.length = length;
+        this.snaps = -1;
     }
 
     set(index: number, val: number): void {
-        if(index > this.length) {
+        if (index > this.length) {
             throw new Error("Element index is out of bounds")
         }
 
@@ -20,25 +22,18 @@ class SnapshotArray {
     }
 
     snap(): number {
-        let snapId: number = -1;
-        for (const id of this.deltas.keys()) {
-            if (id > snapId) {
-                snapId = id;
-            }
-        }
-
-        this.deltas.set(snapId + 1, this.delta);
+        this.deltas.set(this.snaps + 1, this.delta);
         this.delta = new Map<number, number>();
 
-        return snapId + 1;
+        return ++this.snaps;
     }
 
     get(index: number, snapId: number): number {
-        if(index > this.length) {
+        if (index > this.length) {
             throw new Error("Element index is out of bounds")
         }
 
-        if (snapId > this.deltas.size) {
+        if (snapId > this.snaps) {
             throw new Error("Snap does not exist");
         }
 
