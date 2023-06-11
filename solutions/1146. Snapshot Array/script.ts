@@ -30,7 +30,7 @@ class SnapshotArray {
     }
 
     get(index: number, snapId: number): number {
-        if (snapId > this.delta.size) {
+        if (snapId > this.deltas.size) {
             throw new Error("Snap does not exist");
         }
 
