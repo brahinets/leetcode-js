@@ -12,6 +12,10 @@ class SnapshotArray {
     }
 
     set(index: number, val: number): void {
+        if(index > this.length) {
+            throw new Error("Element index is out of bounds")
+        }
+
         this.delta.set(index, val);
     }
 
@@ -30,6 +34,10 @@ class SnapshotArray {
     }
 
     get(index: number, snapId: number): number {
+        if(index > this.length) {
+            throw new Error("Element index is out of bounds")
+        }
+
         if (snapId > this.deltas.size) {
             throw new Error("Snap does not exist");
         }

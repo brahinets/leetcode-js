@@ -37,4 +37,18 @@ describe('1146. Snapshot Array', (): void => {
         expect(() => snapshotArr.get(0, 1))
             .toThrowError("Snap does not exist");
     });
+
+    it('Error for non existing index set', (): void => {
+        const snapshotArr: SnapshotArray = new SnapshotArray(3);
+
+        expect(() => snapshotArr.set(4, 1))
+            .toThrowError("Element index is out of bounds");
+    });
+
+    it('Error for non existing index get', (): void => {
+        const snapshotArr: SnapshotArray = new SnapshotArray(3);
+
+        expect(() => snapshotArr.get(4, 1))
+            .toThrowError("Element index is out of bounds");
+    });
 })
