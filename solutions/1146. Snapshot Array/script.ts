@@ -37,7 +37,12 @@ class SnapshotArray {
         const data: number[] = new Array(this.length).fill(0);
 
         for (let i: number = 0; i <= snapId; i++) {
-            this.applyDelta(data, this.deltas.get(i) ?? new Map<number, number>())
+            const delta: Map<number, number> | undefined = this.deltas.get(i);
+            if (delta === undefined) {
+                throw new Error("Snap does not exist");
+            }
+
+            this.applyDelta(data, delta)
         }
 
         if(this.deltas.size === snapId) {
