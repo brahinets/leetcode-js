@@ -22,8 +22,10 @@ class SnapshotArray {
     }
 
     snap(): number {
-        this.deltas.set(this.snaps + 1, this.delta);
-        this.delta = new Map<number, number>();
+        if(this.delta.size > 0) {
+            this.deltas.set(this.snaps + 1, this.delta);
+            this.delta = new Map<number, number>();
+        }
 
         return ++this.snaps;
     }
@@ -41,7 +43,7 @@ class SnapshotArray {
         for (let i: number = 0; i <= snapId; i++) {
             const delta: Map<number, number> | undefined = this.deltas.get(i);
             if (delta === undefined) {
-                throw new Error("Snap does not exist");
+                continue;
             }
 
             result = this.applyDelta(result, index, delta)

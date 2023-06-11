@@ -20,6 +20,20 @@ describe('1146. Snapshot Array', (): void => {
         expect(snap).toBe(5);
     });
 
+    it('Test empty snapshots', (): void => {
+        const snapshotArr: SnapshotArray = new SnapshotArray(3);
+        snapshotArr.set(0, 5);
+        snapshotArr.snap();
+        snapshotArr.snap();
+        snapshotArr.snap();
+        snapshotArr.snap();
+        snapshotArr.snap();
+        snapshotArr.snap();
+
+        const snap: number = snapshotArr.get(0, 5);
+        expect(snap).toBe(5);
+    });
+
     it('Test another snapshot', (): void => {
         const snapshotArr: SnapshotArray = new SnapshotArray(3);
         snapshotArr.set(0, 5);
