@@ -2,11 +2,9 @@ export {SnapshotArray}
 
 class SnapshotArray {
     private readonly snaps: Map<number, number[]>;
-    private readonly length: number;
     private readonly data: number[];
 
     constructor(length: number) {
-        this.length = length;
         this.snaps = new Map<number, number[]>();
         this.data = new Array(length).fill(0);
     }
