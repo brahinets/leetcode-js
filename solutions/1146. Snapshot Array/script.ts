@@ -53,12 +53,7 @@ class SnapshotArray {
     }
 
     private applyDelta(result: number, index: number, map: Map<number, number>): number {
-        for (const kv of map) {
-            if (index === kv[0]) {
-                result = kv[1];
-            }
-        }
-
-        return result;
+        const delta:number | undefined = map.get(index);
+        return delta === undefined ? result : delta;
     }
 }
