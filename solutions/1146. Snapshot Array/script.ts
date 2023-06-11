@@ -30,6 +30,10 @@ class SnapshotArray {
     }
 
     get(index: number, snapId: number): number {
+        if (snapId > this.delta.size) {
+            throw new Error("Snap does not exist");
+        }
+
         const data: number[] = new Array(this.length).fill(0);
 
         for (let i: number = 0; i <= snapId; i++) {

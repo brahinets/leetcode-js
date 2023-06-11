@@ -45,4 +45,11 @@ describe('1146. Snapshot Array', (): void => {
         const snap0: number = snapshotArr.get(0, 2);
         expect(snap0).toBe(6);
     });
+
+    it('Error for non existing snap', (): void => {
+        const snapshotArr: SnapshotArray = new SnapshotArray(3);
+
+        expect(() => snapshotArr.get(0, 1))
+            .toThrowError("Snap does not exist");
+    });
 })
