@@ -34,29 +34,26 @@ class SnapshotArray {
             throw new Error("Snap does not exist");
         }
 
-        const data: number[] = new Array(this.length).fill(0);
-
+        let result: number = 0;
         for (let i: number = 0; i <= snapId; i++) {
             const delta: Map<number, number> | undefined = this.deltas.get(i);
             if (delta === undefined) {
                 throw new Error("Snap does not exist");
             }
 
-            this.applyDelta(data, delta)
+            result = this.applyDelta(result, index, delta)
         }
 
-        if(this.deltas.size === snapId) {
-            this.applyDelta(data, this.delta)
-        }
-
-        return data[index];
+        return result;
     }
 
-    private applyDelta(data: number[], map: Map<number, number>): void {
+    private applyDelta(result: number, index: number, map: Map<number, number>): number {
         for (const kv of map) {
-            const index: number = kv[0];
-            const value: number = kv[1];
-            data[index] = value;
+            if (index === kv[0]) {
+                result = kv[1];
+            }
         }
+
+        return result;
     }
 }
