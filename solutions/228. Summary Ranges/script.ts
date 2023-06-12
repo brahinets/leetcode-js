@@ -12,8 +12,9 @@ function summaryRanges(nums: number[]): string[] {
             if(start !== end) {
                 ranges.push(nums[start] + "->" + nums[end]);
             } else {
-                ranges.push(nums[start] + "");
+                ranges.push(String(nums[start]));
             }
+
             start = end + 1;
             end = start;
         }
