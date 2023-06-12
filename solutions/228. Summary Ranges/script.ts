@@ -6,7 +6,7 @@ function summaryRanges(nums: number[]): string[] {
     let start: number = 0;
     let end: number = 0;
     while (start < nums.length && end < nums.length) {
-        if (end + 1 < nums.length && (nums[end] + 1 === nums[end + 1])) {
+        if (end + 1 < nums.length && nums[end] + 1 === nums[end + 1]) {
             end++;
         } else {
             if(start !== end) {
