@@ -22,7 +22,10 @@ function collectColumns(grid: number[][]): Array<number[]> {
     const cols: Array<number[]> = [];
 
     for (let i: number = 0; i < grid[0].length; i++) {
-        cols.push(grid.reduce((prev: number[], curr: number[]): number[] => [...prev, curr[i]], []));
+        cols.push(grid.reduce((agg: number[], curr: number[]): number[] => {
+            agg.push(curr[i]);
+            return agg;
+        }, []));
     }
 
     return cols;
