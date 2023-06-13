@@ -9,9 +9,7 @@ function equalPairs(grid: number[][]): number {
     const cols: Array<number[]> = collectColumns(grid);
     for (const row of grid) {
         for (const col of cols) {
-            if (JSON.stringify(row) === JSON.stringify(col)) {
-                count++;
-            }
+            count += equal(row, col) ? 1 : 0;
         }
     }
 
@@ -29,4 +27,18 @@ function collectColumns(grid: number[][]): Array<number[]> {
     }
 
     return cols;
+}
+
+function equal(row: number[], col: number[]): boolean {
+    if (row.length !== col.length) {
+        return false;
+    }
+
+    for (let i: number = 0; i < row.length && i < col.length; i++) {
+        if (row[i] !== col[i]) {
+            return false;
+        }
+    }
+
+    return true;
 }
