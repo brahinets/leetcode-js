@@ -6,6 +6,11 @@ describe('2352. Equal Row and Column Pairs', (): void => {
             .toBe(0);
     });
 
+    it('No pairs for non-square matrix', (): void => {
+        expect(equalPairs([[1, 2]]))
+            .toBe(0);
+    });
+
     it('One pair for small matrix', (): void => {
         expect(equalPairs([
             [3, 2, 1],

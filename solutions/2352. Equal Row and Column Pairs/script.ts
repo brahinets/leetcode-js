@@ -1,7 +1,7 @@
 export {equalPairs}
 
 function equalPairs(grid: number[][]): number {
-    if (grid.length === 0) {
+    if (grid.length === 0 || grid.length !== grid[0].length) {
         return 0;
     }
 
