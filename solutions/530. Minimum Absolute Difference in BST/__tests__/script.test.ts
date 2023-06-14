@@ -19,7 +19,7 @@ describe('530. Minimum Absolute Difference in BST', (): void => {
                 new TreeNode(0),
                 new TreeNode(48,
                     new TreeNode(12),
-                    new TreeNode(40))
+                    new TreeNode(41))
             ))
         ).toBe(1);
     });
@@ -28,11 +28,11 @@ describe('530. Minimum Absolute Difference in BST', (): void => {
         expect(getMinimumDifference(
             new TreeNode(1,
                 new TreeNode(0,
-                    new TreeNode(12),
+                    new TreeNode(13),
                     new TreeNode(40)),
                 new TreeNode(48,
                     new TreeNode(12),
-                    new TreeNode(40))
+                    new TreeNode(41))
             ))
         ).toBe(1);
     });
