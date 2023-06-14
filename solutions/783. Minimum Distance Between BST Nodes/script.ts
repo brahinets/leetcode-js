@@ -1,4 +1,5 @@
 import {TreeNode} from "../../common/TreeNode";
+export {TreeNode, minDiffInBST};
 
 const collectValues = function (root: TreeNode): number[] {
     const values: number[] = [root.val];
