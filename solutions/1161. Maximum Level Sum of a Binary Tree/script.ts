@@ -3,10 +3,9 @@ import {TreeNode} from "../../common/TreeNode";
 export {TreeNode, maxLevelSum};
 
 function maxLevelSum(root: TreeNode | null): number {
-    const map: Map<number, number> = new Map<number, number>();
-    collect(root, 1, map);
+    const levelsSum: Map<number, number> = collect(root, 1);
 
-    return findKeyWithMaxValue(map);
+    return findKeyWithMaxValue(levelsSum);
 }
 
 function merge(data: Map<number, number>, level: number, value: number): void {
@@ -19,14 +18,31 @@ function merge(data: Map<number, number>, level: number, value: number): void {
     }
 }
 
-// TODO #1161 Eliminate side effects of input argument mutation
-function collect(root: TreeNode | null, level: number, sum: Map<number, number>): void {
-    if (root) {
-        merge(sum, level, root.val);
+function collect(root: TreeNode | null, level: number): Map<number, number> {
+    let map: Map<number, number> = new Map<number, number>();
 
-        collect(root.left, level + 1, sum);
-        collect(root.right, level + 1, sum);
+    if (root) {
+        merge(map, level, root.val);
+
+        map = sumMaps(map, collect(root.left, level + 1));
+        map = sumMaps(map, collect(root.right, level + 1));
     }
+
+    return map;
+}
+
+function sumMaps(first: Map<number, number>, second: Map<number, number>): Map<number, number> {
+    const map: Map<number, number> = new Map<number, number>();
+
+    for (const kv of first) {
+        map.set(kv[0], (map.get(kv[0]) ?? 0) + kv[1]);
+    }
+
+    for (const kv of second) {
+        map.set(kv[0], (map.get(kv[0]) ?? 0) + kv[1]);
+    }
+
+    return map;
 }
 
 function findKeyWithMaxValue(map: Map<number, number>) {
