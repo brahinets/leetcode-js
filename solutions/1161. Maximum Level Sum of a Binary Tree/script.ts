@@ -8,21 +8,11 @@ function maxLevelSum(root: TreeNode | null): number {
     return findKeyWithMaxValue(levelsSum);
 }
 
-function merge(data: Map<number, number>, level: number, value: number): void {
-    const levelSum: number | undefined = data.get(level);
-
-    if (levelSum) {
-        data.set(level, levelSum + value);
-    } else {
-        data.set(level, value);
-    }
-}
-
 function collect(root: TreeNode | null, level: number): Map<number, number> {
     let map: Map<number, number> = new Map<number, number>();
 
     if (root) {
-        merge(map, level, root.val);
+        map.set(level, (map.get(level) ?? 0) + root.val);
 
         map = sumMaps(map, collect(root.left, level + 1));
         map = sumMaps(map, collect(root.right, level + 1));
