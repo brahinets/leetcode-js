@@ -22,13 +22,8 @@ function merge(data: Map<number, number>, level: number, value: number): void {
 function collect(root: TreeNode | null, level: number, sum: Map<number, number>): void {
     if (root) {
         merge(sum, level, root.val);
-    }
 
-    if (root?.left) {
         collect(root.left, level + 1, sum);
-    }
-
-    if (root?.right) {
         collect(root.right, level + 1, sum);
     }
 }
