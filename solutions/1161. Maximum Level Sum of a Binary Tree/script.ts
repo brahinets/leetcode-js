@@ -6,16 +6,7 @@ function maxLevelSum(root: TreeNode | null): number {
     const map: Map<number, number> = new Map<number, number>();
     collect(root, 1, map);
 
-    let maxSum: number = Number.MIN_SAFE_INTEGER;
-    let maxLevel: number = -1;
-    for (const kv of map) {
-        if (kv[1] > maxSum) {
-            maxLevel = kv[0];
-            maxSum = kv[1];
-        }
-    }
-
-    return maxLevel;
+    return findKeyWithMaxValue(map);
 }
 
 function merge(data: Map<number, number>, level: number, value: number): void {
@@ -40,4 +31,18 @@ function collect(root: TreeNode | null, level: number, sum: Map<number, number>)
     if (root?.right) {
         collect(root.right, level + 1, sum);
     }
+}
+
+function findKeyWithMaxValue(map: Map<number, number>) {
+    let maxValue: number = Number.MIN_SAFE_INTEGER;
+    let key: number = -1;
+
+    for (const kv of map) {
+        if (kv[1] > maxValue) {
+            key = kv[0];
+            maxValue = kv[1];
+        }
+    }
+
+    return key;
 }
