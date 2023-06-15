@@ -19,6 +19,7 @@ function merge(data: Map<number, number>, level: number, value: number): void {
     }
 }
 
+// TODO #1161 Eliminate side effects of input argument mutation
 function collect(root: TreeNode | null, level: number, sum: Map<number, number>): void {
     if (root) {
         merge(sum, level, root.val);
