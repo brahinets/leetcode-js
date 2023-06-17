@@ -7,5 +7,5 @@ function sortJumbled(mapping: number[], nums: number[]): number[] {
 function mapDigits(number: number, mapping: number[]): number {
     return Number(number.toString()
         .split("")
-        .reduce((res: string, digit): string => mapping[Number(digit)] + "", ""))
+        .reduce((res: string, digit): string => res + mapping[Number(digit)] + "", ""))
 }

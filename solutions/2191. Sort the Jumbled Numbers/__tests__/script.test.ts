@@ -10,4 +10,9 @@ describe('2191. Sort the Jumbled Numbers', (): void => {
         expect(sortJumbled([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], [789, 456, 123]))
             .toStrictEqual([123, 456, 789]);
     });
+
+    it('All different mappings and length', (): void => {
+        expect(sortJumbled([5, 6, 8, 7, 4, 0, 3, 1, 9, 2], [7686, 97012948, 84234023, 2212638, 99]))
+            .toStrictEqual([99, 7686, 2212638, 97012948, 84234023]);
+    });
 })
