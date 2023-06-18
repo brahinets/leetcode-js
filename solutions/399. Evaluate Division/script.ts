@@ -12,13 +12,13 @@ function mapGraph(equations: string[][], values: number[]): Map<string, Map<stri
     for (let i: number = 0; i < equations.length; i++) {
         const [a, b]: string[] = equations[i];
 
-        const ba: Map<string, number> = graph.get(b) ?? new Map<string, number>();
-        ba.set(a, values[i])
-        graph.set(b, ba);
+        const bToA: Map<string, number> = graph.get(b) ?? new Map<string, number>();
+        bToA.set(a, values[i])
+        graph.set(b, bToA);
 
-        const ab: Map<string, number> = graph.get(a) ?? new Map<string, number>();
-        ab.set(b, 1 / values[i])
-        graph.set(a, ab);
+        const aToB: Map<string, number> = graph.get(a) ?? new Map<string, number>();
+        aToB.set(b, 1 / values[i])
+        graph.set(a, aToB);
     }
 
     return graph;
@@ -34,12 +34,18 @@ function dfs(c: string, d: string, visited: string[], graph: Map<string, Map<str
     }
 
     const map: Map<string, number> = graph.get(c) ?? new Map<string, number>();
-    for (const n of map) {
-        if (visited.includes(n[0])) {
+    for (const neighbour of map) {
+        const neighbourId: string = neighbour[0];
+        if (visited.includes(neighbourId)) {
             continue;
         }
 
-        const res: number = dfs(n[0], d, [...visited, n[0]], graph) * (graph.get(n[0])?.get(c) ?? 0);
+        const neighbourToC: number | undefined = graph.get(neighbourId)?.get(c);
+        if (!neighbourToC) {
+            continue;
+        }
+
+        const res: number = neighbourToC * dfs(neighbourId, d, [...visited, neighbourId], graph);
         if (res > 0) {
             return res;
         }
