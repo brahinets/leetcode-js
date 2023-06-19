@@ -111,6 +111,7 @@
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
 1. № [1603. Design Parking System](solutions/1603.%20Design%20Parking%20System/script.ts)
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
+1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
 1. № [1799. Maximize Score After N Operations](solutions/1799.%20Maximize%20Score%20After%20N%20Operations/script.ts)
 1. № [1822. Sign of the Product of an Array](solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array/script.ts)
