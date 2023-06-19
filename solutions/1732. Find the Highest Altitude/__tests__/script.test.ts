@@ -15,4 +15,9 @@ describe('1732. Find the Highest Altitude', (): void => {
         expect(largestAltitude([-4, -3, -2, -1, 4, 3, 2]))
             .toBe(0);
     });
+
+    it('Expect enough data', (): void => {
+        expect(() => largestAltitude([]))
+            .toThrowError("Not enough data");
+    });
 })
