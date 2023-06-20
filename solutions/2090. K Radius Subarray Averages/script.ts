@@ -7,11 +7,9 @@ function getAverages(nums: number[], radius: number): number[] {
         return avg;
     }
 
-    for (let i: number = 0; i < nums.length; i++) {
-        if (radius <= i && i + radius < nums.length) {
-            const data: number[] = nums.slice(i - radius, i + radius + 1);
-            avg[i] = Math.floor(data.reduce((sum: number, n: number): number => sum + n, 0) / data.length);
-        }
+    for (let i: number = radius; i < nums.length - radius; i++) {
+        const data: number[] = nums.slice(i - radius, i + radius + 1);
+        avg[i] = Math.floor(data.reduce((sum: number, n: number): number => sum + n, 0) / data.length);
     }
 
     return avg;
