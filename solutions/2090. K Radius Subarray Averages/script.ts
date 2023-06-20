@@ -18,8 +18,13 @@ function getAverages(nums: number[], radius: number): number[] {
 }
 
 function initialWindowSum(nums: number[], radius: number): number {
-    const data: number[] = nums.slice(0, radius * 2 + 1);
-    return data.reduce((sum: number, n: number): number => sum + n, 0);
+    let sum: number = 0;
+
+    for (let i: number = 0; i < radius * 2 + 1; i++) {
+        sum += nums[i];
+    }
+
+    return sum;
 }
 
 function average(sum: number, length: number) {
