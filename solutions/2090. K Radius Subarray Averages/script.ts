@@ -3,7 +3,7 @@ export {getAverages}
 function getAverages(nums: number[], radius: number): number[] {
     const avg: number[] = new Array(nums.length).fill(-1);
 
-    if (radius > nums.length) {
+    if (radius * 2 + 1 > nums.length) {
         return avg;
     }
 
