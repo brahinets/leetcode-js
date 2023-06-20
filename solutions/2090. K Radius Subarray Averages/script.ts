@@ -1,6 +1,10 @@
 export {getAverages}
 
 function getAverages(nums: number[], radius: number): number[] {
+    if (radius > nums.length) {
+        return new Array(nums.length).fill(-1);
+    }
+
     const avg: number[] = [];
 
     for (let i: number = 0; i < nums.length; i++) {
