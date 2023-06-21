@@ -1,16 +1,9 @@
 export {minCost}
 
 function minCost(nums: number[], cost: number[]): number {
-    const minimum: number = Math.min(...nums);
-    const maximum: number = Math.max(...nums);
-
-    if (minimum === maximum) {
-        return 0;
-    }
-
     let minCost: number = Number.MAX_SAFE_INTEGER;
-    let left: number = minimum;
-    let right: number = maximum;
+    let left: number = Math.min(...nums);
+    let right: number = Math.max(...nums);
 
     while (left <= right) {
         const target: number = Math.floor((left + right) / 2);
