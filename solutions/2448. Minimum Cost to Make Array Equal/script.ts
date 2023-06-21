@@ -1,8 +1,8 @@
 export {minCost}
 
 function minCost(nums: number[], cost: number[]): number {
-    const minimum: number = nums.reduce((min: number, e: number): number => Math.min(min, e));
-    const maximum: number = nums.reduce((max: number, e: number): number => Math.max(max, e));
+    const minimum: number = Math.min(...nums);
+    const maximum: number = Math.max(...nums);
 
     if(minimum === maximum) {
         return 0;
