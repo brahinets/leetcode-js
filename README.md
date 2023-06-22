@@ -72,6 +72,7 @@
 1. № [703. Kth Largest Element in a Stream](solutions/703.%20Kth%20Largest%20Element%20in%20a%20Stream/script.ts)
 1. № [704. Binary Search](solutions/704.%20Binary%20Search/script.ts)
 1. № [705. Design HashSet](solutions/705.%20Design%20HashSet/script.ts)
+1. № [714. Best Time to Buy and Sell Stock with Transaction Fee](solutions/714.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Transaction%20Fee/script.ts)
 1. № [724. Find Pivot Index](solutions/724.%20Find%20Pivot%20Index/script.ts)
 1. № [733. Flood Fill](solutions/733.%20Flood%20Fill/script.ts)
 1. № [744. Find Smallest Letter Greater Than Target](solutions/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target/script.ts)
