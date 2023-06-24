@@ -3,7 +3,8 @@ import {matrixOf} from "../../common/array-utils";
 export {tallestBillboard}
 
 function tallestBillboard(rods: number[]): number {
-    return solve(0, rods, 0, matrixOf(-1, rods.length, 5000 * 2 + 1));
+    const maxDiff: number = rods.reduce((sum: number, r: number): number => sum + r, 0);
+    return solve(0, rods, 0, matrixOf(-1, rods.length, maxDiff * 2 + 1));
 }
 
 function solve(i: number, rods: number[], diff: number, memo: number[][]): number {
