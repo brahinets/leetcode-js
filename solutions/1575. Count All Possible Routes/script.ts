@@ -8,14 +8,13 @@ function countRoutes(locations: number[], start: number, finish: number, fuel: n
     for (let f: number = 0; f <= fuel; f++) {
         for (let from: number = 0; from < locations.length; from++) {
             for (let to: number = 0; to < locations.length; to++) {
-                if (from === to) {
+                const cost: number = Math.abs(locations[to] - locations[from]);
+
+                if (from === to || cost > f) {
                     continue;
                 }
 
-                const cost: number = Math.abs(locations[to] - locations[from]);
-                if (cost <= f) {
-                    routes[from][f] = (routes[from][f] + routes[to][f - cost]) % mod;
-                }
+                routes[from][f] = (routes[from][f] + routes[to][f - cost]) % mod;
             }
         }
     }
