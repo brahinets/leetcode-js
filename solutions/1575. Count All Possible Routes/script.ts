@@ -5,16 +5,16 @@ const mod: number = 1e9 + 7;
 function countRoutes(locations: number[], start: number, finish: number, fuel: number): number {
     const routes: number[][] = routesOnFuel(locations.length, fuel, finish);
 
-    for (let f: number = 0; f <= fuel; f++) {
+    for (let fuelCapacity: number = 0; fuelCapacity <= fuel; fuelCapacity++) {
         for (let from: number = 0; from < locations.length; from++) {
             for (let to: number = 0; to < locations.length; to++) {
                 const cost: number = Math.abs(locations[to] - locations[from]);
 
-                if (from === to || cost > f) {
+                if (from === to || cost > fuelCapacity) {
                     continue;
                 }
 
-                routes[from][f] = (routes[from][f] + routes[to][f - cost]) % mod;
+                routes[from][fuelCapacity] = (routes[from][fuelCapacity] + routes[to][fuelCapacity - cost]) % mod;
             }
         }
     }
