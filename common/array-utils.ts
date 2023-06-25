@@ -25,7 +25,7 @@ function matrixOf<Type>(val: Type, rows: number, cols: number): Type[][] {
     return matrix;
 }
 
-function arrayOfZeros<Type>(size: number): number[] {
+function arrayOfZeros(size: number): number[] {
     return arrayOf(0, size);
 }
 
