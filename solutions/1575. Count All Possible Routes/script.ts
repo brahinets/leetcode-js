@@ -1,12 +1,9 @@
-import {matrixOf} from "../../common/array-utils";
-
 export {countRoutes}
 
 const mod: number = 1e9 + 7;
 
 function countRoutes(locations: number[], start: number, finish: number, fuel: number): number {
-    const routes: number[][] = matrixOf(0, locations.length, fuel + 1);
-    routes[finish].fill(1)
+    const routes: number[][] = routesOnFuel(locations.length, fuel, finish);
 
     for (let f: number = 0; f <= fuel; f++) {
         for (let from: number = 0; from < locations.length; from++) {
@@ -24,4 +21,16 @@ function countRoutes(locations: number[], start: number, finish: number, fuel: n
     }
 
     return routes[start][fuel];
+}
+
+function routesOnFuel(citiesCount: number, fuel: number, finish: number): number[][] {
+    const routes: number[][] = [];
+
+    for (let start: number = 0; start < citiesCount; start++) {
+        const minPossibleRoutes: number = start === finish ? 1 : 0;
+
+        routes[start] = new Array(fuel + 1).fill(minPossibleRoutes);
+    }
+
+    return routes;
 }
