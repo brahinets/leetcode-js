@@ -36,8 +36,7 @@ class PriorityHeap {
             }
 
             if (p1 + p2 < max) {
-                this.data.splice(maxIndex, 1);
-                this.data.push([p1, p2]);
+                this.data[maxIndex] = [p1, p2];
             }
         }
     }
