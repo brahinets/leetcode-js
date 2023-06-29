@@ -33,4 +33,4 @@ function convert(s: string, numRows: number): string {
     }
 
     return matrix.reduce((str: string, row: string[]) => str + row.join(""), "");
-};
+}
