@@ -1,3 +1,5 @@
+export {convert}
+
 const convert = function (s: string, numRows: number): string {
     const matrix: string[][] = [];
     for (let i: number = 0; i < numRows; i++) {
