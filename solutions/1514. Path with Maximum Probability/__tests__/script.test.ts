@@ -21,7 +21,7 @@ describe('1514. Path with Maximum Probability', (): void => {
             .toBe(1);
     });
 
-    it('Np path available', (): void => {
+    it('No path available', (): void => {
         expect(maxProbability(3, [[0, 1]], [0.5], 0, 2))
             .toBe(0.0);
     });
