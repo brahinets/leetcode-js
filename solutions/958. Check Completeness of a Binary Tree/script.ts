@@ -1,3 +1,4 @@
+export {TreeNode, isCompleteTree}
 import {TreeNode} from "../../common/TreeNode";
 
 function isCompleteTree(root: TreeNode | null): boolean {
