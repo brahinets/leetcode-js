@@ -11,7 +11,7 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
 
         const elementThatCanBePopped: number | undefined = popped.shift();
         if (elementThatCanBePopped !== undefined) {
-            let elementThatNeedBePopped: number | undefined = result.pop();
+            const elementThatNeedBePopped: number | undefined = result.pop();
             if (elementThatNeedBePopped !== undefined && elementThatNeedBePopped === elementThatCanBePopped) {
                 canPop = true;
             } else {
