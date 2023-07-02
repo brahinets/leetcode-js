@@ -18,19 +18,22 @@ function buildPaths(edges: number[][], start: number, end: number): number[][][]
     const paths: number[][][] = [];
 
     while (edges.length > 0) {
-        const edgesToTarget: number[][] = edges.filter((e: number[]): boolean => e[1] === end)
-        edges = edges.filter((e: number[]): boolean => e[1] !== end)
+        const edgesToTarget: number[][] = edges.filter((e: number[]): boolean => e[0] === end || e[1] === end)
+        edges = edges.filter((e: number[]): boolean => e[0] !== end && e[1] !== end)
 
         if(edgesToTarget.length === 0) {
             break;
         }
 
         for (const edgeToTarget of edgesToTarget) {
-            if (edgeToTarget[0] === start) {
+            if (edgeToTarget[0] === start || edgeToTarget[1] === start) {
                 const items: number[][] = [edgeToTarget];
                 paths.push(items);
             } else {
-                const prefixes: number[][][] = buildPaths(edges, start, edgeToTarget[0]);
+                const prefixes: number[][][] = edgeToTarget[0] === end ?
+                    buildPaths(edges, start, edgeToTarget[1]) :
+                    buildPaths(edges, start, edgeToTarget[0]);
+
                 for (const prefix of prefixes) {
                     const items: number[][] = [...prefix, edgeToTarget];
                     paths.push(items);
