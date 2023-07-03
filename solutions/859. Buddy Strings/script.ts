@@ -1,6 +1,10 @@
 export {buddyStrings}
 
 function buddyStrings(s: string, goal: string): boolean {
+    if(s.length !== goal.length) {
+        return false;
+    }
+
     const nonEqualIndex: number[] = [];
 
     for (let i: number = 0; i < s.length; i++) {

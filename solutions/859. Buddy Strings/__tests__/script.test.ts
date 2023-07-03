@@ -11,6 +11,11 @@ describe('859. Buddy Strings', (): void => {
             .toBe(false);
     });
 
+    it('Cannot swap, different length', (): void => {
+        expect(buddyStrings("aa", "aaa"))
+            .toBe(false);
+    });
+
     it('Cannot swap, will not break equality', (): void => {
         expect(buddyStrings("aa", "aa"))
             .toBe(true);
