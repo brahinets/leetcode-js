@@ -23,5 +23,5 @@ function longestSubarray(nums: number[]): number {
         maxCount = Math.max(broken ? end - start - 1 : end - start, maxCount);
     }
 
-    return maxCount === nums.length ? maxCount - 1 : maxCount;
+    return broken ? maxCount : maxCount - 1;
 }
