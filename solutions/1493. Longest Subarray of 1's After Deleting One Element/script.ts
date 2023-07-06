@@ -2,24 +2,25 @@ export {longestSubarray}
 
 function longestSubarray(nums: number[]): number {
     let maxCount: number = 0;
-    const window: number[] = [];
+    let start: number = 0;
+    let end: number = 0;
     let broken: boolean = false;
 
     for (let i: number = 0; i < nums.length; i++) {
-        window.push(nums[i]);
+        end++;
 
         if (nums[i] !== 1) {
             if (broken) {
-                while (window.length && window[0] === 1) {
-                    window.shift();
+                while (nums[start] === 1) {
+                    start++;
                 }
-                window.shift();
+                start++;
             }
 
             broken = true;
         }
 
-        maxCount = Math.max(broken ? window.length - 1 : window.length, maxCount);
+        maxCount = Math.max(broken ? end - start - 1 : end - start, maxCount);
     }
 
     return maxCount === nums.length ? maxCount - 1 : maxCount;
