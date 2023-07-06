@@ -2,24 +2,25 @@ export {longestSubarray}
 
 function longestSubarray(nums: number[]): number {
     let maxCount: number = 0;
+    const window: number[] = [];
+    let broken: boolean = false;
 
-    for (let start: number = 0; start < nums.length; start++) {
-        for (let end: number = start + 1; end <= nums.length; end++) {
-            const counts: Map<number, number> = count(nums.slice(start, end));
-            const allOnes: number = end - start;
+    for (let i: number = 0; i < nums.length; i++) {
+        window.push(nums[i]);
 
-            if (counts.get(1) && (counts.get(1) === allOnes - 1 || counts.get(1) === allOnes)) {
-                maxCount = Math.max(allOnes - 1, maxCount)
+        if (nums[i] !== 1) {
+            if (broken) {
+                while (window.length && window[0] === 1) {
+                    window.shift();
+                }
+                window.shift();
             }
+
+            broken = true;
         }
+
+        maxCount = Math.max(broken ? window.length - 1 : window.length, maxCount);
     }
 
-    return maxCount;
-}
-
-function count<Type>(nums: Type[]): Map<Type, number> {
-    return nums.reduce((count: Map<Type, number>, num: Type) => {
-        count.set(num, (count.get(num) || 0) + 1);
-        return count;
-    }, new Map<Type, number>());
+    return maxCount === nums.length ? maxCount - 1 : maxCount;
 }
