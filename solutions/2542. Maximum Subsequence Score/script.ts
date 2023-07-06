@@ -13,7 +13,7 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
     for (const pair of data) {
         sum += pair.summer;
 
-        let deleted: number | null = insertSorted(subsequence, k, pair);
+        const deleted: number | null = insertSorted(subsequence, k, pair);
         if (deleted) {
             sum -= deleted;
         }
