@@ -7,24 +7,24 @@ function maxConsecutiveAnswers(answerKey: string, k: number): number {
     );
 }
 
-function maxConsecutiveAnswersOf(key: string, answerKey: string, k: number): number {
+function maxConsecutiveAnswersOf(key: string, answerKey: string, limit: number): number {
     let maxCount: number = 0;
     let start: number = 0;
     let end: number = 0;
 
-    let detected: number = 0;
+    let change: number = 0;
 
     for (let i: number = 0; i < answerKey.length; i++) {
         end++;
 
         if (answerKey[i] !== key) {
-            detected++;
-            while (detected > k) {
+            change++;
+            while (change > limit) {
                 while (answerKey[start] === key) {
                     start++;
                 }
                 start++;
-                detected--;
+                change--;
             }
         }
 
