@@ -124,6 +124,7 @@
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
 1. № [1799. Maximize Score After N Operations](solutions/1799.%20Maximize%20Score%20After%20N%20Operations/script.ts)
 1. № [1822. Sign of the Product of an Array](solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array/script.ts)
+1. № [2024. Maximize the Confusion of an Exam](solutions/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/script.ts)
 1. № [2090. K Radius Subarray Averages](solutions/2090.%20K%20Radius%20Subarray%20Averages/script.ts)
 1. № [2130. Maximum Twin Sum of a Linked List](solutions/2130.%20Maximum%20Twin%20Sum%20of%20a%20Linked%20List/script.ts)
 1. № [2140. Solving Questions With Brainpower](solutions/2140.%20Solving%20Questions%20With%20Brainpower/script.ts)
