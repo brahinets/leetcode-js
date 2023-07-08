@@ -145,5 +145,6 @@
 1. № [2462. Total Cost to Hire K Workers](solutions/2462.%20Total%20Cost%20to%20Hire%20K%20Workers/script.ts)
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
+1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
 
 </details>
