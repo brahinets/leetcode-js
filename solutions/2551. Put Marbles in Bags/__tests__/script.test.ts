@@ -11,4 +11,9 @@ describe('2551. Put Marbles in Bags', (): void => {
         expect(putMarbles([1, 3], 2))
             .toBe(0);
     });
+
+    it('Min and Max are different', (): void => {
+        expect(putMarbles([1, 3, 5, 1], 2))
+            .toBe(4);
+    });
 })
