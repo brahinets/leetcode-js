@@ -7,17 +7,20 @@ function putMarbles(weights: number[], k: number): number {
 
     const costs: number[] = [];
 
-    const endsIncluding: number[][] = [Array.from(Array(k).keys())];
-
+    const endsIncluding: number[][] = generateEndsIncluding(k);
     for (const ends of endsIncluding) {
         const buckets: number[][] = breakOnBuckets(weights, ends);
 
         costs.push(buckets
-            .map((b: number[]): number => b[0] + b[b.length - 1])
-            .reduce((sum: number, val: number): number => sum + val, 0));
+            .map((bucket: number[]): number => bucket[0] + bucket[bucket.length - 1])
+            .reduce((distributionCost: number, bucketCost: number): number => distributionCost + bucketCost, 0));
     }
 
     return Math.max(...costs) - Math.min(...costs);
+}
+
+function generateEndsIncluding(bucketsCount: number): number[][] {
+    return [Array.from(Array(bucketsCount).keys())];
 }
 
 function breakOnBuckets(weights: number[], endsIncluding: number[]) {
