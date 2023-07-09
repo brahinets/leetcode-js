@@ -30,7 +30,13 @@ function arrayOfZeros(size: number): number[] {
 }
 
 function arrayOf<Type>(val: Type, size: number): Type[] {
-    return new Array<Type>(size).fill(val);
+    const array: Type[] = [];
+
+    for (let i: number = 0; i < size; i++) {
+        array.push(JSON.parse(JSON.stringify(val)))
+    }
+
+    return array;
 }
 
 function count<Type>(nums: Type[]): Map<Type, number> {
