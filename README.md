@@ -135,6 +135,7 @@
 1. № [2236. Root Equals Sum of Children](solutions/2236.%20Root%20Equals%20Sum%20of%20Children/script.ts)
 1. № [2448. Minimum Cost to Make Array Equal](solutions/2448.%20Minimum%20Cost%20to%20Make%20Array%20Equal/script.ts)
 1. № [2300. Successful Pairs of Spells and Potions](solutions/2300.%20Successful%20Pairs%20of%20Spells%20and%20Potions/script.ts)
+1. № [2305. Fair Distribution of Cookies](solutions/2305.%20Fair%20Distribution%20of%20Cookies/script.ts)
 1. № [2336. Smallest Number in Infinite Set](solutions/2336.%20Smallest%20Number%20in%20Infinite%20Set/script.ts)
 1. № [2348. Number of Zero-Filled Sub-arrays](solutions/2348.%20Number%20of%20Zero-Filled%20Sub-arrays/script.ts)
 1. № [2352. Equal Row and Column Pairs](solutions/2352.%20Equal%20Row%20and%20Column%20Pairs/script.ts)
