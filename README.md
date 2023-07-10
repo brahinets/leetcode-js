@@ -36,6 +36,7 @@
 1. № [109. Convert Sorted List to Binary Search Tree](solutions/109.%20Convert%20Sorted%20List%20to%20Binary%20Search%20Tree/script.ts)
 1. № [101. Symmetric Tree](solutions/101.%20Symmetric%20Tree/script.ts)
 1. № [102. Binary Tree Level Order Traversal](solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal/script.ts)
+1. № [111. Minimum Depth of Binary Tree](solutions/111.%20Minimum%20Depth%20of%20Binary%20Tree/script.ts)
 1. № [121. Best Time to Buy and Sell Stock](solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/script.ts)
 1. № [129. Sum Root to Leaf Numbers](solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers/script.ts)
 1. № [137. Single Number II](solutions/137.%20Single%20Number%20II/script.ts)
