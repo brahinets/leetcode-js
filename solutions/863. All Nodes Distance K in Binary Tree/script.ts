@@ -3,53 +3,61 @@ import {TreeNode} from "../../common/TreeNode";
 export {distanceK, TreeNode};
 
 function distanceK(root: TreeNode | null, target: TreeNode | null, k: number): number[] {
-    const result: number[] = [];
-
     if (!root || !target) {
-        return result;
+        return [];
     }
 
-    const startNode: TreeNode | null = findNode(root, target);
-    if (!startNode) {
-        return result;
+    const graph: Map<number, Set<number>> = buildGraph(root, new Map<number, Set<number>>());
+    if (!graph.has(target.val)) {
+        return [];
     }
 
-    return findAllWithLength(startNode, 1, k);
+    const visited: number[] = [target.val];
+    const targets: number[] = findNodes(graph, visited, target.val, k);
+
+    return targets;
 }
 
-function findAllWithLength(root: TreeNode | null, currentDepth: number, targetDepth: number): number[] {
-    const result: number[] = [];
+function findNodes(graph: Map<number, Set<number>>, visited: number[], from: number, k: number): number[] {
+    const res: number[] = [];
 
-    if (root) {
-        if (currentDepth === targetDepth) {
-            result.push(root.val);
-        } else {
-            result.push(...findAllWithLength(root.left, currentDepth + 1, targetDepth));
-            result.push(...findAllWithLength(root.right, currentDepth + 1, targetDepth));
+    const neighbours: Set<number> | undefined = graph.get(from);
+    if (!neighbours) {
+        return res;
+    }
+
+    if (k === 0) {
+        res.push(from);
+    }
+
+    for (const n of neighbours) {
+        if (!visited.includes(n)) {
+            visited.push(n);
+            res.push(...findNodes(graph, visited, n, k - 1));
         }
     }
 
-    return result;
+    return res;
 }
 
-function findNode(root: TreeNode, target: TreeNode): TreeNode | null {
-    if (root.val === target.val) {
-        return root;
+
+function buildGraph(root: TreeNode | null, graph: Map<number, Set<number>>): Map<number, Set<number>> {
+    if (!root) {
+        return graph;
     }
 
     if (root.left) {
-        const lefty: TreeNode | null = findNode(root.left, target);
-        if (lefty) {
-            return lefty;
-        }
+        graph.set(root.val, new Set<number>([...graph.get(root.val) ?? [], root.left.val]));
+        graph.set(root.left.val, new Set<number>([...graph.get(root.left.val) ?? [], root.val]));
     }
 
     if (root.right) {
-        const righty: TreeNode | null = findNode(root.right, target);
-        if (righty) {
-            return righty;
-        }
+        graph.set(root.val, new Set<number>([...graph.get(root.val) ?? [], root.right.val]));
+        graph.set(root.right.val, new Set<number>([...graph.get(root.right.val) ?? [], root.val]));
     }
 
-    return null;
+    buildGraph(root.left, graph);
+    buildGraph(root.right, graph);
+
+    return graph;
 }
