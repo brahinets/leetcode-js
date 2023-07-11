@@ -13,9 +13,7 @@ function distanceK(root: TreeNode | null, target: TreeNode | null, k: number): n
     }
 
     const visited: number[] = [target.val];
-    const targets: number[] = findNodes(graph, visited, target.val, k);
-
-    return targets;
+    return findNodes(graph, visited, target.val, k);
 }
 
 function findNodes(graph: Map<number, Set<number>>, visited: number[], from: number, k: number): number[] {
