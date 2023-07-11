@@ -84,6 +84,7 @@
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
 1. № [859. Buddy Strings](solutions/859.%20Buddy%20Strings/script.ts)
+1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
 1. № [875. Koko Eating Bananas](solutions/875.%20Koko%20Eating%20Bananas/script.ts)
 1. № [876. Middle of the Linked List](solutions/876.%20Middle%20of%20the%20Linked%20List/script.ts)
 1. № [881. Boats to Save People](solutions/881.%20Boats%20to%20Save%20People/script.ts)
