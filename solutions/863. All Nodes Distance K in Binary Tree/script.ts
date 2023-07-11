@@ -14,6 +14,21 @@ function distanceK(root: TreeNode | null, target: TreeNode | null, k: number): n
         return result;
     }
 
+    return findAllWithLength(startNode, 1, k);
+}
+
+function findAllWithLength(root: TreeNode | null, currentDepth: number, targetDepth: number): number[] {
+    const result: number[] = [];
+
+    if (root) {
+        if (currentDepth === targetDepth) {
+            result.push(root.val);
+        } else {
+            result.push(...findAllWithLength(root.left, currentDepth + 1, targetDepth));
+            result.push(...findAllWithLength(root.right, currentDepth + 1, targetDepth));
+        }
+    }
+
     return result;
 }
 
