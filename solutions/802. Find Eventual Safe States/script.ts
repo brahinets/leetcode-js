@@ -5,7 +5,7 @@ function eventualSafeNodes(graphMatrix: number[][]): number[] {
 
     const graph: Map<number, Set<number>> = buildGraph(graphMatrix);
     for (const node of graph) {
-        if (safeNode(node[1], graph)) {
+        if (safeNode(node[1], graph, new Set<number>([node[0]]))) {
             result.push(node[0]);
         }
     }
@@ -13,11 +13,17 @@ function eventualSafeNodes(graphMatrix: number[][]): number[] {
     return result.sort((a: number, b: number): number => a - b);
 }
 
-function safeNode(neighbours: Set<number>, graph: Map<number, Set<number>>): boolean {
+function safeNode(neighbours: Set<number>, graph: Map<number, Set<number>>, visited: Set<number>): boolean {
+    if (neighbours === undefined || neighbours.size === 0) {
+        return true;
+    }
+
     for (const n of neighbours) {
-        const next: Set<number> | undefined = graph.get(n);
-        const isTerminal: boolean = next === undefined || next.size === 0;
-        if (!isTerminal) {
+        if (visited.has(n)) {
+            return false;
+        }
+
+        if (!safeNode(graph.get(n) ?? new Set<number>(), graph, new Set<number>([...visited, n]))) {
             return false;
         }
     }
