@@ -82,6 +82,7 @@
 1. № [744. Find Smallest Letter Greater Than Target](solutions/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target/script.ts)
 1. № [746. Min Cost Climbing Stairs](solutions/746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
+1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe/States)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
 1. № [859. Buddy Strings](solutions/859.%20Buddy%20Strings/script.ts)
 1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
