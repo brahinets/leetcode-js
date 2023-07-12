@@ -15,7 +15,7 @@ function eventualSafeNodes(graphMatrix: number[][]): number[] {
 function safeNode(nodeId: number, graphMatrix: number[][], visited: Set<number>): boolean {
     const neighbours: number[] | undefined = graphMatrix[nodeId];
 
-    if (neighbours === undefined || neighbours.length === 0) {
+    if (isTerminal(neighbours)) {
         return true;
     }
 
@@ -30,4 +30,8 @@ function safeNode(nodeId: number, graphMatrix: number[][], visited: Set<number>)
     }
 
     return true;
+}
+
+function isTerminal(neighbours: number[]): boolean {
+    return neighbours === undefined || neighbours.length === 0;
 }
