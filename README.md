@@ -96,6 +96,7 @@
 1. № [958. Check Completeness of a Binary Tree](solutions/958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
 1. № [989. Add to Array-Form of Integer](solutions/989.%20Add%20to%20Array-Form%20of%20Integer/script.ts)
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
+1. № [1027. Longest Arithmetic Subsequence](solutions/1027.%20Longest%20Arithmetic%20Subsequence/script.ts)
 1. № [1035. Uncrossed Lines](solutions/1035.%20Uncrossed%20Lines/script.ts)
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
 1. № [1091. Shortest Path in Binary Matrix](solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix/script.ts)
