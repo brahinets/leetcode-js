@@ -9,10 +9,11 @@ function longestArithSeqLength(nums: number[]): number {
 
         for (let start: number = 0; start < end; start++) {
             const diff: number = nums[start] - nums[end];
-            const newCount: number = (subsequenceCounts[start].get(diff) ?? 1) + 1;
-            subsequenceCounts[end].set(diff, newCount)
+            const countByStart: number = subsequenceCounts[start].get(diff) ?? 1;
+            const countByEnd: number = countByStart + 1;
+            subsequenceCounts[end].set(diff, countByEnd)
 
-            maxLength = Math.max(maxLength, newCount)
+            maxLength = Math.max(maxLength, countByEnd)
         }
     }
 
