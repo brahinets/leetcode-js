@@ -6,6 +6,11 @@ describe('1218. Longest Arithmetic Subsequence of Given Difference', (): void =>
             .toBe(4);
     });
 
+    it('One element is decreasing sequence', (): void => {
+        expect(longestSubsequence([3, 4, -3, -2, -4], -5))
+            .toBe(2);
+    });
+
     it('Sub-array is increasing sequence', (): void => {
         expect(longestSubsequence([1, 4, 7], 3))
             .toBe(3);
