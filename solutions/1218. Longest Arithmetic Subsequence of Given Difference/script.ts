@@ -5,8 +5,8 @@ function longestSubsequence(arr: number[], difference: number): number {
     let maxCount: number = 1;
 
     for (const num of arr) {
-        const step: number = num - difference;
-        const countByStart: number = subsequenceCounts.get(step) ?? 0;
+        const previous: number = num - difference;
+        const countByStart: number = subsequenceCounts.get(previous) ?? 0;
         const countByEnd: number = countByStart + 1;
         subsequenceCounts.set(num, countByEnd);
 
