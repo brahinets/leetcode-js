@@ -102,6 +102,7 @@
 1. № [1091. Shortest Path in Binary Matrix](solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix/script.ts)
 1. № [1146. Snapshot Array](solutions/1146.%20Snapshot%20Array/script.ts)
 1. № [1161. Maximum Level Sum of a Binary Tree](solutions/1161.%20Maximum%20Level%20Sum%20of%20a%20Binary%20Tree/script.ts)
+1. № [1218. Longest Arithmetic Subsequence of Given Difference](solutions/1218.%20Longest%20Arithmetic%20Subsequence%20of%20Given%20Difference/script.ts)
 1. № [1232. Check If It Is a Straight Line](solutions/1232.%20Check%20If%20It%20Is%20a%20Straight%20Line/script.ts)
 1. № [1254. Number of Closed Islands](solutions/1254.%20Number%20of%20Closed%20Islands/script.ts)
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
