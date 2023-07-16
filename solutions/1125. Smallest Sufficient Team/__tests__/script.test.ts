@@ -22,4 +22,11 @@ describe('1125. Smallest Sufficient Team', (): void => {
         )).toStrictEqual([1, 2]);
     });
 
+    it.skip('Very many of people', (): void => {
+        expect(smallestSufficientTeam(
+            ["cpp", "python", "javascript", "kotlin", "ruby", "r", "c", "rust", "vb"],
+            [["cpp", "c", "rust"], ["cpp", "python", "javascript", "c", "r", "rust"], ["cpp", "python", "javascript", "c", "r", "vb"], ["cpp", "python", "javascript", "ruby", "kotlin", "r", "c", "rust", "vb"], ["cpp", "python", "javascript", "kotlin", "ruby", "r", "c", "rust", "vb"], ["python", "r"], ["cpp", "python", "javascript", "ruby", "kotlin", "r", "c", "rust", "vb"], ["cpp", "python", "javascript", "r", "c", "rust"], ["cpp", "javascript", "rust", "vb"], ["kotlin", "ruby", "c", "vb"], ["cpp", "python", "kotlin", "ruby", "rust", "vb"], ["ruby", "c", "r", "rust"], ["python", "javascript"], ["javascript", "ruby", "rust"], ["python", "javascript", "ruby", "c", "r", "rust", "vb"], ["cpp", "javascript", "kotlin", "r", "c", "vb"], ["c", "rust"], ["cpp", "kotlin", "ruby", "c", "r", "rust", "vb"], ["cpp", "python", "javascript", "ruby", "kotlin", "rust"], ["cpp", "javascript", "ruby"], ["vb"]]
+        )).toStrictEqual([1, 2]);
+    });
+
 });
