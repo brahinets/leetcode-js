@@ -3,13 +3,13 @@ export {smallestSufficientTeam}
 function smallestSufficientTeam(req_skills: string[], people: string[][]): number[] {
     const teams: Array<Set<number>> = formTeams(people, new Set<string>(req_skills));
 
-    let minTeam: Set<number> = new Set<number>(new Array(8)
+    let minTeam: Set<number> = new Set<number>(new Array(people.length)
         .fill(0)
         .map((_: number, index: number): number => index));
 
-    for (const t of teams) {
-        if (t.size < minTeam.size) {
-            minTeam = t;
+    for (const team of teams) {
+        if (team.size < minTeam.size) {
+            minTeam = team;
         }
     }
 
