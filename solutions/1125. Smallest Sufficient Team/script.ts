@@ -8,7 +8,7 @@ function smallestSufficientTeam(req_skills: string[], people: string[][]): numbe
         .map((_: number, index: number): number => index));
 
     for (const team of teams) {
-        if (team.size < minTeam.size) {
+        if (team.size <= minTeam.size) {
             minTeam = team;
         }
     }
