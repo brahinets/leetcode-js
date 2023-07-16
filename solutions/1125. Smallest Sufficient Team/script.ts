@@ -1,7 +1,7 @@
 export {smallestSufficientTeam}
 
 function smallestSufficientTeam(req_skills: string[], people: string[][]): number[] {
-    const teams: Array<Set<number>> = formTeams(people, new Set<number>(), new Set<string>(req_skills));
+    const teams: Array<Set<number>> = formTeams(people, new Set<string>(req_skills));
 
     let minTeam: Set<number> = new Set<number>(new Array(8)
         .fill(0)
@@ -16,37 +16,51 @@ function smallestSufficientTeam(req_skills: string[], people: string[][]): numbe
     return [...minTeam];
 }
 
-function formTeams(teammatesPool: string[][], team: Set<number>, requiredSkills: Set<string>): Set<number>[] {
+function formTeams(teammatesPool: string[][], requiredSkills: Set<string>): Set<number>[] {
     if (requiredSkills.size === 0) {
         return [new Set<number>()];
     }
 
-    let teams: Set<number>[] = [];
-
+    const teams: Set<number>[] = [];
     const [requiredSkill, ...otherRequiredSkills] = requiredSkills;
     const possibleTeammatesIds: number[] = findTeammatesWithSkill(teammatesPool, requiredSkill);
     for (const teammateId of possibleTeammatesIds) {
-        teams.push(new Set<number>([teammateId]))
+        teams.push(new Set<number>([teammateId]));
     }
 
-    requiredSkills = new Set<string>(otherRequiredSkills);
-    while (requiredSkills.size > 0) {
-        const [requiredSkill, ...otherRequiredSkills] = requiredSkills;
-        const possibleTeammatesIds: number[] = findTeammatesWithSkill(teammatesPool, requiredSkill);
-        requiredSkills = new Set<string>(otherRequiredSkills);
+    return fillTeams(teammatesPool, teams, new Set<string>(otherRequiredSkills));
+}
 
-        const newTeams: Set<number>[] = [];
-        for (const teammateId of possibleTeammatesIds) {
-            for (const team of teams) {
-                newTeams.push(new Set<number>([...team, teammateId]));
+
+function fillTeams(teammatesPool: string[][], teams: Set<number>[], requiredSkills: Set<string>): Set<number>[] {
+    if (requiredSkills.size === 0) {
+        return teams;
+    }
+
+    const newTeams: Set<number>[] = [];
+    const [requiredSkill, ...otherRequiredSkills] = requiredSkills;
+    const possibleTeammatesIds: number[] = findTeammatesWithSkill(teammatesPool, requiredSkill);
+    for (const team of teams) {
+        let teamNeed: boolean = true;
+        for (const t of team) {
+            if (teammatesPool[t].includes(requiredSkill)) {
+                teamNeed = false;
+                break;
             }
         }
 
-        teams = newTeams;
+        if (teamNeed) {
+            for (const teammateId of possibleTeammatesIds) {
+                newTeams.push(new Set<number>([...team, teammateId]));
+            }
+        } else {
+            newTeams.push(team);
+        }
     }
 
-    return teams;
+    return fillTeams(teammatesPool, newTeams, new Set<string>(otherRequiredSkills));
 }
+
 
 function findTeammatesWithSkill(teammatesPool: string[][], requiredSkill: string): number[] {
     const team: number[] = [];
