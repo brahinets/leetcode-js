@@ -1,7 +1,7 @@
 export {smallestSufficientTeam}
 
 function smallestSufficientTeam(req_skills: string[], people: string[][]): number[] {
-    const teams: Array<Set<number>> = formTeams(people, req_skills);
+    const teams: Array<Set<number>> = formTeams(people, skillsByPopularity(people, req_skills));
 
     let minTeam: Set<number> = new Set<number>(new Array(people.length)
         .fill(0)
@@ -72,4 +72,22 @@ function findTeammatesWithSkill(teammatesPool: string[][], requiredSkill: string
     }
 
     return team;
+}
+
+function skillsByPopularity(people: string[][], skills: string[]): string[] {
+    const counts: Map<string, number> = peopleHavingSkill(people);
+    return [...skills]
+        .sort((s1: string, s2: string): number => (counts.get(s1) ?? 0) - (counts.get(s2) ?? 0));
+}
+
+function peopleHavingSkill(people: string[][]): Map<string, number> {
+    const counts: Map<string, number> = new Map<string, number>();
+
+    for (const skills of people) {
+        for (const skill of skills) {
+            counts.set(skill, (counts.get(skill) ?? 0) + 1);
+        }
+    }
+
+    return counts;
 }
