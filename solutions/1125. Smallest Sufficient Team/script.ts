@@ -1,7 +1,7 @@
 export {smallestSufficientTeam}
 
 function smallestSufficientTeam(req_skills: string[], people: string[][]): number[] {
-    const teams: Array<Set<number>> = formTeams(people, new Set<string>(req_skills));
+    const teams: Array<Set<number>> = formTeams(people, req_skills);
 
     let minTeam: Set<number> = new Set<number>(new Array(people.length)
         .fill(0)
@@ -16,29 +16,30 @@ function smallestSufficientTeam(req_skills: string[], people: string[][]): numbe
     return [...minTeam];
 }
 
-function formTeams(teammatesPool: string[][], requiredSkills: Set<string>): Set<number>[] {
-    if (requiredSkills.size === 0) {
+function formTeams(teammatesPool: string[][], requiredSkills: string[]): Set<number>[] {
+    if (requiredSkills.length === 0) {
         return [new Set<number>()];
     }
 
     const teams: Set<number>[] = [];
-    const [requiredSkill, ...otherRequiredSkills] = requiredSkills;
+    const requiredSkill: string = requiredSkills[0];
+    const otherRequiredSkills: string[] = requiredSkills.slice(1);
     const possibleTeammatesIds: number[] = findTeammatesWithSkill(teammatesPool, requiredSkill);
     for (const teammateId of possibleTeammatesIds) {
         teams.push(new Set<number>([teammateId]));
     }
 
-    return fillTeams(teammatesPool, teams, new Set<string>(otherRequiredSkills));
+    return fillTeams(teammatesPool, teams, otherRequiredSkills);
 }
 
-
-function fillTeams(teammatesPool: string[][], teams: Set<number>[], requiredSkills: Set<string>): Set<number>[] {
-    if (requiredSkills.size === 0) {
+function fillTeams(teammatesPool: string[][], teams: Set<number>[], requiredSkills: string[]): Set<number>[] {
+    if (requiredSkills.length === 0) {
         return teams;
     }
 
     const newTeams: Set<number>[] = [];
-    const [requiredSkill, ...otherRequiredSkills] = requiredSkills;
+    const requiredSkill: string = requiredSkills[0];
+    const otherRequiredSkills: string[] = requiredSkills.slice(1);
     const possibleTeammatesIds: number[] = findTeammatesWithSkill(teammatesPool, requiredSkill);
     for (const team of teams) {
         let teamNeed: boolean = true;
@@ -58,9 +59,8 @@ function fillTeams(teammatesPool: string[][], teams: Set<number>[], requiredSkil
         }
     }
 
-    return fillTeams(teammatesPool, newTeams, new Set<string>(otherRequiredSkills));
+    return fillTeams(teammatesPool, newTeams, otherRequiredSkills);
 }
-
 
 function findTeammatesWithSkill(teammatesPool: string[][], requiredSkill: string): number[] {
     const team: number[] = [];
