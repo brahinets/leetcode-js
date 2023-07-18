@@ -22,4 +22,21 @@ describe('146. LRU Cache', (): void => {
         expect(cache.get(3)).toBe(30);
         expect(cache.get(4)).toBe(40);
     });
+
+    it('Test repeatable insertion', (): void => {
+        const cache: LRUCache = new LRUCache(2);
+
+        expect(cache.get(1)).toBe(-1);
+        expect(cache.get(2)).toBe(-1);
+
+        cache.put(2, 6);
+        expect(cache.get(1)).toBe(-1);
+        expect(cache.get(2)).toBe(6);
+
+        cache.put(1, 5);
+        cache.put(1, 2);
+        expect(cache.get(1)).toBe(2);
+        expect(cache.get(2)).toBe(6);
+
+    });
 })
