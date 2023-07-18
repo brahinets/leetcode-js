@@ -1,9 +1,9 @@
 import {LRUCache} from "../script";
 
 describe('146. LRU Cache', (): void => {
-    const cache: LRUCache = new LRUCache(2);
-
     it('Test cache', (): void => {
+        const cache: LRUCache = new LRUCache(2);
+
         cache.put(1, 10);
         expect(cache.get(1)).toBe(10);
 
