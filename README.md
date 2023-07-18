@@ -41,6 +41,7 @@
 1. № [129. Sum Root to Leaf Numbers](solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers/script.ts)
 1. № [137. Single Number II](solutions/137.%20Single%20Number%20II/script.ts)
 1. № [142. Linked List Cycle II](solutions/142.%20Linked%20List%20Cycle%20II/script.ts)
+1. № [146. LRU Cache](solutions/146.%20LRU%20Cache/script.ts)
 1. № [200. Number of Islands](solutions/200.%20Number%20of%20Islands/script.ts)
 1. № [205. Find the Index of the First Occurrence in a String](solutions/205.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/script.ts)
 1. № [206. Reverse Linked List](solutions/206.%20Reverse%20Linked%20List/script.ts)
