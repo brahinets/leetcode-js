@@ -63,6 +63,7 @@
 1. № [399. Evaluate Division](solutions/399.%20Evaluate%20Division/script.ts)
 1. № [409. Longest Palindrome](solutions/409.%20Longest%20Palindrome/script.ts)
 1. № [424. Longest Repeating Character Replacement](solutions/424.%20Longest%20Repeating%20Character%20Replacement/script.ts)
+1. № [435. Non-overlapping Intervals](solutions/435.%20Non-overlapping%20Intervals/script.ts)
 1. № [438. Find All Anagrams in a String](solutions/438.%20Find%20All%20Anagrams%20in%20a%20String/script.ts)
 1. № [443. String Compression](solutions/443.%20String%20Compression/script.ts)
 1. № [445. Add Two Numbers II](solutions/445.%20Add%20Two%20Numbers%20II/script.ts)
