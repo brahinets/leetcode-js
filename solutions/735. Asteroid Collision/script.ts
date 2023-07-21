@@ -20,8 +20,12 @@ function asteroidCollision(asteroids: number[]): number[] {
         }
 
         canExplodeMore ||= asteroids.includes(Number.NaN);
-        asteroids = asteroids.filter((a: number): boolean => !Number.isNaN(a))
+        asteroids = filterNonCrashedAsteroids(asteroids)
     } while (canExplodeMore)
 
-    return asteroids.filter((a: number): boolean => !Number.isNaN(a));
+    return filterNonCrashedAsteroids(asteroids);
+}
+
+function filterNonCrashedAsteroids(asteroids: number[]): number[] {
+    return asteroids.filter((asteroidPower: number): boolean => !Number.isNaN(asteroidPower));
 }
