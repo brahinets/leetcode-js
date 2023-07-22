@@ -12,7 +12,6 @@ function knightProbability(n: number, k: number, row: number, column: number): n
     collectPossibleEnds(n, k, row, column, ends);
 
     let keep: number = 0;
-    let lose: number = 0;
 
     for (const end of ends) {
         const endRow: number = end[0];
@@ -20,8 +19,6 @@ function knightProbability(n: number, k: number, row: number, column: number): n
 
         if (endRow >= 0 && endRow < n && endCol >= 0 && endCol < n) {
             keep++;
-        } else {
-            lose++;
         }
     }
 
