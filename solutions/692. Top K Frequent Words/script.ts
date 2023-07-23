@@ -3,7 +3,8 @@ import {count} from '../../common/array-utils'
 export {topKFrequent}
 
 function topKFrequent(values: string[], k: number): string[] {
-    values = sort(values);
+    const counting: Map<string, number> = count(values);
+    values.sort(byCountThenLexicographically(counting));
 
     const result: string[] = [];
     for (let i: number = 0; i < values.length && result.length < k; i++) {
@@ -17,10 +18,8 @@ function topKFrequent(values: string[], k: number): string[] {
     return result;
 }
 
-function sort(values: string[]): string[] {
-    const counting: Map<string, number> = count(values);
-
-    return [...values].sort((v1: string, v2: string): number => {
+function byCountThenLexicographically(counting: Map<string, number>): Comparator<string> {
+    return (v1: string, v2: string): number => {
         const counter: number = (counting.get(v1) ?? 0) - (counting.get(v2) ?? 0);
 
         if (counter !== 0) {
@@ -28,5 +27,7 @@ function sort(values: string[]): string[] {
         }
 
         return v2.localeCompare(v1);
-    })
+    }
 }
+
+type Comparator<T> = (value: T, other: T) => number;
