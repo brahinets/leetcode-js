@@ -9,36 +9,33 @@ const turns: number[][] = [
 
 function knightProbability(n: number, k: number, row: number, column: number): number {
     const memo: Map<string, number> = new Map<string, number>();
-    return countSafeNds(n, k, row, column, memo) / (8 ** k);
+    return chanceOfSafeEnds(n, k, row, column, memo);
 }
 
-function countSafeNds(n: number, k: number, row: number, column: number, memo: Map<string, number>): number {
-    let count: number = 0;
-
-    if (!isInsideBoard(n, row, column)) {
-        return count;
+function chanceOfSafeEnds(n: number, k: number, row: number, column: number, memo: Map<string, number>): number {
+    if (k === 0) {
+        return isInsideBoard(n, row, column) ? 1 : 0;
     }
 
-    if (k === 0) {
-        count = 1;
-    } else {
-        const memoKey: string = `${row}${column}`;
-        const safe: number | undefined = memo.get(memoKey);
+    let probability: number = 0;
+    const memoKey: string = `${k}${row}${column}`;
+    const safe: number | undefined = memo.get(memoKey);
 
-        if (safe !== undefined) {
-            count = safe;
-        } else {
-            for (const turn of turns) {
-                const nextRow: number = row + turn[0];
-                const nextCol: number = column + turn[1];
-                count += countSafeNds(n, k - 1, nextRow, nextCol, memo);
+    if (safe !== undefined) {
+        probability = safe;
+    } else {
+        for (const turn of turns) {
+            const nextRow: number = row + turn[0];
+            const nextCol: number = column + turn[1];
+            if (isInsideBoard(n, nextRow, nextCol)) {
+                probability += chanceOfSafeEnds(n, k - 1, nextRow, nextCol, memo) / 8;
             }
         }
 
-        memo.set(memoKey, count);
+        memo.set(memoKey, probability);
     }
 
-    return count;
+    return probability;
 }
 
 function isInsideBoard(boardSize: number, row: number, column: number): boolean {

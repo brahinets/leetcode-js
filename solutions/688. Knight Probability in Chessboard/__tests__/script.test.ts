@@ -21,7 +21,7 @@ describe('688. Knight Probability in Chessboard', (): void => {
             .toBeCloseTo(0.06250, 5);
     });
 
-    it.skip('High precision, load test', (): void => {
+    it('High precision, load test', (): void => {
         expect(knightProbability(8, 30, 6, 4))
             .toBeCloseTo(0.00019, 5);
     });
