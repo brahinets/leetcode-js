@@ -17,23 +17,23 @@ function chanceOfSafeEnds(n: number, k: number, row: number, column: number, mem
         return isInsideBoard(n, row, column) ? 1 : 0;
     }
 
-    let probability: number = 0;
     const memoKey: string = `${k}_${row}_${column}`;
-    const safe: number | undefined = memo.get(memoKey);
 
-    if (safe !== undefined) {
-        probability = safe;
-    } else {
-        for (const turn of turns) {
-            const nextRow: number = row + turn[0];
-            const nextCol: number = column + turn[1];
-            if (isInsideBoard(n, nextRow, nextCol)) {
-                probability += chanceOfSafeEnds(n, k - 1, nextRow, nextCol, memo) / 8;
-            }
-        }
-
-        memo.set(memoKey, probability);
+    const cached: number | undefined = memo.get(memoKey);
+    if (cached !== undefined) {
+        return cached;
     }
+
+    let probability: number = 0;
+    for (const turn of turns) {
+        const nextRow: number = row + turn[0];
+        const nextCol: number = column + turn[1];
+
+        if (isInsideBoard(n, nextRow, nextCol)) {
+            probability += chanceOfSafeEnds(n, k - 1, nextRow, nextCol, memo) / 8;
+        }
+    }
+    memo.set(memoKey, probability);
 
     return probability;
 }
