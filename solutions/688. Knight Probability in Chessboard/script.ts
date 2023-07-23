@@ -18,7 +18,7 @@ function chanceOfSafeEnds(n: number, k: number, row: number, column: number, mem
     }
 
     let probability: number = 0;
-    const memoKey: string = `${k}${row}${column}`;
+    const memoKey: string = `${k}_${row}_${column}`;
     const safe: number | undefined = memo.get(memoKey);
 
     if (safe !== undefined) {
