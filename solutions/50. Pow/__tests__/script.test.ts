@@ -31,6 +31,11 @@ describe('50. Pow(x, n)', (): void => {
             .toBe(1);
     });
 
+    it('Powering one in negative power', (): void => {
+        expect(myPow(1.00000, -2147483648))
+            .toBe(1);
+    });
+
     it('Zero power', (): void => {
         expect(myPow(2.00000, 0))
             .toBe(1);

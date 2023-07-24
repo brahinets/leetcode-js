@@ -5,14 +5,13 @@ function myPow(x: number, n: number): number {
         return 1;
     }
 
-    if (Math.abs(x) === 1) {
-        return (Math.abs(n) % 2) * x;
+    if (n < 0) {
+        return 1 / myPow(x, Math.abs(n))
     }
 
-    let result: number = 1;
-    for (let i: number = 0; i < Math.abs(n); i++) {
-        result *= x;
+    if (n % 2 === 0) {
+        return myPow(x * x, n / 2);
+    } else {
+        return myPow(x * x, (n - 1) / 2) * x;
     }
-
-    return n > 0 ? result : (1 / result);
 }
