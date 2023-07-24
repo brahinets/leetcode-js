@@ -3,7 +3,7 @@ import {myPow} from '../script'
 describe('50. Pow(x, n)', (): void => {
     it('Integer in positive power', (): void => {
         expect(myPow(2.00000, 10))
-            .toBeCloseTo(1024.00000, 5);
+            .toBe(1024);
     });
 
     it('Float in positive power', (): void => {
@@ -23,11 +23,11 @@ describe('50. Pow(x, n)', (): void => {
 
     it('Powering one', (): void => {
         expect(myPow(-1.00000, 2147483647))
-            .toBeCloseTo(-1, 5);
+            .toBe(-1);
     });
 
     it('Zero power', (): void => {
         expect(myPow(2.00000, 0))
-            .toBeCloseTo(1, 5);
+            .toBe(1);
     });
 })
