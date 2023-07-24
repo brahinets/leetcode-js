@@ -20,4 +20,9 @@ describe('50. Pow(x, n)', (): void => {
         expect(myPow(2.10000, -3))
             .toBeCloseTo(0.10798, 5);
     });
+
+    it('Zero power', (): void => {
+        expect(myPow(2.00000, 0))
+            .toBeCloseTo(1, 5);
+    });
 })
