@@ -90,6 +90,7 @@
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
+1. № [852. Peak Index in a Mountain Array](solutions/852.%20Peak%20Index%20in%20a%20Mountain%20Array/script.ts)
 1. № [859. Buddy Strings](solutions/859.%20Buddy%20Strings/script.ts)
 1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
 1. № [875. Koko Eating Bananas](solutions/875.%20Koko%20Eating%20Bananas/script.ts)
