@@ -14,14 +14,11 @@ function minSpeedOnTime(dist: number[], hour: number): number {
 }
 
 function sumTime(dist: number[], speed: number): number {
-    let time: number = 0;
+    return dist.reduce((totalTime: number, trainDistance: number, trainNumber: number): number => {
+        const lastTrain: boolean = trainNumber === dist.length - 1;
+        const time: number = trainDistance / speed;
 
-    for (let i: number = 0; i < dist.length - 1; i++) {
-        time += Math.ceil(dist[i] / speed)
-    }
-
-    time += (dist[dist.length - 1] / speed)
-
-    return time;
+        return totalTime + (lastTrain ? time : Math.ceil(time));
+    }, 0);
 }
 
