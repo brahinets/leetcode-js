@@ -5,12 +5,21 @@ function minSpeedOnTime(dist: number[], hour: number): number {
         return -1;
     }
 
-    let speed: number = 1;
-    while ((sumTime(dist, speed)) > hour) {
-        speed++;
+    let min: number = -1;
+    let left: number = 1;
+    let right: number = 1e7;
+    while (left <= right) {
+        const mid: number = Math.round((right + left) / 2);
+
+        if ((sumTime(dist, mid)) <= hour) {
+            min = mid;
+            right = mid - 1;
+        } else {
+            left = mid + 1;
+        }
     }
 
-    return speed;
+    return min;
 }
 
 function sumTime(dist: number[], speed: number): number {
