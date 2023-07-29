@@ -90,6 +90,7 @@
 1. № [746. Min Cost Climbing Stairs](solutions/746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
+1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
 1. № [852. Peak Index in a Mountain Array](solutions/852.%20Peak%20Index%20in%20a%20Mountain%20Array/script.ts)
 1. № [859. Buddy Strings](solutions/859.%20Buddy%20Strings/script.ts)
