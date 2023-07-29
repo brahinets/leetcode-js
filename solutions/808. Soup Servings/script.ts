@@ -5,6 +5,10 @@ export {soupServings}
 const DOSES: number[][] = [[100, 0], [75, 25], [50, 50], [25, 75]]
 
 function soupServings(n: number): number {
+    if (n > 200) {
+        return 1
+    }
+
     return solve(n, n, matrixOf(-1, n + 1, n + 1))
 }
 
