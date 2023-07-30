@@ -15,6 +15,8 @@ function solve(a: number, b: number, matrix: number[][]): number {
         return 1
     } else if (b === 0) {
         return 0
+    } else if (matrix[a][b] !== -1) {
+        return matrix[a][b]
     }
 
     let probability: number = 0;
