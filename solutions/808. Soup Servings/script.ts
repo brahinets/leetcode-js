@@ -3,9 +3,10 @@ import {matrixOf} from "../../common/array-utils";
 export {soupServings}
 
 const DOSES: number[][] = [[100, 0], [75, 25], [50, 50], [25, 75]]
+const NO_VALUE: number = -1
 
 function soupServings(n: number): number {
-    return solve(n, n, matrixOf(-1, n + 1, n + 1))
+    return solve(n, n, matrixOf(NO_VALUE, n + 1, n + 1))
 }
 
 function solve(a: number, b: number, matrix: number[][]): number {
@@ -15,7 +16,7 @@ function solve(a: number, b: number, matrix: number[][]): number {
         return 1
     } else if (b === 0) {
         return 0
-    } else if (matrix[a][b] !== -1) {
+    } else if (matrix[a][b] !== NO_VALUE) {
         return matrix[a][b]
     }
 
