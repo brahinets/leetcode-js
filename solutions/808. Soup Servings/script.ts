@@ -5,10 +5,6 @@ export {soupServings}
 const DOSES: number[][] = [[100, 0], [75, 25], [50, 50], [25, 75]]
 
 function soupServings(n: number): number {
-    if (n > 200) {
-        return 1
-    }
-
     return solve(n, n, matrixOf(-1, n + 1, n + 1))
 }
 
@@ -27,6 +23,10 @@ function solve(a: number, b: number, matrix: number[][]): number {
         const remb: number = b - DOSES[i][1]
 
         probability += 0.25 * solve(Math.max(rema, 0), Math.max(remb, 0), matrix)
+    }
+
+    if (probability > 1 - 1e-5) {
+        probability = 1;
     }
 
     matrix[a][b] = probability
