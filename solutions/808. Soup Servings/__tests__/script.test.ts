@@ -15,4 +15,9 @@ describe('808. Soup Servings', (): void => {
         expect(soupServings(850))
             .toBeCloseTo(0.96612, 5);
     });
+
+    it('Very high chance', (): void => {
+        expect(soupServings(660295675))
+            .toBe(1);
+    });
 })

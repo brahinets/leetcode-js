@@ -6,6 +6,10 @@ const DOSES: number[][] = [[100, 0], [75, 25], [50, 50], [25, 75]]
 const NO_VALUE: number = -1
 
 function soupServings(n: number): number {
+    if (veryBigChance(n)) {
+        return 1
+    }
+
     return solve(n, n, matrixOf(NO_VALUE, n + 1, n + 1))
 }
 
@@ -34,4 +38,8 @@ function solve(a: number, b: number, matrix: number[][]): number {
 
     matrix[a][b] = probability
     return probability
+}
+
+function veryBigChance(n: number): boolean {
+    return n > 5000
 }
