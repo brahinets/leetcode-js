@@ -4,17 +4,11 @@ function minimumDeleteSum(s1: string, s2: string): number {
     let sum: number = 0;
 
     if (!s1.length) {
-        for (const c of s2) {
-            sum += c.charCodeAt(0);
-        }
-        return sum;
+        return cost(s2)
     }
 
     if (!s2.length) {
-        for (const c of s1) {
-            sum += c.charCodeAt(0);
-        }
-        return sum;
+        return cost(s1)
     }
 
     const trimFirst: string = s1.slice(0, s1.length - 1);
@@ -33,5 +27,13 @@ function minimumDeleteSum(s1: string, s2: string): number {
         );
     }
 
+    return sum;
+}
+
+function cost(s2: string): number {
+    let sum: number = 0;
+    for (const c of s2) {
+        sum += c.charCodeAt(0);
+    }
     return sum;
 }
