@@ -16,4 +16,9 @@ describe('712. Minimum ASCII Delete Sum for Two Strings', (): void => {
         expect(minimumDeleteSum("delete", "leet"))
             .toBe(403);
     });
+
+    it('Heavy case', (): void => {
+        expect(minimumDeleteSum("dffkrytao", "cquhsbdemum"))
+            .toBe(1952);
+    });
 })
