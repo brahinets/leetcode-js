@@ -12,11 +12,40 @@ const DIAL_MAP: Map<string, string[]> = new Map<string, string[]>([
 ])
 
 function letterCombinations(digits: string): string[] {
-    for (const d of digits) {
-        if (!DIAL_MAP.has(d)) {
+    const result: Set<string> = new Set<string>();
+    const operands: string[][] = [...collectOperands(digits)]
+
+    combinations("", operands, result, operands.length)
+
+    return [...result]
+}
+
+function combinations(char: string, operands: string[][], result: Set<string>, operandsNumber: number): void {
+    if (operands.length > 0) {
+        for (const ch of operands[0]) {
+            const combination: string = char + ch
+
+            if (combination.length === operandsNumber) {
+                result.add(combination)
+            }
+
+            combinations("" + char + ch, operands.slice(1), result, operandsNumber)
+        }
+    }
+}
+
+function collectOperands(digits: string): string[][] {
+    const pairs: string[][] = []
+
+    for (const digit of digits) {
+        const letter: string[] | undefined = DIAL_MAP.get(digit)
+
+        if (letter === undefined) {
             throw new Error("Unsupported digit")
+        } else {
+            pairs.push(letter)
         }
     }
 
-    throw new Error("Implement me")
+    return pairs;
 }
