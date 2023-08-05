@@ -15,4 +15,9 @@ describe('139. Word Break', (): void => {
         expect(wordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"]))
             .toBe(false);
     });
+
+    it('Heavy case', (): void => {
+        expect(wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", ["a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"]))
+            .toBe(false);
+    });
 })
