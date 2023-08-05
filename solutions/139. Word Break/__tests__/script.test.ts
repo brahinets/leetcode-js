@@ -26,6 +26,11 @@ describe('139. Word Break', (): void => {
             .toBe(false);
     });
 
+    it('Cannot build #2', (): void => {
+        expect(wordBreak("ccbb", ["bc", "cb"]))
+            .toBe(false);
+    });
+
     it('Heavy case', (): void => {
         expect(wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", ["a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"]))
             .toBe(false);
