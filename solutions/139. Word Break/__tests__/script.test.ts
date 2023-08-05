@@ -16,6 +16,11 @@ describe('139. Word Break', (): void => {
             .toBe(true);
     });
 
+    it('Combine all segments #2', (): void => {
+        expect(wordBreak("aaaaaaa", ["aaaa", "aaa"]))
+            .toBe(true);
+    });
+
     it('Reuse segment', (): void => {
         expect(wordBreak("applepenapple", ["apple", "pen"]))
             .toBe(true);
@@ -30,6 +35,8 @@ describe('139. Word Break', (): void => {
         expect(wordBreak("ccbb", ["bc", "cb"]))
             .toBe(false);
     });
+
+
 
     it('Heavy case', (): void => {
         expect(wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", ["a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"]))
