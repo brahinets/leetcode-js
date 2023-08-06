@@ -31,6 +31,7 @@ describe('1514. Path with Maximum Probability', (): void => {
             .toBe(0.0);
     });
 
+    // TODO #1514 Speed me up
     it.skip('Load test', (): void => {
         expect(maxProbability(
             1000,

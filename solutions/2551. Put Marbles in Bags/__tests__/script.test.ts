@@ -22,6 +22,7 @@ describe('2551. Put Marbles in Bags', (): void => {
             .toBe(3);
     });
 
+    // TODO #2551 Speed me up
     it.skip('Load test', (): void => {
         expect(putMarbles([54, 6, 34, 66, 63, 52, 39, 62, 46, 75, 28, 65, 18, 37, 18, 13, 33, 69, 19, 40, 13, 10, 43, 61, 72], 4))
             .toBe(4);
