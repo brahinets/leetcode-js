@@ -15,4 +15,9 @@ describe('920. Number of Music Playlists', (): void => {
         expect(numMusicPlaylists(2, 3, 1))
             .toBe(2);
     });
+
+    it('Many playlists with repeating', (): void => {
+        expect(numMusicPlaylists(16, 16, 4))
+            .toBe(2);
+    });
 })

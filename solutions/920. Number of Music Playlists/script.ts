@@ -1,55 +1,44 @@
+import {matrixOf} from "../../common/array-utils"
+
 export {numMusicPlaylists}
 
 const mod: number = 1e9 + 7
+const no_value: number = -1
 
 function numMusicPlaylists(n: number, goal: number, k: number): number {
-    const playlists: number[][] = combine(goal, n)
+    const playlistsOfLengthOfSongs: number[][] = matrixOf(no_value, goal + 1, n + 1)
 
-    return playlists
-        .filter((playlist: number[]): boolean => legal(playlist, k, n))
-        .length % mod
+    countPlaylists(goal, n, k, n, playlistsOfLengthOfSongs)
+
+    return playlistsOfLengthOfSongs[goal][n]
 }
 
-function legal(playlist: number[], repeatAllowedAfter: number, n: number): boolean {
-    if (new Set(playlist).size !== n) {
-        return false
+function countPlaylists(
+    goalSongs: number,
+    uniqueSongs: number,
+    minBeforeRepeat: number,
+    among: number,
+    playlists: number[][]
+): number {
+    if (goalSongs === 0 && uniqueSongs === 0) {
+        return 1
     }
 
-    const map: Map<number, number> = new Map<number, number>()
-    for (let currentPlay: number = 0; currentPlay < playlist.length; currentPlay++) {
-        const songId: number = playlist[currentPlay]
-        const sinceLastPlay: number | undefined = map.get(songId)
-
-        if (sinceLastPlay !== undefined) {
-            if (currentPlay - sinceLastPlay <= repeatAllowedAfter) {
-                return false
-            }
-        }
-
-        map.set(songId, currentPlay)
+    if (goalSongs === 0 || uniqueSongs === 0) {
+        return 0
     }
 
-    return true
-}
-
-function combine(size: number, options: number): number[][] {
-    const result: number[][] = []
-    const out: number[] = []
-
-    collectCombinations(Array.from(Array(options).keys()), size, [...out], result)
-
-    return result
-}
-
-function collectCombinations(options: number[], size: number, out: number[], result: number[][]): void {
-    if (out.length === size) {
-        result.push([...out])
-        return
+    if (playlists[goalSongs][uniqueSongs] !== no_value) {
+        return playlists[goalSongs][uniqueSongs]
     }
 
-    for (const num of options) {
-        out.push(num)
-        collectCombinations(options, size, [...out], result)
-        out.pop()
+    const songsAvailable: number = among - uniqueSongs + 1
+    playlists[goalSongs][uniqueSongs] = (countPlaylists(goalSongs - 1, uniqueSongs - 1, minBeforeRepeat, among, playlists) * songsAvailable) % mod
+
+    if (uniqueSongs > minBeforeRepeat) {
+        playlists[goalSongs][uniqueSongs] += (countPlaylists(goalSongs - 1, uniqueSongs, minBeforeRepeat, among, playlists) * (uniqueSongs - minBeforeRepeat)) % mod
+        playlists[goalSongs][uniqueSongs] %= mod
     }
+
+    return playlists[goalSongs][uniqueSongs]
 }
