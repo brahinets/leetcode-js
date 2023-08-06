@@ -7,8 +7,7 @@ function putMarbles(weights: number[], k: number): number {
 
     const costs: number[] = []
 
-    const endsIncluding: number[][] = generateEndsIncluding(k, weights.length)
-    for (const ends of endsIncluding) {
+    for (const ends of generateEndsIncluding(k, weights.length)) {
         const buckets: number[][] = breakOnBuckets(weights, ends)
 
         costs.push(buckets
@@ -19,9 +18,7 @@ function putMarbles(weights: number[], k: number): number {
     return Math.max(...costs) - Math.min(...costs)
 }
 
-function generateEndsIncluding(bucketsCount: number, elementsCount: number): number[][] {
-    const distributionBucketsEnds: number[][] = []
-
+function* generateEndsIncluding(bucketsCount: number, elementsCount: number): Generator<number[]> {
     for (const bitsRow of bitMatrix(elementsCount)) {
         if (bitsRow[bitsRow.length - 1] !== 1) {
             continue
@@ -35,11 +32,9 @@ function generateEndsIncluding(bucketsCount: number, elementsCount: number): num
         }
 
         if (endsBucket.length === bucketsCount) {
-            distributionBucketsEnds.push(endsBucket)
+            yield endsBucket
         }
     }
-
-    return distributionBucketsEnds
 }
 
 function breakOnBuckets(weights: number[], endsIncluding: number[]) {
