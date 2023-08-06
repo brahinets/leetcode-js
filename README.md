@@ -103,6 +103,7 @@
 1. № [876. Middle of the Linked List](solutions/876.%20Middle%20of%20the%20Linked%20List/script.ts)
 1. № [881. Boats to Save People](solutions/881.%20Boats%20to%20Save%20People/script.ts)
 1. № [912. Sort an Array](solutions/912.%20Sort%20an%20Array/script.ts)
+1. № [920. Number of Music Playlists](solutions/920.%20Number%20of%20Music%20Playlists/script.ts)
 1. № [934. Shortest Bridge](solutions/934.%20Shortest%20Bridge/script.ts)
 1. № [946. Validate Stack Sequences](solutions/946.%20Validate%20Stack%20Sequences/script.ts)
 1. № [956. Tallest Billboard](solutions/956.%20Tallest%20Billboard/script.ts)
