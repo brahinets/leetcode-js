@@ -22,11 +22,11 @@ describe('23. Merge k Sorted Lists', (): void => {
                                 new ListNode(4,
                                     new ListNode(5,
                                         new ListNode(6))))))))
-        );
-    });
+        )
+    })
 
     it('Both lists are empty', (): void => {
         expect(mergeKLists([null, null]))
-            .toStrictEqual(null);
-    });
+            .toStrictEqual(null)
+    })
 })
