@@ -1,42 +1,43 @@
-import {ListNode} from "../../common/ListNode";
+import {ListNode} from "../../common/ListNode"
 
-export {mergeKLists, ListNode};
+export {mergeKLists, ListNode}
 
 function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
-    return lists.reduce((prev: ListNode | null, curr: ListNode | null) => mergeTwoLists(prev, curr), null);
+    return lists.reduce((prev: ListNode | null, curr: ListNode | null) => mergeTwoLists(prev, curr), null)
 }
 
 const mergeTwoLists = function (list1: ListNode | null, list2: ListNode | null): ListNode | null {
-    const node: ListNode = new ListNode();
-    let head: ListNode = node;
+    const node: ListNode = new ListNode()
+    let head: ListNode = node
+
     do {
-        const first: ListNode | null = list1;
-        const second: ListNode | null = list2;
-        let value: number;
+        const first: ListNode | null = list1
+        const second: ListNode | null = list2
+        let value: number
 
         if (first?.val != null && second?.val != null) {
             if (first.val > second.val) {
-                value = second.val;
-                list2 = second.next;
+                value = second.val
+                list2 = second.next
             } else {
-                value = first.val;
-                list1 = first.next;
+                value = first.val
+                list1 = first.next
             }
         } else {
             if (first?.val != null) {
-                value = first.val;
-                list1 = first.next;
+                value = first.val
+                list1 = first.next
             } else if (second?.val != null) {
-                value = second.val;
-                list2 = second.next;
+                value = second.val
+                list2 = second.next
             } else {
-                break;
+                break
             }
         }
 
-        head.next = new ListNode(value);
-        head = head.next;
-    } while (list1 || list2);
+        head.next = new ListNode(value)
+        head = head.next
+    } while (list1 || list2)
 
-    return node.next;
-};
+    return node.next
+}
