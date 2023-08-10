@@ -7,11 +7,11 @@ function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
 }
 
 const mergeTwoLists = function (list1: ListNode | null, list2: ListNode | null): ListNode | null {
-    let node: ListNode = new ListNode();
+    const node: ListNode = new ListNode();
     let head: ListNode = node;
     do {
-        let first: ListNode | null = list1;
-        let second: ListNode | null = list2;
+        const first: ListNode | null = list1;
+        const second: ListNode | null = list2;
         let value: number;
 
         if (first?.val != null && second?.val != null) {
