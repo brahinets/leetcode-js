@@ -76,6 +76,7 @@
 1. № [486. Predict the Winner](solutions/486.%20Predict%20the%20Winner/script.ts)
 1. № [509. Fibonacci Number](solutions/509.%20Fibonacci%20Number/script.ts)
 1. № [516. Longest Palindromic Subsequence](solutions/516.%20Longest%20Palindromic%20Subsequence/script.ts)
+1. № [518. Coin Change II](solutions/518.%20Coin%20Change%20II/script.ts)
 1. № [530. Minimum Absolute Difference in BST](solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST/script.ts)
 1. № [540. Single Element in a Sorted Array](solutions/540.%20Single%20Element%20in%20a%20Sorted%20Array/script.ts)
 1. № [547. Number of Provinces](solutions/547.%20Number%20of%20Provinces/script.ts)
