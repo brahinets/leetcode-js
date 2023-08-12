@@ -15,12 +15,8 @@ function collectCombinations(amount: number, coins: number[], currentCombination
     }
 
     for (const coin of coins) {
-        if (amount === coin) {
-            combinations.push([...currentCombination, coin])
-        } else {
-            if (coin <= amount) {
-                collectCombinations(amount - coin, coins, [...currentCombination, coin], combinations)
-            }
+        if (coin <= amount) {
+            collectCombinations(amount - coin, coins, [...currentCombination, coin], combinations)
         }
     }
 }
