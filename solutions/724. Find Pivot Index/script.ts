@@ -1,7 +1,7 @@
 export {pivotIndex}
 
 function pivotIndex(nums: number[]): number {
-    const accumulativeSums: Map<number, number> = sums(nums)
+    const accumulativeSums: Map<number, number> = accumulateSums(nums)
 
     const total: number | undefined = accumulativeSums.get(nums.length - 1)
     if (total === undefined) {
@@ -20,12 +20,12 @@ function pivotIndex(nums: number[]): number {
     return -1
 }
 
-function sums(nums: number[]): Map<number, number> {
+function accumulateSums(nums: number[]): Map<number, number> {
     const sums: Map<number, number> = new Map<number, number>()
 
-    for (let index: number = 0; index < nums.length; index++) {
-        const sumUntilIndex: number = sums.get(index - 1) ?? 0
-        sums.set(index, sumUntilIndex + nums[index])
+    for (let i: number = 0; i < nums.length; i++) {
+        const sumUntilIndex: number = sums.get(i - 1) ?? 0
+        sums.set(i, sumUntilIndex + nums[i])
     }
 
     return sums
