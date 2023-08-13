@@ -6,6 +6,11 @@ describe('724. Find Pivot Index', (): void => {
             .toBe(-1)
     })
 
+    it('No possible pivot for empty input', (): void => {
+        expect(pivotIndex([]))
+            .toBe(-1)
+    })
+
     it('Pivot on the edge', (): void => {
         expect(pivotIndex([2, 1, -1]))
             .toBe(0)
