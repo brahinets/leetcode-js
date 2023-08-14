@@ -1,11 +1,21 @@
+import {count} from "../../common/array-utils";
+
 export {findKthLargest}
 
 function findKthLargest(nums: number[], k: number): number {
-    let removed: number[] = []
+    const counts: Map<number, number> = countsByKeyDescending(nums)
 
-    while (k-- > 0) {
-        removed = nums.splice(nums.indexOf(Math.max(...nums)), 1)
+    for (const [num, numCount] of counts.entries()) {
+        k -= numCount
+
+        if (k <= 0) {
+            return num
+        }
     }
 
-    return removed[0]
+    throw new Error("Illegal state. Not enough data")
+}
+
+function countsByKeyDescending(nums: number[]): Map<number, number> {
+    return new Map([...count(nums)].sort((e1: number[], e2: number[]) => e2[0] - e1[0]))
 }
