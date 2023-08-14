@@ -53,6 +53,7 @@
 1. № [206. Reverse Linked List](solutions/206.%20Reverse%20Linked%20List/script.ts)
 1. № [208. Implement Trie (Prefix Tree)](solutions/208.%20Implement%20Trie%20(Prefix%20Tree)/script.ts)
 1. № [211. Design Add and Search Words Data Structure](solutions/211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure/script.ts)
+1. № [215. Kth Largest Element in an Array](solutions/215.%20Kth%20Largest%20Element%20in%20an%20Array/script.ts)
 1. № [228. Summary Ranges](solutions/228.%20Summary%20Ranges/script.ts)
 1. № [226. Invert Binary Tree](solutions/226.%20Invert%20Binary%20Tree/script.ts)
 1. № [235. Lowest Common Ancestor of a Binary Search Tree](solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree/script.ts)
