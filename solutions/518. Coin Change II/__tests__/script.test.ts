@@ -1,6 +1,11 @@
 import {change} from '../script'
 
 describe('518. Coin Change II', (): void => {
+    it.skip('Can change by huge breakdown', (): void => {
+        expect(change(200, [1, 2, 5]))
+            .toBe(400)
+    })
+
     it('Can change by breakdown', (): void => {
         expect(change(5, [1, 2, 5]))
             .toBe(4)
