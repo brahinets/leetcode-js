@@ -14,10 +14,10 @@ function solve(n: number, k: number, start: number, out: number[], result: numbe
 }
 
 function combine(n: number, k: number): number[][] {
-    const result: number[][] = [];
-    const out: number[] = [];
+    const result: number[][] = []
+    const out: number[] = []
 
     solve(n, k, 1, [...out], result)
 
-    return result;
+    return result
 }
