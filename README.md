@@ -35,6 +35,7 @@
 1. № [71. Simplify Path](solutions/71.%20Simplify%20Path/script.ts)
 1. № [74. Search a 2D Matrix](solutions/74.%20Search%20a%202D%20Matrix/script.ts)
 1. № [77. Combinations](solutions/77.%20Combinations/script.ts)
+1. № [86. Partition List](solutions/86.%20Partition%20List/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
 1. № [103. Binary Tree Zigzag Level Order Traversal](solutions/103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/script.ts)
 1. № [104. Maximum Depth of Binary Tree](solutions/104.%20Maximum%20Depth%20of%20Binary%20Tree/script.ts)
