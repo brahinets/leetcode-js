@@ -32,4 +32,13 @@ describe('86. Partition List', (): void => {
                 new ListNode(2))
         )
     })
+
+    it('Reverse empty list', (): void => {
+        expect(partition(
+            null,
+            2
+        )).toStrictEqual(
+            null
+        )
+    })
 })
