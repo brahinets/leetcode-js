@@ -58,6 +58,7 @@
 1. № [228. Summary Ranges](solutions/228.%20Summary%20Ranges/script.ts)
 1. № [226. Invert Binary Tree](solutions/226.%20Invert%20Binary%20Tree/script.ts)
 1. № [235. Lowest Common Ancestor of a Binary Search Tree](solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree/script.ts)
+1. № [239. Sliding Window Maximum](solutions/239.%20Sliding%20Window%20Maximum/script.ts)
 1. № [258. Add Digits](solutions/258.%20Add%20Digits/script.ts)
 1. № [278. First Bad Version](solutions/278.%20First%20Bad%20Version/script.ts)
 1. № [299. Bulls and Cows](solutions/299.%20Bulls%20and%20Cows/script.ts)
