@@ -3,6 +3,10 @@ export {maxSlidingWindow}
 function maxSlidingWindow(nums: number[], k: number): number[] {
     const windowSize: number = k
 
+    if (windowSize > nums.length) {
+        return []
+    }
+
     const maxs: number[] = []
     for (let i: number = windowSize; i <= nums.length; i++) {
         const window: number[] = nums.slice(i - windowSize, i);

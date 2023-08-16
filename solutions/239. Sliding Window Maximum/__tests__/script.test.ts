@@ -11,4 +11,9 @@ describe('239. Sliding Window Maximum', (): void => {
         expect(maxSlidingWindow([1], 1))
             .toStrictEqual([1]);
     });
+
+    it('No windows', (): void => {
+        expect(maxSlidingWindow([1], 2))
+            .toStrictEqual([]);
+    });
 })
