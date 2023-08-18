@@ -8,25 +8,38 @@ function maxSlidingWindow(nums: number[], k: number): number[] {
     }
 
     const maxs: number[] = []
-    for (let i: number = windowSize; i <= nums.length; i++) {
-        maxs.push(findMax(nums, i - windowSize, i))
+
+    const usefulNums: number[] = []
+    for (let i: number = 0; i < windowSize; i++) {
+        while (usefulNums.length !== 0 && nums[i] >= nums[last(usefulNums)]) {
+            usefulNums.pop()
+        }
+
+        usefulNums.push(i)
+    }
+    maxs.push(nums[first(usefulNums)])
+
+    for (let i: number = windowSize; i < nums.length; i++) {
+        const beforeWindow: boolean = first(usefulNums) === i - windowSize
+        if (beforeWindow) {
+            usefulNums.shift()
+        }
+
+        while (usefulNums.length !== 0 && nums[i] >= nums[last(usefulNums)]) {
+            usefulNums.pop()
+        }
+
+        usefulNums.push(i)
+        maxs.push(nums[first(usefulNums)])
     }
 
     return maxs
 }
 
-function findMax(nums: number[], from: number, to: number): number {
-    let max: number | undefined = undefined;
+function first(array: number[]): number {
+    return array[0]
+}
 
-    for (let i: number = from; i < to; i++) {
-        if (max === undefined || nums[i] > max) {
-            max = nums[i]
-        }
-    }
-
-    if (max === undefined) {
-        throw new Error("Illegal state")
-    }
-
-    return max
+function last(array: number[]): number {
+    return array[array.length - 1]
 }
