@@ -2,8 +2,8 @@ import {ListNode} from "../../common/ListNode"
 
 export {ListNode, addTwoNumbers}
 
-const addTwoNumbers = function (l1: ListNode | null, l2: ListNode | null): ListNode {
-    let head: ListNode = new ListNode()
+function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode {
+    const head: ListNode = new ListNode()
     let incrementNextRadix: boolean = false
 
     while (l1 || l2 || incrementNextRadix) {
