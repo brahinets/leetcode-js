@@ -10,19 +10,19 @@ function addBinary(a: string, b: string): string {
     const aBits: string[] = a.split('');
     const bBits: string[] = b.split('');
 
-    let shiftNextBit: boolean = false;
+    let carry: number = 0;
     const res: number[] = [];
     for (let i: number = a.length - 1; i >= 0; i--) {
         const aBit: number = Number(aBits[i]);
         const bBit: number = Number(bBits[i]);
-        const sum: number = (shiftNextBit ? 1 : 0) + aBit + bBit;
+        const sum: number = (carry ? 1 : 0) + aBit + bBit;
 
         res.push(sum % 2);
 
-        shiftNextBit = sum > 1;
+        carry = sum > 1 ? 1 : 0;
     }
 
-    if (shiftNextBit) {
+    if (carry) {
         res.push(1);
     }
 
