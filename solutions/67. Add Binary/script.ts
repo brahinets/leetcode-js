@@ -1,21 +1,14 @@
 export {addBinary}
 
 function addBinary(a: string, b: string): string {
-    if (a.length > b.length) {
-        b = b.padStart(a.length, '0');
-    } else {
-        a = a.padStart(b.length, '0');
-    }
-
-    const aBits: string[] = a.split('');
-    const bBits: string[] = b.split('');
+    const maxBits: number = Math.max(a.length, b.length)
+    const res: number[] = [];
 
     let carry: number = 0;
-    const res: number[] = [];
-    for (let i: number = a.length - 1; i >= 0; i--) {
-        const aBit: number = Number(aBits[i]);
-        const bBit: number = Number(bBits[i]);
-        const sum: number = (carry ? 1 : 0) + aBit + bBit;
+    for (let i: number = 1; i <= maxBits; i++) {
+        const aBit: number = Number(a[a.length - i] ?? 0);
+        const bBit: number = Number(b[b.length - i] ?? 0);
+        const sum: number = carry + aBit + bBit;
 
         res.push(sum % 2);
 
