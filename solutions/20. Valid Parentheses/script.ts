@@ -1,36 +1,36 @@
 export {isValid}
 
-const getKeyByValue = (map: Map<string, string>, targetValue: string): string | null => {
-    for (const [key, value] of map) {
-        if (value === targetValue) {
-            return key;
-        }
-    }
-
-    return null;
-}
-
 const BRACES: Map<string, string> = new Map<string, string>([
     ["[", "]"],
     ["{", "}"],
     ["(", ")"]
-]);
+])
 
 const isValid = function (s: string): boolean {
-    const stack: string[] = [];
+    const stack: string[] = []
 
     for (const ch of s) {
         if (BRACES.has(ch)) {
-            stack.push(ch);
+            stack.push(ch)
         } else {
-            const opened: string | null = stack.pop() || null;
-            const closed: string | null = getKeyByValue(BRACES, ch);
+            const openedPair: string | null = stack.pop() || null
+            const closedPair: string | null = getKeyByValue(BRACES, ch)
 
-            if (opened !== closed) {
-                return false;
+            if (openedPair !== closedPair) {
+                return false
             }
         }
     }
 
-    return stack.length === 0;
+    return stack.length === 0
+}
+
+function getKeyByValue(map: Map<string, string>, targetValue: string): string | null {
+    for (const [key, value] of map) {
+        if (value === targetValue) {
+            return key
+        }
+    }
+
+    return null
 }
