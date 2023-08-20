@@ -16,4 +16,9 @@ describe('20. Valid Parentheses', (): void => {
     it('Invalid', (): void => {
         expect(isValid("(]")).toBe(false);
     });
+
+    it('Illegal characters', (): void => {
+        expect(() => isValid("abc"))
+            .toThrowError("Illegal character");
+    });
 })
