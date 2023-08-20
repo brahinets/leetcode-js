@@ -23,17 +23,11 @@ const isValid = function (s: string): boolean {
         if (BRACES.has(ch)) {
             stack.push(ch);
         } else {
-            const opening: string | null = getKeyByValue(BRACES, ch);
+            const opened: string | null = stack.pop() || null;
+            const closed: string | null = getKeyByValue(BRACES, ch);
 
-            if (opening) {
-                const closed: string | null = opening;
-                const opened: string | null = stack.pop() || null;
-
-                if (opened !== closed) {
-                    return false;
-                }
-            } else {
-                throw new Error(`Unsupported character: ${ch}`);
+            if (opened !== closed) {
+                return false;
             }
         }
     }
