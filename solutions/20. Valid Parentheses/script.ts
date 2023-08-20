@@ -7,7 +7,7 @@ const BRACES: Map<string, string> = new Map<string, string>([
 ])
 
 const isValid = function (s: string): boolean {
-    const allowedCharacters: string[] = [...BRACES.keys(), ...BRACES.values()];
+    const allowedCharacters: string[] = [...BRACES.keys(), ...BRACES.values()]
     const openedBraces: string[] = []
 
     for (const ch of s) {
