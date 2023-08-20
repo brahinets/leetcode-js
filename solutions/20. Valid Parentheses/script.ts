@@ -7,13 +7,13 @@ const BRACES: Map<string, string> = new Map<string, string>([
 ])
 
 const isValid = function (s: string): boolean {
-    const stack: string[] = []
+    const openedBraces: string[] = []
 
     for (const ch of s) {
         if (BRACES.has(ch)) {
-            stack.push(ch)
+            openedBraces.push(ch)
         } else {
-            const openedPair: string | null = stack.pop() || null
+            const openedPair: string | null = openedBraces.pop() || null
             const closedPair: string | null = getKeyByValue(BRACES, ch)
 
             if (openedPair !== closedPair) {
@@ -22,7 +22,7 @@ const isValid = function (s: string): boolean {
         }
     }
 
-    return stack.length === 0
+    return openedBraces.length === 0
 }
 
 function getKeyByValue(map: Map<string, string>, targetValue: string): string | null {
