@@ -16,4 +16,9 @@ describe('168. Excel Sheet Column Title', (): void => {
         expect(convertToTitle(701))
             .toBe("ZY");
     });
+
+    it('Very big order', (): void => {
+        expect(convertToTitle(2147483647))
+            .toBe("FXSHRXW");
+    });
 })

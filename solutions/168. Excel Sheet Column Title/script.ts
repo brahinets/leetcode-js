@@ -5,19 +5,11 @@ function convertToTitle(columnNumber: number): string {
 
     let result: string = ""
 
-    while (columnNumber > 0) {
-        let n: number
-
-        if (columnNumber > ALPHABET.length) {
-            n = Math.floor(columnNumber / ALPHABET.length)
-        } else {
-            n = columnNumber
-        }
-        const letter: string = ALPHABET[n - 1]
-
+    if (columnNumber > ALPHABET.length) {
+        const n: number = Math.floor(columnNumber / ALPHABET.length)
+        result = convertToTitle(n) + result
         columnNumber -= (n * ALPHABET.length)
-        result += letter
     }
 
-    return result
+    return result + ALPHABET[columnNumber - 1]
 }
