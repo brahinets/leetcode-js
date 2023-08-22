@@ -12,6 +12,11 @@ describe('168. Excel Sheet Column Title', (): void => {
             .toBe("AB");
     });
 
+    it('Edge order', (): void => {
+        expect(convertToTitle(52))
+            .toBe("AZ");
+    });
+
     it('Big order', (): void => {
         expect(convertToTitle(701))
             .toBe("ZY");

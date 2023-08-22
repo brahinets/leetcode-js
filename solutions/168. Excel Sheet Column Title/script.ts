@@ -6,7 +6,7 @@ function convertToTitle(columnNumber: number): string {
     let result: string = ""
 
     if (columnNumber > ALPHABET.length) {
-        const n: number = Math.floor(columnNumber / ALPHABET.length)
+        const n: number = Math.floor((columnNumber-1) / ALPHABET.length)
         result = convertToTitle(n) + result
         columnNumber -= (n * ALPHABET.length)
     }
