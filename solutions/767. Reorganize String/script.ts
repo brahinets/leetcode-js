@@ -1,4 +1,4 @@
-import {count} from "../../common/array-utils";
+import {count} from "../../common/array-utils"
 
 export {reorganizeString}
 
@@ -21,9 +21,27 @@ function reorganize(str: string, available: string[]): string {
         throw Error("Cannot finish")
     }
 
-    const mostOften: string = [...count(allowed).entries()]
-        .sort(([, count1], [, count2]): number => count2 - count1)[0][0]
+    const mostOften: string = mostFrequent(allowed)
     available.splice(available.indexOf(mostOften), 1)
 
     return reorganize(str + mostOften, available)
+}
+
+function mostFrequent(chars: string[]): string {
+    const counts: Map<string, number> = count(chars)
+
+    let mostOften: string | undefined = undefined
+    let mostOftenCount: number = 0
+    for (const [char, charCount] of counts) {
+        if (charCount > mostOftenCount) {
+            mostOften = char
+            mostOftenCount = charCount
+        }
+    }
+
+    if (mostOften === undefined) {
+        throw new Error("Illegal state")
+    }
+
+    return mostOften
 }
