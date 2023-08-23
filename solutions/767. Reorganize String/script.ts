@@ -1,3 +1,5 @@
+import {count} from "../../common/array-utils";
+
 export {reorganizeString}
 
 function reorganizeString(s: string): string {
@@ -19,8 +21,9 @@ function reorganize(str: string, available: string[]): string {
         throw Error("Cannot finish")
     }
 
-    const next: string = allowed[0]
-    available.splice(available.indexOf(next), 1)
+    const mostOften: string = [...count(allowed).entries()]
+        .sort(([, count1], [, count2]): number => count2 - count1)[0][0]
+    available.splice(available.indexOf(mostOften), 1)
 
-    return reorganize(str + next, available)
+    return reorganize(str + mostOften, available)
 }

@@ -6,6 +6,11 @@ describe('767. Reorganize String', (): void => {
             .toBe("aba")
     })
 
+    it('Possible bigger', (): void => {
+        expect(reorganizeString("baaba"))
+            .toBe("ababa")
+    })
+
     it('Impossible', (): void => {
         expect(reorganizeString("aaab"))
             .toBe("")
