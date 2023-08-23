@@ -2,7 +2,7 @@ export {reorganizeString}
 
 function reorganizeString(s: string): string {
     try {
-        return reorganize(s[0], s.substring(1).split(""))
+        return reorganize("", s.split(""))
     } catch (error) {
         return ""
     }
