@@ -3,45 +3,28 @@ import {count} from "../../common/array-utils"
 export {reorganizeString}
 
 function reorganizeString(s: string): string {
-    try {
-        return reorganize("", s.split(""))
-    } catch (error) {
-        return ""
-    }
-}
+    const charsSortedByCountAsc: [string, number][] = [...count(s.split("")).entries()]
+        .sort(([, count1], [, count2]): number => count1 - count2)
 
-function reorganize(str: string, available: string[]): string {
-    if (available.length === 0) {
-        return str
-    }
+    const result: string[] = Array(s.length).fill("")
 
-    const forbidden: string = str[str.length - 1]
-    const allowed: string[] = available.filter((s: string): boolean => s !== forbidden)
-    if (available.length > 0 && allowed.length === 0) {
-        throw Error("Cannot finish")
-    }
+    let i: number = 0
+    while (charsSortedByCountAsc.length > 0) {
+        const [topChar, topCount] = charsSortedByCountAsc.pop() ?? ["", 0]
 
-    const mostOften: string = mostFrequent(allowed)
-    available.splice(available.indexOf(mostOften), 1)
+        if (topCount > Math.ceil(s.length / 2)) {
+            return ""
+        }
 
-    return reorganize(str + mostOften, available)
-}
+        for (let j = 0; j < topCount; j++) {
+            result[i] = topChar
 
-function mostFrequent(chars: string[]): string {
-    const counts: Map<string, number> = count(chars)
-
-    let mostOften: string | undefined = undefined
-    let mostOftenCount: number = 0
-    for (const [char, charCount] of counts) {
-        if (charCount > mostOftenCount) {
-            mostOften = char
-            mostOftenCount = charCount
+            i += 2
+            if (i >= s.length) {
+                i = 1
+            }
         }
     }
 
-    if (mostOften === undefined) {
-        throw new Error("Illegal state")
-    }
-
-    return mostOften
+    return result.join("")
 }
