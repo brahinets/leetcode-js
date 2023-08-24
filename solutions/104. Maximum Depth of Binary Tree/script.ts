@@ -1,5 +1,7 @@
 import {TreeNode} from "../../common/TreeNode";
 
+export {maxDepth, TreeNode}
+
 const maxDepth = (root: TreeNode): number => {
     if (!root) {
         return 0;
