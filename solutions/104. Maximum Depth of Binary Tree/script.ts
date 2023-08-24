@@ -1,26 +1,26 @@
-import {TreeNode} from "../../common/TreeNode";
+import {TreeNode} from "../../common/TreeNode"
 
 export {maxDepth, TreeNode}
 
 const maxDepth = (root: TreeNode): number => {
     if (!root) {
-        return 0;
+        return 0
     }
 
-    let leftDepth: number = 0;
-    let rightDepth: number = 0;
+    let leftDepth: number = 0
+    let rightDepth: number = 0
 
     if (root.left) {
-        leftDepth = 1 + maxDepth(root.left);
+        leftDepth = 1 + maxDepth(root.left)
     } else {
-        leftDepth += 1;
+        leftDepth += 1
     }
 
     if (root.right) {
-        rightDepth = 1 + maxDepth(root.right);
+        rightDepth = 1 + maxDepth(root.right)
     } else {
-        rightDepth += 1;
+        rightDepth += 1
     }
 
-    return Math.max(rightDepth, leftDepth);
-};
+    return Math.max(rightDepth, leftDepth)
+}
