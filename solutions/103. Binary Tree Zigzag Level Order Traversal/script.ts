@@ -1,4 +1,8 @@
-const zigzagLevelOrder = function (root: TreeNode): number[][] {
+import {TreeNode} from '../../common/TreeNode'
+
+export {zigzagLevelOrder, TreeNode}
+
+const zigzagLevelOrder = function (root: TreeNode | null): number[][] {
     let result: number[][] = [];
 
     collect(root, 0, result);
