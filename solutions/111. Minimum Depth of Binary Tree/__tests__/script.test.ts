@@ -2,8 +2,9 @@ import {minDepth, TreeNode} from '../script'
 
 describe('111. Minimum Depth of Binary Tree', (): void => {
     it('Empty Tree', (): void => {
-        expect(minDepth(null)).toBe(0);
-    });
+        expect(minDepth(null))
+            .toBe(0)
+    })
 
     it('Righty Tree', (): void => {
         expect(minDepth(new TreeNode(
@@ -11,9 +12,9 @@ describe('111. Minimum Depth of Binary Tree', (): void => {
             new TreeNode(9),
             new TreeNode(20,
                 new TreeNode(15),
-                new TreeNode(7))
-        ))).toBe(2);
-    });
+                new TreeNode(7))))
+        ).toBe(2)
+    })
 
     it('Lefty Tree', (): void => {
         expect(minDepth(new TreeNode(
@@ -28,7 +29,6 @@ describe('111. Minimum Depth of Binary Tree', (): void => {
                         null),
                     null),
                 null),
-            null
-        ))).toBe(5);
-    });
-});
+            null))
+        ).toBe(5)})
+})
