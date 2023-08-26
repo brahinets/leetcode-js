@@ -1,6 +1,8 @@
 import {ListNode} from "../../common/ListNode";
 import {TreeNode} from "../../common/TreeNode";
 
+export {sortedListToBST, ListNode, TreeNode}
+
 function sortedListToBST(head: ListNode | null): TreeNode | null {
     const data: number[] = [];
     while (head) {
