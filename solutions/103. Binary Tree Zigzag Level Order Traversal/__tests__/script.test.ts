@@ -19,6 +19,6 @@ describe('103. Binary Tree Zigzag Level Order Traversal', (): void => {
 
     it('Empty Tree', (): void => {
         expect(zigzagLevelOrder(null))
-            .toStrictEqual([[]])
+            .toStrictEqual([])
     })
 })
