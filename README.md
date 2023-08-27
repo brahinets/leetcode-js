@@ -71,6 +71,7 @@
 1. № [392. Is Subsequence](solutions/392.%20Is%20Subsequence/script.ts)
 1. № [394. Decode String](solutions/394.%20Decode%20String/script.ts)
 1. № [399. Evaluate Division](solutions/399.%20Evaluate%20Division/script.ts)
+1. № [403. Frog Jump](solutions/403.%20Frog%20Jump/script.ts)
 1. № [409. Longest Palindrome](solutions/409.%20Longest%20Palindrome/script.ts)
 1. № [424. Longest Repeating Character Replacement](solutions/424.%20Longest%20Repeating%20Character%20Replacement/script.ts)
 1. № [435. Non-overlapping Intervals](solutions/435.%20Non-overlapping%20Intervals/script.ts)
