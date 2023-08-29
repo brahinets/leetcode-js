@@ -11,10 +11,6 @@
   "packageRules": [
     {
       "description": "Automatically merge minor and patch-level updates when checks pass, creates a PR otherwise",
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
       "rangeStrategy": "replace",
       "automerge": true,
       "automergeType": "pr",
