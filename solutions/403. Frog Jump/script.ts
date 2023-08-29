@@ -10,11 +10,13 @@ const SPEED_UP: number = 1
 
 function canCross(stones: number[]): boolean {
     const memo: number[][] = matrixOf(-1, MAX_STONES_COUNT, MAX_STONES_COUNT)
+    const stonesIndex: Map<number, number> = stones
+        .reduce((map: Map<number, number>, s: number, i: number,): Map<number, number> => map.set(s, i), new Map<number, number>())
 
-    return hasLandForNextStep(stones, memo, 0, 0)
+    return hasLandForNextStep(stones, memo, stonesIndex, 0, 0)
 }
 
-function hasLandForNextStep(stones: number[], memo: number[][], currentStone: number, prevJumpLength: number): boolean {
+function hasLandForNextStep(stones: number[], memo: number[][], stonesIndex: Map<number, number>, currentStone: number, prevJumpLength: number): boolean {
     if (currentStone === stones.length - 1) {
         return true
     }
@@ -26,10 +28,10 @@ function hasLandForNextStep(stones: number[], memo: number[][], currentStone: nu
     let can: boolean = false
     for (const turn of [SLOW_DOWN, KEEP_PACE, SPEED_UP]) {
         const jumpOnLength: number = prevJumpLength + turn
-        const nextStoneIfJump: number = stones.indexOf(stones[currentStone] + jumpOnLength)
+        const nextStoneIfJump: number | undefined = stonesIndex.get(stones[currentStone] + jumpOnLength)
 
-        if (jumpOnLength > 0 && nextStoneIfJump !== -1) {
-            can ||= hasLandForNextStep(stones, memo, nextStoneIfJump, jumpOnLength)
+        if (jumpOnLength > 0 && nextStoneIfJump !== undefined) {
+            can ||= hasLandForNextStep(stones, memo, stonesIndex, nextStoneIfJump, jumpOnLength)
         }
     }
 
