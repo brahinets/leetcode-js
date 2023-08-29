@@ -2,8 +2,6 @@ import {matrixOf} from "../../common/array-utils"
 
 export {canCross}
 
-const MAX_STONES_COUNT: number = 2000
-
 const SLOW_DOWN: number = -1
 const KEEP_PACE: number = 0
 const SPEED_UP: number = 1
@@ -11,7 +9,10 @@ const TURNS: number[] = [SLOW_DOWN, KEEP_PACE, SPEED_UP]
 
 
 function canCross(stones: number[]): boolean {
-    const memo: number[][] = matrixOf(-1, MAX_STONES_COUNT, MAX_STONES_COUNT)
+    const maxJumpsCount: number = stones.length
+    const maxStonesCount: number = stones.length
+    const memo: number[][] = matrixOf(-1, maxStonesCount, maxJumpsCount)
+
     const stonesIndex: Map<number, number> = stones
         .reduce((map: Map<number, number>, s: number, i: number,): Map<number, number> => map.set(s, i), new Map<number, number>())
 
@@ -34,6 +35,9 @@ function hasLandForNextStep(stones: number[], memo: number[][], stonesIndex: Map
 
         if (jumpOnLength > 0 && nextStoneIfJump !== undefined) {
             can ||= hasLandForNextStep(stones, memo, stonesIndex, nextStoneIfJump, jumpOnLength)
+            if (can) {
+                break
+            }
         }
     }
 
