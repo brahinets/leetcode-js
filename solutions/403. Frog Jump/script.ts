@@ -15,10 +15,6 @@ function canCross(stones: number[]): boolean {
 }
 
 function hasLandForNextStep(stones: number[], memo: number[][], currentStone: number, prevJumpLength: number): boolean {
-    if (currentStone === -1) {
-        return false
-    }
-
     if (currentStone === stones.length - 1) {
         return true
     }
@@ -30,10 +26,10 @@ function hasLandForNextStep(stones: number[], memo: number[][], currentStone: nu
     let can: boolean = false
     for (const turn of [SLOW_DOWN, KEEP_PACE, SPEED_UP]) {
         const jumpOnLength: number = prevJumpLength + turn
+        const nextStoneIfJump: number = stones.indexOf(stones[currentStone] + jumpOnLength)
 
-        if (jumpOnLength > 0) {
-            const nextStone: number = stones.indexOf(stones[currentStone] + jumpOnLength)
-            can ||= hasLandForNextStep(stones, memo, nextStone, jumpOnLength)
+        if (jumpOnLength > 0 && nextStoneIfJump !== -1) {
+            can ||= hasLandForNextStep(stones, memo, nextStoneIfJump, jumpOnLength)
         }
     }
 
