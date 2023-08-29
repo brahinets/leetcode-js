@@ -7,6 +7,8 @@ const MAX_STONES_COUNT: number = 2000
 const SLOW_DOWN: number = -1
 const KEEP_PACE: number = 0
 const SPEED_UP: number = 1
+const TURNS: number[] = [SLOW_DOWN, KEEP_PACE, SPEED_UP]
+
 
 function canCross(stones: number[]): boolean {
     const memo: number[][] = matrixOf(-1, MAX_STONES_COUNT, MAX_STONES_COUNT)
@@ -26,7 +28,7 @@ function hasLandForNextStep(stones: number[], memo: number[][], stonesIndex: Map
     }
 
     let can: boolean = false
-    for (const turn of [SLOW_DOWN, KEEP_PACE, SPEED_UP]) {
+    for (const turn of TURNS) {
         const jumpOnLength: number = prevJumpLength + turn
         const nextStoneIfJump: number | undefined = stonesIndex.get(stones[currentStone] + jumpOnLength)
 

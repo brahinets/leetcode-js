@@ -7,6 +7,11 @@ describe('403. Frog Jump', (): void => {
             .toBe(true)
     })
 
+    it('Can again', (): void => {
+        expect(canCross([0, 1, 3, 6, 10, 13, 15, 18]))
+            .toBe(true)
+    })
+
     it('Cannot', (): void => {
         expect(canCross([0, 1, 2, 3, 4, 8, 9, 11]))
             .toBe(false)
