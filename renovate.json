@@ -8,5 +8,17 @@
     "before 5am every weekday",
     "every weekend"
   ],
+  "packageRules": [
+    {
+      "description": "Automatically merge minor and patch-level updates when checks pass, creates a PR otherwise",
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    }
+  ],
   "timezone": "Europe/Kyiv"
 }
