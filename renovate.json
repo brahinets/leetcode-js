@@ -15,6 +15,7 @@
         "minor",
         "patch"
       ],
+      "rangeStrategy": "replace",
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
