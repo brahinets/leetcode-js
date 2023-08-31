@@ -24,7 +24,7 @@ class Solution {
     }
 
     getRandom(): number {
-        let randomIndex: number = this.getRandomInt(this.size);
+        const randomIndex: number = this.getRandomInt(this.size);
         let index: number = 0;
 
         let node: ListNode = this.list;
