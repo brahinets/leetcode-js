@@ -1,5 +1,7 @@
 import {ListNode} from '../../common/ListNode'
 
+export {ListNode, Solution}
+
 class Solution {
     private readonly list: ListNode;
     private readonly size: number;
