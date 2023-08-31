@@ -1,12 +1,4 @@
-class ListNode {
-    readonly val: number
-    readonly next: ListNode | null
-
-    constructor(val ?: number, next ?: ListNode | null) {
-        this.val = (val === undefined ? 0 : val)
-        this.next = (next === undefined ? null : next)
-    }
-}
+import {ListNode} from '../../common/ListNode'
 
 class Solution {
     private readonly list: ListNode;
