@@ -7,7 +7,7 @@ const twoSum = (nums: number[], target: number): number[] => {
                 continue
             }
 
-            if ((nums[i] + nums[j]) === target) {
+            if (nums[i] + nums[j] === target) {
                 return [i, j]
             }
         }
