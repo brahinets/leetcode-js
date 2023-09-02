@@ -26,7 +26,7 @@ function sort(values: number[], counting: Map<number, number>): number[] {
     const valuesCopy: number[] = [...values]
 
     return valuesCopy.sort((v1: number, v2: number): number => {
-        let counter: number = (counting.get(v1) || 0) - (counting.get(v2) || 0)
+        const counter: number = (counting.get(v1) || 0) - (counting.get(v2) || 0)
 
         if (counter !== 0) {
             return counter
