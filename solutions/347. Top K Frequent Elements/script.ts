@@ -10,16 +10,12 @@ function topKFrequent(values: number[], k: number): number[] {
     for (let i: number = 0; i < values.length && result.length < k; i++) {
         const num: number = values[values.length - 1 - i]
 
-        if (!arrayContains(result, num)) {
+        if (!result.includes(num)) {
             result.push(num)
         }
     }
 
     return result
-}
-
-function arrayContains(values: number[], targetValue: number): boolean {
-    return values.some((value: number): boolean => value === targetValue)
 }
 
 function sort(values: number[], counting: Map<number, number>): number[] {
