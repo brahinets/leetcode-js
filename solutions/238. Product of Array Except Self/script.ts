@@ -2,7 +2,7 @@ export {productExceptSelf}
 
 function productExceptSelf(nums: number[]): number[] {
     const zeroCount: number = nums
-        .reduce((count: number, num: number): number => num === 0 ? count + 1 : 0, 0)
+        .reduce((count: number, num: number): number => num === 0 ? count + 1 : count, 0)
 
     const product: number = nums
         .filter((num: number): boolean => num !== 0)

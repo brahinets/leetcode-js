@@ -17,7 +17,12 @@ describe('238. Product of Array Except Self', (): void => {
             .toStrictEqual([0, 0, 0, 0, 24])
     })
 
-    it('Contains negative numbers', (): void => {
+    it('Contains one negative numbers', (): void => {
+        expect(productExceptSelf([-1, 1, 0, -3, 3]))
+            .toStrictEqual([0, 0, 9, 0, 0])
+    })
+
+    it('Contains multiple negative numbers', (): void => {
         expect(productExceptSelf([1, -2, -3, -4]))
             .toStrictEqual([-24, 12, 8, 6])
     })
