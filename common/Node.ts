@@ -3,7 +3,7 @@ export class Node {
     children: Node[]
 
     constructor(val: number, children: Node[]) {
-        this.val = val;
-        this.children = children;
+        this.val = val
+        this.children = children
     }
 }

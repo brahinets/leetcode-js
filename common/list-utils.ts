@@ -1,33 +1,33 @@
-import {ListNode} from "./ListNode";
+import {ListNode} from "./ListNode"
 
 export {linkedListOf, linkedListToArray, ListNode}
 
 function linkedListOf(values: number[] | null): ListNode | null {
     if (!values || values.length === 0) {
-        return null;
+        return null
     }
 
-    const head: ListNode | null = new ListNode(values[0]);
-    let tail: ListNode | null = head;
+    const head: ListNode | null = new ListNode(values[0])
+    let tail: ListNode | null = head
     for (let i: number = 1; i < values.length; i++) {
         tail.next = new ListNode(values[i])
-        tail = tail.next;
+        tail = tail.next
     }
 
-    return head;
+    return head
 }
 
 function linkedListToArray(head: ListNode | null): number[] | null {
     if (!head) {
-        return null;
+        return null
     }
 
-    const result: number[] = [];
+    const result: number[] = []
 
     while (head) {
-        result.push(head.val);
-        head = head.next;
+        result.push(head.val)
+        head = head.next
     }
 
-    return result;
+    return result
 }
