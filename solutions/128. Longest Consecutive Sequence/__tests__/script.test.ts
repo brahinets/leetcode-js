@@ -16,6 +16,11 @@ describe('128. Longest Consecutive Sequence', (): void => {
             .toBe(4)
     })
 
+    it('Short non-unique sequence', (): void => {
+        expect(longestConsecutive([1, 2, 0, 1]))
+            .toBe(3)
+    })
+
     it('Long sequence', (): void => {
         expect(longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]))
             .toBe(9)
