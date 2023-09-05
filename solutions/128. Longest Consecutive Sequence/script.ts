@@ -9,12 +9,12 @@ function longestConsecutive(nums: number[]): number {
     let prev: number | undefined = undefined
     for (let i: number = 0; i < numbers.length; i++) {
         if (prev === undefined || prev + 1 === numbers[i]) {
-            prev = numbers[i]
             lastSequenceLength += 1
         } else {
             maxSequenceLength = Math.max(lastSequenceLength, maxSequenceLength)
             lastSequenceLength = 1
         }
+        prev = numbers[i]
     }
 
     return Math.max(lastSequenceLength, maxSequenceLength)
