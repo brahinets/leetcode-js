@@ -2,8 +2,9 @@ import {numIslands} from '../script'
 
 describe('200. Number of Islands', (): void => {
     it('No islands. Empty sea', (): void => {
-        expect(numIslands([])).toBe(0);
-    });
+        expect(numIslands([]))
+            .toBe(0)
+    })
 
     it('No islands', (): void => {
         expect(numIslands([
@@ -11,8 +12,8 @@ describe('200. Number of Islands', (): void => {
             ["0", "0", "0", "0", "0"],
             ["0", "0", "0", "0", "0"],
             ["0", "0", "0", "0", "0"]
-        ])).toBe(0);
-    });
+        ])).toBe(0)
+    })
 
     it('One island', (): void => {
         expect(numIslands([
@@ -20,8 +21,8 @@ describe('200. Number of Islands', (): void => {
             ["1", "1", "0", "1", "0"],
             ["1", "1", "0", "0", "0"],
             ["0", "0", "0", "0", "0"]
-        ])).toBe(1);
-    });
+        ])).toBe(1)
+    })
 
     it('Multiple islands', (): void => {
         expect(numIslands([
@@ -29,6 +30,6 @@ describe('200. Number of Islands', (): void => {
             ["1", "1", "0", "0", "0"],
             ["0", "0", "1", "0", "0"],
             ["0", "0", "0", "1", "1"]
-        ])).toBe(3);
-    });
-});
+        ])).toBe(3)
+    })
+})
