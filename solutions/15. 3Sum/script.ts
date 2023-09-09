@@ -1,31 +1,42 @@
 export {threeSum}
 
 function threeSum(nums: number[]): number[][] {
-    const result: number[][] = []
+    nums.sort((a: number, b: number): number => a - b)
 
-    for (let i: number = 0; i < nums.length; i++) {
-        for (let j: number = 0; j < nums.length; j++) {
-            for (let k: number = 0; k < nums.length; k++) {
-                if (i === j || i === k || j === k) {
-                    continue
+    const result: number[][] = []
+    for (let i: number = 0; i < nums.length - 2; i++) {
+        if (i > 0 && nums[i] === nums[i - 1]) {
+            continue
+        }
+
+        let j: number = i + 1
+        let k: number = nums.length - 1
+
+        while (j < k) {
+            const sum: number = nums[i] + nums[j] + nums[k]
+
+            if (sum === 0) {
+                result.push([nums[i], nums[j], nums[k]])
+
+                while (j < k && nums[j] === nums[j + 1]) {
+                    j++
                 }
 
-                if (nums[i] + nums[j] + nums[k] === 0) {
-                    result.push([nums[i], nums[j], nums[k]])
+                while (j < k && nums[k] === nums[k - 1]) {
+                    k--
+                }
+
+                j++
+                k--
+            } else {
+                if (sum < 0) {
+                    j++
+                } else {
+                    k--
                 }
             }
         }
     }
 
-    return deduplicateTriplets(result)
-}
-
-function deduplicateTriplets(result: number[][]): number[][] {
-    const unique: Map<string, number[]> = new Map<string, number[]>()
-
-    for (const triplet of result) {
-        unique.set(triplet.sort((a: number, b: number): number => a - b).join("_"), triplet)
-    }
-
-    return [...unique.values()]
+    return result
 }
