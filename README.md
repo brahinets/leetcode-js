@@ -13,6 +13,7 @@
 1. № [7. Reverse Integer](solutions/7.%20Reverse%20Integer/script.ts)
 1. № [8. String to Integer (atoi)](solutions/8.%20String%20to%20Integer%20(atoi)/script.ts)
 1. № [9. Palindrome Number](solutions/9.%20Palindrome%20Number/script.ts)
+1. № [11. Container With Most Water](solutions/11.%20Container%20With%20Most%20Water/script.ts)
 1. № [12. Integer to Roman](solutions/12.%20Integer%20to%20Roman/script.ts)
 1. № [13. Roman to Integer](solutions/13.%20Roman%20to%20Integer/script.ts)
 1. № [14. Longest Common Prefix](solutions/14.%20Longest%20Common%20Prefix/script.ts)
