@@ -29,6 +29,7 @@
 1. № [33. Search in Rotated Sorted Array](solutions/33.%20Search%20in%20Rotated%20Sorted%20Array/script.ts)
 1. № [35. Search Insert Position](solutions/35.%20Search%20Insert%20Position/script.ts)
 1. № [36. Valid Sudoku](solutions/36.%20Valid%20Sudoku/script.ts)
+1. № [42. Trapping Rain Water](solutions/42.%20Trapping%20Rain%20Water/script.ts)
 1. № [49. Group Anagrams](solutions/49.%20Group%20Anagrams/script.ts)
 1. № [50. Pow](solutions/50.%20Pow/script.ts)
 1. № [54. Spiral Matrix](solutions/54.%20Spiral%20Matrix/script.ts)
