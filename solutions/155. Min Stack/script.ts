@@ -1,7 +1,7 @@
 export {MinStack}
 
 class MinStack {
-    private readonly data: number[];
+    private readonly data: number[]
     private min: number | undefined
 
     constructor() {
