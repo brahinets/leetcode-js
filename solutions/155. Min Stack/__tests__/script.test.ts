@@ -20,4 +20,11 @@ describe('155. Min Stack', (): void => {
         expect(min2).toBe(-2)
     })
 
+    it('Test Empty', (): void => {
+        const minStack: MinStack = new MinStack()
+
+        expect(() => minStack.getMin())
+            .toThrowError("No data")
+    })
+
 })
