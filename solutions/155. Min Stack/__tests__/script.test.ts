@@ -25,6 +25,14 @@ describe('155. Min Stack', (): void => {
 
         expect(() => minStack.getMin())
             .toThrowError("No data")
+
+        minStack.push(1)
+        expect(minStack.getMin())
+            .toBe(1)
+
+        minStack.pop()
+        expect(() => minStack.getMin())
+            .toThrowError("No data")
     })
 
 })
