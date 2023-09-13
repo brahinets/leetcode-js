@@ -40,8 +40,8 @@ function evaluate(num1: number, num2: number, token: string): number {
 function findProcessableTokenIndex(token: string[]): number {
     for (let i: number = 2; i < token.length; i++) {
         if (token[i] === "*" || token[i] === "+" || token[i] === "-" || token[i] === "/") {
-            const first = Number(token[i - 1])
-            const second = Number(token[i - 2])
+            const first: number = Number(token[i - 1])
+            const second: number = Number(token[i - 2])
             if (!Number.isNaN(second) && !Number.isNaN(first)) {
                 return i
             }
