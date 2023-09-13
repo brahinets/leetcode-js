@@ -56,6 +56,7 @@
 1. № [139. Word Break](solutions/139.%20Word%20Break/script.ts)
 1. № [142. Linked List Cycle II](solutions/142.%20Linked%20List%20Cycle%20II/script.ts)
 1. № [146. LRU Cache](solutions/146.%20LRU%20Cache/script.ts)
+1. № [150. Evaluate Reverse Polish Notation](solutions/150.%20Evaluate%20Reverse%20Polish%20Notation/script.ts)
 1. № [155. Min Stack](solutions/155.%20Min%20Stack/script.ts)
 1. № [167. Two Sum II - Input Array Is Sorted](solutions/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted/script.ts)
 1. № [168. Excel Sheet Column Title](solutions/168.%20Excel%20Sheet%20Column%20Title/script.ts)
