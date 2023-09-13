@@ -21,4 +21,19 @@ describe('150. Evaluate Reverse Polish Notation', (): void => {
         expect(evalRPN(["4", "3", "*"]))
             .toBe(12)
     })
+
+    it('Division should trunk floating part', (): void => {
+        expect(evalRPN(["13", "5", "/"]))
+            .toBe(2)
+    })
+
+    it('Complex', (): void => {
+        expect(evalRPN(["2", "1", "+", "3", "*"]))
+            .toBe(9)
+    })
+
+    it('Very Complex', (): void => {
+        expect(evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]))
+            .toBe(22)
+    })
 })
