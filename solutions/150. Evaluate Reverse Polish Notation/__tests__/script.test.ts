@@ -36,4 +36,19 @@ describe('150. Evaluate Reverse Polish Notation', (): void => {
         expect(evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]))
             .toBe(22)
     })
+
+    it('No processable token found error', (): void => {
+        expect(() => evalRPN(["4", "13"]))
+            .toThrowError("No processable token found")
+    })
+
+    it('Not all processed error', (): void => {
+        expect(() => evalRPN(["1", "4", "13", "+"]))
+            .toThrowError("No processable token found")
+    })
+
+    it('Not processable token error', (): void => {
+        expect(() => evalRPN(["1", "4", ":)"]))
+            .toThrowError("No processable token found")
+    })
 })
