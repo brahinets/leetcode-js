@@ -21,6 +21,7 @@
 1. № [17. Letter Combinations of a Phone Number](solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number/script.ts)
 1. № [20. Valid Parentheses](solutions/20.%20Valid%20Parentheses/script.ts)
 1. № [21. Merge Two Sorted Lists](solutions/21.%20Merge%20Two%20Sorted%20Lists/script.ts)
+1. № [22. Generate Parentheses](solutions/22.%20Generate%20Parentheses/script.ts)
 1. № [23. Merge k Sorted Lists](solutions/23.%20Merge%20k%20Sorted%20Lists/script.ts)
 1. № [24. Swap Nodes in Pairs](solutions/24.%20Swap%20Nodes%20in%20Pairs/script.ts)
 1. № [26. Remove Duplicates from Sorted Array](solutions/26.%20Remove%20Duplicates%20from%20Sorted%20Array/script.ts)
