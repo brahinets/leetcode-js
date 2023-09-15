@@ -7,6 +7,10 @@ function generateParenthesis(n: number): string[] {
 }
 
 function generateParenthesises(n: number, s: string, opened: number, closed: number, data: string[]): void {
+    if (n === 0) {
+        return
+    }
+
     if (opened === n && closed === n) {
         data.push(s)
         return
