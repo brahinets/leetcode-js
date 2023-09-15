@@ -12,7 +12,6 @@ describe('22. Generate Parentheses', (): void => {
         expect(actual).toContain("()()()")
     })
 
-
     it('Single combination', (): void => {
         const actual: string[] = generateParenthesis(1)
 
@@ -24,5 +23,26 @@ describe('22. Generate Parentheses', (): void => {
         const actual: string[] = generateParenthesis(0)
 
         expect(actual.length).toBe(0)
+    })
+
+    it('Many combinations', (): void => {
+        const actual: string[] = generateParenthesis(4)
+
+        expect(actual.length).toBe(14)
+
+        expect(actual).toContain("(((())))")
+        expect(actual).toContain("((()()))")
+        expect(actual).toContain("((())())")
+        expect(actual).toContain("((()))()")
+        expect(actual).toContain("(()(()))")
+        expect(actual).toContain("(()()())")
+        expect(actual).toContain("(()())()")
+        expect(actual).toContain("(())(())")
+        expect(actual).toContain("(())()()")
+        expect(actual).toContain("()((()))")
+        expect(actual).toContain("()(()())")
+        expect(actual).toContain("()(())()")
+        expect(actual).toContain("()()(())")
+        expect(actual).toContain("()()()()")
     })
 })
