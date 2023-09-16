@@ -114,6 +114,7 @@
 1. № [724. Find Pivot Index](solutions/724.%20Find%20Pivot%20Index/script.ts)
 1. № [733. Flood Fill](solutions/733.%20Flood%20Fill/script.ts)
 1. № [735. Asteroid Collision](solutions/735.%20Asteroid%20Collision/script.ts)
+1. № [739. Daily Temperatures](solutions/739.%20Daily%20Temperatures/script.ts)
 1. № [744. Find Smallest Letter Greater Than Target](solutions/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target/script.ts)
 1. № [746. Min Cost Climbing Stairs](solutions/746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
 1. № [767. Reorganize String](solutions/767.%20Reorganize%20String/script.ts)
