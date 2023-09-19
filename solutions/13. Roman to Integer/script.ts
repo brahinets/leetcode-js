@@ -8,34 +8,32 @@ const ROMAN: Map<string, number> = new Map<string, number>([
     ["C", 100],
     ["D", 500],
     ["M", 1000]
-]);
+])
 
-const romanToInt = function (roman: string): number {
-    let result: number = 0;
-
+function romanToInt(roman: string): number {
+    let result: number = 0
     for (let i: number = 0; i < roman.length; i++) {
-        const integer: number = getRom(roman[i]);
-
+        const integer: number = getRom(roman[i])
         if (i < roman.length - 1) {
-            const nextInteger: number = getRom(roman[i + 1]);
+            const nextInteger: number = getRom(roman[i + 1])
             if (integer < nextInteger) {
-                result -= integer;
-                continue;
+                result -= integer
+                continue
             }
         }
 
-        result += integer;
+        result += integer
     }
 
-    return result;
+    return result
 }
 
 function getRom(roman: string): number {
-    let integer: number | undefined = ROMAN.get(roman)
+    const integer: number | undefined = ROMAN.get(roman)
 
     if (integer === undefined) {
-        throw new Error("Roman mapping not found");
+        throw new Error("Roman mapping not found")
     }
 
-    return integer;
+    return integer
 }
