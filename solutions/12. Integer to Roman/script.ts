@@ -14,26 +14,26 @@ const INTEGERS: Map<number, string> = new Map<number, string>([
     [500, "D"],
     [900, "CM"],
     [1000, "M"]
-]);
+])
 
 function intToRoman(num: number): string {
-    let result: string = "";
+    let result: string = ""
 
     while (num > 0) {
-        let roman: string = "";
-        let max: number = 0;
-        for (let [i, r] of INTEGERS) {
+        let roman: string = ""
+        let max: number = 0
+        for (const [i, r] of INTEGERS) {
             if (i <= num) {
-                roman = r;
-                max = i;
+                roman = r
+                max = i
             }
         }
 
         while (num >= max) {
-            result += roman;
-            num -= max;
+            result += roman
+            num -= max
         }
     }
 
-    return result;
+    return result
 }
