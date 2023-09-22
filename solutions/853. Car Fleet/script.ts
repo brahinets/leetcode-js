@@ -26,18 +26,11 @@ function carFleet(target: number, position: number[], speed: number[]): number {
 }
 
 function collectParticipants(position: number[], speed: number[]): Participant[] {
-    // todo use map
-    const participants: Participant[] = []
-
-    for (let i: number = 0; i < position.length; i++) {
-        participants.push(new Participant(position[i], i, speed[i]))
-    }
-
-    participants.sort((first: Participant, second: Participant): number =>
-        first.position - second.position
-    )
-
-    return participants
+    return position
+        .map((p: number, i: number) => new Participant(position[i], i, speed[i]))
+        .sort((first: Participant, second: Participant): number =>
+            first.position - second.position
+        )
 }
 
 class Participant {
