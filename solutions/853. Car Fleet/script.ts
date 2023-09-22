@@ -5,21 +5,22 @@ function carFleet(target: number, position: number[], speed: number[]): number {
     let fleet: number = 0
 
     while (participants.some((p: Participant): boolean => p.position < target)) {
-        for (let i = participants.length - 1; i >= 0; i--) {
+        for (let i: number = participants.length - 1; i >= 0; i--) {
             const p: Participant = participants[i]
             const nextCar: Participant | undefined = participants[i + 1]
 
             p.position += Math.min(
                 p.speed,
-                target - p.position,
                 nextCar === undefined ? p.speed : (nextCar.position - p.position))
         }
 
-        const notFinished: Participant[] = participants.filter(p => p.position < target)
-        if (participants.length !== notFinished.length) {
-            fleet++
-            participants = notFinished
-        }
+        const notFinished: Participant[] = participants.filter((p:Participant):boolean => p.position < target)
+        fleet += new Set<number>(participants
+            .filter((p: Participant): boolean => p.position >= target)
+            .map((p: Participant): number => p.position)
+        ).size
+
+        participants = notFinished
     }
 
     return fleet
