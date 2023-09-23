@@ -39,7 +39,7 @@ class Participant {
         this.speed = speed
     }
 
-    move(nextCar?: Participant): void {
+    move(nextCar: Participant | undefined): void {
         if (nextCar) {
             this.position = Math.min(nextCar.position, this.position + this.speed)
             if (nextCar.position === this.position) {
