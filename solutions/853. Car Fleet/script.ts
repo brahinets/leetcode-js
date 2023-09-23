@@ -13,10 +13,8 @@ function carFleet(target: number, position: number[], speed: number[]): number {
         }
 
         const notFinished: Participant[] = participants.filter((p: Participant): boolean => p.position < target)
-        fleet += new Set<number>(participants
-            .filter((p: Participant): boolean => p.position >= target)
-            .map((p: Participant): number => p.position)
-        ).size
+        const finished: Participant[] = participants.filter((p: Participant): boolean => p.position >= target)
+        fleet += new Set<number>(finished.map((p: Participant): number => p.position)).size
 
         participants = notFinished
     }
