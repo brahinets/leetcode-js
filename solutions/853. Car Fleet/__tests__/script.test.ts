@@ -21,4 +21,9 @@ describe('853. Car Fleet', (): void => {
         expect(carFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]))
             .toBe(3)
     })
+
+    it('Many fleets', (): void => {
+        expect(carFleet(10, [8, 3, 7, 4, 6, 5], [4, 4, 4, 4, 4, 4]))
+            .toBe(6)
+    })
 })
