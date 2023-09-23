@@ -34,8 +34,8 @@ class Participant {
     position: number
     speed: number
 
-    constructor(carPosition: number, speed: number) {
-        this.position = carPosition
+    constructor(position: number, speed: number) {
+        this.position = position
         this.speed = speed
     }
 
