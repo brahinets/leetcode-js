@@ -9,12 +9,10 @@ function carFleet(target: number, position: number[], speed: number[]): number {
             const p: Participant = participants[i]
             const nextCar: Participant | undefined = participants[i + 1]
 
-            p.position += Math.min(
-                p.speed,
-                nextCar === undefined ? p.speed : (nextCar.position - p.position))
+            p.move(nextCar)
         }
 
-        const notFinished: Participant[] = participants.filter((p:Participant):boolean => p.position < target)
+        const notFinished: Participant[] = participants.filter((p: Participant): boolean => p.position < target)
         fleet += new Set<number>(participants
             .filter((p: Participant): boolean => p.position >= target)
             .map((p: Participant): number => p.position)
@@ -43,5 +41,16 @@ class Participant {
         this.position = carPosition
         this.index = index
         this.speed = speed
+    }
+
+    move(nextCar?: Participant): void {
+        if (nextCar) {
+            this.position = Math.min(nextCar.position, this.position + this.speed)
+            if (nextCar.position === this.position) {
+                this.speed = nextCar.speed
+            }
+        } else {
+            this.position += this.speed
+        }
     }
 }
