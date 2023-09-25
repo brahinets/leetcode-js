@@ -18,16 +18,16 @@ describe('21. Merge Two Sorted Lists', (): void => {
                         new ListNode(3,
                             new ListNode(4,
                                 new ListNode(4))))))
-        );
-    });
+        )
+    })
 
     it('Only one lists full', (): void => {
         expect(mergeTwoLists(null, new ListNode(1)))
-            .toStrictEqual(new ListNode(1));
-    });
+            .toStrictEqual(new ListNode(1))
+    })
 
     it('Both lists are empty', (): void => {
         expect(mergeTwoLists(null, null))
-            .toStrictEqual(null);
-    });
+            .toStrictEqual(null)
+    })
 })
