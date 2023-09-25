@@ -16,16 +16,16 @@ describe('206. Reverse Linked List', (): void => {
                     new ListNode(3,
                         new ListNode(2,
                             new ListNode(1)))))
-        );
-    });
+        )
+    })
 
     it('Reverse short list', (): void => {
         expect(reverseList(new ListNode(1, new ListNode(2))))
-            .toStrictEqual(new ListNode(2, new ListNode(1)));
-    });
+            .toStrictEqual(new ListNode(2, new ListNode(1)))
+    })
 
     it('Reverse empty list', (): void => {
         expect(reverseList(null))
-            .toStrictEqual(null);
-    });
+            .toStrictEqual(null)
+    })
 })
