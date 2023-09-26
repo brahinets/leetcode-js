@@ -2,8 +2,8 @@ import {ListNode} from "./ListNode"
 
 export {linkedListOf, linkedListToArray, ListNode}
 
-function linkedListOf(values: number[] | null): ListNode | null {
-    if (!values || values.length === 0) {
+function linkedListOf(...values: number[]): ListNode | null {
+    if (values.length === 0) {
         return null
     }
 
