@@ -16,4 +16,9 @@ describe('880. Decoded String at Index', (): void => {
         expect(decodeAtIndex("ha22", 5))
             .toBe("h")
     })
+
+    it('Many duplication', (): void => {
+        expect(decodeAtIndex("a2345678999999999999999", 1))
+            .toBe("a")
+    })
 })

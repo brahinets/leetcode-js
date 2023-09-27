@@ -10,6 +10,10 @@ function decodeAtIndex(s: string, k: number): string {
         } else {
             result += char
         }
+
+        if (result.length > k) {
+            return result[k - 1]
+        }
     }
 
     return result[k - 1]
