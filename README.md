@@ -129,6 +129,7 @@
 1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
 1. № [875. Koko Eating Bananas](solutions/875.%20Koko%20Eating%20Bananas/script.ts)
 1. № [876. Middle of the Linked List](solutions/876.%20Middle%20of%20the%20Linked%20List/script.ts)
+1. № [880. Decoded String at Index](solutions/880.%20Decoded%20String%20at%20Index/script.ts)
 1. № [881. Boats to Save People](solutions/881.%20Boats%20to%20Save%20People/script.ts)
 1. № [912. Sort an Array](solutions/912.%20Sort%20an%20Array/script.ts)
 1. № [920. Number of Music Playlists](solutions/920.%20Number%20of%20Music%20Playlists/script.ts)
