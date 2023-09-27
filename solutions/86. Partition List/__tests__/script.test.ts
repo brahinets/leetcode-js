@@ -1,44 +1,20 @@
-import {ListNode, partition} from '../script'
+import {partition} from '../script'
+import {linkedListOf} from "../../../common/list-utils";
 
 describe('86. Partition List', (): void => {
 
     it('Partition long list', (): void => {
-        expect(
-            partition(
-                new ListNode(1,
-                    new ListNode(4,
-                        new ListNode(3,
-                            new ListNode(2,
-                                new ListNode(5,
-                                    new ListNode(2))))))
-                , 3)
-        ).toStrictEqual(
-            new ListNode(1,
-                new ListNode(2,
-                    new ListNode(2,
-                        new ListNode(4,
-                            new ListNode(3,
-                                new ListNode(5)))))),
-        )
+        expect(partition(linkedListOf(1, 4, 3, 2, 5, 2), 3))
+            .toStrictEqual(linkedListOf(1, 2, 2, 4, 3, 5))
     })
 
     it('Reverse short list', (): void => {
-        expect(partition(
-            new ListNode(2,
-                new ListNode(1)),
-            2
-        )).toStrictEqual(
-            new ListNode(1,
-                new ListNode(2))
-        )
+        expect(partition(linkedListOf(2, 1), 2))
+            .toStrictEqual(linkedListOf(1, 2))
     })
 
     it('Reverse empty list', (): void => {
-        expect(partition(
-            null,
-            2
-        )).toStrictEqual(
-            null
-        )
+        expect(partition(linkedListOf(), 2))
+            .toStrictEqual(null)
     })
 })
