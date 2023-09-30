@@ -5,9 +5,9 @@ export {singleNumber}
 function singleNumber(nums: number[]): number {
     const counts: Map<number, number> = count(nums)
 
-    for (const c of counts) {
-        if (c[1] === 1) {
-            return c[0]
+    for (const [number, count] of counts) {
+        if (count === 1) {
+            return number
         }
     }
 
