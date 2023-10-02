@@ -1,36 +1,14 @@
-import {middleNode, ListNode} from '../script'
+import {middleNode} from '../script'
+import {linkedListOf} from "../../../common/list-utils"
 
 describe('876. Middle of the Linked List', (): void => {
     it('Middle of odd array length', (): void => {
-        expect(
-            middleNode(
-                new ListNode(1,
-                    new ListNode(2,
-                        new ListNode(3,
-                            new ListNode(4,
-                                new ListNode(5))))),
-            )
-        ).toStrictEqual(
-            new ListNode(3,
-                new ListNode(4,
-                    new ListNode(5)))
-        );
-    });
+        expect(middleNode(linkedListOf(1, 2, 3, 4, 5)))
+            .toStrictEqual(linkedListOf(3, 4, 5))
+    })
 
     it('Middle of even array length', (): void => {
-        expect(
-            middleNode(
-                new ListNode(1,
-                    new ListNode(2,
-                        new ListNode(3,
-                            new ListNode(4,
-                                new ListNode(5,
-                                    new ListNode(6)))))),
-            )
-        ).toStrictEqual(
-            new ListNode(4,
-                new ListNode(5,
-                    new ListNode(6)))
-        );
-    });
+        expect(middleNode(linkedListOf(1, 2, 3, 4, 5, 6)))
+            .toStrictEqual(linkedListOf(4, 5, 6))
+    })
 })
