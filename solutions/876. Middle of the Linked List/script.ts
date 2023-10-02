@@ -1,16 +1,15 @@
-import {ListNode} from "../../common/ListNode";
+import {ListNode} from "../../common/ListNode"
 
-export {middleNode, ListNode};
-
+export {middleNode, ListNode}
 function middleNode(head: ListNode | null): ListNode | null {
-    let long: ListNode | null = head;
-    let result: ListNode | null = head;
+    let long: ListNode | null = head
+    let result: ListNode | null = head
 
     while (long && long.next && result) {
-        long = long.next.next;
+        long = long.next.next
 
-        result = result.next;
+        result = result.next
     }
 
-    return result;
+    return result
 }
