@@ -162,6 +162,7 @@
 1. № [1493. Longest Subarray of 1's After Deleting One Element](solutions/1493.%20Longest%20Subarray%20of%201%27s%20After%20Deleting%20One%20Element/script.ts)
 1. № [1498. Number of Subsequences That Satisfy the Given Sum Condition](solutions/1498.%20Number%20of%20Subsequences%20That%20Satisfy%20the%20Given%20Sum%20Condition/script.ts)
 1. № [1502. Can Make Arithmetic Progression From Sequence](solutions/1502.%20Can%20Make%20Arithmetic%20Progression%20From%20Sequence/script.ts)
+1. № [1512. Number of Good Pairs](solutions/1512.%20Number%20of%20Good%20Pairs/script.ts)
 1. № [1514. Path with Maximum Probability](solutions/1514.%20Path%20with%20Maximum%20Probability/script.ts)
 1. № [1523. Count Odd Numbers in an Interval Range](solutions/1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.ts)
 1. № [1539. Kth Missing Positive Number](solutions/1539.%20Kth%20Missing%20Positive%20Number/script.ts)
