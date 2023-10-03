@@ -1,26 +1,19 @@
-import {addTwoNumbers, ListNode} from '../script'
+import {addTwoNumbers} from '../script'
+import {linkedListOf} from "../../../common/list-utils";
 
 describe('445. Add Two Numbers II', (): void => {
     it('Zero', (): void => {
-        expect(addTwoNumbers(new ListNode(0), new ListNode(0)))
-            .toStrictEqual(new ListNode(0));
+        expect(addTwoNumbers(linkedListOf(0), linkedListOf(0)))
+            .toStrictEqual(linkedListOf(0));
     });
 
     it('Same radix', (): void => {
-        expect(addTwoNumbers(
-            new ListNode(2, new ListNode(4, new ListNode(3))),
-            new ListNode(5, new ListNode(6, new ListNode(4)))
-        )).toStrictEqual(
-            new ListNode(8, new ListNode(0, new ListNode(7)))
-        );
+        expect(addTwoNumbers(linkedListOf(2, 4, 3), linkedListOf(5, 6, 4)))
+            .toStrictEqual(linkedListOf(8, 0, 7));
     });
 
     it('Different radix', (): void => {
-        expect(addTwoNumbers(
-            new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))))),
-            new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))
-        )).toStrictEqual(
-            new ListNode(1, new ListNode(0, new ListNode(0, new ListNode(0, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(8))))))))
-        );
+        expect(addTwoNumbers(linkedListOf(9, 9, 9, 9, 9, 9, 9), linkedListOf(9, 9, 9, 9)))
+            .toStrictEqual(linkedListOf(1, 0, 0, 0, 9, 9, 9, 8));
     });
 })
