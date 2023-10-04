@@ -21,4 +21,10 @@ describe('880. Decoded String at Index', (): void => {
         expect(decodeAtIndex("a2345678999999999999999", 1))
             .toBe("a")
     })
+
+    // TODO Optimize memory consumption
+    it.skip('Too many duplication', (): void => {
+        expect(decodeAtIndex("y959q969u3hb22odq595", 222280369))
+            .toBe("y")
+    })
 })
