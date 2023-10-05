@@ -1,6 +1,11 @@
 import {majorityElement} from '../script'
 
 describe('229. Majority Element II', (): void => {
+    it('No major', (): void => {
+        expect(majorityElement([]))
+            .toStrictEqual([])
+    })
+
     it('Major the only', (): void => {
         expect(majorityElement([1]))
             .toStrictEqual([1])
