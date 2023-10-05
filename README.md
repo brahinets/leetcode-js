@@ -70,6 +70,7 @@
 1. № [217. Contains Duplicate](solutions/217.%20Contains%20Duplicate/script.ts)
 1. № [225. Implement Stack using Queues](solutions/225.%20Implement%20Stack%20using%20Queues/script.ts)
 1. № [228. Summary Ranges](solutions/228.%20Summary%20Ranges/script.ts)
+1. № [229. Majority Element II](solutions/229.%20Majority%20Element%20II/script.ts)
 1. № [226. Invert Binary Tree](solutions/226.%20Invert%20Binary%20Tree/script.ts)
 1. № [235. Lowest Common Ancestor of a Binary Search Tree](solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree/script.ts)
 1. № [238. Product of Array Except Self](solutions/238.%20Product%20of%20Array%20Except%20Self/script.ts)
