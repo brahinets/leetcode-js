@@ -81,6 +81,7 @@
 1. № [299. Bulls and Cows](solutions/299.%20Bulls%20and%20Cows/script.ts)
 1. № [316. Remove Duplicate Letters](solutions/316.%20Remove%20Duplicate%20Letters/script.ts)
 1. № [319. Bulb Switcher](solutions/319.%20Bulb%20Switcher/script.ts)
+1. № [343. Integer Break](solutions/343.%20Integer%20Break/script.ts)
 1. № [347. Top K Frequent Elements](solutions/347.%20Top%20K%20Frequent%20Elements/script.ts)
 1. № [373. Find K Pairs with Smallest Sums](solutions/373.%20Find%20K%20Pairs%20with%20Smallest%20Sums/script.ts)
 1. № [382. Linked List Random Node](solutions/382.%20Linked%20List%20Random%20Node/script.ts)
