@@ -1,3 +1,5 @@
+export {compress}
+
 function compress(chars: string[]): number {
     const result: string[] = [];
 
