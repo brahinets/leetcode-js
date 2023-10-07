@@ -1,6 +1,6 @@
 import {threeSum} from '../script'
 
-describe('1. Two Sum', (): void => {
+describe('15. 3Sum', (): void => {
     it('No triplets', (): void => {
         expect(threeSum([0, 1, 1]))
             .toStrictEqual([])
