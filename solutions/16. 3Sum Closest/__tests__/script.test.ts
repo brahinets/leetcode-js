@@ -20,4 +20,9 @@ describe('16. 3Sum Closest', (): void => {
         expect(threeSumClosest([-1, 1, 1, -4], 1))
             .toBe(1)
     })
+
+    it('Negative delta', (): void => {
+        expect(threeSumClosest([1, 1, 1, 0], -100))
+            .toBe(2)
+    })
 })
