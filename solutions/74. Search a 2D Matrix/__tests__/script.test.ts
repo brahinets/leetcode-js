@@ -7,8 +7,8 @@ describe('74. Search a 2D Matrix', (): void => {
                 [10, 11, 16, 20],
                 [23, 30, 34, 60]],
             3)
-        ).toBe(true);
-    });
+        ).toBe(true)
+    })
 
     it('Does not contain', (): void => {
         expect(searchMatrix([
@@ -16,6 +16,6 @@ describe('74. Search a 2D Matrix', (): void => {
                 [10, 11, 16, 20],
                 [23, 30, 34, 60]],
             13)
-        ).toBe(false);
-    });
+        ).toBe(false)
+    })
 })
