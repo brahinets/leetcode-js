@@ -17,6 +17,11 @@ describe('34. Find First and Last Position of Element in Sorted Array', (): void
     })
 
     it('Found multiple. End inclusive', (): void => {
+        expect(searchRange([2, 2], 2))
+            .toStrictEqual([0, 1])
+    })
+
+    it('Found multiple. End inclusive', (): void => {
         expect(searchRange([5, 7, 7, 8, 8, 10], 8))
             .toStrictEqual([3, 4])
     })
