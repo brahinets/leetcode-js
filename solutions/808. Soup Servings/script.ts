@@ -1,4 +1,4 @@
-import {matrixOf} from "../../common/array-utils";
+import {matrixOf} from "../../common/array-factories"
 
 export {soupServings}
 

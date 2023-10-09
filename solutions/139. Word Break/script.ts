@@ -1,4 +1,4 @@
-import {arrayOf} from "../../common/array-utils";
+import {arrayOf} from "../../common/array-factories"
 
 export {wordBreak}
 

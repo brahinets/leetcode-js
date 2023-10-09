@@ -1,4 +1,4 @@
-import {arrayOfZeros} from '../../common/array-utils'
+import {arrayOfZeros} from '../../common/array-factories'
 
 export {mostPoints}
 

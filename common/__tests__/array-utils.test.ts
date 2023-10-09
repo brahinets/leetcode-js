@@ -1,4 +1,4 @@
-import {count} from '../array-utils'
+import {count} from "../array-utils";
 
 describe('Counting', (): void => {
     it('Empty', (): void => {

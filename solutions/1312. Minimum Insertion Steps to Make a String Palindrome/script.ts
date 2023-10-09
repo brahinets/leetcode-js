@@ -1,4 +1,4 @@
-import {matrixOfEmptyStrings} from "../../common/array-utils";
+import {matrixOfEmptyStrings} from "../../common/array-factories"
 
 export {minInsertions}
 

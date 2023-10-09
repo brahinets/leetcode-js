@@ -1,4 +1,4 @@
-import {matrixOfZeros} from '../../common/array-utils'
+import {matrixOfZeros} from '../../common/array-factories'
 
 export {generateMatrix}
 

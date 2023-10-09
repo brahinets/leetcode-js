@@ -1,5 +1,5 @@
-import {count} from "../../common/array-utils";
 import {mapsAreEqual} from "../../common/map-utils";
+import {count} from "../../common/array-utils"
 
 export {isAnagram}
 
