@@ -1,5 +1,5 @@
-import {linkedListOf} from '../../../common/list-utils'
 import {pairSum} from "../script";
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('2130. Maximum Twin Sum of a Linked List', (): void => {
     it('Multiple max sum', (): void => {

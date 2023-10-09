@@ -1,5 +1,6 @@
 import {swapPairs} from '../script'
-import {linkedListOf} from "../../../common/list-utils"
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('24. Swap Nodes in Pairs', (): void => {
     it('Swap nothing', (): void => {

@@ -1,5 +1,6 @@
 import {addTwoNumbers} from '../script'
-import {linkedListOf} from "../../../common/list-utils";
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('2. Add Two Numbers', (): void => {
     it('Zero', (): void => {

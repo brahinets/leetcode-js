@@ -1,5 +1,6 @@
 import {ListNode, sortedListToBST, TreeNode} from '../script'
-import {linkedListOf} from "../../../common/list-utils"
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('109. Convert Sorted List to Binary Search Tree', (): void => {
     it('Empty Tree', (): void => {

@@ -1,5 +1,6 @@
 import {Solution} from '../script'
-import {linkedListOf} from "../../../common/list-utils";
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('382. Linked List Random Node', (): void => {
     it('Test bounds', (): void => {

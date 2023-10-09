@@ -1,5 +1,6 @@
 import {reverseList} from '../script'
-import {linkedListOf} from "../../../common/list-utils";
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('206. Reverse Linked List', (): void => {
     it('Reverse long list', (): void => {

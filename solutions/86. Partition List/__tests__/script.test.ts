@@ -1,5 +1,6 @@
 import {partition} from '../script'
-import {linkedListOf} from "../../../common/list-utils";
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('86. Partition List', (): void => {
 

@@ -1,5 +1,6 @@
 import {mergeTwoLists} from '../script'
-import {linkedListOf} from "../../../common/list-utils";
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('21. Merge Two Sorted Lists', (): void => {
     it('Two lists full', (): void => {

@@ -1,5 +1,6 @@
 import {swapNodes} from '../script'
-import {linkedListOf} from "../../../common/list-utils";
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('1721. Swapping Nodes in a Linked List', (): void => {
     it('Swap boundaries, first and last', (): void => {

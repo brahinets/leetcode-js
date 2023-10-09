@@ -1,5 +1,6 @@
 import {middleNode} from '../script'
-import {linkedListOf} from "../../../common/list-utils"
+
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('876. Middle of the Linked List', (): void => {
     it('Middle of odd array length', (): void => {
