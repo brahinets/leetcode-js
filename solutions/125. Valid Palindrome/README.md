@@ -6,7 +6,7 @@ A phrase is a palindrome if, after converting all uppercase letters into lowerca
 non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and
 numbers. Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
 
-Constraints:
+### Constraints:
 
-1 <= s.length <= 2 * 105
-s consists only of printable ASCII characters.
+- `1 <= s.length <= 2 * 10^5`
+- `s` consists only of printable ASCII characters.
