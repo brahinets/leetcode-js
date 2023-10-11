@@ -26,8 +26,8 @@ describe('235. Lowest Common Ancestor of a Binary Search Tree', (): void => {
             new TreeNode(8,
                 new TreeNode(7),
                 new TreeNode(9))
-        ));
-    });
+        ))
+    })
 
     it('First and second are parent and child', (): void => {
         expect(lowestCommonAncestor(
@@ -49,8 +49,8 @@ describe('235. Lowest Common Ancestor of a Binary Search Tree', (): void => {
             new TreeNode(4,
                 new TreeNode(3),
                 new TreeNode(5))
-        ));
-    });
+        ))
+    })
 
     it('First and second are parent and child. Small tree', (): void => {
         expect(lowestCommonAncestor(
@@ -61,6 +61,6 @@ describe('235. Lowest Common Ancestor of a Binary Search Tree', (): void => {
         )).toStrictEqual(
             new TreeNode(2,
                 new TreeNode(1))
-        );
-    });
-});
+        )
+    })
+})

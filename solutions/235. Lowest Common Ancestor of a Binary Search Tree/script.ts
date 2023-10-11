@@ -1,17 +1,17 @@
-import {TreeNode} from "../../common/TreeNode";
+import {TreeNode} from "../../common/TreeNode"
 
 export {lowestCommonAncestor, TreeNode}
 
 function lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode): TreeNode {
-    let lca: TreeNode | null = root;
+    let lca: TreeNode | null = root
 
     while (lca) {
         if (p.val < lca.val && q.val < lca.val) {
-            lca = lca?.left;
+            lca = lca?.left
         } else if (p.val > lca.val && q.val > lca.val) {
-            lca = lca?.right;
+            lca = lca?.right
         } else {
-            break;
+            break
         }
     }
 
@@ -19,5 +19,5 @@ function lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode): TreeNod
         throw new Error("Lowest Common Ancestor not detected")
     }
 
-    return lca;
+    return lca
 }
