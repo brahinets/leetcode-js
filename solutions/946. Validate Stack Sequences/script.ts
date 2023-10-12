@@ -1,21 +1,21 @@
 export {validateStackSequences}
 
 function validateStackSequences(pushed: number[], popped: number[]): boolean {
-    const result: number[] = [];
-    let canPush: boolean;
-    let canPop: boolean;
+    const result: number[] = []
+    let canPush: boolean
+    let canPop: boolean
 
     do {
-        canPush = false;
-        canPop = false;
+        canPush = false
+        canPop = false
 
-        const elementThatCanBePopped: number | undefined = popped.shift();
+        const elementThatCanBePopped: number | undefined = popped.shift()
         if (elementThatCanBePopped !== undefined) {
-            const elementThatNeedBePopped: number | undefined = result.pop();
+            const elementThatNeedBePopped: number | undefined = result.pop()
             if (elementThatNeedBePopped !== undefined && elementThatNeedBePopped === elementThatCanBePopped) {
-                canPop = true;
+                canPop = true
             } else {
-                popped.unshift(elementThatCanBePopped);
+                popped.unshift(elementThatCanBePopped)
                 if (elementThatNeedBePopped !== undefined) {
                     result.push(elementThatNeedBePopped)
                 }
@@ -23,13 +23,13 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
         }
 
         if (!canPop) {
-            const elementThatCanBePushed: number | undefined = pushed.shift();
+            const elementThatCanBePushed: number | undefined = pushed.shift()
             if (elementThatCanBePushed !== undefined) {
                 result.push(elementThatCanBePushed)
-                canPush = true;
+                canPush = true
             }
         }
     } while (canPush || canPop)
 
-    return result.length === 0 && pushed.length === 0 && popped.length === 0;
+    return result.length === 0 && pushed.length === 0 && popped.length === 0
 }
