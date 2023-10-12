@@ -7,8 +7,8 @@ result of a sequence of push and pop operations on an initially empty stack, or 
 
 ### Constraints:
 
-`1 <= pushed.length <= 1000`  
-`0 <= pushed[i] <= 1000`  
-All the elements of pushed are unique.  
-`popped.length == pushed.length`  
-`popped` is a permutation of pushed.
+- `1 <= pushed.length <= 1000`
+- `0 <= pushed[i] <= 1000`
+- All the elements of pushed are unique.
+- `popped.length == pushed.length`
+- `popped` is a permutation of pushed.
