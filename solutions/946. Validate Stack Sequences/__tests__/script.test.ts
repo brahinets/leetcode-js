@@ -1,6 +1,6 @@
 import {validateStackSequences} from '../script'
 
-describe('20. Valid Parentheses', (): void => {
+describe('946. Validate Stack Sequences', (): void => {
     it('Valid. Empty', (): void => {
         expect(validateStackSequences([], []))
             .toBe(true)
