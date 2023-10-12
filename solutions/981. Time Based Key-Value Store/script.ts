@@ -23,6 +23,6 @@ class TimeMap {
             }
         }
 
-        throw new Error("Value not found")
+        return ""
     }
 }

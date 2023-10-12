@@ -37,7 +37,7 @@ describe('981. Time Based Key-Value Store', (): void => {
     it('Test non-existing key', (): void => {
         const timeMap: TimeMap = new TimeMap()
 
-        expect(() => timeMap.get("foo", 1))
-            .toThrow("Value not found")
+        expect(timeMap.get("foo", 1))
+            .toBe("")
     })
 })
