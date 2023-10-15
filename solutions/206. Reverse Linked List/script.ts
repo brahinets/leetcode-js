@@ -1,15 +1,8 @@
 import {ListNode} from "../../common/ListNode"
+import {reverseLinkedList} from "../../common/list-utils";
 
 export {reverseList, ListNode}
 
 function reverseList(head: ListNode | null): ListNode | null {
-    let newHead: ListNode | null = null
-
-    while (head) {
-        newHead = new ListNode(head.val, newHead)
-
-        head = head.next
-    }
-
-    return newHead
+    return reverseLinkedList(head)
 }

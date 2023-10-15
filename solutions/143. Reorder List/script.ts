@@ -1,13 +1,12 @@
 import {ListNode} from "../../common/ListNode"
-import {reverseList} from "../206. Reverse Linked List/script";
 
-import {linkedListMiddleNode} from "../../common/list-utils";
+import {linkedListMiddleNode, reverseLinkedList} from "../../common/list-utils";
 
 export {reorderList, ListNode}
 
 function reorderList(head: ListNode | null): void {
-    let secondHalf: ListNode | null = reverseList(linkedListMiddleNode(head))
-    let firstHalf: ListNode | null = reverseList(linkedListMiddleNode(reverseList(head)))
+    let secondHalf: ListNode | null = reverseLinkedList(linkedListMiddleNode(head))
+    let firstHalf: ListNode | null = reverseLinkedList(linkedListMiddleNode(reverseLinkedList(head)))
 
     let odd: boolean = true
     while (head) {
