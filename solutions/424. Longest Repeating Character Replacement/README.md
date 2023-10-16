@@ -8,6 +8,6 @@ substring containing the same letter you can get after performing the above oper
 
 ### Constraints:
 
-`1 <= s.length <= 105`  
-`s` consists of only uppercase English letters.  
-`0 <= k <= s.length`
+- `1 <= s.length <= 10^5`
+- `s` consists of only uppercase English letters.
+- `0 <= k <= s.length`
