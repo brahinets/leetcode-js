@@ -5,7 +5,7 @@ function findDifference(nums1: number[], nums2: number[]): number[][] {
 }
 
 function getUnique(src: number[], target: number[]): number[] {
-    let unique: Set<number> = new Set<number>()
+    const unique: Set<number> = new Set<number>()
 
     for (const elem of src) {
         if (target.includes(elem)) {
