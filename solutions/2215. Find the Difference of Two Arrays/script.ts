@@ -5,15 +5,15 @@ function findDifference(nums1: number[], nums2: number[]): number[][] {
 }
 
 function getUnique(src: number[], target: number[]): number[] {
-    let unique: Set<number> = new Set<number>();
+    let unique: Set<number> = new Set<number>()
 
     for (const elem of src) {
         if (target.includes(elem)) {
-            continue;
+            continue
         }
 
-        unique.add(elem);
+        unique.add(elem)
     }
 
-    return [...unique];
+    return [...unique]
 }
