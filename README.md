@@ -59,6 +59,7 @@
 1. № [129. Sum Root to Leaf Numbers](solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers/script.ts)
 1. № [137. Single Number II](solutions/137.%20Single%20Number%20II/script.ts)
 1. № [139. Word Break](solutions/139.%20Word%20Break/script.ts)
+1. № [141. Linked List Cycle](solutions/141.%20Linked%20List%20Cycle/script.ts)
 1. № [142. Linked List Cycle II](solutions/142.%20Linked%20List%20Cycle%20II/script.ts)
 1. № [143. Reorder List](solutions/143.%20Reorder%20List/script.ts)
 1. № [146. LRU Cache](solutions/146.%20LRU%20Cache/script.ts)
