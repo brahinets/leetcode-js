@@ -1,27 +1,27 @@
-import {ListNode} from "../../common/ListNode";
+import {ListNode} from "../../common/ListNode"
 
 export {detectCycle, ListNode}
 
 function detectCycle(head: ListNode | null): ListNode | null {
-    let hare: ListNode | null | undefined = head;
-    let tortoise: ListNode | null | undefined = head;
+    let hare: ListNode | null | undefined = head
+    let tortoise: ListNode | null | undefined = head
 
     while (hare && hare.next) {
-        hare = hare?.next?.next;
-        tortoise = tortoise?.next;
+        hare = hare?.next?.next
+        tortoise = tortoise?.next
 
-        const loopDetected: boolean = hare === tortoise;
+        const loopDetected: boolean = hare === tortoise
         if (loopDetected) {
-            tortoise = head;
+            tortoise = head
 
             while (tortoise !== hare) {
-                hare = hare?.next;
-                tortoise = tortoise?.next;
+                hare = hare?.next
+                tortoise = tortoise?.next
             }
 
-            return tortoise || null;
+            return tortoise || null
         }
     }
 
-    return null;
+    return null
 }
