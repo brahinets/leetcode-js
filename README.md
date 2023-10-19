@@ -85,6 +85,7 @@
 1. № [242. Valid Anagram](solutions/242.%20Valid%20Anagram/script.ts)
 1. № [258. Add Digits](solutions/258.%20Add%20Digits/script.ts)
 1. № [278. First Bad Version](solutions/278.%20First%20Bad%20Version/script.ts)
+1. № [287. Find the Duplicate Number Medium Topics](solutions/287.%20Find%20the%20Duplicate%20Number%20Medium%20Topics/script.ts)
 1. № [299. Bulls and Cows](solutions/299.%20Bulls%20and%20Cows/script.ts)
 1. № [316. Remove Duplicate Letters](solutions/316.%20Remove%20Duplicate%20Letters/script.ts)
 1. № [319. Bulb Switcher](solutions/319.%20Bulb%20Switcher/script.ts)
