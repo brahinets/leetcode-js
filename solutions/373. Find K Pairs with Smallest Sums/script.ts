@@ -9,7 +9,7 @@ function kSmallestPairs(nums1: number[], nums2: number[], k: number): number[][]
         }
     }
 
-    return topPairs.data
+    return topPairs.data.map((pair: number[]): number[] => [pair[0], pair[1]])
 }
 
 class PriorityHeap {
@@ -24,17 +24,19 @@ class PriorityHeap {
     }
 
     add(p1: number, p2: number): void {
-        if (this.data.length < this.limit) {
-            this.data.push([p1, p2])
+        const sum: number = p1 + p2
 
-            if (!this.max || p1 + p2 > this.max) {
-                this.max = p1 + p2
+        if (this.data.length < this.limit) {
+            this.data.push([p1, p2, sum])
+
+            if (!this.max || sum > this.max) {
+                this.max = sum
             }
         } else {
             const [max, maxIndex]: number[] = findMaxIndex(this.data)
 
-            if (p1 + p2 < max) {
-                this.data[maxIndex] = [p1, p2]
+            if (sum < max) {
+                this.data[maxIndex] = [p1, p2, sum]
                 this.max = findMaxIndex(this.data)[0]
             }
         }
@@ -42,10 +44,11 @@ class PriorityHeap {
 }
 
 function findMaxIndex(data: number[][]): number[] {
-    let max: number = data[0][0] + data[0][1]
+    let max: number = data[0][2]
     let maxIndex: number = 0
     for (let i: number = 1; i < data.length; i++) {
-        const pairSum: number = data[i][0] + data[i][1]
+        const pairSum: number = data[i][2]
+
         if (pairSum > max) {
             max = pairSum
             maxIndex = i
