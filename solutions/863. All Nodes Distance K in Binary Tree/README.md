@@ -7,8 +7,8 @@ values of all nodes that have a distance `k` from the target node. You can retur
 
 ### Constraints:
 
-The number of nodes in the tree is in the range `[1, 500]`.
-`0 <= Node.val <= 500`
-All the values `Node.val` are unique.
-`target` is the value of one of the nodes in the tree.
-`0 <= k <= 1000`
+- The number of nodes in the tree is in the range `[1, 500]`.
+- `0 <= Node.val <= 500`
+- All the values `Node.val` are unique.
+- `target` is the value of one of the nodes in the tree.
+- `0 <= k <= 1000`
