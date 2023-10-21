@@ -16,6 +16,7 @@ class PriorityHeap {
     data: number[][]
     limit: number
     max: number | undefined
+    maxIndex: number | undefined
 
     constructor(limit: number) {
         this.data = []
@@ -31,13 +32,14 @@ class PriorityHeap {
 
             if (!this.max || sum > this.max) {
                 this.max = sum
+                this.maxIndex = this.data.length - 1
             }
         } else {
-            const [max, maxIndex]: number[] = findMaxIndex(this.data)
-
-            if (sum < max) {
-                this.data[maxIndex] = [p1, p2, sum]
-                this.max = findMaxIndex(this.data)[0]
+            if (sum < this.max!) {
+                this.data[this.maxIndex!] = [p1, p2, sum]
+                const [newMax, nexMaxIndex] = findMaxIndex(this.data)
+                this.max = newMax
+                this.maxIndex = nexMaxIndex
             }
         }
     }
