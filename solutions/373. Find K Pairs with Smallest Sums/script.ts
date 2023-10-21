@@ -3,8 +3,8 @@ export {kSmallestPairs}
 function kSmallestPairs(nums1: number[], nums2: number[], k: number): number[][] {
     const topPairs: PriorityHeap = new PriorityHeap(k)
 
-    for (let i: number = 0; i < nums1.length; i++) {
-        for (let j: number = 0; j < nums2.length; j++) {
+    for (let i: number = 0; i < Math.min(k, nums1.length); i++) {
+        for (let j: number = 0; j < Math.min(k, nums2.length); j++) {
             topPairs.add(nums1[i], nums2[j])
         }
     }
@@ -27,7 +27,7 @@ class PriorityHeap {
         if (this.data.length < this.limit) {
             this.data.push([p1, p2])
 
-            if(!this.max || p1 + p2 > this.max) {
+            if (!this.max || p1 + p2 > this.max) {
                 this.max = p1 + p2
             }
         } else {
