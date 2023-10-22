@@ -10,13 +10,12 @@ function maximumScore(nums: number[], k: number): number {
         const canMoveLeft: boolean = left > 0
         const canMoveRight: boolean = right < nums.length - 1
 
-        const valueIfMoveLeft: number = canMoveLeft ? nums[left - 1] : 0
-        const valueIfMoveRight: number = canMoveRight ? nums[right + 1] : 0
-
-        const betterMoveRight: boolean = valueIfMoveLeft < valueIfMoveRight;
-        const moveTo: number = betterMoveRight ? ++right : --left;
-
-        localMin = Math.min(localMin, nums[moveTo])
+        if (canMoveLeft && canMoveRight) {
+            const betterMoveRight: boolean = nums[right + 1] > nums[left - 1]
+            localMin = Math.min(localMin, nums[betterMoveRight ? ++right : --left])
+        } else {
+            localMin = Math.min(localMin, nums[canMoveLeft ? --left : ++right])
+        }
 
         maxGood = Math.max(maxGood, localMin * (right - left + 1))
     }
