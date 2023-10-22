@@ -1,8 +1,8 @@
 export {maximumScore}
 
 function maximumScore(nums: number[], k: number): number {
-    let maxGood: number = nums[k]
-    let localMin: number = nums[k]
+    let maxScore: number = nums[k]
+    let goodMin: number = nums[k]
 
     let left: number = k
     let right: number = k
@@ -12,13 +12,13 @@ function maximumScore(nums: number[], k: number): number {
 
         if (canMoveLeft && canMoveRight) {
             const betterMoveRight: boolean = nums[right + 1] > nums[left - 1]
-            localMin = Math.min(localMin, nums[betterMoveRight ? ++right : --left])
+            goodMin = Math.min(goodMin, nums[betterMoveRight ? ++right : --left])
         } else {
-            localMin = Math.min(localMin, nums[canMoveLeft ? --left : ++right])
+            goodMin = Math.min(goodMin, nums[canMoveLeft ? --left : ++right])
         }
 
-        maxGood = Math.max(maxGood, localMin * (right - left + 1))
+        maxScore = Math.max(maxScore, goodMin * (right - left + 1))
     }
 
-    return maxGood
+    return maxScore
 }
