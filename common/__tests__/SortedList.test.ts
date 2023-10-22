@@ -70,3 +70,24 @@ describe('Sorted Numbers List Test', (): void => {
             .toEqual(["a", "b", "C"])
     })
 })
+describe('Limit Sorted List Test', (): void => {
+    const alphabeticCaseInsensitiveStringSorting = (a: string, b: string): number => a.toLowerCase().localeCompare(b.toLowerCase())
+
+    it('Limit size', (): void => {
+        const sortedList: SortedList<string> = new SortedList<string>(alphabeticCaseInsensitiveStringSorting, 2)
+        sortedList.add("b")
+        sortedList.add("a")
+        sortedList.add("c")
+
+        expect(sortedList.toArray())
+            .toEqual(["a", "b"])
+    })
+
+    it('Validate limit', (): void => {
+        expect(() => new SortedList<object>(alphabeticCaseInsensitiveStringSorting, 0))
+            .toThrowError("Limit must be greater than 0")
+
+        expect(() => new SortedList<object>(alphabeticCaseInsensitiveStringSorting, -1))
+            .toThrowError("Limit must be greater than 0")
+    })
+})
