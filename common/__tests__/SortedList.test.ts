@@ -1,21 +1,23 @@
 import {SortedList} from "../SortedList";
 
-describe('Sorted List Test', (): void => {
-    it('Empty', (): void => {
-        expect(new SortedList().size())
+describe('Sorted Numbers String Test', (): void => {
+    const ascendingNumbersSorting = (a: number, b: number): number => a - b
+
+    it('Empty numbers list', (): void => {
+        expect(new SortedList<number>(ascendingNumbersSorting).size())
             .toBe(0)
     })
 
-    it('One element', (): void => {
-        const sortedList: SortedList = new SortedList()
+    it('One number', (): void => {
+        const sortedList: SortedList<number> = new SortedList<number>(ascendingNumbersSorting)
         sortedList.add(1)
 
         expect(sortedList.size())
             .toBe(1)
     })
 
-    it('Sort Two elements', (): void => {
-        const sortedList: SortedList = new SortedList()
+    it('Sort Two Numbers', (): void => {
+        const sortedList: SortedList<number> = new SortedList<number>(ascendingNumbersSorting)
         sortedList.add(2)
         sortedList.add(1)
 
@@ -23,13 +25,48 @@ describe('Sorted List Test', (): void => {
             .toEqual([1, 2])
     })
 
-    it('Sort Many elements', (): void => {
-        const sortedList: SortedList = new SortedList()
+    it('Sort Many Numbers', (): void => {
+        const sortedList: SortedList<number> = new SortedList<number>(ascendingNumbersSorting)
         sortedList.add(3)
         sortedList.add(1)
         sortedList.add(2)
 
         expect(sortedList.toArray())
             .toEqual([1, 2, 3])
+    })
+})
+describe('Sorted Numbers List Test', (): void => {
+    const alphabeticCaseInsensitiveStringSorting = (a: string, b: string): number => a.toLowerCase().localeCompare(b.toLowerCase())
+
+    it('Empty String List', (): void => {
+        expect(new SortedList<string>(alphabeticCaseInsensitiveStringSorting).size())
+            .toBe(0)
+    })
+
+    it('One String', (): void => {
+        const sortedList: SortedList<string> = new SortedList<string>(alphabeticCaseInsensitiveStringSorting)
+        sortedList.add("a")
+
+        expect(sortedList.size())
+            .toBe(1)
+    })
+
+    it('Sort Two String Same Case', (): void => {
+        const sortedList: SortedList<string> = new SortedList<string>(alphabeticCaseInsensitiveStringSorting)
+        sortedList.add("b")
+        sortedList.add("a")
+
+        expect(sortedList.toArray())
+            .toEqual(["a", "b"])
+    })
+
+    it('Sort Many Strings Different Case', (): void => {
+        const sortedList: SortedList<string> = new SortedList<string>(alphabeticCaseInsensitiveStringSorting)
+        sortedList.add("C")
+        sortedList.add("a")
+        sortedList.add("b")
+
+        expect(sortedList.toArray())
+            .toEqual(["a", "b", "C"])
     })
 })

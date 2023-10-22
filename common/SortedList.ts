@@ -1,37 +1,40 @@
-import {ListNode} from "./ListNode";
+import {ListTNode} from "./ListTNode";
 
-export class SortedList {
-    private head: ListNode | null
 
-    constructor() {
+export class SortedList<T> {
+    private head: ListTNode<T> | null
+    private readonly comparator: Function
+
+    constructor(comparator: Function) {
         this.head = null
+        this.comparator = comparator
     }
 
-    add(value: number): void {
+    add(value: T): void {
         if (!this.head) {
-            this.head = new ListNode(value)
+            this.head = new ListTNode<T>(value)
             return
         }
 
-        let current: ListNode | null = this.head
-        let previous: ListNode | null = null
+        let current: ListTNode<T> | null = this.head
+        let previous: ListTNode<T> | null = null
 
-        while (current && current.val < value) {
+        while (current && current.val !== null && this.comparator(current.val, value) <= 0) {
             previous = current
             current = current.next
         }
 
         if (!previous) {
-            this.head = new ListNode(value, current)
+            this.head = new ListTNode<T>(value, current)
             return
         }
 
-        previous.next = new ListNode(value, current)
+        previous.next = new ListTNode<T>(value, current)
     }
 
     size(): number {
         let size: number = 0
-        let current: ListNode | null = this.head
+        let current: ListTNode<T> | null = this.head
 
         while (current) {
             size++
@@ -41,11 +44,11 @@ export class SortedList {
         return size
     }
 
-    toArray(): number[] {
-        const result: number[] = []
-        let current: ListNode | null = this.head
+    toArray(): T[] {
+        const result: T[] = []
+        let current: ListTNode<T> | null = this.head
 
-        while (current) {
+        while (current && current.val !== null) {
             result.push(current.val)
             current = current.next
         }
