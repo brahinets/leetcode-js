@@ -16,6 +16,14 @@ describe('515. Find Largest Value in Each Tree Row', (): void => {
         )).toEqual([1, 3])
     })
 
+    it('Max is zero', (): void => {
+        expect(largestValues(
+            new TreeNode(1,
+                new TreeNode(-3),
+                new TreeNode(0))
+        )).toEqual([1, 0])
+    })
+
     it('Multi-level tree', (): void => {
         expect(largestValues(
             new TreeNode(1,

@@ -12,7 +12,7 @@ function largestValues(root: TreeNode | null): number[] {
 function collect(node: TreeNode | null, level: number, levelsMax: Map<number, number>): void {
     if (node) {
         const localMax: number | undefined = levelsMax.get(level)
-        levelsMax.set(level, localMax ? Math.max(localMax, node.val) : node.val)
+        levelsMax.set(level, localMax !== undefined ? Math.max(localMax, node.val) : node.val)
 
         collect(node.left, level + 1, levelsMax)
         collect(node.right, level + 1, levelsMax)
