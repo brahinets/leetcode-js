@@ -1,8 +1,8 @@
 import {TreeNode} from "../../common/TreeNode"
 
-export {TreeNode, maxLevelSum}
+export {TreeNode, largestValues}
 
-function maxLevelSum(root: TreeNode | null): number[] {
+function largestValues(root: TreeNode | null): number[] {
     const levelsMax: Map<number, number> = new Map<number, number>()
     collect(root, 0, levelsMax)
 

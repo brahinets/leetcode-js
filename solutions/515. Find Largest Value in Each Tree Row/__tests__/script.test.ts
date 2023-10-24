@@ -1,15 +1,15 @@
-import {maxLevelSum, TreeNode} from "../script"
+import {largestValues, TreeNode} from "../script"
 
 describe('515. Find Largest Value in Each Tree Row', (): void => {
 
     it('One-level tree', (): void => {
-        expect(maxLevelSum(
+        expect(largestValues(
             new TreeNode(1)
         )).toEqual([1])
     })
 
     it('Two-level tree', (): void => {
-        expect(maxLevelSum(
+        expect(largestValues(
             new TreeNode(1,
                 new TreeNode(2),
                 new TreeNode(3))
@@ -17,7 +17,7 @@ describe('515. Find Largest Value in Each Tree Row', (): void => {
     })
 
     it('Multi-level tree', (): void => {
-        expect(maxLevelSum(
+        expect(largestValues(
             new TreeNode(1,
                 new TreeNode(3,
                     new TreeNode(5),
