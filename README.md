@@ -132,6 +132,7 @@
 1. № [744. Find Smallest Letter Greater Than Target](solutions/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target/script.ts)
 1. № [746. Min Cost Climbing Stairs](solutions/746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
 1. № [767. Reorganize String](solutions/767.%20Reorganize%20String/script.ts)
+1. № [779. K-th Symbol in Grammar](solutions/779.%20K-th%20Symbol%20in%20Grammar/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
 1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
