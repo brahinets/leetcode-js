@@ -1,6 +1,8 @@
 import {TreeNode} from "../../common/TreeNode"
 
-const invertTree = function (root: TreeNode | null): TreeNode | null {
+export {invertTree, TreeNode}
+
+function invertTree(root: TreeNode | null): TreeNode | null {
     if (!root) {
         return null
     }
