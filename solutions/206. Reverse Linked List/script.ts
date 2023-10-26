@@ -1,5 +1,5 @@
 import {ListNode} from "../../common/ListNode"
-import {reverseLinkedList} from "../../common/list-utils";
+import {reverseLinkedList} from "../../common/list-utils"
 
 export {reverseList, ListNode}
 
