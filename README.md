@@ -113,6 +113,7 @@
 1. № [518. Coin Change II](solutions/518.%20Coin%20Change%20II/script.ts)
 1. № [530. Minimum Absolute Difference in BST](solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST/script.ts)
 1. № [540. Single Element in a Sorted Array](solutions/540.%20Single%20Element%20in%20a%20Sorted%20Array/script.ts)
+1. № [543. Diameter of Binary Tree](solutions/543.%20Diameter%20of%20Binary%20Tree/script.ts)
 1. № [547. Number of Provinces](solutions/547.%20Number%20of%20Provinces/script.ts)
 1. № [589. N-ary Tree Preorder Traversal](solutions/589.%20N-ary%20Tree%20Preorder%20Traversal/script.ts)
 1. № [605. Can Place Flowers](solutions/605.%20Can%20Place%20Flowers/script.ts)
