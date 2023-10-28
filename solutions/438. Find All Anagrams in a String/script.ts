@@ -1,9 +1,9 @@
 export {findAnagrams}
 
-function countChars(str: string) {
+function countChars(str: string): Map<string, number> {
     const charsCounts: Map<string, number> = new Map<string, number>();
 
-    for (let char of str) {
+    for (const char of str) {
         let count: number | undefined = charsCounts.get(char);
 
         if (count === undefined) {
