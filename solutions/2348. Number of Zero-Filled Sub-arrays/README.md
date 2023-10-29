@@ -2,9 +2,10 @@
 
 ## Medium
 
-Given an integer array nums, return the number of sub-arrays filled with 0. A sub-array is a contiguous non-empty 
+Given an integer array `nums`, return the number of sub-arrays filled with `0`. A sub-array is a contiguous non-empty
 sequence of elements within an array.
 
-### Constraints:  
-`1 <= nums.length <= 105`  
-`-109 <= nums[i] <= 109`
+### Constraints:
+
+- `1 <= nums.length <= 10^5`
+- `-10^9 <= nums[i] <= 10^9`
