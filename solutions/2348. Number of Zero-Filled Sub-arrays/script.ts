@@ -1,32 +1,32 @@
 export {zeroFilledSubarray}
 
 function countSubArrays(zeroSubArrayLength: number): number {
-    let count: number = 0;
+    let count: number = 0
 
     for (let step:number = 1; step <= zeroSubArrayLength; step++) {
-        count += zeroSubArrayLength - (step - 1);
+        count += zeroSubArrayLength - (step - 1)
     }
 
-    return count;
+    return count
 }
 
 function zeroFilledSubarray(nums: number[]): number {
-    let zeroCounter: number = 0;
-    let i: number = 0;
+    let zeroCounter: number = 0
+    let i: number = 0
 
     while (i < nums.length) {
-        let zeroSubArrayLength: number = 0;
+        let zeroSubArrayLength: number = 0
         while (nums[i] === 0 && i < nums.length) {
-            zeroSubArrayLength++;
-            i++;
+            zeroSubArrayLength++
+            i++
         }
 
         if (zeroSubArrayLength > 0) {
-            zeroCounter += countSubArrays(zeroSubArrayLength);
+            zeroCounter += countSubArrays(zeroSubArrayLength)
         }
 
-        i++;
+        i++
     }
 
-    return zeroCounter;
+    return zeroCounter
 }
