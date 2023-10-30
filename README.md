@@ -170,6 +170,7 @@
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
 1. № [1318. Minimum Flips to Make a OR b Equal to c](solutions/1318.%20Minimum%20Flips%20to%20Make%20a%20OR%20b%20Equal%20to%20c/script.ts)
 1. № [1351. Count Negative Numbers in a Sorted Matrix](solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/script.ts)
+1. № [1356. Sort Integers by The Number of 1 Bits](solutions/1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits/script.ts)
 1. № [1372. Longest ZigZag Path in a Binary Tree](solutions/1372.%20Longest%20ZigZag%20Path%20in%20a%20Binary%20Tree/script.ts)
 1. № [1396. Design Underground System](solutions/1396.%20Design%20Underground%20System/script.ts)
 1. № [1431. Kids With the Greatest Number of Candies](solutions/1431.%20Kids%20With%20the%20Greatest%20Number%20of%20Candies/script.ts)
