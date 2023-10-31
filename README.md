@@ -46,6 +46,7 @@
 1. № [77. Combinations](solutions/77.%20Combinations/script.ts)
 1. № [86. Partition List](solutions/86.%20Partition%20List/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
+1. № [100. Same Tree](solutions/100.%20Same%20Tree/script.ts)
 1. № [101. Symmetric Tree](solutions/101.%20Symmetric%20Tree/script.ts)
 1. № [102. Binary Tree Level Order Traversal](solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal/script.ts)
 1. № [103. Binary Tree Zigzag Level Order Traversal](solutions/103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal/script.ts)
