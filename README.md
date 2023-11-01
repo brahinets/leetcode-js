@@ -110,6 +110,7 @@
 1. № [458. Poor Pigs](solutions/458.%20Poor%20Pigs/script.ts)
 1. № [459. Repeated Substring Pattern](solutions/459.%20Repeated%20Substring%20Pattern/script.ts)
 1. № [486. Predict the Winner](solutions/486.%20Predict%20the%20Winner/script.ts)
+1. № [501. Find Mode in Binary Search Tree](solutions/501.%20Find%20Mode%20in%20Binary%20Search%20Tree/script.ts)
 1. № [509. Fibonacci Number](solutions/509.%20Fibonacci%20Number/script.ts)
 1. № [515. Find Largest Value in Each Tree Row](solutions/515.%20Find%20Largest%20Value%20in%20Each%20Tree%20Row/script.ts)
 1. № [516. Longest Palindromic Subsequence](solutions/516.%20Longest%20Palindromic%20Subsequence/script.ts)
