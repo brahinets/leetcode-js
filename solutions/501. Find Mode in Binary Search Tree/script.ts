@@ -1,13 +1,11 @@
 import {TreeNode} from "../../common/TreeNode"
-import {count} from "../../common/array-utils";
+import {count} from "../../common/array-utils"
 
 export {TreeNode, findMode}
 
 function findMode(root: TreeNode | null): number[] {
-    const values: [] = []
-    collect(root, values)
-
-    const counts: Map<number, number> = count(values);
+    const values: number[] = collect(root)
+    const counts: Map<number, number> = count(values)
     const maxCount: number = Math.max(...counts.values())
 
     return [...counts.entries()]
@@ -15,11 +13,15 @@ function findMode(root: TreeNode | null): number[] {
         .map(([value]: [number, number]): number => value)
 }
 
-function collect(node: TreeNode | null, values: number[]): void {
+function collect(node: TreeNode | null): number[] {
+    const values: number[] = []
+
     if (node) {
         values.push(node.val)
 
-        collect(node.left, values)
-        collect(node.right, values)
+        values.push(...collect(node.left))
+        values.push(...collect(node.right))
     }
+
+    return values
 }
