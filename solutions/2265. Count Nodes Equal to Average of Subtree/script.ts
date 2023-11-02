@@ -11,7 +11,8 @@ function averageOfSubtree(root: TreeNode | null): number {
         const average: number = Math.floor(sum / values.length)
 
         count += values.filter((value: number): boolean => value === average).length
-        count += averageOfSubtree(root.left) + averageOfSubtree(root.left)
+
+        count += averageOfSubtree(root.left) + averageOfSubtree(root.right)
     }
 
     return count
