@@ -2,7 +2,22 @@ import {averageOfSubtree, TreeNode} from "../script"
 
 describe('2265. Count Nodes Equal to Average of Subtree', (): void => {
 
-    it('No nodes equals to average', (): void => {
+    it('All nodes equals to average', (): void => {
+        expect(averageOfSubtree(
+            new TreeNode(0,
+                new TreeNode(0),
+                new TreeNode(0))
+        )).toBe(3)
+    })
+
+    it('Lefty tree nodes equals to average', (): void => {
+        expect(averageOfSubtree(
+            new TreeNode(0,
+                new TreeNode(0))
+        )).toBe(2)
+    })
+
+    it('Leaves nodes equals to average', (): void => {
         expect(averageOfSubtree(
             new TreeNode(1,
                 new TreeNode(3),
