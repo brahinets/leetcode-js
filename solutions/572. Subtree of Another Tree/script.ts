@@ -3,6 +3,14 @@ import {TreeNode} from "../../common/TreeNode"
 export {TreeNode, isSubtree}
 
 function isSubtree(root: TreeNode | null, subRoot: TreeNode | null): boolean {
+    if (!root && !subRoot) {
+        return true
+    }
+
+    if (!root || !subRoot) {
+        return false
+    }
+
     return equal(root, subRoot)
         || isSubtree(root?.left ?? null, subRoot)
         || isSubtree(root?.right ?? null, subRoot)
