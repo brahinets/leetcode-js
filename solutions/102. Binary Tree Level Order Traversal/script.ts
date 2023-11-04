@@ -3,20 +3,27 @@ import {TreeNode} from '../../common/TreeNode'
 export {levelOrder, TreeNode}
 
 function levelOrder(root: TreeNode | null): number[][] {
-    const result: number[][] = []
-
-    collect(root, 0, result)
-
-    return result
+    return [...collect(root, 0).values()]
 }
 
-const collect = function (node: TreeNode | null | undefined, layer: number, result: number[][]): void {
+function collect(node: TreeNode | null, layer: number): Map<number, number[]> {
+    const result: Map<number, number[]> = new Map<number, number[]>()
+
     if (!node) {
-        return
+        return result
     }
 
-    result[layer] = [...(result[layer] || []), node.val]
+    result.set(layer, [node.val])
 
-    collect(node?.left, layer + 1, result)
-    collect(node?.right, layer + 1, result)
+    const left: Map<number, number[]> = collect(node.left, layer + 1)
+    for (const [level, values] of left.entries()) {
+        result.set(level, [...(result.get(level) ?? []), ...values])
+    }
+
+    const right: Map<number, number[]> = collect(node.right, layer + 1)
+    for (const [level, values] of right.entries()) {
+        result.set(level, [...(result.get(level) ?? []), ...values])
+    }
+
+    return result
 }
