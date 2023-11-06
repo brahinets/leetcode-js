@@ -46,4 +46,12 @@ describe('1845. Seat Reservation Manager', (): void => {
         reservedSeat = seatManager.reserve()
         expect(reservedSeat).toBe(2)
     })
+
+    it('Reserve more than available', (): void => {
+        const seatManager: SeatManager = new SeatManager(1)
+        expect(seatManager.reserve()).toBe(1)
+
+        expect(() => seatManager.reserve())
+            .toThrowError("No more seats available")
+    })
 })

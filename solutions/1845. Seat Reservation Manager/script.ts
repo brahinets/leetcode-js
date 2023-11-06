@@ -15,7 +15,7 @@ class SeatManager {
             }
         }
 
-        return -1
+        throw new Error("No more seats available")
     }
 
     unreserve(seatNumber: number): void {
