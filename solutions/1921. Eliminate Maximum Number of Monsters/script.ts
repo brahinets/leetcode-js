@@ -4,7 +4,7 @@ function eliminateMaximum(dist: number[], speed: number[]): number {
     const orcs: Orc[] = collectOrcs(dist, speed)
 
     let terminated: number = 0
-    while (orcs.length > 0 && orcs[0].outside()) {
+    while (orcs.length > 0) {
         orcs.sort((first: Orc, second: Orc) => (first.distance - first.speed) - (second.distance - second.speed))
 
         if (orcs[0].outside()) {
