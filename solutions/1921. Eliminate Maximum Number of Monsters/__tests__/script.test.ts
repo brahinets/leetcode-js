@@ -7,6 +7,11 @@ describe('1921. Eliminate Maximum Number of Monsters', (): void => {
             .toBe(3)
     })
 
+    it('Terminate all again', (): void => {
+        expect(eliminateMaximum([4, 2, 3], [2, 1, 1]))
+            .toBe(3)
+    })
+
     it('Terminate one', (): void => {
         expect(eliminateMaximum([1, 1, 2, 3], [1, 1, 1, 1]))
             .toBe(1)

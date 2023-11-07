@@ -5,6 +5,8 @@ function eliminateMaximum(dist: number[], speed: number[]): number {
 
     let terminated: number = 0
     while (orcs.length > 0 && orcs[0].distance > 0) {
+        orcs.sort((first: Orc, second: Orc) => (first.distance - first.speed) - (second.distance - second.speed))
+
         if (orcs[0].distance > 0) {
             orcs.shift()
             terminated++
@@ -35,8 +37,6 @@ function collectOrcs(dist: number[], speed: number[]): Orc[] {
     for (let i: number = 0; i < dist.length; i++) {
         orcs.push(new Orc(dist[i], speed[i]))
     }
-
-    orcs.sort((first: Orc, second: Orc) => first.distance - second.distance)
 
     return orcs
 }
