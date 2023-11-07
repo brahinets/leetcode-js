@@ -4,16 +4,16 @@ function eliminateMaximum(dist: number[], speed: number[]): number {
     const orcs: Orc[] = collectOrcs(dist, speed)
 
     let terminated: number = 0
-    while (orcs.length > 0 && orcs[0].distance > 0) {
+    while (orcs.length > 0 && orcs[0].outside()) {
         orcs.sort((first: Orc, second: Orc) => (first.distance - first.speed) - (second.distance - second.speed))
 
-        if (orcs[0].distance > 0) {
+        if (orcs[0].outside()) {
             orcs.shift()
             terminated++
         }
 
-        orcs.forEach((orc: Orc) => orc.distance -= orc.speed)
-        if (orcs.find((o: Orc): boolean => o.distance <= 0)) {
+        orcs.forEach((orc: Orc) => orc.move())
+        if (orcs.find((o: Orc): boolean => o.inside())) {
             break
         }
     }
@@ -28,6 +28,18 @@ class Orc {
     constructor(distance: number, speed: number) {
         this.distance = distance
         this.speed = speed
+    }
+
+    move(): void {
+        this.distance -= this.speed
+    }
+
+    inside(): boolean {
+        return this.distance <= 0
+    }
+
+    outside(): boolean {
+        return this.distance > 0
     }
 }
 
