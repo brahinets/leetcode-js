@@ -25,7 +25,7 @@ class Orc {
     }
 
     arrivalTime(): number {
-        return Math.round(this.distance / this.speed)
+        return Math.ceil(this.distance / this.speed)
     }
 
     inside(): boolean {
