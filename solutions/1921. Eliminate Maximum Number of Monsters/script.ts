@@ -27,14 +27,6 @@ class Orc {
     arrivalTime(): number {
         return Math.ceil(this.distance / this.speed)
     }
-
-    inside(): boolean {
-        return this.distance <= 0
-    }
-
-    outside(): boolean {
-        return this.distance >= 0
-    }
 }
 
 function collectOrcs(dist: number[], speed: number[]): Orc[] {
