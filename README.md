@@ -193,6 +193,7 @@
 1. № [1603. Design Parking System](solutions/1603.%20Design%20Parking%20System/script.ts)
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
+1. № [1759. Count Number of Homogenous Substrings](solutions/1759.%20Count%20Number%20of%20Homogenous%20Substrings/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
 1. № [1793. Maximum Score of a Good Subarray](solutions/1793.%20Maximum%20Score%20of%20a%20Good%20Subarray/script.ts)
 1. № [1799. Maximize Score After N Operations](solutions/1799.%20Maximize%20Score%20After%20N%20Operations/script.ts)
