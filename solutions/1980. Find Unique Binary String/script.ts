@@ -7,7 +7,6 @@ function findDifferentBinaryString(nums: string[]): string {
     for (let i: number = 0; i < nums.length; i++) {
         if (parseInt(nums[i], 2) === num) {
             num++
-            i = -1
         }
     }
 
