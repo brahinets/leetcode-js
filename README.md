@@ -200,6 +200,7 @@
 1. № [1793. Maximum Score of a Good Subarray](solutions/1793.%20Maximum%20Score%20of%20a%20Good%20Subarray/script.ts)
 1. № [1799. Maximize Score After N Operations](solutions/1799.%20Maximize%20Score%20After%20N%20Operations/script.ts)
 1. № [1822. Sign of the Product of an Array](solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array/script.ts)
+1. № [1838. Frequency of the Most Frequent Element](solutions/1838.%20Frequency%20of%20the%20Most%20Frequent%20Element/script.ts)
 1. № [1845. Seat Reservation Manager](solutions/1845.%20Seat%20Reservation%20Manager/script.ts)
 1. № [1846. Maximum Element After Decreasing and Rearranging](solutions/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging/script.ts)
 1. № [1870. Minimum Speed to Arrive on Time](solutions/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/script.ts)
