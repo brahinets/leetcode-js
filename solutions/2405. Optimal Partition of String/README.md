@@ -8,5 +8,5 @@ a partition. Note that each character should belong to exactly one substring in 
 
 ### Constraints:
 
-`1 <= s.length <= 10^5`  
-`s` consists of only English lowercase letters.
+- `1 <= s.length <= 10^5`
+- `s` consists of only English lowercase letters.
