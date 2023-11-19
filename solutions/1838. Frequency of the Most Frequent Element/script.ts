@@ -3,27 +3,22 @@ export {maxFrequency}
 function maxFrequency(nums: number[], k: number): number {
     nums.sort((a: number, b: number): number => a - b)
 
-    let maxCount: number = 1
+    let maxFrequency: number = 0
+    let windowStart: number = 0
+    let allocated: number = 0
 
-    for (let i: number = nums.length - 1; i > 0; i--) {
-        const target: number = nums[i]
+    for (let windowEnd: number = 0; windowEnd < nums.length; windowEnd++) {
+        const targetNum: number = nums[windowEnd]
+        allocated += targetNum
+        const windowSize: number = 1 + (windowEnd - windowStart)
 
-        let sum: number = 0
-        let count: number = 1
-        for (let j: number = i - 1; j >= 0; j--) {
-            sum += (target - nums[j])
-            count++
-
-            if (sum >= k) {
-                if (sum > k) {
-                    count--
-                }
-                break
-            }
+        while (targetNum * windowSize - allocated > k) {
+            allocated -= nums[windowStart]
+            windowStart++
         }
 
-        maxCount = Math.max(maxCount, count)
+        maxFrequency = Math.max(maxFrequency, windowSize)
     }
 
-    return maxCount
+    return maxFrequency
 }
