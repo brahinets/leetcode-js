@@ -11,7 +11,7 @@ consecutive `T`s or `F`s in the answer key after performing the operation at mos
 
 ### Constraints:
 
-`n == answerKey.length`
-`1 <= n <= 5 * 104`
-`answerKey[i]` is either `T` or `F`
-`1 <= k <= n`
+- `n == answerKey.length`
+- `1 <= n <= 5 * 10^4`
+- `answerKey[i]` is either `T` or `F`
+- `1 <= k <= n`
