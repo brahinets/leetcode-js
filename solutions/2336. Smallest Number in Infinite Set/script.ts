@@ -28,7 +28,7 @@ class SmallestInfiniteSet {
 
         for (let i: number = 0; i < this.ranges.length; i++) {
             if (this.ranges[i].start <= number) {
-                let end: number | undefined = this.ranges[i].end;
+                const end: number | undefined = this.ranges[i].end;
                 if (end === undefined || end >= number) {
                     index = i;
                 }
