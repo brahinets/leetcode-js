@@ -13,8 +13,8 @@ the minimum number of minutes needed to pick up all the garbage.
 
 ### Constraints:
 
-`2 <= garbage.length <= 10^5`  
-`garbage[i]` consists of only the letters `M`, `P`, and `G`.  
-`1 <= garbage[i].length <= 10`  
-`travel.length == garbage.length - 1`  
-`1 <= travel[i] <= 100`
+- `2 <= garbage.length <= 10^5`
+- `garbage[i]` consists of only the letters `M`, `P`, and `G`.
+- `1 <= garbage[i].length <= 10`
+- `travel.length == garbage.length - 1`
+- `1 <= travel[i] <= 100`
