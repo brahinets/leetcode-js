@@ -199,6 +199,7 @@
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
 1. № [1793. Maximum Score of a Good Subarray](solutions/1793.%20Maximum%20Score%20of%20a%20Good%20Subarray/script.ts)
 1. № [1799. Maximize Score After N Operations](solutions/1799.%20Maximize%20Score%20After%20N%20Operations/script.ts)
+1. № [1814. Count Nice Pairs in an Array](solutions/1814.%20Count%20Nice%20Pairs%20in%20an%20Array/script.ts)
 1. № [1822. Sign of the Product of an Array](solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array/script.ts)
 1. № [1838. Frequency of the Most Frequent Element](solutions/1838.%20Frequency%20of%20the%20Most%20Frequent%20Element/script.ts)
 1. № [1845. Seat Reservation Manager](solutions/1845.%20Seat%20Reservation%20Manager/script.ts)
