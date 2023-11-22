@@ -177,6 +177,7 @@
 1. № [1356. Sort Integers by The Number of 1 Bits](solutions/1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits/script.ts)
 1. № [1372. Longest ZigZag Path in a Binary Tree](solutions/1372.%20Longest%20ZigZag%20Path%20in%20a%20Binary%20Tree/script.ts)
 1. № [1396. Design Underground System](solutions/1396.%20Design%20Underground%20System/script.ts)
+1. № [1424. Diagonal Traverse II](solutions/1424.%20Diagonal%20Traverse%20II/script.ts)
 1. № [1431. Kids With the Greatest Number of Candies](solutions/1431.%20Kids%20With%20the%20Greatest%20Number%20of%20Candies/script.ts)
 1. № [1448. Count Good Nodes in Binary Tree](solutions/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree/script.ts)
 1. № [1456. Maximum Number of Vowels in a Substring of Given Length](solutions/1456.%20Maximum%20Number%20of%20Vowels%20in%20a%20Substring%20of%20Given%20Length/script.ts)
