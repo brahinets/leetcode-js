@@ -8,6 +8,6 @@ column `cj` are equal. A row and column pair is considered equal if they contain
 
 ### Constraints:
 
-`n == grid.length == grid[i].length`
-`1 <= n <= 200`
-`1 <= grid[i][j] <= 10^5`
+- `n == grid.length == grid[i].length`
+- `1 <= n <= 200`
+- `1 <= grid[i][j] <= 10^5`
