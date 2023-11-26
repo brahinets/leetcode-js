@@ -12,6 +12,6 @@ elements `2`, `3`, `1`, and `5` is `(2 + 3 + 1 + 5) / 4 = 11 / 4 = 2.75`, which 
 
 ### Constraints:
 
-`n == nums.length`
-`1 <= n <= 10^5`
-`0 <= nums[i], k <= 10^5`
+- `n == nums.length`
+- `1 <= n <= 10^5`
+- `0 <= nums[i], k <= 10^5`
