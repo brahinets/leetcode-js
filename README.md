@@ -198,6 +198,7 @@
 1. № [1630. Arithmetic Subarrays](solutions/1630.%20Arithmetic%20Subarrays/script.ts)
 1. № [1685. Sum of Absolute Differences in a Sorted Array](solutions/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/script.ts)
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
+1. № [1727. Largest Submatrix With Rearrangements](solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/script.ts)
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
 1. № [1759. Count Number of Homogenous Substrings](solutions/1759.%20Count%20Number%20of%20Homogenous%20Substrings/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
