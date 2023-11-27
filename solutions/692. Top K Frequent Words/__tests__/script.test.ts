@@ -3,11 +3,11 @@ import {topKFrequent} from '../script'
 describe('692. Top K Frequent Words', (): void => {
     it('Use lexicographical comparison when counts equal', (): void => {
         expect(topKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2))
-            .toStrictEqual(["i", "love"]);
-    });
+            .toStrictEqual(["i", "love"])
+    })
 
     it('Sort by counts', (): void => {
         expect(topKFrequent(["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], 4))
-            .toStrictEqual(["the", "is", "sunny", "day"]);
-    });
+            .toStrictEqual(["the", "is", "sunny", "day"])
+    })
 })
