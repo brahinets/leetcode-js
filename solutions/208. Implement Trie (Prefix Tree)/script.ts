@@ -1,3 +1,5 @@
+export {Trie}
+
 class Trie {
     private readonly data: Set<string>
 
