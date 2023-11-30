@@ -1,3 +1,5 @@
+export {WordDictionary}
+
 class WordDictionary {
     private readonly words: Set<string>
 
