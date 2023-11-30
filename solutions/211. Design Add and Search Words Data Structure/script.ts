@@ -10,7 +10,7 @@ class WordDictionary {
     }
 
     search(word: string): boolean {
-        for (let w of this.words) {
+        for (const w of this.words) {
             if (this.match(word, w)) {
                 return true
             }
