@@ -1,7 +1,7 @@
 import {TreeNode} from '../../common/TreeNode'
 
-const collectPaths = (node: TreeNode, parentPath: string): string [] => {
-    let paths: string[] = [];
+function collectPaths(node: TreeNode, parentPath: string): string [] {
+    const paths: string[] = [];
 
     if (node.left) {
         paths.push(...collectPaths(node.left, parentPath + node.val));
@@ -16,10 +16,4 @@ const collectPaths = (node: TreeNode, parentPath: string): string [] => {
     }
 
     return paths;
-}
-
-const sumNumbers = (root: TreeNode): number => {
-    return collectPaths(root, "")
-        .map((num: string) => Number(num))
-        .reduce((num: number, sum: number) => num + sum, 0);
 }
