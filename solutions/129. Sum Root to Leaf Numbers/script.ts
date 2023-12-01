@@ -1,5 +1,13 @@
 import {TreeNode} from '../../common/TreeNode'
 
+export {sumNumbers, TreeNode}
+
+function sumNumbers(root: TreeNode): number {
+    return collectPaths(root, "")
+        .map((num: string) => Number(num))
+        .reduce((num: number, sum: number) => num + sum, 0);
+}
+
 function collectPaths(node: TreeNode, parentPath: string): string [] {
     const paths: string[] = [];
 
