@@ -2,18 +2,18 @@ export {largestAltitude}
 
 function largestAltitude(gains: number[]): number {
     if (gains.length === 0) {
-        throw new Error("Not enough data");
+        throw new Error("Not enough data")
     }
 
-    let current: number = 0;
-    let max: number = current;
+    let current: number = 0
+    let max: number = current
 
     for (const gain of gains) {
-        current += gain;
+        current += gain
         if (current > max) {
-            max = current;
+            max = current
         }
     }
 
-    return max;
+    return max
 }
