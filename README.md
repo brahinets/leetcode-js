@@ -168,6 +168,7 @@
 1. № [1091. Shortest Path in Binary Matrix](solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix/script.ts)
 1. № [1125. Smallest Sufficient Team](solutions/1125.%20Smallest%20Sufficient%20Team/script.ts)
 1. № [1146. Snapshot Array](solutions/1146.%20Snapshot%20Array/script.ts)
+1. № [1160. Find Words That Can Be Formed by Characters](solutions/1160.%20Find%20Words%20That%20Can%20Be%20Formed%20by%20Characters/script.ts)
 1. № [1161. Maximum Level Sum of a Binary Tree](solutions/1161.%20Maximum%20Level%20Sum%20of%20a%20Binary%20Tree/script.ts)
 1. № [1218. Longest Arithmetic Subsequence of Given Difference](solutions/1218.%20Longest%20Arithmetic%20Subsequence%20of%20Given%20Difference/script.ts)
 1. № [1232. Check If It Is a Straight Line](solutions/1232.%20Check%20If%20It%20Is%20a%20Straight%20Line/script.ts)
