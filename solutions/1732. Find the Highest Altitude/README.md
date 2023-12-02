@@ -8,6 +8,6 @@ net gain in altitude between points `i` and `i + 1` for all `(0 <= i < n)`. Retu
 
 ### Constraints:
 
-`n == gain.length`
-`1 <= n <= 100`
-`-100 <= gain[i] <= 100`
+- `n == gain.length`
+- `1 <= n <= 100`
+- `-100 <= gain[i] <= 100`
