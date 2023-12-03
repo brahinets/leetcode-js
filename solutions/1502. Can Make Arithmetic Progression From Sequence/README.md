@@ -8,5 +8,5 @@ Otherwise, return `false`.
 
 ### Constraints:
 
-`2 <= arr.length <= 1000`
-`-10^6 <= arr[i] <= 10^6`
+- `2 <= arr.length <= 1000`
+- `-10^6 <= arr[i] <= 10^6`
