@@ -173,6 +173,7 @@
 1. № [1218. Longest Arithmetic Subsequence of Given Difference](solutions/1218.%20Longest%20Arithmetic%20Subsequence%20of%20Given%20Difference/script.ts)
 1. № [1232. Check If It Is a Straight Line](solutions/1232.%20Check%20If%20It%20Is%20a%20Straight%20Line/script.ts)
 1. № [1254. Number of Closed Islands](solutions/1254.%20Number%20of%20Closed%20Islands/script.ts)
+1. № [1266. Minimum Time Visiting All Points](solutions/1266.%20Minimum%20Time%20Visiting%20All%20Points/script.ts)
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
 1. № [1318. Minimum Flips to Make a OR b Equal to c](solutions/1318.%20Minimum%20Flips%20to%20Make%20a%20OR%20b%20Equal%20to%20c/script.ts)
 1. № [1351. Count Negative Numbers in a Sorted Matrix](solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/script.ts)
