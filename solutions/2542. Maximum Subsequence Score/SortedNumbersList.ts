@@ -18,7 +18,7 @@ export class SortedNumbersList {
             cursor = cursor.next;
         }
 
-        let newNode: ListNode = new ListNode(val);
+        const newNode: ListNode = new ListNode(val);
         newNode.next = cursor;
         if (prev) {
             prev.next = newNode;
