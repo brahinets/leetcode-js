@@ -1,7 +1,6 @@
 export {SmallestInfiniteSet}
 
 class SmallestInfiniteSet {
-
     private ranges: Range[]
 
     constructor() {
@@ -9,15 +8,12 @@ class SmallestInfiniteSet {
     }
 
     findRangeBiggerThan(number: number): number {
-        let min: number | undefined
+        let min: number = 0
+
         for (let i: number = 0; i < this.ranges.length; i++) {
-            if (min === undefined || this.ranges[i].start > number && this.ranges[i].start < this.ranges[min].start) {
+            if (this.ranges[i].start > number && this.ranges[i].start < this.ranges[min].start) {
                 min = i
             }
-        }
-
-        if (min === undefined) {
-            throw new Error("Min not found")
         }
 
         return min
