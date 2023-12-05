@@ -2,7 +2,7 @@ export {SmallestInfiniteSet}
 
 class SmallestInfiniteSet {
 
-    ranges: Range[];
+    private ranges: Range[];
 
     constructor() {
         this.ranges = [new Range(1, undefined)];
