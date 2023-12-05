@@ -200,6 +200,7 @@
 1. № [1603. Design Parking System](solutions/1603.%20Design%20Parking%20System/script.ts)
 1. № [1630. Arithmetic Subarrays](solutions/1630.%20Arithmetic%20Subarrays/script.ts)
 1. № [1685. Sum of Absolute Differences in a Sorted Array](solutions/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/script.ts)
+1. № [1688. Count of Matches in Tournament](solutions/1688.%20Count%20of%20Matches%20in%20Tournament/script.ts)
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
 1. № [1727. Largest Submatrix With Rearrangements](solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/script.ts)
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
