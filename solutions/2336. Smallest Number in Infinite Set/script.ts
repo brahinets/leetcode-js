@@ -5,7 +5,7 @@ class SmallestInfiniteSet {
     private ranges: Range[]
 
     constructor() {
-        this.ranges = [new Range(1, undefined)]
+        this.ranges = [new Range(1)]
     }
 
     findRangeBiggerThan(number: number): number {
@@ -71,13 +71,12 @@ class SmallestInfiniteSet {
     }
 }
 
-
 class Range {
     start: number
     end: number | undefined
 
-    constructor(start: number, set: number | undefined) {
+    constructor(start: number, end?: number) {
         this.start = start
-        this.end = set
+        this.end = end
     }
 }
