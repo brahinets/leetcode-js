@@ -216,6 +216,7 @@
 1. № [1846. Maximum Element After Decreasing and Rearranging](solutions/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging/script.ts)
 1. № [1870. Minimum Speed to Arrive on Time](solutions/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/script.ts)
 1. № [1877. Minimize Maximum Pair Sum in Array](solutions/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array/script.ts)
+1. № [1903. Largest Odd Number in String](solutions/1903.%20Largest%20Odd%20Number%20in%20String/script.ts)
 1. № [1921. Eliminate Maximum Number of Monsters](solutions/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/script.ts)
 1. № [1930. Unique Length-3 Palindromic Subsequences](solutions/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/script.ts)
 1. № [1980. Find Unique Binary String](solutions/1980.%20Find%20Unique%20Binary%20String/script.ts)
