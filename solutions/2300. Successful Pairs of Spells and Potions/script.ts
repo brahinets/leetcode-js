@@ -1,11 +1,11 @@
 export {successfulPairs}
 
 function successfulPairs(spells: number[], potions: number[], success: number): number[] {
-    potions = potions.sort((a: number, b: number) => a - b)
+    potions.sort((a: number, b: number) => a - b)
 
     const successfulPairsCounts: number[] = []
 
-    for (let spell of spells) {
+    for (const spell of spells) {
         const minPotion: number = success / spell
         const minPotionIndex: number = indexOfFirstBigger(potions, minPotion)
 
