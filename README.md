@@ -124,6 +124,7 @@
 1. № [572. Subtree of Another Tree](solutions/572.%20Subtree%20of%20Another%20Tree/script.ts)
 1. № [589. N-ary Tree Preorder Traversal](solutions/589.%20N-ary%20Tree%20Preorder%20Traversal/script.ts)
 1. № [605. Can Place Flowers](solutions/605.%20Can%20Place%20Flowers/script.ts)
+1. № [606. Construct String from Binary Tree](solutions/606.%20Construct%20String%20from%20Binary%20Tree/script.ts)
 1. № [649. Dota2 Senate](solutions/649.%20Dota2%20Senate/script.ts)
 1. № [688. Knight Probability in Chessboard](solutions/688.%20Knight%20Probability%20in%20Chessboard/script.ts)
 1. № [692. Top K Frequent Words](solutions/692.%20Top%20K%20Frequent%20Words/script.ts)
