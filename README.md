@@ -45,6 +45,7 @@
 1. № [74. Search a 2D Matrix](solutions/74.%20Search%20a%202D%20Matrix/script.ts)
 1. № [77. Combinations](solutions/77.%20Combinations/script.ts)
 1. № [86. Partition List](solutions/86.%20Partition%20List/script.ts)
+1. № [94. Binary Tree Inorder Traversal](solutions/94.%20Binary%20Tree%20Inorder%20Traversal/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
 1. № [100. Same Tree](solutions/100.%20Same%20Tree/script.ts)
 1. № [101. Symmetric Tree](solutions/101.%20Symmetric%20Tree/script.ts)
