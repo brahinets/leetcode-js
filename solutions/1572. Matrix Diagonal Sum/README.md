@@ -7,6 +7,6 @@ primary diagonal and all the elements on the secondary diagonal that are not par
 
 ### Constraints:
 
-`n == mat.length == mat[i].length`
-`1 <= n <= 100`
-`1 <= mat[i][j] <= 100`
+- `n == mat.length == mat[i].length`
+- `1 <= n <= 100`
+- `1 <= mat[i][j] <= 100`
