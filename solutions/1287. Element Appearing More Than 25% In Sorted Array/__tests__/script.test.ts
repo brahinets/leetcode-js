@@ -2,6 +2,11 @@ import {findSpecialInteger} from '../script'
 
 describe('1287. Element Appearing More Than 25% In Sorted Array', (): void => {
 
+    it('No number', (): void => {
+        expect(() => findSpecialInteger([]))
+            .toThrowError("No solution found")
+    })
+
     it('The only number', (): void => {
         expect(findSpecialInteger([1, 1]))
             .toBe(1)
