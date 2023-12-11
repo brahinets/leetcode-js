@@ -12,7 +12,12 @@ describe('1287. Element Appearing More Than 25% In Sorted Array', (): void => {
             .toBe(1)
     })
 
-    it('Most popular', (): void => {
+    it('Most popular must be more that 25%', (): void => {
+        expect(findSpecialInteger([1, 2, 3, 3]))
+            .toBe(3)
+    })
+
+    it('Most popular is much more than 25%', (): void => {
         expect(findSpecialInteger([1, 2, 2, 6, 6, 6, 6, 7, 10]))
             .toBe(6)
     })

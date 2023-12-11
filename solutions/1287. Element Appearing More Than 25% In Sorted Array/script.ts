@@ -1,14 +1,25 @@
-import {count} from "../../common/array-utils";
-
 export {findSpecialInteger}
 
 function findSpecialInteger(arr: number[]): number {
-    const map: Map<number, number> = count(arr)
     const threshold: number = arr.length / 4
 
-    for (const [key, value] of map.entries()) {
-        if (value > threshold) {
-            return key
+    let count: number = 0
+    let value: number
+    for (let i: number = 0; i < arr.length; i++) {
+        value = arr[i]
+
+        if (i === 0) {
+            count = 1
+        } else {
+            if (arr[i] === arr[i - 1]) {
+                count++
+            } else {
+                count = 1
+            }
+        }
+
+        if (count > threshold) {
+            return value
         }
     }
 
