@@ -12,4 +12,4 @@ Return the k-th positive integer that is missing from this array.
 - `1 <= k <= 1000`
 - `arr[i] < arr[j] for 1 <= i < j <= arr.length`
 
-**Follow up:** could you solve this problem in less than O(n) complexity?
+**Follow up:** could you solve this problem in less than `O(n)` complexity?
