@@ -1,15 +1,16 @@
 export {findKthPositive}
-const findKthPositive = (arr: number[], k: number): number => {
-    let missedCount: number = 0;
-    let guess: number = 1;
+
+function findKthPositive(arr: number[], k: number): number {
+    let missedCount: number = 0
+    let guess: number = 1
 
     while (missedCount < k) {
         if (!arr.includes(guess)) {
-            missedCount++;
+            missedCount++
         }
 
-        guess++;
+        guess++
     }
 
-    return guess - 1;
+    return guess - 1
 }
