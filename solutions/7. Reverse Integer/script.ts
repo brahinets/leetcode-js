@@ -8,7 +8,8 @@ function reverse(x: number): number {
 
     const reversedNumber: number = Number(String(Math.abs(x))
         .split('')
-        .reverse().join('')) * sign
+        .toReversed()
+        .join('')) * sign
 
     if (reversedNumber < MIN_INT32 || reversedNumber > MAX_INT32) {
         return 0

@@ -17,7 +17,7 @@ function findDiagonalOrder(nums: number[][]): number[] {
 
     const result: number[] = []
     for (let i: number = 0; i < diagonals.length; i++) {
-        result.push(...diagonals[i].reverse())
+        result.push(...diagonals[i].toReversed())
     }
 
     return result

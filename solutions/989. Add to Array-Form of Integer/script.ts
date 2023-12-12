@@ -7,8 +7,8 @@ function addToArrayForm(num: number[], k: number): number[] {
 
     let longer: number[] = num.length > nums.length ? num : nums;
     let shorter: number[] = num.length <= nums.length ? num : nums;
-    longer = longer.reverse();
-    shorter = shorter.reverse();
+    longer = longer.toReversed();
+    shorter = shorter.toReversed();
 
     let addNext: number = 0;
     const result: number[] = [];
@@ -24,5 +24,5 @@ function addToArrayForm(num: number[], k: number): number[] {
         result.push(1);
     }
 
-    return result.reverse();
+    return result.toReversed();
 }
