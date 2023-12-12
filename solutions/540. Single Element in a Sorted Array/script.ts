@@ -3,7 +3,7 @@ export {singleNonDuplicate}
 function singleNonDuplicate(nums: number[]): number {
     const counts: Map<number, number> = count(nums);
 
-    for (let count of counts) {
+    for (const count of counts) {
         const num: number = count[0];
         const value: number = count[1];
 

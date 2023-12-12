@@ -12,7 +12,7 @@ export function longestPalindrome(s: string): number {
 function countLetters(s: string): Counter[] {
     const counts: Counter[] = [];
 
-    for (let letter of s) {
+    for (const letter of s) {
         const counter: Counter | undefined = counts
             .find((c: Counter): boolean => c.letter === letter);
 

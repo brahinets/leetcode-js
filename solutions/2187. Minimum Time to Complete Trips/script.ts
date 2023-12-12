@@ -6,7 +6,7 @@ const minimumTime = (time: number[], totalTrips: number): number => {
     while (left < right) {
         const mid: number = Math.floor((left + right) / 2);
 
-        let tripsForTime = time.map(e => Math.floor(mid / e))
+        const tripsForTime = time.map(e => Math.floor(mid / e))
             .reduce((s, e) => s + e, 0);
         if (tripsForTime >= totalTrips) {
             right = mid;

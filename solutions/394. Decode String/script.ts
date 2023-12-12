@@ -3,7 +3,7 @@ export {decodeString}
 function decodeString(s: string): string {
     let result: string = "";
 
-    let chars: string[] = s.split("");
+    const chars: string[] = s.split("");
     let char;
     let multiplier: string = "";
 
@@ -12,7 +12,7 @@ function decodeString(s: string): string {
             multiplier += char;
         } else if (char === "[") {
             let block: string = "";
-            let blocks: string[] = [char];
+            const blocks: string[] = [char];
             while (char = chars.shift()) {
                 if (char === "[") {
                     block += char;

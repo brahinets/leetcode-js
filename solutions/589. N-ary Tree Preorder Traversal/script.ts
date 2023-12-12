@@ -9,7 +9,7 @@ function preorder(root: Node | null): number[] {
 
     const result: number[] = [root.val];
 
-    for (let child of root.children) {
+    for (const child of root.children) {
         result.push(...preorder(child));
     }
 

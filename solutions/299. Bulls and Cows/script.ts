@@ -18,7 +18,7 @@ function getHint(secret: string, guess: string): string {
     }
 
     let cows: number = 0;
-    for (let [char, count] of requiredCounts) {
+    for (const [char, count] of requiredCounts) {
         cows += Math.min(providedCounts.get(char) || 0, count);
     }
 
