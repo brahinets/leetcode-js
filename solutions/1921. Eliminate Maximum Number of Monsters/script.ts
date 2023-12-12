@@ -36,7 +36,5 @@ function collectOrcs(dist: number[], speed: number[]): Orc[] {
         orcs.push(new Orc(dist[i], speed[i]))
     }
 
-    orcs.sort((first: Orc, second: Orc): number => first.arrivalTime() - second.arrivalTime())
-
-    return orcs
+    return orcs.toSorted((first: Orc, second: Orc): number => first.arrivalTime() - second.arrivalTime())
 }

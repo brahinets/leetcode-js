@@ -21,8 +21,8 @@ class KthLargest {
             numbers.push(val);
         }
 
-        numbers.sort((a: number, b: number): number => a - b);
-
-        return numbers.splice(Math.max(numbers.length - this.limit, 0));
+        return numbers
+            .toSorted((a: number, b: number): number => a - b)
+            .splice(Math.max(numbers.length - this.limit, 0));
     }
 }

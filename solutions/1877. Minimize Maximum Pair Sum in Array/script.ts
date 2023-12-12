@@ -1,7 +1,7 @@
 export {minPairSum}
 
 function minPairSum(nums: number[]): number {
-    nums.sort((a: number, b: number): number => a - b)
+    nums = nums.toSorted((a: number, b: number): number => a - b)
 
     let result: number = 0
     for (let i: number = 0; i < nums.length / 2; i++) {

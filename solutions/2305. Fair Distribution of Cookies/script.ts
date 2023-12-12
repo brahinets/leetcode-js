@@ -3,7 +3,7 @@ import {arrayOf} from "../../common/array-factories"
 export {distributeCookies}
 
 function distributeCookies(cookies: number[], k: number): number {
-    cookies = cookies.sort((a: number, b: number) => a - b);
+    cookies = cookies.toSorted((a: number, b: number) => a - b);
 
     const idealCookiesPerChild: number = cookies.reduce((sum: number, cookie: number): number => sum + cookie, 0) / k;
     const children: number[][] = arrayOf([], k);

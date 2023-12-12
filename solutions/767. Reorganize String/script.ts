@@ -4,7 +4,7 @@ export {reorganizeString}
 
 function reorganizeString(s: string): string {
     const charsSortedByCountAsc: [string, number][] = [...count(s.split("")).entries()]
-        .sort(([, count1], [, count2]): number => count1 - count2)
+        .toSorted(([, count1], [, count2]): number => count1 - count2)
 
     const result: string[] = Array(s.length).fill("")
 

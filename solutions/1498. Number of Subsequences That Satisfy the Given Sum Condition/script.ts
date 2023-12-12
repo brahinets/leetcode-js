@@ -1,7 +1,7 @@
 export {numSubseq}
 
 function numSubseq(nums: number[], target: number): number {
-    nums.sort((a: number, b: number): number => a - b)
+    nums = nums.toSorted((a: number, b: number): number => a - b)
 
     const mod: number = 1e9 + 7
     const power: number[] = calculatePowers(nums.length, mod)

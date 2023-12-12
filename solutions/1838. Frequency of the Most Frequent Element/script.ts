@@ -1,7 +1,7 @@
 export {maxFrequency}
 
 function maxFrequency(nums: number[], k: number): number {
-    nums.sort((a: number, b: number): number => a - b)
+    nums = nums.toSorted((a: number, b: number): number => a - b)
 
     let maxFrequency: number = 0
     let windowStart: number = 0

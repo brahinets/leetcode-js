@@ -1,7 +1,7 @@
 export {sortByBits}
 
 function sortByBits(arr: number[]): number[] {
-    return arr.sort((a: number, b: number): number => {
+    return arr.toSorted((a: number, b: number): number => {
         const aBitsCount: number = bitsCount(a)
         const bBitsCount: number = bitsCount(b)
 

@@ -9,7 +9,7 @@ function eventualSafeNodes(graphMatrix: number[][]): number[] {
         }
     }
 
-    return result.sort((a: number, b: number): number => a - b);
+    return result.toSorted((a: number, b: number): number => a - b);
 }
 
 function safeNode(nodeId: number, graphMatrix: number[][], visited: Set<number>, safe: Set<number>): boolean {

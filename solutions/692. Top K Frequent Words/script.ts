@@ -4,7 +4,7 @@ export {topKFrequent}
 
 function topKFrequent(values: string[], k: number): string[] {
     const counting: Map<string, number> = count(values)
-    values.sort(byCountDescendingThenLexicographically(counting))
+    values = values.toSorted(byCountDescendingThenLexicographically(counting))
 
     const result: string[] = []
     for (let i: number = 0; i < values.length && result.length < k; i++) {

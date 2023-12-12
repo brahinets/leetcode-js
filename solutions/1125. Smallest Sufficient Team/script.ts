@@ -77,7 +77,7 @@ function findTeammatesWithSkill(teammatesPool: string[][], requiredSkill: string
 function skillsByPopularity(people: string[][], skills: string[]): string[] {
     const counts: Map<string, number> = peopleHavingSkill(people);
     return [...skills]
-        .sort((s1: string, s2: string): number => (counts.get(s1) ?? 0) - (counts.get(s2) ?? 0));
+        .toSorted((s1: string, s2: string): number => (counts.get(s1) ?? 0) - (counts.get(s2) ?? 0));
 }
 
 function peopleHavingSkill(people: string[][]): Map<string, number> {

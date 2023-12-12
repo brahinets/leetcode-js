@@ -1,7 +1,7 @@
 export {maxCoins}
 
 function maxCoins(piles: number[]): number {
-    piles.sort((a: number, b: number): number => a - b)
+    piles = piles.toSorted((a: number, b: number): number => a - b)
 
     let result: number = 0
     const start: number = Math.floor(piles.length / 3)

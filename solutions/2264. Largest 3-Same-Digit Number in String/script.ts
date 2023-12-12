@@ -2,11 +2,11 @@ export {largestGoodInteger}
 
 function largestGoodInteger(num: string): string {
     const nums: number[] = findAllGoodNumbers(num)
+        .toSorted((a: number, b: number): number => b - a)
+
     if (nums.length === 0) {
         return ""
     }
-
-    nums.sort((a: number, b: number): number => b - a)
 
     return nums[0].toString().padStart(3, "0")
 }
