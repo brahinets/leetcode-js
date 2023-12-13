@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "![image](https://user-images.githubusercontent.com/4119411/219785121-7a80a215-fb7d-46cb-bc66-1d9fd34302c5.png)",
   "scripts": {
-    "preinstall": "node -v",
+    "preinstall": "node -v && npm -v",
     "test": "jest",
     "lint": "eslint . --ext .ts",
     "upgrade-dependencies": "ncu -u"
