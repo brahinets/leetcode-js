@@ -202,6 +202,7 @@
 1. № [1561. Maximum Number of Coins You Can Get](solutions/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/script.ts)
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
 1. № [1575. Count All Possible Routes](solutions/1575.%20Count%20All%20Possible%20Routes/script.ts)
+1. № [1582. Special Positions in a Binary Matrix](solutions/1582.%20Special%20Positions%20in%20a%20Binary%20Matrix/script.ts)
 1. № [1603. Design Parking System](solutions/1603.%20Design%20Parking%20System/script.ts)
 1. № [1630. Arithmetic Subarrays](solutions/1630.%20Arithmetic%20Subarrays/script.ts)
 1. № [1685. Sum of Absolute Differences in a Sorted Array](solutions/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/script.ts)
