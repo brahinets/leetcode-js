@@ -249,6 +249,7 @@
 1. № [2448. Minimum Cost to Make Array Equal](solutions/2448.%20Minimum%20Cost%20to%20Make%20Array%20Equal/script.ts)
 1. № [2462. Total Cost to Hire K Workers](solutions/2462.%20Total%20Cost%20to%20Hire%20K%20Workers/script.ts)
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
+1. № [2482. Difference Between Ones and Zeros in Row and Column](solutions/2482.%20Difference%20Between%20Ones%20and%20Zeros%20in%20Row%20and%20Column/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
 1. № [2616. Minimize the Maximum Difference of Pairs](solutions/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/script.ts)
