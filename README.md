@@ -243,6 +243,7 @@
 1. № [2336. Smallest Number in Infinite Set](solutions/2336.%20Smallest%20Number%20in%20Infinite%20Set/script.ts)
 1. № [2348. Number of Zero-Filled Sub-arrays](solutions/2348.%20Number%20of%20Zero-Filled%20Sub-arrays/script.ts)
 1. № [2352. Equal Row and Column Pairs](solutions/2352.%20Equal%20Row%20and%20Column%20Pairs/script.ts)
+1. № [2353. Design a Food Rating System](solutions/2353.%20Design%20a%20Food%20Rating%20System/script.ts)
 1. № [2390. Removing Stars From a String](solutions/2390.%20Removing%20Stars%20From%20a%20String/script.ts)
 1. № [2391. Minimum Amount of Time to Collect Garbage](solutions/2391.%20Minimum%20Amount%20of%20Time%20to%20Collect%20Garbage/script.ts)
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
