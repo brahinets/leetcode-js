@@ -24,9 +24,15 @@ class FoodRatings {
     }
 
     private getFoodsByCuisine(cuisine: string): string[] {
-        return Array.from(this.foodCuisine.entries())
-            .filter(([foodName, cuisineName]: [string, string]): boolean => cuisineName === cuisine)
-            .map(([foodName, cuisineName]: [string, string]): string => foodName)
+        const foods: string[] = []
+
+        this.foodCuisine.forEach((c: string, food: string): void => {
+            if (c === cuisine) {
+                foods.push(food)
+            }
+        })
+
+        return foods
     }
 
     private getHighestRatedFood(foodsByCuisine: string[]): string {
