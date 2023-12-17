@@ -1,24 +1,37 @@
 export {FoodRatings}
 
 class FoodRatings {
-    private readonly data: Food[]
+    private readonly foodRating: Map<string, number> = new Map<string, number>()
+    private readonly foodCuisine: Map<string, string> = new Map<string, string>()
 
 
     constructor(foods: string[], cuisines: string[], ratings: number[]) {
-        this.data = foods.map((food: string, index: number): Food => new Food(food, cuisines[index], ratings[index]))
+        this.foodRating = new Map<string, number>()
+        this.foodCuisine = new Map<string, string>()
+
+        for (let i: number = 0; i < foods.length; i++) {
+            this.foodRating.set(foods[i], ratings[i])
+            this.foodCuisine.set(foods[i], cuisines[i])
+        }
     }
 
     changeRating(food: string, newRating: number): void {
-        this.data
-            .filter((f: Food): boolean => f.name === food)
-            .forEach((f: Food): void => {
-                f.rating = newRating
-            })
+        this.foodRating.set(food, newRating)
     }
 
     highestRated(cuisine: string): string {
-        return this.data
-            .filter((food: Food): boolean => food.cuisine === cuisine)
+        return this.getHighestRatedFood(this.getFoodsByCuisine(cuisine))
+    }
+
+    private getFoodsByCuisine(cuisine: string): string[] {
+        return Array.from(this.foodCuisine.entries())
+            .filter(([foodName, cuisineName]: [string, string]): boolean => cuisineName === cuisine)
+            .map(([foodName, cuisineName]: [string, string]): string => foodName)
+    }
+
+    private getHighestRatedFood(foodsByCuisine: string[]): string {
+        const foods: Food[] = foodsByCuisine
+            .map((foodName: string): Food => new Food(foodName, this.foodCuisine.get(foodName)!, this.foodRating.get(foodName)!))
             .sort((a: Food, b: Food): number => {
                 if (a.rating > b.rating) {
                     return -1
@@ -27,7 +40,9 @@ class FoodRatings {
                 } else {
                     return a.name.localeCompare(b.name)
                 }
-            })[0].name
+            })
+
+        return foods[0].name
     }
 }
 
