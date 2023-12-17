@@ -23,4 +23,18 @@ describe('2353. Design a Food Rating System', (): void => {
         expect(foodRatings.highestRated("japanese"))
             .toBe("ramen")
     })
+
+    it('Test No Data', (): void => {
+        const foodRatings: FoodRatings = new FoodRatings(
+            ["kimchi"],
+            ["korean"],
+            [9]
+        )
+
+        expect(foodRatings.highestRated("korean"))
+            .toBe("kimchi")
+
+        expect(() => foodRatings.highestRated("japanese"))
+            .toThrowError("There is no food with this cuisine")
+    })
 })
