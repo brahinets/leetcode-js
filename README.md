@@ -127,6 +127,7 @@
 1. № [605. Can Place Flowers](solutions/605.%20Can%20Place%20Flowers/script.ts)
 1. № [606. Construct String from Binary Tree](solutions/606.%20Construct%20String%20from%20Binary%20Tree/script.ts)
 1. № [649. Dota2 Senate](solutions/649.%20Dota2%20Senate/script.ts)
+1. № [661. Image Smoother](solutions/661.%20Image%20Smoother/script.ts)
 1. № [688. Knight Probability in Chessboard](solutions/688.%20Knight%20Probability%20in%20Chessboard/script.ts)
 1. № [692. Top K Frequent Words](solutions/692.%20Top%20K%20Frequent%20Words/script.ts)
 1. № [703. Kth Largest Element in a Stream](solutions/703.%20Kth%20Largest%20Element%20in%20a%20Stream/script.ts)
