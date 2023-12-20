@@ -10,5 +10,5 @@ list.
 
 ### Constraints:
 
-The number of nodes in the list is an even integer in the range `[2, 10^5]`.
-`1 <= Node.val <= 10^5`
+- The number of nodes in the list is an even integer in the range `[2, 10^5]`.
+- `1 <= Node.val <= 10^5`
