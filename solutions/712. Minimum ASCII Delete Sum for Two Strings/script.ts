@@ -27,11 +27,3 @@ function minimumDeleteSum(s1: string, s2: string): number {
 
     return removalsForEquality[s1.length][s2.length];
 }
-
-function cost(s2: string): number {
-    let sum: number = 0;
-    for (const c of s2) {
-        sum += c.charCodeAt(0);
-    }
-    return sum;
-}
