@@ -13,6 +13,6 @@ describe('287. Find the Duplicate Number Medium Topics', (): void => {
 
     it('Duplicate not found', (): void => {
         expect(() => findDuplicate([1, 3, 4, 2]))
-            .toThrowError("Duplicate not found")
+            .toThrow("Duplicate not found")
     })
 })

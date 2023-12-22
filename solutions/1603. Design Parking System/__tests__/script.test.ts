@@ -22,6 +22,6 @@ describe('1603. Design Parking System', (): void => {
         const system: ParkingSystem = new ParkingSystem(1, 1, 0)
 
         expect(() => system.addCar(0))
-            .toThrowError("Unsupported car type provided")
+            .toThrow("Unsupported car type provided")
     })
 })

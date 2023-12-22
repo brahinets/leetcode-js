@@ -82,6 +82,6 @@ describe('Sorted Numbers List', (): void => {
         const list: SortedNumbersList = new SortedNumbersList()
 
         expect(() => list.removeAt(0))
-            .toThrowError("Index Out Of Bound")
+            .toThrow("Index Out Of Bound")
     })
 })

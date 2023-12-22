@@ -22,9 +22,9 @@ describe('225. Implement Stack using Queues', (): void => {
         expect(empty2).toBe(true)
 
         expect(() => myStack.top())
-            .toThrowError("Illegal state");
+            .toThrow("Illegal state");
 
         expect(() => myStack.pop())
-            .toThrowError("Illegal state");
+            .toThrow("Illegal state");
     })
 })

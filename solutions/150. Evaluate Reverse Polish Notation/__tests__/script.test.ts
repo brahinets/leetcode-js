@@ -39,16 +39,16 @@ describe('150. Evaluate Reverse Polish Notation', (): void => {
 
     it('No processable token found error', (): void => {
         expect(() => evalRPN(["4", "13"]))
-            .toThrowError("No processable token found")
+            .toThrow("No processable token found")
     })
 
     it('Not all processed error', (): void => {
         expect(() => evalRPN(["1", "4", "13", "+"]))
-            .toThrowError("No processable token found")
+            .toThrow("No processable token found")
     })
 
     it('Not processable token error', (): void => {
         expect(() => evalRPN(["1", "4", ":)"]))
-            .toThrowError("No processable token found")
+            .toThrow("No processable token found")
     })
 })

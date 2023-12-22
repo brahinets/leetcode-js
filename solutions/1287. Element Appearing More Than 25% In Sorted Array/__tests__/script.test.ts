@@ -4,7 +4,7 @@ describe('1287. Element Appearing More Than 25% In Sorted Array', (): void => {
 
     it('No number', (): void => {
         expect(() => findSpecialInteger([]))
-            .toThrowError("No solution found")
+            .toThrow("No solution found")
     })
 
     it('The only number', (): void => {

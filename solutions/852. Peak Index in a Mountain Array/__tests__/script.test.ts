@@ -3,7 +3,7 @@ import {peakIndexInMountainArray} from '../script'
 describe('852. Peak Index in a Mountain Array', (): void => {
     it('Input validation', (): void => {
         expect(() => peakIndexInMountainArray([0, 1]))
-            .toThrowError("Input must contain at least three elements")
+            .toThrow("Input must contain at least three elements")
     })
 
     it('Peak on the middle', (): void => {

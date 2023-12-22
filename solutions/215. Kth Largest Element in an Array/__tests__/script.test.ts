@@ -19,6 +19,6 @@ describe('215. Kth Largest Element in an Array', (): void => {
 
     it('Illegal state by requirements', (): void => {
         expect(() => findKthLargest([], 1))
-            .toThrowError("Illegal state. Not enough data")
+            .toThrow("Illegal state. Not enough data")
     })
 })

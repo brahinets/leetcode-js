@@ -4,7 +4,7 @@ describe('137. Single Number II', (): void => {
 
     it('Element not found', (): void => {
         expect(() => singleNumber([]))
-            .toThrowError("Element not found")
+            .toThrow("Element not found")
     })
 
     it('Has none three times', (): void => {

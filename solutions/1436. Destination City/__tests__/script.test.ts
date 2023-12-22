@@ -26,6 +26,6 @@ describe('1436. Destination City', (): void => {
 
     it('The only city without next destination', (): void => {
         expect(() => destCity([]))
-            .toThrowError('There is no single destination city')
+            .toThrow('There is no single destination city')
     })
 })

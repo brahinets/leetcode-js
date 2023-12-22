@@ -23,6 +23,6 @@ describe('20. Valid Parentheses', (): void => {
 
     it('Illegal characters', (): void => {
         expect(() => isValid("abc"))
-            .toThrowError("Illegal character")
+            .toThrow("Illegal character")
     })
 })

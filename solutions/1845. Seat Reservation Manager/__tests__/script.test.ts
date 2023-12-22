@@ -52,6 +52,6 @@ describe('1845. Seat Reservation Manager', (): void => {
         expect(seatManager.reserve()).toBe(1)
 
         expect(() => seatManager.reserve())
-            .toThrowError("No more seats available")
+            .toThrow("No more seats available")
     })
 })

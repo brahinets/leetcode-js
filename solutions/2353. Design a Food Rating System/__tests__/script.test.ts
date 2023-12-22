@@ -35,6 +35,6 @@ describe('2353. Design a Food Rating System', (): void => {
             .toBe("kimchi")
 
         expect(() => foodRatings.highestRated("japanese"))
-            .toThrowError("There is no food with this cuisine")
+            .toThrow("There is no food with this cuisine")
     })
 })

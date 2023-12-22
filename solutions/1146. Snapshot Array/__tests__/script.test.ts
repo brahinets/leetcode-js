@@ -49,20 +49,20 @@ describe('1146. Snapshot Array', (): void => {
         const array: SnapshotArray = new SnapshotArray(3)
 
         expect(() => array.get(0, 1))
-            .toThrowError("Snap does not exist")
+            .toThrow("Snap does not exist")
     })
 
     it('Error for non existing index set', (): void => {
         const array: SnapshotArray = new SnapshotArray(3)
 
         expect(() => array.set(4, 1))
-            .toThrowError("Element index is out of bounds")
+            .toThrow("Element index is out of bounds")
     })
 
     it('Error for non existing index get', (): void => {
         const array: SnapshotArray = new SnapshotArray(3)
 
         expect(() => array.get(4, 1))
-            .toThrowError("Element index is out of bounds")
+            .toThrow("Element index is out of bounds")
     })
 })

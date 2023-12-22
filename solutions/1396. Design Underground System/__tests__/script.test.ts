@@ -26,7 +26,7 @@ describe('1396. Design Underground System', (): void => {
 
         undergroundSystem.checkIn(10, "Leyton", 3);
         expect(() => undergroundSystem.checkIn(10, "Leyton", 21))
-            .toThrowError("Client is already commuting");
+            .toThrow("Client is already commuting");
     });
 
     it('Client cannot finish commute when idle', (): void => {
@@ -36,7 +36,7 @@ describe('1396. Design Underground System', (): void => {
         undergroundSystem.checkOut(10, "Leyton", 5);
 
         expect(() => undergroundSystem.checkOut(10, "Leyton", 6))
-            .toThrowError("Client is not commuting");
+            .toThrow("Client is not commuting");
     });
 
     it('Average is zero when no commutes found for station', (): void => {

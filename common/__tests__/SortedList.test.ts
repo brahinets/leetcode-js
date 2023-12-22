@@ -85,9 +85,9 @@ describe('Limit Sorted List Test', (): void => {
 
     it('Validate limit', (): void => {
         expect(() => new SortedList<object>(alphabeticCaseInsensitiveStringSorting, 0))
-            .toThrowError("Limit must be greater than 0")
+            .toThrow("Limit must be greater than 0")
 
         expect(() => new SortedList<object>(alphabeticCaseInsensitiveStringSorting, -1))
-            .toThrowError("Limit must be greater than 0")
+            .toThrow("Limit must be greater than 0")
     })
 })

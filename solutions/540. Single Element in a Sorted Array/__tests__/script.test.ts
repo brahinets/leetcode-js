@@ -8,6 +8,6 @@ describe('540. Single Element in a Sorted Array', (): void => {
 
     it('Non duplicate not found', (): void => {
         expect(() => singleNonDuplicate([3, 3, 7, 7, 10, 10, 11, 11]))
-            .toThrowError("Non duplicate not detected");
+            .toThrow("Non duplicate not detected");
     });
 })
