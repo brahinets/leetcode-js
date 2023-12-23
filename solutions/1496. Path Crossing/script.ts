@@ -5,7 +5,7 @@ function isPathCrossing(path: string): boolean {
 
     let x: number = 0
     let y: number = 0
-    visited.add(`${x}:${y}`)
+    visited.add(new Point(x, y).toString())
 
     for (const direction of path) {
         switch (direction) {
@@ -23,14 +23,27 @@ function isPathCrossing(path: string): boolean {
                 break
         }
 
-        const position: string = `${x}:${y}`
-
-        if (visited.has(position)) {
+        const position: Point = new Point(x, y)
+        if (visited.has(position.toString())) {
             return true
         }
 
-        visited.add(position)
+        visited.add(position.toString())
     }
 
     return false
+}
+
+class Point {
+    private readonly x: number
+    private readonly y: number
+
+    constructor(x: number, y: number) {
+        this.x = x
+        this.y = y
+    }
+
+    toString(): string {
+        return `${this.x}:${this.y}`
+    }
 }
