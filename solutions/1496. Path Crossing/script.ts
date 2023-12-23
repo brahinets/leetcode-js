@@ -35,10 +35,7 @@ function isPathCrossing(path: string): boolean {
 }
 
 class Point {
-    private readonly x: number
-    private readonly y: number
-
-    constructor(x: number, y: number) {
+    constructor(private readonly x: number, private readonly y: number) {
         this.x = x
         this.y = y
     }
