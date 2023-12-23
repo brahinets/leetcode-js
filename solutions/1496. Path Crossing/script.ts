@@ -3,41 +3,55 @@ export {isPathCrossing}
 function isPathCrossing(path: string): boolean {
     const visited: Set<string> = new Set<string>()
 
-    let x: number = 0
-    let y: number = 0
-    visited.add(new Point(x, y).toString())
+    const head: Point = new Point(0, 0)
+    visited.add(head.toString())
 
     for (const direction of path) {
         switch (direction) {
             case 'N':
-                y++
+                head.north()
                 break
             case 'E':
-                x++
+                head.east()
                 break
             case 'S':
-                y--
+                head.south()
                 break
             case 'W':
-                x--
+                head.west()
                 break
         }
 
-        const position: Point = new Point(x, y)
-        if (visited.has(position.toString())) {
+        if (visited.has(head.toString())) {
             return true
         }
 
-        visited.add(position.toString())
+        visited.add(head.toString())
     }
 
     return false
 }
 
 class Point {
-    constructor(private readonly x: number, private readonly y: number) {
+    constructor(private x: number, private y: number) {
         this.x = x
         this.y = y
+    }
+
+    north(): void {
+        this.y++
+    }
+
+    south(): void {
+        this.y--
+    }
+
+    west(): void {
+        this.x--
+    }
+
+    east(): void {
+        this.x++
     }
 
     toString(): string {
