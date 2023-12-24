@@ -1,4 +1,4 @@
-import {ListTNode} from "./ListTNode";
+import {ListTNode} from "./ListTNode"
 
 
 export class SortedList<T> {

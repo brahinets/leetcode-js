@@ -1,4 +1,4 @@
-import {isPalindrome} from "../string-utils";
+import {isPalindrome} from "../string-utils"
 
 describe('Palindrome check', (): void => {
 

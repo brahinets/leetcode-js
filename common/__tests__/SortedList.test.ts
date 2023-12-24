@@ -1,4 +1,4 @@
-import {SortedList} from "../SortedList";
+import {SortedList} from "../SortedList"
 
 describe('Sorted Numbers String Test', (): void => {
     const ascendingNumbersSorting = (a: number, b: number): number => a - b

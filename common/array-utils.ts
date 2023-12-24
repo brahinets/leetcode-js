@@ -1,4 +1,4 @@
-export {count};
+export {count}
 
 function count<Type>(nums: Type[]): Map<Type, number> {
     return nums.reduce((count: Map<Type, number>, num: Type) => {

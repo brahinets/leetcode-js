@@ -1,7 +1,7 @@
 import {ListNode} from "./ListNode"
 
 export {linkedListToArray, ListNode}
-export {linkedListMiddleNode, reverseLinkedList};
+export {linkedListMiddleNode, reverseLinkedList}
 
 function linkedListToArray(head: ListNode | null): number[] | null {
     if (!head) {

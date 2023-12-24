@@ -1,5 +1,5 @@
 import {linkedListToArray, ListNode} from '../list-utils'
-import {linkedListOf} from "../list-factories";
+import {linkedListOf} from "../list-factories"
 
 describe('Linked List Factory', (): void => {
     it('Empty list', (): void => {
