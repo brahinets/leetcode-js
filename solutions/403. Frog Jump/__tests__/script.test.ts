@@ -1,4 +1,4 @@
-import {canCross} from "../script";
+import {canCross} from "../script"
 
 describe('403. Frog Jump', (): void => {
 
