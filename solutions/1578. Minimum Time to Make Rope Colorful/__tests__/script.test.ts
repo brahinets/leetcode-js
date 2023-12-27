@@ -7,12 +7,12 @@ describe('1578. Minimum Time to Make Rope Colorful', (): void => {
             .toBe(0)
     })
 
-    it('Remove in the middle', (): void => {
+    it('Remove balloons in the middle', (): void => {
         expect(minCost("abaac", [1, 2, 3, 4, 5]))
             .toBe(3)
     })
 
-    it('Remove edge baloons', (): void => {
+    it('Remove edge balloons', (): void => {
         expect(minCost("aabaa", [1, 2, 3, 4, 1]))
             .toBe(2)
     })
