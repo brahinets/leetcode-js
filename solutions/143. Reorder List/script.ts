@@ -1,6 +1,6 @@
 import {ListNode} from "../../common/ListNode"
 
-import {linkedListMiddleNode, reverseLinkedList} from "../../common/list-utils";
+import {linkedListMiddleNode, reverseLinkedList} from "../../common/list-utils"
 
 export {reorderList, ListNode}
 
