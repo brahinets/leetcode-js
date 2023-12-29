@@ -1,7 +1,7 @@
 export {characterReplacement}
 
 function characterReplacement(s: string, k: number): number {
-    const chars: Set<string> = new Set(s.split(""))
+    const chars: Set<string> = new Set<string>(s.split(""))
     let maxWindowSize: number = 0
 
     for (const char of chars) {
