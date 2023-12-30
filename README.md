@@ -231,6 +231,7 @@
 1. № [1846. Maximum Element After Decreasing and Rearranging](solutions/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging/script.ts)
 1. № [1870. Minimum Speed to Arrive on Time](solutions/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/script.ts)
 1. № [1877. Minimize Maximum Pair Sum in Array](solutions/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array/script.ts)
+1. № [1897. Redistribute Characters to Make All Strings Equal](solutions/1897.%20Redistribute%20Characters%20to%20Make%20All%20Strings%20Equal/script.ts)
 1. № [1903. Largest Odd Number in String](solutions/1903.%20Largest%20Odd%20Number%20in%20String/script.ts)
 1. № [1913. Maximum Product Difference Between Two Pairs](solutions/1913.%20Maximum%20Product%20Difference%20Between%20Two%20Pairs/script.ts)
 1. № [1921. Eliminate Maximum Number of Monsters](solutions/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/script.ts)
