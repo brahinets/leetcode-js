@@ -1,14 +1,14 @@
 export {bulbSwitch}
 
 function bulbSwitch(n: number): number {
-    let on: number = 0;
+    let on: number = 0
     for (let j: number = 0; j < n; j++) {
         if (isOn(j + 1)) {
-            on++;
+            on++
         }
     }
 
-    return on;
+    return on
 }
 
 /**
@@ -19,5 +19,5 @@ function bulbSwitch(n: number): number {
  * @return end state of bulb
  */
 function isOn(bulb: number): boolean {
-    return Math.floor(Math.sqrt(bulb)) * Math.floor(Math.sqrt(bulb)) === bulb;
+    return Math.floor(Math.sqrt(bulb)) * Math.floor(Math.sqrt(bulb)) === bulb
 }
