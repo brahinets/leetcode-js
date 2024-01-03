@@ -11,7 +11,7 @@ generated so that the length of the output will never exceed `10^5`.
 
 ### Constraints:
 
-`1 <= s.length <= 30`  
-`s` consists of lowercase English letters, digits, and square brackets `[]`.  
-`s` is guaranteed to be a valid input.  
-All the integers in s are in the range `[1, 300]`.
+- `1 <= s.length <= 30`
+- `s` consists of lowercase English letters, digits, and square brackets `[]`.
+- `s` is guaranteed to be a valid input.
+- All the integers in s are in the range `[1, 300]`.
