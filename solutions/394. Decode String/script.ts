@@ -7,13 +7,13 @@ function decodeString(s: string): string {
     let char
     let multiplier: string = ""
 
-    while (char = chars.shift()) {
+    while ((char = chars.shift()) !== undefined) {
         if (isDigit(char)) {
             multiplier += char
         } else if (char === "[") {
             let block: string = ""
             const blocks: string[] = [char]
-            while (char = chars.shift()) {
+            while ((char = chars.shift()) !== undefined) {
                 if (char === "[") {
                     block += char
                     blocks.push(char)
