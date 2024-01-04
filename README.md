@@ -272,5 +272,6 @@
 1. № [2642. Design Graph With Shortest Path Calculator](solutions/2642.%20Design%20Graph%20With%20Shortest%20Path%20Calculator/script.ts)
 1. № [2706. Buy Two Chocolates](solutions/2706.%20Buy%20Two%20Chocolates/script.ts)
 1. № [2785. Sort Vowels in a String](solutions/2785.%20Sort%20Vowels%20in%20a%20String/script.ts)
+1. № [2870. Minimum Number of Operations to Make Array Empty](solutions/2870.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Empty/script.ts)
 
 </details>
