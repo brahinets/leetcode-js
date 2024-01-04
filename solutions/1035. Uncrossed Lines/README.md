@@ -10,5 +10,5 @@ can only belong to one connecting line). Return the maximum number of connecting
 
 ### Constraints:
 
-`1 <= nums1.length, nums2.length <= 500`
-`1 <= nums1[i], nums2[j] <= 2000`
+- `1 <= nums1.length, nums2.length <= 500`
+- `1 <= nums1[i], nums2[j] <= 2000`
