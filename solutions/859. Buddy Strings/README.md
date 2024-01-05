@@ -9,5 +9,5 @@ in `cbad`.
 
 ### Constraints:
 
-`1 <= s.length, goal.length <= 2 * 10^4`
-`s` and `goal` consist of lowercase letters
+- `1 <= s.length, goal.length <= 2 * 10^4`
+- `s` and `goal` consist of lowercase letters
