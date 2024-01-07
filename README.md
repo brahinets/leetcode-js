@@ -112,6 +112,7 @@
 1. № [438. Find All Anagrams in a String](solutions/438.%20Find%20All%20Anagrams%20in%20a%20String/script.ts)
 1. № [443. String Compression](solutions/443.%20String%20Compression/script.ts)
 1. № [445. Add Two Numbers II](solutions/445.%20Add%20Two%20Numbers%20II/script.ts)
+1. № [446. Arithmetic Slices II - Subsequence](solutions/446.%20Arithmetic%20Slices%20II%20-%20Subsequence/script.ts)
 1. № [455. Assign Cookies](solutions/455.%20Assign%20Cookies/script.ts)
 1. № [458. Poor Pigs](solutions/458.%20Poor%20Pigs/script.ts)
 1. № [459. Repeated Substring Pattern](solutions/459.%20Repeated%20Substring%20Pattern/script.ts)
