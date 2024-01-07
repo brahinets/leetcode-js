@@ -1,7 +1,7 @@
 export {addDigits}
 
 function addDigits(num: number): number {
-    let result: number = num;
+    let result: number = num
 
     while (`${result}`.length !== 1) {
         result = `${result}`
@@ -10,5 +10,5 @@ function addDigits(num: number): number {
             .reduce((sum: number, digit: number) => sum + digit, 0)
     }
 
-    return result;
+    return result
 }
