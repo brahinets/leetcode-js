@@ -164,6 +164,7 @@
 1. № [912. Sort an Array](solutions/912.%20Sort%20an%20Array/script.ts)
 1. № [920. Number of Music Playlists](solutions/920.%20Number%20of%20Music%20Playlists/script.ts)
 1. № [934. Shortest Bridge](solutions/934.%20Shortest%20Bridge/script.ts)
+1. № [938. Range Sum of BST](solutions/938.%20Range%20Sum%20of%20BST/script.ts)
 1. № [946. Validate Stack Sequences](solutions/946.%20Validate%20Stack%20Sequences/script.ts)
 1. № [956. Tallest Billboard](solutions/956.%20Tallest%20Billboard/script.ts)
 1. № [958. Check Completeness of a Binary Tree](solutions/958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
