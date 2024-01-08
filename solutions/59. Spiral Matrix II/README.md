@@ -6,4 +6,4 @@ Given a positive integer `n`, generate an `n x n` matrix filled with elements fr
 
 ### Constraints:
 
-`1 <= n <= 20`
+- `1 <= n <= 20`
