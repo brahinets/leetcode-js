@@ -1,4 +1,4 @@
-import {count} from "../array-utils"
+import {arraysAreEqual, count} from "../array-utils"
 
 describe('Counting', (): void => {
     it('Empty', (): void => {
@@ -14,5 +14,37 @@ describe('Counting', (): void => {
     it('Count strings', (): void => {
         expect(count(["a", "bb", "bb", "ccc", "ccc", "ccc"]))
             .toStrictEqual(new Map<string, number>([["a", 1], ["bb", 2], ["ccc", 3]]))
+    })
+})
+
+describe('Equality', (): void => {
+    it('Equal Empty', (): void => {
+        expect(arraysAreEqual([], []))
+            .toBe(true)
+    })
+
+    it('Equal Numbers', (): void => {
+        expect(arraysAreEqual([1], [1]))
+            .toBe(true)
+    })
+
+    it('Equal Strings', (): void => {
+        expect(arraysAreEqual(["-"], ["-"]))
+            .toBe(true)
+    })
+
+    it('Not Equal Size', (): void => {
+        expect(arraysAreEqual([null], []))
+            .toBe(false)
+    })
+
+    it('Not Equal Numbers', (): void => {
+        expect(arraysAreEqual([1], [2]))
+            .toBe(false)
+    })
+
+    it('Not Equal Strings', (): void => {
+        expect(arraysAreEqual(["a"], ["b"]))
+            .toBe(false)
     })
 })
