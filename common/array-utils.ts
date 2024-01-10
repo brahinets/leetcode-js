@@ -12,7 +12,7 @@ function arraysAreEqual<Type>(fisrt: Type[], second: Type[]): boolean {
         return false
     }
 
-    for (let i = 0; i < fisrt.length; i++) {
+    for (let i: number = 0; i < fisrt.length; i++) {
         if (fisrt[i] !== second[i]) {
             return false
         }
