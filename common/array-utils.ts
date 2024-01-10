@@ -7,13 +7,13 @@ function count<Type>(nums: Type[]): Map<Type, number> {
     }, new Map<Type, number>())
 }
 
-function arraysAreEqual<Type>(fisrt: Type[], second: Type[]): boolean {
-    if (fisrt.length !== second.length) {
+function arraysAreEqual<Type>(first: Type[], second: Type[]): boolean {
+    if (first.length !== second.length) {
         return false
     }
 
-    for (let i: number = 0; i < fisrt.length; i++) {
-        if (fisrt[i] !== second[i]) {
+    for (let i: number = 0; i < first.length; i++) {
+        if (first[i] !== second[i]) {
             return false
         }
     }
