@@ -1,9 +1,10 @@
 import {TreeNode} from '../../common/TreeNode'
+import {arraysAreEqual} from "../../common/array-utils";
 
 export {leafSimilar, TreeNode}
 
 function leafSimilar(root1: TreeNode | null, root2: TreeNode | null): boolean {
-    return getLeafSequence(root1).join(',') === getLeafSequence(root2).join(',')
+    return arraysAreEqual(getLeafSequence(root1), getLeafSequence(root2))
 }
 
 function getLeafSequence(node: TreeNode | null): number[] {
