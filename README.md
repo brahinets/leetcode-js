@@ -223,6 +223,7 @@
 1. № [1637. Widest Vertical Area Between Two Points Containing No Points](solutions/1637.%20Widest%20Vertical%20Area%20Between%20Two%20Points%20Containing%20No%20Points/script.ts)
 1. № [1685. Sum of Absolute Differences in a Sorted Array](solutions/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/script.ts)
 1. № [1688. Count of Matches in Tournament](solutions/1688.%20Count%20of%20Matches%20in%20Tournament/script.ts)
+1. № [1704. Determine if String Halves Are Alike](solutions/1704.%20Determine%20if%20String%20Halves%20Are%20Alike/script.ts)
 1. № [1716. Calculate Money in Leetcode Bank](solutions/1716.%20Calculate%20Money%20in%20Leetcode%20Bank/script.ts)
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
 1. № [1727. Largest Submatrix With Rearrangements](solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/script.ts)
