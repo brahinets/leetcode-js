@@ -1,6 +1,3 @@
-import {count} from "../../common/array-utils"
-import {mapsAreEqual} from "../../common/map-utils"
-
 export {halvesAreAlike}
 
 function halvesAreAlike(s: string): boolean {
@@ -8,7 +5,7 @@ function halvesAreAlike(s: string): boolean {
     const firstHalf: string[] = keepVowels(s.slice(0, middle))
     const secondHalf: string[] = keepVowels(s.slice(middle))
 
-    return mapsAreEqual(count(firstHalf), count(secondHalf))
+    return firstHalf.length == secondHalf.length
 }
 
 function keepVowels(s: string): string[] {
