@@ -7,7 +7,7 @@ describe('392. Is Subsequence', (): void => {
             .toBe(true)
     })
 
-    it('`axc` is a subsequence of `ahbgdc`', (): void => {
+    it('`axc` is a not subsequence of `ahbgdc`', (): void => {
         expect(isSubsequence("axc", "ahbgdc"))
             .toBe(false)
     })
