@@ -1,20 +1,22 @@
-export const isSubsequence = (s: string, t: string): boolean => {
-    let matched: number = 0;
-    let i: number = 0;
+export {isSubsequence}
+
+function isSubsequence(s: string, t: string): boolean {
+    let matched: number = 0
+    let i: number = 0
 
     for (const letter of s) {
         while (i < t.length) {
-            const match: boolean = t[i] === letter;
+            const match: boolean = t[i] === letter
 
-            i += 1;
+            i += 1
 
             if (match) {
-                matched++;
-                break;
+                matched++
+                break
             }
         }
 
     }
 
-    return matched === s.length;
+    return matched === s.length
 }
