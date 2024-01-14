@@ -10,10 +10,10 @@ array containing all the safe nodes of the graph. The answer should be sorted in
 
 ### Constraints:
 
-`n == graph.length`
-`1 <= n <= 10^4`
-`0 <= graph[i].length <= n`
-`0 <= graph[i][j] <= n - 1`
-`graph[i]` is sorted in a strictly increasing order.
-The graph may contain self-loops.
-The number of edges in the graph will be in the range `[1, 4 * 10^4]`.
+- `n == graph.length`
+- `1 <= n <= 10^4`
+- `0 <= graph[i].length <= n`
+- `0 <= graph[i][j] <= n - 1`
+- `graph[i]` is sorted in a strictly increasing order.
+- The `graph` may contain self-loops.
+- The number of edges in the `graph` will be in the range `[1, 4 * 10^4]`.
