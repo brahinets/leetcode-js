@@ -29,9 +29,11 @@ function safeNode(nodeId: number, graphMatrix: number[][], visited: Set<number>,
             return false
         }
 
-        if (!safeNode(n, graphMatrix, new Set<number>([...visited, n]), safe)) {
+        visited.add(n)
+        if (!safeNode(n, graphMatrix, visited, safe)) {
             return false
         }
+        visited.delete(n)
     }
 
     safe.add(nodeId)
