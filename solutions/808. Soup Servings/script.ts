@@ -24,7 +24,7 @@ function solve(a: number, b: number, matrix: number[][]): number {
         return matrix[a][b]
     }
 
-    let probability: number = 0;
+    let probability: number = 0
     for (let i: number = 0; i < 4; i++) {
         const rema: number = a - DOSES[i][0]
         const remb: number = b - DOSES[i][1]
@@ -33,7 +33,7 @@ function solve(a: number, b: number, matrix: number[][]): number {
     }
 
     if (probability > 1 - 1e-5) {
-        probability = 1;
+        probability = 1
     }
 
     matrix[a][b] = probability
