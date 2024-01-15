@@ -256,6 +256,7 @@
 1. № [2187. Minimum Time to Complete Trips](solutions/2187.%20Minimum%20Time%20to%20Complete%20Trips/script.ts)
 1. № [2191. Sort the Jumbled Numbers](solutions/2191.%20Sort%20the%20Jumbled%20Numbers/script.ts)
 1. № [2215. Find the Difference of Two Arrays](solutions/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/script.ts)
+1. № [2225. Find Players With Zero or One Losses](solutions/2225.%20Find%20Players%20With%20Zero%20or%20One%20Losses/script.ts)
 1. № [2235. Add Two Integers](solutions/2235.%20Add%20Two%20Integers/script.ts)
 1. № [2236. Root Equals Sum of Children](solutions/2236.%20Root%20Equals%20Sum%20of%20Children/script.ts)
 1. № [2264. Largest 3-Same-Digit Number in String](solutions/2264.%20Largest%203-Same-Digit%20Number%20in%20String/script.ts)
