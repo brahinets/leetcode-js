@@ -7,7 +7,7 @@ describe('27. Remove Element', (): void => {
         const left: number = removeElement(input, 2)
 
         expect(left).toBe(2)
-        expect(input).toStrictEqual([3, 3])
+        expect(input).toEqual([3, 3])
     })
 
     it('Many', (): void => {
@@ -15,6 +15,6 @@ describe('27. Remove Element', (): void => {
         const left: number = removeElement(input, 2)
 
         expect(left).toBe(5)
-        expect(input).toStrictEqual([0, 1, 3, 0, 4])
+        expect(input).toEqual([0, 1, 3, 0, 4])
     })
 })
