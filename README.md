@@ -183,6 +183,7 @@
 1. № [1155. Number of Dice Rolls With Target Sum](solutions/1155.%20Number%20of%20Dice%20Rolls%20With%20Target%20Sum/script.ts)
 1. № [1160. Find Words That Can Be Formed by Characters](solutions/1160.%20Find%20Words%20That%20Can%20Be%20Formed%20by%20Characters/script.ts)
 1. № [1161. Maximum Level Sum of a Binary Tree](solutions/1161.%20Maximum%20Level%20Sum%20of%20a%20Binary%20Tree/script.ts)
+1. № [1207. Unique Number of Occurrences](solutions/1207.%20Unique%20Number%20of%20Occurrences/script.ts)
 1. № [1218. Longest Arithmetic Subsequence of Given Difference](solutions/1218.%20Longest%20Arithmetic%20Subsequence%20of%20Given%20Difference/script.ts)
 1. № [1232. Check If It Is a Straight Line](solutions/1232.%20Check%20If%20It%20Is%20a%20Straight%20Line/script.ts)
 1. № [1235. Maximum Profit in Job Scheduling](solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling/script.ts)
