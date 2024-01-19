@@ -165,6 +165,7 @@
 1. № [881. Boats to Save People](solutions/881.%20Boats%20to%20Save%20People/script.ts)
 1. № [912. Sort an Array](solutions/912.%20Sort%20an%20Array/script.ts)
 1. № [920. Number of Music Playlists](solutions/920.%20Number%20of%20Music%20Playlists/script.ts)
+1. № [931. Minimum Falling Path Sum](solutions/931.%20Minimum%20Falling%20Path%20Sum/script.ts)
 1. № [934. Shortest Bridge](solutions/934.%20Shortest%20Bridge/script.ts)
 1. № [938. Range Sum of BST](solutions/938.%20Range%20Sum%20of%20BST/script.ts)
 1. № [946. Validate Stack Sequences](solutions/946.%20Validate%20Stack%20Sequences/script.ts)
