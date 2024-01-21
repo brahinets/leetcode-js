@@ -1,9 +1,11 @@
-export {rightSideView, TreeNode}
+import {last} from "../../common/array-utils";
 import {TreeNode} from '../../common/TreeNode'
+
+export {rightSideView, TreeNode}
 
 function rightSideView(root: TreeNode | null): number[] {
     return [...collect(root, 0).values()]
-        .map((values: number[]) => values[values.length - 1])
+        .map((values: number[]) => last(values)!)
 }
 
 function collect(node: TreeNode | null, layer: number): Map<number, number[]> {
