@@ -73,6 +73,7 @@
 1. № [167. Two Sum II - Input Array Is Sorted](solutions/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted/script.ts)
 1. № [168. Excel Sheet Column Title](solutions/168.%20Excel%20Sheet%20Column%20Title/script.ts)
 1. № [191. Number of 1 Bits](solutions/191.%20Number%20of%201%20Bits/script.ts)
+1. № [198. House Robber](solutions/198.%20House%20Robber/script.ts)
 1. № [199. Binary Tree Right Side View](solutions/199.%20Binary%20Tree%20Right%20Side%20View/script.ts)
 1. № [200. Number of Islands](solutions/200.%20Number%20of%20Islands/script.ts)
 1. № [205. Find the Index of the First Occurrence in a String](solutions/205.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/script.ts)
