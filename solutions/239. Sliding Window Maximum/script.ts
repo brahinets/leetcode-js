@@ -1,3 +1,5 @@
+import {last} from "../../common/array-utils";
+
 export {maxSlidingWindow}
 
 function maxSlidingWindow(nums: number[], k: number): number[] {
@@ -11,7 +13,7 @@ function maxSlidingWindow(nums: number[], k: number): number[] {
 
     const usefulNums: number[] = []
     for (let i: number = 0; i < windowSize; i++) {
-        while (usefulNums.length !== 0 && nums[i] >= nums[last(usefulNums)]) {
+        while (usefulNums.length !== 0 && nums[i] >= nums[last(usefulNums)!]) {
             usefulNums.pop()
         }
 
@@ -25,7 +27,7 @@ function maxSlidingWindow(nums: number[], k: number): number[] {
             usefulNums.shift()
         }
 
-        while (usefulNums.length !== 0 && nums[i] >= nums[last(usefulNums)]) {
+        while (usefulNums.length !== 0 && nums[i] >= nums[last(usefulNums)!]) {
             usefulNums.pop()
         }
 
@@ -38,8 +40,4 @@ function maxSlidingWindow(nums: number[], k: number): number[] {
 
 function first(array: number[]): number {
     return array[0]
-}
-
-function last(array: number[]): number {
-    return array[array.length - 1]
 }
