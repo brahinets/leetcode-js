@@ -1,3 +1,5 @@
+import {last} from "../../common/array-utils"
+
 export {removeDuplicateLetters}
 
 function removeDuplicateLetters(s: string): string {
@@ -10,7 +12,7 @@ function removeDuplicateLetters(s: string): string {
             continue
         }
 
-        while (last(result) > char && s.indexOf(last(result), i) > i) {
+        while (lastStr(result) > char && s.indexOf(lastStr(result), i) > i) {
             result.pop()
         }
 
@@ -20,6 +22,6 @@ function removeDuplicateLetters(s: string): string {
     return result.join("")
 }
 
-function last(string: string[]): string {
-    return string.length > 0 ? string[string.length - 1] : ""
+function lastStr(string: string[]): string {
+    return last(string) ?? ""
 }
