@@ -1,3 +1,5 @@
+import {last} from "../../common/array-utils";
+
 export {MinStack}
 
 class MinStack {
@@ -27,7 +29,7 @@ class MinStack {
     }
 
     top(): number {
-        return this.data[this.data.length - 1]
+        return last(this.data)!
     }
 
     getMin(): number {
