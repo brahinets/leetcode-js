@@ -1,3 +1,5 @@
+import {last} from "../../common/array-utils";
+
 export {rob}
 
 function rob(house: number[]): number {
@@ -10,5 +12,5 @@ function rob(house: number[]): number {
         )
     }
 
-    return maxForHouse[house.length - 1] ?? 0
+    return last(maxForHouse) ?? 0
 }
