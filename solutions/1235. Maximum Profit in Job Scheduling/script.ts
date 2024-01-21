@@ -1,3 +1,5 @@
+import {last} from "../../common/array-utils";
+
 export {jobScheduling}
 
 function jobScheduling(startTime: number[], endTime: number[], profit: number[]): number {
@@ -19,7 +21,7 @@ function jobScheduling(startTime: number[], endTime: number[], profit: number[])
         maxProfitWithJob.push(Math.max(profitWithCurrent, maxProfitWithJob[i - 1]))
     }
 
-    return maxProfitWithJob[maxProfitWithJob.length - 1]
+    return last(maxProfitWithJob)!
 }
 
 function findLatestCompletedJobIndex(jobs: Job[], i: number): number {
