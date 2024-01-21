@@ -2,7 +2,7 @@
 
 ## Easy
 
-Design a HashSet without using any built-in hash table libraries. Implement `MyHashSet` class:
+Design a `HashSet` without using any built-in hash table libraries. Implement `MyHashSet` class:
 
 - `void add(key)` Inserts the value key into the HashSet.
 - `bool contains(key)` Returns whether the value key exists in the HashSet or not.
@@ -10,5 +10,5 @@ Design a HashSet without using any built-in hash table libraries. Implement `MyH
 
 ### Constraints:
 
-`0 <= key <= 10^6`
-At most `10^4` calls will be made to `add`, `remove`, and `contains`.
+- `0 <= key <= 10^6`
+- At most `10^4` calls will be made to `add`, `remove`, and `contains`.
