@@ -456,6 +456,7 @@
 1. № [1758. Minimum Changes To Make Alternating Binary String](solutions/1758.%20Minimum%20Changes%20To%20Make%20Alternating%20Binary%20String/script.ts)
 1. № [1759. Count Number of Homogenous Substrings](solutions/1759.%20Count%20Number%20of%20Homogenous%20Substrings/script.ts)
 1. № [1760. Minimum Limit of Balls in a Bag](solutions/1760.%20Minimum%20Limit%20of%20Balls%20in%20a%20Bag/script.ts)
+1. № [1765. Map of Highest Peak](solutions/1765.%20Map%20of%20Highest%20Peak/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
 1. № [1769. Minimum Number of Operations to Move All Balls to Each Box](solutions/1769.%20Minimum%20Number%20of%20Operations%20to%20Move%20All%20Balls%20to%20Each%20Box/script.ts)
 1. № [1791. Find Center of Star Graph](solutions/1791.%20Find%20Center%20of%20Star%20Graph/script.ts)
