@@ -1,18 +1,18 @@
 export {maxLength}
 
 function maxLength(arr: string[]): number {
-    return backtrack(arr, "")
+    return backtrack(arr, "", 0)
 }
 
-function backtrack(strings: string[], prefix: string): number {
-    let result: number = prefix.length;
+function backtrack(strings: string[], resultString: string, start: number): number {
+    let result: number = resultString.length;
 
-    for (let i: number = 0; i < strings.length; i++) {
-        const candidate: string = prefix + strings[i];
+    for (let i: number = start; i < strings.length; i++) {
+        const candidate: string = resultString + strings[i];
 
         if (allLettersUnique(candidate)) {
             result = Math.max(result, candidate.length)
-            result = backtrack(strings.slice(1), candidate)
+            result = backtrack(strings, candidate, start + 1)
         }
     }
 
