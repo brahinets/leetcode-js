@@ -17,6 +17,11 @@ describe('1239. Maximum Length of a Concatenated String with Unique Characters',
             .toBe(6)
     })
 
+    it('One option between several strings #3', (): void => {
+        expect(maxLength(["a", "abc", "d", "de", "def"]))
+            .toBe(6)
+    })
+
     it('The only string is longest', (): void => {
         expect(maxLength(["abcdefghijklmnopqrstuvwxyz"]))
             .toBe(26)

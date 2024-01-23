@@ -1,22 +1,22 @@
 export {maxLength}
 
 function maxLength(arr: string[]): number {
-    let maxLength: number = 0
+    return backtrack(arr, "")
+}
 
-    for (let start: number = 0; start < arr.length; start++) {
-        let current: string = ""
+function backtrack(strings: string[], prefix: string): number {
+    let result: number = prefix.length;
 
-        for (let append: number = start; append < arr.length; append++) {
-            const candidate: string = current + arr[append]
+    for (let i: number = 0; i < strings.length; i++) {
+        const candidate: string = prefix + strings[i];
 
-            if (allLettersUnique(candidate)) {
-                current = candidate
-                maxLength = Math.max(maxLength, candidate.length)
-            }
+        if (allLettersUnique(candidate)) {
+            result = Math.max(result, candidate.length)
+            result = backtrack(strings.slice(1), candidate)
         }
     }
 
-    return maxLength
+    return result
 }
 
 function allLettersUnique(str: string): boolean {
