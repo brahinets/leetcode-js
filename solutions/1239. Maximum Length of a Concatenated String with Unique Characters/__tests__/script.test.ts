@@ -26,4 +26,9 @@ describe('1239. Maximum Length of a Concatenated String with Unique Characters',
         expect(maxLength(["abcdefghijklmnopqrstuvwxyz"]))
             .toBe(26)
     })
+
+    it('Load test', (): void => {
+        expect(maxLength(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p"]))
+            .toBe(16)
+    })
 })
