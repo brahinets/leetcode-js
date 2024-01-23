@@ -11,8 +11,7 @@ function backtrack(strings: string[], prefix: string, start: number): number {
         const candidate: string = prefix + strings[i];
 
         if (allLettersUnique(candidate)) {
-            result = Math.max(result, candidate.length)
-            result = backtrack(strings, candidate, start + 1)
+            result = Math.max(result, backtrack(strings, candidate, i + 1))
         }
     }
 
