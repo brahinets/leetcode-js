@@ -4,11 +4,11 @@ function maxLength(arr: string[]): number {
     return backtrack(arr, "", 0)
 }
 
-function backtrack(strings: string[], resultString: string, start: number): number {
-    let result: number = resultString.length;
+function backtrack(strings: string[], prefix: string, start: number): number {
+    let result: number = prefix.length;
 
     for (let i: number = start; i < strings.length; i++) {
-        const candidate: string = resultString + strings[i];
+        const candidate: string = prefix + strings[i];
 
         if (allLettersUnique(candidate)) {
             result = Math.max(result, candidate.length)
