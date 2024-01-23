@@ -20,5 +20,5 @@ function maxLength(arr: string[]): number {
 }
 
 function allLettersUnique(str: string): boolean {
-    return str.length === new Set([...str]).size
+    return str.length === new Set(str).size
 }
