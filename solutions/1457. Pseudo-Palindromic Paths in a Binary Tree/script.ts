@@ -4,27 +4,22 @@ import {count} from "../../common/array-utils"
 export {TreeNode, pseudoPalindromicPaths}
 
 function pseudoPalindromicPaths(root: TreeNode): number {
-    return collectPaths(root, [])
-        .filter((path: number[]) => isPseudoPalindromic(path))
-        .length
+    return countPseudoPalindromicPaths(root, [])
 }
 
-function collectPaths(node: TreeNode, parentPath: number[]): number [][] {
-    const paths: number[][] = []
-
-    if (node.left) {
-        paths.push(...collectPaths(node.left, [...parentPath, node.val]))
+function countPseudoPalindromicPaths(node: TreeNode | null, parentPath: number[]): number {
+    if (!node) {
+        return 0
     }
 
-    if (node.right) {
-        paths.push(...collectPaths(node.right, [...parentPath, node.val]))
+    const currentPath: number[] = [...parentPath, node.val]
+
+    const leaveNode: boolean = !node.left && !node.right
+    if (leaveNode) {
+        return isPseudoPalindromic(currentPath) ? 1 : 0
     }
 
-    if (!node.left && !node.right) {
-        paths.push([...parentPath, node.val])
-    }
-
-    return paths
+    return countPseudoPalindromicPaths(node.left, currentPath) + countPseudoPalindromicPaths(node.right, currentPath)
 }
 
 function isPseudoPalindromic(path: number[]): boolean {
