@@ -3,25 +3,24 @@ import {TreeNode} from "../../common/TreeNode"
 export {TreeNode, pseudoPalindromicPaths}
 
 function pseudoPalindromicPaths(root: TreeNode): number {
-    return countPseudoPalindromicPaths(root, [])
+    return countPseudoPalindromicPaths(root, new Set<number>())
 }
 
-function countPseudoPalindromicPaths(node: TreeNode | null, pathElementsWithoutPair: number[]): number {
+function countPseudoPalindromicPaths(node: TreeNode | null, pathElementsWithoutPair: Set<number>): number {
     if (!node) {
         return 0
     }
 
-    const currentPath: number[] = [...pathElementsWithoutPair]
-    if (!currentPath.includes(node.val)) {
-        currentPath.push(node.val)
+    const currentPath: Set<number> = new Set<number>(pathElementsWithoutPair)
+    if (!currentPath.has(node.val)) {
+        currentPath.add(node.val)
     } else {
-        const index: number = currentPath.indexOf(node.val)
-        currentPath.splice(index, 1)
+        currentPath.delete(node.val)
     }
 
     const leaveNode: boolean = !node.left && !node.right
     if (leaveNode) {
-        return currentPath.length <= 1 ? 1 : 0
+        return currentPath.size <= 1 ? 1 : 0
     }
 
     return countPseudoPalindromicPaths(node.left, currentPath) + countPseudoPalindromicPaths(node.right, currentPath)
