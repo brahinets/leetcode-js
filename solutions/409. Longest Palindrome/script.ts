@@ -1,43 +1,16 @@
-export function longestPalindrome(s: string): number {
-    const counts: Counter[] = countLetters(s)
-    const pairs: number = counts.reduce((sum: number, counter: Counter) => {
-        return sum + Math.floor(counter.count / 2)
-    }, 0)
+import {count} from "../../common/array-utils"
 
-    const hasNonPairedLetter: boolean = s.length > pairs * 2
+export {longestPalindrome}
 
-    return pairs * 2 + (hasNonPairedLetter ? 1 : 0)
-}
+function longestPalindrome(s: string): number {
+    const counts: Map<string, number> = count(s.split(""))
 
-function countLetters(s: string): Counter[] {
-    const counts: Counter[] = []
-
-    for (const letter of s) {
-        const counter: Counter | undefined = counts
-            .find((c: Counter): boolean => c.letter === letter)
-
-        if (counter) {
-            counter.increment()
-        } else {
-            const newCounter: Counter = new Counter(letter)
-            newCounter.increment()
-            counts.push(newCounter)
-        }
+    let pairedLetters: number = 0
+    for (const count of counts.values()) {
+        pairedLetters += Math.floor(count / 2)
     }
 
-    return counts
-}
+    const hasNonPairedLetter: boolean = s.length > pairedLetters * 2
 
-class Counter {
-    letter: string
-    count: number
-
-    constructor(letter: string) {
-        this.letter = letter
-        this.count = 0
-    }
-
-    increment(): void {
-        this.count += 1
-    }
+    return pairedLetters * 2 + (hasNonPairedLetter ? 1 : 0)
 }
