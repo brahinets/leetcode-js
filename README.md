@@ -183,6 +183,7 @@
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
 1. № [1091. Shortest Path in Binary Matrix](solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix/script.ts)
 1. № [1125. Smallest Sufficient Team](solutions/1125.%20Smallest%20Sufficient%20Team/script.ts)
+1. № [1143. Longest Common Subsequence](solutions/1143.%20Longest%20Common%20Subsequence/script.ts)
 1. № [1146. Snapshot Array](solutions/1146.%20Snapshot%20Array/script.ts)
 1. № [1155. Number of Dice Rolls With Target Sum](solutions/1155.%20Number%20of%20Dice%20Rolls%20With%20Target%20Sum/script.ts)
 1. № [1160. Find Words That Can Be Formed by Characters](solutions/1160.%20Find%20Words%20That%20Can%20Be%20Formed%20by%20Characters/script.ts)
