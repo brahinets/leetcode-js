@@ -233,6 +233,7 @@
 1. № [1630. Arithmetic Subarrays](solutions/1630.%20Arithmetic%20Subarrays/script.ts)
 1. № [1637. Widest Vertical Area Between Two Points Containing No Points](solutions/1637.%20Widest%20Vertical%20Area%20Between%20Two%20Points%20Containing%20No%20Points/script.ts)
 1. № [1657. Determine if Two Strings Are Close](solutions/1657.%20Determine%20if%20Two%20Strings%20Are%20Close/script.ts)
+1. № [1662. Check If Two String Arrays are Equivalent](solutions/1662.%20Check%20If%20Two%20String%20Arrays%20are%20Equivalent/script.ts)
 1. № [1685. Sum of Absolute Differences in a Sorted Array](solutions/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/script.ts)
 1. № [1688. Count of Matches in Tournament](solutions/1688.%20Count%20of%20Matches%20in%20Tournament/script.ts)
 1. № [1704. Determine if String Halves Are Alike](solutions/1704.%20Determine%20if%20String%20Halves%20Are%20Alike/script.ts)
