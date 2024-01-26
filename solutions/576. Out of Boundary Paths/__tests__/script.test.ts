@@ -11,4 +11,9 @@ describe('576. Out of Boundary Paths', (): void => {
         expect(findPaths(1, 3, 3, 0, 1))
             .toBe(12)
     })
+
+    it('Many ways', (): void => {
+        expect(findPaths(8, 50, 23, 5, 26))
+            .toBe(914783380)
+    })
 })

@@ -1,5 +1,7 @@
 export {findPaths}
 
+const mod: number = 1e9 + 7
+
 const turns: number[][] = [
     [-1, 0],
     [1, 0],
@@ -32,6 +34,7 @@ function numberOfUnsafeEnds(boardHeight: number, boardWidth: number, movesLeft: 
         const nextRow: number = row + turn[0]
         const nextCol: number = column + turn[1]
         unsafe += numberOfUnsafeEnds(boardHeight, boardWidth, movesLeft - 1, nextRow, nextCol, memo)
+        unsafe %= mod
     }
     memo.set(memoKey, unsafe)
 
