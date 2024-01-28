@@ -11,14 +11,14 @@ may return the answer in any order. It is guaranteed an answer exists.
 
 ### Constraints:
 
-`1 <= req_skills.length <= 16`
-`1 <= req_skills[i].length <= 16`
-`req_skills[i]` consists of lowercase English letters.
-All the strings of req_skills are unique.
-`1 <= people.length <= 60`
-`0 <= people[i].length <= 16`
-`1 <= people[i][j].length <= 16`
-`people[i][j]` consists of lowercase English letters.
-All the strings of `people[i]` are unique.
-Every skill in `people[i]` is a skill in req_skills.
-It is guaranteed a sufficient team exists.
+- `1 <= req_skills.length <= 16`
+- `1 <= req_skills[i].length <= 16`
+- `req_skills[i]` consists of lowercase English letters.
+- All the strings of req_skills are unique.
+- `1 <= people.length <= 60`
+- `0 <= people[i].length <= 16`
+- `1 <= people[i][j].length <= 16`
+- `people[i][j]` consists of lowercase English letters.
+- All the strings of `people[i]` are unique.
+- Every skill in `people[i]` is a skill in req_skills.
+- It is guaranteed a sufficient team exists.
