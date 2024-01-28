@@ -183,6 +183,7 @@
 1. № [1027. Longest Arithmetic Subsequence](solutions/1027.%20Longest%20Arithmetic%20Subsequence/script.ts)
 1. № [1035. Uncrossed Lines](solutions/1035.%20Uncrossed%20Lines/script.ts)
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
+1. № [1074. Number of Submatrices That Sum to Target](solutions/1074.%20Number%20of%20Submatrices%20That%20Sum%20to%20Target/script.ts)
 1. № [1091. Shortest Path in Binary Matrix](solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix/script.ts)
 1. № [1125. Smallest Sufficient Team](solutions/1125.%20Smallest%20Sufficient%20Team/script.ts)
 1. № [1143. Longest Common Subsequence](solutions/1143.%20Longest%20Common%20Subsequence/script.ts)
