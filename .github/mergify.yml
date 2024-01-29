@@ -2,7 +2,7 @@ pull_request_rules:
   - name: "Automatic merge when CI passes"
     conditions:
       - "base=main"
-      - "check-success=test"
+      - "check-success=verification"
     actions:
       merge:
         method: merge
