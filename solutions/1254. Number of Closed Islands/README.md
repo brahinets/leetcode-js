@@ -8,5 +8,5 @@ islands.
 
 ### Constraints:
 
-`1 <= grid.length, grid[0].length <= 100`  
-`0 <= grid[i][j] <=1`
+- `1 <= grid.length, grid[0].length <= 100`
+- `0 <= grid[i][j] <=1`
