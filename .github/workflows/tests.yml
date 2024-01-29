@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  test:
+  verification:
     runs-on: ubuntu-latest
 
     steps:
