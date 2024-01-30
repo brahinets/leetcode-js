@@ -1,4 +1,4 @@
-import {arrayOfZeros} from "../../common/array-factories";
+import {arrayOfZeros} from "../../common/array-factories"
 
 export {numDecodings}
 
