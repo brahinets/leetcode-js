@@ -1,6 +1,6 @@
 export {evalRPN}
 
-const CALCULATOR: Map<string, (a: number, b: number) => number> = new Map([
+const OPERATORS: Map<string, (a: number, b: number) => number> = new Map([
     ["+", (a: number, b: number): number => a + b],
     ["-", (a: number, b: number): number => a - b],
     ["*", (a: number, b: number): number => a * b],
@@ -27,7 +27,7 @@ function evalRPN(tokens: string[]): number {
 }
 
 function evaluate(num1: number, num2: number, token: string): number {
-    const fun: ((a: number, b: number) => number) | undefined = CALCULATOR.get(token);
+    const fun: ((a: number, b: number) => number) | undefined = OPERATORS.get(token);
     if (fun === undefined) {
         throw new Error("Not processable token")
     } else {
@@ -37,7 +37,7 @@ function evaluate(num1: number, num2: number, token: string): number {
 
 function findProcessableTokenIndex(token: string[]): number {
     for (let i: number = 2; i < token.length; i++) {
-        if (CALCULATOR.has(token[i])) {
+        if (OPERATORS.has(token[i])) {
             const first: number = Number(token[i - 1])
             const second: number = Number(token[i - 2])
             if (!Number.isNaN(second) && !Number.isNaN(first)) {
