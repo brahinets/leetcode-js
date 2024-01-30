@@ -1,6 +1,6 @@
 export {evalRPN}
 
-const CALCULATOR: Map<string, (a: number, b: number) => number> = new Map<string, (a: number, b: number) => number>([
+const CALCULATOR: Map<string, (a: number, b: number) => number> = new Map([
     ["+", (a: number, b: number): number => a + b],
     ["-", (a: number, b: number): number => a - b],
     ["*", (a: number, b: number): number => a * b],
