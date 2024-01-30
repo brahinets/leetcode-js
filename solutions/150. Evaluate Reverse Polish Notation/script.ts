@@ -23,10 +23,6 @@ function evalRPN(tokens: string[]): number {
         tokens.splice(processableTokenIndex - 2, 3, `${result}`)
     }
 
-    if (tokens.length > 1) {
-        throw new Error("Not all processed")
-    }
-
     return Number(tokens[0])
 }
 
