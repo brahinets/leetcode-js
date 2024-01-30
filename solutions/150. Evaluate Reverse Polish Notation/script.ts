@@ -1,6 +1,6 @@
 export {evalRPN}
 
-const CALCULATOR: Map<string, Function> = new Map<string, Function>([
+const CALCULATOR: Map<string, (a: number, b: number) => number> = new Map<string, (a: number, b: number) => number>([
     ["+", (a: number, b: number): number => a + b],
     ["-", (a: number, b: number): number => a - b],
     ["*", (a: number, b: number): number => a * b],
@@ -31,7 +31,7 @@ function evalRPN(tokens: string[]): number {
 }
 
 function evaluate(num1: number, num2: number, token: string): number {
-    const fun: Function | undefined = CALCULATOR.get(token);
+    const fun: ((a: number, b: number) => number) | undefined = CALCULATOR.get(token);
     if (fun === undefined) {
         throw new Error("Not processable token")
     } else {
