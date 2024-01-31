@@ -44,6 +44,7 @@
 1. № [71. Simplify Path](solutions/71.%20Simplify%20Path/script.ts)
 1. № [74. Search a 2D Matrix](solutions/74.%20Search%20a%202D%20Matrix/script.ts)
 1. № [77. Combinations](solutions/77.%20Combinations/script.ts)
+1. № [85. Maximal Rectangle](solutions/85.%20Maximal%20Rectangle/script.ts)
 1. № [86. Partition List](solutions/86.%20Partition%20List/script.ts)
 1. № [91. Decode Ways](solutions/91.%20Decode%20Ways/script.ts)
 1. № [94. Binary Tree Inorder Traversal](solutions/94.%20Binary%20Tree%20Inorder%20Traversal/script.ts)
