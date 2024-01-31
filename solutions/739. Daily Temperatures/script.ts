@@ -1,7 +1,9 @@
+import {arrayOfZeros} from "../../common/array-factories"
+
 export {dailyTemperatures}
 
 function dailyTemperatures(temperatures: number[]): number[] {
-    const result: number[] = new Array<number>(temperatures.length).fill(0)
+    const result: number[] = arrayOfZeros(temperatures.length)
     const stack: number[] = []
 
     for (let i: number = 0; i < temperatures.length; i++) {
