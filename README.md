@@ -202,6 +202,7 @@
 1. № [1287. Element Appearing More Than 25% In Sorted Array](solutions/1287.%20Element%20Appearing%20More%20Than%2025%25%20In%20Sorted%20Array/script.ts)
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
 1. № [1318. Minimum Flips to Make a OR b Equal to c](solutions/1318.%20Minimum%20Flips%20to%20Make%20a%20OR%20b%20Equal%20to%20c/script.ts)
+1. № [1335. Minimum Difficulty of a Job Schedule](solutions/1335.%20Minimum%20Difficulty%20of%20a%20Job%20Schedule/script.ts)
 1. № [1347. Minimum Number of Steps to Make Two Strings Anagram](solutions/1347.%20Minimum%20Number%20of%20Steps%20to%20Make%20Two%20Strings%20Anagram/script.ts)
 1. № [1351. Count Negative Numbers in a Sorted Matrix](solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/script.ts)
 1. № [1356. Sort Integers by The Number of 1 Bits](solutions/1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits/script.ts)
