@@ -1,4 +1,4 @@
-import {last} from "../../common/array-utils"
+import {first, last} from "../../common/array-utils"
 
 export {divideArray}
 
@@ -23,6 +23,6 @@ function divideArray(nums: number[], k: number): number[][] {
     return result
 }
 
-function elementsDifferenceValid(subArray: number[], k: number): boolean {
-    return last(subArray)! - subArray[0] <= k
+function elementsDifferenceValid(numbers: number[], k: number): boolean {
+    return last(numbers)! - first(numbers)! <= k
 }
