@@ -1,4 +1,4 @@
-export {last, count, arraysAreEqual}
+export {last, first, count, arraysAreEqual}
 
 function count<Type>(values: Type[]): Map<Type, number> {
     return values.reduce((count: Map<Type, number>, num: Type) => {
@@ -9,6 +9,10 @@ function count<Type>(values: Type[]): Map<Type, number> {
 
 function last<Type>(values: Type[]): Type | undefined {
     return values[values.length - 1]
+}
+
+function first<Type>(values: Type[]): Type | undefined {
+    return values[0]
 }
 
 function arraysAreEqual<Type>(first: Type[], second: Type[]): boolean {

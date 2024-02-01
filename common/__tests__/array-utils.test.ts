@@ -1,4 +1,4 @@
-import {arraysAreEqual, count, last} from "../array-utils"
+import {arraysAreEqual, count, first, last} from "../array-utils"
 
 describe('Counting', (): void => {
     it('Empty', (): void => {
@@ -31,6 +31,23 @@ describe('Last', (): void => {
     it('Last', (): void => {
         expect(last(["a", "bb"]))
             .toBe("bb")
+    })
+})
+
+describe('First', (): void => {
+    it('Empty', (): void => {
+        expect(first([]))
+            .toBeUndefined()
+    })
+
+    it('The only', (): void => {
+        expect(first([1]))
+            .toBe(1)
+    })
+
+    it('First', (): void => {
+        expect(first(["a", "bb"]))
+            .toBe("a")
     })
 })
 
