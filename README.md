@@ -183,6 +183,7 @@
 1. № [1026. Maximum Difference Between Node and Ancestor](solutions/1026.%20Maximum%20Difference%20Between%20Node%20and%20Ancestor/script.ts)
 1. № [1027. Longest Arithmetic Subsequence](solutions/1027.%20Longest%20Arithmetic%20Subsequence/script.ts)
 1. № [1035. Uncrossed Lines](solutions/1035.%20Uncrossed%20Lines/script.ts)
+1. № [1043. Partition Array for Maximum Sum](solutions/1043.%20Partition%20Array%20for%20Maximum%20Sum/script.ts)
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
 1. № [1074. Number of Submatrices That Sum to Target](solutions/1074.%20Number%20of%20Submatrices%20That%20Sum%20to%20Target/script.ts)
 1. № [1091. Shortest Path in Binary Matrix](solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix/script.ts)
