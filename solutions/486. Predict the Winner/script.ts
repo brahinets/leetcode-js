@@ -6,7 +6,7 @@ function PredictTheWinner(nums: number[]): boolean {
 
 function maxDiff(nums: number[], left: number, right: number): number {
     if (left === right) {
-        return nums[left];
+        return nums[left]
     }
 
     const takeLeft: number = nums[left] - maxDiff(nums, left + 1, right)
