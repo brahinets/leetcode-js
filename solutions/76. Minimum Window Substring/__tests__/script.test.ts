@@ -6,6 +6,11 @@ describe('76. Minimum Window Substring', (): void => {
             .toBe("BANC")
     })
 
+    it('Substring is window #2', (): void => {
+        expect(minWindow("bdab", "ab"))
+            .toBe("ab")
+    })
+
     it('Full string is window', (): void => {
         expect(minWindow("a", "a"))
             .toBe("a")
@@ -13,6 +18,11 @@ describe('76. Minimum Window Substring', (): void => {
 
     it('Not enough letters', (): void => {
         expect(minWindow("a", "aa"))
+            .toBe("")
+    })
+
+    it('No such letters', (): void => {
+        expect(minWindow("a", "b"))
             .toBe("")
     })
 })

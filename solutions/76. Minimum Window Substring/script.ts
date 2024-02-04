@@ -11,7 +11,7 @@ function minWindow(s: string, t: string): string {
             const check: string = s.slice(start, end)
             const present: Map<string, number> = count(check.split(""))
 
-            if ((min.length == 0 || check.length < min.length) && all(required, present)) {
+            if ((min.length == 0 || check.length < min.length) && missing(required, present) === 0) {
                 min = check
             }
         }
@@ -20,16 +20,16 @@ function minWindow(s: string, t: string): string {
     return min
 }
 
-function all(required: Map<string, number>, present: Map<string, number>): boolean {
-    for (const [letter, count] of required) {
-        if (!present.has(letter)) {
-            return false
-        }
+function missing(required: Map<string, number>, present: Map<string, number>): number {
+    let missing: number = 0
 
-        if (present.get(letter)! < count) {
-            return false
+    for (const [letter, need] of required) {
+        if (!present.has(letter)) {
+            missing += need
+        } else if (present.get(letter)! < need) {
+            missing += (need - present.get(letter)!)
         }
     }
 
-    return true
+    return missing
 }
