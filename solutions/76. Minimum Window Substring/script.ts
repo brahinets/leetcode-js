@@ -3,21 +3,28 @@ import {count} from "../../common/array-utils"
 export {minWindow}
 
 function minWindow(s: string, t: string): string {
-    let min: string = ""
+    let min: string | undefined = undefined
+
     const required: Map<string, number> = count(t.split(""))
+    const present: Map<string, number> = new Map<string, number>()
 
-    for (let start: number = 0; start <= s.length - t.length; start++) {
-        for (let end: number = start + t.length; end <= s.length + 1; end++) {
-            const check: string = s.slice(start, end)
-            const present: Map<string, number> = count(check.split(""))
+    let start: number = 0
+    let end: number = 0
+    while (end < s.length) {
+        present.set(s[end], (present.get(s[end]) ?? 0) + 1)
+        end++
 
-            if ((min.length == 0 || check.length < min.length) && missing(required, present) === 0) {
-                min = check
+        while (missing(required, present) === 0 && start <= end) {
+            if (min === undefined || end - start < min.length) {
+                min = s.slice(start, end)
             }
+
+            present.set(s[start], present.get(s[start])! - 1)
+            start++
         }
     }
 
-    return min
+    return min ?? ""
 }
 
 function missing(required: Map<string, number>, present: Map<string, number>): number {
