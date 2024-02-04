@@ -7,5 +7,5 @@ You may return the answer in any order.
 
 ### Constraints:
 
-`1 <= n <= 20`
-`1 <= k <= n`
+- `1 <= n <= 20`
+- `1 <= k <= n`

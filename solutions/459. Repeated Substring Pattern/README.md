@@ -7,5 +7,5 @@ substring together.
 
 ### Constraints:
 
-`1 <= s.length <= 10^4`
-`s` consists of lowercase English letters.
+- `1 <= s.length <= 10^4`
+- `s` consists of lowercase English letters.

@@ -8,7 +8,7 @@ Given `num`, the array-form of an integer, and an integer `k`, return the array-
 
 ### Constraints:
 
-`1 <= num.length <= 10^4`
-`0 <= num[i] <= 9`
-num does not contain any leading zeros except for the zero itself.
-`1 <= k <= 10^4`
+- `1 <= num.length <= 10^4`
+- `0 <= num[i] <= 9`
+- `num` does not contain any leading zeros except for the zero itself.
+- `1 <= k <= 10^4`

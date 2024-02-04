@@ -10,5 +10,5 @@ these properties. Since the answer can be large, return it modulo `10^9 + 7`.
 
 ### Constraints:
 
-`1 <= low <= high <= 10^5`
-`1 <= zero, one <= low`
+- `1 <= low <= high <= 10^5`
+- `1 <= zero, one <= low`

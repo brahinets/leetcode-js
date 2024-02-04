@@ -9,6 +9,6 @@ function `gcd(x, y)` is the greatest common divisor of `x` and `y`
 
 ### Constraints:
 
-`1 <= n <= 7`
-`nums.length == 2 * n`
-`1 <= nums[i] <= 10^6`
+- `1 <= n <= 7`
+- `nums.length == 2 * n`
+- `1 <= nums[i] <= 10^6`

@@ -13,4 +13,4 @@ your trip. To avoid boredom, you will create a playlist so that:
 
 ### Constraints:
 
-`0 <= k < n <= goal <= 100`
+- `0 <= k < n <= goal <= 100`

@@ -8,8 +8,8 @@ greater than target. If such a character does not exist, return the first charac
 
 ### Constraints:
 
-`2 <= letters.length <= 10^4`
-`letters[i]` is a lowercase English letter.
-`letters` is sorted in non-decreasing order.
-`letters` contains at least two different characters.
-`target` is a lowercase English letter.
+- `2 <= letters.length <= 10^4`
+- `letters[i]` is a lowercase English letter.
+- `letters` is sorted in non-decreasing order.
+- `letters` contains at least two different characters.
+- `target` is a lowercase English letter.

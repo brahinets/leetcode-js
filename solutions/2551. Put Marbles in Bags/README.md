@@ -18,5 +18,5 @@ Return the difference between the maximum and minimum scores among marble distri
 
 ### Constraints:
 
-`1 <= k <= weights.length <= 10^5`
-`1 <= weights[i] <= 10^9`
+- `1 <= k <= weights.length <= 10^5`
+- `1 <= weights[i] <= 10^9`

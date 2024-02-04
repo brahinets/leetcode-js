@@ -10,5 +10,5 @@ single node has a length of 0). Return the longest ZigZag path contained in that
 
 ### Constraints:
 
-The number of nodes in the tree is in the range `[1, 5 * 10^4]`.
-`1 <= Node.val <= 100`
+- The number of nodes in the tree is in the range `[1, 5 * 10^4]`.
+- `1 <= Node.val <= 100`

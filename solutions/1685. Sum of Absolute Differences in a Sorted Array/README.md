@@ -9,5 +9,5 @@ where `0 <= j < nums.length` and `j != i` (0-indexed).
 
 ### Constraints:
 
-– `2 <= nums.length <= 10^5`
-– `1 <= nums[i] <= nums[i + 1] <= 10^4`
+- `2 <= nums.length <= 10^5`
+- `1 <= nums[i] <= nums[i + 1] <= 10^4`

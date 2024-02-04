@@ -8,6 +8,6 @@ the minimum possible value of the maximum integer of nums after performing any n
 
 ### Constraints:
 
-`n == nums.length`  
-`2 <= n <= 10^5`  
-`0 <= nums[i] <= 10^9`
+- `n == nums.length`
+- `2 <= n <= 10^5`
+- `0 <= nums[i] <= 10^9`

@@ -12,6 +12,6 @@ has stopped moving.
 
 ### Constraints:
 
-`1 <= n <= 25`
-`0 <= k <= 100`
-`0 <= row, column <= n - 1`
+- `1 <= n <= 25`
+- `0 <= k <= 100`
+- `0 <= row, column <= n - 1`

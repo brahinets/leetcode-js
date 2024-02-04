@@ -13,6 +13,6 @@ Return the minimum maximum difference among all `p` pairs. We define the maximum
 
 ### Constraints:
 
-`1 <= nums.length <= 10^5`
-`0 <= nums[i] <= 10^9`
-`0 <= p <= (nums.length)/2`
+- `1 <= nums.length <= 10^5`
+- `0 <= nums[i] <= 10^9`
+- `0 <= p <= (nums.length)/2`
