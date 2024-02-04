@@ -1,4 +1,4 @@
-import {last} from "../../common/array-utils";
+import {last} from "../../common/array-utils"
 
 export {jobScheduling}
 

@@ -9,8 +9,8 @@ describe('1721. Swapping Nodes in a Linked List', (): void => {
             1
         )).toStrictEqual(
             linkedListOf(5, 2, 3, 4, 1)
-        );
-    });
+        )
+    })
 
     it('Swap center', (): void => {
         expect(swapNodes(
@@ -18,8 +18,8 @@ describe('1721. Swapping Nodes in a Linked List', (): void => {
             3
         )).toStrictEqual(
             linkedListOf(1, 2, 3, 4, 5)
-        );
-    });
+        )
+    })
 
     it('Swap in the middle', (): void => {
         expect(swapNodes(
@@ -27,6 +27,6 @@ describe('1721. Swapping Nodes in a Linked List', (): void => {
             5
         )).toStrictEqual(
             linkedListOf(7, 9, 6, 6, 8, 7, 3, 0, 9, 5)
-        );
-    });
+        )
+    })
 })

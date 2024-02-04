@@ -2,7 +2,7 @@ import {MyQueue} from '../script'
 
 describe('232. Implement Queue using Stacks', (): void => {
     it('Can add element', (): void => {
-        const myQueue: MyQueue = new MyQueue();
+        const myQueue: MyQueue = new MyQueue()
 
         myQueue.push(1)
         myQueue.push(2)

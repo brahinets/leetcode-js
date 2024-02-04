@@ -1,4 +1,4 @@
-import {maxLevelSum, TreeNode} from "../script";
+import {maxLevelSum, TreeNode} from "../script"
 
 describe('1161. Maximum Level Sum of a Binary Tree', (): void => {
 
@@ -9,8 +9,8 @@ describe('1161. Maximum Level Sum of a Binary Tree', (): void => {
                     new TreeNode(7),
                     new TreeNode(-8)),
                 new TreeNode(0))
-        )).toBe(2);
-    });
+        )).toBe(2)
+    })
 
     it('Righty tree', (): void => {
         expect(maxLevelSum(
@@ -21,8 +21,8 @@ describe('1161. Maximum Level Sum of a Binary Tree', (): void => {
                     new TreeNode(-89388,
                         null,
                         new TreeNode(-32127))))
-        )).toBe(2);
-    });
+        )).toBe(2)
+    })
 
     it('Full tree', (): void => {
         expect(maxLevelSum(
@@ -33,8 +33,8 @@ describe('1161. Maximum Level Sum of a Binary Tree', (): void => {
                 new TreeNode(48,
                     new TreeNode(12),
                     new TreeNode(41)))
-        )).toBe(3);
-    });
+        )).toBe(3)
+    })
 
     it('Full partial tree', (): void => {
         expect(maxLevelSum(
@@ -45,6 +45,6 @@ describe('1161. Maximum Level Sum of a Binary Tree', (): void => {
                 new TreeNode(652,
                     null,
                     new TreeNode(699)))
-        )).toBe(1);
-    });
-});
+        )).toBe(1)
+    })
+})

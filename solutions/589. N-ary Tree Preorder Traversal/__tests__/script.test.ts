@@ -11,8 +11,8 @@ describe('589. N-ary Tree Preorder Traversal', (): void => {
                 new Node(2, []),
                 new Node(4, [])
             ])
-        )).toStrictEqual([1, 3, 5, 6, 2, 4]);
-    });
+        )).toStrictEqual([1, 3, 5, 6, 2, 4])
+    })
 
     it('Big tree', (): void => {
         expect(preorder(new Node(
@@ -38,6 +38,6 @@ describe('589. N-ary Tree Preorder Traversal', (): void => {
                     new Node(10, [])
                 ])
             ])
-        )).toStrictEqual([1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]);
-    });
+        )).toStrictEqual([1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10])
+    })
 });

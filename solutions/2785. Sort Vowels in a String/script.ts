@@ -13,5 +13,5 @@ function sortVowels(s: string): string {
 }
 
 function isVowel(ch: string): boolean {
-    return VOWELS.includes(ch.toLowerCase());
+    return VOWELS.includes(ch.toLowerCase())
 }

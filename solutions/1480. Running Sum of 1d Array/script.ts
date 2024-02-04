@@ -1,11 +1,11 @@
 const runningSum = (nums: number[]): number[] => {
-    const result: number[] = [];
+    const result: number[] = []
 
-    let sum: number = 0;
+    let sum: number = 0
     for (const num of nums) {
-        sum += num;
-        result.push(sum);
+        sum += num
+        result.push(sum)
     }
 
-    return result;
+    return result
 }

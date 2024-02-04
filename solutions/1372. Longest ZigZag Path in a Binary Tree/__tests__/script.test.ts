@@ -5,8 +5,8 @@ describe('1372. Longest ZigZag Path in a Binary Tree', (): void => {
     it('Empty tree', (): void => {
         expect(longestZigZag(
             new TreeNode(1)
-        )).toBe(0);
-    });
+        )).toBe(0)
+    })
 
     it('Highest from node', (): void => {
         expect(longestZigZag(
@@ -21,8 +21,8 @@ describe('1372. Longest ZigZag Path in a Binary Tree', (): void => {
                                 null,
                                 new TreeNode(1))),
                         new TreeNode(1))))
-        )).toBe(3);
-    });
+        )).toBe(3)
+    })
 
     it('Highest from node 2', (): void => {
         expect(longestZigZag(
@@ -39,8 +39,8 @@ describe('1372. Longest ZigZag Path in a Binary Tree', (): void => {
                                     null,
                                     new TreeNode(1)))),
                         new TreeNode(1))))
-        )).toBe(3);
-    });
+        )).toBe(3)
+    })
 
     it('Highest from node 3', (): void => {
         expect(longestZigZag(
@@ -57,8 +57,8 @@ describe('1372. Longest ZigZag Path in a Binary Tree', (): void => {
                         new TreeNode(1,
                             null,
                             new TreeNode(1)))))
-        )).toBe(3);
-    });
+        )).toBe(3)
+    })
 
     it('Highest from root', (): void => {
         expect(longestZigZag(
@@ -71,8 +71,8 @@ describe('1372. Longest ZigZag Path in a Binary Tree', (): void => {
                             new TreeNode(1)),
                         new TreeNode(1))),
                 new TreeNode(1))
-        )).toBe(4);
-    });
+        )).toBe(4)
+    })
 
     it('Highest from root 2', (): void => {
         expect(longestZigZag(
@@ -83,6 +83,6 @@ describe('1372. Longest ZigZag Path in a Binary Tree', (): void => {
                     new TreeNode(1,
                         null,
                         new TreeNode(1))))
-        )).toBe(2);
-    });
+        )).toBe(2)
+    })
 });

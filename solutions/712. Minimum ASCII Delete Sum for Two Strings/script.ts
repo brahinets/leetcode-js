@@ -3,7 +3,7 @@ import {matrixOf} from "../../common/array-factories"
 export {minimumDeleteSum}
 
 function minimumDeleteSum(s1: string, s2: string): number {
-    const removalsForEquality: number[][] = matrixOf(0, s1.length + 1, s2.length + 1);
+    const removalsForEquality: number[][] = matrixOf(0, s1.length + 1, s2.length + 1)
 
     for (let i: number = 1; i <= s1.length; i++) {
         removalsForEquality[i][0] = removalsForEquality[i - 1][0] + s1.charCodeAt(i - 1)
@@ -25,5 +25,5 @@ function minimumDeleteSum(s1: string, s2: string): number {
         }
     }
 
-    return removalsForEquality[s1.length][s2.length];
+    return removalsForEquality[s1.length][s2.length]
 }

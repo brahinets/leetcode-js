@@ -1,4 +1,4 @@
-import {arrayOf} from "../../common/array-factories";
+import {arrayOf} from "../../common/array-factories"
 
 export {Graph}
 
@@ -21,7 +21,7 @@ class Graph {
     }
 
     shortestPath(from: number, to: number): number {
-        return findBellmanFord(this.size, this.nodes, from, to);
+        return findBellmanFord(this.size, this.nodes, from, to)
     }
 }
 

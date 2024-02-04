@@ -1,4 +1,4 @@
-import {arrayOf} from "../../common/array-factories";
+import {arrayOf} from "../../common/array-factories"
 
 export {getRow}
 

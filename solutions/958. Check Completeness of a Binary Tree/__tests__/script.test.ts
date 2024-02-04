@@ -9,8 +9,8 @@ describe('958. Check Completeness of a Binary Tree', (): void => {
                 new TreeNode(5)),
             new TreeNode(3,
                 new TreeNode(6))
-        ))).toBe(true);
-    });
+        ))).toBe(true)
+    })
 
     it('Incomplete', (): void => {
         expect(isCompleteTree(new TreeNode(
@@ -21,6 +21,6 @@ describe('958. Check Completeness of a Binary Tree', (): void => {
             new TreeNode(3,
                 null,
                 new TreeNode(7))
-        ))).toBe(false);
-    });
+        ))).toBe(false)
+    })
 })
