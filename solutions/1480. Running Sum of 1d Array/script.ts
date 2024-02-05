@@ -1,4 +1,6 @@
-const runningSum = (nums: number[]): number[] => {
+export {runningSum}
+
+function runningSum(nums: number[]): number[] {
     const result: number[] = []
 
     let sum: number = 0
