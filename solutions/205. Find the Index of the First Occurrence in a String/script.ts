@@ -1,3 +1,5 @@
+export {isIsomorphic}
+
 function isIsomorphic(first: string, second: string): boolean {
     if (first.length !== second.length) {
         return false
