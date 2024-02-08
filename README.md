@@ -95,6 +95,7 @@
 1. № [242. Valid Anagram](solutions/242.%20Valid%20Anagram/script.ts)
 1. № [258. Add Digits](solutions/258.%20Add%20Digits/script.ts)
 1. № [278. First Bad Version](solutions/278.%20First%20Bad%20Version/script.ts)
+1. № [279. Perfect Squares](solutions/279.%20Perfect%20Squares/script.ts)
 1. № [287. Find the Duplicate Number Medium Topics](solutions/287.%20Find%20the%20Duplicate%20Number%20Medium%20Topics/script.ts)
 1. № [299. Bulls and Cows](solutions/299.%20Bulls%20and%20Cows/script.ts)
 1. № [300. Longest Increasing Subsequence](solutions/300.%20Longest%20Increasing%20Subsequence/script.ts)
