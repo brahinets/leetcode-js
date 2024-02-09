@@ -104,6 +104,7 @@
 1. № [342. Power of Four](solutions/342.%20Power%20of%20Four/script.ts)
 1. № [343. Integer Break](solutions/343.%20Integer%20Break/script.ts)
 1. № [347. Top K Frequent Elements](solutions/347.%20Top%20K%20Frequent%20Elements/script.ts)
+1. № [368. Largest Divisible Subset](solutions/368.%20Largest%20Divisible%20Subset/script.ts)
 1. № [373. Find K Pairs with Smallest Sums](solutions/373.%20Find%20K%20Pairs%20with%20Smallest%20Sums/script.ts)
 1. № [380. Insert Delete GetRandom O(1)](solutions/380.%20Insert%20Delete%20GetRandom%20O%281%29/script.ts)
 1. № [382. Linked List Random Node](solutions/382.%20Linked%20List%20Random%20Node/script.ts)
