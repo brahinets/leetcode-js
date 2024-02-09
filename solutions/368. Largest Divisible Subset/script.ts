@@ -16,11 +16,11 @@ function largestDivisibleSubset(nums: number[]): number[] {
             }
         }
 
-        memo[i] = [...currentSubset, nums[i]]
+        memo[i] = [nums[i], ...currentSubset]
         if (memo[i].length > maxSubset.length) {
             maxSubset = memo[i]
         }
     }
 
-    return maxSubset.sort((a: number, b: number): number => a - b)
+    return maxSubset
 }
