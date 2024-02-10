@@ -142,6 +142,7 @@
 1. № [606. Construct String from Binary Tree](solutions/606.%20Construct%20String%20from%20Binary%20Tree/script.ts)
 1. № [629. K Inverse Pairs Array](solutions/629.%20K%20Inverse%20Pairs%20Array/script.ts)
 1. № [645. Set Mismatch](solutions/645.%20Set%20Mismatch/script.ts)
+1. № [647. Palindromic Substrings](solutions/647.%20Palindromic%20Substrings/script.ts)
 1. № [649. Dota2 Senate](solutions/649.%20Dota2%20Senate/script.ts)
 1. № [661. Image Smoother](solutions/661.%20Image%20Smoother/script.ts)
 1. № [688. Knight Probability in Chessboard](solutions/688.%20Knight%20Probability%20in%20Chessboard/script.ts)
