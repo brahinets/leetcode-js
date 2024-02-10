@@ -1,3 +1,5 @@
+export {BrowserHistory}
+
 class BrowserHistory {
     private history: string[]
     private position: number
