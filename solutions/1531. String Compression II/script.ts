@@ -35,11 +35,7 @@ function getLengthOfOptimalCompression(s: string, k: number): number {
 function encodedLength(length: number): number {
     if (length === 1) {
         return 1
-    } else if (length < 10) {
-        return 2
-    } else if (length < 100) {
-        return 3
+    } else {
+        return Math.floor(Math.log10(length)) + 2
     }
-
-    throw new Error("Too big string")
 }
