@@ -235,6 +235,7 @@
 1. № [1512. Number of Good Pairs](solutions/1512.%20Number%20of%20Good%20Pairs/script.ts)
 1. № [1514. Path with Maximum Probability](solutions/1514.%20Path%20with%20Maximum%20Probability/script.ts)
 1. № [1523. Count Odd Numbers in an Interval Range](solutions/1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.ts)
+1. № [1531. String Compression II](solutions/1531.%20String%20Compression%20II/script.ts)
 1. № [1539. Kth Missing Positive Number](solutions/1539.%20Kth%20Missing%20Positive%20Number/script.ts)
 1. № [1561. Maximum Number of Coins You Can Get](solutions/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/script.ts)
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
