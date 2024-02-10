@@ -1,15 +1,29 @@
-import {isPalindrome} from "../../common/string-utils"
+import {matrixOf} from "../../common/array-factories"
 
 export {countSubstrings}
 
 function countSubstrings(s: string): number {
     let palindromesCount: number = 0
 
-    for (let start: number = 0; start < s.length; start++) {
-        for (let end: number = start; end < s.length; end++) {
-            const checked: string = s.substring(start, end + 1)
+    const palindromeFromTo: boolean[][] = matrixOf(false, s.length, s.length)
+    for (let i: number = 0; i < s.length; i++) {
+        palindromeFromTo[i][i] = true
+        palindromesCount++
+    }
 
-            if (isPalindrome(checked)) {
+    for (let i: number = 1; i < s.length; i++) {
+        if (s[i] === s[i - 1]) {
+            palindromeFromTo[i][i - 1] = true
+            palindromesCount++
+        }
+    }
+
+    for (let radius: number = 3; radius <= s.length; radius++) {
+        for (let i: number = 0; i < s.length - radius + 1; i++) {
+            const j: number = i + radius - 1
+
+            if (s[i] === s[j] && palindromeFromTo[i + 1] [j - 1]) {
+                palindromeFromTo[i][j] = true
                 palindromesCount++
             }
         }
