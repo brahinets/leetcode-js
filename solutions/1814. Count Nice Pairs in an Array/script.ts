@@ -13,7 +13,7 @@ function countNicePairs(nums: number[]): number {
 
     let nicePairs: number = 0
     const counts: Map<number, number> = count(data)
-    for (const [key, value] of counts) {
+    for (const [, value] of counts) {
         nicePairs = (nicePairs + value * (value - 1) / 2) % MOD
     }
 
