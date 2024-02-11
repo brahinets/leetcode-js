@@ -224,6 +224,7 @@
 1. № [1448. Count Good Nodes in Binary Tree](solutions/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree/script.ts)
 1. № [1456. Maximum Number of Vowels in a Substring of Given Length](solutions/1456.%20Maximum%20Number%20of%20Vowels%20in%20a%20Substring%20of%20Given%20Length/script.ts)
 1. № [1457. Pseudo-Palindromic Paths in a Binary Tree](solutions/1457.%20Pseudo-Palindromic%20Paths%20in%20a%20Binary%20Tree/script.ts)
+1. № [1463. Cherry Pickup II](solutions/1463.%20Cherry%20Pickup%20II/script.ts)
 1. № [1464. Maximum Product of Two Elements in an Array](solutions/1464.%20Maximum%20Product%20of%20Two%20Elements%20in%20an%20Array/script.ts)
 1. № [1472. Design Browser History](solutions/1472.%20Design%20Browser%20History/script.ts)
 1. № [1480. Running Sum of 1d Array](solutions/1480.%20Running%20Sum%20of%201d%20Array/script.ts)
