@@ -1,14 +1,9 @@
+import {isPalindrome as isPalindromeWord} from '../../common/string-utils'
+
 export {isPalindrome}
 
 function isPalindrome(x: number): boolean {
     const str: string = String(x)
-    const middle: number = str.length / 2
 
-    for (let i: number = 0; i < middle; i++) {
-        if (str[i] !== str[str.length - i - 1]) {
-            return false
-        }
-    }
-
-    return true
+    return isPalindromeWord(str)
 }
