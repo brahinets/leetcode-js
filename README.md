@@ -277,6 +277,7 @@
 1. № [1980. Find Unique Binary String](solutions/1980.%20Find%20Unique%20Binary%20String/script.ts)
 1. № [2024. Maximize the Confusion of an Exam](solutions/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/script.ts)
 1. № [2090. K Radius Subarray Averages](solutions/2090.%20K%20Radius%20Subarray%20Averages/script.ts)
+1. № [2108. Find First Palindromic String in the Array](solutions/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/script.ts)
 1. № [2125. Number of Laser Beams in a Bank](solutions/2125.%20Number%20of%20Laser%20Beams%20in%20a%20Bank/script.ts)
 1. № [2130. Maximum Twin Sum of a Linked List](solutions/2130.%20Maximum%20Twin%20Sum%20of%20a%20Linked%20List/script.ts)
 1. № [2140. Solving Questions With Brainpower](solutions/2140.%20Solving%20Questions%20With%20Brainpower/script.ts)
