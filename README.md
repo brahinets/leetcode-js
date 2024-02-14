@@ -281,6 +281,7 @@
 1. № [2125. Number of Laser Beams in a Bank](solutions/2125.%20Number%20of%20Laser%20Beams%20in%20a%20Bank/script.ts)
 1. № [2130. Maximum Twin Sum of a Linked List](solutions/2130.%20Maximum%20Twin%20Sum%20of%20a%20Linked%20List/script.ts)
 1. № [2140. Solving Questions With Brainpower](solutions/2140.%20Solving%20Questions%20With%20Brainpower/script.ts)
+1. № [2149. Rearrange Array Elements by Sign](solutions/2149.%20Rearrange%20Array%20Elements%20by%20Sign/script.ts)
 1. № [2187. Minimum Time to Complete Trips](solutions/2187.%20Minimum%20Time%20to%20Complete%20Trips/script.ts)
 1. № [2191. Sort the Jumbled Numbers](solutions/2191.%20Sort%20the%20Jumbled%20Numbers/script.ts)
 1. № [2215. Find the Difference of Two Arrays](solutions/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/script.ts)
