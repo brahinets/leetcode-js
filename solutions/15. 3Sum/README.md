@@ -7,5 +7,5 @@ and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`. Notice that the solution s
 
 ### Constraints:
 
-`3 <= nums.length <= 3000`
-`-10^5 <= nums[i] <= 10^5`
+- `3 <= nums.length <= 3000`
+- `-10^5 <= nums[i] <= 10^5`
