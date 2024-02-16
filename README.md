@@ -229,6 +229,7 @@
 1. № [1464. Maximum Product of Two Elements in an Array](solutions/1464.%20Maximum%20Product%20of%20Two%20Elements%20in%20an%20Array/script.ts)
 1. № [1472. Design Browser History](solutions/1472.%20Design%20Browser%20History/script.ts)
 1. № [1480. Running Sum of 1d Array](solutions/1480.%20Running%20Sum%20of%201d%20Array/script.ts)
+1. № [1481. Least Number of Unique Integers after K Removals](solutions/1481.%20Least%20Number%20of%20Unique%20Integers%20after%20K%20Removals/script.ts)
 1. № [1491. Average Salary Excluding the Minimum and Maximum Salary](solutions/1491.%20Average%20Salary%20Excluding%20the%20Minimum%20and%20Maximum%20Salary/script.ts)
 1. № [1493. Longest Subarray of 1's After Deleting One Element](solutions/1493.%20Longest%20Subarray%20of%201%27s%20After%20Deleting%20One%20Element/script.ts)
 1. № [1496. Path Crossing](solutions/1496.%20Path%20Crossing/script.ts)
