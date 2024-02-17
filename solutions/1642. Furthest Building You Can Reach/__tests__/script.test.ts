@@ -15,4 +15,9 @@ describe('1642. Furthest Building You Can Reach', (): void => {
         expect(furthestBuilding([14, 3, 19, 3], 17, 0))
             .toBe(3)
     })
+
+    it('Better to save bricks', (): void => {
+        expect(furthestBuilding([1, 5, 1, 2, 3, 4, 10000], 4, 1))
+            .toBe(5)
+    })
 })
