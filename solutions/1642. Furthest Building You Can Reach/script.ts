@@ -9,11 +9,12 @@ function furthestBuilding(heights: number[], bricks: number, ladders: number): n
 
         if (climb) {
             climbs.push(diff)
-            climbs.sort((a: number, b: number): number => b - a)
         }
 
         if (climbs.length > ladders) {
-            bricks -= climbs.pop()!
+            const min: number = findIndexOfMin(climbs)
+            bricks -= climbs[min]
+            climbs.splice(min, 1)
         }
 
         if (bricks < 0) {
@@ -22,4 +23,17 @@ function furthestBuilding(heights: number[], bricks: number, ladders: number): n
     }
 
     return heights.length - 1
+}
+
+function findIndexOfMin(nums: number[]): number {
+    let min: number = nums[0]
+    let indexOfMin: number = 0
+    for (let i: number = 0; i < nums.length && i < nums.length; i++) {
+        if (nums[i] < min) {
+            min = nums[i]
+            indexOfMin = i
+        }
+    }
+
+    return indexOfMin
 }
