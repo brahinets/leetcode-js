@@ -13,9 +13,9 @@ function mostBooked(n: number, meetings: number[][]): number {
     })
 
     for (const [start, end] of meetings) {
-        const [room, since]: [number, number] = findFirstAvailableRoom(start, availability)
+        const room: number = findFirstAvailableRoom(start, availability)
 
-        availability.set(room, since <= start ? end : availability.get(room)! + (end - start))
+        availability.set(room, availability.get(room)! <= start ? end : (availability.get(room)! + (end - start)))
         bookings.set(room, bookings.get(room)! + 1)
     }
 
@@ -31,12 +31,12 @@ function mostBooked(n: number, meetings: number[][]): number {
     return maxBooked
 }
 
-function findFirstAvailableRoom(start: number, availability: Map<number, number>): [number, number] {
+function findFirstAvailableRoom(start: number, availability: Map<number, number>): number {
     const bookings: [number, number][] = [...availability.entries()]
 
     for (const [room, freeSince] of bookings) {
         if (freeSince <= start) {
-            return [room, freeSince]
+            return room
         }
     }
 
@@ -47,5 +47,5 @@ function findFirstAvailableRoom(start: number, availability: Map<number, number>
         }
 
         return Math.min(roomFirst, roomSecond)
-    })[0]
+    })[0][0]
 }
