@@ -13,7 +13,12 @@ describe('2402. Meeting Rooms III', (): void => {
     })
 
     it('Some same bookings #2', (): void => {
-        expect(mostBooked(3, [[1, 5], [3, 10], [5,18], [7,13], [8,15], [9,12]]))
+        expect(mostBooked(3, [[1, 5], [3, 10], [5, 18], [7, 13], [8, 15], [9, 12]]))
+            .toBe(0)
+    })
+
+    it('Some same bookings #4', (): void => {
+        expect(mostBooked(4, [[18, 19], [3, 12], [17, 19], [2, 13], [7, 10]]))
             .toBe(0)
     })
 })
