@@ -302,6 +302,7 @@
 1. № [2390. Removing Stars From a String](solutions/2390.%20Removing%20Stars%20From%20a%20String/script.ts)
 1. № [2391. Minimum Amount of Time to Collect Garbage](solutions/2391.%20Minimum%20Amount%20of%20Time%20to%20Collect%20Garbage/script.ts)
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
+1. № [2402. Meeting Rooms III](solutions/2402.%20Meeting%20Rooms%20III/script.ts)
 1. № [2439. Minimize Maximum of Array](solutions/2439.%20Minimize%20Maximum%20of%20Array/script.ts)
 1. № [2448. Minimum Cost to Make Array Equal](solutions/2448.%20Minimum%20Cost%20to%20Make%20Array%20Equal/script.ts)
 1. № [2462. Total Cost to Hire K Workers](solutions/2462.%20Total%20Cost%20to%20Hire%20K%20Workers/script.ts)
