@@ -13,6 +13,6 @@ to be validated according to the mentioned rules.
 
 ### Constraints:
 
-`board.length == 9`
-`board[i].length == 9`
-`board[i][j]` is a digit `1-9` or `.`.
+- `board.length == 9`
+- `board[i].length == 9`
+- `board[i][j]` is a digit `1-9` or `.`.
