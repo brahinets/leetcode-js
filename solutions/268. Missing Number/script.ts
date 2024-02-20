@@ -1,14 +1,10 @@
 export {missingNumber}
 
 function missingNumber(nums: number[]): number {
-    let i: number = 0
-    while (i <= nums.length) {
-        if (!nums.includes(i)) {
-            return i
-        }
+    const required: number = nums.length
 
-        i++
-    }
+    const actualSum: number = nums.reduce((sum: number, n: number): number => sum + n, 0)
+    const expectedSum: number = ((required * required) + required) / 2
 
-    return i
+    return expectedSum - actualSum
 }
