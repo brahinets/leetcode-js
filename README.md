@@ -79,6 +79,7 @@
 1. № [198. House Robber](solutions/198.%20House%20Robber/script.ts)
 1. № [199. Binary Tree Right Side View](solutions/199.%20Binary%20Tree%20Right%20Side%20View/script.ts)
 1. № [200. Number of Islands](solutions/200.%20Number%20of%20Islands/script.ts)
+1. № [201. Bitwise AND of Numbers Range](solutions/201.%20Bitwise%20AND%20of%20Numbers%20Range/script.ts)
 1. № [205. Find the Index of the First Occurrence in a String](solutions/205.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/script.ts)
 1. № [206. Reverse Linked List](solutions/206.%20Reverse%20Linked%20List/script.ts)
 1. № [208. Implement Trie (Prefix Tree)](solutions/208.%20Implement%20Trie%20(Prefix%20Tree)/script.ts)
