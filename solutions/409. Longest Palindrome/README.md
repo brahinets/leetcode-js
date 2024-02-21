@@ -7,5 +7,5 @@ can be built with those letters. Letters are case-sensitive, for example, `Aa` i
 
 ### Constraints:
 
-`1 <= s.length <= 2000`  
-`s` consists of lowercase and/or uppercase English letters only.  
+- `1 <= s.length <= 2000`
+- `s` consists of lowercase and/or uppercase English letters only.
