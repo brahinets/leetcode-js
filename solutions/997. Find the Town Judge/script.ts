@@ -1,23 +1,26 @@
+import {matrixOfZeros} from "../../common/array-factories";
+
 export {findJudge}
 
 function findJudge(n: number, trust: number[][]): number {
-    const iTrust: Map<number, Set<number>> = new Map<number, Set<number>>();
-    const trustMe: Map<number, Set<number>> = new Map<number, Set<number>>();
-    for (let i: number = 1; i <= n; i++) {
-        iTrust.set(i, new Set<number>())
-        trustMe.set(i, new Set<number>())
-    }
+    const trusts: number[][] = matrixOfZeros(n + 1, n + 1)
 
     for (const [from, to] of trust) {
-        iTrust.set(from, new Set([...iTrust.get(from)!, to]))
-        trustMe.set(to, new Set([...trustMe.get(to)!, from]))
+        trusts[from][to] = 1
     }
 
     for (let i: number = 1; i <= n; i++) {
-        if (iTrust.get(i)!.size === 0 && trustMe.get(i)!.size === n - 1) {
+        let trustToNoOne: boolean = sum(trusts[i]) === 0
+        let everyoneTrustMe: boolean = sum(trusts.map((t: number[]): number => t[i])) === n - 1
+
+        if (trustToNoOne && everyoneTrustMe) {
             return i
         }
     }
 
     return -1
+}
+
+function sum(nums: number[]): number {
+    return nums.reduce((prev: number, curr: number): number => prev + curr, 0)
 }
