@@ -8,7 +8,8 @@ empty, and an integer `n`, return if `n` new flowers can be planted in the flowe
 no-adjacent-flowers rule.
 
 ### Constraints:
-`1 <= flowerbed.length <= 2 * 104`  
-`flowerbed[i]` is `0` or `1`.  
-There are no two adjacent flowers in flowerbed.  
-`0 <= n <= flowerbed.length`
+
+- `1 <= flowerbed.length <= 2 * 104`
+- `flowerbed[i]` is `0` or `1`.
+- There are no two adjacent flowers in flowerbed.
+- `0 <= n <= flowerbed.length`
