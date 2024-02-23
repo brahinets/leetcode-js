@@ -166,6 +166,7 @@
 1. № [767. Reorganize String](solutions/767.%20Reorganize%20String/script.ts)
 1. № [779. K-th Symbol in Grammar](solutions/779.%20K-th%20Symbol%20in%20Grammar/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
+1. № [787. Cheapest Flights Within K Stops](solutions/787.%20Cheapest%20Flights%20Within%20K%20Stops/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
 1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
