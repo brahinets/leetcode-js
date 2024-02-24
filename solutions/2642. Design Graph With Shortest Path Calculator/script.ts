@@ -20,6 +20,10 @@ class Graph {
         this.nodes.set(from, toNode)
     }
 
+    getNeighbours(from: number): Map<number, number> {
+        return this.nodes.get(from) ?? new Map<number, number>()
+    }
+
     shortestPath(from: number, to: number): number {
         return findBellmanFord(this.size, this.nodes, from, to)
     }
