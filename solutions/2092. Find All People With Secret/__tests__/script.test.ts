@@ -22,7 +22,7 @@ describe('2092. Find All People With Secret', (): void => {
             .toEqual([0, 1, 4, 5])
     })
 
-    it('Some will know #3', (): void => {
+    it('Same people have multiple meetings', (): void => {
         expect(findAllPeople(12, [[10, 8, 6], [9, 5, 11], [0, 5, 18], [4, 5, 13], [11, 6, 17], [0, 11, 10], [10, 11, 7], [5, 8, 3], [7, 6, 16], [3, 6, 10], [3, 11, 1], [8, 3, 2], [5, 0, 7], [3, 8, 20], [11, 0, 20], [8, 3, 4], [1, 9, 4], [10, 7, 11], [8, 10, 18]], 9))
             .toEqual([0, 1, 4, 5, 6, 9, 11])
     })
