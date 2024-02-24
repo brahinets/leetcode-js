@@ -24,10 +24,11 @@ function findAllPeople(n: number, meetings: number[][], firstPerson: number): nu
 }
 
 class Graph {
-    private readonly nodes: Map<number, Map<number, number>>
+    private readonly nodes: Map<number, number[][]>
 
     constructor(edges: number[][]) {
-        this.nodes = new Map<number, Map<number, number>>()
+        this.nodes = new Map<number, number[][]>()
+
         edges.forEach((edge: number[]): void => {
             this.addEdge([edge[0], edge[1], edge[2]])
             this.addEdge([edge[1], edge[0], edge[2]])
@@ -37,12 +38,14 @@ class Graph {
     addEdge(edge: number[]): void {
         const [from, to, distance] = edge
 
-        const neighbours: Map<number, number> = this.nodes.get(to) ?? new Map<number, number>()
-        neighbours.set(from, distance)
-        this.nodes.set(to, neighbours)
+        if (!this.nodes.has(from)) {
+            this.nodes.set(from, [])
+        }
+
+        this.nodes.get(from)!.push([to, distance])
     }
 
-    getNeighbours(from: number): Map<number, number> {
-        return this.nodes.get(from) ?? new Map<number, number>()
+    getNeighbours(from: number): number[][] {
+        return this.nodes.get(from) ?? []
     }
 }
