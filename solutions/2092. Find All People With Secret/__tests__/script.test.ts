@@ -16,4 +16,9 @@ describe('2092. Find All People With Secret', (): void => {
         expect(findAllPeople(6, [[1, 2, 5], [2, 3, 8], [1, 5, 10]], 1))
             .toEqual([0, 1, 2, 3, 5])
     })
+
+    it('Some will know #2', (): void => {
+        expect(findAllPeople(11, [[5, 1, 4], [0, 4, 18]], 1))
+            .toEqual([0, 1, 4, 5])
+    })
 })
