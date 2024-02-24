@@ -28,19 +28,18 @@ class Graph {
 
     constructor(edges: number[][]) {
         this.nodes = new Map<number, Map<number, number>>()
-        edges.forEach((edge: number[]): void => this.addEdge(edge))
+        edges.forEach((edge: number[]): void => {
+            this.addEdge([edge[0], edge[1], edge[2]])
+            this.addEdge([edge[1], edge[0], edge[2]])
+        })
     }
 
     addEdge(edge: number[]): void {
         const [from, to, distance] = edge
 
-        const toNodes: Map<number, number> = this.nodes.get(from) ?? new Map<number, number>()
-        toNodes.set(to, distance)
-        this.nodes.set(from, toNodes)
-
-        const fromNodes: Map<number, number> = this.nodes.get(to) ?? new Map<number, number>()
-        fromNodes.set(from, distance)
-        this.nodes.set(to, fromNodes)
+        const neighbours: Map<number, number> = this.nodes.get(to) ?? new Map<number, number>()
+        neighbours.set(from, distance)
+        this.nodes.set(to, neighbours)
     }
 
     getNeighbours(from: number): Map<number, number> {
