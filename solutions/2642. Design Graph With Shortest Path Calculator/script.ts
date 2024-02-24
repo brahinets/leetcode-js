@@ -1,8 +1,8 @@
 import {arrayOf} from "../../common/array-factories"
 
-export {Graph}
+export {DirectedGraph as Graph}
 
-class Graph {
+class DirectedGraph {
     private readonly size: number
     private readonly nodes: Map<number, Map<number, number>>
 
