@@ -16,7 +16,7 @@ function canTraverseAllPairs(nums: number[]): boolean {
     return true
 }
 
-function buildGraph(nums: number[]) {
+function buildGraph(nums: number[]): Graph {
     const graph: Graph = new Graph()
 
     for (let i: number = 0; i < nums.length; i++) {
@@ -49,9 +49,11 @@ class Graph {
     }
 
     addEdge(from: number, to: number): void {
-        const neighbours: Set<number> = this.nodes.get(from) ?? new Set<number>()
-        neighbours.add(to)
-        this.nodes.set(from, neighbours)
+        if (!this.nodes.has(from)) {
+            this.nodes.set(from, new Set<number>())
+        }
+
+        this.nodes.get(from)!.add(to)
     }
 
     getReachableNodes(start: number): Set<number> {
