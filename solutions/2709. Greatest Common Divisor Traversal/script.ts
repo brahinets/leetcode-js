@@ -61,9 +61,8 @@ class Graph {
         visited[start] = true
 
         const queue: number[] = [start]
-        const reachableNodes: Set<number> = new Set<number>([start])
 
-        let front:number = 0
+        let front: number = 0
         while (front < queue.length) {
             const node: number = queue[front++]
             const neighbours: Set<number> | undefined = this.nodes.get(node)
@@ -72,13 +71,12 @@ class Graph {
                 for (const neighbour of neighbours) {
                     if (!visited[neighbour]) {
                         visited[neighbour] = true
-                        reachableNodes.add(neighbour)
                         queue.push(neighbour)
                     }
                 }
             }
         }
 
-        return reachableNodes
+        return new Set<number>(queue)
     }
 }
