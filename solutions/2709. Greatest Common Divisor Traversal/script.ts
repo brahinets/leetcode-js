@@ -13,11 +13,20 @@ function canTraverseAllPairs(nums: number[]): boolean {
         }
     }
 
+    const memo: Map<number, Set<number>> = new Map<number, Set<number>>()
     for (let i: number = 0; i < nums.length; i++) {
         for (let j: number = i + 1; j < nums.length; j++) {
+            const hasPathTo: Set<number> = memo.get(i) ?? new Set<number>()
+            if (hasPathTo.has(j)) {
+                continue
+            }
+
             if (graph.shortestPath(i, j) === -1) {
                 return false
             }
+            hasPathTo.add(j)
+            memo.set(i, hasPathTo)
+            memo.set(j, hasPathTo)
         }
     }
 
