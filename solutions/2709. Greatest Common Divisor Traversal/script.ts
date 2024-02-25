@@ -63,8 +63,9 @@ class Graph {
         const queue: number[] = [start]
         const reachableNodes: Set<number> = new Set<number>([start])
 
-        while (queue.length > 0) {
-            const node: number = queue.shift()!
+        let front:number = 0
+        while (front < queue.length) {
+            const node: number = queue[front++]
             const neighbours: Set<number> | undefined = this.nodes.get(node)
 
             if (neighbours) {
