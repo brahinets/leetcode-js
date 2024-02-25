@@ -57,7 +57,9 @@ class Graph {
     }
 
     getReachableNodes(start: number): Set<number> {
-        const visited: Set<number> = new Set<number>([start])
+        const visited: boolean[] = []
+        visited[start] = true
+
         const queue: number[] = [start]
         const reachableNodes: Set<number> = new Set<number>([start])
 
@@ -67,8 +69,8 @@ class Graph {
 
             if (neighbours) {
                 for (const neighbour of neighbours) {
-                    if (!visited.has(neighbour)) {
-                        visited.add(neighbour)
+                    if (!visited[neighbour]) {
+                        visited[neighbour] = true
                         reachableNodes.add(neighbour)
                         queue.push(neighbour)
                     }
