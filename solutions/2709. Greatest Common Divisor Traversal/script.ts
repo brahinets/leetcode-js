@@ -63,16 +63,14 @@ class Graph {
 
         while (queue.length > 0) {
             const node: number = queue.shift()!
-            if (!visited.has(node)) {
-                visited.add(node)
-                reachableNodes.add(node)
+            const neighbours: Set<number> | undefined = this.nodes.get(node)
 
-                const neighbours: Set<number> | undefined = this.nodes.get(node)
-                if (neighbours) {
-                    for (const neighbour of neighbours) {
-                        if (!visited.has(neighbour)) {
-                            queue.push(neighbour)
-                        }
+            if (neighbours) {
+                for (const neighbour of neighbours) {
+                    if (!visited.has(neighbour)) {
+                        visited.add(neighbour)
+                        reachableNodes.add(neighbour)
+                        queue.push(neighbour)
                     }
                 }
             }
