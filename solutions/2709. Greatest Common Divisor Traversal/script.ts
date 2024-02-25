@@ -1,7 +1,7 @@
 export {canTraverseAllPairs}
 
 function canTraverseAllPairs(nums: number[]): boolean {
-    let graph: UndirectedGraph = new UndirectedGraph(nums.length)
+    let graph: UndirectedGraph = new UndirectedGraph()
     for (let i: number = 0; i < nums.length; i++) {
         for (let j: number = i + 1; j < nums.length; j++) {
             const gcdValue: number = gcd(nums[i], nums[j])
@@ -33,11 +33,9 @@ function gcd(a: number, b: number): number {
 }
 
 class UndirectedGraph {
-    private readonly size: number
     private readonly nodes: Map<number, Map<number, number>>
 
-    constructor(n: number) {
-        this.size = n
+    constructor() {
         this.nodes = new Map<number, Map<number, number>>()
     }
 
