@@ -24,8 +24,8 @@ function buildGraph(nums: number[]) {
             const gcdValue: number = gcd(nums[i], nums[j])
 
             if (gcdValue > 1) {
-                graph.addEdge([i, j])
-                graph.addEdge([j, i])
+                graph.addEdge(i, j)
+                graph.addEdge(j, i)
             }
         }
     }
@@ -48,12 +48,10 @@ class Graph {
         this.nodes = new Map<number, Set<number>>()
     }
 
-    addEdge(edge: number[]): void {
-        const [from, to] = edge
-
-        const toNode: Set<number> = this.nodes.get(from) ?? new Set<number>()
-        toNode.add(to)
-        this.nodes.set(from, toNode)
+    addEdge(from: number, to: number): void {
+        const neighbours: Set<number> = this.nodes.get(from) ?? new Set<number>()
+        neighbours.add(to)
+        this.nodes.set(from, neighbours)
     }
 
     getReachableNodes(start: number): Set<number> {
