@@ -1,5 +1,3 @@
-import {arrayOf} from "../../common/array-factories"
-
 export {canTraverseAllPairs}
 
 function canTraverseAllPairs(nums: number[]): boolean {
@@ -15,18 +13,13 @@ function canTraverseAllPairs(nums: number[]): boolean {
 
     const memo: Map<number, Set<number>> = new Map<number, Set<number>>()
     for (let i: number = 0; i < nums.length; i++) {
-        for (let j: number = i + 1; j < nums.length; j++) {
-            const hasPathTo: Set<number> = memo.get(i) ?? new Set<number>()
-            if (hasPathTo.has(j)) {
-                continue
-            }
+        const reachable: Set<number> = graph.getReachableNodes(i)
+        memo.set(i, graph.getReachableNodes(i))
 
-            if (graph.shortestPath(i, j) === -1) {
+        for (let j: number = i + 1; j < nums.length; j++) {
+            if (!reachable.has(j)) {
                 return false
             }
-            hasPathTo.add(j)
-            memo.set(i, hasPathTo)
-            memo.set(j, hasPathTo)
         }
     }
 
@@ -40,7 +33,6 @@ function gcd(a: number, b: number): number {
 
     return gcd(b, a % b)
 }
-
 
 class UndirectedGraph {
     private readonly size: number
@@ -63,28 +55,25 @@ class UndirectedGraph {
         this.nodes.set(to, fromNode)
     }
 
-    shortestPath(from: number, to: number): number {
-        return findBellmanFord(this.size, this.nodes, from, to)
-    }
-}
+    getReachableNodes(start: number): Set<number> {
+        const visited: Set<number> = new Set<number>()
+        const queue: number[] = [start]
+        const reachableNodes: Set<number> = new Set<number>()
 
-function findBellmanFord(n: number, nodes: Map<number, Map<number, number>>, from: number, to: number): number {
-    const dist: number[] = arrayOf(Number.MAX_VALUE, n)
+        while (queue.length > 0) {
+            const node: number = queue.shift()!
+            if (!visited.has(node)) {
+                visited.add(node)
+                reachableNodes.add(node)
 
-    dist[from] = 0
-    for (let i: number = 0; i < n - 1; i++) {
-        for (const [node, neighbours] of nodes) {
-            for (const [neighbour, distance] of neighbours) {
-                if (dist[node] !== Number.MAX_VALUE && dist[node] + distance < dist[neighbour]) {
-                    dist[neighbour] = dist[node] + distance
+                if (this.nodes.has(node)) {
+                    for (const neighbour of this.nodes.get(node)!.keys()) {
+                        queue.push(neighbour)
+                    }
                 }
             }
         }
-    }
 
-    if (dist[to] === Number.MAX_VALUE) {
-        return -1
+        return reachableNodes
     }
-
-    return dist[to]
 }
