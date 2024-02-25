@@ -10,26 +10,38 @@ function canTraverseAllPairs(nums: number[]): boolean {
 function buildGraph(nums: number[]): Graph {
     const graph: Graph = new Graph()
 
-    for (let i: number = 0; i < nums.length; i++) {
-        for (let j: number = i + 1; j < nums.length; j++) {
-            const gcdValue: number = gcd(nums[i], nums[j])
-
-            if (gcdValue > 1) {
-                graph.addEdge(i, j)
-                graph.addEdge(j, i)
+    const memo: Map<number, number> = new Map<number, number>()
+    for (let node: number = 0; node < nums.length; node++) {
+        const factors: number[] = getPrimeFactors(nums[node])
+        for (const factor of factors) {
+            if (memo.has(factor)) {
+                const to: number = memo.get(factor)!
+                graph.addEdge(to, node)
+                graph.addEdge(node, to)
             }
+
+            memo.set(factor, node)
         }
     }
 
     return graph
 }
 
-function gcd(a: number, b: number): number {
-    if (b === 0) {
-        return a
+function getPrimeFactors(num: number): number[] {
+    const factors: Set<number> = new Set<number>()
+
+    for (let i: number = 2; i * i <= num; i++) {
+        while (num % i === 0) {
+            factors.add(i)
+            num /= i
+        }
     }
 
-    return gcd(b, a % b)
+    if (num > 1) {
+        factors.add(num)
+    }
+
+    return [...factors]
 }
 
 function traverse(graph: Graph, node: number, visited: Set<number>): Set<number> {
