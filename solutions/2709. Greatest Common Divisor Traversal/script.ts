@@ -1,15 +1,7 @@
 export {canTraverseAllPairs}
 
 function canTraverseAllPairs(nums: number[]): boolean {
-    let graph: UndirectedGraph = new UndirectedGraph()
-    for (let i: number = 0; i < nums.length; i++) {
-        for (let j: number = i + 1; j < nums.length; j++) {
-            const gcdValue: number = gcd(nums[i], nums[j])
-            if (gcdValue > 1) {
-                graph.addEdge([i, j, gcdValue])
-            }
-        }
-    }
+    const graph: Graph = buildGraph(nums)
 
     for (let i: number = 0; i < nums.length; i++) {
         const reachable: Set<number> = graph.getReachableNodes(i)
@@ -24,6 +16,23 @@ function canTraverseAllPairs(nums: number[]): boolean {
     return true
 }
 
+function buildGraph(nums: number[]) {
+    const graph: Graph = new Graph()
+
+    for (let i: number = 0; i < nums.length; i++) {
+        for (let j: number = i + 1; j < nums.length; j++) {
+            const gcdValue: number = gcd(nums[i], nums[j])
+
+            if (gcdValue > 1) {
+                graph.addEdge([i, j, gcdValue])
+                graph.addEdge([j, i, gcdValue])
+            }
+        }
+    }
+
+    return graph
+}
+
 function gcd(a: number, b: number): number {
     if (b === 0) {
         return a
@@ -32,7 +41,7 @@ function gcd(a: number, b: number): number {
     return gcd(b, a % b)
 }
 
-class UndirectedGraph {
+class Graph {
     private readonly nodes: Map<number, Map<number, number>>
 
     constructor() {
@@ -45,10 +54,6 @@ class UndirectedGraph {
         const toNode: Map<number, number> = this.nodes.get(from) ?? new Map<number, number>()
         toNode.set(to, distance)
         this.nodes.set(from, toNode)
-
-        const fromNode: Map<number, number> = this.nodes.get(to) ?? new Map<number, number>()
-        fromNode.set(from, distance)
-        this.nodes.set(to, fromNode)
     }
 
     getReachableNodes(start: number): Set<number> {
