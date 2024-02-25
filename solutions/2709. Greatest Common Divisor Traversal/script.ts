@@ -11,10 +11,8 @@ function canTraverseAllPairs(nums: number[]): boolean {
         }
     }
 
-    const memo: Map<number, Set<number>> = new Map<number, Set<number>>()
     for (let i: number = 0; i < nums.length; i++) {
         const reachable: Set<number> = graph.getReachableNodes(i)
-        memo.set(i, graph.getReachableNodes(i))
 
         for (let j: number = i + 1; j < nums.length; j++) {
             if (!reachable.has(j)) {
