@@ -67,9 +67,12 @@ class Graph {
                 visited.add(node)
                 reachableNodes.add(node)
 
-                if (this.nodes.has(node)) {
-                    for (const neighbour of this.nodes.get(node)!.keys()) {
-                        queue.push(neighbour)
+                const neighbours: Set<number> | undefined = this.nodes.get(node)
+                if (neighbours) {
+                    for (const neighbour of neighbours) {
+                        if (!visited.has(neighbour)) {
+                            queue.push(neighbour)
+                        }
                     }
                 }
             }
