@@ -24,8 +24,8 @@ function buildGraph(nums: number[]) {
             const gcdValue: number = gcd(nums[i], nums[j])
 
             if (gcdValue > 1) {
-                graph.addEdge([i, j, gcdValue])
-                graph.addEdge([j, i, gcdValue])
+                graph.addEdge([i, j])
+                graph.addEdge([j, i])
             }
         }
     }
@@ -42,17 +42,17 @@ function gcd(a: number, b: number): number {
 }
 
 class Graph {
-    private readonly nodes: Map<number, Map<number, number>>
+    private readonly nodes: Map<number, Set<number>>
 
     constructor() {
-        this.nodes = new Map<number, Map<number, number>>()
+        this.nodes = new Map<number, Set<number>>()
     }
 
     addEdge(edge: number[]): void {
-        const [from, to, distance] = edge
+        const [from, to] = edge
 
-        const toNode: Map<number, number> = this.nodes.get(from) ?? new Map<number, number>()
-        toNode.set(to, distance)
+        const toNode: Set<number> = this.nodes.get(from) ?? new Set<number>()
+        toNode.add(to)
         this.nodes.set(from, toNode)
     }
 
