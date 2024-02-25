@@ -57,9 +57,9 @@ class Graph {
     }
 
     getReachableNodes(start: number): Set<number> {
-        const visited: Set<number> = new Set<number>()
+        const visited: Set<number> = new Set<number>([start])
         const queue: number[] = [start]
-        const reachableNodes: Set<number> = new Set<number>()
+        const reachableNodes: Set<number> = new Set<number>([start])
 
         while (queue.length > 0) {
             const node: number = queue.shift()!
