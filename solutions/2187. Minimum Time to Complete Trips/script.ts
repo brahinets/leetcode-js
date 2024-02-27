@@ -1,3 +1,5 @@
+export {minimumTime}
+
 const minimumTime = (time: number[], totalTrips: number): number => {
     let left: number = 1
     let right: number = totalTrips * time
