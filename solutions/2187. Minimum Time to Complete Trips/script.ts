@@ -1,6 +1,6 @@
 export {minimumTime}
 
-const minimumTime = (time: number[], totalTrips: number): number => {
+function minimumTime(time: number[], totalTrips: number): number {
     let left: number = 1
     let right: number = totalTrips * time
         .reduce((prev: number, curr: number) => prev > curr ? prev : curr, time[0])
