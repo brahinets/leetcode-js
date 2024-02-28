@@ -9,6 +9,6 @@ than `⌊n / 2⌋` times. You may assume that the majority element always exists
 
 - `n == nums.length`
 - `1 <= n <= 5 * 10^4`
-- `-109 <= nums[i] <= 10^9`
+- `-10^9 <= nums[i] <= 10^9`
 
 **Follow-up:** Could you solve the problem in linear time and in `O(1)` space?
