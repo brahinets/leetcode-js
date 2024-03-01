@@ -324,6 +324,7 @@
 1. № [2706. Buy Two Chocolates](solutions/2706.%20Buy%20Two%20Chocolates/script.ts)
 1. № [2709. Greatest Common Divisor Traversal](solutions/2709.%20Greatest%20Common%20Divisor%20Traversal/script.ts)
 1. № [2785. Sort Vowels in a String](solutions/2785.%20Sort%20Vowels%20in%20a%20String/script.ts)
+1. № [2864. Maximum Odd Binary Number](solutions/2864.%20Maximum%20Odd%20Binary%20Number/script.ts)
 1. № [2870. Minimum Number of Operations to Make Array Empty](solutions/2870.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Empty/script.ts)
 1. № [2966. Divide Array Into Arrays With Max Difference](solutions/2966.%20Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/script.ts)
 1. № [2971. Find Polygon With the Largest Perimeter](solutions/2971.%20Find%20Polygon%20With%20the%20Largest%20Perimeter/script.ts)
