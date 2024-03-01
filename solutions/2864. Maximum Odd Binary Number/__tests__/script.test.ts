@@ -2,12 +2,12 @@ import {maximumOddBinaryNumber} from '../script'
 
 describe('2864. Maximum Odd Binary Number', (): void => {
 
-    it('Zero ', (): void => {
-        expect(maximumOddBinaryNumber("000"))
-            .toBe("000")
+    it('Zero is not odd', (): void => {
+        expect(() => maximumOddBinaryNumber("000"))
+            .toThrow("At least one positive bit is required for odd number")
     })
 
-    it('Last ', (): void => {
+    it('Last', (): void => {
         expect(maximumOddBinaryNumber("010"))
             .toBe("001")
     })

@@ -16,6 +16,6 @@ function maximumOddBinaryNumber(s: string): string {
     } else if (ones === 1) {
         return '0'.repeat(zeros) + '1'
     } else {
-        return '0'.repeat(zeros)
+        throw Error("At least one positive bit is required for odd number")
     }
 }
