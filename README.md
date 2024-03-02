@@ -254,6 +254,7 @@
 1. № [1582. Special Positions in a Binary Matrix](solutions/1582.%20Special%20Positions%20in%20a%20Binary%20Matrix/script.ts)
 1. № [1603. Design Parking System](solutions/1603.%20Design%20Parking%20System/script.ts)
 1. № [1609. Even Odd Tree](solutions/1609.%20Even%20Odd%20Tree/script.ts)
+1. № [1611. Minimum One Bit Operations to Make Integers Zero](solutions/1611.%20Minimum%20One%20Bit%20Operations%20to%20Make%20Integers%20Zero/script.ts)
 1. № [1624. Largest Substring Between Two Equal Characters](solutions/1624.%20Largest%20Substring%20Between%20Two%20Equal%20Characters/script.ts)
 1. № [1630. Arithmetic Subarrays](solutions/1630.%20Arithmetic%20Subarrays/script.ts)
 1. № [1637. Widest Vertical Area Between Two Points Containing No Points](solutions/1637.%20Widest%20Vertical%20Area%20Between%20Two%20Points%20Containing%20No%20Points/script.ts)
