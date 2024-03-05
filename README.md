@@ -269,6 +269,7 @@
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
 1. № [1727. Largest Submatrix With Rearrangements](solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/script.ts)
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
+1. № [1750. Minimum Length of String After Deleting Similar Ends](solutions/1750.%20Minimum%20Length%20of%20String%20After%20Deleting%20Similar%20Ends/script.ts)
 1. № [1758. Minimum Changes To Make Alternating Binary String](solutions/1758.%20Minimum%20Changes%20To%20Make%20Alternating%20Binary%20String/script.ts)
 1. № [1759. Count Number of Homogenous Substrings](solutions/1759.%20Count%20Number%20of%20Homogenous%20Substrings/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
