@@ -1,19 +1,17 @@
 export {minimumLength}
 
 function minimumLength(s: string): number {
-    let start:number = 0
-    let end:number = s.length - 1
+    let start: number = 0
+    let end: number = s.length - 1
 
-    while (start < end) {
-        if(s[start] !== s[end]) {
-            break
-        }
+    while (start < end && s[start] === s[end]) {
+        const ch: string = s[start]
 
-        const ch:string = s[start]
-        while (s[start] === ch) {
+        while (start <= end && s[start] === ch) {
             start++
         }
-        while (s[end] === ch) {
+
+        while (end >= start && s[end] === ch) {
             end--
         }
     }
