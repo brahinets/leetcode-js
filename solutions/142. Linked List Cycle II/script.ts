@@ -3,23 +3,23 @@ import {ListNode} from "../../common/ListNode"
 export {detectCycle, ListNode}
 
 function detectCycle(head: ListNode | null): ListNode | null {
-    let hare: ListNode | null | undefined = head
-    let tortoise: ListNode | null | undefined = head
+    let fast: ListNode | null = head
+    let slow: ListNode | null = head
 
-    while (hare && hare.next) {
-        hare = hare?.next?.next
-        tortoise = tortoise?.next
+    while (fast&& fast.next) {
+        fast = fast.next.next
+        slow = slow!.next
 
-        const loopDetected: boolean = hare === tortoise
+        const loopDetected: boolean = fast === slow
         if (loopDetected) {
-            tortoise = head
+            slow = head
 
-            while (tortoise !== hare) {
-                hare = hare?.next
-                tortoise = tortoise?.next
+            while (slow !== fast) {
+                slow = slow!.next
+                fast = fast!.next
             }
 
-            return tortoise || null
+            return slow
         }
     }
 
