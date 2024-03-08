@@ -332,5 +332,6 @@
 1. № [2870. Minimum Number of Operations to Make Array Empty](solutions/2870.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Empty/script.ts)
 1. № [2966. Divide Array Into Arrays With Max Difference](solutions/2966.%20Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/script.ts)
 1. № [2971. Find Polygon With the Largest Perimeter](solutions/2971.%20Find%20Polygon%20With%20the%20Largest%20Perimeter/script.ts)
+1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
 
 </details>
