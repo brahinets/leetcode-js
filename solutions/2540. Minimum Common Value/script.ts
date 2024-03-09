@@ -1,11 +1,16 @@
 export {getCommon}
 
 function getCommon(nums1: number[], nums2: number[]): number {
-    const set2: Set<number> = new Set<number>(nums2)
+    let first: number = 0
+    let second: number = 0
 
-    for (const num of nums1) {
-        if (set2.has(num)) {
-            return num
+    while (first < nums1.length && second < nums2.length) {
+        if (nums1[first] === nums2[second]) {
+            return nums1[first]
+        } else if (nums1[first] < nums2[second]) {
+            first++
+        } else {
+            second++
         }
     }
 
