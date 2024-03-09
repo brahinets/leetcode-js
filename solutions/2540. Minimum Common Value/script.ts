@@ -9,5 +9,5 @@ function getCommon(nums1: number[], nums2: number[]): number {
         }
     }
 
-    throw new Error("Illegal state. No common")
+    return -1
 }
