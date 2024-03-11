@@ -21,5 +21,5 @@ function comparatorByCustom(
         }
     }
 
-    return first.localeCompare(second)
+    return firstPosition === -1 ? Number.MAX_SAFE_INTEGER : Number.MIN_SAFE_INTEGER
 }
