@@ -14,12 +14,11 @@ function comparatorByCustom(
     const firstPosition: number = order.indexOf(first)
     const secondPosition: number = order.indexOf(second)
 
-    if (firstPosition !== -1 && secondPosition !== -1) {
-        const orderComparison: number = firstPosition - secondPosition
-        if (orderComparison !== 0) {
-            return orderComparison
-        }
+    if (firstPosition === -1) {
+        return Number.MAX_SAFE_INTEGER
+    } else if (secondPosition === -1) {
+        return Number.MIN_SAFE_INTEGER
+    } else {
+        return firstPosition - secondPosition
     }
-
-    return firstPosition === -1 ? Number.MAX_SAFE_INTEGER : Number.MIN_SAFE_INTEGER
 }
