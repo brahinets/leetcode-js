@@ -186,6 +186,7 @@
 1. № [907. Sum of Subarray Minimums](solutions/907.%20Sum%20of%20Subarray%20Minimums/script.ts)
 1. № [912. Sort an Array](solutions/912.%20Sort%20an%20Array/script.ts)
 1. № [920. Number of Music Playlists](solutions/920.%20Number%20of%20Music%20Playlists/script.ts)
+1. № [930. Binary Subarrays With Sum](solutions/930.%20Binary%20Subarrays%20With%20Sum/script.ts)
 1. № [931. Minimum Falling Path Sum](solutions/931.%20Minimum%20Falling%20Path%20Sum/script.ts)
 1. № [934. Shortest Bridge](solutions/934.%20Shortest%20Bridge/script.ts)
 1. № [938. Range Sum of BST](solutions/938.%20Range%20Sum%20of%20BST/script.ts)
