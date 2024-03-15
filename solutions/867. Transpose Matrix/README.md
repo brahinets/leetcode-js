@@ -10,5 +10,5 @@ its main diagonal, switching the matrix's row and column indices.
 - `m == matrix.length`
 - `n == matrix[i].length`
 - `1 <= m, n <= 1000`
-- `1 <= m * n <= 105`
+- `1 <= m * n <= 10^5`
 - `-10^9 <= matrix[i][j] <= 10^9`
