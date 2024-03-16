@@ -10,7 +10,7 @@ function findMaxLength(nums: number[]): number {
         for (let to: number = from; to < nums.length; to++) {
             if (0 === nums[to]) {
                 zeros++
-            } else if (1 === nums[to]) {
+            } else {
                 ones++
             }
 
