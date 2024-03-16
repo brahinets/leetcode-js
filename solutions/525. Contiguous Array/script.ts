@@ -2,21 +2,20 @@ export {findMaxLength}
 
 function findMaxLength(nums: number[]): number {
     let max: number = 0
+    let sum: number = 0
+    let memo: Map<number, number> = new Map<number, number>([[0, -1]])
 
-    for (let from: number = 0; from < nums.length; from++) {
-        let zeros: number = 0
-        let ones: number = 0
+    for (let i: number = 0; i < nums.length; i++) {
+        if (nums[i] === 1) {
+            sum++
+        } else {
+            sum--
+        }
 
-        for (let to: number = from; to < nums.length; to++) {
-            if (0 === nums[to]) {
-                zeros++
-            } else {
-                ones++
-            }
-
-            if (zeros === ones) {
-                max = Math.max(max, to - from + 1)
-            }
+        if (memo.has(sum)) {
+            max = Math.max(max, i - memo.get(sum)!)
+        } else {
+            memo.set(sum, i)
         }
     }
 
