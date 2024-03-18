@@ -128,6 +128,7 @@
 1. № [445. Add Two Numbers II](solutions/445.%20Add%20Two%20Numbers%20II/script.ts)
 1. № [446. Arithmetic Slices II - Subsequence](solutions/446.%20Arithmetic%20Slices%20II%20-%20Subsequence/script.ts)
 1. № [451. Sort Characters By Frequency](solutions/451.%20Sort%20Characters%20By%20Frequency/script.ts)
+1. № [452. Minimum Number of Arrows to Burst Balloons](solutions/452.%20Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons/script.ts)
 1. № [455. Assign Cookies](solutions/455.%20Assign%20Cookies/script.ts)
 1. № [458. Poor Pigs](solutions/458.%20Poor%20Pigs/script.ts)
 1. № [459. Repeated Substring Pattern](solutions/459.%20Repeated%20Substring%20Pattern/script.ts)
