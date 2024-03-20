@@ -6,13 +6,12 @@ function mergeInBetween(list1: ListNode | null, a: number, b: number, list2: Lis
     let start: ListNode | null = null
     let end: ListNode | null = list1
 
-    let i: number = 0
-    while (i < b) {
+    for (let i: number = 0; i < b; i++) {
         if (i === a - 1) {
             start = end
         }
+
         end = end?.next || null
-        i++
     }
 
     if (start) {
