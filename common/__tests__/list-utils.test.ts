@@ -1,4 +1,4 @@
-import {linkedListToArray, ListNode} from '../list-utils'
+import {linkedListToArray, ListNode, reverseLinkedList} from '../list-utils'
 import {linkedListOf} from "../list-factories"
 
 describe('Linked List Factory', (): void => {
@@ -34,5 +34,27 @@ describe('Linked List To Array', (): void => {
                 new ListNode(2,
                     new ListNode(3))))
         ).toStrictEqual([1, 2, 3])
+    })
+})
+
+describe('Reverse Linked List', (): void => {
+    it('Reverse Null list', (): void => {
+        expect(reverseLinkedList(null))
+            .toStrictEqual(null)
+    })
+
+    it('Reverse empty list', (): void => {
+        expect(reverseLinkedList(linkedListOf()))
+            .toStrictEqual(linkedListOf())
+    })
+
+    it('Reverse singleton list', (): void => {
+        expect(reverseLinkedList(linkedListOf(1)))
+            .toStrictEqual(linkedListOf(1))
+    })
+
+    it('Reverse non-empty list', (): void => {
+        expect(reverseLinkedList(linkedListOf(1, 2, 3)))
+            .toStrictEqual(linkedListOf(3, 2, 1))
     })
 })
