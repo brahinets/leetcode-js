@@ -24,16 +24,13 @@ describe('Linked List To Array', (): void => {
     })
 
     it('Singleton list to array', (): void => {
-        expect(linkedListToArray(new ListNode(1)))
+        expect(linkedListToArray(linkedListOf(1)))
             .toStrictEqual([1])
     })
 
     it('Non-empty list to array', (): void => {
-        expect(linkedListToArray(
-            new ListNode(1,
-                new ListNode(2,
-                    new ListNode(3))))
-        ).toStrictEqual([1, 2, 3])
+        expect(linkedListToArray(linkedListOf(1, 2, 3)))
+            .toStrictEqual([1, 2, 3])
     })
 })
 
