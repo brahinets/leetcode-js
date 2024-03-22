@@ -9,6 +9,6 @@ to complete all tasks.
 
 ### Constraints:
 
-- `1 <= tasks.length <= 104`
+- `1 <= tasks.length <= 10^4`
 - `tasks[i]` is an uppercase English letter.
 - `0 <= n <= 100`
