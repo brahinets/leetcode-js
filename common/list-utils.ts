@@ -22,10 +22,10 @@ function linkedListMiddleNode(head: ListNode | null): ListNode | null {
     let fast: ListNode | null = head
     let slow: ListNode | null = head
 
-    while (fast && fast.next && slow) {
+    while (fast && fast.next) {
         fast = fast.next.next
 
-        slow = slow.next
+        slow = slow!.next
     }
 
     return slow
