@@ -11,12 +11,21 @@ describe('85. Maximal Rectangle', (): void => {
             .toBe(1)
     })
 
-    it('Square sub-matrix', (): void => {
+    it('Non-square sub-matrix', (): void => {
         expect(maximalRectangle([
             ["1", "0", "1", "0", "0"],
             ["1", "0", "1", "1", "1"],
             ["1", "1", "1", "1", "1"],
             ["1", "0", "0", "1", "0"]])
         ).toBe(6)
+    })
+
+    it('Square sub-matrix', (): void => {
+        expect(maximalRectangle([
+            ["1", "0", "1", "0", "0"],
+            ["1", "0", "1", "1", "0"],
+            ["1", "1", "1", "1", "1"],
+            ["1", "0", "0", "1", "0"]])
+        ).toBe(4)
     })
 })
