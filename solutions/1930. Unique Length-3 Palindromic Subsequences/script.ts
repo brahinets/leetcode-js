@@ -1,4 +1,4 @@
-import {count} from "../../common/array-utils";
+import {count} from "../../common/array-utils"
 
 export {countPalindromicSubsequence}
 

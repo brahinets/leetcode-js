@@ -9,7 +9,8 @@ left. This also applies to the right edge of the array. Return the leftmost pivo
 return `-1`.
 
 ### Constraints:
-`1 <= nums.length <= 10^4`
-`-1000 <= nums[i] <= 1000`
+
+- `1 <= nums.length <= 10^4`
+- `-1000 <= nums[i] <= 1000`
 
 **Note:** This question is the same as 1991: https://leetcode.com/problems/find-the-middle-index-in-array/

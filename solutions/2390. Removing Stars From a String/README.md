@@ -7,11 +7,11 @@ closest non-star character to its left, as well as remove the star itself. Retur
 removed.
 
 **Note:**
-The input will be generated such that the operation is always possible.  
+The input will be generated such that the operation is always possible.
 It can be shown that the resulting string will always be unique.
 
 ### Constraints:
 
-`1 <= s.length <= 10^5`  
-`s` consists of lowercase English letters and stars `*`  
-The operation above can be performed on `s`.
+- `1 <= s.length <= 10^5`
+- `s` consists of lowercase English letters and stars `*`
+- The operation above can be performed on `s`.

@@ -6,4 +6,4 @@ Given `n` pairs of parentheses, write a function to generate all combinations of
 
 ### Constraints:
 
-`1 <= n <= 8`
+- `1 <= n <= 8`

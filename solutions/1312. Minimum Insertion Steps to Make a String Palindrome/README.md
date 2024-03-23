@@ -7,5 +7,5 @@ steps to make `s` palindrome. A Palindrome String is one that reads the same bac
 
 ### Constraints:
 
-`1 <= s.length <= 500`
-`s` consists of lowercase English letters.
+- `1 <= s.length <= 500`
+- `s` consists of lowercase English letters.

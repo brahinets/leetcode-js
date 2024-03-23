@@ -1,8 +1,8 @@
-import {arrayOf} from "../../common/array-factories";
+import {arrayOf} from "../../common/array-factories"
 
-export {Graph}
+export {DirectedGraph as Graph}
 
-class Graph {
+class DirectedGraph {
     private readonly size: number
     private readonly nodes: Map<number, Map<number, number>>
 
@@ -20,8 +20,12 @@ class Graph {
         this.nodes.set(from, toNode)
     }
 
+    getNeighbours(from: number): Map<number, number> {
+        return this.nodes.get(from) ?? new Map<number, number>()
+    }
+
     shortestPath(from: number, to: number): number {
-        return findBellmanFord(this.size, this.nodes, from, to);
+        return findBellmanFord(this.size, this.nodes, from, to)
     }
 }
 

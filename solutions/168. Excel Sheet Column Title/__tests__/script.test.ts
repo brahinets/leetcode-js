@@ -4,26 +4,26 @@ describe('168. Excel Sheet Column Title', (): void => {
 
     it('First order', (): void => {
         expect(convertToTitle(1))
-            .toBe("A");
-    });
+            .toBe("A")
+    })
 
     it('Second order', (): void => {
         expect(convertToTitle(28))
-            .toBe("AB");
-    });
+            .toBe("AB")
+    })
 
     it('Edge order', (): void => {
         expect(convertToTitle(52))
-            .toBe("AZ");
-    });
+            .toBe("AZ")
+    })
 
     it('Big order', (): void => {
         expect(convertToTitle(701))
-            .toBe("ZY");
-    });
+            .toBe("ZY")
+    })
 
     it('Very big order', (): void => {
         expect(convertToTitle(2147483647))
-            .toBe("FXSHRXW");
-    });
+            .toBe("FXSHRXW")
+    })
 })

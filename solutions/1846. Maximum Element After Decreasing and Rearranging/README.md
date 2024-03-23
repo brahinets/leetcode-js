@@ -18,5 +18,5 @@ There are 2 types of operations that you can perform any number of times:
 
 ### Constraints:
 
-– `1 <= arr.length <= 10^5`
-– `1 <= arr[i] <= 10^9`
+- `1 <= arr.length <= 10^5`
+- `1 <= arr[i] <= 10^9`

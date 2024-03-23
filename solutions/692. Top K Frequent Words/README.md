@@ -7,9 +7,9 @@ the frequency from highest to lowest. Sort the words with the same frequency by 
 
 ### Constraints:
 
-`1 <= words.length <= 500`
-`1 <= words[i].length <= 10`
-`words[i]` consists of lowercase English letters.
-`k` is in the range `[1, The number of unique words[i]]`
+- `1 <= words.length <= 500`
+- `1 <= words[i].length <= 10`
+- `words[i]` consists of lowercase English letters.
+- `k` is in the range `[1, The number of unique words[i]]`
 
 **Follow-up:** Could you solve it in `O(n log(k))` time and `O(n)` extra space?

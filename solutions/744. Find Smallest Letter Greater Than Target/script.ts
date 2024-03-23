@@ -1,15 +1,15 @@
 export {nextGreatestLetter}
 
 function nextGreatestLetter(letters: string[], target: string): string {
-    let i: number = 0;
+    let i: number = 0
 
     while (i < letters.length) {
         if (letters[i] > target) {
-            return letters[i];
+            return letters[i]
         }
 
-        i++;
+        i++
     }
 
-    return letters[0];
+    return letters[0]
 }

@@ -1,4 +1,4 @@
-import {getMinimumDifference, TreeNode} from "../script";
+import {getMinimumDifference, TreeNode} from "../script"
 
 describe('530. Minimum Absolute Difference in BST', (): void => {
 
@@ -10,8 +10,8 @@ describe('530. Minimum Absolute Difference in BST', (): void => {
                     new TreeNode(3)),
                 new TreeNode(6)
             ))
-        ).toBe(1);
-    });
+        ).toBe(1)
+    })
 
     it('Righty tree', (): void => {
         expect(getMinimumDifference(
@@ -21,8 +21,8 @@ describe('530. Minimum Absolute Difference in BST', (): void => {
                     new TreeNode(12),
                     new TreeNode(41))
             ))
-        ).toBe(1);
-    });
+        ).toBe(1)
+    })
 
     it('Full tree', (): void => {
         expect(getMinimumDifference(
@@ -34,8 +34,8 @@ describe('530. Minimum Absolute Difference in BST', (): void => {
                     new TreeNode(12),
                     new TreeNode(41))
             ))
-        ).toBe(1);
-    });
+        ).toBe(1)
+    })
 
     it('Full partial tree', (): void => {
         expect(getMinimumDifference(
@@ -47,6 +47,6 @@ describe('530. Minimum Absolute Difference in BST', (): void => {
                     null,
                     new TreeNode(699))
             ))
-        ).toBe(47);
-    });
-});
+        ).toBe(47)
+    })
+})

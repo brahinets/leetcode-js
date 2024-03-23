@@ -10,4 +10,5 @@ whether version is bad. Implement a function to find the first bad version. You 
 the API.
 
 ### Constraints:
-`1 <= bad <= n <= 2^31 - 1`
+
+- `1 <= bad <= n <= 2^31 - 1`

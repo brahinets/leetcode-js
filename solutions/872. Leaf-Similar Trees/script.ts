@@ -1,5 +1,5 @@
 import {TreeNode} from '../../common/TreeNode'
-import {arraysAreEqual} from "../../common/array-utils";
+import {arraysAreEqual} from "../../common/array-utils"
 
 export {leafSimilar, TreeNode}
 

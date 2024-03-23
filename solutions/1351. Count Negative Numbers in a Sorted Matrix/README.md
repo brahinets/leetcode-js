@@ -7,9 +7,9 @@ negative numbers in grid.
 
 ### Constraints:
 
-`m == grid.length`
-`n == grid[i].length`
-`1 <= m, n <= 100`
-`-100 <= grid[i][j] <= 100`
+- `m == grid.length`
+- `n == grid[i].length`
+- `1 <= m, n <= 100`
+- `-100 <= grid[i][j] <= 100`
 
 **Follow up:** Could you find an `O(n + m)` solution?

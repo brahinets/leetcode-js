@@ -1,4 +1,4 @@
-import {minDiffInBST, TreeNode} from "../script";
+import {minDiffInBST, TreeNode} from "../script"
 
 describe('783. Minimum Distance Between BST Nodes', (): void => {
 
@@ -10,8 +10,8 @@ describe('783. Minimum Distance Between BST Nodes', (): void => {
                     new TreeNode(3)),
                 new TreeNode(6)
             ))
-        ).toBe(1);
-    });
+        ).toBe(1)
+    })
 
     it('Righty tree', (): void => {
         expect(minDiffInBST(
@@ -21,8 +21,8 @@ describe('783. Minimum Distance Between BST Nodes', (): void => {
                     new TreeNode(12),
                     new TreeNode(41))
             ))
-        ).toBe(1);
-    });
+        ).toBe(1)
+    })
 
     it('Full tree', (): void => {
         expect(minDiffInBST(
@@ -34,8 +34,8 @@ describe('783. Minimum Distance Between BST Nodes', (): void => {
                     new TreeNode(12),
                     new TreeNode(41))
             ))
-        ).toBe(1);
-    });
+        ).toBe(1)
+    })
 
     it('Full partial tree', (): void => {
         expect(minDiffInBST(
@@ -47,6 +47,6 @@ describe('783. Minimum Distance Between BST Nodes', (): void => {
                     null,
                     new TreeNode(699))
             ))
-        ).toBe(47);
-    });
-});
+        ).toBe(47)
+    })
+})

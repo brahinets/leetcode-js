@@ -1,14 +1,6 @@
+import {isPalindrome} from "../../common/string-utils"
+
 export {longestPalindrome}
-
-function isPalindrome(string: string): boolean {
-    for (let i: number = 0; i < string.length / 2; i++) {
-        if (string.charAt(i) !== string.charAt(string.length - 1 - i)) {
-            return false
-        }
-    }
-
-    return true
-}
 
 function longestPalindrome(s: string): string {
     let maxPalindrome: string = ""

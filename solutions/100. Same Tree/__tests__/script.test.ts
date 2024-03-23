@@ -12,14 +12,14 @@ describe('100. Same Tree', (): void => {
                 new TreeNode(2),
                 new TreeNode(3)
             )
-        )).toBe(true);
+        )).toBe(true)
     })
 
     it('Not same toot', (): void => {
         expect(isSameTree(
             new TreeNode(1),
             new TreeNode(2)
-        )).toBe(false);
+        )).toBe(false)
     })
 
     it('Missing node', (): void => {
@@ -32,7 +32,7 @@ describe('100. Same Tree', (): void => {
                 null,
                 new TreeNode(2)
             )
-        )).toBe(false);
+        )).toBe(false)
     })
 
     it('Swapped node', (): void => {

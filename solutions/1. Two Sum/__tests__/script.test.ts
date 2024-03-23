@@ -15,4 +15,9 @@ describe('1. Two Sum', (): void => {
         expect(twoSum([3, 3], 6))
             .toStrictEqual([0, 1])
     })
+
+    it('Not found', (): void => {
+        expect(() => twoSum([3, 3], 5))
+            .toThrow("Match not found")
+    })
 })

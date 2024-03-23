@@ -5,20 +5,20 @@ function eraseOverlapIntervals(intervals: number[][]): number {
         return 0
     }
 
-    intervals = intervals.toSorted((a: number[], b: number[]): number => a[1] - b[1]);
+    intervals = intervals.toSorted((a: number[], b: number[]): number => a[1] - b[1])
 
-    let latestValidEnd: number = intervals[0][1];
-    let intervalsToRemove: number = 0;
+    let latestValidEnd: number = intervals[0][1]
+    let intervalsToRemove: number = 0
 
     for (let i: number = 1; i < intervals.length; i++) {
-        const [start, end] = intervals[i];
+        const [start, end] = intervals[i]
 
         if (start >= latestValidEnd) {
-            latestValidEnd = end;
+            latestValidEnd = end
         } else {
-            intervalsToRemove++;
+            intervalsToRemove++
         }
     }
 
-    return intervalsToRemove;
+    return intervalsToRemove
 }

@@ -2,7 +2,7 @@
 
 ## Medium
 
-Given an array nums of integers, return the length of the longest arithmetic subsequence in `nums`.
+Given an array `nums` of integers, return the length of the longest arithmetic subsequence in `nums`.
 
 **Note that:**
 
@@ -12,5 +12,5 @@ Given an array nums of integers, return the length of the longest arithmetic sub
 
 ### Constraints:
 
-`2 <= nums.length <= 1000`
-`0 <= nums[i] <= 500`
+- `2 <= nums.length <= 1000`
+- `0 <= nums[i] <= 500`

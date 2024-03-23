@@ -7,6 +7,6 @@ Vowel letters in English are `a`, `e`, `i`, `o`, and `u`.
 
 ### Constraints:
 
-`1 <= s.length <= 10^5`
-`s` consists of lowercase English letters.
-`1 <= k <= s.length`
+- `1 <= s.length <= 10^5`
+- `s` consists of lowercase English letters.
+- `1 <= k <= s.length`

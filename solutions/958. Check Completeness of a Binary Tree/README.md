@@ -7,5 +7,6 @@ except possibly the last, is completely filled, and all nodes in the last level 
 between `1` and `2^h` nodes inclusive at the last level `h`.
 
 ### Constraints:
-The number of nodes in the tree is in the range `[1, 100]`.
-`1 <= Node.val <= 1000`
+
+- The number of nodes in the tree is in the range `[1, 100]`.
+- `1 <= Node.val <= 1000`

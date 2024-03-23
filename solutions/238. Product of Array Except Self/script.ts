@@ -1,12 +1,15 @@
 export {productExceptSelf}
 
 function productExceptSelf(nums: number[]): number[] {
-    const zeroCount: number = nums
-        .reduce((count: number, num: number): number => num === 0 ? count + 1 : count, 0)
-
-    const product: number = nums
-        .filter((num: number): boolean => num !== 0)
-        .reduce((prod: number, num: number): number => prod * num, 1)
+    let product: number = 1
+    let zeroCount: number = 0
+    for (const num of nums) {
+        if (num !== 0) {
+            product *= num
+        } else {
+            zeroCount++
+        }
+    }
 
     return nums.map((num: number): number => {
         if (zeroCount > 1) {

@@ -10,6 +10,6 @@ return `0`.
 
 ### Constraints:
 
-`1 <= rods.length <= 20`
-`1 <= rods[i] <= 1000`
-`sum(rods[i]) <= 5000`
+- `1 <= rods.length <= 20`
+- `1 <= rods[i] <= 1000`
+- `sum(rods[i]) <= 5000`

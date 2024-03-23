@@ -9,5 +9,5 @@ the remaining elements.
 
 ### Constraints:
 
-`1 <= arr.length <= 10^5`
-`-10^4 <= arr[i], difference <= 10^4`
+- `1 <= arr.length <= 10^5`
+- `-10^4 <= arr[i], difference <= 10^4`

@@ -6,7 +6,7 @@ function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
         return true
     }
 
-    if (!p || !q || p.val != q.val) {
+    if (!p || !q || p.val !== q.val) {
         return false
     }
 
@@ -18,7 +18,7 @@ function isSameNode(left: TreeNode | null, right: TreeNode | null): boolean {
         return true
     }
 
-    if (!left || !right || left.val != right.val) {
+    if (!left || !right || left.val !== right.val) {
         return false
     }
 

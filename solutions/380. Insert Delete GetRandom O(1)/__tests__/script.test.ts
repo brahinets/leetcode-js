@@ -14,7 +14,7 @@ describe('380. Insert Delete GetRandom O(1)', (): void => {
         expect(randomizedSet.insert(2))
             .toBe(true)
 
-        const random: number = randomizedSet.getRandom();
+        const random: number = randomizedSet.getRandom()
         expect(random == 1 || random == 2)
             .toBe(true)
 

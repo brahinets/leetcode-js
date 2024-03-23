@@ -27,7 +27,7 @@ function evalRPN(tokens: string[]): number {
 }
 
 function evaluate(num1: number, num2: number, token: string): number {
-    const fun: ((a: number, b: number) => number) | undefined = OPERATORS.get(token);
+    const fun: ((a: number, b: number) => number) | undefined = OPERATORS.get(token)
     if (fun === undefined) {
         throw new Error("Not processable token")
     } else {

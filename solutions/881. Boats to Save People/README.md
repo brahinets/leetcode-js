@@ -8,5 +8,5 @@ sum of the weight of those people is at most limit. Return the minimum number of
 
 ### Constraints:
 
-`1 <= people.length <= 5 * 10^4`  
-`1 <= people[i] <= limit <= 3 * 10^4`
+- `1 <= people.length <= 5 * 10^4`
+- `1 <= people[i] <= limit <= 3 * 10^4`

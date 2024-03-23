@@ -9,7 +9,7 @@ ranges but not in `nums`. Each range `[a,b]` in the list should be output as: `a
 
 ### Constraints:
 
-`0 <= nums.length <= 20`
-`-2^31 <= nums[i] <= 2^31 - 1`
-All the values of `nums` are unique.
-`nums` is sorted in ascending order.
+- `0 <= nums.length <= 20`
+- `-2^31 <= nums[i] <= 2^31 - 1`
+- All the values of `nums` are unique.
+- `nums` is sorted in ascending order.

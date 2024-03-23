@@ -12,7 +12,7 @@ const DIAL_MAP: Map<string, string[]> = new Map<string, string[]>([
 ])
 
 function letterCombinations(digits: string): string[] {
-    const result: Set<string> = new Set<string>();
+    const result: Set<string> = new Set<string>()
     const operands: string[][] = [...collectOperands(digits)]
 
     combinations("", operands, result, operands.length)
@@ -47,5 +47,5 @@ function collectOperands(digits: string): string[][] {
         }
     }
 
-    return pairs;
+    return pairs
 }

@@ -1,4 +1,4 @@
-import {Trie} from "../script";
+import {Trie} from "../script"
 
 describe('208. Implement Trie (Prefix Tree)', (): void => {
 

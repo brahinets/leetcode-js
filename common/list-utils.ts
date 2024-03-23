@@ -19,16 +19,16 @@ function linkedListToArray(head: ListNode | null): number[] | null {
 }
 
 function linkedListMiddleNode(head: ListNode | null): ListNode | null {
-    let long: ListNode | null = head
-    let result: ListNode | null = head
+    let fast: ListNode | null = head
+    let slow: ListNode | null = head
 
-    while (long && long.next && result) {
-        long = long.next.next
+    while (fast && fast.next) {
+        fast = fast.next.next
 
-        result = result.next
+        slow = slow!.next
     }
 
-    return result
+    return slow
 }
 
 function reverseLinkedList(head: ListNode | null): ListNode | null {

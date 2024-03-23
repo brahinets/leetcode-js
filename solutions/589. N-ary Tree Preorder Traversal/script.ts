@@ -4,14 +4,14 @@ export {preorder, Node}
 
 function preorder(root: Node | null): number[] {
     if (!root) {
-        return [];
+        return []
     }
 
-    const result: number[] = [root.val];
+    const result: number[] = [root.val]
 
     for (const child of root.children) {
-        result.push(...preorder(child));
+        result.push(...preorder(child))
     }
 
-    return result;
+    return result
 }

@@ -11,6 +11,6 @@ again).
 
 ### Constraints:
 
-`1 <= prices.length <= 5 * 10^4`
-`1 <= prices[i] < 5 * 10^4`
-`0 <= fee < 5 * 10^4`
+- `1 <= prices.length <= 5 * 10^4`
+- `1 <= prices[i] < 5 * 10^4`
+- `0 <= fee < 5 * 10^4`

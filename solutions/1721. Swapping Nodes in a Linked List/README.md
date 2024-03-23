@@ -7,6 +7,6 @@ values of the `k-th` node from the beginning and the `k-th` node from the end (t
 
 ### Constraints:
 
-The number of nodes in the list is `n`.
-`1 <= k <= n <= 10^5`
-`0 <= Node.val <= 100`
+- The number of nodes in the list is `n`.
+- `1 <= k <= n <= 10^5`
+- `0 <= Node.val <= 100`

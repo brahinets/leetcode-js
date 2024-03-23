@@ -1,4 +1,4 @@
-import {WordDictionary} from "../script";
+import {WordDictionary} from "../script"
 
 describe('211. Design Add and Search Words Data Structure', (): void => {
 
