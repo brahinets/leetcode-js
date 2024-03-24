@@ -102,7 +102,7 @@
 1. № [268. Missing Number](solutions/268.%20Missing%20Number/script.ts)
 1. № [278. First Bad Version](solutions/278.%20First%20Bad%20Version/script.ts)
 1. № [279. Perfect Squares](solutions/279.%20Perfect%20Squares/script.ts)
-1. № [287. Find the Duplicate Number Medium Topics](solutions/287.%20Find%20the%20Duplicate%20Number%20Medium%20Topics/script.ts)
+1. № [287. Find the Duplicate Number](solutions/287.%20Find%20the%20Duplicate%20Number/script.ts)
 1. № [299. Bulls and Cows](solutions/299.%20Bulls%20and%20Cows/script.ts)
 1. № [300. Longest Increasing Subsequence](solutions/300.%20Longest%20Increasing%20Subsequence/script.ts)
 1. № [316. Remove Duplicate Letters](solutions/316.%20Remove%20Duplicate%20Letters/script.ts)
