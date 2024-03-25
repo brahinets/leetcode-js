@@ -11,4 +11,4 @@ in `O(n)` time and uses only constant extra space.
 - `n == nums.length`
 - `1 <= n <= 10^5`
 - `1 <= nums[i] <= n`
-- Each element in 'nums' appears once or twice.
+- Each element in `nums` appears once or twice.
