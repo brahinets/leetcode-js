@@ -17,9 +17,13 @@ describe('2958. Length of Longest Subarray With at Most K Frequency', (): void =
             .toBe(4)
     })
 
-
     it('Single number sub-arrays #2', (): void => {
         expect(maxSubarrayLength([2, 2, 3], 1))
+            .toBe(2)
+    })
+
+    it('Single number sub-arrays #3', (): void => {
+        expect(maxSubarrayLength([3, 1, 1], 1))
             .toBe(2)
     })
 
