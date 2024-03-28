@@ -346,6 +346,7 @@
 1. № [2785. Sort Vowels in a String](solutions/2785.%20Sort%20Vowels%20in%20a%20String/script.ts)
 1. № [2864. Maximum Odd Binary Number](solutions/2864.%20Maximum%20Odd%20Binary%20Number/script.ts)
 1. № [2870. Minimum Number of Operations to Make Array Empty](solutions/2870.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Empty/script.ts)
+1. № [2958. Length of Longest Subarray With at Most K Frequency](solutions/2958.%20Length%20of%20Longest%20Subarray%20With%20at%20Most%20K%20Frequency/script.ts)
 1. № [2966. Divide Array Into Arrays With Max Difference](solutions/2966.%20Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/script.ts)
 1. № [2971. Find Polygon With the Largest Perimeter](solutions/2971.%20Find%20Polygon%20With%20the%20Largest%20Perimeter/script.ts)
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
