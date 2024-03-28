@@ -8,10 +8,8 @@ function maxSubarrayLength(nums: number[], k: number): number {
     while (right < nums.length) {
         frequencies.set(nums[right], (frequencies.get(nums[right]) ?? 0) + 1)
 
-        let freq: number = maxFrequency(frequencies)
-        while (freq > k) {
+        while (frequencies.get(nums[right])! > k) {
             frequencies.set(nums[left], frequencies.get(nums[left])! - 1)
-            freq = maxFrequency(frequencies)
             left++
         }
 
@@ -20,16 +18,4 @@ function maxSubarrayLength(nums: number[], k: number): number {
     }
 
     return max
-}
-
-function maxFrequency(frequencies: Map<number, number>): number {
-    let maxFrequency: number = 0
-
-    for (const frequency of frequencies.values()) {
-        if (frequency > maxFrequency) {
-            maxFrequency = frequency
-        }
-    }
-
-    return maxFrequency
 }
