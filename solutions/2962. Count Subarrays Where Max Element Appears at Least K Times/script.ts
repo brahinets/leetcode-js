@@ -6,8 +6,7 @@ function countSubarrays(nums: number[], k: number): number {
     let count: number = 0
 
     let left: number = 0
-    let right: number = 0
-    while (right < nums.length) {
+    for (let right: number = 0; right < nums.length; right++) {
         if (nums[right] === max) {
             maxCount++
         }
@@ -20,7 +19,6 @@ function countSubarrays(nums: number[], k: number): number {
             left++
         }
 
-        right++
         count += left
     }
 
