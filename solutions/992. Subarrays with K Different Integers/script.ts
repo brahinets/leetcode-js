@@ -9,9 +9,8 @@ function window(nums: number[], k: number): number {
     const frequencies: Map<number, number> = new Map<number, number>()
     let count: number = 0
     let left: number = 0
-    let right: number = 0
 
-    while (right < nums.length) {
+    for (let right: number = 0; right < nums.length; right++) {
         frequencies.set(nums[right], (frequencies.get(nums[right]) ?? 0) + 1)
 
         while (frequencies.size > k) {
@@ -26,7 +25,6 @@ function window(nums: number[], k: number): number {
         }
 
         count += right - left + 1
-        right++
     }
 
     return count
