@@ -197,6 +197,7 @@
 1. № [930. Binary Subarrays With Sum](solutions/930.%20Binary%20Subarrays%20With%20Sum/script.ts)
 1. № [931. Minimum Falling Path Sum](solutions/931.%20Minimum%20Falling%20Path%20Sum/script.ts)
 1. № [934. Shortest Bridge](solutions/934.%20Shortest%20Bridge/script.ts)
+1. № [935. Knight Dialer](solutions/935.%20Knight%20Dialer/script.ts)
 1. № [938. Range Sum of BST](solutions/938.%20Range%20Sum%20of%20BST/script.ts)
 1. № [946. Validate Stack Sequences](solutions/946.%20Validate%20Stack%20Sequences/script.ts)
 1. № [948. Bag of Tokens](solutions/948.%20Bag%20of%20Tokens/script.ts)
