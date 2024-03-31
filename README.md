@@ -332,6 +332,7 @@
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
 1. № [2402. Meeting Rooms III](solutions/2402.%20Meeting%20Rooms%20III/script.ts)
 1. № [2439. Minimize Maximum of Array](solutions/2439.%20Minimize%20Maximum%20of%20Array/script.ts)
+1. № [2444. Count Subarrays With Fixed Bounds](solutions/2444.%20Count%20Subarrays%20With%20Fixed%20Bounds/script.ts)
 1. № [2448. Minimum Cost to Make Array Equal](solutions/2448.%20Minimum%20Cost%20to%20Make%20Array%20Equal/script.ts)
 1. № [2462. Total Cost to Hire K Workers](solutions/2462.%20Total%20Cost%20to%20Hire%20K%20Workers/script.ts)
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
