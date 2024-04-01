@@ -8,5 +8,5 @@ integers: `1`, `2`, and `3`. A subarray is a contiguous part of an array.
 
 ### Constraints:
 
-- `1 <= nums.length <= 2 * 104`
+- `1 <= nums.length <= 2 * 10^4`
 - `1 <= nums[i], k <= nums.length`
