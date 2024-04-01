@@ -39,6 +39,7 @@
 1. № [50. Pow](solutions/50.%20Pow/script.ts)
 1. № [54. Spiral Matrix](solutions/54.%20Spiral%20Matrix/script.ts)
 1. № [57. Insert Interval](solutions/57.%20Insert%20Interval/script.ts)
+1. № [58. Length of Last Word](solutions/58.%20Length%20of%20Last%20Word/script.ts)
 1. № [59. Spiral Matrix II](solutions/59.%20Spiral%20Matrix%20II/script.ts)
 1. № [62. Unique Paths](solutions/62.%20Unique%20Paths/script.ts)
 1. № [67. Add Binary](solutions/67.%20Add%20Binary/script.ts)
