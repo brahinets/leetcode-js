@@ -1,6 +1,6 @@
 import {isIsomorphic} from '../script'
 
-describe('205. Find the Index of the First Occurrence in a String', (): void => {
+describe('205. Isomorphic Strings', (): void => {
 
     it('Isomorphic. Replace multiple', (): void => {
         expect(isIsomorphic("paper", "title"))
