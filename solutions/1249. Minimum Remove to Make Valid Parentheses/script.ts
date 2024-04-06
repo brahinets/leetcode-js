@@ -11,7 +11,7 @@ function minRemoveToMakeValid(s: string): string {
             if (open > 0) {
                 open--
             } else {
-                chars.splice(i, 1)
+                delete chars[i]
                 i--
             }
         }
@@ -20,7 +20,7 @@ function minRemoveToMakeValid(s: string): string {
     for (let i: number = chars.length - 1; i >= 0; i--) {
         if (chars[i] === '(' && open > 0) {
             open--
-            chars.splice(i, 1)
+            delete chars[i]
         }
     }
 
