@@ -12,7 +12,6 @@ function minRemoveToMakeValid(s: string): string {
                 open--
             } else {
                 delete chars[i]
-                i--
             }
         }
     }
