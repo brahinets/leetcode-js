@@ -25,4 +25,9 @@ describe('678. Valid Parenthesis String', (): void => {
         expect(checkValidString("(()"))
             .toBe(false)
     })
+
+    it('Invalid when asterisk before opening parenthesis', (): void => {
+        expect(checkValidString("*("))
+            .toBe(false)
+    })
 })
