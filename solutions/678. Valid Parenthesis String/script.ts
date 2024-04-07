@@ -1,34 +1,24 @@
 export {checkValidString}
 
 function checkValidString(s: string): boolean {
-    const openedBraces: number[] = []
-    const cheats: number[] = []
+    let minPossibleOpen: number = 0
+    let maxPossibleOpen: number = 0
 
-    for (let i: number = 0; i < s.length; i++) {
-        const ch: string = s[i]
-
-        if (ch === '*') {
-            cheats.push(i)
-        } else {
-            if (ch === '(') {
-                openedBraces.push(i)
-            } else if (ch === ')') {
-                if (openedBraces.length > 0) {
-                    openedBraces.pop()
-                } else if (cheats.length > 0) {
-                    cheats.pop()
-                } else {
-                    return false
-                }
+    for (const ch of s) {
+        if (ch === '(') {
+            minPossibleOpen++
+            maxPossibleOpen++
+        } else if (ch === ')') {
+            minPossibleOpen = Math.max(minPossibleOpen - 1, 0)
+            maxPossibleOpen--
+            if (maxPossibleOpen < 0) {
+                return false
             }
+        } else if (ch === '*') {
+            minPossibleOpen = Math.max(minPossibleOpen - 1, 0)
+            maxPossibleOpen++
         }
     }
 
-    while (openedBraces.length > 0 && cheats.length > 0) {
-        if (openedBraces.pop()! > cheats.pop()!) {
-            return false
-        }
-    }
-
-    return openedBraces.length === 0
+    return minPossibleOpen === 0
 }
