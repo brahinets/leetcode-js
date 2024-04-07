@@ -3,7 +3,7 @@ export {maximalRectangle}
 function maximalRectangle(matrix: string[][]): number {
     for (let i: number = 0; i < matrix.length; i++) {
         for (let j: number = 0; j < matrix[i].length; j++) {
-            if (i > 0 && matrix[i][j] === "1") {
+            if (i > 0 && matrix[i][j] === "1" && matrix[i - 1][j] !== "0") {
                 matrix[i][j] = String(Number(matrix[i][j]) + Number(matrix[i - 1][j]))
             }
         }
