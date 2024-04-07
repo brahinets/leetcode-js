@@ -26,7 +26,6 @@ function largestRectangleArea(heights: number[]): number {
 
         if (stack.length === 0 || height >= heights[stack[stack.length - 1]]) {
             stack.push(i)
-            i++
         } else {
             const top: number = stack.pop()!
             const width: number = stack.length === 0 ? i : i - stack[stack.length - 1] - 1
