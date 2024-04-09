@@ -311,6 +311,7 @@
 1. № [1930. Unique Length-3 Palindromic Subsequences](solutions/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/script.ts)
 1. № [1980. Find Unique Binary String](solutions/1980.%20Find%20Unique%20Binary%20String/script.ts)
 1. № [2024. Maximize the Confusion of an Exam](solutions/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/script.ts)
+1. № [2073. Time Needed to Buy Tickets](solutions/2073.%20Time%20Needed%20to%20Buy%20Tickets/script.ts)
 1. № [2090. K Radius Subarray Averages](solutions/2090.%20K%20Radius%20Subarray%20Averages/script.ts)
 1. № [2092. Find All People With Secret](solutions/2092.%20Find%20All%20People%20With%20Secret/script.ts)
 1. № [2108. Find First Palindromic String in the Array](solutions/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/script.ts)
