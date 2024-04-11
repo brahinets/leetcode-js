@@ -21,5 +21,9 @@ function removeKdigits(num: string, k: number): string {
         k--
     }
 
-    return Number(digits.map((digit: number): string => String(digit)).join("")).toString()
+    while (digits && digits[0] === 0) {
+        digits.shift()
+    }
+
+    return digits.map((digit: number): string => String(digit)).join("") || "0"
 }
