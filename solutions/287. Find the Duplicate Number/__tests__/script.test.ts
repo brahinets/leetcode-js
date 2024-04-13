@@ -1,6 +1,6 @@
 import {findDuplicate} from '../script'
 
-describe('287. Find the Duplicate Number Medium Topics', (): void => {
+describe('287. Find the Duplicate Number', (): void => {
     it('Duplicate in the end', (): void => {
         expect(findDuplicate([1, 3, 4, 2, 2]))
             .toBe(2)
