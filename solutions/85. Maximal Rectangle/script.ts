@@ -1,36 +1,36 @@
 export {maximalRectangle}
 
 function maximalRectangle(matrix: string[][]): number {
-    for (let i: number = 0; i < matrix.length; i++) {
-        for (let j: number = 0; j < matrix[i].length; j++) {
-            if (i > 0 && matrix[i][j] === "1" && matrix[i - 1][j] !== "0") {
-                matrix[i][j] = String(Number(matrix[i][j]) + Number(matrix[i - 1][j]))
+    for (let row: number = 0; row < matrix.length; row++) {
+        for (let col: number = 0; col < matrix[row].length; col++) {
+            if (row > 0 && matrix[row][col] === "1" && matrix[row - 1][col] !== "0") {
+                matrix[row][col] = String(Number(matrix[row][col]) + Number(matrix[row - 1][col]))
             }
         }
     }
 
-    let max: number = 0
-    for (let i: number = 0; i < matrix.length; i++) {
-        max = Math.max(max, largestRectangleArea(matrix[i].map(Number)))
+    let maxArea: number = 0
+    for (let row: number = 0; row < matrix.length; row++) {
+        maxArea = Math.max(maxArea, largestRectangleArea(matrix[row].map(Number)))
     }
 
-    return max
+    return maxArea
 }
 
 function largestRectangleArea(heights: number[]): number {
     const stack: number[] = []
 
     let maxArea: number = 0
-    for (let i: number = 0; i <= heights.length; i++) {
-        const height: number = i < heights.length ? heights[i] : 0
+    for (let col: number = 0; col <= heights.length; col++) {
+        const height: number = col < heights.length ? heights[col] : 0
 
         while (stack.length > 0 && height < heights[stack[stack.length - 1]]) {
             const top: number = stack.pop()!
-            const width: number = stack.length === 0 ? i : i - stack[stack.length - 1] - 1
+            const width: number = stack.length === 0 ? col : col - stack[stack.length - 1] - 1
             maxArea = Math.max(maxArea, heights[top] * width)
         }
 
-        stack.push(i)
+        stack.push(col)
     }
 
     return maxArea
