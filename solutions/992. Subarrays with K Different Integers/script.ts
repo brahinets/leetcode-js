@@ -14,7 +14,7 @@ function window(nums: number[], k: number): number {
         frequencies.set(nums[right], (frequencies.get(nums[right]) ?? 0) + 1)
 
         while (frequencies.size > k) {
-            let current: number = frequencies.get(nums[left])!
+            const current: number = frequencies.get(nums[left])!
             if (current === 1) {
                 frequencies.delete(nums[left])
             } else {

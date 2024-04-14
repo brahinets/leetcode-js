@@ -1,7 +1,7 @@
 export {findAllPeople}
 
 function findAllPeople(n: number, meetings: number[][], firstPerson: number): number[] {
-    let graph: Graph = new Graph(meetings)
+    const graph: Graph = new Graph(meetings)
 
     const awareSince: Map<number, number> = new Map<number, number>()
     awareSince.set(0, 0)

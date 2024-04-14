@@ -19,7 +19,7 @@ function trap(height: number[]): number {
 }
 
 function getRightBorderByPosition(height: number[]): number[] {
-    let borders: number[] = arrayOfZeros(height.length)
+    const borders: number[] = arrayOfZeros(height.length)
 
     let maxLeft: number = 0
     for (let i: number = 0; i < height.length; i++) {
@@ -31,7 +31,7 @@ function getRightBorderByPosition(height: number[]): number[] {
 }
 
 function getLeftBorderByPosition(height: number[]): number[] {
-    let borders: number[] = arrayOfZeros(height.length)
+    const borders: number[] = arrayOfZeros(height.length)
 
     let maxRight: number = 0
     for (let i: number = height.length - 1; i >= 0; i--) {

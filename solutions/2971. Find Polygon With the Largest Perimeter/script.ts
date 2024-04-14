@@ -5,7 +5,7 @@ function largestPerimeter(nums: number[]): number {
 
     let prev: number = 0
     let result: number = -1
-    for (let num of nums) {
+    for (const num of nums) {
         if (num < prev) {
             result = prev + num
         }

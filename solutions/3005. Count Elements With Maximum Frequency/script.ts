@@ -3,9 +3,9 @@ import {count} from "../../common/array-utils"
 export {maxFrequencyElements}
 
 function maxFrequencyElements(nums: number[]): number {
-    let counts: Map<number, number> = count(nums)
+    const counts: Map<number, number> = count(nums)
 
-    let maxFrequency: number = Math.max(...counts.values())
+    const maxFrequency: number = Math.max(...counts.values())
 
     return [...counts.entries()]
         .filter(([, count]: [number, number]): boolean => maxFrequency === count)

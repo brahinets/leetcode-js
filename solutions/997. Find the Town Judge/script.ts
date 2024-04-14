@@ -10,8 +10,8 @@ function findJudge(n: number, trust: number[][]): number {
     }
 
     for (let i: number = 1; i <= n; i++) {
-        let trustToNoOne: boolean = sum(trusts[i]) === 0
-        let everyoneTrustMe: boolean = sum(trusts.map((t: number[]): number => t[i])) === n - 1
+        const trustToNoOne: boolean = sum(trusts[i]) === 0
+        const everyoneTrustMe: boolean = sum(trusts.map((t: number[]): number => t[i])) === n - 1
 
         if (trustToNoOne && everyoneTrustMe) {
             return i

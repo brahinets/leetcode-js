@@ -7,7 +7,7 @@ function findMinArrowShots(points: number[][]): number {
 
     let [commonStart, commonEnd]: number[] = points[0]
     for (let i: number = 1; i < points.length; i++) {
-        let [start, end]: number[] = points[i]
+        const [start, end]: number[] = points[i]
 
         if (start <= commonEnd) {
             [commonStart, commonEnd] = [Math.max(start, commonStart), Math.min(end, commonEnd)]

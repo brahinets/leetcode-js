@@ -7,8 +7,8 @@ function countStudents(students: number[], sandwiches: number[]): number {
         feed = false
 
         for (let i: number = 0; i < students.length; i++) {
-            let sandwich: number = sandwiches.shift()!;
-            let preference: number = students.shift()!;
+            const sandwich: number = sandwiches.shift()!
+            const preference: number = students.shift()!
 
             if (sandwich === preference) {
                 feed = true

@@ -3,7 +3,7 @@ import {ListNode} from "../../common/ListNode"
 export {removeZeroSumSublists, ListNode}
 
 function removeZeroSumSublists(head: ListNode | null): ListNode | null {
-    let originalHead: ListNode | null = new ListNode(0, head)
+    const originalHead: ListNode | null = new ListNode(0, head)
 
     let start: ListNode | null = originalHead
     while (start) {
