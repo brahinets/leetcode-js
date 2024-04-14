@@ -3,44 +3,20 @@ import {TreeNode} from '../../common/TreeNode'
 export {sumOfLeftLeaves, TreeNode}
 
 function sumOfLeftLeaves(root: TreeNode | null): number {
-    if (!root) {
-        return 0
-    }
-
-    return collect([], [root])
+    return collect(root, false, 0)
 }
 
-function collect(lefts: TreeNode[], rights: TreeNode[]): number {
-    let sum: number = 0
-
-    if (!lefts.length && !rights.length) {
+function collect(node: TreeNode | null, isLeft: boolean, sum: number): number {
+    if (!node) {
         return sum
     }
 
-    let nextLefts: TreeNode[] = []
-    let nextRights: TreeNode[] = []
-
-    for (const node of lefts) {
-        if (node.left) {
-            nextLefts.push(node.left)
-        }
-        if (node.right) {
-            nextRights.push(node.right)
-        }
-
-        if (!node.left && !node.right) {
-            sum += node.val
-        }
+    if (isLeft && !node.left && !node.right) {
+        sum += node.val
     }
 
-    for (const node of rights) {
-        if (node.left) {
-            nextLefts.push(node.left)
-        }
-        if (node.right) {
-            nextRights.push(node.right)
-        }
-    }
+    sum = collect(node.left, true, sum)
+    sum = collect(node.right, false, sum)
 
-    return sum + collect(nextLefts, nextRights)
+    return sum
 }
