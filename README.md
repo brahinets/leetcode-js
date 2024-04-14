@@ -126,6 +126,7 @@
 1. № [399. Evaluate Division](solutions/399.%20Evaluate%20Division/script.ts)
 1. № [402. Remove K Digits](solutions/402.%20Remove%20K%20Digits/script.ts)
 1. № [403. Frog Jump](solutions/403.%20Frog%20Jump/script.ts)
+1. № [404. Sum of Left Leaves](solutions/404.%20Sum%20of%20Left%20Leaves/script.ts)
 1. № [409. Longest Palindrome](solutions/409.%20Longest%20Palindrome/script.ts)
 1. № [424. Longest Repeating Character Replacement](solutions/424.%20Longest%20Repeating%20Character%20Replacement/script.ts)
 1. № [435. Non-overlapping Intervals](solutions/435.%20Non-overlapping%20Intervals/script.ts)
