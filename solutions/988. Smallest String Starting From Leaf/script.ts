@@ -1,6 +1,5 @@
 import {ListNode} from "../../common/ListNode"
 import {TreeNode} from "../../common/TreeNode"
-import {first} from "../../common/array-utils"
 
 export {smallestFromLeaf, ListNode, TreeNode}
 
@@ -11,27 +10,28 @@ function smallestFromLeaf(root: TreeNode | null): string {
         return ""
     }
 
-    const paths: Set<string> = new Set<string>()
-
-    collectPaths("", root, paths)
-
-    return first([...paths].sort())!
+    return traverse(root, "")
 }
 
-function collectPaths(prefix: string, node: TreeNode | null, paths: Set<string>): void {
+function traverse(node: TreeNode | null, suffix: string): string {
     if (!node) {
-        return
+        return ""
     }
 
+    const currentChar:string = char(node.val) + suffix
     if (!node.left && !node.right) {
-        paths.add(char(node.val) + prefix)
-        return
+        return currentChar
     }
 
-    collectPaths(char(node.val) + prefix, node.left, paths)
-    collectPaths(char(node.val) + prefix, node.right, paths)
-}
+    const leftPath:string = traverse(node.left, currentChar)
+    const rightPath:string = traverse(node.right, currentChar)
 
+    if (leftPath === "" || (rightPath !== "" && rightPath < leftPath)) {
+        return rightPath
+    } else {
+        return leftPath
+    }
+}
 
 function char(id: number): string {
     return ALPHABET[id]
