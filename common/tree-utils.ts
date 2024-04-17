@@ -1,7 +1,7 @@
 import {TreeNode} from "./TreeNode"
 
 export {treeToGraph, TreeNode}
-export {arrayToTree}
+export {arrayToTree, treeToArray}
 
 function treeToGraph(root: TreeNode): Map<number, Set<number>> {
     return buildGraph(root, new Map<number, Set<number>>())
@@ -36,6 +36,31 @@ function addNeighbour(graph: Map<number, Set<number>>, first: TreeNode, second: 
         graph.set(second.val, new Set<number>())
     }
     graph.get(second.val)!.add(first.val)
+}
+
+function treeToArray(root: TreeNode | null): Array<number | null> {
+    const result: Array<number | null> = []
+
+    if (root) {
+        const queue: Array<TreeNode | null> = [root]
+
+        while (queue.length) {
+            const node: TreeNode = queue.shift()!
+
+            if (node) {
+                result.push(node.val)
+
+                if (node.left !== null || node.right !== null) {
+                    queue.push(node.left ?? null)
+                    queue.push(node.right ?? null)
+                }
+            } else {
+                result.push(null)
+            }
+        }
+    }
+
+    return result
 }
 
 function arrayToTree(nums: Array<number | null>): TreeNode | null {
