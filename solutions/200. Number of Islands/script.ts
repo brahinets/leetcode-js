@@ -7,30 +7,18 @@ const TURNS: [number, number][] = [
     [0, 1]
 ]
 
-function findIslandCoordinates(sea: string[][], visited: Set<string>): number[] {
-    for (let i: number = 0; i < sea.length; i++) {
-        for (let j: number = 0; j < sea[0].length; j++) {
-            if (isIsland(sea[i][j]) && !visited.has(cacheKey(i, j))) {
-                return [i, j]
+function numIslands(grid: string[][]): number {
+    let islandsCount: number = 0
+    let visited: Set<string> = new Set<string>()
+
+    for (let i: number = 0; i < grid.length; i++) {
+        for (let j: number = 0; j < grid[0].length; j++) {
+            if (isIsland(grid[i][j]) && !visited.has(cacheKey(i, j))) {
+                visitIsland(grid, i, j, visited)
+                islandsCount++
             }
         }
     }
-
-    return [-1, -1]
-}
-
-function numIslands(grid: string[][]): number {
-    let islandsCount: number = 0
-    let hasIsland: boolean
-    let visited: Set<string> = new Set<string>()
-    do {
-        const [islandCoordinateX, islandCoordinateY]: number[] = findIslandCoordinates(grid, visited)
-        hasIsland = islandCoordinateX !== -1 && islandCoordinateY !== -1
-        if (hasIsland) {
-            visitIsland(grid, islandCoordinateX, islandCoordinateY, visited)
-            islandsCount++
-        }
-    } while (hasIsland)
 
     return islandsCount
 }
