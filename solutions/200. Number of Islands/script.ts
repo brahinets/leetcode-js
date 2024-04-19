@@ -3,6 +3,13 @@ export {numIslands}
 const ISLAND: string = '1'
 const VISITED: string = '2'
 
+const TURNS: [number, number][] = [
+    [-1, 0],
+    [1, 0],
+    [0, -1],
+    [0, 1]
+]
+
 function findIslandCoordinates(sea: string[][]): number[] {
     for (let i: number = 0; i < sea.length; i++) {
         for (let j: number = 0; j < sea[0].length; j++) {
@@ -43,9 +50,8 @@ function visitIsland(sea: string[][], islandCoordinateX: number, islandCoordinat
     if (ISLAND === sea[islandCoordinateX][islandCoordinateY]) {
         sea[islandCoordinateX][islandCoordinateY] = VISITED
 
-        visitIsland(sea, islandCoordinateX - 1, islandCoordinateY)
-        visitIsland(sea, islandCoordinateX, islandCoordinateY - 1)
-        visitIsland(sea, islandCoordinateX + 1, islandCoordinateY)
-        visitIsland(sea, islandCoordinateX, islandCoordinateY + 1)
+        for (const [turnX, turnY] of TURNS) {
+            visitIsland(sea, islandCoordinateX + turnX, islandCoordinateY + turnY)
+        }
     }
 }
