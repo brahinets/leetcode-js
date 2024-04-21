@@ -316,6 +316,7 @@
 1. № [1913. Maximum Product Difference Between Two Pairs](solutions/1913.%20Maximum%20Product%20Difference%20Between%20Two%20Pairs/script.ts)
 1. № [1921. Eliminate Maximum Number of Monsters](solutions/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/script.ts)
 1. № [1930. Unique Length-3 Palindromic Subsequences](solutions/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/script.ts)
+1. № [1971. Find if Path Exists in Graph](solutions/1971.%20Find%20if%20Path%20Exists%20in%20Graph/script.ts)
 1. № [1980. Find Unique Binary String](solutions/1980.%20Find%20Unique%20Binary%20String/script.ts)
 1. № [1992. Find All Groups of Farmland](solutions/1992.%20Find%20All%20Groups%20of%20Farmland/script.ts)
 1. № [2024. Maximize the Confusion of an Exam](solutions/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/script.ts)
