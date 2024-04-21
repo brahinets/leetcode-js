@@ -1,11 +1,9 @@
-import {arrayOf} from "../../common/array-factories"
-
 export {validPath}
 
 function validPath(n: number, edges: number[][], source: number, destination: number): boolean {
     const graph: UndirectedGraph = new UndirectedGraph(n, edges)
 
-    return graph.shortestPath(source, destination) !== -1
+    return graph.pathExist(source, destination)
 }
 
 class UndirectedGraph {
@@ -30,28 +28,25 @@ class UndirectedGraph {
         this.nodes.set(to, otherNode)
     }
 
-    shortestPath(from: number, to: number): number {
-        return findBellmanFord(this.size, this.nodes, from, to)
-    }
-}
+    pathExist(from: number, to: number): boolean {
+        const visited: Set<number> = new Set<number>()
 
-function findBellmanFord(n: number, nodes: Map<number, Map<number, number>>, from: number, to: number): number {
-    const dist: number[] = arrayOf(Number.MAX_VALUE, n)
+        const dfs: (current: number) => boolean = (current: number): boolean => {
+            if (current === to) {
+                return true
+            }
 
-    dist[from] = 0
-    for (let i: number = 0; i < n - 1; i++) {
-        for (const [node, neighbours] of nodes) {
-            for (const [neighbour, distance] of neighbours) {
-                if (dist[node] !== Number.MAX_VALUE && dist[node] + distance < dist[neighbour]) {
-                    dist[neighbour] = dist[node] + distance
+            visited.add(current)
+            const neighbors: Map<number, number> = this.nodes.get(current) ?? new Map<number, number>()
+            for (const neighbor of neighbors.keys()) {
+                if (!visited.has(neighbor) && dfs(neighbor)) {
+                    return true
                 }
             }
+
+            return false
         }
-    }
 
-    if (dist[to] === Number.MAX_VALUE) {
-        return -1
+        return dfs(from)
     }
-
-    return dist[to]
 }
