@@ -1,7 +1,8 @@
 export {openLock}
 
 function openLock(deadends: string[], target: string): number {
-    if (deadends.includes('0000')) {
+    const dead: Set<string> = new Set<string>(deadends)
+    if (dead.has('0000')) {
         return -1
     }
 
@@ -19,7 +20,7 @@ function openLock(deadends: string[], target: string): number {
                 const newDigit: number = (Number(currentCombination[wheel]) + turn + 10) % 10
                 const newCombination: string = currentCombination.slice(0, wheel) + newDigit + currentCombination.slice(wheel + 1)
 
-                if (!visited.has(newCombination) && !deadends.includes(newCombination)) {
+                if (!visited.has(newCombination) && !dead.has(newCombination)) {
                     queue.push([newCombination, currentDepth + 1])
                     visited.add(newCombination)
                 }
