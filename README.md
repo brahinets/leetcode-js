@@ -109,6 +109,7 @@
 1. № [287. Find the Duplicate Number](solutions/287.%20Find%20the%20Duplicate%20Number/script.ts)
 1. № [299. Bulls and Cows](solutions/299.%20Bulls%20and%20Cows/script.ts)
 1. № [300. Longest Increasing Subsequence](solutions/300.%20Longest%20Increasing%20Subsequence/script.ts)
+1. № [310. Minimum Height Trees](solutions/310.%20Minimum%20Height%20Trees/script.ts)
 1. № [316. Remove Duplicate Letters](solutions/316.%20Remove%20Duplicate%20Letters/script.ts)
 1. № [319. Bulb Switcher](solutions/319.%20Bulb%20Switcher/script.ts)
 1. № [342. Power of Four](solutions/342.%20Power%20of%20Four/script.ts)
