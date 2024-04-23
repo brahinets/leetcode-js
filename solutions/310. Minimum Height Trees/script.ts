@@ -4,6 +4,10 @@ import {arrayOfZeros} from "../../common/array-factories";
 export {findMinHeightTrees, TreeNode}
 
 function findMinHeightTrees(n: number, edges: number[][]): number[] {
+    if(edges.length == 0) {
+        return [0]
+    }
+
     let graph: UndirectedGraph = new UndirectedGraph(n, edges)
     let depth: number[] = arrayOfZeros(n)
     for (const [from, to] of edges) {

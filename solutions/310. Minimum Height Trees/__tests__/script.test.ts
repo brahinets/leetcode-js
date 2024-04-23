@@ -1,6 +1,11 @@
 import {findMinHeightTrees} from '../script'
 
 describe('310. Minimum Height Trees', (): void => {
+    it('Nothing', (): void => {
+        expect(findMinHeightTrees(1, []))
+            .toStrictEqual([0])
+    })
+
     it('Short', (): void => {
         expect(findMinHeightTrees(4, [[1, 0], [1, 2], [1, 3]]))
             .toStrictEqual([1])
