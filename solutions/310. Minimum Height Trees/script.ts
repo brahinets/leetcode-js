@@ -27,7 +27,7 @@ function findMinHeightTrees(n: number, edges: number[][]): number[] {
         for (let i: number = 0; i < pop; i++) {
             const current: number = queue[front++]
 
-            for (const node of graph.nodes.get(current)!.values()) {
+            for (const node of graph.nodes.get(current)!.keys()) {
                 depth[node]--
 
                 let leaf: boolean = depth[node] == 1

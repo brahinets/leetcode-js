@@ -8,6 +8,6 @@ describe('310. Minimum Height Trees', (): void => {
 
     it('Longer', (): void => {
         expect(findMinHeightTrees(6, [[3, 0], [3, 1], [3, 2], [3, 4], [5, 4]]))
-            .toStrictEqual([])
+            .toStrictEqual([3,4])
     })
 })
