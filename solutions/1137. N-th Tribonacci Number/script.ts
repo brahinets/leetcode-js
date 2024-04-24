@@ -1,17 +1,16 @@
 export {tribonacci}
 
 function tribonacci(n: number): number {
-    if (n === 0) {
-        return 0
+    return nthTribonacci(n, new Map<number, number>([[0, 0], [1, 1], [2, 1]]))
+}
+
+function nthTribonacci(n: number, memo: Map<number, number>): number {
+    if (memo.has(n)) {
+        return memo.get(n)!
     }
 
-    if (n === 1) {
-        return 1
-    }
+    const value: number = nthTribonacci(n - 1, memo) + nthTribonacci(n - 2, memo) + nthTribonacci(n - 3, memo)
+    memo.set(n, value)
 
-    if (n === 2) {
-        return 1
-    }
-
-    return tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3)
+    return value
 }

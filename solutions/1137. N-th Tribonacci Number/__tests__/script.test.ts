@@ -20,4 +20,9 @@ describe('1137. N-th Tribonacci Number', (): void => {
         expect(tribonacci(25))
             .toBe(1389537)
     })
+
+    it('Load test', (): void => {
+        expect(tribonacci(34))
+            .toBe(334745777)
+    })
 })
