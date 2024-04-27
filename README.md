@@ -146,6 +146,7 @@
 1. № [501. Find Mode in Binary Search Tree](solutions/501.%20Find%20Mode%20in%20Binary%20Search%20Tree/script.ts)
 1. № [509. Fibonacci Number](solutions/509.%20Fibonacci%20Number/script.ts)
 1. № [513. Find Bottom Left Tree Value](solutions/513.%20Find%20Bottom%20Left%20Tree%20Value/script.ts)
+1. № [514. Freedom Trail](solutions/514.%20Freedom%20Trail/script.ts)
 1. № [515. Find Largest Value in Each Tree Row](solutions/515.%20Find%20Largest%20Value%20in%20Each%20Tree%20Row/script.ts)
 1. № [516. Longest Palindromic Subsequence](solutions/516.%20Longest%20Palindromic%20Subsequence/script.ts)
 1. № [518. Coin Change II](solutions/518.%20Coin%20Change%20II/script.ts)
