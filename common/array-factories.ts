@@ -29,6 +29,10 @@ function arrayOfZeros(size: number): number[] {
 }
 
 function arrayOf<Type>(val: Type, size: number): Type[] {
+    if (typeof val !== "object" && typeof val !== "function") {
+        return Array(size).fill(val)
+    }
+
     const array: Type[] = []
 
     for (let i: number = 0; i < size; i++) {
