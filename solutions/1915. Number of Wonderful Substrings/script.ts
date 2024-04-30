@@ -5,7 +5,7 @@ export {wonderfulSubstrings}
 function wonderfulSubstrings(word: string): number {
     const start: string = 'a'
     const end: string = 'j'
-    const unique: number = end.charCodeAt(0) - start.charCodeAt(0)
+    const unique: number = end.charCodeAt(0) - start.charCodeAt(0) + 1
 
     const frequency: number[] = arrayOfZeros(2 ** unique)
     frequency[0] = 1

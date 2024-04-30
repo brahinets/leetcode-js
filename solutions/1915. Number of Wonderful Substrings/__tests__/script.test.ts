@@ -16,4 +16,8 @@ describe('1915. Number of Wonderful Substrings', (): void => {
         expect(wonderfulSubstrings("aabb"))
             .toBe(9)
     })
+    it('Many repeatings', (): void => {
+        expect(wonderfulSubstrings("ehaehcjjaafjdceac"))
+            .toBe(29)
+    })
 })
