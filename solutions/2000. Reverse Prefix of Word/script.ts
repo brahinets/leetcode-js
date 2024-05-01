@@ -5,13 +5,13 @@ function reversePrefix(word: string, ch: string): string {
     let found: boolean = false
 
     for (const char of word) {
-        if (!found) {
-            if(ch === char) {
+        if (found) {
+            result = result + char
+        } else {
+            if (ch === char) {
                 found = true
             }
             result = char + result
-        } else {
-            result = result + char
         }
     }
 
