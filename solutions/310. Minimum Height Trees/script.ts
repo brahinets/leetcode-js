@@ -1,14 +1,16 @@
 import {TreeNode} from "../../common/TreeNode"
-import {arrayOfZeros} from "../../common/array-factories";
+import {arrayOfZeros} from "../../common/array-factories"
+import {undirectedUnweightedGraphFromEdges} from "../../common/graph-factories"
+import {UndirectedUnweightedGraph} from "../../common/Graph"
 
 export {findMinHeightTrees, TreeNode}
 
 function findMinHeightTrees(n: number, edges: number[][]): number[] {
-    if(edges.length == 0) {
+    if (edges.length == 0) {
         return [0]
     }
 
-    let graph: UndirectedGraph = new UndirectedGraph(n, edges)
+    let graph: UndirectedUnweightedGraph = undirectedUnweightedGraphFromEdges(edges)
     let depth: number[] = arrayOfZeros(n)
     for (const [from, to] of edges) {
         depth[from]++
@@ -31,12 +33,12 @@ function findMinHeightTrees(n: number, edges: number[][]): number[] {
         for (let i: number = 0; i < pop; i++) {
             const current: number = queue[front++]
 
-            for (const node of graph.nodes.get(current)!.keys()) {
-                depth[node]--
+            for (const neighbour of graph.getNeighbours(current).keys()) {
+                depth[neighbour]--
 
-                let leaf: boolean = depth[node] == 1
+                let leaf: boolean = depth[neighbour] == 1
                 if (leaf) {
-                    queue.push(node)
+                    queue.push(neighbour)
                 }
             }
 
@@ -44,27 +46,4 @@ function findMinHeightTrees(n: number, edges: number[][]): number[] {
     }
 
     return queue.slice(front)
-}
-
-class UndirectedGraph {
-    readonly size: number
-    readonly nodes: Map<number, Map<number, number>>
-
-    constructor(n: number, edges: number[][]) {
-        this.size = n
-        this.nodes = new Map<number, Map<number, number>>()
-        edges.forEach((edge: number[]): void => this.addEdge(edge))
-    }
-
-    addEdge(edge: number[]): void {
-        const [from, to] = edge
-
-        const toNode: Map<number, number> = this.nodes.get(from) ?? new Map<number, number>()
-        toNode.set(to, 1)
-        this.nodes.set(from, toNode)
-
-        const otherNode: Map<number, number> = this.nodes.get(to) ?? new Map<number, number>()
-        otherNode.set(from, 1)
-        this.nodes.set(to, otherNode)
-    }
 }
