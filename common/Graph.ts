@@ -7,7 +7,11 @@ abstract class Graph {
         this.nodes = new Map<number, Map<number, number>>()
     }
 
-    abstract addEdge(from: number, to: number, weight: number): void
+    addEdge(from: number, to: number, weight: number): void {
+        const toNode: Map<number, number> = this.nodes.get(from) ?? new Map<number, number>()
+        toNode.set(to, weight)
+        this.nodes.set(from, toNode)
+    }
 
     getNeighbours(from: number): Map<number, number> {
         return this.nodes.get(from) ?? new Map<number, number>()
@@ -16,15 +20,11 @@ abstract class Graph {
 
 class DirectedWeightedGraph extends Graph {
     addEdge(from: number, to: number, weight: number): void {
-        const toNode: Map<number, number> = this.nodes.get(from) ?? new Map<number, number>()
-
-        toNode.set(to, weight)
-
-        this.nodes.set(from, toNode)
+        super.addEdge(from, to, weight)
     }
 }
 
-class DirectedUnweightedGraph extends DirectedWeightedGraph {
+class DirectedUnweightedGraph extends Graph {
     private readonly WEIGHT: number = 1
 
     addEdge(from: number, to: number): void {
@@ -32,16 +32,18 @@ class DirectedUnweightedGraph extends DirectedWeightedGraph {
     }
 }
 
-class UndirectedWeightedGraph extends DirectedWeightedGraph {
+class UndirectedWeightedGraph extends Graph {
     addEdge(from: number, to: number, weight: number): void {
         super.addEdge(from, to, weight)
         super.addEdge(to, from, weight)
     }
 }
 
-class UndirectedUnweightedGraph extends DirectedUnweightedGraph {
+class UndirectedUnweightedGraph extends Graph {
+    private readonly WEIGHT: number = 1
+
     addEdge(from: number, to: number): void {
-        super.addEdge(to, from)
-        super.addEdge(from, to)
+        super.addEdge(to, from, this.WEIGHT)
+        super.addEdge(from, to, this.WEIGHT)
     }
 }
