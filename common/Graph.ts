@@ -1,3 +1,5 @@
+import {arrayOf} from "./array-factories";
+
 export {DirectedWeightedGraph, DirectedUnweightedGraph, UndirectedWeightedGraph, UndirectedUnweightedGraph}
 
 abstract class Graph {
@@ -15,6 +17,45 @@ abstract class Graph {
 
     getNeighbours(from: number): Map<number, number> {
         return this.nodes.get(from) ?? new Map<number, number>()
+    }
+
+    shortestPath(from: number, to: number): number {
+        return this.findBellmanFord(from, to)
+    }
+
+    private findBellmanFord(from: number, to: number): number {
+        const nodesCount: number = this.nodesCount()
+        
+        const dist: number[] = arrayOf(Number.MAX_VALUE, nodesCount)
+        dist[from] = 0
+        for (let i: number = 0; i < nodesCount - 1; i++) {
+            for (const [node, neighbours] of this.nodes) {
+                for (const [neighbour, distance] of neighbours) {
+                    if (dist[node] !== Number.MAX_VALUE && dist[node] + distance < dist[neighbour]) {
+                        dist[neighbour] = dist[node] + distance
+                    }
+                }
+            }
+        }
+
+        if (dist[to] === Number.MAX_VALUE) {
+            return -1
+        }
+
+        return dist[to]
+    }
+
+    private nodesCount(): number {
+        const nodeSet: Set<number> = new Set<number>()
+
+        for (const [node, neighbours] of this.nodes) {
+            nodeSet.add(node)
+            for (const neighbour of neighbours.keys()) {
+                nodeSet.add(neighbour)
+            }
+        }
+
+        return nodeSet.size
     }
 }
 
