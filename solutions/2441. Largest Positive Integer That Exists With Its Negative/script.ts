@@ -2,16 +2,16 @@ export {findMaxK}
 
 function findMaxK(nums: number[]): number {
     let k: number = -1
-    const count: Set<number> = new Set<number>()
+    const seen: Set<number> = new Set<number>()
 
     for (const num of nums) {
         const abs: number = Math.abs(num);
 
-        if (abs > k && count.has(-num)) {
+        if (abs > k && seen.has(-num)) {
             k = abs
         }
 
-        count.add(num)
+        seen.add(num)
     }
 
     return k
