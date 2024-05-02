@@ -7,7 +7,7 @@ function countSubarrays(nums: number[], minK: number, maxK: number): number {
 
     let left: number = 0
     for (let right: number = 0; right < nums.length; right++) {
-        let windowEnd: number = nums[right]
+        const windowEnd: number = nums[right]
 
         if (windowEnd < minK || windowEnd > maxK) {
             min = undefined

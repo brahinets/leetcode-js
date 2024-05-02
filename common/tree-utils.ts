@@ -1,6 +1,7 @@
 import {TreeNode} from "./TreeNode"
 
 export {treeToGraph, TreeNode}
+export {arrayToTree, treeToArray}
 
 function treeToGraph(root: TreeNode): Map<number, Set<number>> {
     return buildGraph(root, new Map<number, Set<number>>())
@@ -35,4 +36,57 @@ function addNeighbour(graph: Map<number, Set<number>>, first: TreeNode, second: 
         graph.set(second.val, new Set<number>())
     }
     graph.get(second.val)!.add(first.val)
+}
+
+function treeToArray(root: TreeNode | null): Array<number | null> {
+    const result: Array<number | null> = []
+
+    if (root) {
+        const queue: Array<TreeNode | null> = [root]
+
+        while (queue.length) {
+            const node: TreeNode = queue.shift()!
+
+            if (node) {
+                result.push(node.val)
+
+                if (node.left !== null || node.right !== null) {
+                    queue.push(node.left ?? null)
+                    queue.push(node.right ?? null)
+                }
+            } else {
+                result.push(null)
+            }
+        }
+    }
+
+    return result
+}
+
+function arrayToTree(nums: Array<number | null>): TreeNode | null {
+    if (nums.length === 0 || nums[0] === null) {
+        return null
+    }
+
+    const root: TreeNode = new TreeNode(nums[0]!)
+    const queue: TreeNode[] = [root]
+
+    let i: number = 1
+    while (i < nums.length) {
+        const current: TreeNode = queue.shift()!
+
+        const leftVal: number | null = nums[i++]
+        if (leftVal != null) {
+            current.left = new TreeNode(leftVal)
+            queue.push(current.left)
+        }
+
+        const rightVal: number | null = nums[i++]
+        if (rightVal != null) {
+            current.right = new TreeNode(rightVal)
+            queue.push(current.right)
+        }
+    }
+
+    return root
 }

@@ -1,13 +1,16 @@
 export {fib}
 
 function fib(n: number): number {
-    if (n === 0) {
-        return 0
+    return nthFib(n, new Map<number, number>([[0, 0], [1, 1]]))
+}
+
+function nthFib(n: number, memo: Map<number, number>): number {
+    if (memo.has(n)) {
+        return memo.get(n)!
     }
 
-    if (n === 1) {
-        return 1
-    }
+    const value: number = nthFib(n - 1, memo) + nthFib(n - 2, memo)
+    memo.set(n, value)
 
-    return fib(n - 1) + fib(n - 2)
+    return value
 }

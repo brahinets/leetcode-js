@@ -8,6 +8,9 @@
     "before 5am every weekday",
     "every weekend"
   ],
+  "ignoreDeps": [
+    "eslint"
+  ],
   "packageRules": [
     {
       "description": "Automatically merge minor and patch-level updates when checks pass, creates a PR otherwise",

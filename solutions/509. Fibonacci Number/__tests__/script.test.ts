@@ -12,4 +12,8 @@ describe('509. Fibonacci Number', (): void => {
     it('Tenth', (): void => {
         expect(fib(10)).toBe(55)
     })
+
+    it('Load test', (): void => {
+        expect(fib(50)).toBe(12586269025)
+    })
 })

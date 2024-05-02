@@ -28,7 +28,7 @@ function dfs(row: number, col: number, board: string[][], word: string, index: n
     if (isValidContinue(row, col, board, word.charAt(index))) {
         board[row][col] = USED
 
-        for (let [x, y] of turns) {
+        for (const [x, y] of turns) {
             const targetX: number = row + x
             const targetY: number = col + y
 
