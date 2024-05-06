@@ -99,6 +99,7 @@
 1. № [232. Implement Queue using Stacks](solutions/232.%20Implement%20Queue%20using%20Stacks/script.ts)
 1. № [234. Palindrome Linked List](solutions/234.%20Palindrome%20Linked%20List/script.ts)
 1. № [235. Lowest Common Ancestor of a Binary Search Tree](solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree/script.ts)
+1. № [237. Delete Node in a Linked List](solutions/237.%20Delete%20Node%20in%20a%20Linked%20List/script.ts)
 1. № [238. Product of Array Except Self](solutions/238.%20Product%20of%20Array%20Except%20Self/script.ts)
 1. № [239. Sliding Window Maximum](solutions/239.%20Sliding%20Window%20Maximum/script.ts)
 1. № [242. Valid Anagram](solutions/242.%20Valid%20Anagram/script.ts)
