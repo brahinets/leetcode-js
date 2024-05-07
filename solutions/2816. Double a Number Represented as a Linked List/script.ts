@@ -5,17 +5,21 @@ import {linkedListOf} from "../../common/list-factories"
 export {doubleIt, ListNode}
 
 function doubleIt(head: ListNode | null): ListNode | null {
-    const digits: number[] = linkedListToArray(head)!.reverse()
+    const digits: number[] = linkedListToArray(head)!
 
-    let result: number = 0
-    let order: number = 1
+    let result: number[] = []
+    let left: number = 0
 
-    for (const digit of digits) {
-        result += (order * digit)
-        order *= 10
+    for (const digit of digits.reverse()) {
+        left += digit * 2
+        result.push(left % 10)
+
+        left = left > 9 ? 1 : 0;
     }
 
-    result *= 2
+    if (left > 0) {
+        result.push(left)
+    }
 
-    return linkedListOf(...String(result).split("").map((n: string): number => Number(n)))
+    return linkedListOf(...result.reverse())
 }

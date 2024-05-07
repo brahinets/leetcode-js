@@ -17,4 +17,9 @@ describe('2816. Double a Number Represented as a Linked List', (): void => {
         expect(doubleIt(linkedListOf(9, 9, 9)))
             .toEqual(linkedListOf(1, 9, 9, 8))
     })
+
+    it('Big number', (): void => {
+        expect(doubleIt(linkedListOf(9, 1, 9, 5, 0, 5, 1, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9)))
+            .toEqual(linkedListOf(1, 8, 3, 9, 0, 1, 0, 3, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 8))
+    })
 })
