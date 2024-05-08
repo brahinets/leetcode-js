@@ -145,6 +145,7 @@
 1. № [463. Island Perimeter](solutions/463.%20Island%20Perimeter/script.ts)
 1. № [486. Predict the Winner](solutions/486.%20Predict%20the%20Winner/script.ts)
 1. № [501. Find Mode in Binary Search Tree](solutions/501.%20Find%20Mode%20in%20Binary%20Search%20Tree/script.ts)
+1. № [506. Relative Ranks](solutions/506.%20Relative%20Ranks/script.ts)
 1. № [509. Fibonacci Number](solutions/509.%20Fibonacci%20Number/script.ts)
 1. № [513. Find Bottom Left Tree Value](solutions/513.%20Find%20Bottom%20Left%20Tree%20Value/script.ts)
 1. № [514. Freedom Trail](solutions/514.%20Freedom%20Trail/script.ts)
