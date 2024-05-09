@@ -3,21 +3,21 @@ export {maximumHappinessSum}
 function maximumHappinessSum(happiness: number[], k: number): number {
     happiness.sort((a: number, b: number): number => b - a)
 
-    let moraleDecreaseBy: number = 0
-    let total: number = 0
+    let happinessDecreaseBy: number = 0
+    let happinessSum: number = 0
     let i: number = 0
 
     while (k > 0) {
-        const childMorale: number = Math.max(0, happiness[i] - moraleDecreaseBy)
-        if (childMorale === 0) {
+        const childHappiness: number = Math.max(0, happiness[i] - happinessDecreaseBy)
+        if (childHappiness === 0) {
             break
         }
 
-        total += childMorale
+        happinessSum += childHappiness
+        happinessDecreaseBy++
         k--
         i++
-        moraleDecreaseBy++
     }
 
-    return total
+    return happinessSum
 }
