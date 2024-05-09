@@ -8,9 +8,12 @@ function maximumHappinessSum(happiness: number[], k: number): number {
     let i: number = 0
 
     while (k > 0) {
-        const child: number = Math.max(0, happiness[i] - moraleDecreaseBy)
+        const childMorale: number = Math.max(0, happiness[i] - moraleDecreaseBy)
+        if (childMorale === 0) {
+            break
+        }
 
-        total += child
+        total += childMorale
         k--
         i++
         moraleDecreaseBy++
