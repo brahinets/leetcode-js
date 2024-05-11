@@ -1,7 +1,7 @@
 export {mincostToHireWorkers}
 
 function mincostToHireWorkers(quality: number[], wage: number[], k: number): number {
-    const workers: Worker[] = collectWorkers(quality, wage, k)
+    const workers: Worker[] = collectWorkers(quality, wage)
 
     const pool: number[] = []
     let sum: number = 0
@@ -24,7 +24,7 @@ function mincostToHireWorkers(quality: number[], wage: number[], k: number): num
     return result
 }
 
-function collectWorkers(quality: number[], wage: number[], k: number): Worker[] {
+function collectWorkers(quality: number[], wage: number[]): Worker[] {
     let workers: Worker[] = []
 
     for (let i: number = 0; i < wage.length; i++) {
