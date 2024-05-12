@@ -358,6 +358,7 @@
 1. № [2352. Equal Row and Column Pairs](solutions/2352.%20Equal%20Row%20and%20Column%20Pairs/script.ts)
 1. № [2353. Design a Food Rating System](solutions/2353.%20Design%20a%20Food%20Rating%20System/script.ts)
 1. № [2370. Longest Ideal Subsequence](solutions/2370.%20Longest%20Ideal%20Subsequence/script.ts)
+1. № [2373. Largest Local Values in a Matrix](solutions/2373.%20Largest%20Local%20Values%20in%20a%20Matrix/script.ts)
 1. № [2385. Amount of Time for Binary Tree to Be Infected](solutions/2385.%20Amount%20of%20Time%20for%20Binary%20Tree%20to%20Be%20Infected/script.ts)
 1. № [2390. Removing Stars From a String](solutions/2390.%20Removing%20Stars%20From%20a%20String/script.ts)
 1. № [2391. Minimum Amount of Time to Collect Garbage](solutions/2391.%20Minimum%20Amount%20of%20Time%20to%20Collect%20Garbage/script.ts)
