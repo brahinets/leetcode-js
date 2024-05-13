@@ -200,6 +200,7 @@
 1. № [853. Car Fleet](solutions/853.%20Car%20Fleet/script.ts)
 1. № [857. Minimum Cost to Hire K Workers](solutions/857.%20Minimum%20Cost%20to%20Hire%20K%20Workers/script.ts)
 1. № [859. Buddy Strings](solutions/859.%20Buddy%20Strings/script.ts)
+1. № [861. Score After Flipping Matrix](solutions/861.%20Score%20After%20Flipping%20Matrix/script.ts)
 1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
 1. № [867. Transpose Matrix](solutions/867.%20Transpose%20Matrix/script.ts)
 1. № [872. Leaf-Similar Trees](solutions/872.%20Leaf-Similar%20Trees/script.ts)
