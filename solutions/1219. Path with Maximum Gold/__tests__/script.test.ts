@@ -25,4 +25,14 @@ describe('1219. Path with Maximum Gold', (): void => {
             [9, 0, 20]
         ])).toBe(28)
     })
+
+    it('Load Test', (): void => {
+        expect(getMaximumGold([
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1]
+        ])).toBe(25)
+    })
 })
