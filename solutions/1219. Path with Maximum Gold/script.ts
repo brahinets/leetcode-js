@@ -30,13 +30,14 @@ function dfs(grid: number[][], row: number, col: number): number {
         return 0
     }
 
-    let max: number = 0
     let gold: number = grid[row][col]
-    grid[row][col] = VISITED
+    let max: number = 0
+
+    const nextGrid = JSON.parse(JSON.stringify(grid))
+    nextGrid[row][col] = VISITED
     for (const [turnX, turnY] of TURNS) {
-        max = Math.max(max, dfs(grid, row + turnX, col + turnY))
+        max = Math.max(max, dfs(nextGrid, row + turnX, col + turnY))
     }
-    grid[row][col] = gold
 
     return max + gold
 }
