@@ -22,7 +22,7 @@ function getMaximumGold(grid: number[][]): number {
 }
 
 function dfs(grid: number[][], row: number, col: number): number {
-    if (row < 0 || col < 0 || row >= grid.length || col >= grid[0].length || col >= grid[0].length) {
+    if (row < 0 || col < 0 || row >= grid.length || col >= grid[0].length) {
         return 0
     }
 
