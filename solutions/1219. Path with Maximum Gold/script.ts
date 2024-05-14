@@ -22,11 +22,7 @@ function getMaximumGold(grid: number[][]): number {
 }
 
 function dfs(grid: number[][], row: number, col: number): number {
-    if (row < 0 || col < 0 || row >= grid.length || col >= grid[0].length) {
-        return 0
-    }
-
-    if (grid[row][col] === STOP || grid[row][col] === VISITED) {
+    if (outOfBounds(grid, row, col) || endCell(grid, row, col)) {
         return 0
     }
 
@@ -39,4 +35,12 @@ function dfs(grid: number[][], row: number, col: number): number {
     grid[row][col] = gold
 
     return max + gold
+}
+
+function outOfBounds(grid: number[][], row: number, col: number): boolean {
+    return row < 0 || col < 0 || row >= grid.length || col >= grid[0].length
+}
+
+function endCell(grid: number[][], row: number, col: number): boolean {
+    return grid[row][col] === STOP || grid[row][col] === VISITED
 }
