@@ -245,6 +245,7 @@
 1. № [1171. Remove Zero Sum Consecutive Nodes from Linked List](solutions/1171.%20Remove%20Zero%20Sum%20Consecutive%20Nodes%20from%20Linked%20List/script.ts)
 1. № [1207. Unique Number of Occurrences](solutions/1207.%20Unique%20Number%20of%20Occurrences/script.ts)
 1. № [1218. Longest Arithmetic Subsequence of Given Difference](solutions/1218.%20Longest%20Arithmetic%20Subsequence%20of%20Given%20Difference/script.ts)
+1. № [1219. Path with Maximum Gold](solutions/1219.%20Path%20with%20Maximum%20Gold/script.ts)
 1. № [1232. Check If It Is a Straight Line](solutions/1232.%20Check%20If%20It%20Is%20a%20Straight%20Line/script.ts)
 1. № [1235. Maximum Profit in Job Scheduling](solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling/script.ts)
 1. № [1239. Maximum Length of a Concatenated String with Unique Characters](solutions/1239.%20Maximum%20Length%20of%20a%20Concatenated%20String%20with%20Unique%20Characters/script.ts)
