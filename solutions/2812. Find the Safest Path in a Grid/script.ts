@@ -13,12 +13,18 @@ const VISITED: number = -2
 const THIEF: number = 1
 
 function maximumSafenessFactor(grid: number[][]): number {
-    const safenessGrid: number[][] = buildSafenessGrid(grid);
+    const safenessGrid: number[][] = buildSafenessGrid(grid)
 
     const safenessPriority: number[][] = [[0, 0, safenessGrid[0][0]]]
     safenessGrid[0][0] = VISITED
     while (safenessPriority.length > 0) {
-        const [x, y, safeness]: number[] = safenessPriority.shift()!
+        let maxIndex: number = 0
+        for (let i: number = 1; i < safenessPriority.length; i++) {
+            if (safenessPriority[i][2] > safenessPriority[maxIndex][2]) {
+                maxIndex = i
+            }
+        }
+        const [x, y, safeness]: number[] = safenessPriority.splice(maxIndex, 1)[0]
 
         if (x === grid.length - 1 && y === grid[0].length - 1) {
             return safeness
@@ -29,7 +35,6 @@ function maximumSafenessFactor(grid: number[][]): number {
 
             if (inBounds(safenessGrid, newX, newY) && safenessGrid[newX][newY] !== VISITED) {
                 safenessPriority.push([newX, newY, Math.min(safeness, safenessGrid[newX][newY])])
-                sortBySafeness(safenessPriority)
                 safenessGrid[newX][newY] = VISITED
             }
         }
@@ -76,11 +81,4 @@ function buildSafenessGrid(grid: number[][]): number[][] {
 
 function inBounds(grid: number[][], row: number, col: number): boolean {
     return row >= 0 && col >= 0 && row < grid.length && col < grid[0].length
-}
-
-function sortBySafeness(pq: number[][]): number[][] {
-    return pq.sort((
-        [, , safeness1]: number[],
-        [, , safeness2]: number[]
-    ): number => safeness2 - safeness1)
 }
