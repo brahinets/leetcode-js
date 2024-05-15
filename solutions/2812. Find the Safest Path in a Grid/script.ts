@@ -80,7 +80,7 @@ function inBounds(grid: number[][], row: number, col: number): boolean {
 
 function sortBySafeness(pq: number[][]): number[][] {
     return pq.sort((
-        [x1, y1, safeness1]: number[],
-        [x2, y2, safeness2]: number[]
+        [, , safeness1]: number[],
+        [, , safeness2]: number[]
     ): number => safeness2 - safeness1)
 }
