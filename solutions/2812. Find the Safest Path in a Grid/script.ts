@@ -59,9 +59,9 @@ function buildSafenessGrid(grid: number[][]): number[][] {
     }
 
     while (toVisit.length > 0) {
-        let currentLevel: number = toVisit.length
+        const currentLevelSize: number = toVisit.length
 
-        while (currentLevel-- > 0) {
+        for (let i: number = 0; i < currentLevelSize; i++) {
             const [x, y]: number[] = toVisit.shift()!
 
             for (const [moveX, moveY] of TURNS) {
