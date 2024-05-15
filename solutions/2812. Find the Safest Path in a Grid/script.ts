@@ -31,7 +31,8 @@ function maximumSafenessFactor(grid: number[][]): number {
         }
 
         for (const [moveX, moveY] of TURNS) {
-            const [newX, newY]: [number, number] = [x + moveX, y + moveY]
+            const newX: number = x + moveX
+            const newY: number = y + moveY
 
             if (inBounds(safenessGrid, newX, newY) && safenessGrid[newX][newY] !== VISITED) {
                 safenessPriority.push([newX, newY, Math.min(safeness, safenessGrid[newX][newY])])
@@ -66,7 +67,8 @@ function buildSafenessGrid(grid: number[][]): number[][] {
 
             for (const [moveX, moveY] of TURNS) {
                 const cellSafeness: number = safenessGrid[x][y]
-                const [newX, newY]: [number, number] = [x + moveX, y + moveY]
+                const newX: number = x + moveX
+                const newY: number = y + moveY
 
                 if (inBounds(safenessGrid, newX, newY) && safenessGrid[newX][newY] === NOT_VISITED) {
                     safenessGrid[newX][newY] = cellSafeness + 1
