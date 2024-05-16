@@ -13,13 +13,13 @@ function evaluateTree(root: TreeNode | null): boolean {
         return false
     }
 
-    if (!root.left && !root.right) {
-        return root.val === TRUE
-    } else {
+    if (root.left && root.right) {
         if (root.val === AND) {
             return evaluateTree(root.left) && evaluateTree(root.right)
         } else {
             return evaluateTree(root.left) || evaluateTree(root.right)
         }
+    } else {
+        return root.val === TRUE
     }
 }
