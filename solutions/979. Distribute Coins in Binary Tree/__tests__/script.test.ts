@@ -12,4 +12,9 @@ describe('979. Distribute Coins in Binary Tree', (): void => {
         expect(distributeCoins(arrayToTree([0, 3, 0])))
             .toBe(3)
     })
+
+    it('Move from unbalanced leafs', (): void => {
+        expect(distributeCoins(arrayToTree([1,0,0,null,3])))
+            .toBe(4)
+    })
 })
