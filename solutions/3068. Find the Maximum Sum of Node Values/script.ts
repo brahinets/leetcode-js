@@ -1,6 +1,6 @@
 export {maximumValueSum}
 
-function maximumValueSum(nums: number[], k: number, edges: number[][]): number {
+function maximumValueSum(nums: number[], k: number, _: number[][]): number {
     const addedValues: number[] = collectAddedValues(nums, k)
 
     let sum: number = nums.reduce((sum: number, val: number): number => sum + val, 0)
