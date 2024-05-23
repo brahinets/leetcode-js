@@ -11,4 +11,9 @@ describe('2597. The Number of Beautiful Subsets', (): void => {
         expect(beautifulSubsets([2, 4, 6], 2))
             .toBe(4)
     })
+
+    it('Should handle non-consecutive differences ', (): void => {
+        expect(beautifulSubsets([10, 4, 5, 7, 2, 1], 3))
+            .toBe(23)
+    })
 })

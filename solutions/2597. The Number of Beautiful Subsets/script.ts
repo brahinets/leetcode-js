@@ -15,12 +15,14 @@ function beautifulSubsets(nums: number[], k: number): number {
 }
 
 function isBeautiful(set: number[], k: number): boolean {
-    set.sort((a: number, b: number): number => a - b)
+    const seen = new Set<number>()
 
-    for (let i = 1; i < set.length; ++i) {
-        if (set[i] - set[i - 1] === k) {
+    for (const num of set) {
+        if (seen.has(num - k) || seen.has(num + k)) {
             return false
         }
+
+        seen.add(num)
     }
 
     return true
