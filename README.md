@@ -254,6 +254,7 @@
 1. № [1239. Maximum Length of a Concatenated String with Unique Characters](solutions/1239.%20Maximum%20Length%20of%20a%20Concatenated%20String%20with%20Unique%20Characters/script.ts)
 1. № [1249. Minimum Remove to Make Valid Parentheses](solutions/1249.%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses/script.ts)
 1. № [1254. Number of Closed Islands](solutions/1254.%20Number%20of%20Closed%20Islands/script.ts)
+1. № [1255. Maximum Score Words Formed by Letters](solutions/1255.%20Maximum%20Score%20Words%20Formed%20by%20Letters/script.ts)
 1. № [1266. Minimum Time Visiting All Points](solutions/1266.%20Minimum%20Time%20Visiting%20All%20Points/script.ts)
 1. № [1287. Element Appearing More Than 25% In Sorted Array](solutions/1287.%20Element%20Appearing%20More%20Than%2025%25%20In%20Sorted%20Array/script.ts)
 1. № [1289. Minimum Falling Path Sum II](solutions/1289.%20Minimum%20Falling%20Path%20Sum%20II/script.ts)
