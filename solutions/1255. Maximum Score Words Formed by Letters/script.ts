@@ -14,7 +14,7 @@ function maxScoreWords(words: string[], letters: string[], score: number[]): num
         for (const w of subset) {
             let notFilled: boolean = false
             for (const letter of w) {
-                scoreForSubset += score[letter.charCodeAt(0) - 'a'.charCodeAt(0)]
+                scoreForSubset += getLetterScore(score, letter)
 
                 if (freq.has(letter) && freq.get(letter)! > 0) {
                     freq.set(letter, freq.get(letter)! - 1)
@@ -53,3 +53,8 @@ function subsets(nums: string[]): string[][] {
     return subsets
 }
 
+function getLetterScore(scores: number[], letter: string): number {
+    const letterIndex: number = letter.charCodeAt(0) - 'a'.charCodeAt(0)
+
+    return scores[letterIndex]
+}
