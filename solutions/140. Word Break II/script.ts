@@ -1,10 +1,10 @@
 export {wordBreak}
 
 function wordBreak(s: string, wordDict: string[]): string[] {
-    const dict: Set<string> = new Set<string>(wordDict)
+    const dictionary: Set<string> = new Set<string>(wordDict)
     const memo: Map<string, string[]> = new Map<string, string[]>()
 
-    return dfs(s, dict, memo)
+    return dfs(s, dictionary, memo)
 }
 
 function dfs(remaining: string, dict: Set<string>, memo: Map<string, string[]>): string[] {
