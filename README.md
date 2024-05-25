@@ -71,6 +71,7 @@
 1. № [131. Palindrome Partitioning](solutions/131.%20Palindrome%20Partitioning/script.ts)
 1. № [137. Single Number II](solutions/137.%20Single%20Number%20II/script.ts)
 1. № [139. Word Break](solutions/139.%20Word%20Break/script.ts)
+1. № [140. Word Break II](solutions/140.%20Word%20Break%20II/script.ts)
 1. № [141. Linked List Cycle](solutions/141.%20Linked%20List%20Cycle/script.ts)
 1. № [142. Linked List Cycle II](solutions/142.%20Linked%20List%20Cycle%20II/script.ts)
 1. № [143. Reorder List](solutions/143.%20Reorder%20List/script.ts)
