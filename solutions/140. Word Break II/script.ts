@@ -17,7 +17,7 @@ function dfs(remaining: string, dict: Set<string>, memo: Map<string, Array<strin
     }
 
     const results: string[] = []
-    for (let i = 1; i < remaining.length + 1; i++) {
+    for (let i: number = 1; i <= remaining.length; i++) {
         const current: string = remaining.substring(0, i)
 
         if (dict.has(current)) {
