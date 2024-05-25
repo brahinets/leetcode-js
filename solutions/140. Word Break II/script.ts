@@ -2,12 +2,12 @@ export {wordBreak}
 
 function wordBreak(s: string, wordDict: string[]): string[] {
     const dict: Set<string> = new Set<string>(wordDict)
-    const memo: Map<string, Array<string>> = new Map<string, Array<string>>()
+    const memo: Map<string, string[]> = new Map<string, string[]>()
 
     return dfs(s, dict, memo)
 }
 
-function dfs(remaining: string, dict: Set<string>, memo: Map<string, Array<string>>): string[] {
+function dfs(remaining: string, dict: Set<string>, memo: Map<string, string[]>): string[] {
     if (memo.has(remaining)) {
         return memo.get(remaining)!
     }
