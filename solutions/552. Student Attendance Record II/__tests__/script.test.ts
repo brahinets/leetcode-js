@@ -11,4 +11,9 @@ describe('552. Student Attendance Record II', (): void => {
         expect(checkRecord(2))
             .toBe(8)
     })
+
+    it('Exclude consecutive late days. Also load test', (): void => {
+        expect(checkRecord(10101))
+            .toBe(183236316)
+    })
 })
