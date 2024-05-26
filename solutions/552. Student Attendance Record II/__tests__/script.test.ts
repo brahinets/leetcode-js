@@ -16,4 +16,10 @@ describe('552. Student Attendance Record II', (): void => {
         expect(checkRecord(10101))
             .toBe(183236316)
     })
+
+    // TODO #552 Speed me up
+    it('Load test', (): void => {
+        expect(checkRecord(77777))
+            .toBe(199988634)
+    })
 })
