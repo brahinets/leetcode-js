@@ -160,6 +160,7 @@
 1. № [540. Single Element in a Sorted Array](solutions/540.%20Single%20Element%20in%20a%20Sorted%20Array/script.ts)
 1. № [543. Diameter of Binary Tree](solutions/543.%20Diameter%20of%20Binary%20Tree/script.ts)
 1. № [547. Number of Provinces](solutions/547.%20Number%20of%20Provinces/script.ts)
+1. № [552. Student Attendance Record II](solutions/552.%20Student%20Attendance%20Record%20II/script.ts)
 1. № [572. Subtree of Another Tree](solutions/572.%20Subtree%20of%20Another%20Tree/script.ts)
 1. № [576. Out of Boundary Paths](solutions/576.%20Out%20of%20Boundary%20Paths/script.ts)
 1. № [589. N-ary Tree Preorder Traversal](solutions/589.%20N-ary%20Tree%20Preorder%20Traversal/script.ts)
