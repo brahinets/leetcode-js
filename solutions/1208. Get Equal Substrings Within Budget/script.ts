@@ -8,19 +8,15 @@ function equalSubstring(s: string, t: string, maxCost: number): number {
 
     let max: number = 0
     for (let start = 0; start < s.length; start++) {
-        let hasCostsFor: number = 0
         let availableCosts: number = maxCost
 
-        for (let j = start; j < costs.length; j++) {
-            if (availableCosts - costs[j] >= 0) {
-                availableCosts -= costs[j]
-                hasCostsFor++
-            } else {
-                break
-            }
+        let end: number = start
+        while (availableCosts - costs[end] >= 0) {
+            availableCosts -= costs[end]
+            end++
         }
 
-        max = Math.max(hasCostsFor, max)
+        max = Math.max(end - start, max)
     }
 
     return max
