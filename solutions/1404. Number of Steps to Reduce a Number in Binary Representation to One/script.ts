@@ -10,11 +10,15 @@ function numSteps(s: string): number {
         if (bits[bits.length - 1] === '1') {
             bits = addOne(bits)
         } else {
-            bits = bits.slice(0, bits.length - 1)
+            bits = divideByTwo(bits)
         }
     }
 
     return steps
+}
+
+function divideByTwo(bits: string[]): string[] {
+    return bits.slice(0, bits.length - 1)
 }
 
 function addOne(chars: string[]): string[] {
