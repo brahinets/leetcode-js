@@ -1,22 +1,23 @@
 export {numSteps}
 
 function numSteps(s: string): number {
+    let bits: string[] = s.split("")
+
     let steps: number = 0
-    while (s.length > 1) {
+    while (bits.length > 1) {
         steps++
 
-        if (s[s.length - 1] === '1') {
-            s = addOne(s)
+        if (bits[bits.length - 1] === '1') {
+            bits = addOne(bits)
         } else {
-            s = s.slice(0, s.length - 1)
+            bits = bits.slice(0, bits.length - 1)
         }
     }
 
     return steps
 }
 
-function addOne(s: string): string {
-    let chars = s.split('')
+function addOne(chars: string[]): string[] {
     let i = chars.length - 1
 
     while (i >= 0 && chars[i] !== '0') {
@@ -30,5 +31,5 @@ function addOne(s: string): string {
         chars[i] = '1'
     }
 
-    return chars.join('')
+    return chars
 }
