@@ -15,4 +15,9 @@ describe('1404. Number of Steps to Reduce a Number in Binary Representation to O
         expect(numSteps("1101"))
             .toBe(6)
     })
+
+    it('Very big number overflowing int', (): void => {
+        expect(numSteps("1111011110000011100000110001011011110010111001010111110001"))
+            .toBe(85)
+    })
 })

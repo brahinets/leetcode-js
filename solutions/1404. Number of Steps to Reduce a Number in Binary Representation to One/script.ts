@@ -1,18 +1,34 @@
 export {numSteps}
 
 function numSteps(s: string): number {
-    let num: number = parseInt(s, 2)
-
     let steps: number = 0
-    while (num !== 1) {
+    while (s.length > 1) {
         steps++
 
-        if (num % 2 === 0) {
-            num /= 2
-        } else if (num % 2 === 1 || num === 0) {
-            num += 1
+        if (s[s.length - 1] === '1') {
+            s = addOne(s)
+        } else {
+            s = s.slice(0, s.length - 1)
         }
     }
 
     return steps
+}
+
+function addOne(s: string): string {
+    let chars = s.split('')
+    let i = chars.length - 1
+
+    while (i >= 0 && chars[i] !== '0') {
+        chars[i] = '0'
+        i--
+    }
+
+    if (i < 0) {
+        chars.unshift('1')
+    } else {
+        chars[i] = '1'
+    }
+
+    return chars.join('')
 }
