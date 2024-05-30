@@ -6,7 +6,7 @@ function countTriplets(arr: number[]): number {
     for (let i = 0; i < arr.length; i++) {
         for (let j = i + 1; j < arr.length; j++) {
             for (let k = j; k < arr.length; k++) {
-                if (valid(arr.slice(i, j), arr.slice(j, k + 1))) {
+                if (valid(arr, i, j, k + 1)) {
                     count++
                 }
             }
@@ -16,8 +16,8 @@ function countTriplets(arr: number[]): number {
     return count
 }
 
-function valid(first: number[], second: number[]): boolean {
-    return xor(first) === xor(second)
+function valid(array: number[], start: number, mid: number, end: number): boolean {
+    return xor(array.slice(start, mid)) === xor(array.slice(mid, end))
 }
 
 function xor(nums: number[]): number {
