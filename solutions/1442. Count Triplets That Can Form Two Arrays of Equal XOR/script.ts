@@ -17,9 +17,15 @@ function countTriplets(arr: number[]): number {
 }
 
 function valid(array: number[], start: number, mid: number, end: number): boolean {
-    return xor(array.slice(start, mid)) === xor(array.slice(mid, end))
+    return xor(array, start, mid) === xor(array, mid, end)
 }
 
-function xor(nums: number[]): number {
-    return nums.reduce((xor: number, num: number): number => xor ^ num, 0)
+function xor(nums: number[], start: number, end: number): number {
+    let result: number = 0
+
+    for (let i = start; i < end; i++) {
+        result ^= nums[i]
+    }
+
+    return result
 }
