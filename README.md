@@ -199,6 +199,7 @@
 1. № [791. Custom Sort String](solutions/791.%20Custom%20Sort%20String/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
 1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
+1. № [815. Bus Routes](solutions/815.%20Bus%20Routes/script.ts)
 1. № [834. Sum of Distances in Tree](solutions/834.%20Sum%20of%20Distances%20in%20Tree/script.ts)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
 1. № [852. Peak Index in a Mountain Array](solutions/852.%20Peak%20Index%20in%20a%20Mountain%20Array/script.ts)
