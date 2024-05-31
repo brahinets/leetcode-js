@@ -3,6 +3,10 @@ import {DirectedUnweightedGraph} from "../../common/Graph"
 export {numBusesToDestination}
 
 function numBusesToDestination(routes: number[][], source: number, target: number): number {
+    if(source === target) {
+        return 0
+    }
+
     const graph: DirectedUnweightedGraph = buildRoutes(routes)
 
     let toVisit: number[] = [...graph.getNeighbours(source).keys()]

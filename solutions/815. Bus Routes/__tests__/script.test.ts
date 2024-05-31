@@ -16,6 +16,11 @@ describe('815. Bus Routes', (): void => {
             .toBe(1)
     })
 
+    it('Already in destination', (): void => {
+        expect(numBusesToDestination([[1, 7], [3, 5]], 5, 5))
+            .toBe(0)
+    })
+
     it('Impossible', (): void => {
         expect(numBusesToDestination([[7, 12], [4, 5, 15], [6], [15, 19], [9, 12, 13]], 15, 12))
             .toBe(-1)
