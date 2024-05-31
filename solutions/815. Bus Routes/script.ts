@@ -13,6 +13,10 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
         let toVisitNext: number[] = []
 
         for (const route of toVisit) {
+            if (route === target) {
+                return count
+            }
+
             for (const stop of graph.getNeighbours(route).keys()) {
                 if (stop === target) {
                     return count
@@ -43,7 +47,7 @@ function buildRoutes(buses: number[][]): DirectedUnweightedGraph {
             graph.addEdge(bus[i - 1], bus[i])
         }
 
-        if (bus.length > 2) {
+        if (bus.length > 1) {
             graph.addEdge(bus[bus.length - 1], bus[0])
         }
     }
