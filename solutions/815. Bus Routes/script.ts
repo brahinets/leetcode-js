@@ -23,6 +23,10 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
                 }
 
                 for (const next of graph.getNeighbours(stop).keys()) {
+                    if (next === target) {
+                        return count
+                    }
+
                     if (!visited.includes(next)) {
                         visited.push(next)
                         toVisitNext.push(next)
