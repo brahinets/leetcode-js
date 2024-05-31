@@ -14,6 +14,6 @@ describe('260. Single Number III', (): void => {
 
     it('All unique. Return in different order', (): void => {
         expect(singleNumber([0, 1]))
-            .toEqual([0, 1])
+            .toEqual([1, 0])
     })
 })
