@@ -107,6 +107,7 @@
 1. № [239. Sliding Window Maximum](solutions/239.%20Sliding%20Window%20Maximum/script.ts)
 1. № [242. Valid Anagram](solutions/242.%20Valid%20Anagram/script.ts)
 1. № [258. Add Digits](solutions/258.%20Add%20Digits/script.ts)
+1. № [260. Single Number III](solutions/260.%20Single%20Number%20III/script.ts)
 1. № [268. Missing Number](solutions/268.%20Missing%20Number/script.ts)
 1. № [278. First Bad Version](solutions/278.%20First%20Bad%20Version/script.ts)
 1. № [279. Perfect Squares](solutions/279.%20Perfect%20Squares/script.ts)
