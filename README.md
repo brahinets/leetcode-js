@@ -411,5 +411,6 @@
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
 1. № [3068. Find the Maximum Sum of Node Values](solutions/3068.%20Find%20the%20Maximum%20Sum%20of%20Node%20Values/script.ts)
 1. № [3075. Maximize Happiness of Selected Children](solutions/3075.%20Maximize%20Happiness%20of%20Selected%20Children/script.ts)
+1. № [3110. Score of a String](solutions/3110.%20Score%20of%20a%20String/script.ts)
 
 </details>
