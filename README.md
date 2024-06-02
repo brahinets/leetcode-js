@@ -119,6 +119,7 @@
 1. № [319. Bulb Switcher](solutions/319.%20Bulb%20Switcher/script.ts)
 1. № [342. Power of Four](solutions/342.%20Power%20of%20Four/script.ts)
 1. № [343. Integer Break](solutions/343.%20Integer%20Break/script.ts)
+1. № [344. Reverse String](solutions/344.%20Reverse%20String/script.ts)
 1. № [347. Top K Frequent Elements](solutions/347.%20Top%20K%20Frequent%20Elements/script.ts)
 1. № [349. Intersection of Two Arrays](solutions/349.%20Intersection%20of%20Two%20Arrays/script.ts)
 1. № [368. Largest Divisible Subset](solutions/368.%20Largest%20Divisible%20Subset/script.ts)
