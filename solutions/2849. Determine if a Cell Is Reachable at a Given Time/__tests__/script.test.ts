@@ -10,4 +10,9 @@ describe('2849. Determine if a Cell Is Reachable at a Given Time', (): void => {
         expect(isReachableAtTime(2, 4, 7, 7, 6))
             .toBe(true)
     })
+
+    it('Has extra time', (): void => {
+        expect(isReachableAtTime(1, 2, 1, 2, 1))
+            .toBe(false)
+    })
 })
