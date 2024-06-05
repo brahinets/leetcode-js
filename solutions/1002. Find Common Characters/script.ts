@@ -27,12 +27,12 @@ function collectCounts(words: string[]): Map<string, number> {
         const word: string = words[i]
         const second: Map<string, number> = count(word.split(""))
 
-        for (let [firstLetter, firstCount] of commons) {
-            const min: number = Math.min(firstCount, second.get(firstLetter) ?? 0)
+        for (let [letter, letterCount] of commons) {
+            const min: number = Math.min(letterCount, second.get(letter) ?? 0)
             if (min === 0) {
-                commons.delete(firstLetter)
+                commons.delete(letter)
             } else {
-                commons.set(firstLetter, min)
+                commons.set(letter, min)
             }
         }
     }
