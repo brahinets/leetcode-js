@@ -23,7 +23,8 @@ function collectResult(commons: Map<string, number>): string[] {
 function collectCounts(words: string[]): Map<string, number> {
     const commons: Map<string, number> = count(words[0].split(""))
 
-    for (const word of words) {
+    for (let i: number = 1; i < words.length; i++) {
+        const word: string = words[i]
         const second: Map<string, number> = count(word.split(""))
 
         for (let [firstLetter, firstCount] of commons) {
