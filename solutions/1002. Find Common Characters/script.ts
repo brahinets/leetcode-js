@@ -3,7 +3,7 @@ import {count} from "../../common/array-utils"
 export {commonChars}
 
 function commonChars(words: string[]): string[] {
-    const commons = collectCounts(words)
+    const commons: Map<string, number> = collectCounts(words)
 
     return collectResult(commons)
 }
