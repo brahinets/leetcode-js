@@ -234,6 +234,7 @@
 1. № [989. Add to Array-Form of Integer](solutions/989.%20Add%20to%20Array-Form%20of%20Integer/script.ts)
 1. № [992. Subarrays with K Different Integers](solutions/992.%20Subarrays%20with%20K%20Different%20Integers/script.ts)
 1. № [997. Find the Town Judge](solutions/997.%20Find%20the%20Town%20Judge/script.ts)
+1. № [1002. Find Common Characters](solutions/1002.%20Find%20Common%20Characters/script.ts)
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
 1. № [1026. Maximum Difference Between Node and Ancestor](solutions/1026.%20Maximum%20Difference%20Between%20Node%20and%20Ancestor/script.ts)
 1. № [1027. Longest Arithmetic Subsequence](solutions/1027.%20Longest%20Arithmetic%20Subsequence/script.ts)
