@@ -14,16 +14,12 @@ function isNStraightHand(hand: number[], groupSize: number): boolean {
             }
 
             const count: number = counts.get(start)!
-            if (count === 0) {
-                return false
+            if (count === 1) {
+                counts.delete(start)
             } else {
-                if (count === 1) {
-                    counts.delete(start)
-                } else {
-                    counts.set(start, count - 1)
-                }
-                group++
+                counts.set(start, count - 1)
             }
+            group++
 
             start++
         }
