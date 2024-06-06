@@ -202,6 +202,7 @@
 1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
 1. № [834. Sum of Distances in Tree](solutions/834.%20Sum%20of%20Distances%20in%20Tree/script.ts)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
+1. № [846. Hand of Straights](solutions/846.%20Hand%20of%20Straights/script.ts)
 1. № [852. Peak Index in a Mountain Array](solutions/852.%20Peak%20Index%20in%20a%20Mountain%20Array/script.ts)
 1. № [853. Car Fleet](solutions/853.%20Car%20Fleet/script.ts)
 1. № [857. Minimum Cost to Hire K Workers](solutions/857.%20Minimum%20Cost%20to%20Hire%20K%20Workers/script.ts)
