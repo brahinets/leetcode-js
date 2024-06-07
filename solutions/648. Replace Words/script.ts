@@ -18,13 +18,24 @@ function replaceWords(dictionary: string[], sentence: string): string {
 function findPrefix(dictionary: string[], word: string): string {
     const candidates: string[] = findPossiblePrefixes(dictionary, word)
 
-    if (candidates.length > 0) {
-        return candidates.sort((a, b) => a.length - b.length)[0]
-    } else {
-        return word
-    }
+    return findShortest(candidates) ?? word
 }
 
 function findPossiblePrefixes(dictionary: string[], word: string): string[] {
     return dictionary.filter((dict: string): boolean => word.startsWith(dict))
+}
+
+function findShortest(candidates: string[]): string | undefined {
+    if (candidates.length === 0) {
+        return undefined
+    }
+
+    let shortest: string = candidates[0]
+    for (let i = 1; i < candidates.length; i++) {
+        if (candidates[i].length < shortest.length) {
+            shortest = candidates[i]
+        }
+    }
+
+    return shortest
 }
