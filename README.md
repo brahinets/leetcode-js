@@ -173,6 +173,7 @@
 1. № [629. K Inverse Pairs Array](solutions/629.%20K%20Inverse%20Pairs%20Array/script.ts)
 1. № [645. Set Mismatch](solutions/645.%20Set%20Mismatch/script.ts)
 1. № [647. Palindromic Substrings](solutions/647.%20Palindromic%20Substrings/script.ts)
+1. № [648. Replace Words](solutions/648.%20Replace%20Words/script.ts)
 1. № [649. Dota2 Senate](solutions/649.%20Dota2%20Senate/script.ts)
 1. № [661. Image Smoother](solutions/661.%20Image%20Smoother/script.ts)
 1. № [678. Valid Parenthesis String](solutions/678.%20Valid%20Parenthesis%20String/script.ts)
