@@ -1,10 +1,6 @@
 export {subarraysDivByK}
 
 function subarraysDivByK(nums: number[], k: number): number {
-    return window(nums, k)
-}
-
-function window(nums: number[], k: number): number {
     const prefixMods: Map<number, number> = new Map<number, number>([[0, 1]])
 
     let count: number = 0
