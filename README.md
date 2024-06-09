@@ -230,6 +230,7 @@
 1. № [950. Reveal Cards In Increasing Order](solutions/950.%20Reveal%20Cards%20In%20Increasing%20Order/script.ts)
 1. № [956. Tallest Billboard](solutions/956.%20Tallest%20Billboard/script.ts)
 1. № [958. Check Completeness of a Binary Tree](solutions/958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
+1. № [974. Subarray Sums Divisible by K](solutions/974.%20Subarray%20Sums%20Divisible%20by%20K/script.ts)
 1. № [977. Squares of a Sorted Array](solutions/977.%20Squares%20of%20a%20Sorted%20Array/script.ts)
 1. № [979. Distribute Coins in Binary Tree](solutions/979.%20Distribute%20Coins%20in%20Binary%20Tree/script.ts)
 1. № [981. Time Based Key-Value Store](solutions/981.%20Time%20Based%20Key-Value%20Store/script.ts)
