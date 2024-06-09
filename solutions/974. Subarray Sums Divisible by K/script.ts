@@ -5,8 +5,8 @@ function subarraysDivByK(nums: number[], k: number): number {
 
     let count: number = 0
     let prefixMod: number = 0
-    for (let i = 0; i < nums.length; i++) {
-        prefixMod = (prefixMod + nums[i] % k + k) % k
+    for (const num of nums) {
+        prefixMod = (prefixMod + num % k + k) % k
 
         const prefix: number = prefixMods.get(prefixMod) ?? 0
         count += prefix
