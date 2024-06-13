@@ -357,6 +357,7 @@
 1. № [1992. Find All Groups of Farmland](solutions/1992.%20Find%20All%20Groups%20of%20Farmland/script.ts)
 1. № [2000. Reverse Prefix of Word](solutions/2000.%20Reverse%20Prefix%20of%20Word/script.ts)
 1. № [2024. Maximize the Confusion of an Exam](solutions/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/script.ts)
+1. № [2037. Minimum Number of Moves to Seat Everyone](solutions/2037.%20Minimum%20Number%20of%20Moves%20to%20Seat%20Everyone/script.ts)
 1. № [2073. Time Needed to Buy Tickets](solutions/2073.%20Time%20Needed%20to%20Buy%20Tickets/script.ts)
 1. № [2090. K Radius Subarray Averages](solutions/2090.%20K%20Radius%20Subarray%20Averages/script.ts)
 1. № [2092. Find All People With Secret](solutions/2092.%20Find%20All%20People%20With%20Secret/script.ts)
