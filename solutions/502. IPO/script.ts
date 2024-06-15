@@ -6,43 +6,51 @@ function findMaximizedCapital(
     profits: number[],
     capital: number[]
 ): number {
+    const projects: Project[] = collectProjects(profits, capital);
+
     let result: number = initialCapital
+    let projectIndex: number = 0
+    const n: number = projects.length
+    const maxHeap: number[] = []
 
-    while (numProjects > 0 && capital.length > 0) {
-        let maxProfit: number = -1
-        let canAffordAll: boolean = numProjects >= capital.length
-
-        for (let i = 0; i < capital.length; i++) {
-            if (capital[i] <= result) {
-                if (maxProfit === -1) {
-                    maxProfit = i
-                }
-
-                if (profits[i] > profits[maxProfit]) {
-                    maxProfit = i
-                }
-            } else {
-                canAffordAll = false
-            }
+    while (numProjects > 0) {
+        while (projectIndex < n && projects[projectIndex].capital <= result) {
+            maxHeap.push(projects[projectIndex].profit)
+            projectIndex++
         }
 
-        if (maxProfit === -1) {
+        if (maxHeap.length === 0) {
             break
         }
 
-        if (canAffordAll) {
-            for (let i: number = 0; i < capital.length; i++) {
-                result += profits[i]
-            }
-
-            return result
-        }
-
-        result += profits[maxProfit]
-        capital.splice(maxProfit, 1)
-        profits.splice(maxProfit, 1)
+        const maxProfit: number = Math.max(...maxHeap)
+        const maxProfitIndex: number = maxHeap.findIndex((profit: number): boolean => profit === maxProfit)
+        maxHeap.splice(maxProfitIndex, 1)
+        result += maxProfit
         numProjects--
     }
 
     return result
+}
+
+function collectProjects(profits: number[], capital: number[]): Project[] {
+    const projects: Project[] = []
+
+    for (let i: number = 0; i < profits.length; i++) {
+        projects.push(new Project(profits[i], capital[i]))
+    }
+
+    projects.sort((a: Project, b: Project): number => a.capital - b.capital)
+
+    return projects
+}
+
+class Project {
+    constructor(profit: number, capital: number) {
+        this.profit = profit
+        this.capital = capital
+    }
+
+    readonly profit: number
+    readonly capital: number
 }
