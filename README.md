@@ -118,6 +118,7 @@
 1. № [310. Minimum Height Trees](solutions/310.%20Minimum%20Height%20Trees/script.ts)
 1. № [316. Remove Duplicate Letters](solutions/316.%20Remove%20Duplicate%20Letters/script.ts)
 1. № [319. Bulb Switcher](solutions/319.%20Bulb%20Switcher/script.ts)
+1. № [330. Patching Array](solutions/330.%20Patching%20Array/script.ts)
 1. № [342. Power of Four](solutions/342.%20Power%20of%20Four/script.ts)
 1. № [343. Integer Break](solutions/343.%20Integer%20Break/script.ts)
 1. № [344. Reverse String](solutions/344.%20Reverse%20String/script.ts)
