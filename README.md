@@ -175,6 +175,7 @@
 1. № [621. Task Scheduler](solutions/621.%20Task%20Scheduler/script.ts)
 1. № [623. Add One Row to Tree](solutions/623.%20Add%20One%20Row%20to%20Tree/script.ts)
 1. № [629. K Inverse Pairs Array](solutions/629.%20K%20Inverse%20Pairs%20Array/script.ts)
+1. № [633. Sum of Square Numbers](solutions/633.%20Sum%20of%20Square%20Numbers/script.ts)
 1. № [645. Set Mismatch](solutions/645.%20Set%20Mismatch/script.ts)
 1. № [647. Palindromic Substrings](solutions/647.%20Palindromic%20Substrings/script.ts)
 1. № [648. Replace Words](solutions/648.%20Replace%20Words/script.ts)
