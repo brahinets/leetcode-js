@@ -21,4 +21,9 @@ describe('633. Sum of Square Numbers', (): void => {
         expect(judgeSquareSum(3))
             .toBe(false)
     })
+
+    it('No. Load test', (): void => {
+        expect(judgeSquareSum(2147482647))
+            .toBe(false)
+    })
 })
