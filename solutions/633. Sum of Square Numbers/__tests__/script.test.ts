@@ -12,6 +12,11 @@ describe('633. Sum of Square Numbers', (): void => {
             .toBe(true)
     })
 
+    it('Yes with none positive', (): void => {
+        expect(judgeSquareSum(0))
+            .toBe(true)
+    })
+
     it('No', (): void => {
         expect(judgeSquareSum(3))
             .toBe(false)
