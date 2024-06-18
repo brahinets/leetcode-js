@@ -5,15 +5,15 @@ function maxProfitAssignment(difficulty: number[], profit: number[], worker: num
     worker.sort((a: number, b: number): number => a - b)
 
     let totalProfit: number = 0
-    let maxRevenue: number = 0
-    let j: number = 0
+    let maxProfitForWorker: number = 0
+    let takenJobs: number = 0
     for (let w: number = 0; w < worker.length; w++) {
-        while (j < jobs.length && jobs[j].difficulty <= worker[w]) {
-            maxRevenue = Math.max(maxRevenue, jobs[j].profit)
-            j++
+        while (takenJobs < jobs.length && jobs[takenJobs].difficulty <= worker[w]) {
+            maxProfitForWorker = Math.max(maxProfitForWorker, jobs[takenJobs].profit)
+            takenJobs++
         }
 
-        totalProfit += maxRevenue
+        totalProfit += maxProfitForWorker
     }
 
     return totalProfit
