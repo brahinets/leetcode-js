@@ -5,7 +5,7 @@ function maxDistance(position: number[], m: number): number {
 
     let answer: number = 0
     let left: number = 1
-    let right: number = Math.ceil(position[position.length - 1] / (m - 1))
+    let right: number = Math.floor(position[position.length - 1] / (m - 1))
 
     while (left <= right) {
         const mid: number = Math.floor(left + (right - left) / 2)
