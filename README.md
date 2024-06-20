@@ -311,6 +311,7 @@
 1. № [1531. String Compression II](solutions/1531.%20String%20Compression%20II/script.ts)
 1. № [1539. Kth Missing Positive Number](solutions/1539.%20Kth%20Missing%20Positive%20Number/script.ts)
 1. № [1544. Make The String Great](solutions/1544.%20Make%20The%20String%20Great/script.ts)
+1. № [1552. Magnetic Force Between Two Balls](solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/script.ts)
 1. № [1561. Maximum Number of Coins You Can Get](solutions/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/script.ts)
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
 1. № [1575. Count All Possible Routes](solutions/1575.%20Count%20All%20Possible%20Routes/script.ts)
