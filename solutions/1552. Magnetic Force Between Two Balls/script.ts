@@ -1,3 +1,5 @@
+import {last} from "../../common/array-utils";
+
 export {maxDistance}
 
 function maxDistance(position: number[], m: number): number {
@@ -5,7 +7,7 @@ function maxDistance(position: number[], m: number): number {
 
     let answer: number = 0
     let left: number = 1
-    let right: number = Math.floor(position[position.length - 1] / (m - 1))
+    let right: number = Math.floor(last(position)! / (m - 1))
 
     while (left <= right) {
         const mid: number = Math.floor(left + (right - left) / 2)
@@ -21,16 +23,16 @@ function maxDistance(position: number[], m: number): number {
     return answer
 }
 
-function canPlaceBalls(gap: number, position: number[], m: number): number {
-    let prevBallPos: number = position[0]
+function canPlaceBalls(gap: number, position: number[], balls: number): number {
+    let prevBallPosition: number = position[0]
     let ballsPlaced: number = 1
 
-    for (let i: number = 1; i < position.length && ballsPlaced < m; i++) {
-        let currPos: number = position[i]
+    for (let i: number = 1; i < position.length && ballsPlaced < balls; i++) {
+        let currPosition: number = position[i]
 
-        if (currPos - prevBallPos >= gap) {
+        if (currPosition - prevBallPosition >= gap) {
             ballsPlaced++
-            prevBallPos = currPos
+            prevBallPosition = currPosition
         }
     }
 
