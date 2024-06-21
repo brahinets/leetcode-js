@@ -1,28 +1,28 @@
 export {maxSatisfied}
 
 function maxSatisfied(customers: number[], grumpy: number[], minutes: number): number {
-    let totalCustomers: number = findMaxPossibleUnhappyCustomers(minutes, customers, grumpy)
+    let totalHappy: number = 0
+    let extraHappy: number = 0
+    let currentExtra: number = 0
+    let thresholdStart: number = 0
 
-    for (let i = 0; i < customers.length; i++) {
-        totalCustomers += customers[i] * (1 - grumpy[i]);
+    for (let minute = 0; minute < customers.length; minute++) {
+        if (grumpy[minute] === 0) {
+            totalHappy += customers[minute]
+        } else {
+            currentExtra += customers[minute]
+        }
+
+        const exceedCalmThreshold = minute - thresholdStart + 1 > minutes
+        if (exceedCalmThreshold) {
+            if (grumpy[thresholdStart] === 1) {
+                currentExtra -= customers[thresholdStart]
+            }
+            thresholdStart++
+        }
+
+        extraHappy = Math.max(extraHappy, currentExtra)
     }
 
-    return totalCustomers
-}
-
-function findMaxPossibleUnhappyCustomers(minutes: number, customers: number[], grumpy: number[]): number {
-    let unhappyCustomers: number = 0
-    for (let i = 0; i < minutes; i++) {
-        unhappyCustomers += customers[i] * grumpy[i]
-    }
-
-    let maxUnhappyCustomers: number = unhappyCustomers
-    for (let i = minutes; i < customers.length; i++) {
-        unhappyCustomers += customers[i] * grumpy[i]
-        unhappyCustomers -= customers[i - minutes] * grumpy[i - minutes]
-
-        maxUnhappyCustomers = Math.max(maxUnhappyCustomers, unhappyCustomers)
-    }
-
-    return maxUnhappyCustomers
+    return totalHappy + extraHappy
 }
