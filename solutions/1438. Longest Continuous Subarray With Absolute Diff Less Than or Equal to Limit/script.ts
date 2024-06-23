@@ -1,3 +1,5 @@
+import {first, last} from "../../common/array-utils";
+
 export {longestSubarray}
 
 function longestSubarray(nums: number[], limit: number): number {
@@ -7,21 +9,21 @@ function longestSubarray(nums: number[], limit: number): number {
     const max: number[] = []
     const min: number[] = []
     for (let end = 0; end < nums.length; end++) {
-        while (max.length > 0 && nums[end] > nums[max[max.length - 1]]) {
+        while (max.length > 0 && nums[end] > nums[last(max)!]) {
             max.pop()
         }
         max.push(end)
 
-        while (min.length > 0 && nums[end] < nums[min[min.length - 1]]) {
+        while (min.length > 0 && nums[end] < nums[last(min)!]) {
             min.pop()
         }
         min.push(end)
 
-        while (nums[max[0]] - nums[min[0]] > limit) {
-            if (max[0] === start) {
+        while (nums[first(max)!] - nums[first(min)!] > limit) {
+            if (first(max)! === start) {
                 max.shift()
             }
-            if (min[0] === start) {
+            if (first(min)! === start) {
                 min.shift()
             }
             start++
