@@ -244,6 +244,7 @@
 1. № [988. Smallest String Starting From Leaf](solutions/988.%20Smallest%20String%20Starting%20From%20Leaf/script.ts)
 1. № [989. Add to Array-Form of Integer](solutions/989.%20Add%20to%20Array-Form%20of%20Integer/script.ts)
 1. № [992. Subarrays with K Different Integers](solutions/992.%20Subarrays%20with%20K%20Different%20Integers/script.ts)
+1. № [995. Minimum Number of K Consecutive Bit Flips](solutions/995.%20Minimum%20Number%20of%20K%20Consecutive%20Bit%20Flips/script.ts)
 1. № [997. Find the Town Judge](solutions/997.%20Find%20the%20Town%20Judge/script.ts)
 1. № [1002. Find Common Characters](solutions/1002.%20Find%20Common%20Characters/script.ts)
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
