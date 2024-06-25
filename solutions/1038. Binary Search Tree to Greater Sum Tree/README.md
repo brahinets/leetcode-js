@@ -16,4 +16,4 @@ search tree is a tree that satisfies these constraints:
 - `0 <= Node.val <= 100`
 - All the values in the tree are unique.
 
-**Note:** This question is the same as 538: https://leetcode.com/problems/convert-bst-to-greater-tree/
+**Note:** This question is the same as [538](https://leetcode.com/problems/convert-bst-to-greater-tree)
