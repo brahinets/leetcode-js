@@ -163,6 +163,7 @@
 1. № [523. Continuous Subarray Sum](solutions/523.%20Continuous%20Subarray%20Sum/script.ts)
 1. № [525. Contiguous Array](solutions/525.%20Contiguous%20Array/script.ts)
 1. № [530. Minimum Absolute Difference in BST](solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST/script.ts)
+1. № [538. Convert BST to Greater Tree](solutions/538.%20Convert%20BST%20to%20Greater%20Tree/script.ts)
 1. № [540. Single Element in a Sorted Array](solutions/540.%20Single%20Element%20in%20a%20Sorted%20Array/script.ts)
 1. № [543. Diameter of Binary Tree](solutions/543.%20Diameter%20of%20Binary%20Tree/script.ts)
 1. № [547. Number of Provinces](solutions/547.%20Number%20of%20Provinces/script.ts)
