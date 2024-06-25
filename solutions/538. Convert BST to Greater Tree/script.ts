@@ -1,5 +1,5 @@
 import {TreeNode} from "../../common/TreeNode"
-import {bstToGst} from "../1038. Binary Search Tree to Greater Sum Tree/script";
+import {bstToGst} from "../1038. Binary Search Tree to Greater Sum Tree/script"
 
 export {TreeNode, convertBST}
 
