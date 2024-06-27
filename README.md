@@ -349,6 +349,7 @@
 1. № [1758. Minimum Changes To Make Alternating Binary String](solutions/1758.%20Minimum%20Changes%20To%20Make%20Alternating%20Binary%20String/script.ts)
 1. № [1759. Count Number of Homogenous Substrings](solutions/1759.%20Count%20Number%20of%20Homogenous%20Substrings/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
+1. № [1791. Find Center of Star Graph](solutions/1791.%20Find%20Center%20of%20Star%20Graph/script.ts)
 1. № [1793. Maximum Score of a Good Subarray](solutions/1793.%20Maximum%20Score%20of%20a%20Good%20Subarray/script.ts)
 1. № [1799. Maximize Score After N Operations](solutions/1799.%20Maximize%20Score%20After%20N%20Operations/script.ts)
 1. № [1802. Maximum Value at a Given Index in a Bounded Array](solutions/1802.%20Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array/script.ts)
