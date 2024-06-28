@@ -391,6 +391,7 @@
 1. № [2236. Root Equals Sum of Children](solutions/2236.%20Root%20Equals%20Sum%20of%20Children/script.ts)
 1. № [2264. Largest 3-Same-Digit Number in String](solutions/2264.%20Largest%203-Same-Digit%20Number%20in%20String/script.ts)
 1. № [2265. Count Nodes Equal to Average of Subtree](solutions/2265.%20Count%20Nodes%20Equal%20to%20Average%20of%20Subtree/script.ts)
+1. № [2285. Maximum Total Importance of Roads](solutions/2285.%20Maximum%20Total%20Importance%20of%20Roads/script.ts)
 1. № [2300. Successful Pairs of Spells and Potions](solutions/2300.%20Successful%20Pairs%20of%20Spells%20and%20Potions/script.ts)
 1. № [2305. Fair Distribution of Cookies](solutions/2305.%20Fair%20Distribution%20of%20Cookies/script.ts)
 1. № [2331. Evaluate Boolean Binary Tree](solutions/2331.%20Evaluate%20Boolean%20Binary%20Tree/script.ts)
