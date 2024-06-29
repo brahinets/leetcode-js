@@ -19,13 +19,36 @@ abstract class Graph {
         return this.nodes.get(from) ?? new Map<number, number>()
     }
 
+    pathExist(from: number, to: number): boolean {
+        return this.dfs(from, to, new Set<number>())
+    }
+
     shortestPath(from: number, to: number): number {
         return this.findBellmanFord(from, to)
     }
 
+
+    private dfs(node: number, target: number, visited: Set<number>): boolean {
+        if (node === target) {
+            return true;
+        }
+
+        visited.add(node);
+
+        for (const [neighbor] of this.getNeighbours(node)) {
+            if (!visited.has(neighbor)) {
+                if (this.dfs(neighbor, target, visited)) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
     private findBellmanFord(from: number, to: number): number {
         const nodesCount: number = this.nodesCount()
-        
+
         const dist: number[] = arrayOf(Number.MAX_VALUE, nodesCount)
         dist[from] = 0
         for (let i: number = 0; i < nodesCount - 1; i++) {
