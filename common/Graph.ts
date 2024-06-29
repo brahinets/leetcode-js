@@ -1,4 +1,4 @@
-import {arrayOf} from "./array-factories";
+import {arrayOf} from "./array-factories"
 
 export {DirectedWeightedGraph, DirectedUnweightedGraph, UndirectedWeightedGraph, UndirectedUnweightedGraph}
 
@@ -30,20 +30,20 @@ abstract class Graph {
 
     private dfs(node: number, target: number, visited: Set<number>): boolean {
         if (node === target) {
-            return true;
+            return true
         }
 
-        visited.add(node);
+        visited.add(node)
 
         for (const [neighbor] of this.getNeighbours(node)) {
             if (!visited.has(neighbor)) {
                 if (this.dfs(neighbor, target, visited)) {
-                    return true;
+                    return true
                 }
             }
         }
 
-        return false;
+        return false
     }
 
     private findBellmanFord(from: number, to: number): number {
