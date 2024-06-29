@@ -7,11 +7,11 @@ function getAncestors(n: number, edges: number[][]): number[][] {
     const graph: DirectedUnweightedGraph = buildGraph(edges)
 
     const answer: number[][] = arrayOf([], n)
-    for (let node: number = 0; node < n; node++) {
-        for (let potentialAncestor: number = 0; potentialAncestor < n; potentialAncestor++) {
-            if (node !== potentialAncestor) {
-                if (graph.pathExist(potentialAncestor, node)) {
-                    answer[node].push(potentialAncestor)
+    for (let source: number = 0; source < n; source++) {
+        for (let target: number = 0; target < n; target++) {
+            if (source !== target) {
+                if (graph.pathExist(target, source)) {
+                    answer[source].push(target)
                 }
             }
         }
