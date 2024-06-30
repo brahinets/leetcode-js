@@ -9,22 +9,34 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
 
     const graph: DirectedUnweightedGraph = buildRoutes(routes)
 
-    const queue: [number, number][] = [[source, 0]]
+    const queue: number[] = [...graph.getNeighbours(source).keys()]
+    const visitedRoutes: Set<number> = new Set<number>([...graph.getNeighbours(source).keys()])
     const visitedStops: Set<number> = new Set<number>([source])
 
+    let busCount: number = 1
     while (queue.length > 0) {
-        const [currentStop, busesTaken]: [number, number] = queue.shift()!
+        const size: number = queue.length
 
-        for (const [nextStop] of graph.getNeighbours(currentStop)) {
-            if (nextStop === target) {
-                return busesTaken + 1
-            }
+        for (let i: number = 0; i < size; i++) {
+            const route: number = queue.shift()!
 
-            if (!visitedStops.has(nextStop)) {
-                visitedStops.add(nextStop)
-                queue.push([nextStop, busesTaken + 1])
+            for (const stop of routes[route]) {
+                if (stop === target) {
+                    return busCount
+                }
+
+                for (const nextRoute of graph.getNeighbours(stop).keys()) {
+                    if (!visitedRoutes.has(nextRoute)) {
+                        visitedRoutes.add(nextRoute)
+                        queue.push(nextRoute)
+                    }
+                }
+
+                visitedStops.add(stop)
             }
         }
+
+        busCount++
     }
 
     return -1
@@ -33,12 +45,9 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
 function buildRoutes(buses: number[][]): DirectedUnweightedGraph {
     const graph: DirectedUnweightedGraph = new DirectedUnweightedGraph()
 
-    for (const bus of buses) {
-        for (let i: number = 0; i < bus.length; i++) {
-            for (let j: number = i + 1; j < bus.length; j++) {
-                graph.addEdge(bus[i], bus[j])
-                graph.addEdge(bus[j], bus[i])
-            }
+    for (let bus = 0; bus < buses.length; bus++) {
+        for (const stop of buses[bus]) {
+            graph.addEdge(stop, bus)
         }
     }
 
