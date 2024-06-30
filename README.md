@@ -324,6 +324,7 @@
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
 1. № [1575. Count All Possible Routes](solutions/1575.%20Count%20All%20Possible%20Routes/script.ts)
 1. № [1578. Minimum Time to Make Rope Colorful](solutions/1578.%20Minimum%20Time%20to%20Make%20Rope%20Colorful/script.ts)
+1. № [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](solutions/1579.%20Remove%20Max%20Number%20of%20Edges%20to%20Keep%20Graph%20Fully%20Traversable/script.ts)
 1. № [1582. Special Positions in a Binary Matrix](solutions/1582.%20Special%20Positions%20in%20a%20Binary%20Matrix/script.ts)
 1. № [1603. Design Parking System](solutions/1603.%20Design%20Parking%20System/script.ts)
 1. № [1608. Special Array With X Elements Greater Than or Equal X](solutions/1608.%20Special%20Array%20With%20X%20Elements%20Greater%20Than%20or%20Equal%20X/script.ts)
