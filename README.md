@@ -124,6 +124,7 @@
 1. № [344. Reverse String](solutions/344.%20Reverse%20String/script.ts)
 1. № [347. Top K Frequent Elements](solutions/347.%20Top%20K%20Frequent%20Elements/script.ts)
 1. № [349. Intersection of Two Arrays](solutions/349.%20Intersection%20of%20Two%20Arrays/script.ts)
+1. № [350. Intersection of Two Arrays II](solutions/350.%20Intersection%20of%20Two%20Arrays%20II/script.ts)
 1. № [368. Largest Divisible Subset](solutions/368.%20Largest%20Divisible%20Subset/script.ts)
 1. № [373. Find K Pairs with Smallest Sums](solutions/373.%20Find%20K%20Pairs%20with%20Smallest%20Sums/script.ts)
 1. № [380. Insert Delete GetRandom O(1)](solutions/380.%20Insert%20Delete%20GetRandom%20O%281%29/script.ts)
