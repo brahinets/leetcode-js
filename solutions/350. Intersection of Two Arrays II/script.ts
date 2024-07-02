@@ -10,7 +10,9 @@ function intersect(nums1: number[], nums2: number[]): number[] {
     const result: number[] = []
     for (const [num, count] of first) {
         if (second.has(num)) {
-            result.push(...arrayOf(num, Math.min(count, second.get(num)!)))
+            const repeats: number = Math.min(count, second.get(num)!)
+
+            result.push(...arrayOf(num, repeats))
         }
     }
 
