@@ -387,6 +387,7 @@
 1. № [2140. Solving Questions With Brainpower](solutions/2140.%20Solving%20Questions%20With%20Brainpower/script.ts)
 1. № [2147. Number of Ways to Divide a Long Corridor](solutions/2147.%20Number%20of%20Ways%20to%20Divide%20a%20Long%20Corridor/script.ts)
 1. № [2149. Rearrange Array Elements by Sign](solutions/2149.%20Rearrange%20Array%20Elements%20by%20Sign/script.ts)
+1. № [2181. Merge Nodes in Between Zeros](solutions/2181.%20Merge%20Nodes%20in%20Between%20Zeros/script.ts)
 1. № [2187. Minimum Time to Complete Trips](solutions/2187.%20Minimum%20Time%20to%20Complete%20Trips/script.ts)
 1. № [2191. Sort the Jumbled Numbers](solutions/2191.%20Sort%20the%20Jumbled%20Numbers/script.ts)
 1. № [2192. All Ancestors of a Node in a Directed Acyclic Graph](solutions/2192.%20All%20Ancestors%20of%20a%20Node%20in%20a%20Directed%20Acyclic%20Graph/script.ts)
