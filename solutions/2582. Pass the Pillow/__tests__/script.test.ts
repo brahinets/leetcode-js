@@ -16,7 +16,12 @@ describe('2582. Pass the Pillow', (): void => {
             .toBe(6)
     })
 
-    it('Pass forward, back and forward', (): void => {
+    it('Pass forward multiple times', (): void => {
+        expect(passThePillow(18, 38))
+            .toBe(5)
+    })
+
+    it('Pass forward multiple times #2', (): void => {
         expect(passThePillow(4, 10))
             .toBe(3)
     })
