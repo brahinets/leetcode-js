@@ -426,6 +426,7 @@
 1. № [2540. Minimum Common Value](solutions/2540.%20Minimum%20Common%20Value/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
+1. № [2582. Pass the Pillow](solutions/2582.%20Pass%20the%20Pillow/script.ts)
 1. № [2597. The Number of Beautiful Subsets](solutions/2597.%20The%20Number%20of%20Beautiful%20Subsets/script.ts)
 1. № [2610. Convert an Array Into a 2D Array With Conditions](solutions/2610.%20Convert%20an%20Array%20Into%20a%202D%20Array%20With%20Conditions/script.ts)
 1. № [2616. Minimize the Maximum Difference of Pairs](solutions/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/script.ts)
