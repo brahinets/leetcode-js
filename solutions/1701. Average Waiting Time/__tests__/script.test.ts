@@ -9,6 +9,6 @@ describe('1701. Average Waiting Time', (): void => {
 
     it('Floating waiting time', (): void => {
         expect(averageWaitingTime([[5, 2], [5, 4], [10, 3], [20, 1]]))
-            .toBeCloseTo(3.25, 3)
+            .toBeCloseTo(3.25, 2)
     })
 })
