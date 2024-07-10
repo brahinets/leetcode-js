@@ -6,9 +6,7 @@ function minOperations(logs: string[]): number {
     for (const action of logs) {
         if (action === '../') {
             stack.pop()
-        } else if (action === './') {
-            continue
-        } else {
+        } else if (action !== './') {
             stack.push(action)
         }
     }
