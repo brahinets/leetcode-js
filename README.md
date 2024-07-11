@@ -268,6 +268,7 @@
 1. № [1160. Find Words That Can Be Formed by Characters](solutions/1160.%20Find%20Words%20That%20Can%20Be%20Formed%20by%20Characters/script.ts)
 1. № [1161. Maximum Level Sum of a Binary Tree](solutions/1161.%20Maximum%20Level%20Sum%20of%20a%20Binary%20Tree/script.ts)
 1. № [1171. Remove Zero Sum Consecutive Nodes from Linked List](solutions/1171.%20Remove%20Zero%20Sum%20Consecutive%20Nodes%20from%20Linked%20List/script.ts)
+1. № [1190. Reverse Substrings Between Each Pair of Parentheses](solutions/1190.%20Reverse%20Substrings%20Between%20Each%20Pair%20of%20Parentheses/script.ts)
 1. № [1207. Unique Number of Occurrences](solutions/1207.%20Unique%20Number%20of%20Occurrences/script.ts)
 1. № [1208. Get Equal Substrings Within Budget](solutions/1208.%20Get%20Equal%20Substrings%20Within%20Budget/script.ts)
 1. № [1218. Longest Arithmetic Subsequence of Given Difference](solutions/1218.%20Longest%20Arithmetic%20Subsequence%20of%20Given%20Difference/script.ts)
