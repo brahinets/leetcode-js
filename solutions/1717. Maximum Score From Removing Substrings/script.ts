@@ -13,14 +13,14 @@ function maximumGain(s: string, x: number, y: number): number {
     return cheap + expensive
 }
 
-function maximize(s: string, max: string, maxScore: number): [string[], number] {
+function maximize(s: string, string: string, stringScore: number): [string[], number] {
     let stack: string[] = []
     let score: number = 0
 
     for (let char of s) {
-        if (stack.length > 0 && stack[stack.length - 1] + char === max) {
+        if (stack.length > 0 && stack[stack.length - 1] + char === string) {
             stack.pop()
-            score += maxScore
+            score += stringScore
         } else {
             stack.push(char)
         }
