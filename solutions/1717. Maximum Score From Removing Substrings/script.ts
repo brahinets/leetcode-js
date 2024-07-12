@@ -8,7 +8,7 @@ function maximumGain(s: string, x: number, y: number): number {
     let cheap: number
 
     [left, expensive] = maximize(s, max, maxScore);
-    [left, cheap] = maximize(left.join(""), low, lowScore)
+    [, cheap] = maximize(left.join(""), low, lowScore)
 
     return cheap + expensive
 }
