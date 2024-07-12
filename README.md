@@ -350,6 +350,7 @@
 1. № [1701. Average Waiting Time](solutions/1701.%20Average%20Waiting%20Time/script.ts)
 1. № [1704. Determine if String Halves Are Alike](solutions/1704.%20Determine%20if%20String%20Halves%20Are%20Alike/script.ts)
 1. № [1716. Calculate Money in Leetcode Bank](solutions/1716.%20Calculate%20Money%20in%20Leetcode%20Bank/script.ts)
+1. № [1717. Maximum Score From Removing Substrings](solutions/1717.%20Maximum%20Score%20From%20Removing%20Substrings/script.ts)
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
 1. № [1727. Largest Submatrix With Rearrangements](solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/script.ts)
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
