@@ -80,6 +80,7 @@
 1. № [150. Evaluate Reverse Polish Notation](solutions/150.%20Evaluate%20Reverse%20Polish%20Notation/script.ts)
 1. № [153. Find Minimum in Rotated Sorted Array](solutions/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array/script.ts)
 1. № [155. Min Stack](solutions/155.%20Min%20Stack/script.ts)
+1. № [165. Compare Version Numbers](solutions/165.%20Compare%20Version%20Numbers/script.ts)
 1. № [167. Two Sum II - Input Array Is Sorted](solutions/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted/script.ts)
 1. № [168. Excel Sheet Column Title](solutions/168.%20Excel%20Sheet%20Column%20Title/script.ts)
 1. № [169. Majority Element](solutions/169.%20Majority%20Element/script.ts)
