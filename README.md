@@ -442,6 +442,7 @@
 1. № [2642. Design Graph With Shortest Path Calculator](solutions/2642.%20Design%20Graph%20With%20Shortest%20Path%20Calculator/script.ts)
 1. № [2706. Buy Two Chocolates](solutions/2706.%20Buy%20Two%20Chocolates/script.ts)
 1. № [2709. Greatest Common Divisor Traversal](solutions/2709.%20Greatest%20Common%20Divisor%20Traversal/script.ts)
+1. № [2751. Robot Collisions](solutions/2751.%20Robot%20Collisions/script.ts)
 1. № [2785. Sort Vowels in a String](solutions/2785.%20Sort%20Vowels%20in%20a%20String/script.ts)
 1. № [2812. Find the Safest Path in a Grid](solutions/2812.%20Find%20the%20Safest%20Path%20in%20a%20Grid/script.ts)
 1. № [2816. Double a Number Represented as a Linked List](solutions/2816.%20Double%20a%20Number%20Represented%20as%20a%20Linked%20List/script.ts)
