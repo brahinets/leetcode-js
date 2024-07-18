@@ -323,6 +323,7 @@
 1. № [1514. Path with Maximum Probability](solutions/1514.%20Path%20with%20Maximum%20Probability/script.ts)
 1. № [1518. Water Bottles](solutions/1518.%20Water%20Bottles/script.ts)
 1. № [1523. Count Odd Numbers in an Interval Range](solutions/1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.ts)
+1. № [1530. Number of Good Leaf Nodes Pairs](solutions/1530.%20Number%20of%20Good%20Leaf%20Nodes%20Pairs/script.ts)
 1. № [1531. String Compression II](solutions/1531.%20String%20Compression%20II/script.ts)
 1. № [1539. Kth Missing Positive Number](solutions/1539.%20Kth%20Missing%20Positive%20Number/script.ts)
 1. № [1544. Make The String Great](solutions/1544.%20Make%20The%20String%20Great/script.ts)
