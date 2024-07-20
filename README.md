@@ -338,6 +338,7 @@
 1. № [1582. Special Positions in a Binary Matrix](solutions/1582.%20Special%20Positions%20in%20a%20Binary%20Matrix/script.ts)
 1. № [1598. Crawler Log Folder](solutions/1598.%20Crawler%20Log%20Folder/script.ts)
 1. № [1603. Design Parking System](solutions/1603.%20Design%20Parking%20System/script.ts)
+1. № [1605. Find Valid Matrix Given Row and Column Sums](solutions/1605.%20Find%20Valid%20Matrix%20Given%20Row%20and%20Column%20Sums/script.ts)
 1. № [1608. Special Array With X Elements Greater Than or Equal X](solutions/1608.%20Special%20Array%20With%20X%20Elements%20Greater%20Than%20or%20Equal%20X/script.ts)
 1. № [1609. Even Odd Tree](solutions/1609.%20Even%20Odd%20Tree/script.ts)
 1. № [1611. Minimum One Bit Operations to Make Integers Zero](solutions/1611.%20Minimum%20One%20Bit%20Operations%20to%20Make%20Integers%20Zero/script.ts)
