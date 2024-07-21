@@ -326,6 +326,7 @@
 1. № [1523. Count Odd Numbers in an Interval Range](solutions/1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.ts)
 1. № [1530. Number of Good Leaf Nodes Pairs](solutions/1530.%20Number%20of%20Good%20Leaf%20Nodes%20Pairs/script.ts)
 1. № [1531. String Compression II](solutions/1531.%20String%20Compression%20II/script.ts)
+1. № [1535. Find the Winner of an Array Game](solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game/script.ts)
 1. № [1539. Kth Missing Positive Number](solutions/1539.%20Kth%20Missing%20Positive%20Number/script.ts)
 1. № [1544. Make The String Great](solutions/1544.%20Make%20The%20String%20Great/script.ts)
 1. № [1550. Three Consecutive Odds](solutions/1550.%20Three%20Consecutive%20Odds/script.ts)
