@@ -1,15 +1,21 @@
 export {sortPeople}
 
 function sortPeople(names: string[], heights: number[]): string[] {
-    const people: [string, number][] = names.map((name: string, index: number) => [name, heights[index]])
+    const people: Person[] = names
+        .map((name: string, index: number) => new Person(name, heights[index]))
 
-    people.sort(([firstName, firstHeight]: [string, number], [secondName, secondHeight]: [string, number]) => {
-        if (firstHeight === secondHeight) {
-            return firstName.localeCompare(secondName)
+    people.sort((a: Person, b: Person): number => {
+        if (a.height !== b.height) {
+            return b.height - a.height
         }
 
-        return secondHeight - firstHeight
+        return a.name.localeCompare(b.name)
     })
 
-    return people.map((person: [string, number]) => person[0])
+    return people.map((person: Person): string => person.name)
+}
+
+class Person {
+    constructor(public name: string, public height: number) {
+    }
 }
