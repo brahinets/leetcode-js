@@ -347,6 +347,7 @@
 1. № [1614. Maximum Nesting Depth of the Parentheses](solutions/1614.%20Maximum%20Nesting%20Depth%20of%20the%20Parentheses/script.ts)
 1. № [1624. Largest Substring Between Two Equal Characters](solutions/1624.%20Largest%20Substring%20Between%20Two%20Equal%20Characters/script.ts)
 1. № [1630. Arithmetic Subarrays](solutions/1630.%20Arithmetic%20Subarrays/script.ts)
+1. № [1636. Sort Array by Increasing Frequency](solutions/1636.%20Sort%20Array%20by%20Increasing%20Frequency/script.ts)
 1. № [1637. Widest Vertical Area Between Two Points Containing No Points](solutions/1637.%20Widest%20Vertical%20Area%20Between%20Two%20Points%20Containing%20No%20Points/script.ts)
 1. № [1642. Furthest Building You Can Reach](solutions/1642.%20Furthest%20Building%20You%20Can%20Reach/script.ts)
 1. № [1657. Determine if Two Strings Are Close](solutions/1657.%20Determine%20if%20Two%20Strings%20Are%20Close/script.ts)
