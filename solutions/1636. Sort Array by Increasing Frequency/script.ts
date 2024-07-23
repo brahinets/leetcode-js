@@ -4,9 +4,7 @@ import {arrayOf} from "../../common/array-factories"
 export {frequencySort}
 
 function frequencySort(nums: number[]): number[] {
-    const counts: Map<number, number> = count(nums)
-
-    return [...counts.entries()]
+    return [...count(nums).entries()]
         .sort(comparatorByFrequency)
         .flatMap(([number, count]: [number, number]): number[] => arrayOf(number, count))
 }
