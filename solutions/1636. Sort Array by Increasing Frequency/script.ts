@@ -8,8 +8,7 @@ function frequencySort(nums: number[]): number[] {
 
     return [...counts.entries()]
         .sort(comparatorByFrequency)
-        .map(([number, count]: [number, number]): number[] => arrayOf(number, count))
-        .flatMap((numbers: number[]): number[] => numbers)
+        .flatMap(([number, count]: [number, number]): number[] => arrayOf(number, count))
 }
 
 function comparatorByFrequency(
