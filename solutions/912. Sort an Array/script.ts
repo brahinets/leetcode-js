@@ -12,16 +12,11 @@ function sortArray(nums: number[]): number[] {
     return merge(left, right)
 }
 
-const merge = (left: number[], right: number[]): number[] => {
+function merge(left: number[], right: number[]): number[] {
     const sorted: number[] = []
 
     while (left.length && right.length) {
-        const val: number | undefined = left[0] < right[0] ? left.shift() : right.shift()
-
-        if (val === undefined) {
-            throw new Error("Illegal state")
-        }
-
+        const val: number = left[0] < right[0] ? left.shift()! : right.shift()!
         sorted.push(val)
     }
 
