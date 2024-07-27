@@ -37,9 +37,9 @@ function prepareCosts(original: string[], changed: string[], cost: number[]): nu
         minCost[startChar][endChar] = Math.min(minCost[startChar][endChar], cost[i])
     }
 
-    for (let i: number = 0; i < 26; ++i) {
-        for (let j: number = 0; j < 26; ++j) {
-            for (let k: number = 0; k < 26; ++k) {
+    for (let k: number = 0; k < 26; ++k) {
+        for (let i: number = 0; i < 26; ++i) {
+            for (let j: number = 0; j < 26; ++j) {
                 minCost[i][j] = Math.min(minCost[i][j], minCost[i][k] + minCost[k][j])
             }
         }
