@@ -31,15 +31,15 @@ function minimumCost(
 function prepareCosts(original: string[], changed: string[], cost: number[]): number[][] {
     const minCost: number[][] = matrixOf(Number.MAX_SAFE_INTEGER, 26, 26)
 
-    for (let i = 0; i < original.length; ++i) {
+    for (let i = 0; i < original.length; i++) {
         const startChar: number = original[i].charCodeAt(0) - 'a'.charCodeAt(0)
         const endChar: number = changed[i].charCodeAt(0) - 'a'.charCodeAt(0)
         minCost[startChar][endChar] = Math.min(minCost[startChar][endChar], cost[i])
     }
 
-    for (let k: number = 0; k < 26; ++k) {
-        for (let i: number = 0; i < 26; ++i) {
-            for (let j: number = 0; j < 26; ++j) {
+    for (let k: number = 0; k < 26; k++) {
+        for (let i: number = 0; i < 26; i++) {
+            for (let j: number = 0; j < 26; j++) {
                 minCost[i][j] = Math.min(minCost[i][j], minCost[i][k] + minCost[k][j])
             }
         }
