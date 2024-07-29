@@ -3,19 +3,32 @@ export {numTeams}
 function numTeams(rating: number[]): number {
     let count: number = 0
 
-    for (let i = 0; i < rating.length; i++) {
-        for (let j = i + 1; j < rating.length; j++) {
-            for (let k = j + 1; k < rating.length; k++) {
-                if (isGoodTeam(rating, i, j, k)) {
-                    count++
-                }
+    for (let i: number = 0; i < rating.length; i++) {
+        let lessLeft: number = 0
+        let greaterLeft: number = 0
+        let lessRight: number = 0
+        let greaterRight: number = 0
+
+        for (let j: number = 0; j < i; j++) {
+            if (rating[j] < rating[i]) {
+                lessLeft++
+            }
+            if (rating[j] > rating[i]) {
+                greaterLeft++
             }
         }
+
+        for (let k: number = i + 1; k < rating.length; k++) {
+            if (rating[k] < rating[i]) {
+                lessRight++
+            }
+            if (rating[k] > rating[i]) {
+                greaterRight++
+            }
+        }
+
+        count += lessLeft * greaterRight + greaterLeft * lessRight
     }
 
     return count
-}
-
-function isGoodTeam(rating: number[], i: number, j: number, k: number): boolean {
-    return (rating[i] < rating[j] && rating[j] < rating[k]) || (rating[i] > rating[j] && rating[j] > rating[k]);
 }
