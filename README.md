@@ -407,6 +407,7 @@
 1. № [2108. Find First Palindromic String in the Array](solutions/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/script.ts)
 1. № [2125. Number of Laser Beams in a Bank](solutions/2125.%20Number%20of%20Laser%20Beams%20in%20a%20Bank/script.ts)
 1. № [2130. Maximum Twin Sum of a Linked List](solutions/2130.%20Maximum%20Twin%20Sum%20of%20a%20Linked%20List/script.ts)
+1. № [2134. Minimum Swaps to Group All 1's Together II](solutions/2134.%20Minimum%20Swaps%20to%20Group%20All%201%27s%20Together%20II/script.ts)
 1. № [2140. Solving Questions With Brainpower](solutions/2140.%20Solving%20Questions%20With%20Brainpower/script.ts)
 1. № [2147. Number of Ways to Divide a Long Corridor](solutions/2147.%20Number%20of%20Ways%20to%20Divide%20a%20Long%20Corridor/script.ts)
 1. № [2149. Rearrange Array Elements by Sign](solutions/2149.%20Rearrange%20Array%20Elements%20by%20Sign/script.ts)
