@@ -307,6 +307,7 @@
 1. № [1436. Destination City](solutions/1436.%20Destination%20City/script.ts)
 1. № [1422. Maximum Score After Splitting a String](solutions/1422.%20Maximum%20Score%20After%20Splitting%20a%20String/script.ts)
 1. № [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](solutions/1438.%20Longest%20Continuous%20Subarray%20With%20Absolute%20Diff%20Less%20Than%20or%20Equal%20to%20Limit/script.ts)
+1. № [1441. Build an Array With Stack Operations](solutions/1441.%20Build%20an%20Array%20With%20Stack%20Operations/script.ts)
 1. № [1442. Count Triplets That Can Form Two Arrays of Equal XOR](solutions/1442.%20Count%20Triplets%20That%20Can%20Form%20Two%20Arrays%20of%20Equal%20XOR/script.ts)
 1. № [1448. Count Good Nodes in Binary Tree](solutions/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree/script.ts)
 1. № [1456. Maximum Number of Vowels in a Substring of Given Length](solutions/1456.%20Maximum%20Number%20of%20Vowels%20in%20a%20Substring%20of%20Given%20Length/script.ts)
