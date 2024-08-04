@@ -277,6 +277,7 @@
 1. № [1208. Get Equal Substrings Within Budget](solutions/1208.%20Get%20Equal%20Substrings%20Within%20Budget/script.ts)
 1. № [1218. Longest Arithmetic Subsequence of Given Difference](solutions/1218.%20Longest%20Arithmetic%20Subsequence%20of%20Given%20Difference/script.ts)
 1. № [1219. Path with Maximum Gold](solutions/1219.%20Path%20with%20Maximum%20Gold/script.ts)
+1. № [1220. Count Vowels Permutation](solutions/1220.%20Count%20Vowels%20Permutation/script.ts)
 1. № [1232. Check If It Is a Straight Line](solutions/1232.%20Check%20If%20It%20Is%20a%20Straight%20Line/script.ts)
 1. № [1235. Maximum Profit in Job Scheduling](solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling/script.ts)
 1. № [1239. Maximum Length of a Concatenated String with Unique Characters](solutions/1239.%20Maximum%20Length%20of%20a%20Concatenated%20String%20with%20Unique%20Characters/script.ts)
