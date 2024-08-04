@@ -5,14 +5,10 @@ const mod: number = 1e9 + 7
 function rangeSum(nums: number[], n: number, left: number, right: number): number {
     const subarraySums: number[] = generateSubarraySums(n, nums)
 
-    subarraySums.sort((a: number, b: number): number => a - b)
-
-    let result: number = 0
-    for (let i: number = left - 1; i < right; i++) {
-        result = (result + subarraySums[i]) % mod
-    }
-
-    return result
+    return subarraySums
+        .sort((a: number, b: number): number => a - b)
+        .slice(left - 1, right)
+        .reduce((acc: number, curr: number): number => (acc + curr) % mod, 0)
 }
 
 function generateSubarraySums(n: number, nums: number[]): number[] {
