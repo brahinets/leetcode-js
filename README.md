@@ -324,6 +324,7 @@
 1. № [1498. Number of Subsequences That Satisfy the Given Sum Condition](solutions/1498.%20Number%20of%20Subsequences%20That%20Satisfy%20the%20Given%20Sum%20Condition/script.ts)
 1. № [1502. Can Make Arithmetic Progression From Sequence](solutions/1502.%20Can%20Make%20Arithmetic%20Progression%20From%20Sequence/script.ts)
 1. № [1503. Last Moment Before All Ants Fall Out of a Plank](solutions/1503.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank/script.ts)
+1. № [1508. Range Sum of Sorted Subarray Sums](solutions/1508.%20Range%20Sum%20of%20Sorted%20Subarray%20Sums/script.ts)
 1. № [1509. Minimum Difference Between Largest and Smallest Value in Three Moves](solutions/1509.%20Minimum%20Difference%20Between%20Largest%20and%20Smallest%20Value%20in%20Three%20Moves/script.ts)
 1. № [1512. Number of Good Pairs](solutions/1512.%20Number%20of%20Good%20Pairs/script.ts)
 1. № [1514. Path with Maximum Probability](solutions/1514.%20Path%20with%20Maximum%20Probability/script.ts)
