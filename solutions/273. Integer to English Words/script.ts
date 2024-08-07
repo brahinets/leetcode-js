@@ -5,13 +5,13 @@ function numberToWords(num: number): string {
         if (num >= nw.value) {
             const unit: string = nw.word
             const prefix: string = num >= 100 ? numberToWords(Math.floor(num / nw.value)) + " " : ""
-            const suffix: string = (num % nw.value === 0) ? "" : " " + numberToWords(num % nw.value)
+            const suffix: string = (num === 0 || num % nw.value === 0) ? "" : " " + numberToWords(num % nw.value)
 
             return (prefix + unit + suffix).trim()
         }
     }
 
-    return ""
+    throw new Error("Unsupported number: " + num)
 }
 
 class NumberWord {

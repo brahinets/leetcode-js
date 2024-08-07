@@ -2,8 +2,8 @@ import {numberToWords} from '../script'
 
 describe('273. Integer to English Words', (): void => {
     it('Unsupported', (): void => {
-        expect(numberToWords(-1))
-            .toBe("")
+        expect(() => numberToWords(-1))
+            .toThrow("Unsupported number: -1")
     })
 
     it('Zero', (): void => {
