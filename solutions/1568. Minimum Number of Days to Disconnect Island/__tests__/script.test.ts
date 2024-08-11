@@ -2,6 +2,14 @@ import {minDays} from '../script'
 
 describe('1568. Minimum Number of Days to Disconnect Island', (): void => {
 
+    it('Already disconnected', (): void => {
+        expect(minDays([
+            [1, 0, 1, 0],
+            [0, 0, 1, 0],
+            [0, 0, 0, 0]
+        ])).toBe(0)
+    })
+
     it('Split on two islands', (): void => {
         expect(minDays([
             [0, 1, 1, 0],
