@@ -28,8 +28,8 @@ function countIslands(grid: number[][]): number {
     const visited: boolean[][] = matrixOf(false, grid.length, grid[0].length)
     const sizes: number[] = []
 
-    for (let i = 0; i < grid.length; i++) {
-        for (let j = 0; j < grid[0].length; j++) {
+    for (let i: number = 0; i < grid.length; i++) {
+        for (let j: number = 0; j < grid[0].length; j++) {
             if (grid[i][j] === 1 && !visited[i][j]) {
                 sizes.push(dfs(i, j, grid, visited))
             }
