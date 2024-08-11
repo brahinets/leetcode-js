@@ -344,6 +344,7 @@
 1. № [1550. Three Consecutive Odds](solutions/1550.%20Three%20Consecutive%20Odds/script.ts)
 1. № [1552. Magnetic Force Between Two Balls](solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/script.ts)
 1. № [1561. Maximum Number of Coins You Can Get](solutions/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/script.ts)
+1. № [1568. Minimum Number of Days to Disconnect Island](solutions/1568.%20Minimum%20Number%20of%20Days%20to%20Disconnect%20Island/script.ts)
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
 1. № [1575. Count All Possible Routes](solutions/1575.%20Count%20All%20Possible%20Routes/script.ts)
 1. № [1578. Minimum Time to Make Rope Colorful](solutions/1578.%20Minimum%20Time%20to%20Make%20Rope%20Colorful/script.ts)
