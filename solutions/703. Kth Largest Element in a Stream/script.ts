@@ -22,7 +22,7 @@ class KthLargest {
         }
 
         return numbers
-            .toSorted((a: number, b: number): number => a - b)
+            .sort((a: number, b: number): number => a - b)
             .splice(Math.max(numbers.length - this.limit, 0))
     }
 }
