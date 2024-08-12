@@ -3,8 +3,7 @@ import {KthLargest} from '../script'
 describe('703. Kth Largest Element in a Stream', (): void => {
     it('Verify', (): void => {
         const data: KthLargest = new KthLargest(3, [4, 5, 8, 2])
-
-        let result
+        let result: number
 
         result = data.add(3)
         expect(result).toBe(4)
@@ -23,9 +22,9 @@ describe('703. Kth Largest Element in a Stream', (): void => {
     })
 
     it('Verify with smaller initial size', (): void => {
-        const data: KthLargest = new KthLargest(3,[5,-1])
+        const data: KthLargest = new KthLargest(3, [5, -1])
+        let result: number
 
-        let result
         result = data.add(2)
         expect(result).toBe(-1)
 

@@ -15,7 +15,7 @@ class KthLargest {
         return this.stream[0]
     }
 
-    merge(nums: number[], val?: number): number[] {
+    private merge(nums: number[], val?: number): number[] {
         const numbers: number[] = [...nums]
         if (val !== undefined) {
             numbers.push(val)
