@@ -198,6 +198,7 @@
 1. № [712. Minimum ASCII Delete Sum for Two Strings](solutions/712.%20Minimum%20ASCII%20Delete%20Sum%20for%20Two%20Strings/script.ts)
 1. № [713. Subarray Product Less Than K](solutions/713.%20Subarray%20Product%20Less%20Than%20K/script.ts)
 1. № [714. Best Time to Buy and Sell Stock with Transaction Fee](solutions/714.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Transaction%20Fee/script.ts)
+1. № [719. Find K-th Smallest Pair Distance](solutions/719.%20Find%20K-th%20Smallest%20Pair%20Distance/script.ts)
 1. № [724. Find Pivot Index](solutions/724.%20Find%20Pivot%20Index/script.ts)
 1. № [726. Number of Atoms](solutions/726.%20Number%20of%20Atoms/script.ts)
 1. № [733. Flood Fill](solutions/733.%20Flood%20Fill/script.ts)
