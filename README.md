@@ -181,6 +181,7 @@
 1. № [606. Construct String from Binary Tree](solutions/606.%20Construct%20String%20from%20Binary%20Tree/script.ts)
 1. № [621. Task Scheduler](solutions/621.%20Task%20Scheduler/script.ts)
 1. № [623. Add One Row to Tree](solutions/623.%20Add%20One%20Row%20to%20Tree/script.ts)
+1. № [624. Maximum Distance in Arrays](solutions/624.%20Maximum%20Distance%20in%20Arrays/script.ts)
 1. № [629. K Inverse Pairs Array](solutions/629.%20K%20Inverse%20Pairs%20Array/script.ts)
 1. № [633. Sum of Square Numbers](solutions/633.%20Sum%20of%20Square%20Numbers/script.ts)
 1. № [645. Set Mismatch](solutions/645.%20Set%20Mismatch/script.ts)
