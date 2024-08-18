@@ -1,30 +1,19 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import {first} from "../../common/array-utils"
 
 export {nthUglyNumber}
 
 function nthUglyNumber(n: number): number {
-    const dp: number[] = arrayOfZeros(n)
-    dp[0] = 1
+    const uglies: Set<number> = new Set<number>([1])
+    let nthUgly: number = 0
 
-    let p2: number = 0
-    let p3: number = 0
-    let p5: number = 0
+    for (let i: number = 0; i < n; i++) {
+        nthUgly = first([...uglies].sort((a, b) => a - b))!
+        uglies.delete(nthUgly)
 
-    for (let i: number = 1; i < n; i++) {
-        dp[i] = Math.min(dp[p2] * 2, dp[p3] * 3, dp[p5] * 5)
-
-        if (dp[i] === dp[p2] * 2) {
-            p2++
-        }
-
-        if (dp[i] === dp[p3] * 3) {
-            p3++
-        }
-
-        if (dp[i] === dp[p5] * 5) {
-            p5++
-        }
+        uglies.add(nthUgly * 2)
+        uglies.add(nthUgly * 3)
+        uglies.add(nthUgly * 5)
     }
 
-    return dp[n - 1]
+    return nthUgly
 }
