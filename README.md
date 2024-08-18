@@ -111,6 +111,7 @@
 1. № [242. Valid Anagram](solutions/242.%20Valid%20Anagram/script.ts)
 1. № [258. Add Digits](solutions/258.%20Add%20Digits/script.ts)
 1. № [260. Single Number III](solutions/260.%20Single%20Number%20III/script.ts)
+1. № [264. Ugly Number II](solutions/264.%20Ugly%20Number%20II/script.ts)
 1. № [268. Missing Number](solutions/268.%20Missing%20Number/script.ts)
 1. № [273. Integer to English Words](solutions/273.%20Integer%20to%20English%20Words/script.ts)
 1. № [278. First Bad Version](solutions/278.%20First%20Bad%20Version/script.ts)
