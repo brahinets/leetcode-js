@@ -15,6 +15,11 @@ function fractionAddition(expression: string): string {
         result = [result[0] / gcd, result[1] / gcd]
     }
 
+    if (result[1] < 0) {
+        result[0] = -result[0]
+        result[1] = -result[1]
+    }
+
     return result.join('/')
 }
 
