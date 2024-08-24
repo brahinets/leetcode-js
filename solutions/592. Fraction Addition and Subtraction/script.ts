@@ -12,11 +12,11 @@ function fractionAddition(expression: string): string {
 
         resultNumerator = a * d + b * c
         resultDenominator = b * d
-
-        const gcd: number = getGCD(resultNumerator, resultDenominator)
-        resultNumerator = resultNumerator / gcd
-        resultDenominator = resultDenominator / gcd
     }
+
+    const gcd: number = getGCD(resultNumerator, resultDenominator)
+    resultNumerator = resultNumerator / gcd
+    resultDenominator = resultDenominator / gcd
 
     if (resultDenominator < 0) {
         resultNumerator = -resultNumerator
