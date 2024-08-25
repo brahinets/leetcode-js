@@ -7,7 +7,7 @@ describe('102. Binary Tree Level Order Traversal', (): void => {
     })
 
 
-    it('Big tree', (): void => {
+    it('Small tree', (): void => {
         expect(inorderTraversal(new TreeNode(1)))
             .toEqual([1])
     })
