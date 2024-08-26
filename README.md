@@ -181,6 +181,7 @@
 1. № [572. Subtree of Another Tree](solutions/572.%20Subtree%20of%20Another%20Tree/script.ts)
 1. № [576. Out of Boundary Paths](solutions/576.%20Out%20of%20Boundary%20Paths/script.ts)
 1. № [589. N-ary Tree Preorder Traversal](solutions/589.%20N-ary%20Tree%20Preorder%20Traversal/script.ts)
+1. № [590. N-ary Tree Postorder Traversal](solutions/590.%20N-ary%20Tree%20Postorder%20Traversal/script.ts)
 1. № [592. Fraction Addition and Subtraction](solutions/592.%20Fraction%20Addition%20and%20Subtraction/script.ts)
 1. № [605. Can Place Flowers](solutions/605.%20Can%20Place%20Flowers/script.ts)
 1. № [606. Construct String from Binary Tree](solutions/606.%20Construct%20String%20from%20Binary%20Tree/script.ts)
