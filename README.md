@@ -253,6 +253,7 @@
 1. № [938. Range Sum of BST](solutions/938.%20Range%20Sum%20of%20BST/script.ts)
 1. № [945. Minimum Increment to Make Array Unique](solutions/945.%20Minimum%20Increment%20to%20Make%20Array%20Unique/script.ts)
 1. № [946. Validate Stack Sequences](solutions/946.%20Validate%20Stack%20Sequences/script.ts)
+1. № [947. Most Stones Removed with Same Row or Column](solutions/947.%20Most%20Stones%20Removed%20with%20Same%20Row%20or%20Column/script.ts)
 1. № [948. Bag of Tokens](solutions/948.%20Bag%20of%20Tokens/script.ts)
 1. № [950. Reveal Cards In Increasing Order](solutions/950.%20Reveal%20Cards%20In%20Increasing%20Order/script.ts)
 1. № [956. Tallest Billboard](solutions/956.%20Tallest%20Billboard/script.ts)
