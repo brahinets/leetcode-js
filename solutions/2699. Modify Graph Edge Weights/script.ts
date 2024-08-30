@@ -3,33 +3,28 @@ import {UndirectedWeightedGraph} from "../../common/Graph";
 
 export {modifiedGraphEdges}
 
-const INF = 2e9
+const BIG = 2e9
 
 function modifiedGraphEdges(n: number, edges: number[][], source: number, destination: number, target: number): number[][] {
-    const graph: UndirectedWeightedGraph = new UndirectedWeightedGraph()
-    for (const edge of edges) {
-        if (edge[2] !== -1) {
-            graph.addEdge(edge[0], edge[1], edge[2])
-        }
-    }
+    const graph: UndirectedWeightedGraph = buildGraph(edges)
 
-    let currentShortestDistance: number = runDijkstra(n, source, destination, graph)
+    const currentShortestDistance: number = runDijkstra(n, source, destination, graph)
     if (currentShortestDistance < target) {
         return []
     }
-
     let matchesTarget: boolean = (currentShortestDistance === target)
 
     for (const edge of edges) {
         if (edge[2] !== -1) {
-            continue;
+            continue
         }
 
-        edge[2] = matchesTarget ? INF : 1
+        edge[2] = matchesTarget ? BIG : 1
         graph.addEdge(edge[0], edge[1], edge[2])
 
         if (!matchesTarget) {
             const newDistance: number = runDijkstra(n, source, destination, graph)
+
             if (newDistance <= target) {
                 matchesTarget = true
                 edge[2] += target - newDistance
@@ -41,7 +36,7 @@ function modifiedGraphEdges(n: number, edges: number[][], source: number, destin
 }
 
 function runDijkstra(n: number, source: number, destination: number, graph: UndirectedWeightedGraph): number {
-    const minDistance: number[] = arrayOf(INF, n)
+    const minDistance: number[] = arrayOf(BIG, n)
     const minHeap: [number, number][] = []
 
     minDistance[source] = 0
@@ -50,7 +45,9 @@ function runDijkstra(n: number, source: number, destination: number, graph: Undi
     while (minHeap.length > 0) {
         const [u, d]: [number, number] = minHeap.shift()!
 
-        if (d > minDistance[u]) continue
+        if (d > minDistance[u]) {
+            continue
+        }
 
         for (const [v, weight] of graph.getNeighbours(u)) {
             if (d + weight < minDistance[v]) {
@@ -61,4 +58,16 @@ function runDijkstra(n: number, source: number, destination: number, graph: Undi
     }
 
     return minDistance[destination]
+}
+
+function buildGraph(edges: number[][]) {
+    const graph: UndirectedWeightedGraph = new UndirectedWeightedGraph()
+
+    for (const edge of edges) {
+        if (edge[2] !== -1) {
+            graph.addEdge(edge[0], edge[1], edge[2])
+        }
+    }
+
+    return graph
 }
