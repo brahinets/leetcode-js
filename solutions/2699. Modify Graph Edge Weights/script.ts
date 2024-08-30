@@ -1,15 +1,15 @@
-import {arrayOf, matrixOf} from "../../common/array-factories"
+import {arrayOf} from "../../common/array-factories"
+import {UndirectedWeightedGraph} from "../../common/Graph";
 
 export {modifiedGraphEdges}
 
 const INF = 2e9
 
 function modifiedGraphEdges(n: number, edges: number[][], source: number, destination: number, target: number): number[][] {
-    let graph: number[][][] = matrixOf([], n, n)
+    const graph: UndirectedWeightedGraph = new UndirectedWeightedGraph()
     for (const edge of edges) {
         if (edge[2] !== -1) {
-            graph[edge[0]].push([edge[1], edge[2]])
-            graph[edge[1]].push([edge[0], edge[2]])
+            graph.addEdge(edge[0], edge[1], edge[2])
         }
     }
 
@@ -26,8 +26,7 @@ function modifiedGraphEdges(n: number, edges: number[][], source: number, destin
         }
 
         edge[2] = matchesTarget ? INF : 1
-        graph[edge[0]].push([edge[1], edge[2]])
-        graph[edge[1]].push([edge[0], edge[2]])
+        graph.addEdge(edge[0], edge[1], edge[2])
 
         if (!matchesTarget) {
             const newDistance: number = runDijkstra(n, source, destination, graph)
@@ -41,7 +40,7 @@ function modifiedGraphEdges(n: number, edges: number[][], source: number, destin
     return matchesTarget ? edges : []
 }
 
-function runDijkstra(n: number, source: number, destination: number, graph: number[][][]): number {
+function runDijkstra(n: number, source: number, destination: number, graph: UndirectedWeightedGraph): number {
     const minDistance: number[] = arrayOf(INF, n)
     const minHeap: [number, number][] = []
 
@@ -53,7 +52,7 @@ function runDijkstra(n: number, source: number, destination: number, graph: numb
 
         if (d > minDistance[u]) continue
 
-        for (const [v, weight] of graph[u]) {
+        for (const [v, weight] of graph.getNeighbours(u)) {
             if (d + weight < minDistance[v]) {
                 minDistance[v] = d + weight
                 minHeap.push([v, minDistance[v]])
