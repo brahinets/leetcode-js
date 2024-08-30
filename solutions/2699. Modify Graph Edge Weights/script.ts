@@ -21,6 +21,10 @@ function modifiedGraphEdges(n: number, edges: number[][], source: number, destin
     let matchesTarget: boolean = (currentShortestDistance === target)
 
     for (const edge of edges) {
+        if (edge[2] !== -1) {
+            continue;
+        }
+
         edge[2] = matchesTarget ? INF : 1
         graph[edge[0]].push([edge[1], edge[2]])
         graph[edge[1]].push([edge[0], edge[2]])
