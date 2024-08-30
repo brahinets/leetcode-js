@@ -487,6 +487,7 @@
 1. № [2616. Minimize the Maximum Difference of Pairs](solutions/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/script.ts)
 1. № [2642. Design Graph With Shortest Path Calculator](solutions/2642.%20Design%20Graph%20With%20Shortest%20Path%20Calculator/script.ts)
 1. № [2678. Number of Senior Citizens](solutions/2678.%20Number%20of%20Senior%20Citizens/script.ts)
+1. № [2699. Modify Graph Edge Weights](solutions/2699.%20Modify%20Graph%20Edge%20Weights/script.ts)
 1. № [2706. Buy Two Chocolates](solutions/2706.%20Buy%20Two%20Chocolates/script.ts)
 1. № [2709. Greatest Common Divisor Traversal](solutions/2709.%20Greatest%20Common%20Divisor%20Traversal/script.ts)
 1. № [2751. Robot Collisions](solutions/2751.%20Robot%20Collisions/script.ts)
