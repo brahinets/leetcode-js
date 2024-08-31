@@ -10,10 +10,7 @@ function maxProbability(
     start: number,
     end: number
 ): number {
-    const graph: UndirectedWeightedGraph = new UndirectedWeightedGraph()
-    for (let i: number = 0; i < edges.length; i++) {
-        graph.addEdge(edges[i][0], edges[i][1], successProb[i])
-    }
+    const graph: UndirectedWeightedGraph = buildGraph(edges, successProb)
 
     const maxProbability: number[] = arrayOfZeros(n)
     maxProbability[start] = 1
@@ -33,4 +30,14 @@ function maxProbability(
     }
 
     return maxProbability[end]
+}
+
+function buildGraph(edges: number[][], successProb: number[]) {
+    const graph: UndirectedWeightedGraph = new UndirectedWeightedGraph()
+
+    for (let i: number = 0; i < edges.length; i++) {
+        graph.addEdge(edges[i][0], edges[i][1], successProb[i])
+    }
+
+    return graph
 }
