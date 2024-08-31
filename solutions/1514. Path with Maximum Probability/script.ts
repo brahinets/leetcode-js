@@ -11,7 +11,7 @@ function maxProbability(
     end: number
 ): number {
     const graph: UndirectedWeightedGraph = new UndirectedWeightedGraph()
-    for (let i = 0; i < edges.length; i++) {
+    for (let i: number = 0; i < edges.length; i++) {
         graph.addEdge(edges[i][0], edges[i][1], successProb[i])
     }
 
