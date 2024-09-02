@@ -411,6 +411,7 @@
 1. № [1870. Minimum Speed to Arrive on Time](solutions/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/script.ts)
 1. № [1877. Minimize Maximum Pair Sum in Array](solutions/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array/script.ts)
 1. № [1887. Reduction Operations to Make the Array Elements Equal](solutions/1887.%20Reduction%20Operations%20to%20Make%20the%20Array%20Elements%20Equal/script.ts)
+1. № [1894. Find the Student that Will Replace the Chalk](solutions/1894.%20Find%20the%20Student%20that%20Will%20Replace%20the%20Chalk/script.ts)
 1. № [1897. Redistribute Characters to Make All Strings Equal](solutions/1897.%20Redistribute%20Characters%20to%20Make%20All%20Strings%20Equal/script.ts)
 1. № [1903. Largest Odd Number in String](solutions/1903.%20Largest%20Odd%20Number%20in%20String/script.ts)
 1. № [1905. Count Sub Islands](solutions/1905.%20Count%20Sub%20Islands/script.ts)
