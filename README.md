@@ -326,6 +326,7 @@
 1. № [1396. Design Underground System](solutions/1396.%20Design%20Underground%20System/script.ts)
 1. № [1404. Number of Steps to Reduce a Number in Binary Representation to One](solutions/1404.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20in%20Binary%20Representation%20to%20One/script.ts)
 1. № [1424. Diagonal Traverse II](solutions/1424.%20Diagonal%20Traverse%20II/script.ts)
+1. № [1425. Constrained Subsequence Sum](solutions/1425.%20Constrained%20Subsequence%20Sum/script.ts)
 1. № [1431. Kids With the Greatest Number of Candies](solutions/1431.%20Kids%20With%20the%20Greatest%20Number%20of%20Candies/script.ts)
 1. № [1436. Destination City](solutions/1436.%20Destination%20City/script.ts)
 1. № [1422. Maximum Score After Splitting a String](solutions/1422.%20Maximum%20Score%20After%20Splitting%20a%20String/script.ts)
