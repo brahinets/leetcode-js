@@ -318,6 +318,7 @@
 1. № [1347. Minimum Number of Steps to Make Two Strings Anagram](solutions/1347.%20Minimum%20Number%20of%20Steps%20to%20Make%20Two%20Strings%20Anagram/script.ts)
 1. № [1351. Count Negative Numbers in a Sorted Matrix](solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/script.ts)
 1. № [1356. Sort Integers by The Number of 1 Bits](solutions/1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits/script.ts)
+1. № [1367. Linked List in Binary Tree](solutions/1367.%20Linked%20List%20in%20Binary%20Tree/script.ts)
 1. № [1372. Longest ZigZag Path in a Binary Tree](solutions/1372.%20Longest%20ZigZag%20Path%20in%20a%20Binary%20Tree/script.ts)
 1. № [1380. Lucky Numbers in a Matrix](solutions/1380.%20Lucky%20Numbers%20in%20a%20Matrix/script.ts)
 1. № [1382. Balance a Binary Search Tree](solutions/1382.%20Balance%20a%20Binary%20Search%20Tree/script.ts)
