@@ -3,8 +3,8 @@ export {countConsistentStrings}
 function countConsistentStrings(allowed: string, words: string[]): number {
     let count: number = 0
 
-    for (let i: number = 0; i < words.length; i++) {
-        if (isConsistent(words[i], allowed)) {
+    for (const word of words) {
+        if (isConsistent(word, allowed)) {
             count++
         }
     }
@@ -15,8 +15,8 @@ function countConsistentStrings(allowed: string, words: string[]): number {
 function isConsistent(word: string, allowed: string) {
     let isConsistent: boolean = true
 
-    for (let j: number = 0; j < word.length; j++) {
-        if (!allowed.includes(word[j])) {
+    for (let char of word) {
+        if (!allowed.includes(char)) {
             isConsistent = false
             break
         }
