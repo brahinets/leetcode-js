@@ -246,6 +246,7 @@
 1. № [876. Middle of the Linked List](solutions/876.%20Middle%20of%20the%20Linked%20List/script.ts)
 1. № [880. Decoded String at Index](solutions/880.%20Decoded%20String%20at%20Index/script.ts)
 1. № [881. Boats to Save People](solutions/881.%20Boats%20to%20Save%20People/script.ts)
+1. № [884. Uncommon Words from Two Sentences](solutions/884.%20Uncommon%20Words%20from%20Two%20Sentences/script.ts)
 1. № [885. Spiral Matrix III](solutions/885.%20Spiral%20Matrix%20III/script.ts)
 1. № [907. Sum of Subarray Minimums](solutions/907.%20Sum%20of%20Subarray%20Minimums/script.ts)
 1. № [912. Sort an Array](solutions/912.%20Sort%20an%20Array/script.ts)
