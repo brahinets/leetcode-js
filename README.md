@@ -86,6 +86,7 @@
 1. № [167. Two Sum II - Input Array Is Sorted](solutions/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted/script.ts)
 1. № [168. Excel Sheet Column Title](solutions/168.%20Excel%20Sheet%20Column%20Title/script.ts)
 1. № [169. Majority Element](solutions/169.%20Majority%20Element/script.ts)
+1. № [179. Largest Number](solutions/179.%20Largest%20Number/script.ts)
 1. № [190. Reverse Bits](solutions/190.%20Reverse%20Bits/script.ts)
 1. № [191. Number of 1 Bits](solutions/191.%20Number%20of%201%20Bits/script.ts)
 1. № [198. House Robber](solutions/198.%20House%20Robber/script.ts)
