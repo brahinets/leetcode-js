@@ -110,6 +110,7 @@
 1. № [237. Delete Node in a Linked List](solutions/237.%20Delete%20Node%20in%20a%20Linked%20List/script.ts)
 1. № [238. Product of Array Except Self](solutions/238.%20Product%20of%20Array%20Except%20Self/script.ts)
 1. № [239. Sliding Window Maximum](solutions/239.%20Sliding%20Window%20Maximum/script.ts)
+1. № [241. Different Ways to Add Parentheses](solutions/241.%20Different%20Ways%20to%20Add%20Parentheses/script.ts)
 1. № [242. Valid Anagram](solutions/242.%20Valid%20Anagram/script.ts)
 1. № [258. Add Digits](solutions/258.%20Add%20Digits/script.ts)
 1. № [260. Single Number III](solutions/260.%20Single%20Number%20III/script.ts)
