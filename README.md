@@ -97,6 +97,7 @@
 1. № [206. Reverse Linked List](solutions/206.%20Reverse%20Linked%20List/script.ts)
 1. № [208. Implement Trie (Prefix Tree)](solutions/208.%20Implement%20Trie%20(Prefix%20Tree)/script.ts)
 1. № [211. Design Add and Search Words Data Structure](solutions/211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure/script.ts)
+1. № [214. Shortest Palindrome](solutions/214.%20Shortest%20Palindrome/script.ts)
 1. № [215. Kth Largest Element in an Array](solutions/215.%20Kth%20Largest%20Element%20in%20an%20Array/script.ts)
 1. № [217. Contains Duplicate](solutions/217.%20Contains%20Duplicate/script.ts)
 1. № [225. Implement Stack using Queues](solutions/225.%20Implement%20Stack%20using%20Queues/script.ts)
