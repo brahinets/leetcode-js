@@ -231,6 +231,7 @@
 1. № [791. Custom Sort String](solutions/791.%20Custom%20Sort%20String/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
 1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
+1. № [823. Binary Trees With Factors](solutions/823.%20Binary%20Trees%20With%20Factors/script.ts)
 1. № [826. Most Profit Assigning Work](solutions/826.%20Most%20Profit%20Assigning%20Work/script.ts)
 1. № [834. Sum of Distances in Tree](solutions/834.%20Sum%20of%20Distances%20in%20Tree/script.ts)
 1. № [840. Magic Squares In Grid](solutions/840.%20Magic%20Squares%20In%20Grid/script.ts)
