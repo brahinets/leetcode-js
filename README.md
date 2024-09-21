@@ -139,6 +139,7 @@
 1. № [380. Insert Delete GetRandom O(1)](solutions/380.%20Insert%20Delete%20GetRandom%20O%281%29/script.ts)
 1. № [382. Linked List Random Node](solutions/382.%20Linked%20List%20Random%20Node/script.ts)
 1. № [383. Ransom Note](solutions/383.%20Ransom%20Note/script.ts)
+1. № [386. Lexicographical Numbers](solutions/386.%20Lexicographical%20Numbers/script.ts)
 1. № [387. First Unique Character in a String](solutions/387.%20First%20Unique%20Character%20in%20a%20String/script.ts)
 1. № [392. Is Subsequence](solutions/392.%20Is%20Subsequence/script.ts)
 1. № [394. Decode String](solutions/394.%20Decode%20String/script.ts)
