@@ -151,6 +151,7 @@
 1. № [424. Longest Repeating Character Replacement](solutions/424.%20Longest%20Repeating%20Character%20Replacement/script.ts)
 1. № [435. Non-overlapping Intervals](solutions/435.%20Non-overlapping%20Intervals/script.ts)
 1. № [438. Find All Anagrams in a String](solutions/438.%20Find%20All%20Anagrams%20in%20a%20String/script.ts)
+1. № [440. K-th Smallest in Lexicographical Order](solutions/440.%20K-th%20Smallest%20in%20Lexicographical%20Order/script.ts)
 1. № [442. Find All Duplicates in an Array](solutions/442.%20Find%20All%20Duplicates%20in%20an%20Array/script.ts)
 1. № [443. String Compression](solutions/443.%20String%20Compression/script.ts)
 1. № [445. Add Two Numbers II](solutions/445.%20Add%20Two%20Numbers%20II/script.ts)
