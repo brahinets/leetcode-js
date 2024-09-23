@@ -512,6 +512,7 @@
 1. № [2678. Number of Senior Citizens](solutions/2678.%20Number%20of%20Senior%20Citizens/script.ts)
 1. № [2699. Modify Graph Edge Weights](solutions/2699.%20Modify%20Graph%20Edge%20Weights/script.ts)
 1. № [2706. Buy Two Chocolates](solutions/2706.%20Buy%20Two%20Chocolates/script.ts)
+1. № [2707. Extra Characters in a String](solutions/2707.%20Extra%20Characters%20in%20a%20String/script.ts)
 1. № [2709. Greatest Common Divisor Traversal](solutions/2709.%20Greatest%20Common%20Divisor%20Traversal/script.ts)
 1. № [2751. Robot Collisions](solutions/2751.%20Robot%20Collisions/script.ts)
 1. № [2785. Sort Vowels in a String](solutions/2785.%20Sort%20Vowels%20in%20a%20String/script.ts)
