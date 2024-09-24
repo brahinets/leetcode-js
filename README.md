@@ -530,6 +530,7 @@
 1. № [2997. Minimum Number of Operations to Make Array XOR Equal to K](solutions/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/script.ts)
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
 1. № [3016. Minimum Number of Pushes to Type Word II](solutions/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/script.ts)
+1. № [3043. Find the Length of the Longest Common Prefix](solutions/3043.%20Find%20the%20Length%20of%20the%20Longest%20Common%20Prefix/script.ts)
 1. № [3068. Find the Maximum Sum of Node Values](solutions/3068.%20Find%20the%20Maximum%20Sum%20of%20Node%20Values/script.ts)
 1. № [3075. Maximize Happiness of Selected Children](solutions/3075.%20Maximize%20Happiness%20of%20Selected%20Children/script.ts)
 1. № [3110. Score of a String](solutions/3110.%20Score%20of%20a%20String/script.ts)
