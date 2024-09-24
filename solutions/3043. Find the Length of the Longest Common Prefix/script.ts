@@ -1,26 +1,27 @@
 export {longestCommonPrefix}
 
-function longestCommonPrefix(arr1: number[], arr2: number[]): number {
-    let result: number = 0
 
-    for (const a of arr1) {
-        for (const b of arr2) {
-            result = Math.max(result, commonPrefix(a.toString(), b.toString()))
+function longestCommonPrefix(arr1: number[], arr2: number[]): number {
+    const cache: Set<number> = new Set<number>()
+    let result: number = 0
+    for (let num of arr1) {
+        while (num > 0) {
+            cache.add(num)
+            num = Math.floor(num / 10)
         }
     }
 
-    return result
-}
+    for (let num of arr2) {
+        let current: number = `${num}`.length
 
-function commonPrefix(a: string, b: string): number {
-    let result: number = 0
+        while (num > 0 && current > result) {
+            if (cache.has(num)) {
+                result = current
+            }
 
-    for (let i: number = 0; i < a.length && i < b.length; i++) {
-        if (a[i] !== b[i]) {
-            break
+            num = Math.floor(num / 10)
+            current--
         }
-
-        result++
     }
 
     return result
