@@ -4,17 +4,9 @@ export {sumPrefixScores}
 
 function sumPrefixScores(words: string[]): number[] {
     const trie: Trie = new Trie()
-
     for (const word of words) {
         trie.insert(word)
     }
 
-    return words.map(word => {
-        let score: number = 0
-        for (let i: number = 1; i <= word.length; i++) {
-            const prefix: string = word.slice(0, i)
-            score += trie.getPrefixCount(prefix)
-        }
-        return score
-    })
+    return words.map((word: string): number => trie.getPrefixScore(word))
 }
