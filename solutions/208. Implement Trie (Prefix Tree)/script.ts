@@ -1,10 +1,10 @@
 export {Trie}
 
 class Trie {
-    private readonly data: Set<string>
+    private readonly data: Map<string, number>
 
     constructor() {
-        this.data = new Set<string>()
+        this.data = new Map<string, number>()
     }
 
     insert(word: string): void {
@@ -12,7 +12,10 @@ class Trie {
             throw new Error("Illegal word: " + word)
         }
 
-        this.data.add(word)
+        for (let i = 1; i <= word.length; i++) {
+            const prefix = word.slice(0, i)
+            this.data.set(prefix, (this.data.get(prefix) || 0) + 1)
+        }
     }
 
     search(word: string): boolean {
@@ -20,18 +23,10 @@ class Trie {
     }
 
     startsWith(prefix: string): boolean {
-        return this.startPrefix(prefix) > 0
+        return this.data.has(prefix)
     }
 
-    startPrefix(prefix: string): number {
-        let count: number = 0
-
-        for (const str of this.data) {
-            if (str.startsWith(prefix)) {
-                count += 1
-            }
-        }
-
-        return count
+    getPrefixCount(prefix: string): number {
+        return this.data.get(prefix) || 0
     }
 }
