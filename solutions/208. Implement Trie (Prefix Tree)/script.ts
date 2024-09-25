@@ -3,10 +3,12 @@ export {Trie}
 class TrieNode {
     children: Map<string, TrieNode>
     count: number
+    isEnd: boolean
 
     constructor() {
         this.children = new Map()
         this.count = 0
+        this.isEnd = false
     }
 }
 
@@ -28,6 +30,7 @@ class Trie {
             node = node.children.get(char)!
             node.count += 1
         }
+        node.isEnd = true
     }
 
     search(word: string): boolean {
@@ -38,7 +41,8 @@ class Trie {
             }
             node = node.children.get(char)!
         }
-        return true
+
+        return node.isEnd
     }
 
     startsWith(prefix: string): boolean {
