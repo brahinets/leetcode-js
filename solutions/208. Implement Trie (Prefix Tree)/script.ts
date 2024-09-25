@@ -20,12 +20,18 @@ class Trie {
     }
 
     startsWith(prefix: string): boolean {
+        return this.startPrefix(prefix) > 0
+    }
+
+    startPrefix(prefix: string): number {
+        let count: number = 0
+
         for (const str of this.data) {
             if (str.startsWith(prefix)) {
-                return true
+                count += 1
             }
         }
 
-        return false
+        return count
     }
 }
