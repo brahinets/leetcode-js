@@ -219,6 +219,7 @@
 1. № [725. Split Linked List in Parts](solutions/725.%20Split%20Linked%20List%20in%20Parts/script.ts)
 1. № [726. Number of Atoms](solutions/726.%20Number%20of%20Atoms/script.ts)
 1. № [729. My Calendar I](solutions/729.%20My%20Calendar%20I/script.ts)
+1. № [731. My Calendar II](solutions/731.%20My%20Calendar%20II/script.ts)
 1. № [733. Flood Fill](solutions/733.%20Flood%20Fill/script.ts)
 1. № [735. Asteroid Collision](solutions/735.%20Asteroid%20Collision/script.ts)
 1. № [739. Daily Temperatures](solutions/739.%20Daily%20Temperatures/script.ts)
