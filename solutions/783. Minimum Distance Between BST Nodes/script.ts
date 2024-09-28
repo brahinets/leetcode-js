@@ -16,7 +16,7 @@ const collectValues = function (root: TreeNode): number[] {
 
 const minDiffInBST = function (root: TreeNode): number {
     const values: number[] = collectValues(root)
-        .toSorted((a: number, b: number) => a - b)
+        .sort((a: number, b: number) => a - b)
 
     let minDiff: number = Number.MAX_VALUE
     for (let i: number = 0; i < values.length - 1; i++) {

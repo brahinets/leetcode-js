@@ -27,7 +27,7 @@ function carFleet(target: number, position: number[], speed: number[]): number {
 function collectParticipants(position: number[], speed: number[], target: number): Participant[] {
     return position
         .map((_: number, i: number) => new Participant(position[i], speed[i], target))
-        .toSorted((first: Participant, second: Participant): number =>
+        .sort((first: Participant, second: Participant): number =>
             first.position - second.position
         )
 }

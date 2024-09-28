@@ -11,7 +11,7 @@ function largestSubmatrix(matrix: number[][]): number {
 
     let max: number = 0
     for (let i: number = 0; i < matrix.length; i++) {
-        matrix[i] = matrix[i].toSorted((a: number, b: number): number => b - a)
+        matrix[i] = matrix[i].sort((a: number, b: number): number => b - a)
         for (let j: number = 0; j < matrix[i].length; j++) {
             max = Math.max(max, matrix[i][j] * (j + 1))
         }

@@ -4,7 +4,7 @@ export {maxScore}
 
 function maxScore(nums1: number[], nums2: number[], k: number): number {
     const data: Pair[] = doPairing(nums1, nums2)
-        .toSorted((p1: Pair, p2: Pair): number => p2.multiplier - p1.multiplier)
+        .sort((p1: Pair, p2: Pair): number => p2.multiplier - p1.multiplier)
 
     let max: number = 0
     let sum: number = 0

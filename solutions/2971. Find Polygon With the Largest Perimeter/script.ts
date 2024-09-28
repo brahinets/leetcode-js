@@ -1,7 +1,7 @@
 export {largestPerimeter}
 
 function largestPerimeter(nums: number[]): number {
-    nums = nums.toSorted((a: number, b: number): number => a - b)
+    nums = nums.sort((a: number, b: number): number => a - b)
 
     let prev: number = 0
     let result: number = -1

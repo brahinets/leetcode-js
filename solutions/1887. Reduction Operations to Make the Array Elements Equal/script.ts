@@ -1,7 +1,7 @@
 export {reductionOperations}
 
 function reductionOperations(nums: number[]): number {
-    nums = nums.toSorted((a: number, b: number): number => a - b)
+    nums = nums.sort((a: number, b: number): number => a - b)
 
     let count: number = 0
     let stepSize: number = 0

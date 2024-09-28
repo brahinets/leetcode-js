@@ -2,7 +2,7 @@ export {lastStoneWeight}
 
 function lastStoneWeight(stones: number[]): number {
     while (stones.length > 1) {
-        stones = stones.toSorted((a: number, b: number) => a - b)
+        stones = stones.sort((a: number, b: number) => a - b)
 
         const s1: number = stones.pop() ?? 0
         const s2: number = stones.pop() ?? 0

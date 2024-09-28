@@ -15,7 +15,7 @@ function canMakeArithmeticProgression(arr: number[]): boolean {
         return true
     }
 
-    arr = arr.toSorted((a: number, b: number): number => a - b)
+    arr = arr.sort((a: number, b: number): number => a - b)
 
     const step: number = arr[1] - arr[0]
 

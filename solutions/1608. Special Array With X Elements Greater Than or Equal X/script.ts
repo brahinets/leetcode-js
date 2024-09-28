@@ -1,7 +1,7 @@
 export {specialArray}
 
 function specialArray(nums: number[]): number {
-    nums = nums.toSorted((a: number, b: number) => a - b)
+    nums = nums.sort((a: number, b: number) => a - b)
 
     for (let x = 0; x <= nums.length; x++) {
         let count: number = 0

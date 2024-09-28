@@ -1,7 +1,7 @@
 export {numRescueBoats}
 
 function numRescueBoats(people: number[], limit: number): number {
-    people = people.toSorted((a: number, b: number) => a - b)
+    people = people.sort((a: number, b: number) => a - b)
 
     let boats: number = 0
 

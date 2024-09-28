@@ -4,10 +4,10 @@ function groupAnagrams(strs: string[]): string[][] {
     const anagrams: Map<string, string[]> = new Map<string, string[]>()
 
     for (const str of strs) {
-        const letters: string = str.split("").toSorted().join("")
-        anagrams.set(letters, [...anagrams.get(letters) ?? [], str].toSorted())
+        const letters: string = str.split("").sort().join("")
+        anagrams.set(letters, [...anagrams.get(letters) ?? [], str].sort())
     }
 
     return [...anagrams.values()]
-        .toSorted((a: string[], b: string[]): number => a.length - b.length)
+        .sort((a: string[], b: string[]): number => a.length - b.length)
 }

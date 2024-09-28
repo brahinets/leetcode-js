@@ -1,8 +1,8 @@
 export {findContentChildren}
 
 function findContentChildren(g: number[], s: number[]): number {
-    const greediness: number[] = g.toSorted((a: number, b: number) => a - b)
-    const cookies: number[] = s.toSorted((a: number, b: number) => a - b)
+    const greediness: number[] = g.sort((a: number, b: number) => a - b)
+    const cookies: number[] = s.sort((a: number, b: number) => a - b)
 
     let i: number = 0
     let j: number = 0

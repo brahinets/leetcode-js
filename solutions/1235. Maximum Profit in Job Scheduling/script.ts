@@ -8,7 +8,7 @@ function jobScheduling(startTime: number[], endTime: number[], profit: number[])
     }
 
     const jobs: Job[] = mapJobs(startTime, endTime, profit)
-        .toSorted((a: Job, b: Job): number => a.endTime - b.endTime)
+        .sort((a: Job, b: Job): number => a.endTime - b.endTime)
 
     const maxProfitWithJob: number[] = [jobs[0].profit]
     for (let i: number = 1; i < jobs.length; i++) {

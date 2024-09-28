@@ -5,7 +5,7 @@ function minimizeMax(nums: number[], p: number): number {
         return 0
     }
 
-    nums = nums.toSorted((n1: number, n2: number): number => n1 - n2)
+    nums = nums.sort((n1: number, n2: number): number => n1 - n2)
 
     let left: number = 0
     let right: number = Math.max(...nums) - Math.min(...nums)

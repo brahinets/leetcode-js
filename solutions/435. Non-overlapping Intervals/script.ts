@@ -5,7 +5,7 @@ function eraseOverlapIntervals(intervals: number[][]): number {
         return 0
     }
 
-    intervals = intervals.toSorted((a: number[], b: number[]): number => a[1] - b[1])
+    intervals = intervals.sort((a: number[], b: number[]): number => a[1] - b[1])
 
     let latestValidEnd: number = intervals[0][1]
     let intervalsToRemove: number = 0
