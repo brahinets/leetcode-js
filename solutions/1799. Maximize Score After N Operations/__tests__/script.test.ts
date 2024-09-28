@@ -26,7 +26,12 @@ describe('1799. Maximize Score After N Operations', (): void => {
             .toBe(91)
     })
 
-    it('Much many', (): void => {
+    it('Load test #1', (): void => {
+        expect(maxScore([65, 36, 54, 9, 30, 59, 49, 28, 5, 31, 83, 78, 61, 50]))
+            .toBe(288)
+    })
+
+    it('Load test #2', (): void => {
         expect(maxScore([109497, 983516, 698308, 409009, 310455, 528595, 524079, 18036, 341150, 641864, 913962, 421869, 943382, 295019]))
             .toBe(527)
     })

@@ -1,39 +1,51 @@
+import {arrayOf} from "../../common/array-factories"
+
 export {maxScore}
 
 function maxScore(nums: number[]): number {
     const memo: Map<string, number> = new Map<string, number>()
+    const used: boolean[] = arrayOf(false, nums.length)
 
-    return backtrack(nums, null, 1, memo)
+    return backtrack(nums, nums.length / 2, 1, memo, used)
 }
 
 function backtrack(
     nums: number[],
-    num: number | null,
+    num: number,
     step: number,
-    memo: Map<string, number>
+    memo: Map<string, number>,
+    used: boolean[]
 ): number {
-    if (nums.length === 0) {
-        return 0
-    }
+    const key: string = `${used.join(',')},${step}`
 
-    const key: string = `${nums.join(',')},${num},${step}`
     if (memo.has(key)) {
         return memo.get(key)!
     }
 
+    if (step > num) {
+        return 0
+    }
+
     let max: number = 0
     for (let i: number = 0; i < nums.length; i++) {
-        const next: number[] = [...nums.slice(0, i), ...nums.slice(i + 1)]
+        if (used[i]) {
+            continue
+        }
 
-        if (num !== null) {
-            const gcdValue: number = gcd(num, nums[i])
-            const rest: number = backtrack(next, null, step + 1, memo)
+        for (let j: number = i + 1; j < nums.length; j++) {
+            if (used[j]) {
+                continue
+            }
 
-            max = Math.max(max, step * gcdValue + rest)
-        } else {
-            const rest: number = backtrack(next, nums[i], step, memo)
+            const gcdValue: number = gcd(nums[i], nums[j])
+            used[i] = true
+            used[j] = true
 
-            max = Math.max(max, rest)
+            const currentScore: number = step * gcdValue + backtrack(nums, num, step + 1, memo, used)
+            used[i] = false
+            used[j] = false
+
+            max = Math.max(max, currentScore)
         }
     }
 
