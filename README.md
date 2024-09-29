@@ -149,6 +149,7 @@
 1. № [404. Sum of Left Leaves](solutions/404.%20Sum%20of%20Left%20Leaves/script.ts)
 1. № [409. Longest Palindrome](solutions/409.%20Longest%20Palindrome/script.ts)
 1. № [424. Longest Repeating Character Replacement](solutions/424.%20Longest%20Repeating%20Character%20Replacement/script.ts)
+1. № [432. All O`one Data Structure](solutions/432.%20All%20O%60one%20Data%20Structure/script.ts)
 1. № [435. Non-overlapping Intervals](solutions/435.%20Non-overlapping%20Intervals/script.ts)
 1. № [438. Find All Anagrams in a String](solutions/438.%20Find%20All%20Anagrams%20in%20a%20String/script.ts)
 1. № [440. K-th Smallest in Lexicographical Order](solutions/440.%20K-th%20Smallest%20in%20Lexicographical%20Order/script.ts)
