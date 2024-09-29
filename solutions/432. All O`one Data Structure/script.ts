@@ -1,81 +1,79 @@
-import {first, last} from "../../common/array-utils";
-
 export {AllOne}
 
 class AllOne {
-    private count: Map<string, number>
-    private pairs: Pair<number, string>[]
+    private readonly map: Map<string, Node>
+    private readonly head: Node
+    private readonly tail: Node
 
     constructor() {
-        this.count = new Map<string, number>()
-        this.pairs = []
+        this.map = new Map<string, Node>()
+        this.head = new Node("", 0)
+        this.tail = new Node("", Infinity)
+        this.head.next = this.tail
+        this.tail.prev = this.head
+    }
+
+    private insertAfter(node: Node, newNode: Node): void {
+        newNode.prev = node
+        newNode.next = node.next
+        node.next!.prev = newNode
+        node.next = newNode
+    }
+
+    private remove(node: Node): void {
+        node.prev!.next = node.next
+        node.next!.prev = node.prev
     }
 
     inc(key: string): void {
-        const oldCount: number | undefined = this.count.get(key)
-        const newCount: number = (oldCount || 0) + 1
+        if (this.map.has(key)) {
+            const node: Node = this.map.get(key)!
 
-        this.count.set(key, newCount)
-        this.updatePairs(key, oldCount, newCount)
+            node.count++
+            while (node.next!.count < node.count) {
+                this.remove(node)
+                this.insertAfter(node.next!, node)
+            }
+        } else {
+            const newNode: Node = new Node(key, 1)
+
+            this.map.set(key, newNode)
+            this.insertAfter(this.head, newNode)
+        }
     }
 
     dec(key: string): void {
-        const oldCount: number | undefined = this.count.get(key)
-        if (oldCount === undefined) {
-            return
-        }
+        if (this.map.has(key)) {
+            const node: Node = this.map.get(key)!
 
-        if (oldCount === 1) {
-            this.count.delete(key)
-
-            const index: number = this.getIndex(1, key)
-            if (index !== -1) {
-                this.pairs.splice(index, 1)
+            node.count--
+            if (node.count === 0) {
+                this.remove(node)
+                this.map.delete(key)
+            } else {
+                while (node.prev!.count > node.count) {
+                    this.remove(node)
+                    this.insertAfter(node.prev!.prev!, node)
+                }
             }
-        } else {
-            const newCount: number = oldCount - 1
-
-            this.count.set(key, newCount)
-            this.updatePairs(key, oldCount, newCount)
         }
     }
 
     getMaxKey(): string {
-        return this.pairs.length > 0 ? last(this.pairs)!.value : ""
+        return this.tail.prev === this.head ? "" : this.tail.prev!.key
     }
 
     getMinKey(): string {
-        return this.pairs.length > 0 ? first(this.pairs)!.value : ""
-    }
-
-    private sortPairs(): void {
-        this.pairs.sort((a: Pair<number, string>, b: Pair<number, string>): number => {
-            if (a.key !== b.key) {
-                return a.key - b.key
-            }
-
-            return a.value.localeCompare(b.value)
-        })
-    }
-
-    private updatePairs(key: string, oldCount: number | undefined, newCount: number): void {
-        if (oldCount !== undefined) {
-            const index: number = this.getIndex(oldCount, key)
-            if (index !== -1) {
-                this.pairs.splice(index, 1)
-            }
-        }
-
-        this.pairs.push(new Pair(newCount, key))
-        this.sortPairs()
-    }
-
-    private getIndex(count: number, key: string) {
-        return this.pairs.findIndex((p: Pair<number, string>): boolean => p.key === count && p.value === key)
+        return this.head.next === this.tail ? "" : this.head.next!.key
     }
 }
 
-class Pair<T, U> {
-    constructor(public key: T, public value: U) {
+class Node {
+    constructor(
+        public key: string,
+        public count: number,
+        public prev: Node | null = null,
+        public next: Node | null = null
+    ) {
     }
 }
