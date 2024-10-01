@@ -363,6 +363,7 @@
 1. № [1491. Average Salary Excluding the Minimum and Maximum Salary](solutions/1491.%20Average%20Salary%20Excluding%20the%20Minimum%20and%20Maximum%20Salary/script.ts)
 1. № [1493. Longest Subarray of 1's After Deleting One Element](solutions/1493.%20Longest%20Subarray%20of%201%27s%20After%20Deleting%20One%20Element/script.ts)
 1. № [1496. Path Crossing](solutions/1496.%20Path%20Crossing/script.ts)
+1. № [1497. Check If Array Pairs Are Divisible by k](solutions/1497.%20Check%20If%20Array%20Pairs%20Are%20Divisible%20by%20k/script.ts)
 1. № [1498. Number of Subsequences That Satisfy the Given Sum Condition](solutions/1498.%20Number%20of%20Subsequences%20That%20Satisfy%20the%20Given%20Sum%20Condition/script.ts)
 1. № [1502. Can Make Arithmetic Progression From Sequence](solutions/1502.%20Can%20Make%20Arithmetic%20Progression%20From%20Sequence/script.ts)
 1. № [1503. Last Moment Before All Ants Fall Out of a Plank](solutions/1503.%20Last%20Moment%20Before%20All%20Ants%20Fall%20Out%20of%20a%20Plank/script.ts)
