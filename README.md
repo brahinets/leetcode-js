@@ -388,6 +388,7 @@
 1. № [1578. Minimum Time to Make Rope Colorful](solutions/1578.%20Minimum%20Time%20to%20Make%20Rope%20Colorful/script.ts)
 1. № [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](solutions/1579.%20Remove%20Max%20Number%20of%20Edges%20to%20Keep%20Graph%20Fully%20Traversable/script.ts)
 1. № [1582. Special Positions in a Binary Matrix](solutions/1582.%20Special%20Positions%20in%20a%20Binary%20Matrix/script.ts)
+1. № [1590. Make Sum Divisible by P](solutions/1590.%20Make%20Sum%20Divisible%20by%20P/script.ts)
 1. № [1598. Crawler Log Folder](solutions/1598.%20Crawler%20Log%20Folder/script.ts)
 1. № [1603. Design Parking System](solutions/1603.%20Design%20Parking%20System/script.ts)
 1. № [1605. Find Valid Matrix Given Row and Column Sums](solutions/1605.%20Find%20Valid%20Matrix%20Given%20Row%20and%20Column%20Sums/script.ts)
