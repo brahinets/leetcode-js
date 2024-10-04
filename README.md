@@ -510,6 +510,7 @@
 1. № [2485. Find the Pivot Integer](solutions/2485.%20Find%20the%20Pivot%20Integer/script.ts)
 1. № [2486. Append Characters to String to Make Subsequence](solutions/2486.%20Append%20Characters%20to%20String%20to%20Make%20Subsequence/script.ts)
 1. № [2487. Remove Nodes From Linked List](solutions/2487.%20Remove%20Nodes%20From%20Linked%20List/script.ts)
+1. № [2491. Divide Players Into Teams of Equal Skill](solutions/2491.%20Divide%20Players%20Into%20Teams%20of%20Equal%20Skill/script.ts)
 1. № [2540. Minimum Common Value](solutions/2540.%20Minimum%20Common%20Value/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
