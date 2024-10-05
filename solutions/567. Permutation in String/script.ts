@@ -1,35 +1,28 @@
-import {mapsAreEqual} from "../../common/map-utils"
-import {count} from "../../common/array-utils"
+import {arrayOfZeros} from "../../common/array-factories"
 
 export {checkInclusion}
+
+const ALPHABET_SHIFT = 97
 
 function checkInclusion(s1: string, s2: string): boolean {
     if (s1.length > s2.length) {
         return false
     }
 
-    const s1Map: Map<string, number> = count(s1.split(""))
-    const s2Map: Map<string, number> = new Map<string, number>()
+    const counts: number[] = arrayOfZeros(26)
     for (let i: number = 0; i < s1.length; i++) {
-        const char: string = s2[i]
-        s2Map.set(char, (s2Map.get(char) ?? 0) + 1)
+        counts[s1.charCodeAt(i) - ALPHABET_SHIFT]++
+        counts[s2.charCodeAt(i) - ALPHABET_SHIFT]--
     }
-    if (mapsAreEqual(s1Map, s2Map)) {
+    if (counts.every((c: number): boolean => c === 0)) {
         return true
     }
 
     for (let i: number = s1.length; i < s2.length; i++) {
-        const charToRemove: string = s2[i - s1.length]
-        const charToAdd: string = s2[i]
+        counts[s2.charCodeAt(i) - ALPHABET_SHIFT]--
+        counts[s2.charCodeAt(i - s1.length) - ALPHABET_SHIFT]++
 
-        s2Map.set(charToRemove, s2Map.get(charToRemove)! - 1)
-        if (s2Map.get(charToRemove) === 0) {
-            s2Map.delete(charToRemove)
-        }
-
-        s2Map.set(charToAdd, (s2Map.get(charToAdd) ?? 0) + 1)
-
-        if (mapsAreEqual(s1Map, s2Map)) {
+        if (counts.every((count: number): boolean => count === 0)) {
             return true
         }
     }
