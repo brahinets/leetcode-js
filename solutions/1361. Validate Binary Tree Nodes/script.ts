@@ -1,6 +1,6 @@
 import {TreeNode} from "../../common/TreeNode"
-import {DisjointSetUnion} from "../1579. Remove Max Number of Edges to Keep Graph Fully Traversable/script"
 import {arrayOfZeros} from "../../common/array-factories"
+import {DisjointSetUnion} from "../../common/DisjointSetUnion"
 
 export {TreeNode, validateBinaryTreeNodes}
 
