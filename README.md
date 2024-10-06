@@ -426,6 +426,7 @@
 1. № [1793. Maximum Score of a Good Subarray](solutions/1793.%20Maximum%20Score%20of%20a%20Good%20Subarray/script.ts)
 1. № [1799. Maximize Score After N Operations](solutions/1799.%20Maximize%20Score%20After%20N%20Operations/script.ts)
 1. № [1802. Maximum Value at a Given Index in a Bounded Array](solutions/1802.%20Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array/script.ts)
+1. № [1813. Sentence Similarity III](solutions/1813.%20Sentence%20Similarity%20III/script.ts)
 1. № [1814. Count Nice Pairs in an Array](solutions/1814.%20Count%20Nice%20Pairs%20in%20an%20Array/script.ts)
 1. № [1822. Sign of the Product of an Array](solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array/script.ts)
 1. № [1823. Find the Winner of the Circular Game](solutions/1823.%20Find%20the%20Winner%20of%20the%20Circular%20Game/script.ts)
