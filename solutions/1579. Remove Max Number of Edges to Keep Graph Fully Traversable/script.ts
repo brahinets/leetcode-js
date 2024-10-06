@@ -1,6 +1,6 @@
 import {arrayOfZeros} from "../../common/array-factories"
 
-export {maxNumEdgesToRemove}
+export {maxNumEdgesToRemove, DisjointSetUnion}
 
 const CAN_BE_TRAVERSED_BY_ALICE: number = 1
 const CAN_BE_TRAVERSED_BY_BOB: number = 2
