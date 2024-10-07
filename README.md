@@ -524,6 +524,7 @@
 1. № [2616. Minimize the Maximum Difference of Pairs](solutions/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/script.ts)
 1. № [2642. Design Graph With Shortest Path Calculator](solutions/2642.%20Design%20Graph%20With%20Shortest%20Path%20Calculator/script.ts)
 1. № [2678. Number of Senior Citizens](solutions/2678.%20Number%20of%20Senior%20Citizens/script.ts)
+1. № [2696. Minimum String Length After Removing Substrings](solutions/2696.%20Minimum%20String%20Length%20After%20Removing%20Substrings/script.ts)
 1. № [2699. Modify Graph Edge Weights](solutions/2699.%20Modify%20Graph%20Edge%20Weights/script.ts)
 1. № [2706. Buy Two Chocolates](solutions/2706.%20Buy%20Two%20Chocolates/script.ts)
 1. № [2707. Extra Characters in a String](solutions/2707.%20Extra%20Characters%20in%20a%20String/script.ts)
