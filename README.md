@@ -276,6 +276,7 @@
 1. № [956. Tallest Billboard](solutions/956.%20Tallest%20Billboard/script.ts)
 1. № [958. Check Completeness of a Binary Tree](solutions/958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
 1. № [959. Regions Cut By Slashes](solutions/959.%20Regions%20Cut%20By%20Slashes/script.ts)
+1. № [962. Maximum Width Ramp](solutions/962.%20Maximum%20Width%20Ramp/script.ts)
 1. № [974. Subarray Sums Divisible by K](solutions/974.%20Subarray%20Sums%20Divisible%20by%20K/script.ts)
 1. № [977. Squares of a Sorted Array](solutions/977.%20Squares%20of%20a%20Sorted%20Array/script.ts)
 1. № [979. Distribute Coins in Binary Tree](solutions/979.%20Distribute%20Coins%20in%20Binary%20Tree/script.ts)
