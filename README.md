@@ -449,6 +449,7 @@
 1. № [1921. Eliminate Maximum Number of Monsters](solutions/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/script.ts)
 1. № [1930. Unique Length-3 Palindromic Subsequences](solutions/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/script.ts)
 1. № [1937. Maximum Number of Points with Cost](solutions/1937.%20Maximum%20Number%20of%20Points%20with%20Cost/script.ts)
+1. № [1942. The Number of the Smallest Unoccupied Chair](solutions/1942.%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair/script.ts)
 1. № [1945. Sum of Digits of String After Convert](solutions/1945.%20Sum%20of%20Digits%20of%20String%20After%20Convert/script.ts)
 1. № [1963. Minimum Number of Swaps to Make the String Balanced](solutions/1963.%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20String%20Balanced/script.ts)
 1. № [1971. Find if Path Exists in Graph](solutions/1971.%20Find%20if%20Path%20Exists%20in%20Graph/script.ts)
