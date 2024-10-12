@@ -504,6 +504,7 @@
 1. № [2392. Build a Matrix With Conditions](solutions/2392.%20Build%20a%20Matrix%20With%20Conditions/script.ts)
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
 1. № [2402. Meeting Rooms III](solutions/2402.%20Meeting%20Rooms%20III/script.ts)
+1. № [2406. Divide Intervals Into Minimum Number of Groups](solutions/2406.%20Divide%20Intervals%20Into%20Minimum%20Number%20of%20Groups/script.ts)
 1. № [2416. Sum of Prefix Scores of Strings](solutions/2416.%20Sum%20of%20Prefix%20Scores%20of%20Strings/script.ts)
 1. № [2418. Sort the People](solutions/2418.%20Sort%20the%20People/script.ts)
 1. № [2419. Longest Subarray With Maximum Bitwise AND](solutions/2419.%20Longest%20Subarray%20With%20Maximum%20Bitwise%20AND/script.ts)
