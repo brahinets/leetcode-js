@@ -1,18 +1,28 @@
 export {minGroups}
 
 function minGroups(intervals: number[][]): number {
-    intervals.sort((a: number[], b: number[]): number => a[0] - b[0])
-
-    const pq: number[] = []
-
-    for (const [start, end] of intervals) {
-        if (pq.length > 0 && pq[0] <= start) {
-            pq.shift()
-        }
-
-        pq.push(end)
-        pq.sort((a: number, b: number): number => a - b)
+    const events: [number, number][] = []
+    for (const interval of intervals) {
+        events.push([interval[0], 1])
+        events.push([interval[1] + 1, -1])
     }
 
-    return pq.length
+    events.sort(([aStart, aEnd]: [number, number], [bStart, bEnd]: [number, number]): number => {
+        if (aStart === bStart) {
+            return aEnd - bEnd
+        } else {
+            return aStart - bStart
+        }
+    })
+
+    let concurrentIntervals: number = 0
+    let maxConcurrentIntervals: number = 0
+
+
+    for (const [, eventType] of events) {
+        concurrentIntervals += eventType
+        maxConcurrentIntervals = Math.max(maxConcurrentIntervals, concurrentIntervals)
+    }
+
+    return maxConcurrentIntervals
 }
