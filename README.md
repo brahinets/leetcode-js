@@ -348,6 +348,7 @@
 1. № [1395. Count Number of Teams](solutions/1395.%20Count%20Number%20of%20Teams/script.ts)
 1. № [1396. Design Underground System](solutions/1396.%20Design%20Underground%20System/script.ts)
 1. № [1404. Number of Steps to Reduce a Number in Binary Representation to One](solutions/1404.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20in%20Binary%20Representation%20to%20One/script.ts)
+1. № [1405. Longest Happy String](solutions/1405.%20Longest%20Happy%20String/script.ts)
 1. № [1424. Diagonal Traverse II](solutions/1424.%20Diagonal%20Traverse%20II/script.ts)
 1. № [1425. Constrained Subsequence Sum](solutions/1425.%20Constrained%20Subsequence%20Sum/script.ts)
 1. № [1431. Kids With the Greatest Number of Candies](solutions/1431.%20Kids%20With%20the%20Greatest%20Number%20of%20Candies/script.ts)
