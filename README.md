@@ -208,6 +208,7 @@
 1. № [650. 2 Keys Keyboard](solutions/650.%202%20Keys%20Keyboard/script.ts)
 1. № [661. Image Smoother](solutions/661.%20Image%20Smoother/script.ts)
 1. № [664. Strange Printer](solutions/664.%20Strange%20Printer/script.ts)
+1. № [670. Maximum Swap](solutions/670.%20Maximum%20Swap/script.ts)
 1. № [678. Valid Parenthesis String](solutions/678.%20Valid%20Parenthesis%20String/script.ts)
 1. № [688. Knight Probability in Chessboard](solutions/688.%20Knight%20Probability%20in%20Chessboard/script.ts)
 1. № [692. Top K Frequent Words](solutions/692.%20Top%20K%20Frequent%20Words/script.ts)
