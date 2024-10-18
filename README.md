@@ -463,6 +463,7 @@
 1. № [2024. Maximize the Confusion of an Exam](solutions/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/script.ts)
 1. № [2028. Find Missing Observations](solutions/2028.%20Find%20Missing%20Observations/script.ts)
 1. № [2037. Minimum Number of Moves to Seat Everyone](solutions/2037.%20Minimum%20Number%20of%20Moves%20to%20Seat%20Everyone/script.ts)
+1. № [2044. Count Number of Maximum Bitwise-OR Subsets](solutions/2044.%20Count%20Number%20of%20Maximum%20Bitwise-OR%20Subsets/script.ts)
 1. № [2045. Second Minimum Time to Reach Destination](solutions/2045.%20Second%20Minimum%20Time%20to%20Reach%20Destination/script.ts)
 1. № [2050. Parallel Courses III](solutions/2050.%20Parallel%20Courses%20III/script.ts)
 1. № [2053. Kth Distinct String in an Array](solutions/2053.%20Kth%20Distinct%20String%20in%20an%20Array/script.ts)
