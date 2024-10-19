@@ -386,6 +386,7 @@
 1. № [1535. Find the Winner of an Array Game](solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game/script.ts)
 1. № [1539. Kth Missing Positive Number](solutions/1539.%20Kth%20Missing%20Positive%20Number/script.ts)
 1. № [1544. Make The String Great](solutions/1544.%20Make%20The%20String%20Great/script.ts)
+1. № [1545. Find Kth Bit in Nth Binary String](solutions/1545.%20Find%20Kth%20Bit%20in%20Nth%20Binary%20String/script.ts)
 1. № [1550. Three Consecutive Odds](solutions/1550.%20Three%20Consecutive%20Odds/script.ts)
 1. № [1552. Magnetic Force Between Two Balls](solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/script.ts)
 1. № [1561. Maximum Number of Coins You Can Get](solutions/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/script.ts)
