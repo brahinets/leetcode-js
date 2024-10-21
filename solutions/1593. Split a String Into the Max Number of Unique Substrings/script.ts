@@ -2,24 +2,26 @@ export {maxUniqueSplit}
 
 function maxUniqueSplit(s: string): number {
     const seen: Set<string> = new Set<string>()
-    let result: number = 0
 
-    const dfs = (start: number): void => {
-        if (start === s.length) {
-            result = Math.max(result, seen.size)
-            return
-        }
+    return dfs(s, 0, seen, 0)
+}
 
-        for (let i = start + 1; i <= s.length; i++) {
-            const sub = s.substring(start, i)
-            if (!seen.has(sub)) {
-                seen.add(sub)
-                dfs(i)
-                seen.delete(sub)
-            }
+function dfs(s: string, start: number, seen: Set<string>, result: number): number {
+    if (start === s.length) {
+        result = Math.max(result, seen.size)
+
+        return result
+    }
+
+    for (let i: number = start + 1; i <= s.length; i++) {
+        const sub: string = s.substring(start, i)
+
+        if (!seen.has(sub)) {
+            seen.add(sub)
+            result = dfs(s, i, seen, result)
+            seen.delete(sub)
         }
     }
 
-    dfs(0)
     return result
 }
