@@ -536,6 +536,7 @@
 1. № [2597. The Number of Beautiful Subsets](solutions/2597.%20The%20Number%20of%20Beautiful%20Subsets/script.ts)
 1. № [2610. Convert an Array Into a 2D Array With Conditions](solutions/2610.%20Convert%20an%20Array%20Into%20a%202D%20Array%20With%20Conditions/script.ts)
 1. № [2616. Minimize the Maximum Difference of Pairs](solutions/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/script.ts)
+1. № [2641. Cousins in Binary Tree II](solutions/2641.%20Cousins%20in%20Binary%20Tree%20II/script.ts)
 1. № [2642. Design Graph With Shortest Path Calculator](solutions/2642.%20Design%20Graph%20With%20Shortest%20Path%20Calculator/script.ts)
 1. № [2678. Number of Senior Citizens](solutions/2678.%20Number%20of%20Senior%20Citizens/script.ts)
 1. № [2696. Minimum String Length After Removing Substrings](solutions/2696.%20Minimum%20String%20Length%20After%20Removing%20Substrings/script.ts)
