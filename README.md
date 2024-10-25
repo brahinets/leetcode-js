@@ -321,6 +321,7 @@
 1. № [1219. Path with Maximum Gold](solutions/1219.%20Path%20with%20Maximum%20Gold/script.ts)
 1. № [1220. Count Vowels Permutation](solutions/1220.%20Count%20Vowels%20Permutation/script.ts)
 1. № [1232. Check If It Is a Straight Line](solutions/1232.%20Check%20If%20It%20Is%20a%20Straight%20Line/script.ts)
+1. № [1233. Remove Sub-Folders from the Filesystem](solutions/1233.%20Remove%20Sub-Folders%20from%20the%20Filesystem/script.ts)
 1. № [1235. Maximum Profit in Job Scheduling](solutions/1235.%20Maximum%20Profit%20in%20Job%20Scheduling/script.ts)
 1. № [1239. Maximum Length of a Concatenated String with Unique Characters](solutions/1239.%20Maximum%20Length%20of%20a%20Concatenated%20String%20with%20Unique%20Characters/script.ts)
 1. № [1248. Count Number of Nice Subarrays](solutions/1248.%20Count%20Number%20of%20Nice%20Subarrays/script.ts)
