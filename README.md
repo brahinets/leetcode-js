@@ -522,6 +522,7 @@
 1. № [2441. Largest Positive Integer That Exists With Its Negative](solutions/2441.%20Largest%20Positive%20Integer%20That%20Exists%20With%20Its%20Negative/script.ts)
 1. № [2444. Count Subarrays With Fixed Bounds](solutions/2444.%20Count%20Subarrays%20With%20Fixed%20Bounds/script.ts)
 1. № [2448. Minimum Cost to Make Array Equal](solutions/2448.%20Minimum%20Cost%20to%20Make%20Array%20Equal/script.ts)
+1. № [2458. Height of Binary Tree After Subtree Removal Queries](solutions/2458.%20Height%20of%20Binary%20Tree%20After%20Subtree%20Removal%20Queries/script.ts)
 1. № [2462. Total Cost to Hire K Workers](solutions/2462.%20Total%20Cost%20to%20Hire%20K%20Workers/script.ts)
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
 1. № [2482. Difference Between Ones and Zeros in Row and Column](solutions/2482.%20Difference%20Between%20Ones%20and%20Zeros%20in%20Row%20and%20Column/script.ts)
