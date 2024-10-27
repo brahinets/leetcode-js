@@ -329,6 +329,7 @@
 1. № [1254. Number of Closed Islands](solutions/1254.%20Number%20of%20Closed%20Islands/script.ts)
 1. № [1255. Maximum Score Words Formed by Letters](solutions/1255.%20Maximum%20Score%20Words%20Formed%20by%20Letters/script.ts)
 1. № [1266. Minimum Time Visiting All Points](solutions/1266.%20Minimum%20Time%20Visiting%20All%20Points/script.ts)
+1. № [1277. Count Square Submatrices with All Ones](solutions/1277.%20Count%20Square%20Submatrices%20with%20All%20Ones/script.ts)
 1. № [1287. Element Appearing More Than 25% In Sorted Array](solutions/1287.%20Element%20Appearing%20More%20Than%2025%25%20In%20Sorted%20Array/script.ts)
 1. № [1289. Minimum Falling Path Sum II](solutions/1289.%20Minimum%20Falling%20Path%20Sum%20II/script.ts)
 1. № [1291. Sequential Digits](solutions/1291.%20Sequential%20Digits/script.ts)
