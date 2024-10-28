@@ -531,6 +531,7 @@
 1. № [2486. Append Characters to String to Make Subsequence](solutions/2486.%20Append%20Characters%20to%20String%20to%20Make%20Subsequence/script.ts)
 1. № [2487. Remove Nodes From Linked List](solutions/2487.%20Remove%20Nodes%20From%20Linked%20List/script.ts)
 1. № [2491. Divide Players Into Teams of Equal Skill](solutions/2491.%20Divide%20Players%20Into%20Teams%20of%20Equal%20Skill/script.ts)
+1. № [2501. Longest Square Streak in an Array](solutions/2501.%20Longest%20Square%20Streak%20in%20an%20Array/script.ts)
 1. № [2530. Maximal Score After Applying K Operations](solutions/2530.%20Maximal%20Score%20After%20Applying%20K%20Operations/script.ts)
 1. № [2540. Minimum Common Value](solutions/2540.%20Minimum%20Common%20Value/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
