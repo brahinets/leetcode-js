@@ -1,4 +1,4 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import {matrixOfZeros} from "../../common/array-factories";
 
 export {minimumTotalDistance}
 
@@ -6,7 +6,7 @@ function minimumTotalDistance(robot: number[], factory: number[][]): number {
     robot.sort((a: number, b: number): number => a - b)
     factory.sort((a: number[], b: number[]): number => a[0] - b[0])
 
-    const dp: number[][] = matrixOfZeros(factory.length + 1, robot.length + 1)
+    const dp: number[][] = matrixOfZeros(robot.length + 1, factory.length + 1)
     for (let i: number = 0; i < robot.length; i++) {
         dp[i][factory.length] = Infinity
     }
