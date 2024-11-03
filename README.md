@@ -237,6 +237,7 @@
 1. № [786. K-th Smallest Prime Fraction](solutions/786.%20K-th%20Smallest%20Prime%20Fraction/script.ts)
 1. № [787. Cheapest Flights Within K Stops](solutions/787.%20Cheapest%20Flights%20Within%20K%20Stops/script.ts)
 1. № [791. Custom Sort String](solutions/791.%20Custom%20Sort%20String/script.ts)
+1. № [796. Rotate String](solutions/796.%20Rotate%20String/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
 1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
 1. № [823. Binary Trees With Factors](solutions/823.%20Binary%20Trees%20With%20Factors/script.ts)
