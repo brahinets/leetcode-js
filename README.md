@@ -564,6 +564,7 @@
 1. № [2849. Determine if a Cell Is Reachable at a Given Time](solutions/2849.%20Determine%20if%20a%20Cell%20Is%20Reachable%20at%20a%20Given%20Time/script.ts)
 1. № [2864. Maximum Odd Binary Number](solutions/2864.%20Maximum%20Odd%20Binary%20Number/script.ts)
 1. № [2870. Minimum Number of Operations to Make Array Empty](solutions/2870.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Empty/script.ts)
+1. № [2914. Minimum Number of Changes to Make Binary String Beautiful](solutions/2914.%20Minimum%20Number%20of%20Changes%20to%20Make%20Binary%20String%20Beautiful/script.ts)
 1. № [2938. Separate Black and White Balls](solutions/2938.%20Separate%20Black%20and%20White%20Balls/script.ts)
 1. № [2958. Length of Longest Subarray With at Most K Frequency](solutions/2958.%20Length%20of%20Longest%20Subarray%20With%20at%20Most%20K%20Frequency/script.ts)
 1. № [2962. Count Subarrays Where Max Element Appears at Least K Times](solutions/2962.%20Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/script.ts)
