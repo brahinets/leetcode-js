@@ -1,11 +1,17 @@
 export {minEnd}
 
 function minEnd(n: number, x: number): number {
-    let result: number = x
+    let result: bigint = BigInt(x)
 
-    while (--n > 0) {
-        result = (result + 1) | x
+    let remaining: bigint = BigInt(n - 1)
+    let position: bigint = 1n
+    while (remaining > 0n) {
+        if ((BigInt(x) & position) === 0n) {
+            result |= (remaining & 1n) * position
+            remaining >>= 1n
+        }
+        position <<= 1n
     }
 
-    return result
+    return Number(result)
 }
