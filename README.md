@@ -581,6 +581,7 @@
 1. № [3068. Find the Maximum Sum of Node Values](solutions/3068.%20Find%20the%20Maximum%20Sum%20of%20Node%20Values/script.ts)
 1. № [3075. Maximize Happiness of Selected Children](solutions/3075.%20Maximize%20Happiness%20of%20Selected%20Children/script.ts)
 1. № [3110. Score of a String](solutions/3110.%20Score%20of%20a%20String/script.ts)
+1. № [3133. Minimum Array End](solutions/3133.%20Minimum%20Array%20End/script.ts)
 1. № [3163. String Compression III](solutions/3163.%20String%20Compression%20III/script.ts)
 1. № [3217. Delete Nodes From Linked List Present in Array](solutions/3217.%20Delete%20Nodes%20From%20Linked%20List%20Present%20in%20Array/script.ts)
 
