@@ -15,4 +15,9 @@ describe('2070. Most Beautiful Item for Each Query', (): void => {
         expect(maximumBeauty([[10, 1000]], [5]))
             .toEqual([0])
     })
+
+    it('Big', (): void => {
+        expect(maximumBeauty([[5000, 5000]], [5001]))
+            .toEqual([5000])
+    })
 })
