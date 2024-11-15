@@ -398,6 +398,7 @@
 1. № [1561. Maximum Number of Coins You Can Get](solutions/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/script.ts)
 1. № [1568. Minimum Number of Days to Disconnect Island](solutions/1568.%20Minimum%20Number%20of%20Days%20to%20Disconnect%20Island/script.ts)
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
+1. № [1574. Shortest Subarray to be Removed to Make Array Sorted](solutions/1574.%20Shortest%20Subarray%20to%20be%20Removed%20to%20Make%20Array%20Sorted/script.ts)
 1. № [1575. Count All Possible Routes](solutions/1575.%20Count%20All%20Possible%20Routes/script.ts)
 1. № [1578. Minimum Time to Make Rope Colorful](solutions/1578.%20Minimum%20Time%20to%20Make%20Rope%20Colorful/script.ts)
 1. № [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](solutions/1579.%20Remove%20Max%20Number%20of%20Edges%20to%20Keep%20Graph%20Fully%20Traversable/script.ts)
