@@ -591,5 +591,6 @@
 1. № [3133. Minimum Array End](solutions/3133.%20Minimum%20Array%20End/script.ts)
 1. № [3163. String Compression III](solutions/3163.%20String%20Compression%20III/script.ts)
 1. № [3217. Delete Nodes From Linked List Present in Array](solutions/3217.%20Delete%20Nodes%20From%20Linked%20List%20Present%20in%20Array/script.ts)
+1. № [3254. Find the Power of K-Size Subarrays I](solutions/3254.%20Find%20the%20Power%20of%20K-Size%20Subarrays%20I/script.ts)
 
 </details>
