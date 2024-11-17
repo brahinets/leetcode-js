@@ -252,6 +252,7 @@
 1. № [859. Buddy Strings](solutions/859.%20Buddy%20Strings/script.ts)
 1. № [860. Lemonade Change](solutions/860.%20Lemonade%20Change/script.ts)
 1. № [861. Score After Flipping Matrix](solutions/861.%20Score%20After%20Flipping%20Matrix/script.ts)
+1. № [862. Shortest Subarray with Sum at Least K](solutions/862.%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K/script.ts)
 1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
 1. № [867. Transpose Matrix](solutions/867.%20Transpose%20Matrix/script.ts)
 1. № [872. Leaf-Similar Trees](solutions/872.%20Leaf-Similar%20Trees/script.ts)
