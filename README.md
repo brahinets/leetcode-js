@@ -535,6 +535,7 @@
 1. № [2444. Count Subarrays With Fixed Bounds](solutions/2444.%20Count%20Subarrays%20With%20Fixed%20Bounds/script.ts)
 1. № [2448. Minimum Cost to Make Array Equal](solutions/2448.%20Minimum%20Cost%20to%20Make%20Array%20Equal/script.ts)
 1. № [2458. Height of Binary Tree After Subtree Removal Queries](solutions/2458.%20Height%20of%20Binary%20Tree%20After%20Subtree%20Removal%20Queries/script.ts)
+1. № [2461. Maximum Sum of Distinct Subarrays With Length K](solutions/2461.%20Maximum%20Sum%20of%20Distinct%20Subarrays%20With%20Length%20K/script.ts)
 1. № [2462. Total Cost to Hire K Workers](solutions/2462.%20Total%20Cost%20to%20Hire%20K%20Workers/script.ts)
 1. № [2463. Minimum Total Distance Traveled](solutions/2463.%20Minimum%20Total%20Distance%20Traveled/script.ts)
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
