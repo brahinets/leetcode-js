@@ -546,6 +546,7 @@
 1. № [2490. Circular Sentence](solutions/2490.%20Circular%20Sentence/script.ts)
 1. № [2491. Divide Players Into Teams of Equal Skill](solutions/2491.%20Divide%20Players%20Into%20Teams%20of%20Equal%20Skill/script.ts)
 1. № [2501. Longest Square Streak in an Array](solutions/2501.%20Longest%20Square%20Streak%20in%20an%20Array/script.ts)
+1. № [2516. Take K of Each Character From Left and Right](solutions/2516.%20Take%20K%20of%20Each%20Character%20From%20Left%20and%20Right/script.ts)
 1. № [2530. Maximal Score After Applying K Operations](solutions/2530.%20Maximal%20Score%20After%20Applying%20K%20Operations/script.ts)
 1. № [2540. Minimum Common Value](solutions/2540.%20Minimum%20Common%20Value/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
