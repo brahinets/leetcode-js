@@ -505,6 +505,7 @@
 1. № [2225. Find Players With Zero or One Losses](solutions/2225.%20Find%20Players%20With%20Zero%20or%20One%20Losses/script.ts)
 1. № [2235. Add Two Integers](solutions/2235.%20Add%20Two%20Integers/script.ts)
 1. № [2236. Root Equals Sum of Children](solutions/2236.%20Root%20Equals%20Sum%20of%20Children/script.ts)
+1. № [2257. Count Unguarded Cells in the Grid](solutions/2257.%20Count%20Unguarded%20Cells%20in%20the%20Grid/script.ts)
 1. № [2264. Largest 3-Same-Digit Number in String](solutions/2264.%20Largest%203-Same-Digit%20Number%20in%20String/script.ts)
 1. № [2265. Count Nodes Equal to Average of Subtree](solutions/2265.%20Count%20Nodes%20Equal%20to%20Average%20of%20Subtree/script.ts)
 1. № [2275. Largest Combination With Bitwise AND Greater Than Zero](solutions/2275.%20Largest%20Combination%20With%20Bitwise%20AND%20Greater%20Than%20Zero/script.ts)
