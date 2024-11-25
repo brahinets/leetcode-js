@@ -232,6 +232,7 @@
 1. № [746. Min Cost Climbing Stairs](solutions/746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
 1. № [752. Open the Lock](solutions/752.%20Open%20the%20Lock/script.ts)
 1. № [767. Reorganize String](solutions/767.%20Reorganize%20String/script.ts)
+1. № [773. Sliding Puzzle](solutions/773.%20Sliding%20Puzzle/script.ts)
 1. № [779. K-th Symbol in Grammar](solutions/779.%20K-th%20Symbol%20in%20Grammar/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
 1. № [786. K-th Smallest Prime Fraction](solutions/786.%20K-th%20Smallest%20Prime%20Fraction/script.ts)
