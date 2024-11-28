@@ -18,13 +18,15 @@ function minimumObstacles(grid: number[][]): number {
             const newCol: number = col + dCol
 
             if (isValid(grid, newRow, newCol) && minObstacles[newRow][newCol] === Number.MAX_SAFE_INTEGER) {
+                const newObstacles: number = obstacles + grid[newRow][newCol]
+
                 if (grid[newRow][newCol] === 1) {
-                    minObstacles[newRow][newCol] = obstacles + 1
-                    deque.push([obstacles + 1, newRow, newCol])
+                    deque.push([newObstacles, newRow, newCol])
                 } else {
-                    minObstacles[newRow][newCol] = obstacles
-                    deque.unshift([obstacles, newRow, newCol])
+                    deque.unshift([newObstacles, newRow, newCol])
                 }
+
+                minObstacles[newRow][newCol] = newObstacles
             }
         }
     }
