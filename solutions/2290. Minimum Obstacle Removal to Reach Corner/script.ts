@@ -1,40 +1,47 @@
-import {matrixOf} from "../../common/array-factories"
+import {matrixOfZeros} from "../../common/array-factories"
 
 export {minimumObstacles}
 
+const DIRS: number[][] = [[-1, 0], [0, -1], [0, 1], [1, 0]]
+
 function minimumObstacles(grid: number[][]): number {
-    const directions: number[][] = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-    const minObstacles: number[][] = matrixOf(Number.MAX_SAFE_INTEGER, grid.length, grid[0].length)
-    minObstacles[0][0] = 0
+    const queues: number[][][] = [[[0, 0]], [[grid.length - 1, grid[0].length - 1]]]
 
-    const deque: [number, number, number][] = []
-    deque.push([0, 0, 0])
+    const visited: number[][] = matrixOfZeros(grid.length, grid[0].length)
+    visited[0][0] = 1
+    visited[grid.length - 1][grid[0].length - 1] = 2
 
-    while (deque.length > 0) {
-        const [obstacles, row, col]: [number, number, number] = deque.shift()!
+    let currentQueue: number = 0
+    let moves: number = -1
 
-        for (const [dRow, dCol] of directions) {
-            const newRow: number = row + dRow
-            const newCol: number = col + dCol
+    do {
+        const nextQueue: number[][] = []
+        for (const [y, x] of queues[currentQueue]) {
+            if (visited[y][x] === 3) {
+                return Math.max(0, moves)
+            }
 
-            if (isValid(grid, newRow, newCol) && minObstacles[newRow][newCol] === Number.MAX_SAFE_INTEGER) {
-                const newObstacles: number = obstacles + grid[newRow][newCol]
+            for (const [dy, dx] of DIRS) {
+                const y2: number = y + dy
+                const x2: number = x + dx
 
-                if (grid[newRow][newCol] === 1) {
-                    deque.push([newObstacles, newRow, newCol])
-                } else {
-                    deque.unshift([newObstacles, newRow, newCol])
+                if (y2 < 0 || y2 >= grid.length || x2 < 0 || x2 >= grid[0].length || visited[y2][x2] === currentQueue + 1) {
+                    continue
                 }
 
-                minObstacles[newRow][newCol] = newObstacles
+                visited[y2][x2] += currentQueue + 1
+                if (grid[y2][x2] === 1) {
+                    nextQueue.push([y2, x2])
+                } else {
+                    queues[currentQueue].push([y2, x2])
+                }
             }
         }
-    }
 
-    return minObstacles[grid.length - 1][grid[0].length - 1]
-}
+        queues[currentQueue] = nextQueue
+        currentQueue = 1 - currentQueue
+        moves++
+    } while (queues[currentQueue].length > 0)
 
-
-function isValid(grid: number[][], row: number, col: number): boolean {
-    return row >= 0 && col >= 0 && row < grid.length && col < grid[0].length
+    return -1
 }
