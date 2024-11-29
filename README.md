@@ -558,6 +558,7 @@
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
 1. № [2563. Count the Number of Fair Pairs](solutions/2563.%20Count%20the%20Number%20of%20Fair%20Pairs/script.ts)
+1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)
 1. № [2582. Pass the Pillow](solutions/2582.%20Pass%20the%20Pillow/script.ts)
 1. № [2583. Kth Largest Sum in a Binary Tree](solutions/2583.%20Kth%20Largest%20Sum%20in%20a%20Binary%20Tree/script.ts)
 1. № [2597. The Number of Beautiful Subsets](solutions/2597.%20The%20Number%20of%20Beautiful%20Subsets/script.ts)
