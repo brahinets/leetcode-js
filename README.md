@@ -345,6 +345,7 @@
 1. № [1331. Rank Transform of an Array](solutions/1331.%20Rank%20Transform%20of%20an%20Array/script.ts)
 1. № [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](solutions/1334.%20Find%20the%20City%20With%20the%20Smallest%20Number%20of%20Neighbors%20at%20a%20Threshold%20Distance/script.ts)
 1. № [1335. Minimum Difficulty of a Job Schedule](solutions/1335.%20Minimum%20Difficulty%20of%20a%20Job%20Schedule/script.ts)
+1. № [1346. Check If N and Its Double Exist](solutions/1346.%20Check%20If%20N%20and%20Its%20Double%20Exist/script.ts)
 1. № [1347. Minimum Number of Steps to Make Two Strings Anagram](solutions/1347.%20Minimum%20Number%20of%20Steps%20to%20Make%20Two%20Strings%20Anagram/script.ts)
 1. № [1351. Count Negative Numbers in a Sorted Matrix](solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/script.ts)
 1. № [1356. Sort Integers by The Number of 1 Bits](solutions/1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits/script.ts)
