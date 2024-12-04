@@ -584,6 +584,7 @@
 1. № [2807. Insert Greatest Common Divisors in Linked List](solutions/2807.%20Insert%20Greatest%20Common%20Divisors%20in%20Linked%20List/script.ts)
 1. № [2812. Find the Safest Path in a Grid](solutions/2812.%20Find%20the%20Safest%20Path%20in%20a%20Grid/script.ts)
 1. № [2816. Double a Number Represented as a Linked List](solutions/2816.%20Double%20a%20Number%20Represented%20as%20a%20Linked%20List/script.ts)
+1. № [2825. Make String a Subsequence Using Cyclic Increments](solutions/2825.%20Make%20String%20a%20Subsequence%20Using%20Cyclic%20Increments/script.ts)
 1. № [2849. Determine if a Cell Is Reachable at a Given Time](solutions/2849.%20Determine%20if%20a%20Cell%20Is%20Reachable%20at%20a%20Given%20Time/script.ts)
 1. № [2864. Maximum Odd Binary Number](solutions/2864.%20Maximum%20Odd%20Binary%20Number/script.ts)
 1. № [2870. Minimum Number of Operations to Make Array Empty](solutions/2870.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Empty/script.ts)
