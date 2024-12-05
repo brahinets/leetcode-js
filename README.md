@@ -524,6 +524,7 @@
 1. № [2326. Spiral Matrix IV](solutions/2326.%20Spiral%20Matrix%20IV/script.ts)
 1. № [2331. Evaluate Boolean Binary Tree](solutions/2331.%20Evaluate%20Boolean%20Binary%20Tree/script.ts)
 1. № [2336. Smallest Number in Infinite Set](solutions/2336.%20Smallest%20Number%20in%20Infinite%20Set/script.ts)
+1. № [2337. Move Pieces to Obtain a String](solutions/2337.%20Move%20Pieces%20to%20Obtain%20a%20String/script.ts)
 1. № [2348. Number of Zero-Filled Sub-arrays](solutions/2348.%20Number%20of%20Zero-Filled%20Sub-arrays/script.ts)
 1. № [2352. Equal Row and Column Pairs](solutions/2352.%20Equal%20Row%20and%20Column%20Pairs/script.ts)
 1. № [2353. Design a Food Rating System](solutions/2353.%20Design%20a%20Food%20Rating%20System/script.ts)
