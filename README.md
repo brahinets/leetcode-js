@@ -562,6 +562,7 @@
 1. № [2540. Minimum Common Value](solutions/2540.%20Minimum%20Common%20Value/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
+1. № [2554. Maximum Number of Integers to Choose From a Range I](solutions/2554.%20Maximum%20Number%20of%20Integers%20to%20Choose%20From%20a%20Range%20I/script.ts)
 1. № [2563. Count the Number of Fair Pairs](solutions/2563.%20Count%20the%20Number%20of%20Fair%20Pairs/script.ts)
 1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)
 1. № [2582. Pass the Pillow](solutions/2582.%20Pass%20the%20Pillow/script.ts)
