@@ -443,6 +443,7 @@
 1. № [1750. Minimum Length of String After Deleting Similar Ends](solutions/1750.%20Minimum%20Length%20of%20String%20After%20Deleting%20Similar%20Ends/script.ts)
 1. № [1758. Minimum Changes To Make Alternating Binary String](solutions/1758.%20Minimum%20Changes%20To%20Make%20Alternating%20Binary%20String/script.ts)
 1. № [1759. Count Number of Homogenous Substrings](solutions/1759.%20Count%20Number%20of%20Homogenous%20Substrings/script.ts)
+1. № [1760. Minimum Limit of Balls in a Bag](solutions/1760.%20Minimum%20Limit%20of%20Balls%20in%20a%20Bag/script.ts)
 1. № [1768. Merge Strings Alternately](solutions/1768.%20Merge%20Strings%20Alternately/script.ts)
 1. № [1791. Find Center of Star Graph](solutions/1791.%20Find%20Center%20of%20Star%20Graph/script.ts)
 1. № [1793. Maximum Score of a Good Subarray](solutions/1793.%20Maximum%20Score%20of%20a%20Good%20Subarray/script.ts)
