@@ -488,6 +488,7 @@
 1. № [2045. Second Minimum Time to Reach Destination](solutions/2045.%20Second%20Minimum%20Time%20to%20Reach%20Destination/script.ts)
 1. № [2050. Parallel Courses III](solutions/2050.%20Parallel%20Courses%20III/script.ts)
 1. № [2053. Kth Distinct String in an Array](solutions/2053.%20Kth%20Distinct%20String%20in%20an%20Array/script.ts)
+1. № [2054. Two Best Non-Overlapping Events](solutions/2054.%20Two%20Best%20Non-Overlapping%20Events/script.ts)
 1. № [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](solutions/2058.%20Find%20the%20Minimum%20and%20Maximum%20Number%20of%20Nodes%20Between%20Critical%20Points/script.ts)
 1. № [2064. Minimized Maximum of Products Distributed to Any Store](solutions/2064.%20Minimized%20Maximum%20of%20Products%20Distributed%20to%20Any%20Store/script.ts)
 1. № [2070. Most Beautiful Item for Each Query](solutions/2070.%20Most%20Beautiful%20Item%20for%20Each%20Query/script.ts)
