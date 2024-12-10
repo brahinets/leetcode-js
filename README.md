@@ -600,6 +600,7 @@
 1. № [2966. Divide Array Into Arrays With Max Difference](solutions/2966.%20Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/script.ts)
 1. № [2971. Find Polygon With the Largest Perimeter](solutions/2971.%20Find%20Polygon%20With%20the%20Largest%20Perimeter/script.ts)
 1. № [2976. Minimum Cost to Convert String I](solutions/2976.%20Minimum%20Cost%20to%20Convert%20String%20I/script.ts)
+1. № [2981. Find Longest Special Substring That Occurs Thrice I](solutions/2981.%20Find%20Longest%20Special%20Substring%20That%20Occurs%20Thrice%20I/script.ts)
 1. № [2997. Minimum Number of Operations to Make Array XOR Equal to K](solutions/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/script.ts)
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
 1. № [3011. Find if Array Can Be Sorted](solutions/3011.%20Find%20if%20Array%20Can%20Be%20Sorted/script.ts)
