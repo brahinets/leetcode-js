@@ -570,6 +570,7 @@
 1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)
 1. № [2582. Pass the Pillow](solutions/2582.%20Pass%20the%20Pillow/script.ts)
 1. № [2583. Kth Largest Sum in a Binary Tree](solutions/2583.%20Kth%20Largest%20Sum%20in%20a%20Binary%20Tree/script.ts)
+1. № [2593. Find Score of an Array After Marking All Elements](solutions/2593.%20Find%20Score%20of%20an%20Array%20After%20Marking%20All%20Elements/script.ts)
 1. № [2597. The Number of Beautiful Subsets](solutions/2597.%20The%20Number%20of%20Beautiful%20Subsets/script.ts)
 1. № [2601. Prime Subtraction Operation](solutions/2601.%20Prime%20Subtraction%20Operation/script.ts)
 1. № [2610. Convert an Array Into a 2D Array With Conditions](solutions/2610.%20Convert%20an%20Array%20Into%20a%202D%20Array%20With%20Conditions/script.ts)
