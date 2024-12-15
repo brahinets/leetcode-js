@@ -7,7 +7,7 @@ function maxAverageRatio(classes: number[][], extraStudents: number): number {
         return (u + 1) / (v + 1) - u / v - (x + 1) / (y + 1) + x / y
     }
 
-    const pq: PriorityQueue<[number, number]> = new PriorityQueue<[number, number]>(comparator)
+    const pq: CustomPriorityQueue<[number, number]> = new CustomPriorityQueue<[number, number]>(comparator)
 
     for (const [pass, total] of classes) {
         pq.enqueue([pass, total])
@@ -30,7 +30,7 @@ function maxAverageRatio(classes: number[][], extraStudents: number): number {
 
 type CompareFn<T> = (a: T, b: T) => number
 
-class PriorityQueue<T> {
+class CustomPriorityQueue<T> {
     private heap: T[] = []
     private readonly compare: CompareFn<T>
 
