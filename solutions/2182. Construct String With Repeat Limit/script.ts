@@ -1,40 +1,37 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import {count} from "../../common/array-utils"
 
 export {repeatLimitedString}
 
 function repeatLimitedString(s: string, repeatLimit: number): string {
-    const frequency: number[] = arrayOfZeros(26)
-    for (const ch of s) {
-        frequency[ch.charCodeAt(0) - 'a'.charCodeAt(0)]++
-    }
-
+    const frequency: Map<string, number> = count(s.split(""))
     const result: string[] = []
-    let currentCharIndex: number = 25
 
-    while (currentCharIndex >= 0) {
-        if (frequency[currentCharIndex] === 0) {
-            currentCharIndex--
-            continue
-        }
-
-        const use: number = Math.min(frequency[currentCharIndex], repeatLimit)
+    const sortedChars: string[] = Array.from(frequency.keys()).sort().reverse()
+    while (sortedChars.length > 0) {
+        const currentChar: string = sortedChars[0]
+        const use: number = Math.min(frequency.get(currentChar)!, repeatLimit)
         for (let k: number = 0; k < use; k++) {
-            result.push(String.fromCharCode('a'.charCodeAt(0) + currentCharIndex))
+            result.push(currentChar)
         }
-        frequency[currentCharIndex] -= use
+        frequency.set(currentChar, frequency.get(currentChar)! - use)
 
-        if (frequency[currentCharIndex] > 0) {
-            let smallerCharIndex: number = currentCharIndex - 1
-            while (smallerCharIndex >= 0 && frequency[smallerCharIndex] === 0) {
-                smallerCharIndex--
+        if (frequency.get(currentChar)! > 0) {
+            let smallerCharIndex: number = 1
+            while (smallerCharIndex < sortedChars.length && frequency.get(sortedChars[smallerCharIndex]) === 0) {
+                smallerCharIndex++
             }
 
-            if (smallerCharIndex < 0) {
+            if (smallerCharIndex >= sortedChars.length) {
                 break
             }
 
-            result.push(String.fromCharCode('a'.charCodeAt(0) + smallerCharIndex))
-            frequency[smallerCharIndex]--
+            const smallerChar: string = sortedChars[smallerCharIndex]
+            result.push(smallerChar)
+            frequency.set(smallerChar, frequency.get(smallerChar)! - 1)
+        }
+
+        if (frequency.get(currentChar)! === 0) {
+            sortedChars.shift()
         }
     }
 
