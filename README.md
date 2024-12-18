@@ -376,6 +376,7 @@
 1. № [1463. Cherry Pickup II](solutions/1463.%20Cherry%20Pickup%20II/script.ts)
 1. № [1464. Maximum Product of Two Elements in an Array](solutions/1464.%20Maximum%20Product%20of%20Two%20Elements%20in%20an%20Array/script.ts)
 1. № [1472. Design Browser History](solutions/1472.%20Design%20Browser%20History/script.ts)
+1. № [1475. Final Prices With a Special Discount in a Shop](solutions/1475.%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop/script.ts)
 1. № [1480. Running Sum of 1d Array](solutions/1480.%20Running%20Sum%20of%201d%20Array/script.ts)
 1. № [1481. Least Number of Unique Integers after K Removals](solutions/1481.%20Least%20Number%20of%20Unique%20Integers%20after%20K%20Removals/script.ts)
 1. № [1482. Minimum Number of Days to Make m Bouquets](solutions/1482.%20Minimum%20Number%20of%20Days%20to%20Make%20m%20Bouquets/script.ts)
