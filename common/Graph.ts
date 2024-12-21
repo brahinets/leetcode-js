@@ -24,30 +24,36 @@ abstract class Graph {
     }
 
     pathExist(from: number, to: number): boolean {
-        return this.dfs(from, to, new Set<number>())
+        return this.dfs(from, to, new Set<number>()) > 0
     }
 
     shortestPath(from: number, to: number): number {
         return this.findBellmanFord(from, to)
     }
 
-
-    private dfs(node: number, target: number, visited: Set<number>): boolean {
-        if (node === target) {
-            return true
+    dfs(current: number, target: number, visited: Set<number>): number {
+        if (!this.hasNode(current) || !this.hasNode(target)) {
+            return -1
         }
 
-        visited.add(node)
+        if (current === target) {
+            return 1
+        }
 
-        for (const [neighbor] of this.getNeighbours(node)) {
+        visited.add(current)
+
+        const neighbours: Map<number, number> = this.getNeighbours(current)
+        for (const [neighbor, weight] of neighbours) {
             if (!visited.has(neighbor)) {
-                if (this.dfs(neighbor, target, visited)) {
-                    return true
+                const result: number = this.dfs(neighbor, target, visited)
+
+                if (result > 0) {
+                    return weight * result
                 }
             }
         }
 
-        return false
+        return -1
     }
 
     private findBellmanFord(from: number, to: number): number {

@@ -1,4 +1,4 @@
-import {DirectedWeightedGraph} from "../../common/Graph";
+import {DirectedWeightedGraph} from "../../common/Graph"
 
 export {calcEquation}
 
@@ -7,7 +7,7 @@ function calcEquation(equations: string[][], values: number[], queries: string[]
 
     return queries.map(([start, end]: string[]): number =>
         Number(
-            dfs(code(start), code(end), new Set<number>(), graph).toFixed(5)
+            graph.dfs(code(start), code(end), new Set<number>).toFixed(5)
         )
     )
 }
@@ -36,29 +36,4 @@ function code(node: string): number {
     }
 
     return result
-}
-
-function dfs(current: number, target: number, visited: Set<number>, graph: DirectedWeightedGraph): number {
-    if (!graph.hasNode(current) || !graph.hasNode(target)) {
-        return -1
-    }
-
-    if (current === target) {
-        return 1
-    }
-
-    visited.add(current)
-
-    const neighbours: Map<number, number> = graph.getNeighbours(current)
-    for (const [neighbor, weight] of neighbours) {
-        if (!visited.has(neighbor)) {
-            const result: number = dfs(neighbor, target, visited, graph)
-
-            if (result > 0) {
-                return weight * result
-            }
-        }
-    }
-
-    return -1
 }
