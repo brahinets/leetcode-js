@@ -15,6 +15,10 @@ abstract class Graph {
         this.nodes.set(from, toNode)
     }
 
+    hasNode(node: number): boolean {
+        return this.nodes.has(node)
+    }
+
     getNeighbours(from: number): Map<number, number> {
         return this.nodes.get(from) ?? new Map<number, number>()
     }
