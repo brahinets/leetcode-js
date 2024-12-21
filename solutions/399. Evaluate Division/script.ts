@@ -1,3 +1,5 @@
+import {DirectedWeightedGraph} from "../../common/Graph";
+
 export {calcEquation}
 
 function calcEquation(equations: string[][], values: number[], queries: string[][]): number[] {
@@ -59,27 +61,4 @@ function dfs(current: number, target: number, visited: Set<number>, graph: Direc
     }
 
     return -1
-}
-
-class DirectedWeightedGraph {
-    private nodes: Map<number, Map<number, number>>
-
-    constructor() {
-        this.nodes = new Map<number, Map<number, number>>()
-    }
-
-    addEdge(from: number, to: number, weight: number): void {
-        if (!this.nodes.has(from)) {
-            this.nodes.set(from, new Map<number, number>())
-        }
-        this.nodes.get(from)?.set(to, weight)
-    }
-
-    getNeighbours(node: number): Map<number, number> {
-        return this.nodes.get(node) ?? new Map<number, number>()
-    }
-
-    hasNode(node: number): boolean {
-        return this.nodes.has(node)
-    }
 }
