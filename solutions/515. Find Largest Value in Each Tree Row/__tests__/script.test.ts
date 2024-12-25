@@ -1,38 +1,25 @@
-import {largestValues, TreeNode} from "../script"
+import {largestValues} from "../script"
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('515. Find Largest Value in Each Tree Row', (): void => {
 
     it('One-level tree', (): void => {
-        expect(largestValues(
-            new TreeNode(1)
-        )).toEqual([1])
+        expect(largestValues(arrayToTree([1])))
+            .toEqual([1])
     })
 
     it('Two-level tree', (): void => {
-        expect(largestValues(
-            new TreeNode(1,
-                new TreeNode(2),
-                new TreeNode(3))
-        )).toEqual([1, 3])
+        expect(largestValues(arrayToTree([1, 2, 3])))
+            .toEqual([1, 3])
     })
 
     it('Max is zero', (): void => {
-        expect(largestValues(
-            new TreeNode(1,
-                new TreeNode(-3),
-                new TreeNode(0))
-        )).toEqual([1, 0])
+        expect(largestValues(arrayToTree([1, -3, 0])))
+            .toEqual([1, 0])
     })
 
     it('Multi-level tree', (): void => {
-        expect(largestValues(
-            new TreeNode(1,
-                new TreeNode(3,
-                    new TreeNode(5),
-                    new TreeNode(3)),
-                new TreeNode(2,
-                    null,
-                    new TreeNode(9)))
-        )).toEqual([1, 3, 9])
+        expect(largestValues(arrayToTree([1, 3, 2, 5, 3, null, 9])))
+            .toEqual([1, 3, 9])
     })
 })
