@@ -212,6 +212,7 @@
 1. № [670. Maximum Swap](solutions/670.%20Maximum%20Swap/script.ts)
 1. № [678. Valid Parenthesis String](solutions/678.%20Valid%20Parenthesis%20String/script.ts)
 1. № [688. Knight Probability in Chessboard](solutions/688.%20Knight%20Probability%20in%20Chessboard/script.ts)
+1. № [689. Maximum Sum of 3 Non-Overlapping Subarrays](solutions/689.%20Maximum%20Sum%20of%203%20Non-Overlapping%20Subarrays/script.ts)
 1. № [692. Top K Frequent Words](solutions/692.%20Top%20K%20Frequent%20Words/script.ts)
 1. № [703. Kth Largest Element in a Stream](solutions/703.%20Kth%20Largest%20Element%20in%20a%20Stream/script.ts)
 1. № [704. Binary Search](solutions/704.%20Binary%20Search/script.ts)
