@@ -10,11 +10,11 @@ function countGoodStrings(minLength: number, maxLength: number, zerosCount: numb
 
     for (let length: number = 1; length <= maxLength; length++) {
         if (length >= zerosCount) {
-            validCombinations[length] += validCombinations[length - zerosCount] % MOD
+            validCombinations[length] = (validCombinations[length] + validCombinations[length - zerosCount]) % MOD
         }
 
         if (length >= onesCount) {
-            validCombinations[length] += validCombinations[length - onesCount] % MOD
+            validCombinations[length] = (validCombinations[length] + validCombinations[length - onesCount]) % MOD
         }
     }
 
