@@ -18,7 +18,10 @@ function countGoodStrings(minLength: number, maxLength: number, zerosCount: numb
         }
     }
 
-    return validCombinations
-        .slice(minLength)
-        .reduce((sum: number, combinations: number): number => (sum + combinations) % MOD, 0)
+    let result: number = 0
+    for (let length: number = minLength; length <= maxLength; length++) {
+        result = (result + validCombinations[length]) % MOD
+    }
+
+    return result
 }
