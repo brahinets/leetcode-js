@@ -290,6 +290,7 @@
 1. № [977. Squares of a Sorted Array](solutions/977.%20Squares%20of%20a%20Sorted%20Array/script.ts)
 1. № [979. Distribute Coins in Binary Tree](solutions/979.%20Distribute%20Coins%20in%20Binary%20Tree/script.ts)
 1. № [981. Time Based Key-Value Store](solutions/981.%20Time%20Based%20Key-Value%20Store/script.ts)
+1. № [983. Minimum Cost For Tickets](solutions/983.%20Minimum%20Cost%20For%20Tickets/script.ts)
 1. № [988. Smallest String Starting From Leaf](solutions/988.%20Smallest%20String%20Starting%20From%20Leaf/script.ts)
 1. № [989. Add to Array-Form of Integer](solutions/989.%20Add%20to%20Array-Form%20of%20Integer/script.ts)
 1. № [992. Subarrays with K Different Integers](solutions/992.%20Subarrays%20with%20K%20Different%20Integers/script.ts)
