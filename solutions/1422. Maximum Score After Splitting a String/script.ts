@@ -1,21 +1,25 @@
 export {maxScore}
 
 function maxScore(s: string): number {
-    let max: number = 0
+    let maxScore: number = 0
+    let ones: number = 0
+    let zeros: number = 0
 
-    for (let i: number = 1; i < s.length; i++) {
-        const left: string = s.slice(0, i)
-        const right: string = s.slice(i)
-        const score: number = count(left, '0') + count(right, '1')
-
-        if (score > max) {
-            max = score
+    for (let i: number = 0; i < s.length; i++) {
+        if (s[i] === "1") {
+            ones++
         }
     }
 
-    return max
-}
+    for (let i: number = 0; i < s.length - 1; i++) {
+        if (s[i] === "0") {
+            zeros++
+        } else {
+            ones--
+        }
 
-function count(str: string, char: string): number {
-    return str.split(char).length - 1
+        maxScore = Math.max(maxScore, zeros + ones)
+    }
+
+    return maxScore
 }
