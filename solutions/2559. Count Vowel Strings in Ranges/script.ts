@@ -1,21 +1,29 @@
 export {vowelStrings}
 
-const VOWELS: string[] = ['a', 'e', 'i', 'o', 'u']
+const VOWELS: Set<string> = new Set<string>(['a', 'e', 'i', 'o', 'u'])
 
 function vowelStrings(words: string[], queries: number[][]): number[] {
-    const result: number[] = []
+    let result: number[] = []
+    let prefixSum = prefixSums(words)
 
     for (const [left, right] of queries) {
-        const count: number = words.slice(left, right + 1)
-            .filter((word: string): boolean => isVowelString(word))
-            .length
-
-        result.push(count)
+        result.push(prefixSum[right] - (left == 0 ? 0 : prefixSum[left - 1]))
     }
 
     return result
 }
 
-function isVowelString(word: string): boolean {
-    return VOWELS.includes(word.charAt(0)) && VOWELS.includes(word.charAt(word.length - 1))
+function prefixSums(words: string[]): number[] {
+    let prefixSum: number[] = []
+    let sum: number = 0
+
+    for (const word of words) {
+        if (VOWELS.has(word.charAt(0)) && VOWELS.has(word.charAt(word.length - 1))) {
+            sum++
+        }
+
+        prefixSum.push(sum)
+    }
+
+    return prefixSum;
 }
