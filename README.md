@@ -527,6 +527,7 @@
 1. № [2257. Count Unguarded Cells in the Grid](solutions/2257.%20Count%20Unguarded%20Cells%20in%20the%20Grid/script.ts)
 1. № [2264. Largest 3-Same-Digit Number in String](solutions/2264.%20Largest%203-Same-Digit%20Number%20in%20String/script.ts)
 1. № [2265. Count Nodes Equal to Average of Subtree](solutions/2265.%20Count%20Nodes%20Equal%20to%20Average%20of%20Subtree/script.ts)
+1. № [2270. Number of Ways to Split Array](solutions/2270.%20Number%20of%20Ways%20to%20Split%20Array/script.ts)
 1. № [2275. Largest Combination With Bitwise AND Greater Than Zero](solutions/2275.%20Largest%20Combination%20With%20Bitwise%20AND%20Greater%20Than%20Zero/script.ts)
 1. № [2285. Maximum Total Importance of Roads](solutions/2285.%20Maximum%20Total%20Importance%20of%20Roads/script.ts)
 1. № [2290. Minimum Obstacle Removal to Reach Corner](solutions/2290.%20Minimum%20Obstacle%20Removal%20to%20Reach%20Corner/script.ts)
