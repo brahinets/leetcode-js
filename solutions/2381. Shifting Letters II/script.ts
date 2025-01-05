@@ -2,14 +2,17 @@ import {arrayOfZeros} from "../../common/array-factories"
 
 export {shiftingLetters}
 
+const ALPHABET: string = 'abcdefghijklmnopqrstuvwxyz'
+const ALPHABET_LENGTH: number = ALPHABET.length
+
 function shiftingLetters(s: string, shifts: number[][]): string {
     const charShifts: number[] = calculateCharShifts(s.length, shifts)
 
-    let result: string[] = s.split('')
+    let result: string[] = []
     for (let i: number = 0; i < s.length; ++i) {
-        const shift: number = (charShifts[i] % 26 + 26) % 26
-
-        result[i] = String.fromCharCode('a'.charCodeAt(0) + (s.charCodeAt(i) - 'a'.charCodeAt(0) + shift) % 26)
+        const shift: number = (charShifts[i] % ALPHABET_LENGTH + ALPHABET_LENGTH) % ALPHABET_LENGTH
+        const newIndex: number = (s.charCodeAt(i) - 'a'.charCodeAt(0) + shift) % ALPHABET_LENGTH
+        result.push(ALPHABET[newIndex])
     }
 
     return result.join('')
