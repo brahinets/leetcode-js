@@ -627,6 +627,7 @@
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
 1. № [3011. Find if Array Can Be Sorted](solutions/3011.%20Find%20if%20Array%20Can%20Be%20Sorted/script.ts)
 1. № [3016. Minimum Number of Pushes to Type Word II](solutions/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/script.ts)
+1. № [3042. Count Prefix and Suffix Pairs I](solutions/3042.%20Count%20Prefix%20and%20Suffix%20Pairs%20I/script.ts)
 1. № [3043. Find the Length of the Longest Common Prefix](solutions/3043.%20Find%20the%20Length%20of%20the%20Longest%20Common%20Prefix/script.ts)
 1. № [3068. Find the Maximum Sum of Node Values](solutions/3068.%20Find%20the%20Maximum%20Sum%20of%20Node%20Values/script.ts)
 1. № [3075. Maximize Happiness of Selected Children](solutions/3075.%20Maximize%20Happiness%20of%20Selected%20Children/script.ts)
