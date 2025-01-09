@@ -517,6 +517,7 @@
 1. № [2149. Rearrange Array Elements by Sign](solutions/2149.%20Rearrange%20Array%20Elements%20by%20Sign/script.ts)
 1. № [2181. Merge Nodes in Between Zeros](solutions/2181.%20Merge%20Nodes%20in%20Between%20Zeros/script.ts)
 1. № [2182. Construct String With Repeat Limit](solutions/2182.%20Construct%20String%20With%20Repeat%20Limit/script.ts)
+1. № [2185. Counting Words With a Given Prefix](solutions/2185.%20Counting%20Words%20With%20a%20Given%20Prefix/script.ts)
 1. № [2187. Minimum Time to Complete Trips](solutions/2187.%20Minimum%20Time%20to%20Complete%20Trips/script.ts)
 1. № [2191. Sort the Jumbled Numbers](solutions/2191.%20Sort%20the%20Jumbled%20Numbers/script.ts)
 1. № [2192. All Ancestors of a Node in a Directed Acyclic Graph](solutions/2192.%20All%20Ancestors%20of%20a%20Node%20in%20a%20Directed%20Acyclic%20Graph/script.ts)
