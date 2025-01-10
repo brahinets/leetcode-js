@@ -269,6 +269,7 @@
 1. № [885. Spiral Matrix III](solutions/885.%20Spiral%20Matrix%20III/script.ts)
 1. № [907. Sum of Subarray Minimums](solutions/907.%20Sum%20of%20Subarray%20Minimums/script.ts)
 1. № [912. Sort an Array](solutions/912.%20Sort%20an%20Array/script.ts)
+1. № [916. Word Subsets](solutions/916.%20Word%20Subsets/script.ts)
 1. № [920. Number of Music Playlists](solutions/920.%20Number%20of%20Music%20Playlists/script.ts)
 1. № [921. Minimum Add to Make Parentheses Valid](solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid/script.ts)
 1. № [930. Binary Subarrays With Sum](solutions/930.%20Binary%20Subarrays%20With%20Sum/script.ts)
