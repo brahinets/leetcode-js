@@ -1,4 +1,4 @@
-import {arraysAreEqual, count, first, last} from "../array-utils"
+import {arraysAreEqual, binarySearch, count, first, last} from "../array-utils"
 
 describe('Counting', (): void => {
     it('Empty', (): void => {
@@ -80,5 +80,32 @@ describe('Equality', (): void => {
     it('Not Equal Strings', (): void => {
         expect(arraysAreEqual(["a"], ["b"]))
             .toBe(false)
+    })
+})
+
+describe('Binary Search', (): void => {
+    it('Empty', (): void => {
+        expect(binarySearch([], 0))
+            .toBe(0)
+    })
+
+    it('Single found', (): void => {
+        expect(binarySearch([1], 1))
+            .toBe(1)
+    })
+
+    it('Single Not Found', (): void => {
+        expect(binarySearch([1], 2))
+            .toBe(1)
+    })
+
+    it('Multiple found', (): void => {
+        expect(binarySearch([1, 2, 3], 2))
+            .toBe(2)
+    })
+
+    it('Multiple Not Found', (): void => {
+        expect(binarySearch([1, 2, 3], 4))
+            .toBe(3)
     })
 })

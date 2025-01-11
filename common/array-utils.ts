@@ -1,4 +1,4 @@
-export {last, first, count, arraysAreEqual}
+export {last, first, count, arraysAreEqual, binarySearch}
 
 function count<Type>(values: Type[]): Map<Type, number> {
     return values.reduce((count: Map<Type, number>, num: Type) => {
@@ -26,4 +26,21 @@ function arraysAreEqual<Type>(first: Type[], second: Type[]): boolean {
         }
     }
     return true
+}
+
+function binarySearch(arr: number[], target: number): number {
+    let left: number = 0
+    let right: number = arr.length
+
+    while (left < right) {
+        const mid: number = Math.floor((left + right) / 2)
+
+        if (target < arr[mid]) {
+            right = mid
+        } else {
+            left = mid + 1
+        }
+    }
+
+    return left
 }

@@ -1,3 +1,5 @@
+import {binarySearch} from "../../common/array-utils"
+
 export {fullBloomFlowers}
 
 function fullBloomFlowers(flowers: number[][], people: number[]): number[] {
@@ -18,21 +20,4 @@ function fullBloomFlowers(flowers: number[][], people: number[]): number[] {
     }
 
     return answer
-}
-
-function binarySearch(arr: number[], target: number): number {
-    let left: number = 0
-    let right: number = arr.length
-
-    while (left < right) {
-        const mid: number = Math.floor((left + right) / 2)
-
-        if (target < arr[mid]) {
-            right = mid
-        } else {
-            left = mid + 1
-        }
-    }
-
-    return left
 }
