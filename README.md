@@ -365,6 +365,7 @@
 1. № [1382. Balance a Binary Search Tree](solutions/1382.%20Balance%20a%20Binary%20Search%20Tree/script.ts)
 1. № [1395. Count Number of Teams](solutions/1395.%20Count%20Number%20of%20Teams/script.ts)
 1. № [1396. Design Underground System](solutions/1396.%20Design%20Underground%20System/script.ts)
+1. № [1400. Construct K Palindrome Strings](solutions/1400.%20Construct%20K%20Palindrome%20Strings/script.ts)
 1. № [1404. Number of Steps to Reduce a Number in Binary Representation to One](solutions/1404.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20in%20Binary%20Representation%20to%20One/script.ts)
 1. № [1405. Longest Happy String](solutions/1405.%20Longest%20Happy%20String/script.ts)
 1. № [1424. Diagonal Traverse II](solutions/1424.%20Diagonal%20Traverse%20II/script.ts)
