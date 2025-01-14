@@ -598,6 +598,7 @@
 1. № [2616. Minimize the Maximum Difference of Pairs](solutions/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/script.ts)
 1. № [2641. Cousins in Binary Tree II](solutions/2641.%20Cousins%20in%20Binary%20Tree%20II/script.ts)
 1. № [2642. Design Graph With Shortest Path Calculator](solutions/2642.%20Design%20Graph%20With%20Shortest%20Path%20Calculator/script.ts)
+1. № [2657. Find the Prefix Common Array of Two Arrays](solutions/2657.%20Find%20the%20Prefix%20Common%20Array%20of%20Two%20Arrays/script.ts)
 1. № [2678. Number of Senior Citizens](solutions/2678.%20Number%20of%20Senior%20Citizens/script.ts)
 1. № [2684. Maximum Number of Moves in a Grid](solutions/2684.%20Maximum%20Number%20of%20Moves%20in%20a%20Grid/script.ts)
 1. № [2696. Minimum String Length After Removing Substrings](solutions/2696.%20Minimum%20String%20Length%20After%20Removing%20Substrings/script.ts)
