@@ -562,6 +562,7 @@
 1. № [2416. Sum of Prefix Scores of Strings](solutions/2416.%20Sum%20of%20Prefix%20Scores%20of%20Strings/script.ts)
 1. № [2418. Sort the People](solutions/2418.%20Sort%20the%20People/script.ts)
 1. № [2419. Longest Subarray With Maximum Bitwise AND](solutions/2419.%20Longest%20Subarray%20With%20Maximum%20Bitwise%20AND/script.ts)
+1. № [2425. Bitwise XOR of All Pairings](solutions/2425.%20Bitwise%20XOR%20of%20All%20Pairings/script.ts)
 1. № [2429. Minimize XOR](solutions/2429.%20Minimize%20XOR/script.ts)
 1. № [2433. Find The Original Array of Prefix Xor](solutions/2433.%20Find%20The%20Original%20Array%20of%20Prefix%20Xor/script.ts)
 1. № [2439. Minimize Maximum of Array](solutions/2439.%20Minimize%20Maximum%20of%20Array/script.ts)
