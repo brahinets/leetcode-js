@@ -1,39 +1,59 @@
-import {PriorityQueue} from "../../common/PriorityQueue"
 import {matrixOf} from "../../common/array-factories"
+import {arraysAreEqual} from "../../common/array-utils"
 
 export {minCost}
 
-const DIRECTIONS: number[][] = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-
 function minCost(grid: number[][]): number {
-    const movementsQueue = new PriorityQueue<number[]>(((a: number[], b: number[]): number => a[0] - b[0]))
-    movementsQueue.enqueue([0, 0, 0])
+    const minChanges: number[][] = matrixOf(Infinity, grid.length, grid[0].length)
+    minChanges[0][0] = 0
 
-    const minCost: number[][] = matrixOf(Number.MAX_SAFE_INTEGER, grid.length, grid[0].length)
-    minCost[0][0] = 0
+    while (true) {
+        const previousState: number[][] = minChanges.map(row => [...row])
 
-    while (!movementsQueue.isEmpty()) {
-        const current: number[] = movementsQueue.dequeue()!
-        const [cost, row, col]: number[] = current
+        for (let row: number = 0; row < grid.length; row++) {
+            for (let col: number = 0; col < grid[0].length; col++) {
+                if (row > 0) {
+                    minChanges[row][col] = Math.min(
+                        minChanges[row][col],
+                        minChanges[row - 1][col] +
+                        (grid[row - 1][col] === 3 ? 0 : 1)
+                    )
+                }
 
-        if (minCost[row][col] != cost) {
-            continue
-        }
-
-        for (let direction: number = 0; direction < 4; direction++) {
-            const newRow: number = row + DIRECTIONS[direction][0]
-            const newCol: number = col + DIRECTIONS[direction][1]
-
-            if (newRow >= 0 && newRow < grid.length && newCol >= 0 && newCol < grid[0].length) {
-                const newCost: number = cost + (direction != (grid[row][col] - 1) ? 1 : 0)
-
-                if (minCost[newRow][newCol] > newCost) {
-                    minCost[newRow][newCol] = newCost
-                    movementsQueue.enqueue([newCost, newRow, newCol])
+                if (col > 0) {
+                    minChanges[row][col] = Math.min(
+                        minChanges[row][col],
+                        minChanges[row][col - 1] +
+                        (grid[row][col - 1] === 1 ? 0 : 1)
+                    )
                 }
             }
         }
+
+        for (let row: number = grid.length - 1; row >= 0; row--) {
+            for (let col: number = grid[0].length - 1; col >= 0; col--) {
+                if (row < grid.length - 1) {
+                    minChanges[row][col] = Math.min(
+                        minChanges[row][col],
+                        minChanges[row + 1][col] +
+                        (grid[row + 1][col] === 4 ? 0 : 1)
+                    )
+                }
+
+                if (col < grid[0].length - 1) {
+                    minChanges[row][col] = Math.min(
+                        minChanges[row][col],
+                        minChanges[row][col + 1] +
+                        (grid[row][col + 1] === 2 ? 0 : 1)
+                    )
+                }
+            }
+        }
+
+        if (arraysAreEqual(previousState, minChanges)) {
+            break
+        }
     }
 
-    return minCost[grid.length - 1][grid[0].length - 1]
+    return minChanges[grid.length - 1][grid[0].length - 1]
 }
