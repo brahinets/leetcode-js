@@ -358,6 +358,7 @@
 1. № [1356. Sort Integers by The Number of 1 Bits](solutions/1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits/script.ts)
 1. № [1361. Validate Binary Tree Nodes](solutions/1361.%20Validate%20Binary%20Tree%20Nodes/script.ts)
 1. № [1367. Linked List in Binary Tree](solutions/1367.%20Linked%20List%20in%20Binary%20Tree/script.ts)
+1. № [1368. Minimum Cost to Make at Least One Valid Path in a Grid](solutions/1368.%20Minimum%20Cost%20to%20Make%20at%20Least%20One%20Valid%20Path%20in%20a%20Grid/script.ts)
 1. № [1371. Find the Longest Substring Containing Vowels in Even Counts](solutions/1371.%20Find%20the%20Longest%20Substring%20Containing%20Vowels%20in%20Even%20Counts/script.ts)
 1. № [1372. Longest ZigZag Path in a Binary Tree](solutions/1372.%20Longest%20ZigZag%20Path%20in%20a%20Binary%20Tree/script.ts)
 1. № [1380. Lucky Numbers in a Matrix](solutions/1380.%20Lucky%20Numbers%20in%20a%20Matrix/script.ts)
