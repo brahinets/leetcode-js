@@ -24,4 +24,13 @@ describe('1368. Minimum Cost to Make at Least One Valid Path in a Grid', (): voi
             [4, 3]
         ])).toBe(1)
     })
+
+    it('Four', (): void => {
+        expect(minCost([
+            [1, 1, 1, 1],
+            [2, 2, 2, 2],
+            [1, 1, 1, 1],
+            [2, 2, 2, 2]
+        ])).toBe(3)
+    })
 })
