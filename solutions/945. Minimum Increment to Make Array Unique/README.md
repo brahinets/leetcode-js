@@ -7,5 +7,5 @@ You are given an integer array `nums`. In one move, you can pick an index `i` wh
 
 ### Constraints:
 
-- `1 <= nums.length <= 105`
-- `0 <= nums[i] <= 105`
+- `1 <= nums.length <= 10^5`
+- `0 <= nums[i] <= 10^5`

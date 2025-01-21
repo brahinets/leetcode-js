@@ -19,5 +19,5 @@ The adding rule is:
 - The number of nodes in the tree is in the range `[1, 10^4]`.
 - The depth of the tree is in the range `[1, 10^4]`.
 - `-100 <= Node.val <= 100`
-- `-105 <= val <= 105`
+- `-10^5 <= val <= 10^5`
 - `1 <= depth <= the depth of tree + 1`

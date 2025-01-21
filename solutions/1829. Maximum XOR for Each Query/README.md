@@ -10,7 +10,7 @@ the last element from the current array nums. Return an array answer, where `ans
 ### Constraints:
 
 – `nums.length == n`
-– `1 <= n <= 105`
+– `1 <= n <= 10^5`
 – `1 <= maximumBit <= 20`
 – `0 <= nums[i] < 2^maximumBit`
 – `nums` is sorted in ascending order.
