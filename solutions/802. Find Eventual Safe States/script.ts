@@ -1,45 +1,61 @@
+import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+
 export {eventualSafeNodes}
 
-function eventualSafeNodes(graphMatrix: number[][]): number[] {
-    const result: number[] = []
+function eventualSafeNodes(graph: number[][]): number[] {
+    const {inDegree, reverseGraph}: { inDegree: number[]; reverseGraph: number[][] } = buildReverseGraph(graph)
 
-    for (let nodeId: number = 0; nodeId < graphMatrix.length; nodeId++) {
-        if (safeNode(nodeId, graphMatrix, new Set<number>([nodeId]), new Set<number>())) {
-            result.push(nodeId)
-        }
-    }
-
-    return result.sort((a: number, b: number): number => a - b)
+    return findSafeNodes(inDegree, reverseGraph, graph.length)
 }
 
-function safeNode(nodeId: number, graphMatrix: number[][], visited: Set<number>, safe: Set<number>): boolean {
-    if (safe.has(nodeId)) {
-        return true
-    }
+function buildReverseGraph(graph: number[][]): { inDegree: number[], reverseGraph: number[][] } {
+    const inDegree: number[] = arrayOfZeros(graph.length)
+    const reverseGraph: number[][] = arrayOf([], graph.length)
 
-    const neighbours: number[] | undefined = graphMatrix[nodeId]
-
-    if (isTerminal(neighbours)) {
-        safe.add(nodeId)
-        return true
-    }
-
-    for (const n of neighbours) {
-        if (visited.has(n)) {
-            return false
+    for (let i = 0; i < graph.length; i++) {
+        for (const node of graph[i]) {
+            reverseGraph[node].push(i)
+            inDegree[i]++
         }
-
-        visited.add(n)
-        if (!safeNode(n, graphMatrix, visited, safe)) {
-            return false
-        }
-        visited.delete(n)
     }
 
-    safe.add(nodeId)
-    return true
+    return {inDegree, reverseGraph}
 }
 
-function isTerminal(neighbours: number[]): boolean {
-    return neighbours === undefined || neighbours.length === 0
+function findSafeNodes(inDegree: number[], reverseGraph: number[][], n: number): number[] {
+    const queue: number[] = []
+    const safe: boolean[] = arrayOf(false, n)
+
+    for (let i: number = 0; i < n; i++) {
+        if (inDegree[i] === 0) {
+            queue.push(i)
+        }
+    }
+
+    while (queue.length > 0) {
+        const node: number = queue.shift()!
+        safe[node] = true
+
+        for (const neighbor of reverseGraph[node]) {
+            inDegree[neighbor]--
+
+            if (inDegree[neighbor] === 0) {
+                queue.push(neighbor)
+            }
+        }
+    }
+
+    return collectSafeNodes(safe)
+}
+
+function collectSafeNodes(safe: boolean[]): number[] {
+    const safeNodes: number[] = []
+
+    for (let i: number = 0; i < safe.length; i++) {
+        if (safe[i]) {
+            safeNodes.push(i)
+        }
+    }
+
+    return safeNodes
 }
