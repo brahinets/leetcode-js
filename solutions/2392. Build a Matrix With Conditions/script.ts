@@ -25,9 +25,8 @@ function buildMatrix(size: number, rowConditions: number[][], columnConditions: 
 function topologicalSort(edges: number[][], nodeCount: number): number[] {
     const adjacencyList: number[][] = arrayOf([], nodeCount + 1)
     const inDegree: number[] = arrayOfZeros(nodeCount + 1)
-    const sortedOrder: number[] = arrayOfZeros(nodeCount)
+    const sortedOrder: number[] = []
 
-    let orderIndex: number = 0
     for (const [fromNode, toNode] of edges) {
         adjacencyList[fromNode].push(toNode)
         inDegree[toNode]++
@@ -42,8 +41,7 @@ function topologicalSort(edges: number[][], nodeCount: number): number[] {
 
     while (nodeQueue.length > 0) {
         const currentNode: number = nodeQueue.shift()!
-        sortedOrder[orderIndex++] = currentNode
-        nodeCount--
+        sortedOrder.push(currentNode)
 
         for (const neighborNode of adjacencyList[currentNode]) {
             if (--inDegree[neighborNode] === 0) {
@@ -52,5 +50,5 @@ function topologicalSort(edges: number[][], nodeCount: number): number[] {
         }
     }
 
-    return nodeCount !== 0 ? [] : sortedOrder
+    return sortedOrder
 }
