@@ -20,4 +20,9 @@ describe('2127. Maximum Employees to Be Invited to a Meeting', (): void => {
         expect(maximumInvitations([1, 0, 0, 2, 1, 4, 7, 8, 9, 6, 7, 10, 8]))
             .toBe(6)
     })
+
+    it('Only several can sit', (): void => {
+        expect(maximumInvitations([1, 2, 3, 4, 5, 6, 3, 8, 9, 10, 11, 8]))
+            .toBe(4)
+    })
 })

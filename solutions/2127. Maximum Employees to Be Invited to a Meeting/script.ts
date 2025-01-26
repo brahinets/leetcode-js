@@ -1,74 +1,53 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import {arrayOfZeros} from "../../common/array-factories"
 
 export {maximumInvitations}
 
 function maximumInvitations(favorite: number[]): number {
-    const edges: number[][] = []
-    for (let person = 0; person < favorite.length; person++) {
-        edges.push([person, favorite[person]])
+    const inDegree: number[] = arrayOfZeros(favorite.length)
+    for (let i: number = 0; i < favorite.length; i++) {
+        inDegree[favorite[i]]++
     }
 
-    const depth: number[] = arrayOf(1, favorite.length)
-    const sortedOrder: number[] = topologicalSort(edges, favorite.length)
-    for (const currentNode of sortedOrder) {
-        const nextNode: number = favorite[currentNode]
-        depth[nextNode] = Math.max(depth[nextNode], depth[currentNode] + 1)
-    }
-
-    let longestCycle: number = 0
-    let twoCycleInvitations: number = 0
-    const visited: boolean[] = arrayOf(false, favorite.length)
-    for (let person = 0; person < favorite.length; person++) {
-        if (visited[person]) {
-            continue
-        }
-
-        let cycleLength: number = 0
-        let current: number = person
-
-        while (!visited[current]) {
-            visited[current] = true
-            cycleLength++
-            current = favorite[current]
-        }
-
-        if (cycleLength === 2) {
-            twoCycleInvitations += depth[person] + depth[favorite[person]]
-        } else {
-            longestCycle = Math.max(longestCycle, cycleLength)
+    const queue: number[] = []
+    for (let i: number = 0; i < favorite.length; i++) {
+        if (inDegree[i] === 0) {
+            queue.push(i)
         }
     }
 
-    return Math.max(longestCycle, twoCycleInvitations)
-}
+    const longestChain: number[] = arrayOfZeros(favorite.length)
+    while (queue.length > 0) {
+        const current: number = queue.shift()!
+        const favourite: number = favorite[current]
+        longestChain[favourite] = Math.max(longestChain[favourite], longestChain[current] + 1)
+        inDegree[favourite]--
 
-function topologicalSort(edges: number[][], nodeCount: number): number[] {
-    const adjacencyList: number[][] = arrayOf([], nodeCount)
-    const inDegree: number[] = arrayOfZeros(nodeCount)
-    const sortedOrder: number[] = []
-
-    for (const [fromNode, toNode] of edges) {
-        adjacencyList[fromNode].push(toNode)
-        inDegree[toNode]++
-    }
-
-    const nodeQueue: number[] = []
-    for (let node: number = 1; node <= nodeCount; node++) {
-        if (inDegree[node] === 0) {
-            nodeQueue.push(node)
+        if (inDegree[favourite] === 0) {
+            queue.push(favourite)
         }
     }
 
-    while (nodeQueue.length > 0) {
-        const currentNode: number = nodeQueue.shift()!
-        sortedOrder.push(currentNode);
+    let maxCycleSize: number = 0
+    let totalChainSum: number = 0
+    for (let i: number = 0; i < favorite.length; i++) {
+        if (inDegree[i] > 0) {
+            let cycleSize: number = 0
+            let current: number = i
+            do {
+                inDegree[current] = 0
+                current = favorite[current]
+                cycleSize++
+            } while (current !== i)
 
-        for (const neighborNode of adjacencyList[currentNode]) {
-            if (--inDegree[neighborNode] === 0) {
-                nodeQueue.push(neighborNode)
-            }
+            maxCycleSize = Math.max(maxCycleSize, cycleSize)
         }
     }
 
-    return sortedOrder
+    for (let i: number = 0; i < favorite.length; i++) {
+        if (favorite[favorite[i]] === i && i < favorite[i]) {
+            totalChainSum += longestChain[i] + longestChain[favorite[i]] + 2
+        }
+    }
+
+    return Math.max(maxCycleSize, totalChainSum)
 }
