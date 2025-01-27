@@ -384,6 +384,7 @@
 1. № [1456. Maximum Number of Vowels in a Substring of Given Length](solutions/1456.%20Maximum%20Number%20of%20Vowels%20in%20a%20Substring%20of%20Given%20Length/script.ts)
 1. № [1457. Pseudo-Palindromic Paths in a Binary Tree](solutions/1457.%20Pseudo-Palindromic%20Paths%20in%20a%20Binary%20Tree/script.ts)
 1. № [1460. Make Two Arrays Equal by Reversing Subarrays](solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Subarrays/script.ts)
+1. № [1462. Course Schedule IV](solutions/1462.%20Course%20Schedule%20IV/script.ts)
 1. № [1463. Cherry Pickup II](solutions/1463.%20Cherry%20Pickup%20II/script.ts)
 1. № [1464. Maximum Product of Two Elements in an Array](solutions/1464.%20Maximum%20Product%20of%20Two%20Elements%20in%20an%20Array/script.ts)
 1. № [1472. Design Browser History](solutions/1472.%20Design%20Browser%20History/script.ts)
