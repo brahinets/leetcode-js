@@ -608,6 +608,7 @@
 1. № [2641. Cousins in Binary Tree II](solutions/2641.%20Cousins%20in%20Binary%20Tree%20II/script.ts)
 1. № [2642. Design Graph With Shortest Path Calculator](solutions/2642.%20Design%20Graph%20With%20Shortest%20Path%20Calculator/script.ts)
 1. № [2657. Find the Prefix Common Array of Two Arrays](solutions/2657.%20Find%20the%20Prefix%20Common%20Array%20of%20Two%20Arrays/script.ts)
+1. № [2658. Maximum Number of Fish in a Grid](solutions/2658.%20Maximum%20Number%20of%20Fish%20in%20a%20Grid/script.ts)
 1. № [2661. First Completely Painted Row or Column](solutions/2661.%20First%20Completely%20Painted%20Row%20or%20Column/script.ts)
 1. № [2678. Number of Senior Citizens](solutions/2678.%20Number%20of%20Senior%20Citizens/script.ts)
 1. № [2683. Neighboring Bitwise XOR](solutions/2683.%20Neighboring%20Bitwise%20XOR/script.ts)
