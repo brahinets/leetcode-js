@@ -10,4 +10,9 @@ describe('684. Redundant Connection', (): void => {
         expect(findRedundantConnection([[1, 2], [2, 3], [3, 4], [1, 4], [1, 5]]))
             .toEqual([1, 4])
     })
+
+    it('No redundant connections', (): void => {
+        expect(findRedundantConnection([[1, 2], [2, 3], [3, 4], [1, 5]]))
+            .toEqual([])
+    })
 })
