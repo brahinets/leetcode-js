@@ -4,7 +4,7 @@ export {magnificentSets}
 
 function magnificentSets(n: number, edges: number[][]): number {
     const dsu: DisjointSetUnion = new DisjointSetUnion(n + 1)
-    const graph: Map<number, number[]> = new Map()
+    const graph: Map<number, number[]> = new Map<number, number[]>()
 
     for (let i: number = 1; i <= n; i++) {
         graph.set(i, [])
@@ -15,63 +15,52 @@ function magnificentSets(n: number, edges: number[][]): number {
         dsu.union(u, v)
     }
 
+    const components: Map<number, number[]> = new Map<number, number[]>()
+    for (let i: number = 1; i <= n; i++) {
+        const root: number = dsu.find(i)
+
+        if (!components.has(root)) {
+            components.set(root, [])
+        }
+        components.get(root)!.push(i)
+    }
 
     let maxGroups: number = 0
-    const visitedComponents: Set<number> = new Set()
+    for (const nodes of Array.from(components.values())) {
+        let maxGroupsInComponent = 0
 
-    for (let i: number = 1; i <= n; i++) {
-        if (!visitedComponents.has(dsu.find(i))) {
-            visitedComponents.add(dsu.find(i))
-            const longestPath = bfsCheckBipartiteAndLongestPath(i, graph)
-            if (longestPath === null) return -1
-            maxGroups += longestPath
+        for (const startNode of nodes) {
+            const groups: number = bfsCheckBipartiteAndLongestPath(startNode, graph)
+
+            if (groups === null) {
+                return -1
+            }
+            maxGroupsInComponent = Math.max(maxGroupsInComponent, groups)
         }
+
+        maxGroups += maxGroupsInComponent
     }
 
     return maxGroups
 }
 
 function bfsCheckBipartiteAndLongestPath(start: number, graph: Map<number, number[]>): number | null {
-    const queue: [number, number][] = [[start, 0]]
-    const visited: Map<number, number> = new Map()
-    visited.set(start, 0)
+    const levels: Map<number, number> = new Map<number, number>([[start, 1]])
+    const queue: number[] = [start]
 
-    let farthestNode: number = start
-    let maxDepth: number = 0
-
-    while (queue.length) {
-        const [node, depth] = queue.shift()!
-        if (depth > maxDepth) {
-            maxDepth = depth
-            farthestNode = node
-        }
+    while (queue.length > 0) {
+        const node: number = queue.shift()!
+        const level: number = levels.get(node)!
 
         for (const neighbor of graph.get(node)!) {
-            if (!visited.has(neighbor)) {
-                visited.set(neighbor, 1 - visited.get(node)!)
-                queue.push([neighbor, depth + 1])
-            } else if (visited.get(neighbor) === visited.get(node)) {
+            if (!levels.has(neighbor)) {
+                levels.set(neighbor, level + 1)
+                queue.push(neighbor)
+            } else if (Math.abs(levels.get(neighbor)! - level) !== 1) {
                 return null
             }
         }
     }
 
-    queue.push([farthestNode, 0])
-    visited.clear()
-    visited.set(farthestNode, 0)
-    maxDepth = 0
-
-    while (queue.length) {
-        const [node, depth] = queue.shift()!
-
-        maxDepth = Math.max(maxDepth, depth)
-        for (const neighbor of graph.get(node)!) {
-            if (!visited.has(neighbor)) {
-                visited.set(neighbor, 1 - visited.get(node)!)
-                queue.push([neighbor, depth + 1])
-            }
-        }
-    }
-
-    return maxDepth + 1
+    return Math.max(...Array.from(levels.values()))
 }
