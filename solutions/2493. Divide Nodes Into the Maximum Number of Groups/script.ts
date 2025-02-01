@@ -30,7 +30,7 @@ function magnificentSets(n: number, edges: number[][]): number {
         let maxGroupsInComponent = 0
 
         for (const startNode of nodes) {
-            const groups: number = bfsCheckBipartiteAndLongestPath(startNode, graph)
+            const groups: number | null = bfsCheckBipartiteAndLongestPath(startNode, graph)
 
             if (groups === null) {
                 return -1
