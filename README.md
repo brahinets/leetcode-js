@@ -457,6 +457,7 @@
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
 1. № [1743. Restore the Array From Adjacent Pairs](solutions/1743.%20Restore%20the%20Array%20From%20Adjacent%20Pairs/script.ts)
 1. № [1750. Minimum Length of String After Deleting Similar Ends](solutions/1750.%20Minimum%20Length%20of%20String%20After%20Deleting%20Similar%20Ends/script.ts)
+1. № [1752. Check if Array Is Sorted and Rotated](solutions/1752.%20Check%20if%20Array%20Is%20Sorted%20and%20Rotated/script.ts)
 1. № [1758. Minimum Changes To Make Alternating Binary String](solutions/1758.%20Minimum%20Changes%20To%20Make%20Alternating%20Binary%20String/script.ts)
 1. № [1759. Count Number of Homogenous Substrings](solutions/1759.%20Count%20Number%20of%20Homogenous%20Substrings/script.ts)
 1. № [1760. Minimum Limit of Balls in a Bag](solutions/1760.%20Minimum%20Limit%20of%20Balls%20in%20a%20Bag/script.ts)
