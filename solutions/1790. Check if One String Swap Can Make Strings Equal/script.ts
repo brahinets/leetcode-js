@@ -6,7 +6,7 @@ function areAlmostEqual(s1: string, s2: string): boolean {
     }
 
     const delta: number[] = []
-    for (let i = 0; i < s1.length; i++) {
+    for (let i: number = 0; i < s1.length; i++) {
         if (s1[i] !== s2[i]) {
             delta.push(i)
         }
