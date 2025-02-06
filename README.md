@@ -453,6 +453,7 @@
 1. № [1716. Calculate Money in Leetcode Bank](solutions/1716.%20Calculate%20Money%20in%20Leetcode%20Bank/script.ts)
 1. № [1717. Maximum Score From Removing Substrings](solutions/1717.%20Maximum%20Score%20From%20Removing%20Substrings/script.ts)
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
+1. № [1726. Tuple with Same Product](solutions/1726.%20Tuple%20with%20Same%20Product/script.ts)
 1. № [1727. Largest Submatrix With Rearrangements](solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/script.ts)
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
 1. № [1743. Restore the Array From Adjacent Pairs](solutions/1743.%20Restore%20the%20Array%20From%20Adjacent%20Pairs/script.ts)
