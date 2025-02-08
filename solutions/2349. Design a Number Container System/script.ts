@@ -1,23 +1,39 @@
 export {NumberContainers}
 
 class NumberContainers {
-    private readonly nums: Map<number, number>
+    private indexToNumber: Map<number, number>
+    private numberToIndices: Map<number, Set<number>>
 
     constructor() {
-        this.nums = new Map<number, number>()
+        this.indexToNumber = new Map<number, number>()
+        this.numberToIndices = new Map<number, Set<number>>()
     }
 
     change(index: number, number: number): void {
-        this.nums.set(index, number)
-    }
+        if (this.indexToNumber.has(index)) {
+            const oldNumber: number = this.indexToNumber.get(index)!
 
-    find(number: number): number {
-        for (const [index, value] of [...this.nums].sort()) {
-            if (value === number) {
-                return index
+            if (this.numberToIndices.has(oldNumber)) {
+                this.numberToIndices.get(oldNumber)!.delete(index)
+
+                if (this.numberToIndices.get(oldNumber)!.size === 0) {
+                    this.numberToIndices.delete(oldNumber)
+                }
             }
         }
 
-        return -1
+        this.indexToNumber.set(index, number)
+        if (!this.numberToIndices.has(number)) {
+            this.numberToIndices.set(number, new Set<number>())
+        }
+        this.numberToIndices.get(number)!.add(index)
+    }
+
+    find(number: number): number {
+        if (!this.numberToIndices.has(number) || this.numberToIndices.get(number)!.size === 0) {
+            return -1
+        }
+
+        return Math.min(...this.numberToIndices.get(number)!)
     }
 }
