@@ -503,6 +503,7 @@
 1. № [1980. Find Unique Binary String](solutions/1980.%20Find%20Unique%20Binary%20String/script.ts)
 1. № [1992. Find All Groups of Farmland](solutions/1992.%20Find%20All%20Groups%20of%20Farmland/script.ts)
 1. № [2000. Reverse Prefix of Word](solutions/2000.%20Reverse%20Prefix%20of%20Word/script.ts)
+1. № [2009. Minimum Number of Operations to Make Array Continuous](solutions/2009.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Continuous/script.ts)
 1. № [2017. Grid Game](solutions/2017.%20Grid%20Game/script.ts)
 1. № [2022. Convert 1D Array Into 2D Array](solutions/2022.%20Convert%201D%20Array%20Into%202D%20Array/script.ts)
 1. № [2024. Maximize the Confusion of an Exam](solutions/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/script.ts)
