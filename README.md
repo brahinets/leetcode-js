@@ -489,6 +489,7 @@
 1. № [1897. Redistribute Characters to Make All Strings Equal](solutions/1897.%20Redistribute%20Characters%20to%20Make%20All%20Strings%20Equal/script.ts)
 1. № [1903. Largest Odd Number in String](solutions/1903.%20Largest%20Odd%20Number%20in%20String/script.ts)
 1. № [1905. Count Sub Islands](solutions/1905.%20Count%20Sub%20Islands/script.ts)
+1. № [1910. Remove All Occurrences of a Substring](solutions/1910.%20Remove%20All%20Occurrences%20of%20a%20Substring/script.ts)
 1. № [1913. Maximum Product Difference Between Two Pairs](solutions/1913.%20Maximum%20Product%20Difference%20Between%20Two%20Pairs/script.ts)
 1. № [1915. Number of Wonderful Substrings](solutions/1915.%20Number%20of%20Wonderful%20Substrings/script.ts)
 1. № [1921. Eliminate Maximum Number of Monsters](solutions/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/script.ts)
