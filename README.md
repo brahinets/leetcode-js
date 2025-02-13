@@ -660,6 +660,7 @@
 1. № [3016. Minimum Number of Pushes to Type Word II](solutions/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/script.ts)
 1. № [3042. Count Prefix and Suffix Pairs I](solutions/3042.%20Count%20Prefix%20and%20Suffix%20Pairs%20I/script.ts)
 1. № [3043. Find the Length of the Longest Common Prefix](solutions/3043.%20Find%20the%20Length%20of%20the%20Longest%20Common%20Prefix/script.ts)
+1. № [3066. Minimum Operations to Exceed Threshold Value II](solutions/3066.%20Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20II/script.ts)
 1. № [3068. Find the Maximum Sum of Node Values](solutions/3068.%20Find%20the%20Maximum%20Sum%20of%20Node%20Values/script.ts)
 1. № [3075. Maximize Happiness of Selected Children](solutions/3075.%20Maximize%20Happiness%20of%20Selected%20Children/script.ts)
 1. № [3097. Shortest Subarray With OR at Least K II](solutions/3097.%20Shortest%20Subarray%20With%20OR%20at%20Least%20K%20II/script.ts)
