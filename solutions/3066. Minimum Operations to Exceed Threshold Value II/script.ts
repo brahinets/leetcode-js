@@ -1,19 +1,34 @@
-import {PriorityQueue} from "../../common/PriorityQueue"
-
 export {minOperations}
 
 function minOperations(nums: number[], k: number): number {
-    const minHeap: PriorityQueue<number> = new PriorityQueue<number>((a: number, b: number): number => a - b)
-    nums.forEach((num: number): void => minHeap.enqueue(num))
+    nums.sort((x: number, y: number): number => x - y);
 
-    let numOperations: number = 0
-    while (minHeap.peek()! < k) {
-        const x: number = minHeap.dequeue()!
-        const y: number = minHeap.dequeue()!
+    const merged: number[] = []
+    let result: number = 0
+    let y: number = 0
+    let sum: number = 0
+    let operations: number = 0
+    let i: number = 0
+    let j: number = 0
+    while (sum < k) {
+        if (i < nums.length && !(nums[i] > merged[j])) {
+            sum = nums[i++];
+        } else {
+            sum = merged[j++];
+        }
 
-        minHeap.enqueue(Math.min(x, y) * 2 + Math.max(x, y))
+        result = operations
 
-        numOperations++
+        if (i < nums.length && !(nums[i] > merged[j])) {
+            y = nums[i++];
+        } else {
+            y = merged[j++];
+        }
+
+        merged.push(sum * 2 + y);
+
+        operations++
     }
-    return numOperations
+
+    return result
 }
