@@ -388,6 +388,7 @@
 1. № [1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence](solutions/1455.%20Check%20If%20a%20Word%20Occurs%20As%20a%20Prefix%20of%20Any%20Word%20in%20a%20Sentence/script.ts)
 1. № [1456. Maximum Number of Vowels in a Substring of Given Length](solutions/1456.%20Maximum%20Number%20of%20Vowels%20in%20a%20Substring%20of%20Given%20Length/script.ts)
 1. № [1457. Pseudo-Palindromic Paths in a Binary Tree](solutions/1457.%20Pseudo-Palindromic%20Paths%20in%20a%20Binary%20Tree/script.ts)
+1. № [1458. Max Dot Product of Two Subsequences](solutions/1458.%20Max%20Dot%20Product%20of%20Two%20Subsequences/script.ts)
 1. № [1460. Make Two Arrays Equal by Reversing Subarrays](solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Subarrays/script.ts)
 1. № [1462. Course Schedule IV](solutions/1462.%20Course%20Schedule%20IV/script.ts)
 1. № [1463. Cherry Pickup II](solutions/1463.%20Cherry%20Pickup%20II/script.ts)
