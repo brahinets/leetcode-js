@@ -343,6 +343,7 @@
 1. № [1249. Minimum Remove to Make Valid Parentheses](solutions/1249.%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses/script.ts)
 1. № [1254. Number of Closed Islands](solutions/1254.%20Number%20of%20Closed%20Islands/script.ts)
 1. № [1255. Maximum Score Words Formed by Letters](solutions/1255.%20Maximum%20Score%20Words%20Formed%20by%20Letters/script.ts)
+1. № [1261. Find Elements in a Contaminated Binary Tree](solutions/1261.%20Find%20Elements%20in%20a%20Contaminated%20Binary%20Tree/script.ts)
 1. № [1266. Minimum Time Visiting All Points](solutions/1266.%20Minimum%20Time%20Visiting%20All%20Points/script.ts)
 1. № [1267. Count Servers that Communicate](solutions/1267.%20Count%20Servers%20that%20Communicate/script.ts)
 1. № [1269. Number of Ways to Stay in the Same Place After Some Steps](solutions/1269.%20Number%20of%20Ways%20to%20Stay%20in%20the%20Same%20Place%20After%20Some%20Steps/script.ts)
