@@ -306,6 +306,7 @@
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
 1. № [1026. Maximum Difference Between Node and Ancestor](solutions/1026.%20Maximum%20Difference%20Between%20Node%20and%20Ancestor/script.ts)
 1. № [1027. Longest Arithmetic Subsequence](solutions/1027.%20Longest%20Arithmetic%20Subsequence/script.ts)
+1. № [1028. Recover a Tree From Preorder Traversal](solutions/1028.%20Recover%20a%20Tree%20From%20Preorder%20Traversal/script.ts)
 1. № [1035. Uncrossed Lines](solutions/1035.%20Uncrossed%20Lines/script.ts)
 1. № [1038. Binary Search Tree to Greater Sum Tree](solutions/1038.%20Binary%20Search%20Tree%20to%20Greater%20Sum%20Tree/script.ts)
 1. № [1043. Partition Array for Maximum Sum](solutions/1043.%20Partition%20Array%20for%20Maximum%20Sum/script.ts)
