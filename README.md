@@ -601,6 +601,7 @@
 1. № [2462. Total Cost to Hire K Workers](solutions/2462.%20Total%20Cost%20to%20Hire%20K%20Workers/script.ts)
 1. № [2463. Minimum Total Distance Traveled](solutions/2463.%20Minimum%20Total%20Distance%20Traveled/script.ts)
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
+1. № [2467. Most Profitable Path in a Tree](solutions/2467.%20Most%20Profitable%20Path%20in%20a%20Tree/script.ts)
 1. № [2482. Difference Between Ones and Zeros in Row and Column](solutions/2482.%20Difference%20Between%20Ones%20and%20Zeros%20in%20Row%20and%20Column/script.ts)
 1. № [2485. Find the Pivot Integer](solutions/2485.%20Find%20the%20Pivot%20Integer/script.ts)
 1. № [2486. Append Characters to String to Make Subsequence](solutions/2486.%20Append%20Characters%20to%20String%20to%20Make%20Subsequence/script.ts)
