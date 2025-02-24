@@ -4,10 +4,10 @@ export {mostProfitablePath}
 
 function mostProfitablePath(edges: number[][], bob: number, amount: number[]): number {
     const tree: number[][] = arrayOf([], amount.length)
-    const bobPath: Map<number, number> = new Map<number, number>()
+    const bobPath: number[] = arrayOf(-1, amount.length)
     const visited: boolean[] = arrayOf(false, amount.length)
-    let maxIncome: number = Number.MIN_SAFE_INTEGER
-    const queue: [number, number, number][] = [[0, 0, 0]];
+    let maxIncome = Number.MIN_SAFE_INTEGER
+
     for (const [u, v] of edges) {
         tree[u].push(v)
         tree[v].push(u)
@@ -17,12 +17,18 @@ function mostProfitablePath(edges: number[][], bob: number, amount: number[]): n
 
     visited.fill(false)
 
-    while (queue.length) {
-        const [node, time, income]: [number, number, number] = queue.shift()!
-        let newIncome: number = income
-        const bobTime: number | undefined = bobPath.get(node)
+    const queue: [number, number, number][] = []
+    let front: number = 0
+    let back: number = 0
+    queue[back++] = [0, 0, 0];
+    visited[0] = true
 
-        if (bobTime === undefined || time < bobTime) {
+    while (front < back) {
+        const [node, time, income]: [number, number, number] = queue[front++]
+        let newIncome: number = income
+        const bobTime: number = bobPath[node]
+
+        if (bobTime === -1 || time < bobTime) {
             newIncome += amount[node];
         } else if (time === bobTime) {
             newIncome += Math.floor(amount[node] / 2);
@@ -34,11 +40,10 @@ function mostProfitablePath(edges: number[][], bob: number, amount: number[]): n
 
         for (const neighbor of tree[node]) {
             if (!visited[neighbor]) {
-                queue.push([neighbor, time + 1, newIncome])
+                queue[back++] = [neighbor, time + 1, newIncome]
+                visited[neighbor] = true
             }
         }
-
-        visited[node] = true
     }
 
     return maxIncome
@@ -48,10 +53,10 @@ function findBobPath(
     tree: number[][],
     node: number,
     time: number,
-    bobPath: Map<number, number>,
+    bobPath: number[],
     visited: boolean[]
 ): boolean {
-    bobPath.set(node, time)
+    bobPath[node] = time
     visited[node] = true
 
     if (node === 0) {
@@ -64,6 +69,6 @@ function findBobPath(
         }
     }
 
-    bobPath.delete(node)
+    bobPath[node] = -1
     return false
 }
