@@ -7,6 +7,6 @@ after removing `k` digits from `num`.
 
 ### Constraints:
 
-- `1 <= k <= num.length <= 105`
+- `1 <= k <= num.length <= 10^5`
 - `num` consists of only digits.
 - `num` does not have any leading zeros except for the zero itself.

@@ -11,6 +11,16 @@ describe('399. Evaluate Division', (): void => {
         )
     })
 
+    it('All can be determined', (): void => {
+        expect(calcEquation(
+            [["a","aa"]],
+            [9.0],
+            [["aa","a"],["aa","aa"]]
+        )).toStrictEqual(
+            [0.11111,1.00000]
+        )
+    })
+
     it('Multiple cannot be determined', (): void => {
         expect(calcEquation(
             [["a", "b"], ["b", "c"]],

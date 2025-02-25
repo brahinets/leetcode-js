@@ -5,68 +5,22 @@ function putMarbles(weights: number[], k: number): number {
         throw new Error("Not enough data")
     }
 
-    const costs: number[] = []
+    const pairWeights: number[] = collectWeights(weights)
 
-    for (const ends of generateEndsIncluding(k, weights.length)) {
-        const buckets: number[][] = breakOnBuckets(weights, ends)
-
-        costs.push(buckets
-            .map((bucket: number[]): number => bucket[0] + bucket[bucket.length - 1])
-            .reduce((distributionCost: number, bucketCost: number): number => distributionCost + bucketCost, 0))
+    let answer: number = 0
+    for (let i: number = 0; i < k - 1; ++i) {
+        answer += pairWeights[(weights.length - 1) - i - 1] - pairWeights[i]
     }
 
-    return Math.max(...costs) - Math.min(...costs)
+    return answer
 }
 
-function* generateEndsIncluding(bucketsCount: number, elementsCount: number): Generator<number[]> {
-    for (const bitsRow of bitMatrix(elementsCount)) {
-        if (bitsRow[bitsRow.length - 1] !== 1) {
-            continue
-        }
+function collectWeights(weights: number[]): number[] {
+    let pairWeights: number[] = []
 
-        const endsBucket: number[] = []
-        for (let i: number = 0; i < bitsRow.length; i++) {
-            if (bitsRow[i] === 1) {
-                endsBucket.push(i)
-            }
-        }
-
-        if (endsBucket.length === bucketsCount) {
-            yield endsBucket
-        }
-    }
-}
-
-function breakOnBuckets(weights: number[], endsIncluding: number[]) {
-    const res: number[][] = []
-
-    let start: number = 0
-    for (const end of endsIncluding) {
-        res.push(weights.slice(start, end + 1))
-        start = end + 1
+    for (let i: number = 0; i < weights.length - 1; ++i) {
+        pairWeights[i] = weights[i] + weights[i + 1]
     }
 
-    return res
-}
-
-function bitMatrix(n: number): number[][] {
-    const result: number[][] = []
-    const bits: number[] = new Array(n)
-
-    function generate(index: number): void {
-        if (index === n) {
-            result.push([...bits])
-            return
-        }
-
-        bits[index] = 0
-        generate(index + 1)
-
-        bits[index] = 1
-        generate(index + 1)
-    }
-
-    generate(0)
-
-    return result
+    return pairWeights.sort((a: number, b: number): number => a - b)
 }

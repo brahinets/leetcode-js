@@ -1,7 +1,7 @@
 export {threeSum}
 
 function threeSum(nums: number[]): number[][] {
-    nums = nums.toSorted((a: number, b: number): number => a - b)
+    nums = nums.sort((a: number, b: number): number => a - b)
 
     const result: number[][] = []
     for (let i: number = 0; i < nums.length - 2; i++) {

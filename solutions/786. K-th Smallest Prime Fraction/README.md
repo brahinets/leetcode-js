@@ -10,7 +10,7 @@ size `2`, where `answer[0] == arr[i]` and `answer[1] == arr[j]`.
 ### Constraints:
 
 - `2 <= arr.length <= 1000`
-- `1 <= arr[i] <= 3 * 104`
+- `1 <= arr[i] <= 3 * 10:4`
 - `arr[0] == 1`
 - `arr[i] is a prime number for i > 0.`
 - All the numbers of `arr` are unique and sorted in strictly increasing order.

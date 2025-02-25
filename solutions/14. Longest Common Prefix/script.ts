@@ -7,7 +7,7 @@ function longestCommonPrefix(strs: string[]): string {
         return prefix
     }
 
-    strs = strs.toSorted((a: string, b: string): number => a.length - b.length)
+    strs = strs.sort((a: string, b: string): number => a.length - b.length)
     const minLength: number = strs[0].length
 
     for (let shift: number = 0; shift < minLength; shift++) {

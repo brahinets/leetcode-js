@@ -1,7 +1,7 @@
 export {findMinArrowShots}
 
 function findMinArrowShots(points: number[][]): number {
-    points = points.toSorted((a: number[], b: number[]) => a[0] - b[0])
+    points = points.sort((a: number[], b: number[]) => a[0] - b[0])
 
     let count: number = 1
 

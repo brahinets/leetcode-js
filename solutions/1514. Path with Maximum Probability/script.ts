@@ -1,66 +1,43 @@
+import {arrayOfZeros} from "../../common/array-factories"
+import {UndirectedWeightedGraph} from "../../common/Graph"
+
 export {maxProbability}
 
-function maxProbability(n: number, edges: number[][], succProb: number[], start: number, end: number): number {
-    const paths: number[][][] = buildPaths(edges, start, end)
+function maxProbability(
+    n: number,
+    edges: number[][],
+    successProb: number[],
+    start: number,
+    end: number
+): number {
+    const graph: UndirectedWeightedGraph = buildGraph(edges, successProb)
 
-    let maxChance: number = 0
-    for (const path of paths) {
-        const chance: number = calculatePathSuccessProbability(path, succProb, edges)
-        if (chance > maxChance) {
-            maxChance = chance
-        }
-    }
+    const maxProbability: number[] = arrayOfZeros(n)
+    maxProbability[start] = 1
 
-    return maxChance
-}
+    const queue: number[] = []
+    queue.push(start)
 
-function buildPaths(edges: number[][], start: number, end: number): number[][][] {
-    const paths: number[][][] = []
+    while (queue.length > 0) {
+        const currentNode: number = queue.shift()!
 
-    while (edges.length > 0) {
-        const edgesToTarget: number[][] = edges.filter((e: number[]): boolean => e[0] === end || e[1] === end)
-        edges = edges.filter((e: number[]): boolean => e[0] !== end && e[1] !== end)
-
-        if(edgesToTarget.length === 0) {
-            break
-        }
-
-        for (const edgeToTarget of edgesToTarget) {
-            if (edgeToTarget[0] === start || edgeToTarget[1] === start) {
-                const items: number[][] = [edgeToTarget]
-                paths.push(items)
-            } else {
-                const prefixes: number[][][] = edgeToTarget[0] === end ?
-                    buildPaths(edges, start, edgeToTarget[1]) :
-                    buildPaths(edges, start, edgeToTarget[0])
-
-                for (const prefix of prefixes) {
-                    const items: number[][] = [...prefix, edgeToTarget]
-                    paths.push(items)
-                }
+        for (const [nextNode, pathProbability] of graph.getNeighbours(currentNode)) {
+            if (maxProbability[currentNode] * pathProbability > maxProbability[nextNode]) {
+                maxProbability[nextNode] = maxProbability[currentNode] * pathProbability
+                queue.push(nextNode)
             }
         }
     }
 
-    return paths
+    return maxProbability[end]
 }
 
-function calculatePathSuccessProbability(path: number[][], succProb: number[], edges: number[][]) {
-    let chance: number = 1
+function buildGraph(edges: number[][], successProb: number[]) {
+    const graph: UndirectedWeightedGraph = new UndirectedWeightedGraph()
 
-    for (const segment of path) {
-        chance *= findSegmentSuccessProbability(segment, edges, succProb)
-    }
-
-    return chance
-}
-
-function findSegmentSuccessProbability(segment: number[], edges: number[][], successProbability: number[]): number {
     for (let i: number = 0; i < edges.length; i++) {
-        if (edges[i][0] === segment[0] && edges[i][1] === segment[1]) {
-            return successProbability[i]
-        }
+        graph.addEdge(edges[i][0], edges[i][1], successProb[i])
     }
 
-    return 0
+    return graph
 }

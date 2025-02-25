@@ -2,7 +2,7 @@ export {largestGoodInteger}
 
 function largestGoodInteger(num: string): string {
     const nums: number[] = findAllGoodNumbers(num)
-        .toSorted((a: number, b: number): number => b - a)
+        .sort((a: number, b: number): number => b - a)
 
     if (nums.length === 0) {
         return ""

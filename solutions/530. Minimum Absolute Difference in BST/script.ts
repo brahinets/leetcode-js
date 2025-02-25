@@ -4,7 +4,7 @@ export {TreeNode, getMinimumDifference}
 
 function getMinimumDifference(root: TreeNode | null): number {
     const values: number[] = collectValues(root)
-        .toSorted((a: number, b: number): number => a - b)
+        .sort((a: number, b: number): number => a - b)
 
     let min: number = values[1] - values[0]
     for (let i: number = 1; i < values.length; i++) {

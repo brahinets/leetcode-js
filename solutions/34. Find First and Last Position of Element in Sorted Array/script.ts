@@ -1,7 +1,6 @@
 export {searchRange}
 
 function searchRange(nums: number[], target: number): number[] {
-    // TODO Speed up
     const position: number = nums.indexOf(target)
 
     if (position === -1) {

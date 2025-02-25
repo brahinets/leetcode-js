@@ -21,13 +21,17 @@ describe('1799. Maximize Score After N Operations', (): void => {
             .toBe(23)
     })
 
-    // TODO #1799 Fix business logic
-    it.skip('A bit more', (): void => {
+    it('A bit more', (): void => {
         expect(maxScore([9, 17, 16, 15, 18, 13, 18, 20]))
             .toBe(91)
     })
 
-    it('Much many', (): void => {
+    it('Load test #1', (): void => {
+        expect(maxScore([65, 36, 54, 9, 30, 59, 49, 28, 5, 31, 83, 78, 61, 50]))
+            .toBe(288)
+    })
+
+    it('Load test #2', (): void => {
         expect(maxScore([109497, 983516, 698308, 409009, 310455, 528595, 524079, 18036, 341150, 641864, 913962, 421869, 943382, 295019]))
             .toBe(527)
     })

@@ -17,5 +17,5 @@ function findKthLargest(nums: number[], k: number): number {
 }
 
 function countsByKeyDescending(nums: number[]): Map<number, number> {
-    return new Map([...count(nums)].toSorted((e1: number[], e2: number[]) => e2[0] - e1[0]))
+    return new Map([...count(nums)].sort((e1: number[], e2: number[]) => e2[0] - e1[0]))
 }

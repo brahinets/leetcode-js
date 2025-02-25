@@ -1,23 +1,13 @@
+import {arrayOfZeros} from "../../common/array-factories"
+
 export {minCostClimbingStairs}
 
 function minCostClimbingStairs(cost: number[]): number {
-    return minCostClimbingToStair(cost, cost.length, new Map<number, number>())
-}
+    let minCostToFloor: number[] = arrayOfZeros(cost.length + 1)
 
-function minCostClimbingToStair(cost: number[], stair: number, memo: Map<number, number>): number {
-    if (stair <= 1) {
-        return Math.min(0, cost[0])
+    for (let i: number = 2; i <= cost.length; i++) {
+        minCostToFloor[i] = Math.min(minCostToFloor[i - 1] + cost[i - 1], minCostToFloor[i - 2] + cost[i - 2])
     }
 
-    let costToStair: number | undefined = memo.get(stair)
-    if (costToStair !== undefined) {
-        return costToStair
-    }
-
-    const shortStep: number = minCostClimbingToStair(cost, stair - 1, memo) + cost[stair - 1]
-    const bigStep: number = minCostClimbingToStair(cost, stair - 2, memo) + cost[stair - 2]
-    costToStair = Math.min(shortStep, bigStep)
-    memo.set(stair, costToStair)
-
-    return costToStair
+    return minCostToFloor[cost.length]
 }

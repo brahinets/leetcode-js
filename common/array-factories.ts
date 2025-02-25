@@ -1,12 +1,12 @@
 export {matrixOf, matrixOfZeros, matrixOfEmptyStrings}
 export {arrayOf, arrayOfZeros}
 
-function matrixOfZeros(rows: number, cols: number): number[][] {
-    return matrixOf(0, rows, cols)
-}
-
 function matrixOfEmptyStrings(rows: number, cols: number): string[][] {
     return matrixOf("", rows, cols)
+}
+
+function matrixOfZeros(rows: number, cols: number): number[][] {
+    return matrixOf(0, rows, cols)
 }
 
 function matrixOf<Type>(val: Type, rows: number, cols: number): Type[][] {

@@ -2,7 +2,7 @@ export {longestConsecutive}
 
 function longestConsecutive(nums: number[]): number {
     const numbers: number[] = [...new Set<number>(nums)]
-        .toSorted((a: number, b: number): number => a - b)
+        .sort((a: number, b: number): number => a - b)
 
     let maxSequenceLength: number = 0
     let lastSequenceLength: number = 0
