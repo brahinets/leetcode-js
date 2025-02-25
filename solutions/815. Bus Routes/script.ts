@@ -11,7 +11,6 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
 
     const queue: number[] = [...graph.getNeighbours(source).keys()]
     const visitedRoutes: Set<number> = new Set<number>([...graph.getNeighbours(source).keys()])
-    const visitedStops: Set<number> = new Set<number>([source])
 
     let busCount: number = 1
     while (queue.length > 0) {
@@ -31,8 +30,6 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
                         queue.push(nextRoute)
                     }
                 }
-
-                visitedStops.add(stop)
             }
         }
 
