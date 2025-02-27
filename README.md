@@ -264,6 +264,7 @@
 1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
 1. № [867. Transpose Matrix](solutions/867.%20Transpose%20Matrix/script.ts)
 1. № [872. Leaf-Similar Trees](solutions/872.%20Leaf-Similar%20Trees/script.ts)
+1. № [873. Length of Longest Fibonacci Subsequence](solutions/873.%20Length%20of%20Longest%20Fibonacci%20Subsequence/script.ts)
 1. № [874. Walking Robot Simulation](solutions/874.%20Walking%20Robot%20Simulation/script.ts)
 1. № [875. Koko Eating Bananas](solutions/875.%20Koko%20Eating%20Bananas/script.ts)
 1. № [876. Middle of the Linked List](solutions/876.%20Middle%20of%20the%20Linked%20List/script.ts)
