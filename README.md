@@ -319,6 +319,7 @@
 1. № [1074. Number of Submatrices That Sum to Target](solutions/1074.%20Number%20of%20Submatrices%20That%20Sum%20to%20Target/script.ts)
 1. № [1079. Letter Tile Possibilities](solutions/1079.%20Letter%20Tile%20Possibilities/script.ts)
 1. № [1091. Shortest Path in Binary Matrix](solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix/script.ts)
+1. № [1092. Shortest Common Supersequence](solutions/1092.%20Shortest%20Common%20Supersequence/script.ts)
 1. № [1095. Find in Mountain Array](solutions/1095.%20Find%20in%20Mountain%20Array/script.ts)
 1. № [1105. Filling Bookcase Shelves](solutions/1105.%20Filling%20Bookcase%20Shelves/script.ts)
 1. № [1106. Parsing A Boolean Expression](solutions/1106.%20Parsing%20A%20Boolean%20Expression/script.ts)
