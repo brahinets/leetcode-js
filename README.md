@@ -625,6 +625,7 @@
 1. № [2558. Take Gifts From the Richest Pile](solutions/2558.%20Take%20Gifts%20From%20the%20Richest%20Pile/script.ts)
 1. № [2559. Count Vowel Strings in Ranges](solutions/2559.%20Count%20Vowel%20Strings%20in%20Ranges/script.ts)
 1. № [2563. Count the Number of Fair Pairs](solutions/2563.%20Count%20the%20Number%20of%20Fair%20Pairs/script.ts)
+1. № [2570. Merge Two 2D Arrays by Summing Values](solutions/2570.%20Merge%20Two%202D%20Arrays%20by%20Summing%20Values/script.ts)
 1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)
 1. № [2582. Pass the Pillow](solutions/2582.%20Pass%20the%20Pillow/script.ts)
 1. № [2583. Kth Largest Sum in a Binary Tree](solutions/2583.%20Kth%20Largest%20Sum%20in%20a%20Binary%20Tree/script.ts)
