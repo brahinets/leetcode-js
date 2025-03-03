@@ -546,6 +546,7 @@
 1. № [2140. Solving Questions With Brainpower](solutions/2140.%20Solving%20Questions%20With%20Brainpower/script.ts)
 1. № [2147. Number of Ways to Divide a Long Corridor](solutions/2147.%20Number%20of%20Ways%20to%20Divide%20a%20Long%20Corridor/script.ts)
 1. № [2149. Rearrange Array Elements by Sign](solutions/2149.%20Rearrange%20Array%20Elements%20by%20Sign/script.ts)
+1. № [2161. Partition Array According to Given Pivot](solutions/2161.%20Partition%20Array%20According%20to%20Given%20Pivot/script.ts)
 1. № [2181. Merge Nodes in Between Zeros](solutions/2181.%20Merge%20Nodes%20in%20Between%20Zeros/script.ts)
 1. № [2182. Construct String With Repeat Limit](solutions/2182.%20Construct%20String%20With%20Repeat%20Limit/script.ts)
 1. № [2185. Counting Words With a Given Prefix](solutions/2185.%20Counting%20Words%20With%20a%20Given%20Prefix/script.ts)
