@@ -629,6 +629,7 @@
 1. № [2563. Count the Number of Fair Pairs](solutions/2563.%20Count%20the%20Number%20of%20Fair%20Pairs/script.ts)
 1. № [2570. Merge Two 2D Arrays by Summing Values](solutions/2570.%20Merge%20Two%202D%20Arrays%20by%20Summing%20Values/script.ts)
 1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)
+1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)[2579. Count Total Number of Colored Cells](solutions/2579.%20Count%20Total%20Number%20of%20Colored%20Cells/script.ts)
 1. № [2582. Pass the Pillow](solutions/2582.%20Pass%20the%20Pillow/script.ts)
 1. № [2583. Kth Largest Sum in a Binary Tree](solutions/2583.%20Kth%20Largest%20Sum%20in%20a%20Binary%20Tree/script.ts)
 1. № [2593. Find Score of an Array After Marking All Elements](solutions/2593.%20Find%20Score%20of%20an%20Array%20After%20Marking%20All%20Elements/script.ts)
