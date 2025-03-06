@@ -671,6 +671,7 @@
 1. № [2948. Make Lexicographically Smallest Array by Swapping Elements](solutions/2948.%20Make%20Lexicographically%20Smallest%20Array%20by%20Swapping%20Elements/script.ts)
 1. № [2958. Length of Longest Subarray With at Most K Frequency](solutions/2958.%20Length%20of%20Longest%20Subarray%20With%20at%20Most%20K%20Frequency/script.ts)
 1. № [2962. Count Subarrays Where Max Element Appears at Least K Times](solutions/2962.%20Count%20Subarrays%20Where%20Max%20Element%20Appears%20at%20Least%20K%20Times/script.ts)
+1. № [2965. Find Missing and Repeated Values](solutions/2965.%20Find%20Missing%20and%20Repeated%20Values/script.ts)
 1. № [2966. Divide Array Into Arrays With Max Difference](solutions/2966.%20Divide%20Array%20Into%20Arrays%20With%20Max%20Difference/script.ts)
 1. № [2971. Find Polygon With the Largest Perimeter](solutions/2971.%20Find%20Polygon%20With%20the%20Largest%20Perimeter/script.ts)
 1. № [2976. Minimum Cost to Convert String I](solutions/2976.%20Minimum%20Cost%20to%20Convert%20String%20I/script.ts)
