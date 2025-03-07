@@ -623,6 +623,7 @@
 1. № [2540. Minimum Common Value](solutions/2540.%20Minimum%20Common%20Value/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
+1. № [2523. Closest Prime Numbers in Range](solutions/2523.%20Closest%20Prime%20Numbers%20in%20Range/script.ts)
 1. № [2554. Maximum Number of Integers to Choose From a Range I](solutions/2554.%20Maximum%20Number%20of%20Integers%20to%20Choose%20From%20a%20Range%20I/script.ts)
 1. № [2558. Take Gifts From the Richest Pile](solutions/2558.%20Take%20Gifts%20From%20the%20Richest%20Pile/script.ts)
 1. № [2559. Count Vowel Strings in Ranges](solutions/2559.%20Count%20Vowel%20Strings%20in%20Ranges/script.ts)
