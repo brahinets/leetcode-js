@@ -584,6 +584,7 @@
 1. № [2471. Minimum Number of Operations to Sort a Binary Tree by Level](solutions/2471.%20Minimum%20Number%20of%20Operations%20to%20Sort%20a%20Binary%20Tree%20by%20Level/script.ts)
 1. № [2373. Largest Local Values in a Matrix](solutions/2373.%20Largest%20Local%20Values%20in%20a%20Matrix/script.ts)
 1. № [2375. Construct Smallest Number From DI String](solutions/2375.%20Construct%20Smallest%20Number%20From%20DI%20String/script.ts)
+1. № [2379. Minimum Recolors to Get K Consecutive Black Blocks](solutions/2379.%20Minimum%20Recolors%20to%20Get%20K%20Consecutive%20Black%20Blocks/script.ts)
 1. № [2381. Shifting Letters II](solutions/2381.%20Shifting%20Letters%20II/script.ts)
 1. № [2385. Amount of Time for Binary Tree to Be Infected](solutions/2385.%20Amount%20of%20Time%20for%20Binary%20Tree%20to%20Be%20Infected/script.ts)
 1. № [2390. Removing Stars From a String](solutions/2390.%20Removing%20Stars%20From%20a%20String/script.ts)
