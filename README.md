@@ -382,6 +382,7 @@
 1. № [1404. Number of Steps to Reduce a Number in Binary Representation to One](solutions/1404.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20in%20Binary%20Representation%20to%20One/script.ts)
 1. № [1405. Longest Happy String](solutions/1405.%20Longest%20Happy%20String/script.ts)
 1. № [1415. The k-th Lexicographical String of All Happy Strings of Length n](solutions/1415.%20The%20k-th%20Lexicographical%20String%20of%20All%20Happy%20Strings%20of%20Length%20n/script.ts)
+1. № [1420. Build Array Where You Can Find The Maximum Exactly K Comparisons](solutions/1420.%20Build%20Array%20Where%20You%20Can%20Find%20The%20Maximum%20Exactly%20K%20Comparisons/script.ts)
 1. № [1424. Diagonal Traverse II](solutions/1424.%20Diagonal%20Traverse%20II/script.ts)
 1. № [1425. Constrained Subsequence Sum](solutions/1425.%20Constrained%20Subsequence%20Sum/script.ts)
 1. № [1431. Kids With the Greatest Number of Candies](solutions/1431.%20Kids%20With%20the%20Greatest%20Number%20of%20Candies/script.ts)
