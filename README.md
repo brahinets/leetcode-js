@@ -705,6 +705,7 @@
 1. № [3160. Find the Number of Distinct Colors Among the Balls](solutions/3160.%20Find%20the%20Number%20of%20Distinct%20Colors%20Among%20the%20Balls/script.ts)
 1. № [3163. String Compression III](solutions/3163.%20String%20Compression%20III/script.ts)
 1. № [3174. Clear Digits](solutions/3174.%20Clear%20Digits/script.ts)
+1. № [3191. Minimum Operations to Make Binary Array Elements Equal to One I](solutions/3191.%20Minimum%20Operations%20to%20Make%20Binary%20Array%20Elements%20Equal%20to%20One%20I/script.ts)
 1. № [3203. Find Minimum Diameter After Merging Two Trees](solutions/3203.%20Find%20Minimum%20Diameter%20After%20Merging%20Two%20Trees/script.ts)
 1. № [3208. Alternating Groups II](solutions/3208.%20Alternating%20Groups%20II/script.ts)
 1. № [3217. Delete Nodes From Linked List Present in Array](solutions/3217.%20Delete%20Nodes%20From%20Linked%20List%20Present%20in%20Array/script.ts)
