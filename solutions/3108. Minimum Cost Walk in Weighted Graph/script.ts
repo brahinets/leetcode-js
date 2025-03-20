@@ -2,7 +2,7 @@ import {arrayOf} from "../../common/array-factories"
 
 export {minimumCost}
 
-
+// TODO Use Graph for simplicity
 function minimumCost(n: number, edges: number[][], queries: number[][]): number[] {
     const adjList: Map<number, [number, number][]> = new Map<number, [number, number][]>()
     for (let i: number = 0; i < n; i++) {
