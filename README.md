@@ -518,6 +518,7 @@
 1. № [1963. Minimum Number of Swaps to Make the String Balanced](solutions/1963.%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20String%20Balanced/script.ts)
 1. № [1971. Find if Path Exists in Graph](solutions/1971.%20Find%20if%20Path%20Exists%20in%20Graph/script.ts)
 1. № [1975. Maximum Matrix Sum](solutions/1975.%20Maximum%20Matrix%20Sum/script.ts)
+1. № [1976. Number of Ways to Arrive at Destination](solutions/1976.%20Number%20of%20Ways%20to%20Arrive%20at%20Destination/script.ts)
 1. № [1980. Find Unique Binary String](solutions/1980.%20Find%20Unique%20Binary%20String/script.ts)
 1. № [1992. Find All Groups of Farmland](solutions/1992.%20Find%20All%20Groups%20of%20Farmland/script.ts)
 1. № [2000. Reverse Prefix of Word](solutions/2000.%20Reverse%20Prefix%20of%20Word/script.ts)
