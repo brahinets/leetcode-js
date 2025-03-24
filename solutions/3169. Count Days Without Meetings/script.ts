@@ -1,15 +1,20 @@
 export {countDays}
 
 function countDays(days: number, meetings: number[][]): number {
-    const daysWithoutMeetings: Set<number> = new Set<number>(
-        Array.from({length: days}, (_: number, i: number): number => i + 1)
-    )
+    let freeDays: number = 0
+    let latestEnd: number = 0
 
-    for (const [start, end] of meetings) {
-        for (let i: number = start; i <= end; i++) {
-            daysWithoutMeetings.delete(i)
+    meetings.sort((a: number[], b: number[]): number => a[0] - b[0])
+
+    for (let [start, end] of meetings) {
+        if (start > latestEnd + 1) {
+            freeDays += start - latestEnd - 1
         }
+
+        latestEnd = Math.max(latestEnd, end)
     }
 
-    return daysWithoutMeetings.size
+    freeDays += days - latestEnd
+
+    return freeDays
 }
