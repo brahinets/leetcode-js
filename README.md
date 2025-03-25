@@ -720,5 +720,6 @@
 1. № [3264. Final Array State After K Multiplication Operations I](solutions/3264.%20Final%20Array%20State%20After%20K%20Multiplication%20Operations%20I/script.ts)
 1. № [3306. Count of Substrings Containing Every Vowel and K Consonants II](solutions/3306.%20Count%20of%20Substrings%20Containing%20Every%20Vowel%20and%20K%20Consonants%20II/script.ts)
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
+1. № [3394. Check if Grid can be Cut into Sections](solutions/3394.%20Check%20if%20Grid%20can%20be%20Cut%20into%20Sections/script.ts)
 
 </details>
