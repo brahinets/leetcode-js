@@ -527,6 +527,7 @@
 1. № [2022. Convert 1D Array Into 2D Array](solutions/2022.%20Convert%201D%20Array%20Into%202D%20Array/script.ts)
 1. № [2024. Maximize the Confusion of an Exam](solutions/2024.%20Maximize%20the%20Confusion%20of%20an%20Exam/script.ts)
 1. № [2028. Find Missing Observations](solutions/2028.%20Find%20Missing%20Observations/script.ts)
+1. № [2033. Minimum Operations to Make a Uni-Value Grid](solutions/2033.%20Minimum%20Operations%20to%20Make%20a%20Uni-Value%20Grid/script.ts)
 1. № [2037. Minimum Number of Moves to Seat Everyone](solutions/2037.%20Minimum%20Number%20of%20Moves%20to%20Seat%20Everyone/script.ts)
 1. № [2044. Count Number of Maximum Bitwise-OR Subsets](solutions/2044.%20Count%20Number%20of%20Maximum%20Bitwise-OR%20Subsets/script.ts)
 1. № [2045. Second Minimum Time to Reach Destination](solutions/2045.%20Second%20Minimum%20Time%20to%20Reach%20Destination/script.ts)
