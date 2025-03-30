@@ -62,31 +62,32 @@ function maximumScore(nums: number[], k: number): number {
     const sortedArray: [number, number][] = nums.map((num: number, index: number): [number, number] => [num, index])
     sortedArray.sort((a: [number, number], b: [number, number]): number => b[0] - a[0])
 
-    let score: number = 1
+    let score: bigint = 1n
     let processingIndex: number = 0
 
     while (k > 0) {
         const [num, index] = sortedArray[processingIndex++]
         const operations: number = Math.min(k, numOfSubarrays[index])
-        score = (score * power(num, operations)) % MOD
+        score = (score * power(BigInt(num), BigInt(operations))) % BigInt(MOD)
         k -= operations
     }
 
-    return score
+    return Number(score)
 }
 
-function power(base: number, exponent: number): number {
-    let res: number = 1
+function power(base: bigint, exponent: bigint): bigint {
+    let result: bigint = 1n
 
-    while (exponent > 0) {
-        if (exponent % 2 === 1) {
-            res = (res * base) % MOD
+    while (exponent > 0n) {
+        if (exponent % 2n === 1n) {
+            result = (result * base) % BigInt(MOD)
         }
-        base = (base * base) % MOD
-        exponent = Math.floor(exponent / 2)
+
+        base = (base * base) % BigInt(MOD)
+        exponent /= 2n
     }
 
-    return res
+    return result
 }
 
 function getPrimes(limit: number): number[] {
