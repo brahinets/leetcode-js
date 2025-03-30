@@ -11,7 +11,7 @@ describe('2818. Apply Operations to Maximize Score', (): void => {
             .toBe(4788)
     })
 
-    it('Load test', (): void => {
+    it('Overflow test', (): void => {
         expect(maximumScore([2, 1, 14, 5, 18, 1, 8, 5], 34))
             .toBe(799392504)
     })
