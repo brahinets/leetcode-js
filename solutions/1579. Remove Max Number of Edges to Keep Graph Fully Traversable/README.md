@@ -17,7 +17,7 @@ traverse the graph.
 ### Constraints:
 
 - `1 <= n <= 10^5`
-- `1 <= edges.length <= min(105, 3 * n * (n - 1) / 2)`
+- `1 <= edges.length <= min(10^5, 3 * n * (n - 1) / 2)`
 - `edges[i].length == 3`
 - `1 <= typei <= 3`
 - `1 <= ui < vi <= n`
