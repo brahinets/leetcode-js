@@ -683,6 +683,7 @@
 1. № [2864. Maximum Odd Binary Number](solutions/2864.%20Maximum%20Odd%20Binary%20Number/script.ts)
 1. № [2870. Minimum Number of Operations to Make Array Empty](solutions/2870.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Empty/script.ts)
 1. № [2872. Maximum Number of K-Divisible Components](solutions/2872.%20Maximum%20Number%20of%20K-Divisible%20Components/script.ts)
+1. № [2873. Maximum Value of an Ordered Triplet I](solutions/2873.%20Maximum%20Value%20of%20an%20Ordered%20Triplet%20I/script.ts)
 1. № [2914. Minimum Number of Changes to Make Binary String Beautiful](solutions/2914.%20Minimum%20Number%20of%20Changes%20to%20Make%20Binary%20String%20Beautiful/script.ts)
 1. № [2924. Find Champion II](solutions/2924.%20Find%20Champion%20II/script.ts)
 1. № [2938. Separate Black and White Balls](solutions/2938.%20Separate%20Black%20and%20White%20Balls/script.ts)
