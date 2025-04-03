@@ -3,12 +3,12 @@ export {maximumTripletValue}
 function maximumTripletValue(nums: number[]): number {
     let max: number = 0
 
-    for (let i: number = 0; i < nums.length - 2; i++) {
-        for (let j: number = i + 1; j < nums.length - 1; j++) {
-            for (let k: number = j + 1; k < nums.length; k++) {
-                max = Math.max(max, (nums[i] - nums[j]) * nums[k])
-            }
-        }
+    let maxPrefixValue: number = 0
+    let maxDifference: number = 0
+    for (let index: number = 0; index < nums.length; index++) {
+        max = Math.max(max, maxDifference * nums[index])
+        maxDifference = Math.max(maxDifference, maxPrefixValue - nums[index])
+        maxPrefixValue = Math.max(maxPrefixValue, nums[index])
     }
 
     return max
