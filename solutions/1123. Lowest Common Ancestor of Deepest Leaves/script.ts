@@ -3,26 +3,24 @@ import {TreeNode} from "../../common/TreeNode"
 export {lcaDeepestLeaves}
 
 function lcaDeepestLeaves(root: TreeNode | null): TreeNode | null {
-    let maxDepth: number = 0
-    let lca: TreeNode | null = null
+    return dfs(root)[0]
+}
 
-    function dfs(node: TreeNode | null, depth: number): number {
-        if (!node) {
-            return depth
-        }
-
-        const leftDepth = dfs(node.left, depth + 1)
-        const rightDepth = dfs(node.right, depth + 1)
-
-        if (leftDepth === rightDepth && leftDepth >= maxDepth) {
-            maxDepth = leftDepth
-            lca = node
-        }
-
-        return Math.max(leftDepth, rightDepth)
+function dfs(root: TreeNode | null): [TreeNode | null, number] {
+    if (root == null) {
+        return [null, 0]
     }
 
-    dfs(root, 0)
+    const left: [TreeNode | null, number] = dfs(root.left)
+    const right: [TreeNode | null, number] = dfs(root.right)
 
-    return lca
+    if (left[1] > right[1]) {
+        return [left[0], left[1] + 1]
+    }
+
+    if (left[1] < right[1]) {
+        return [right[0], right[1] + 1]
+    }
+
+    return [root, left[1] + 1]
 }
