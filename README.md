@@ -327,6 +327,7 @@
 1. № [1106. Parsing A Boolean Expression](solutions/1106.%20Parsing%20A%20Boolean%20Expression/script.ts)
 1. № [1110. Delete Nodes And Return Forest](solutions/1110.%20Delete%20Nodes%20And%20Return%20Forest/script.ts)
 1. № [1122. Relative Sort Array](solutions/1122.%20Relative%20Sort%20Array/script.ts)
+1. № [1123. Lowest Common Ancestor of Deepest Leaves](solutions/1123.%20Lowest%20Common%20Ancestor%20of%20Deepest%20Leaves/script.ts)
 1. № [1125. Smallest Sufficient Team](solutions/1125.%20Smallest%20Sufficient%20Team/script.ts)
 1. № [1137. N-th Tribonacci Number](solutions/1137.%20N-th%20Tribonacci%20Number/script.ts)
 1. № [1140. Stone Game II](solutions/1140.%20Stone%20Game%20II/script.ts)
