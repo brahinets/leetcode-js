@@ -263,6 +263,7 @@
 1. № [861. Score After Flipping Matrix](solutions/861.%20Score%20After%20Flipping%20Matrix/script.ts)
 1. № [862. Shortest Subarray with Sum at Least K](solutions/862.%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K/script.ts)
 1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
+1. № [865. Smallest Subtree with all the Deepest Nodes](solutions/865.%20Smallest%20Subtree%20with%20all%20the%20Deepest%20Nodes/script.ts)
 1. № [867. Transpose Matrix](solutions/867.%20Transpose%20Matrix/script.ts)
 1. № [872. Leaf-Similar Trees](solutions/872.%20Leaf-Similar%20Trees/script.ts)
 1. № [873. Length of Longest Fibonacci Subsequence](solutions/873.%20Length%20of%20Longest%20Fibonacci%20Subsequence/script.ts)
