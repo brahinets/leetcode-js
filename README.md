@@ -701,6 +701,7 @@
 1. № [2976. Minimum Cost to Convert String I](solutions/2976.%20Minimum%20Cost%20to%20Convert%20String%20I/script.ts)
 1. № [2981. Find Longest Special Substring That Occurs Thrice I](solutions/2981.%20Find%20Longest%20Special%20Substring%20That%20Occurs%20Thrice%20I/script.ts)
 1. № [2997. Minimum Number of Operations to Make Array XOR Equal to K](solutions/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/script.ts)
+1. № [2999. Count the Number of Powerful Integers](solutions/2999.%20Count%20the%20Number%20of%20Powerful%20Integers/script.ts)
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
 1. № [3011. Find if Array Can Be Sorted](solutions/3011.%20Find%20if%20Array%20Can%20Be%20Sorted/script.ts)
 1. № [3016. Minimum Number of Pushes to Type Word II](solutions/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/script.ts)
