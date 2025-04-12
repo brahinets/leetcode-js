@@ -730,6 +730,7 @@
 1. № [3243. Shortest Distance After Road Addition Queries I](solutions/3243.%20Shortest%20Distance%20After%20Road%20Addition%20Queries%20I/script.ts)
 1. № [3254. Find the Power of K-Size Subarrays I](solutions/3254.%20Find%20the%20Power%20of%20K-Size%20Subarrays%20I/script.ts)
 1. № [3264. Final Array State After K Multiplication Operations I](solutions/3264.%20Final%20Array%20State%20After%20K%20Multiplication%20Operations%20I/script.ts)
+1. № [3272. Find the Count of Good Integers](solutions/3272.%20Find%20the%20Count%20of%20Good%20Integers/script.ts)
 1. № [3306. Count of Substrings Containing Every Vowel and K Consonants II](solutions/3306.%20Count%20of%20Substrings%20Containing%20Every%20Vowel%20and%20K%20Consonants%20II/script.ts)
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
 1. № [3375. Minimum Operations to Make Array Values Equal to K](solutions/3375.%20Minimum%20Operations%20to%20Make%20Array%20Values%20Equal%20to%20K/script.ts)
