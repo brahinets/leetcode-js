@@ -514,6 +514,7 @@
 1. № [1913. Maximum Product Difference Between Two Pairs](solutions/1913.%20Maximum%20Product%20Difference%20Between%20Two%20Pairs/script.ts)
 1. № [1915. Number of Wonderful Substrings](solutions/1915.%20Number%20of%20Wonderful%20Substrings/script.ts)
 1. № [1921. Eliminate Maximum Number of Monsters](solutions/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/script.ts)
+1. № [1922. Count Good Numbers](solutions/1922.%20Count%20Good%20Numbers/script.ts)
 1. № [1930. Unique Length-3 Palindromic Subsequences](solutions/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/script.ts)
 1. № [1937. Maximum Number of Points with Cost](solutions/1937.%20Maximum%20Number%20of%20Points%20with%20Cost/script.ts)
 1. № [1942. The Number of the Smallest Unoccupied Chair](solutions/1942.%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair/script.ts)
