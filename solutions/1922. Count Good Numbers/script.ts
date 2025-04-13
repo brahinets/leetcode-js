@@ -1,15 +1,15 @@
 export {countGoodNumbers}
 
-const mod: bigint = BigInt(1e9 + 7)
+const mod: number = 1e9 + 7
 
 function countGoodNumbers(n: number): number {
-    const odd: bigint = BigInt(Math.floor((n + 1) / 2))
-    const even: bigint = BigInt(Math.floor(n / 2))
+    const odd: number = Math.floor((n + 1) / 2)
+    const even: number = Math.floor(n / 2)
 
-    const part1: bigint = modularExponentiation(5n, odd, mod)
-    const part2: bigint = modularExponentiation(4n, even, mod)
+    const goodDigits: bigint = modularExponentiation(5n, BigInt(odd), BigInt(mod))
+    const evenDigits: bigint = modularExponentiation(4n, BigInt(even), BigInt(mod))
 
-    return Number((part1 * part2) % mod)
+    return Number((goodDigits * evenDigits) % BigInt(mod))
 }
 
 function modularExponentiation(base: bigint, exponent: bigint, mod: bigint): bigint {
