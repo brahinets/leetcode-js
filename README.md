@@ -638,6 +638,7 @@
 1. № [2503. Maximum Number of Points From Grid Queries](solutions/2503.%20Maximum%20Number%20of%20Points%20From%20Grid%20Queries/script.ts)
 1. № [2516. Take K of Each Character From Left and Right](solutions/2516.%20Take%20K%20of%20Each%20Character%20From%20Left%20and%20Right/script.ts)
 1. № [2530. Maximal Score After Applying K Operations](solutions/2530.%20Maximal%20Score%20After%20Applying%20K%20Operations/script.ts)
+1. № [2537. Count the Number of Good Subarrays](solutions/2537.%20Count%20the%20Number%20of%20Good%20Subarrays/script.ts)
 1. № [2540. Minimum Common Value](solutions/2540.%20Minimum%20Common%20Value/script.ts)
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
