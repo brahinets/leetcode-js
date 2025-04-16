@@ -1,6 +1,11 @@
 import {countGood} from '../script'
 
 describe('2537. Count the Number of Good Subarrays', (): void => {
+    it('No good subarrays', (): void => {
+        expect(countGood([1, 1, 1, 1, 1], 100))
+            .toBe(0)
+    })
+
     it('The only good subarray', (): void => {
         expect(countGood([1, 1, 1, 1, 1], 10))
             .toBe(1)
