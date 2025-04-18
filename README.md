@@ -33,6 +33,7 @@
 1. № [34. Find First and Last Position of Element in Sorted Array](solutions/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/script.ts)
 1. № [35. Search Insert Position](solutions/35.%20Search%20Insert%20Position/script.ts)
 1. № [36. Valid Sudoku](solutions/36.%20Valid%20Sudoku/script.ts)
+1. № [38. Count and Say](solutions/38.%20Count%20and%20Say/script.ts)
 1. № [40. Combination Sum II](solutions/40.%20Combination%20Sum%20II/script.ts)
 1. № [41. First Missing Positive](solutions/41.%20First%20Missing%20Positive/script.ts)
 1. № [42. Trapping Rain Water](solutions/42.%20Trapping%20Rain%20Water/script.ts)
