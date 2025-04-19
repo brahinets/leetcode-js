@@ -4,7 +4,8 @@ function winnerOfGame(colors: string): boolean {
     let countA: number = 0
     let countB: number = 0
 
-    for (let i: number = 0; i < colors.length; i++) {
+    let i: number = 0
+    while (i < colors.length) {
         const x: string = colors[i]
         let count: number = 0
 
@@ -18,8 +19,6 @@ function winnerOfGame(colors: string): boolean {
         } else if (x === 'B') {
             countB += Math.max(count - 2, 0)
         }
-
-        i--
     }
 
     return countA > countB
