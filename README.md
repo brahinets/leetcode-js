@@ -242,6 +242,7 @@
 1. № [769. Max Chunks To Make Sorted](solutions/769.%20Max%20Chunks%20To%20Make%20Sorted/script.ts)
 1. № [773. Sliding Puzzle](solutions/773.%20Sliding%20Puzzle/script.ts)
 1. № [779. K-th Symbol in Grammar](solutions/779.%20K-th%20Symbol%20in%20Grammar/script.ts)
+1. № [781. Rabbits in Forest](solutions/781.%20Rabbits%20in%20Forest/script.ts)
 1. № [783. Minimum Distance Between BST Nodes](solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes/script.ts)
 1. № [786. K-th Smallest Prime Fraction](solutions/786.%20K-th%20Smallest%20Prime%20Fraction/script.ts)
 1. № [787. Cheapest Flights Within K Stops](solutions/787.%20Cheapest%20Flights%20Within%20K%20Stops/script.ts)
