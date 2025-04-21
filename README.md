@@ -188,6 +188,7 @@
 1. № [543. Diameter of Binary Tree](solutions/543.%20Diameter%20of%20Binary%20Tree/script.ts)
 1. № [547. Number of Provinces](solutions/547.%20Number%20of%20Provinces/script.ts)
 1. № [552. Student Attendance Record II](solutions/552.%20Student%20Attendance%20Record%20II/script.ts)
+1. № [557. Reverse Words in a String III](solutions/557.%20Reverse%20Words%20in%20a%20String%20III/script.ts)
 1. № [560. Subarray Sum Equals K](solutions/560.%20Subarray%20Sum%20Equals%20K/script.ts)
 1. № [564. Find the Closest Palindrome](solutions/564.%20Find%20the%20Closest%20Palindrome/script.ts)
 1. № [567. Permutation in String](solutions/567.%20Permutation%20in%20String/script.ts)
