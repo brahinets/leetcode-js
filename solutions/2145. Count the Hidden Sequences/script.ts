@@ -1,20 +1,20 @@
 export {numberOfArrays}
 
 function numberOfArrays(differences: number[], lower: number, upper: number): number {
-    let x: number = 0
-    let y: number = 0
+    let minPrefixSum: number = 0
+    let maxPrefixSum: number = 0
 
-    let current: number = 0
+    let prefixSum: number = 0
     for (let difference of differences) {
-        current += difference
+        prefixSum += difference
 
-        x = Math.min(x, current)
-        y = Math.max(y, current)
+        minPrefixSum = Math.min(minPrefixSum, prefixSum)
+        maxPrefixSum = Math.max(maxPrefixSum, prefixSum)
 
-        if (y - x > upper - lower) {
+        if (maxPrefixSum - minPrefixSum > upper - lower) {
             return 0
         }
     }
 
-    return upper - lower - (y - x) + 1
+    return upper - lower - (maxPrefixSum - minPrefixSum) + 1
 }
