@@ -595,6 +595,7 @@
 1. № [2331. Evaluate Boolean Binary Tree](solutions/2331.%20Evaluate%20Boolean%20Binary%20Tree/script.ts)
 1. № [2336. Smallest Number in Infinite Set](solutions/2336.%20Smallest%20Number%20in%20Infinite%20Set/script.ts)
 1. № [2337. Move Pieces to Obtain a String](solutions/2337.%20Move%20Pieces%20to%20Obtain%20a%20String/script.ts)
+1. № [2338. Count the Number of Ideal Arrays](solutions/2338.%20Count%20the%20Number%20of%20Ideal%20Arrays/script.ts)
 1. № [2342. Max Sum of a Pair With Equal Sum of Digits](solutions/2342.%20Max%20Sum%20of%20a%20Pair%20With%20Equal%20Sum%20of%20Digits/script.ts)
 1. № [2348. Number of Zero-Filled Sub-arrays](solutions/2348.%20Number%20of%20Zero-Filled%20Sub-arrays/script.ts)
 1. № [2349. Design a Number Container System](solutions/2349.%20Design%20a%20Number%20Container%20System/script.ts)
