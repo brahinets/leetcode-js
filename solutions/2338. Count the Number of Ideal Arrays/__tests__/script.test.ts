@@ -10,4 +10,9 @@ describe('2338. Count the Number of Ideal Arrays', (): void => {
         expect(idealArrays(5, 3))
             .toBe(11)
     })
+
+    it('Load test', (): void => {
+        expect(idealArrays(9767, 9557))
+            .toBe(1998089)
+    })
 })

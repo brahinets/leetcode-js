@@ -1,71 +1,79 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import {arrayOf, arrayOfZeros, matrixOfZeros} from "../../common/array-factories"
 
 export {idealArrays}
 
 const mod: number = 1e9 + 7
+const MAX_N: number = 10010
+const MAX_P: number = 15
 
 function idealArrays(n: number, maxValue: number): number {
-    const combinations: number[][] = buildCombinations(n)
+    const sieveArray: number[] = getSieve()
+    const primeFactorCountsArray: number[][] = getPrimeFactorCounts(sieveArray)
+    const binomialCoefficients: number[][] = getBinomialCoefficients()
 
-    const divisibleSequences: number[][] = buildDivisibleSequences(n, maxValue)
+    let total: bigint = 0n
+    for (let x: number = 1; x <= maxValue; x++) {
+        let product: bigint = 1n
 
-    return calculateTotal(divisibleSequences, combinations, n)
+        for (const count of primeFactorCountsArray[x]) {
+            product = (product * BigInt(binomialCoefficients[n + count - 1][count])) % BigInt(mod)
+        }
+
+        total = (total + product) % BigInt(mod)
+    }
+
+    return Number(total)
 }
 
-function buildCombinations(n: number): number[][] {
-    const combinations: number[][] = matrixOfZeros(n + 1, n + 1)
+function getSieve(): number[] {
+    const sieveCopy: number[] = arrayOfZeros(MAX_N)
 
-    for (let i: number = 0; i <= n; i++) {
+    for (let i: number = 2; i < MAX_N; i++) {
+        if (sieveCopy[i] === 0) {
+            for (let j: number = i; j < MAX_N; j += i) {
+                if (sieveCopy[j] === 0) {
+                    sieveCopy[j] = i
+                }
+            }
+        }
+    }
+
+    return sieveCopy
+}
+
+function getPrimeFactorCounts(sieve: number[]): number[][] {
+    const primeFactorCounts: number[][] = arrayOf([], MAX_N)
+
+    for (let i: number = 2; i < MAX_N; i++) {
+        let x: number = i
+
+        while (x > 1) {
+            const p: number = sieve[x]
+            let count: number = 0
+
+            while (x % p === 0) {
+                x = Math.floor(x / p)
+
+                count++
+            }
+
+            primeFactorCounts[i].push(count)
+        }
+    }
+
+    return primeFactorCounts
+}
+
+function getBinomialCoefficients(): number[][] {
+    const combinations: number[][] = matrixOfZeros(MAX_N + MAX_P, MAX_P + 1)
+
+    for (let i: number = 0; i < MAX_N + MAX_P; i++) {
         combinations[i][0] = 1
 
-        for (let j: number = 1; j <= i; j++) {
+        for (let j: number = 1; j <= Math.min(i, MAX_P); j++) {
             combinations[i][j] = (combinations[i - 1][j] + combinations[i - 1][j - 1]) % mod
         }
     }
 
     return combinations
-}
-
-function buildDivisibleSequences(n: number, maxValue: number): number[][] {
-    const sequences: number[][] = matrixOfZeros(maxValue + 1, n + 1)
-
-    for (let value: number = 1; value <= maxValue; value++) {
-        sequences[value][1] = 1
-    }
-
-    for (let length: number = 2; length <= n; length++) {
-        for (let previous: number = 1; previous <= maxValue; previous++) {
-            const count: number = sequences[previous][length - 1]
-
-            if (count === 0) {
-                continue
-            }
-
-            for (let multiple: number = previous * 2; multiple <= maxValue; multiple += previous) {
-                sequences[multiple][length] = (sequences[multiple][length] + count) % mod
-            }
-        }
-    }
-
-    return sequences
-}
-
-function calculateTotal(sequences: number[][], combinations: number[][], n: number): number {
-    let total: number = 0
-
-    for (let value: number = 1; value < sequences.length; value++) {
-        for (let length: number = 1; length <= n; length++) {
-            const count: number = sequences[value][length]
-
-            if (count === 0) {
-                continue
-            }
-
-            const waysToPlace: number = combinations[n - 1][length - 1]
-
-            total = (total + count * waysToPlace) % mod
-        }
-    }
-
-    return total
 }
