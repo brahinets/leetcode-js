@@ -689,6 +689,7 @@
 1. № [2779. Maximum Beauty of an Array After Applying Operation](solutions/2779.%20Maximum%20Beauty%20of%20an%20Array%20After%20Applying%20Operation/script.ts)
 1. № [2780. Minimum Index of a Valid Split](solutions/2780.%20Minimum%20Index%20of%20a%20Valid%20Split/script.ts)
 1. № [2785. Sort Vowels in a String](solutions/2785.%20Sort%20Vowels%20in%20a%20String/script.ts)
+1. № [2799. Count Complete Subarrays in an Array](solutions/2799.%20Count%20Complete%20Subarrays%20in%20an%20Array/script.ts)
 1. № [2807. Insert Greatest Common Divisors in Linked List](solutions/2807.%20Insert%20Greatest%20Common%20Divisors%20in%20Linked%20List/script.ts)
 1. № [2812. Find the Safest Path in a Grid](solutions/2812.%20Find%20the%20Safest%20Path%20in%20a%20Grid/script.ts)
 1. № [2816. Double a Number Represented as a Linked List](solutions/2816.%20Double%20a%20Number%20Represented%20as%20a%20Linked%20List/script.ts)
