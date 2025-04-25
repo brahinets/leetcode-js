@@ -696,6 +696,7 @@
 1. № [2818. Apply Operations to Maximize Score](solutions/2818.%20Apply%20Operations%20to%20Maximize%20Score/script.ts)
 1. № [2825. Make String a Subsequence Using Cyclic Increments](solutions/2825.%20Make%20String%20a%20Subsequence%20Using%20Cyclic%20Increments/script.ts)
 1. № [2843. Count Symmetric Integers](solutions/2843.%20Count%20Symmetric%20Integers/script.ts)
+1. № [2845. Count of Interesting Subarrays](solutions/2845.%20Count%20of%20Interesting%20Subarrays/script.ts)
 1. № [2849. Determine if a Cell Is Reachable at a Given Time](solutions/2849.%20Determine%20if%20a%20Cell%20Is%20Reachable%20at%20a%20Given%20Time/script.ts)
 1. № [2864. Maximum Odd Binary Number](solutions/2864.%20Maximum%20Odd%20Binary%20Number/script.ts)
 1. № [2870. Minimum Number of Operations to Make Array Empty](solutions/2870.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Empty/script.ts)
