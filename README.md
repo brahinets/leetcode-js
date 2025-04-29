@@ -20,6 +20,7 @@
 1. № [15. 3Sum](solutions/15.%203Sum/script.ts)
 1. № [16. 3Sum Closest](solutions/16.%203Sum%20Closest/script.ts)
 1. № [17. Letter Combinations of a Phone Number](solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number/script.ts)
+1. № [18. 4Sum](solutions/18.%204Sum/script.ts)
 1. № [19. Remove Nth Node From End of List](solutions/19.%20Remove%20Nth%20Node%20From%20End%20of%20List/script.ts)
 1. № [20. Valid Parentheses](solutions/20.%20Valid%20Parentheses/script.ts)
 1. № [21. Merge Two Sorted Lists](solutions/21.%20Merge%20Two%20Sorted%20Lists/script.ts)
