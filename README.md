@@ -550,6 +550,7 @@
 1. № [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](solutions/2058.%20Find%20the%20Minimum%20and%20Maximum%20Number%20of%20Nodes%20Between%20Critical%20Points/script.ts)
 1. № [2064. Minimized Maximum of Products Distributed to Any Store](solutions/2064.%20Minimized%20Maximum%20of%20Products%20Distributed%20to%20Any%20Store/script.ts)
 1. № [2070. Most Beautiful Item for Each Query](solutions/2070.%20Most%20Beautiful%20Item%20for%20Each%20Query/script.ts)
+1. № [2071. Maximum Number of Tasks You Can Assign](solutions/2071.%20Maximum%20Number%20of%20Tasks%20You%20Can%20Assign/script.ts)
 1. № [2073. Time Needed to Buy Tickets](solutions/2073.%20Time%20Needed%20to%20Buy%20Tickets/script.ts)
 1. № [2090. K Radius Subarray Averages](solutions/2090.%20K%20Radius%20Subarray%20Averages/script.ts)
 1. № [2092. Find All People With Secret](solutions/2092.%20Find%20All%20People%20With%20Secret/script.ts)
