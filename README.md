@@ -257,6 +257,7 @@
 1. № [826. Most Profit Assigning Work](solutions/826.%20Most%20Profit%20Assigning%20Work/script.ts)
 1. № [827. Making A Large Island](solutions/827.%20Making%20A%20Large%20Island/script.ts)
 1. № [834. Sum of Distances in Tree](solutions/834.%20Sum%20of%20Distances%20in%20Tree/script.ts)
+1. № [838. Push Dominoes](solutions/838.%20Push%20Dominoes/script.ts)
 1. № [840. Magic Squares In Grid](solutions/840.%20Magic%20Squares%20In%20Grid/script.ts)
 1. № [844. Backspace String Compare](solutions/844.%20Backspace%20String%20Compare/script.ts)
 1. № [846. Hand of Straights](solutions/846.%20Hand%20of%20Straights/script.ts)
