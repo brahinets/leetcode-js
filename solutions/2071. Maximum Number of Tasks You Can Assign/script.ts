@@ -9,52 +9,47 @@ function maxTaskAssign(
     tasks.sort((a: number, b: number): number => a - b)
     workers.sort((a: number, b: number): number => a - b)
 
-    let left: number = 0
-    let right: number = Math.min(tasks.length, workers.length)
-    let result: number = 0
+    let low: number = 0
+    let high: number = Math.min(tasks.length, workers.length)
 
-    while (left <= right) {
-        const mid: number = Math.floor((left + right) / 2)
+    while (low < high) {
+        const mid: number = Math.floor((low + high + 1) / 2)
 
-        if (canAssign(mid, tasks, workers, pills, strength)) {
-            result = mid
-            left = mid + 1
+        if (canAssign(mid, strength, workers, pills, tasks)) {
+            low = mid
         } else {
-            right = mid - 1
+            high = mid - 1
         }
     }
 
-    return result
+    return low
 }
 
-function canAssign(
-    k: number,
-    tasks: number[],
-    workers: number[],
-    pills: number,
-    strength: number
-): boolean {
-    const selectedTasks: number[] = tasks.slice(0, k)
-    const selectedWorkers: number[] = workers.slice(workers.length - k)
+function canAssign(taskCount: number, strength: number, workers: number[], pills: number, tasks: number[]): boolean {
+    const boosted: number[] = []
+    let workerIndex: number = workers.length - 1
+    let pillsLeft: number = pills
 
-    let p: number = pills
+    for (let taskIndex: number = taskCount - 1; taskIndex >= 0; taskIndex--) {
+        const task: number = tasks[taskIndex]
 
-    for (let i: number = k - 1; i >= 0; i--) {
-        const task: number = selectedTasks[i]
-
-        if (selectedWorkers[selectedWorkers.length - 1] >= task) {
-            selectedWorkers.pop()
+        if (boosted.length > 0 && boosted[0] >= task) {
+            boosted.shift()
+        } else if (workerIndex >= 0 && workers[workerIndex] >= task) {
+            workerIndex--
         } else {
-            while (selectedWorkers.length > 0 && selectedWorkers[0] + strength < task) {
-                selectedWorkers.shift()
+            while (workerIndex >= 0 && workers[workerIndex] + strength >= task) {
+                boosted.push(workers[workerIndex])
+                workerIndex--
             }
 
-            if (selectedWorkers.length === 0 || p === 0) {
+            if (boosted.length === 0 || pillsLeft === 0) {
                 return false
             }
 
-            p--
-            selectedWorkers.shift()
+            boosted.pop()
+
+            pillsLeft--
         }
     }
 
