@@ -311,6 +311,7 @@
 1. № [995. Minimum Number of K Consecutive Bit Flips](solutions/995.%20Minimum%20Number%20of%20K%20Consecutive%20Bit%20Flips/script.ts)
 1. № [997. Find the Town Judge](solutions/997.%20Find%20the%20Town%20Judge/script.ts)
 1. № [1002. Find Common Characters](solutions/1002.%20Find%20Common%20Characters/script.ts)
+1. № [1007. Minimum Domino Rotations For Equal Row](solutions/1007.%20Minimum%20Domino%20Rotations%20For%20Equal%20Row/script.ts)
 1. № [1009. Complement of Base 10 Integer](solutions/1009.%20Complement%20of%20Base%2010%20Integer/script.ts)
 1. № [1014. Best Sightseeing Pair](solutions/1014.%20Best%20Sightseeing%20Pair/script.ts)
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
