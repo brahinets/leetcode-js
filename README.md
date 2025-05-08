@@ -756,6 +756,7 @@
 1. № [3272. Find the Count of Good Integers](solutions/3272.%20Find%20the%20Count%20of%20Good%20Integers/script.ts)
 1. № [3306. Count of Substrings Containing Every Vowel and K Consonants II](solutions/3306.%20Count%20of%20Substrings%20Containing%20Every%20Vowel%20and%20K%20Consonants%20II/script.ts)
 1. № [3341. Find Minimum Time to Reach Last Room I](solutions/3341.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20I/script.ts)
+1. № [3342. Find Minimum Time to Reach Last Room II](solutions/3342.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20II/script.ts)
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
 1. № [3375. Minimum Operations to Make Array Values Equal to K](solutions/3375.%20Minimum%20Operations%20to%20Make%20Array%20Values%20Equal%20to%20K/script.ts)
 1. № [3392. Count Subarrays of Length Three With a Condition](solutions/3392.%20Count%20Subarrays%20of%20Length%20Three%20With%20a%20Condition/script.ts)
