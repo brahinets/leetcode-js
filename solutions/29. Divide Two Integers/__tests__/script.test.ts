@@ -25,4 +25,9 @@ describe('29. Divide Two Integers', (): void => {
         expect(divide(7, -3))
             .toBe(-2)
     })
+
+    it('Load test', (): void => {
+        expect(divide(2147483647, 1))
+            .toBe(2147483647)
+    })
 })
