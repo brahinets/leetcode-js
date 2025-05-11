@@ -1,6 +1,7 @@
 export {divide}
 
 const MAX: number = 2 ** 31 - 1
+const MIN: number = -(2 ** 31)
 
 function divide(dividend: number, divisor: number): number {
     const sign: number = (dividend > 0) === (divisor > 0) ? 1 : -1
@@ -30,5 +31,5 @@ function divide(dividend: number, divisor: number): number {
         quotient += multiple
     }
 
-    return sign * quotient
+    return Math.min(Math.max(sign * quotient, MIN), MAX)
 }
