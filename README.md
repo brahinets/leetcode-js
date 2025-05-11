@@ -28,10 +28,10 @@
 1. № [23. Merge k Sorted Lists](solutions/23.%20Merge%20k%20Sorted%20Lists/script.ts)
 1. № [24. Swap Nodes in Pairs](solutions/24.%20Swap%20Nodes%20in%20Pairs/script.ts)
 1. № [25. Reverse Nodes in k-Group](solutions/25.%20Reverse%20Nodes%20in%20k-Group/script.ts)
-1. №
 1. № [26. Remove Duplicates from Sorted Array](solutions/26.%20Remove%20Duplicates%20from%20Sorted%20Array/script.ts)
 1. № [27. Remove Element](solutions/27.%20Remove%20Element/script.ts)
 1. № [28. Find the Index of the First Occurrence in a String](solutions/28.%20Find%20the%20Index%20of%20the%20First%20Occurrence%20in%20a%20String/script.ts)
+1. № [29. Divide Two Integers](solutions/29.%20Divide%20Two%20Integers/script.ts)
 1. № [33. Search in Rotated Sorted Array](solutions/33.%20Search%20in%20Rotated%20Sorted%20Array/script.ts)
 1. № [34. Find First and Last Position of Element in Sorted Array](solutions/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/script.ts)
 1. № [35. Search Insert Position](solutions/35.%20Search%20Insert%20Position/script.ts)
