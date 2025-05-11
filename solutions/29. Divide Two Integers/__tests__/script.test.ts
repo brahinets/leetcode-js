@@ -31,6 +31,11 @@ describe('29. Divide Two Integers', (): void => {
             .toBe(715827882)
     })
 
+    it('Load test medium', (): void => {
+        expect(divide(2147483647, 2))
+            .toBe(1073741823)
+    })
+
     it('Load test', (): void => {
         expect(divide(2147483647, 1))
             .toBe(2147483647)
