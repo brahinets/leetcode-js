@@ -715,6 +715,7 @@
 1. № [2872. Maximum Number of K-Divisible Components](solutions/2872.%20Maximum%20Number%20of%20K-Divisible%20Components/script.ts)
 1. № [2873. Maximum Value of an Ordered Triplet I](solutions/2873.%20Maximum%20Value%20of%20an%20Ordered%20Triplet%20I/script.ts)
 1. № [2874. Maximum Value of an Ordered Triplet II](solutions/2874.%20Maximum%20Value%20of%20an%20Ordered%20Triplet%20II/script.ts)
+1. № [2900. Longest Unequal Adjacent Groups Subsequence I](solutions/2900.%20Longest%20Unequal%20Adjacent%20Groups%20Subsequence%20I/script.ts)
 1. № [2914. Minimum Number of Changes to Make Binary String Beautiful](solutions/2914.%20Minimum%20Number%20of%20Changes%20to%20Make%20Binary%20String%20Beautiful/script.ts)
 1. № [2918. Minimum Equal Sum of Two Arrays After Replacing Zeros](solutions/2918.%20Minimum%20Equal%20Sum%20of%20Two%20Arrays%20After%20Replacing%20Zeros/script.ts)
 1. № [2924. Find Champion II](solutions/2924.%20Find%20Champion%20II/script.ts)
