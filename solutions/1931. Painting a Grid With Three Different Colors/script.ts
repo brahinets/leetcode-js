@@ -7,21 +7,21 @@ const MOD: number = 10 ** 9 + 7
 function colorTheGrid(m: number, n: number): number {
     const colorings: number[][] = generateAllRowColorings(m)
     const transitions: number[][] = buildTransitions(colorings, m)
-    let dp: number[] = arrayOf(1, colorings.length)
+    let waysEndingWithColoring: number[] = arrayOf(1, colorings.length)
 
     for (let col: number = 1; col < n; col++) {
-        const newDp: number[] = arrayOfZeros(colorings.length)
+        const newWaysEndingWithColoring: number[] = arrayOfZeros(colorings.length)
 
         for (let i: number = 0; i < colorings.length; i++) {
             for (const j of transitions[i]) {
-                newDp[i] = (newDp[i] + dp[j]) % MOD
+                newWaysEndingWithColoring[i] = (newWaysEndingWithColoring[i] + waysEndingWithColoring[j]) % MOD
             }
         }
 
-        dp = newDp
+        waysEndingWithColoring = newWaysEndingWithColoring
     }
 
-    return sumMod(dp, MOD)
+    return sumMod(waysEndingWithColoring, MOD)
 }
 
 function generateAllRowColorings(m: number): number[][] {
