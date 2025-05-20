@@ -766,6 +766,7 @@
 1. № [3306. Count of Substrings Containing Every Vowel and K Consonants II](solutions/3306.%20Count%20of%20Substrings%20Containing%20Every%20Vowel%20and%20K%20Consonants%20II/script.ts)
 1. № [3335. Total Characters in String After Transformations I](solutions/3335.%20Total%20Characters%20in%20String%20After%20Transformations%20I/script.ts)
 1. № [3341. Find Minimum Time to Reach Last Room I](solutions/3341.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20I/script.ts)
+1. № [3355. Zero Array Transformation I](solutions/3355.%20Zero%20Array%20Transformation%20I/script.ts)
 1. № [3337. Total Characters in String After Transformations II](solutions/3337.%20Total%20Characters%20in%20String%20After%20Transformations%20II/script.ts)
 1. № [3342. Find Minimum Time to Reach Last Room II](solutions/3342.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20II/script.ts)
 1. № [3343. Count Number of Balanced Permutations](solutions/3343.%20Count%20Number%20of%20Balanced%20Permutations/script.ts)
