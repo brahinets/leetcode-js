@@ -772,6 +772,7 @@
 1. № [3342. Find Minimum Time to Reach Last Room II](solutions/3342.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20II/script.ts)
 1. № [3343. Count Number of Balanced Permutations](solutions/3343.%20Count%20Number%20of%20Balanced%20Permutations/script.ts)
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
+1. № [3362. Zero Array Transformation III](solutions/3362.%20Zero%20Array%20Transformation%20III/script.ts)
 1. № [3375. Minimum Operations to Make Array Values Equal to K](solutions/3375.%20Minimum%20Operations%20to%20Make%20Array%20Values%20Equal%20to%20K/script.ts)
 1. № [3392. Count Subarrays of Length Three With a Condition](solutions/3392.%20Count%20Subarrays%20of%20Length%20Three%20With%20a%20Condition/script.ts)
 1. № [3394. Check if Grid can be Cut into Sections](solutions/3394.%20Check%20if%20Grid%20can%20be%20Cut%20into%20Sections/script.ts)
