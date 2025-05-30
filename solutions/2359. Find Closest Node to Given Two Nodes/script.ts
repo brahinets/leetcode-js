@@ -1,45 +1,59 @@
+import {DirectedWeightedGraph} from "../../common/Graph"
 import {arrayOf} from "../../common/array-factories"
 
 export {closestMeetingNode}
 
 function closestMeetingNode(edges: number[], node1: number, node2: number): number {
-    const dist1: number[] = arrayOf(Infinity, edges.length)
-    const dist2: number[] = arrayOf(Infinity, edges.length)
+    const graph: DirectedWeightedGraph = buildGraph(edges)
+    const distancesToFirst: number[] = getDistances(graph, node1, edges.length)
+    const distancesToSecond: number[] = getDistances(graph, node2, edges.length)
 
-    dist1[node1] = 0
-    dist2[node2] = 0
-
-    bfs(node1, dist1, edges)
-    bfs(node2, dist2, edges)
-
-    let min: number = Infinity
-    let closestNode: number = -1
+    let result: number = -1
+    let minDistance: number = Infinity
 
     for (let i: number = 0; i < edges.length; i++) {
-        if (dist1[i] !== Infinity && dist2[i] !== Infinity) {
-            const max: number = Math.max(dist1[i], dist2[i])
+        if (distancesToFirst[i] !== -1 && distancesToSecond[i] !== -1) {
+            const maxDistance: number = Math.max(distancesToFirst[i], distancesToSecond[i])
 
-            if (max < min) {
-                min = max
-                closestNode = i
+            if (maxDistance < minDistance || (maxDistance === minDistance && i < result)) {
+                result = i
+
+                minDistance = maxDistance
             }
         }
     }
 
-    return closestNode
+    return result
 }
 
+function buildGraph(edges: number[]): DirectedWeightedGraph {
+    const graph: DirectedWeightedGraph = new DirectedWeightedGraph()
 
-function bfs(start: number, dist: number[], edges: number[]): void {
-    const queue: number[] = [start]
+    for (let from: number = 0; from < edges.length; from++) {
+        const to: number = edges[from]
 
-    while (queue.length) {
-        const current: number = queue.shift()!
-        const next: number = edges[current]
-
-        if (next !== -1 && dist[next] === Infinity) {
-            dist[next] = dist[current] + 1
-            queue.push(next)
+        if (to !== -1) {
+            graph.addEdge(from, to, 1)
         }
     }
+
+    return graph
+}
+
+function getDistances(graph: DirectedWeightedGraph, start: number, nodesCount: number): number[] {
+    const distances: number[] = arrayOf(-1, nodesCount)
+    let current: number = start
+    let distance: number = 0
+
+    while (current !== -1 && distances[current] === -1) {
+        distances[current] = distance
+
+        const neighbors: Map<number, number> = graph.getNeighbours(current)
+        const next: number = [...neighbors.keys()][0]
+
+        current = next ?? -1
+        distance++
+    }
+
+    return distances
 }
