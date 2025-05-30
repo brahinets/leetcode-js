@@ -620,6 +620,7 @@
 1. № [2349. Design a Number Container System](solutions/2349.%20Design%20a%20Number%20Container%20System/script.ts)
 1. № [2352. Equal Row and Column Pairs](solutions/2352.%20Equal%20Row%20and%20Column%20Pairs/script.ts)
 1. № [2353. Design a Food Rating System](solutions/2353.%20Design%20a%20Food%20Rating%20System/script.ts)
+1. № [2359. Find Closest Node to Given Two Nodes](solutions/2359.%20Find%20Closest%20Node%20to%20Given%20Two%20Nodes/script.ts)
 1. № [2364. Count Number of Bad Pairs](solutions/2364.%20Count%20Number%20of%20Bad%20Pairs/script.ts)
 1. № [2370. Longest Ideal Subsequence](solutions/2370.%20Longest%20Ideal%20Subsequence/script.ts)
 1. № [2471. Minimum Number of Operations to Sort a Binary Tree by Level](solutions/2471.%20Minimum%20Number%20of%20Operations%20to%20Sort%20a%20Binary%20Tree%20by%20Level/script.ts)
