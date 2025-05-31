@@ -3,31 +3,40 @@ export {snakesAndLadders}
 function snakesAndLadders(board: number[][]): number {
     const visited: Set<number> = new Set<number>()
     const queue: [number, number][] = [[1, 0]]
+    const boardCellCount: number = board.length * board.length;
 
     while (queue.length > 0) {
-        const [current, steps]: [number, number] = queue.shift()!
-        if (current === board.length * board.length) {
-            return steps
+        const [square, moves]: [number, number] = queue.shift()!
+        if (square === boardCellCount) {
+            return moves
         }
 
-        for (let dice: number = 1; dice <= 6; dice++) {
-            let next: number = current + dice
-            if (next > board.length * board.length) {
+        for (let roll: number = 1; roll <= 6; roll++) {
+            let nextSquare: number = square + roll
+            if (nextSquare > boardCellCount) {
                 continue
             }
 
-            const row: number = Math.floor((next - 1) / board.length)
-            const col: number = (row % 2 === 0) ? (next - 1) % board.length : (board.length - 1) - ((next - 1) % board.length)
-            if (board[board.length - 1 - row][col] !== -1) {
-                next = board[board.length - 1 - row][col]
+            const [row, col]: [number, number] = getCoordinates(nextSquare, board.length)
+            if (board[row][col] !== -1) {
+                nextSquare = board[row][col]
             }
 
-            if (!visited.has(next)) {
-                visited.add(next)
-                queue.push([next, steps + 1])
+            if (!visited.has(nextSquare)) {
+                visited.add(nextSquare)
+                queue.push([nextSquare, moves + 1])
             }
         }
     }
 
     return -1
+}
+
+function getCoordinates(square: number, n: number): [number, number] {
+    const quot: number = Math.floor((square - 1) / n)
+    const rem: number = (square - 1) % n
+    const row: number = n - 1 - quot
+    const col: number = quot % 2 === 0 ? rem : n - 1 - rem
+
+    return [row, col]
 }
