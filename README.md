@@ -78,6 +78,7 @@
 1. № [128. Longest Consecutive Sequence](solutions/128.%20Longest%20Consecutive%20Sequence/script.ts)
 1. № [129. Sum Root to Leaf Numbers](solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers/script.ts)
 1. № [131. Palindrome Partitioning](solutions/131.%20Palindrome%20Partitioning/script.ts)
+1. № [135. Candy](solutions/135.%20Candy/script.ts)
 1. № [137. Single Number II](solutions/137.%20Single%20Number%20II/script.ts)
 1. № [139. Word Break](solutions/139.%20Word%20Break/script.ts)
 1. № [140. Word Break II](solutions/140.%20Word%20Break%20II/script.ts)
