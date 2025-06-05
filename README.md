@@ -333,6 +333,7 @@
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
 1. № [1052. Grumpy Bookstore Owner](solutions/1052.%20Grumpy%20Bookstore%20Owner/script.ts)
 1. № [1051. Height Checker](solutions/1051.%20Height%20Checker/script.ts)
+1. № [1061. Lexicographically Smallest Equivalent String](solutions/1061.%20Lexicographically%20Smallest%20Equivalent%20String/script.ts)
 1. № [1072. Flip Columns For Maximum Number of Equal Rows](solutions/1072.%20Flip%20Columns%20For%20Maximum%20Number%20of%20Equal%20Rows/script.ts)
 1. № [1074. Number of Submatrices That Sum to Target](solutions/1074.%20Number%20of%20Submatrices%20That%20Sum%20to%20Target/script.ts)
 1. № [1079. Letter Tile Possibilities](solutions/1079.%20Letter%20Tile%20Possibilities/script.ts)
