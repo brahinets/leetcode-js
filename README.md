@@ -647,6 +647,7 @@
 1. № [2425. Bitwise XOR of All Pairings](solutions/2425.%20Bitwise%20XOR%20of%20All%20Pairings/script.ts)
 1. № [2429. Minimize XOR](solutions/2429.%20Minimize%20XOR/script.ts)
 1. № [2433. Find The Original Array of Prefix Xor](solutions/2433.%20Find%20The%20Original%20Array%20of%20Prefix%20Xor/script.ts)
+1. № [2434. Using a Robot to Print the Lexicographically Smallest String](solutions/2434.%20Using%20a%20Robot%20to%20Print%20the%20Lexicographically%20Smallest%20String/script.ts)
 1. № [2439. Minimize Maximum of Array](solutions/2439.%20Minimize%20Maximum%20of%20Array/script.ts)
 1. № [2441. Largest Positive Integer That Exists With Its Negative](solutions/2441.%20Largest%20Positive%20Integer%20That%20Exists%20With%20Its%20Negative/script.ts)
 1. № [2444. Count Subarrays With Fixed Bounds](solutions/2444.%20Count%20Subarrays%20With%20Fixed%20Bounds/script.ts)
