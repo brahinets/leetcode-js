@@ -1,9 +1,14 @@
 import {clearStars} from '../script'
 
 describe('3170. Lexicographically Minimum String After Removing Stars', (): void => {
-    it('Remove one', (): void => {
+    it('Smallest is nearest', (): void => {
         expect(clearStars("aaba*"))
             .toBe("aab")
+    })
+
+    it('Smallest is not nearest', (): void => {
+        expect(clearStars("de*"))
+            .toBe("e")
     })
 
     it('Remove multiple', (): void => {
