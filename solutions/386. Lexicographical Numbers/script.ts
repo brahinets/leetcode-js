@@ -1,7 +1,11 @@
 export {lexicalOrder}
 
 function lexicalOrder(n: number): number[] {
-    let result: number[] = []
+    if (n <= 0) {
+        return []
+    }
+
+    const result: number[] = []
 
     for (let i: number = 1; i < 10; i++) {
         dfs(i, n, result)
