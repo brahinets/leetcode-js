@@ -21,9 +21,12 @@ function dfs(num: number, n: number, result: number[]): void {
 
     result.push(num)
 
+    const nextBase: number = num * 10
+    if (nextBase > n) {
+        return
+    }
+
     for (let i: number = 0; i < 10; i++) {
-        if (num * 10 + i <= n) {
-            dfs(num * 10 + i, n, result)
-        }
+        dfs(nextBase + i, n, result)
     }
 }
