@@ -795,5 +795,6 @@
 1. № [3396. Minimum Number of Operations to Make Elements in Array Distinct](solutions/3396.%20Minimum%20Number%20of%20Operations%20to%20Make%20Elements%20in%20Array%20Distinct/script.ts)
 1. № [3403. Find the Lexicographically Largest String From the Box I](solutions/3403.%20Find%20the%20Lexicographically%20Largest%20String%20From%20the%20Box%20I/script.ts)
 1. № [3442. Maximum Difference Between Even and Odd Frequency I](solutions/3442.%20Maximum%20Difference%20Between%20Even%20and%20Odd%20Frequency%20I/script.ts)
+1. № [3445. Maximum Difference Between Even and Odd Frequency II](solutions/3445.%20Maximum%20Difference%20Between%20Even%20and%20Odd%20Frequency%20II/script.ts)
 
 </details>
