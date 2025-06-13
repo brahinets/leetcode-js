@@ -5,36 +5,36 @@ function minimizeMax(nums: number[], p: number): number {
         return 0
     }
 
-    nums = nums.sort((n1: number, n2: number): number => n1 - n2)
+    nums.sort((a: number, b: number): number => a - b)
 
     let left: number = 0
-    let right: number = Math.max(...nums) - Math.min(...nums)
-    let threshold: number = 0
+    let right: number = nums[nums.length - 1] - nums[0]
+    let answer: number = 0
 
     while (left <= right) {
         const mid: number = Math.floor((left + right) / 2)
 
-        if (countPairsWithDelta(nums, mid) >= p) {
+        if (countValidPairs(nums, mid) >= p) {
+            answer = mid
             right = mid - 1
-            threshold = mid
         } else {
             left = mid + 1
         }
     }
 
-    return threshold
+    return answer
 }
 
-function countPairsWithDelta(nums: number[], value: number): number {
-    let i: number = 0
+function countValidPairs(nums: number[], maxDiff: number): number {
     let count: number = 0
+    let i: number = 0
 
     while (i < nums.length - 1) {
-        if (nums[i + 1] - nums[i] <= value) {
+        if (nums[i + 1] - nums[i] <= maxDiff) {
             count++
-            i = i + 2
+            i += 2
         } else {
-            i = i + 1
+            i++
         }
     }
 
