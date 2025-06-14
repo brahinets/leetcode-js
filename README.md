@@ -682,6 +682,7 @@
 1. № [2559. Count Vowel Strings in Ranges](solutions/2559.%20Count%20Vowel%20Strings%20in%20Ranges/script.ts)
 1. № [2560. House Robber IV](solutions/2560.%20House%20Robber%20IV/script.ts)
 1. № [2563. Count the Number of Fair Pairs](solutions/2563.%20Count%20the%20Number%20of%20Fair%20Pairs/script.ts)
+1. № [2566. Maximum Difference by Remapping a Digit](solutions/2566.%20Maximum%20Difference%20by%20Remapping%20a%20Digit/script.ts)
 1. № [2570. Merge Two 2D Arrays by Summing Values](solutions/2570.%20Merge%20Two%202D%20Arrays%20by%20Summing%20Values/script.ts)
 1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)
 1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)[2579. Count Total Number of Colored Cells](solutions/2579.%20Count%20Total%20Number%20of%20Colored%20Cells/script.ts)
