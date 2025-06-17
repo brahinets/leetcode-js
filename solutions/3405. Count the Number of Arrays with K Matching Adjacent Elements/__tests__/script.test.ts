@@ -15,4 +15,9 @@ describe('3405. Count the Number of Arrays with K Matching Adjacent Elements', (
         expect(countGoodArrays(5, 2, 0))
             .toBe(2)
     })
+
+    it('Load test', (): void => {
+        expect(countGoodArrays(40603, 16984, 29979))
+            .toBe(235077659)
+    })
 })
