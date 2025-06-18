@@ -7,7 +7,7 @@ function divideArray(nums: number[], k: number): number[][] {
         return []
     }
 
-    nums = nums.sort((a: number, b: number) => a - b)
+    nums = nums.sort((a: number, b: number): number => a - b)
 
     const result: number[][] = []
     for (let i: number = 0; i < nums.length; i += 3) {
