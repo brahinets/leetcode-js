@@ -615,6 +615,7 @@
 1. № [2275. Largest Combination With Bitwise AND Greater Than Zero](solutions/2275.%20Largest%20Combination%20With%20Bitwise%20AND%20Greater%20Than%20Zero/script.ts)
 1. № [2285. Maximum Total Importance of Roads](solutions/2285.%20Maximum%20Total%20Importance%20of%20Roads/script.ts)
 1. № [2290. Minimum Obstacle Removal to Reach Corner](solutions/2290.%20Minimum%20Obstacle%20Removal%20to%20Reach%20Corner/script.ts)
+1. № [2294. Partition Array Such That Maximum Difference Is K](solutions/2294.%20Partition%20Array%20Such%20That%20Maximum%20Difference%20Is%20K/script.ts)
 1. № [2300. Successful Pairs of Spells and Potions](solutions/2300.%20Successful%20Pairs%20of%20Spells%20and%20Potions/script.ts)
 1. № [2302. Count Subarrays With Score Less Than K](solutions/2302.%20Count%20Subarrays%20With%20Score%20Less%20Than%20K/script.ts)
 1. № [2305. Fair Distribution of Cookies](solutions/2305.%20Fair%20Distribution%20of%20Cookies/script.ts)
