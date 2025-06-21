@@ -1,8 +1,9 @@
 export {last, first, count, arraysAreEqual, binarySearch}
 
 function count<Type>(values: Type[]): Map<Type, number> {
-    return values.reduce((count: Map<Type, number>, num: Type) => {
-        count.set(num, (count.get(num) ?? 0) + 1)
+    return values.reduce((count: Map<Type, number>, value: Type): Map<Type, number> => {
+        count.set(value, (count.get(value) ?? 0) + 1)
+
         return count
     }, new Map<Type, number>())
 }
