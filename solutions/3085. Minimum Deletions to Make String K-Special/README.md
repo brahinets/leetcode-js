@@ -1,0 +1,14 @@
+# 3085. Minimum Deletions to Make String K-Special
+
+## Medium
+
+You are given a string word and an integer `k`. We consider word to be k-special if
+`|freq(word[i]) - freq(word[j])| <= k` for all indices `i` and `j` in the string. Here, `freq(x)` denotes the frequency
+of the character `x` in word, and `|y|` denotes the absolute value of `y`. Return the minimum number of characters you
+need to delete to make word k-special.
+
+### Constraints:
+
+- `1 <= word.length <= 10^5`
+- `0 <= k <= 10^5`
+- `word` consists only of lowercase English letters.
