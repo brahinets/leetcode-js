@@ -572,6 +572,7 @@
 1. № [2070. Most Beautiful Item for Each Query](solutions/2070.%20Most%20Beautiful%20Item%20for%20Each%20Query/script.ts)
 1. № [2071. Maximum Number of Tasks You Can Assign](solutions/2071.%20Maximum%20Number%20of%20Tasks%20You%20Can%20Assign/script.ts)
 1. № [2073. Time Needed to Buy Tickets](solutions/2073.%20Time%20Needed%20to%20Buy%20Tickets/script.ts)
+1. № [2081. Sum of k-Mirror Numbers](solutions/2081.%20Sum%20of%20k-Mirror%20Numbers/script.ts)
 1. № [2090. K Radius Subarray Averages](solutions/2090.%20K%20Radius%20Subarray%20Averages/script.ts)
 1. № [2092. Find All People With Secret](solutions/2092.%20Find%20All%20People%20With%20Secret/script.ts)
 1. № [2094. Finding 3-Digit Even Numbers](solutions/2094.%20Finding%203-Digit%20Even%20Numbers/script.ts)
