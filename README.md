@@ -601,6 +601,7 @@
 1. № [2191. Sort the Jumbled Numbers](solutions/2191.%20Sort%20the%20Jumbled%20Numbers/script.ts)
 1. № [2192. All Ancestors of a Node in a Directed Acyclic Graph](solutions/2192.%20All%20Ancestors%20of%20a%20Node%20in%20a%20Directed%20Acyclic%20Graph/script.ts)
 1. № [2196. Create Binary Tree From Descriptions](solutions/2196.%20Create%20Binary%20Tree%20From%20Descriptions/script.ts)
+1. № [2200. Find All K-Distant Indices in an Array](solutions/2200.%20Find%20All%20K-Distant%20Indices%20in%20an%20Array/script.ts)
 1. № [2206. Divide Array Into Equal Pairs](solutions/2206.%20Divide%20Array%20Into%20Equal%20Pairs/script.ts)
 1. № [2215. Find the Difference of Two Arrays](solutions/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/script.ts)
 1. № [2220. Minimum Bit Flips to Convert Number](solutions/2220.%20Minimum%20Bit%20Flips%20to%20Convert%20Number/script.ts)
