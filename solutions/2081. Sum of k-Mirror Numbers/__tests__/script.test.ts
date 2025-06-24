@@ -15,4 +15,9 @@ describe('2081. Sum of k-Mirror Numbers', (): void => {
         expect(kMirror(7, 17))
             .toBe(20379000)
     })
+
+    it('Load test #2', (): void => {
+        expect(kMirror(5, 20))
+            .toBe(1000828708)
+    })
 })

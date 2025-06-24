@@ -1,27 +1,54 @@
-import {isPalindrome} from "../../common/string-utils"
-
 export {kMirror}
 
-function kMirror(k: number, n: number): number {
-    let count: number = 0
-    let sum: number = 0
-    let num: number = 1
+function kMirror(base: number, targetCount: number): number {
+    const digitBuffer: number[] = []
+    let leftBound: number = 1
+    let foundCount: number = 0
+    let totalSum: bigint = 0n
 
-    while (count < n) {
-        if (isKMirror(num, k)) {
-            sum += num
-            count++
+    while (foundCount < targetCount) {
+        const rightBound: number = leftBound * 10
+
+        for (let isEven: number = 0; isEven < 2; isEven++) {
+            for (let half: number = leftBound; half < rightBound && foundCount < targetCount; half++) {
+                let palindrome: bigint = BigInt(half)
+                let mirrorPart: number = isEven === 0 ? Math.floor(half / 10) : half
+
+                while (mirrorPart > 0) {
+                    palindrome = palindrome * 10n + BigInt(mirrorPart % 10)
+                    mirrorPart = Math.floor(mirrorPart / 10)
+                }
+
+                if (isPalindromeInBase(palindrome, base, digitBuffer)) {
+                    foundCount++
+                    totalSum += palindrome
+                }
+            }
         }
 
-        num++
+        leftBound = rightBound
     }
 
-    return sum
+    return Number(totalSum)
 }
 
-function isKMirror(num: number, k: number): boolean {
-    const baseK: string = num.toString(k)
-    const base10: string = num.toString(10)
+function isPalindromeInBase(num: bigint, base: number, digitBuffer: number[]): boolean {
+    let length: number = -1
+    let temp: bigint = num
 
-    return isPalindrome(baseK) && isPalindrome(base10)
+    while (temp > 0n) {
+        length++
+
+        digitBuffer[length] = Number(temp % BigInt(base))
+
+        temp /= BigInt(base)
+    }
+
+    for (let i: number = 0, j = length; i < j; i++, j--) {
+        if (digitBuffer[i] !== digitBuffer[j]) {
+            return false
+        }
+    }
+
+    return true
 }
