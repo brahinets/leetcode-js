@@ -1,16 +1,18 @@
 export {longestSubsequence}
 
-function longestSubsequence(s: string, k: number): number {
+function longestSubsequence(binary: string, maxValue: number): number {
     let count: number = 0
     let currentValue: number = 0
 
-    for (let i: number = s.length - 1; i >= 0; i--) {
-        if (s[i] === '0') {
-            count++
-        } else if (currentValue + (1 << (s.length - 1 - i)) <= k) {
-            count++
+    const maxBits: number = Math.floor(Math.log2(maxValue)) + 1
+    for (let i: number = 0; i < binary.length; i++) {
+        const char: string = binary[binary.length - 1 - i]
 
-            currentValue += (1 << (s.length - 1 - i))
+        if (char == '0') {
+            count++
+        } else if (i < maxBits && currentValue + (1 << i) <= maxValue) {
+            currentValue += 1 << i
+            count++
         }
     }
 
