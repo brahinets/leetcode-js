@@ -45,6 +45,7 @@
 1. № [41. First Missing Positive](solutions/41.%20First%20Missing%20Positive/script.ts)
 1. № [42. Trapping Rain Water](solutions/42.%20Trapping%20Rain%20Water/script.ts)
 1. № [43. Multiply Strings](solutions/43.%20Multiply%20Strings/script.ts)
+1. № [44. Wildcard Matching](solutions/44.%20Wildcard%20Matching/script.ts)
 1. № [49. Group Anagrams](solutions/49.%20Group%20Anagrams/script.ts)
 1. № [50. Pow](solutions/50.%20Pow/script.ts)
 1. № [54. Spiral Matrix](solutions/54.%20Spiral%20Matrix/script.ts)
