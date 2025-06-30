@@ -206,6 +206,7 @@
 1. № [589. N-ary Tree Preorder Traversal](solutions/589.%20N-ary%20Tree%20Preorder%20Traversal/script.ts)
 1. № [590. N-ary Tree Postorder Traversal](solutions/590.%20N-ary%20Tree%20Postorder%20Traversal/script.ts)
 1. № [592. Fraction Addition and Subtraction](solutions/592.%20Fraction%20Addition%20and%20Subtraction/script.ts)
+1. № [594. Longest Harmonious Subsequence](solutions/594.%20Longest%20Harmonious%20Subsequence/script.ts)
 1. № [605. Can Place Flowers](solutions/605.%20Can%20Place%20Flowers/script.ts)
 1. № [606. Construct String from Binary Tree](solutions/606.%20Construct%20String%20from%20Binary%20Tree/script.ts)
 1. № [621. Task Scheduler](solutions/621.%20Task%20Scheduler/script.ts)
