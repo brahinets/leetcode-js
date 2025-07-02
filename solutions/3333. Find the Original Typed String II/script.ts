@@ -45,9 +45,7 @@ function getBaseCount(frequencies: number[], mod: number): number {
 }
 
 function getExcludedCount(frequencies: number[], k: number, mod: number): number {
-    let f: number[] = arrayOf(0, k)
     let g: number[] = arrayOf(1, k)
-    f[0] = 1
 
     for (let i: number = 0; i < frequencies.length; i++) {
         const fNew: number[] = new Array(k).fill(0)
@@ -67,7 +65,6 @@ function getExcludedCount(frequencies: number[], k: number, mod: number): number
             gNew[j] = (gNew[j - 1] + fNew[j]) % mod
         }
 
-        f = fNew
         g = gNew
     }
 
