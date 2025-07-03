@@ -1,4 +1,4 @@
-import {arrayOf} from "../../common/array-factories"
+import {arrayOf, arrayOfZeros} from "../../common/array-factories"
 
 export {possibleStringCount}
 
@@ -48,7 +48,7 @@ function getExcludedCount(frequencies: number[], k: number, mod: number): number
     let g: number[] = arrayOf(1, k)
 
     for (const frequency of frequencies) {
-        const fNew: number[] = new Array(k).fill(0)
+        const fNew: number[] = arrayOfZeros(k)
 
         for (let j: number = 1; j < k; j++) {
             fNew[j] = g[j - 1]
@@ -58,7 +58,7 @@ function getExcludedCount(frequencies: number[], k: number, mod: number): number
             }
         }
 
-        const gNew: number[] = new Array(k).fill(0)
+        const gNew: number[] = arrayOfZeros(k)
         gNew[0] = fNew[0]
 
         for (let j: number = 1; j < k; j++) {
