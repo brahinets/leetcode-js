@@ -794,6 +794,7 @@
 1. № [3254. Find the Power of K-Size Subarrays I](solutions/3254.%20Find%20the%20Power%20of%20K-Size%20Subarrays%20I/script.ts)
 1. № [3264. Final Array State After K Multiplication Operations I](solutions/3264.%20Final%20Array%20State%20After%20K%20Multiplication%20Operations%20I/script.ts)
 1. № [3272. Find the Count of Good Integers](solutions/3272.%20Find%20the%20Count%20of%20Good%20Integers/script.ts)
+1. № [3304. Find the K-th Character in String Game I](solutions/3304.%20Find%20the%20K-th%20Character%20in%20String%20Game%20I/script.ts)
 1. № [3306. Count of Substrings Containing Every Vowel and K Consonants II](solutions/3306.%20Count%20of%20Substrings%20Containing%20Every%20Vowel%20and%20K%20Consonants%20II/script.ts)
 1. № [3330. Find the Original Typed String I](solutions/3330.%20Find%20the%20Original%20Typed%20String%20I/script.ts)
 1. № [3333. Find the Original Typed String II](solutions/3333.%20Find%20the%20Original%20Typed%20String%20II/script.ts)
