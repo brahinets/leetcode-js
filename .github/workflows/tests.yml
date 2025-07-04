@@ -16,11 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
-        with:
-          languages: javascript-typescript
-
       - name: Use NodeJS
         uses: actions/setup-node@v4
         with:
@@ -29,8 +24,13 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Unit Tests
-        run: npm test
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: 'typescript'
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
+
+      - name: Run Unit Tests
+        run: npm test
