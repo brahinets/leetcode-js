@@ -531,6 +531,7 @@
 1. № [1857. Largest Color Value in a Directed Graph](solutions/1857.%20Largest%20Color%20Value%20in%20a%20Directed%20Graph/script.ts)
 1. № [1861. Rotating the Box](solutions/1861.%20Rotating%20the%20Box/script.ts)
 1. № [1863. Sum of All Subset XOR Totals](solutions/1863.%20Sum%20of%20All%20Subset%20XOR%20Totals/script.ts)
+1. № [1865. Finding Pairs With a Certain Sum](solutions/1865.%20Finding%20Pairs%20With%20a%20Certain%20Sum/script.ts)
 1. № [1870. Minimum Speed to Arrive on Time](solutions/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/script.ts)
 1. № [1877. Minimize Maximum Pair Sum in Array](solutions/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array/script.ts)
 1. № [1887. Reduction Operations to Make the Array Elements Equal](solutions/1887.%20Reduction%20Operations%20to%20Make%20the%20Array%20Elements%20Equal/script.ts)
