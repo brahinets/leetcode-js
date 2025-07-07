@@ -1,20 +1,34 @@
+import {PriorityQueue} from "../../common/PriorityQueue"
+
 export {maxEvents}
 
 function maxEvents(events: number[][]): number {
-    events.sort((firstDuration: number[], secondDuration: number[]): number =>
-        firstDuration[0] - secondDuration[0] || firstDuration[1] - secondDuration[1]
+    let maxDay: number = 0
+    for (const e of events) {
+        maxDay = Math.max(maxDay, e[1])
+    }
+
+    events.sort((a: number[], b: number[]): number => a[0] - b[0])
+
+    const pq: PriorityQueue<number> = new PriorityQueue<number>(
+        (a: number, b: number): number => a - b,
     )
+    let max: number = 0
+    for (let i: number = 1, j = 0; i <= maxDay; i++) {
+        while (j < events.length && events[j][0] <= i) {
+            pq.enqueue(events[j][1])
+            j++
+        }
 
-    const attended: Set<number> = new Set<number>()
-    for (const [start, end] of events) {
-        for (let day: number = start; day <= end; day++) {
-            if (!attended.has(day)) {
-                attended.add(day)
+        while (!pq.isEmpty() && pq.peek()! < i) {
+            pq.dequeue()
+        }
 
-                break
-            }
+        if (!pq.isEmpty()) {
+            pq.dequeue()
+            max++
         }
     }
 
-    return attended.size
+    return max
 }

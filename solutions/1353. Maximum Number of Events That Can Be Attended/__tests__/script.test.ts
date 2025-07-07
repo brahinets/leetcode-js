@@ -10,4 +10,9 @@ describe('1353. Maximum Number of Events That Can Be Attended', (): void => {
         expect(maxEvents([[1, 2], [2, 3], [3, 4], [1, 2]]))
             .toBe(4)
     })
+
+    it('Visit some partially intersected events', (): void => {
+        expect(maxEvents([[1, 2], [1, 2], [3, 3], [1, 5], [1, 5]]))
+            .toBe(5)
+    })
 })
