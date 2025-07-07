@@ -395,6 +395,7 @@
 1. № [1347. Minimum Number of Steps to Make Two Strings Anagram](solutions/1347.%20Minimum%20Number%20of%20Steps%20to%20Make%20Two%20Strings%20Anagram/script.ts)
 1. № [1351. Count Negative Numbers in a Sorted Matrix](solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/script.ts)
 1. № [1352. Product of the Last K Numbers](solutions/1352.%20Product%20of%20the%20Last%20K%20Numbers/script.ts)
+1. № [1353. Maximum Number of Events That Can Be Attended](solutions/1353.%20Maximum%20Number%20of%20Events%20That%20Can%20Be%20Attended/script.ts)
 1. № [1356. Sort Integers by The Number of 1 Bits](solutions/1356.%20Sort%20Integers%20by%20The%20Number%20of%201%20Bits/script.ts)
 1. № [1358. Number of Substrings Containing All Three Characters](solutions/1358.%20Number%20of%20Substrings%20Containing%20All%20Three%20Characters/script.ts)
 1. № [1361. Validate Binary Tree Nodes](solutions/1361.%20Validate%20Binary%20Tree%20Nodes/script.ts)
