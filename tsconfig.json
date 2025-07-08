@@ -5,10 +5,12 @@
     "target": "ES2022",
     "lib": ["ES2023"],
     "sourceMap": true,
-    "outDir": "",
+    "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["common/**/*", "solutions/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

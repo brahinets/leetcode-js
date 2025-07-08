@@ -6,7 +6,8 @@
     "preinstall": "node -v && npm -v",
     "test": "jest",
     "lint": "eslint .",
-    "upgrade-dependencies": "ncu -u"
+    "upgrade-dependencies": "ncu -u",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
