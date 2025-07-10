@@ -2,36 +2,38 @@ import {arrayOf} from "../../common/array-factories"
 
 export {maxFreeTime}
 
-function maxFreeTime(eventTime: number, startTime: number[], endTime: number[]): number {
-    const n: number = startTime.length
-    const q: boolean[] = arrayOf(false, n)
-    let t1: number = 0
-    let t2: number = 0
-    for (let i: number = 0; i < n; i++) {
-        if (endTime[i] - startTime[i] <= t1) {
-            q[i] = true
+function maxFreeTime(totalEventTime: number, meetingStarts: number[], meetingEnds: number[]): number {
+    const meetingCount: number = meetingStarts.length
+    const canRemove: boolean[] = arrayOf(false, meetingCount)
+    let maxLeftGap: number = 0
+    let maxRightGap: number = 0
+    for (let i: number = 0; i < meetingCount; i++) {
+        if (meetingEnds[i] - meetingStarts[i] <= maxLeftGap) {
+            canRemove[i] = true
         }
 
-        t1 = Math.max(t1, startTime[i] - (i === 0 ? 0 : endTime[i - 1]))
+        maxLeftGap = Math.max(maxLeftGap, meetingStarts[i] - (i === 0 ? 0 : meetingEnds[i - 1]))
 
-        if (endTime[n - i - 1] - startTime[n - i - 1] <= t2) {
-            q[n - i - 1] = true
+        if (meetingEnds[meetingCount - i - 1] - meetingStarts[meetingCount - i - 1] <= maxRightGap) {
+            canRemove[meetingCount - i - 1] = true
         }
 
-        t2 = Math.max(t2, (i === 0 ? eventTime : startTime[n - i]) - endTime[n - i - 1],)
+        maxRightGap = Math.max(maxRightGap,
+            (i === 0 ? totalEventTime : meetingStarts[meetingCount - i]) - meetingEnds[meetingCount - i - 1]
+        )
     }
 
-    let max: number = 0
-    for (let i: number = 0; i < n; i++) {
-        const left: number = i === 0 ? 0 : endTime[i - 1]
-        const right: number = i === n - 1 ? eventTime : startTime[i + 1]
+    let maxFreeTime: number = 0
+    for (let i: number = 0; i < meetingCount; i++) {
+        const gapStart: number = i === 0 ? 0 : meetingEnds[i - 1]
+        const gapEnd: number = i === meetingCount - 1 ? totalEventTime : meetingStarts[i + 1]
 
-        if (q[i]) {
-            max = Math.max(max, right - left)
+        if (canRemove[i]) {
+            maxFreeTime = Math.max(maxFreeTime, gapEnd - gapStart)
         } else {
-            max = Math.max(max, right - left - (endTime[i] - startTime[i]))
+            maxFreeTime = Math.max(maxFreeTime, gapEnd - gapStart - (meetingEnds[i] - meetingStarts[i]))
         }
     }
 
-    return max
+    return maxFreeTime
 }
