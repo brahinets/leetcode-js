@@ -540,6 +540,7 @@
 1. № [1887. Reduction Operations to Make the Array Elements Equal](solutions/1887.%20Reduction%20Operations%20to%20Make%20the%20Array%20Elements%20Equal/script.ts)
 1. № [1894. Find the Student that Will Replace the Chalk](solutions/1894.%20Find%20the%20Student%20that%20Will%20Replace%20the%20Chalk/script.ts)
 1. № [1897. Redistribute Characters to Make All Strings Equal](solutions/1897.%20Redistribute%20Characters%20to%20Make%20All%20Strings%20Equal/script.ts)
+1. № [1900. The Earliest and Latest Rounds Where Players Compete](solutions/1900.%20The%20Earliest%20and%20Latest%20Rounds%20Where%20Players%20Compete/script.ts)
 1. № [1903. Largest Odd Number in String](solutions/1903.%20Largest%20Odd%20Number%20in%20String/script.ts)
 1. № [1905. Count Sub Islands](solutions/1905.%20Count%20Sub%20Islands/script.ts)
 1. № [1910. Remove All Occurrences of a Substring](solutions/1910.%20Remove%20All%20Occurrences%20of%20a%20Substring/script.ts)
