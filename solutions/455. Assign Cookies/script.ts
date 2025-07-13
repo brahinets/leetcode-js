@@ -1,8 +1,8 @@
 export {findContentChildren}
 
 function findContentChildren(g: number[], s: number[]): number {
-    const greediness: number[] = g.sort((a: number, b: number) => a - b)
-    const cookies: number[] = s.sort((a: number, b: number) => a - b)
+    const greediness: number[] = g.sort((a: number, b: number): number => a - b)
+    const cookies: number[] = s.sort((a: number, b: number): number => a - b)
 
     let i: number = 0
     let j: number = 0
@@ -12,10 +12,9 @@ function findContentChildren(g: number[], s: number[]): number {
         if (greediness[i] <= cookies[j]) {
             fedChildrenCount++
             i++
-            j++
-        } else {
-            j++
         }
+
+        j++
     }
 
     return fedChildrenCount
