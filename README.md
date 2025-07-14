@@ -382,6 +382,7 @@
 1. № [1277. Count Square Submatrices with All Ones](solutions/1277.%20Count%20Square%20Submatrices%20with%20All%20Ones/script.ts)
 1. № [1287. Element Appearing More Than 25% In Sorted Array](solutions/1287.%20Element%20Appearing%20More%20Than%2025%25%20In%20Sorted%20Array/script.ts)
 1. № [1289. Minimum Falling Path Sum II](solutions/1289.%20Minimum%20Falling%20Path%20Sum%20II/script.ts)
+1. № [1290. Convert Binary Number in a Linked List to Integer](solutions/1290.%20Convert%20Binary%20Number%20in%20a%20Linked%20List%20to%20Integer/script.ts)
 1. № [1291. Sequential Digits](solutions/1291.%20Sequential%20Digits/script.ts)
 1. № [1295. Find Numbers with Even Number of Digits](solutions/1295.%20Find%20Numbers%20with%20Even%20Number%20of%20Digits/script.ts)
 1. № [1298. Maximum Candies You Can Get from Boxes](solutions/1298.%20Maximum%20Candies%20You%20Can%20Get%20from%20Boxes/script.ts)
