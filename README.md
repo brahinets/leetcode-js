@@ -786,6 +786,7 @@
 1. № [3108. Minimum Cost Walk in Weighted Graph](solutions/3108.%20Minimum%20Cost%20Walk%20in%20Weighted%20Graph/script.ts)
 1. № [3110. Score of a String](solutions/3110.%20Score%20of%20a%20String/script.ts)
 1. № [3133. Minimum Array End](solutions/3133.%20Minimum%20Array%20End/script.ts)
+1. № [3136. Valid Word](solutions/3136.%20Valid%20Word/script.ts)
 1. № [3151. Special Array I](solutions/3151.%20Special%20Array%20I/script.ts)
 1. № [3152. Special Array II](solutions/3152.%20Special%20Array%20II/script.ts)
 1. № [3160. Find the Number of Distinct Colors Among the Balls](solutions/3160.%20Find%20the%20Number%20of%20Distinct%20Colors%20Among%20the%20Balls/script.ts)
