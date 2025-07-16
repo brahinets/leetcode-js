@@ -795,6 +795,7 @@
 1. № [3170. Lexicographically Minimum String After Removing Stars](solutions/3170.%20Lexicographically%20Minimum%20String%20After%20Removing%20Stars/script.ts)
 1. № [3174. Clear Digits](solutions/3174.%20Clear%20Digits/script.ts)
 1. № [3191. Minimum Operations to Make Binary Array Elements Equal to One I](solutions/3191.%20Minimum%20Operations%20to%20Make%20Binary%20Array%20Elements%20Equal%20to%20One%20I/script.ts)
+1. № [3201. Find the Maximum Length of Valid Subsequence I](solutions/3201.%20Find%20the%20Maximum%20Length%20of%20Valid%20Subsequence%20I/script.ts)
 1. № [3203. Find Minimum Diameter After Merging Two Trees](solutions/3203.%20Find%20Minimum%20Diameter%20After%20Merging%20Two%20Trees/script.ts)
 1. № [3208. Alternating Groups II](solutions/3208.%20Alternating%20Groups%20II/script.ts)
 1. № [3217. Delete Nodes From Linked List Present in Array](solutions/3217.%20Delete%20Nodes%20From%20Linked%20List%20Present%20in%20Array/script.ts)
