@@ -606,6 +606,7 @@
 1. № [2147. Number of Ways to Divide a Long Corridor](solutions/2147.%20Number%20of%20Ways%20to%20Divide%20a%20Long%20Corridor/script.ts)
 1. № [2149. Rearrange Array Elements by Sign](solutions/2149.%20Rearrange%20Array%20Elements%20by%20Sign/script.ts)
 1. № [2161. Partition Array According to Given Pivot](solutions/2161.%20Partition%20Array%20According%20to%20Given%20Pivot/script.ts)
+1. № [2163. Minimum Difference in Sums After Removal of Elements](solutions/2163.%20Minimum%20Difference%20in%20Sums%20After%20Removal%20of%20Elements/script.ts)
 1. № [2176. Count Equal and Divisible Pairs in an Array](solutions/2176.%20Count%20Equal%20and%20Divisible%20Pairs%20in%20an%20Array/script.ts)
 1. № [2179. Count Good Triplets in an Array](solutions/2179.%20Count%20Good%20Triplets%20in%20an%20Array/script.ts)
 1. № [2181. Merge Nodes in Between Zeros](solutions/2181.%20Merge%20Nodes%20in%20Between%20Zeros/script.ts)
