@@ -556,6 +556,7 @@
 1. № [1937. Maximum Number of Points with Cost](solutions/1937.%20Maximum%20Number%20of%20Points%20with%20Cost/script.ts)
 1. № [1942. The Number of the Smallest Unoccupied Chair](solutions/1942.%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair/script.ts)
 1. № [1945. Sum of Digits of String After Convert](solutions/1945.%20Sum%20of%20Digits%20of%20String%20After%20Convert/script.ts)
+1. № [1948. Delete Duplicate Folders in System](solutions/1948.%20Delete%20Duplicate%20Folders%20in%20System/script.ts)
 1. № [1957. Delete Characters to Make Fancy String](solutions/1957.%20Delete%20Characters%20to%20Make%20Fancy%20String/script.ts)
 1. № [1963. Minimum Number of Swaps to Make the String Balanced](solutions/1963.%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20String%20Balanced/script.ts)
 1. № [1971. Find if Path Exists in Graph](solutions/1971.%20Find%20if%20Path%20Exists%20in%20Graph/script.ts)
