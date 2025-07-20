@@ -6,70 +6,62 @@ class Trie {
 }
 
 function deleteDuplicateFolder(paths: string[][]): string[][] {
-    const root = new Trie()
-
+    const root: Trie = new Trie()
 
     for (const path of paths) {
-        let current: Trie = root
+        let currentNode: Trie = root
 
-        for (const node of path) {
-            if (!current.children.has(node)) {
-                current.children.set(node, new Trie())
-
+        for (const folderName of path) {
+            if (!currentNode.children.has(folderName)) {
+                currentNode.children.set(folderName, new Trie())
             }
-            current = current.children.get(node)!
-
+            currentNode = currentNode.children.get(folderName)!
         }
     }
 
-    const counts = new Map<string, number>()
+    const serialCount: Map<string, number> = new Map<string, number>()
+    serializeTrie(root, serialCount)
 
-    function construct(node: Trie):void {
-        if (node.children.size === 0) {
-            return
-        }
+    const result: string[][] = []
+    const currentPath: string[] = []
+    collectUniquePaths(root, serialCount, currentPath, result)
 
-        const v: string[] = []
-        for (const [folder, child] of node.children) {
-            construct(child)
+    return result
+}
 
-            v.push(`${folder}(${child.serial})`)
-
-        }
-
-        v.sort()
-
-        node.serial = v.join("")
-
-        counts.set(node.serial, (counts.get(node.serial) || 0) + 1)
+function serializeTrie(node: Trie, serialCount: Map<string, number>): void {
+    if (node.children.size === 0) {
+        return
     }
 
-    construct(root)
-
-    const ans: string[][] = []
-    const path: string[] = []
-
-    function operate(node: Trie): void {
-        if ((counts.get(node.serial) || 0) > 1) {
-            return
-        }
-
-        if (path.length > 0) {
-            ans.push([...path])
-
-        }
-
-        for (const [folder, child] of node.children) {
-            path.push(folder)
-
-            operate(child)
-
-            path.pop()
-
-        }
+    const childSerials: string[] = []
+    for (const [folderName, childNode] of node.children) {
+        serializeTrie(childNode, serialCount)
+        childSerials.push(`${folderName}(${childNode.serial})`)
     }
 
-    operate(root)
+    childSerials.sort()
+    node.serial = childSerials.join("")
+    serialCount.set(node.serial, (serialCount.get(node.serial) || 0) + 1)
+}
 
-    return ans
+function collectUniquePaths(
+    node: Trie,
+    serialCount: Map<string, number>,
+    currentPath: string[],
+    result: string[][]
+): void {
+    if ((serialCount.get(node.serial) || 0) > 1) {
+        return
+    }
+
+    if (currentPath.length > 0) {
+        result.push([...currentPath])
+    }
+
+    for (const [folderName, childNode] of node.children) {
+        currentPath.push(folderName)
+        collectUniquePaths(childNode, serialCount, currentPath, result)
+        currentPath.pop()
+    }
 }
