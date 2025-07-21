@@ -11,6 +11,11 @@ describe('1344. Angle Between Hands of a Clock', (): void => {
             .toEqual(75)
     })
 
+    it('Zero angle', (): void => {
+        expect(angleClock(12, 0))
+            .toEqual(0)
+    })
+
     it('Fraction angle', (): void => {
         expect(angleClock(3, 15))
             .toEqual(7.5)
