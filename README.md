@@ -668,6 +668,7 @@
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
 1. № [2406. Divide Intervals Into Minimum Number of Groups](solutions/2406.%20Divide%20Intervals%20Into%20Minimum%20Number%20of%20Groups/script.ts)
 1. № [2410. Maximum Matching of Players With Trainers](solutions/2410.%20Maximum%20Matching%20of%20Players%20With%20Trainers/script.ts)
+1. № [2414. Length of the Longest Alphabetical Continuous Substring](solutions/2414.%20Length%20of%20the%20Longest%20Alphabetical%20Continuous%20Substring/script.ts)
 1. № [2415. Reverse Odd Levels of Binary Tree](solutions/2415.%20Reverse%20Odd%20Levels%20of%20Binary%20Tree/script.ts)
 1. № [2416. Sum of Prefix Scores of Strings](solutions/2416.%20Sum%20of%20Prefix%20Scores%20of%20Strings/script.ts)
 1. № [2418. Sort the People](solutions/2418.%20Sort%20the%20People/script.ts)
