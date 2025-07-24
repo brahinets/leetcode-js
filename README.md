@@ -641,6 +641,7 @@
 1. № [2302. Count Subarrays With Score Less Than K](solutions/2302.%20Count%20Subarrays%20With%20Score%20Less%20Than%20K/script.ts)
 1. № [2305. Fair Distribution of Cookies](solutions/2305.%20Fair%20Distribution%20of%20Cookies/script.ts)
 1. № [2311. Longest Binary Subsequence Less Than or Equal to K](solutions/2311.%20Longest%20Binary%20Subsequence%20Less%20Than%20or%20Equal%20to%20K/script.ts)
+1. № [2322. Minimum Score After Removals on a Tree](solutions/2322.%20Minimum%20Score%20After%20Removals%20on%20a%20Tree/script.ts)
 1. № [2326. Spiral Matrix IV](solutions/2326.%20Spiral%20Matrix%20IV/script.ts)
 1. № [2331. Evaluate Boolean Binary Tree](solutions/2331.%20Evaluate%20Boolean%20Binary%20Tree/script.ts)
 1. № [2336. Smallest Number in Infinite Set](solutions/2336.%20Smallest%20Number%20in%20Infinite%20Set/script.ts)
