@@ -14,56 +14,72 @@ function minimumScore(nums: number[], edges: number[][]): number {
         sum ^= x
     }
 
-    let result: number = Infinity
-    const dfs2 = (x: number, f: number, oth: number, anc: number): number => {
-        let son: number = nums[x]
-        for (const y of e[x]) {
-            if (y === f) {
-                continue
-            }
+    const context: { result: number; sum: number } = {
+        result: Infinity,
+        sum: sum
+    };
 
-            son ^= dfs2(y, x, oth, anc)
-        }
+    dfs(0, -1, nums, e, context);
 
-        if (f === anc) {
-            return son
-        }
-
-        result = Math.min(result, calc(oth, son, sum ^ oth ^ son))
-
-        return son
-    }
-
-    const dfs = (x: number, f: number): number => {
-        let son: number = nums[x]
-
-        for (const y of e[x]) {
-            if (y === f) {
-                continue
-            }
-
-            son ^= dfs(y, x)
-        }
-
-        for (const y of e[x]) {
-            if (y === f) {
-                dfs2(y, x, son, x)
-            }
-        }
-
-        return son
-    }
-
-    dfs(0, -1)
-
-    return result
+    return context.result;
 }
 
 function calc(part1: number, part2: number, part3: number): number {
     return (
         Math.max(part1, Math.max(part2, part3)) -
         Math.min(part1, Math.min(part2, part3))
-    )
+    );
 }
 
+function dfs2(
+    x: number,
+    f: number,
+    oth: number,
+    anc: number,
+    nums: number[],
+    e: number[][],
+    context: { result: number; sum: number }
+): number {
+    let son: number = nums[x];
+    for (const y of e[x]) {
+        if (y === f) {
+            continue;
+        }
 
+        son ^= dfs2(y, x, oth, anc, nums, e, context);
+    }
+
+    if (f === anc) {
+        return son;
+    }
+
+    context.result = Math.min(context.result, calc(oth, son, context.sum ^ oth ^ son));
+
+    return son;
+}
+
+function dfs(
+    x: number,
+    f: number,
+    nums: number[],
+    e: number[][],
+    context: { result: number; sum: number }
+): number {
+    let son: number = nums[x];
+
+    for (const y of e[x]) {
+        if (y === f) {
+            continue;
+        }
+
+        son ^= dfs(y, x, nums, e, context);
+    }
+
+    for (const y of e[x]) {
+        if (y === f) {
+            dfs2(y, x, son, x, nums, e, context);
+        }
+    }
+
+    return son;
+}
