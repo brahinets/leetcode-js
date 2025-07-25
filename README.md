@@ -839,5 +839,6 @@
 1. № [3442. Maximum Difference Between Even and Odd Frequency I](solutions/3442.%20Maximum%20Difference%20Between%20Even%20and%20Odd%20Frequency%20I/script.ts)
 1. № [3443. Maximum Manhattan Distance After K Changes](solutions/3443.%20Maximum%20Manhattan%20Distance%20After%20K%20Changes/script.ts)
 1. № [3445. Maximum Difference Between Even and Odd Frequency II](solutions/3445.%20Maximum%20Difference%20Between%20Even%20and%20Odd%20Frequency%20II/script.ts)
+1. № [3487. Maximum Unique Subarray Sum After Deletion](solutions/3487.%20Maximum%20Unique%20Subarray%20Sum%20After%20Deletion/script.ts)
 
 </details>
