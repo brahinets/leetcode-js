@@ -8,7 +8,7 @@ describe('3487. Maximum Unique Subarray Sum After Deletion', (): void => {
 
     it('Delete some', (): void => {
         expect(maxSum([1, 1, 0, 1, 1]))
-            .toBe(31)
+            .toBe(1)
     })
 
     it('Delete many', (): void => {
