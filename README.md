@@ -34,6 +34,7 @@
 1. № [29. Divide Two Integers](solutions/29.%20Divide%20Two%20Integers/script.ts)
 1. № [30. Substring with Concatenation of All Words](solutions/30.%20Substring%20with%20Concatenation%20of%20All%20Words/script.ts)
 1. № [31. Next Permutation](solutions/31.%20Next%20Permutation/script.ts)
+1. № [32. Longest Valid Parentheses](solutions/32.%20Longest%20Valid%20Parentheses/script.ts)
 1. № [33. Search in Rotated Sorted Array](solutions/33.%20Search%20in%20Rotated%20Sorted%20Array/script.ts)
 1. № [34. Find First and Last Position of Element in Sorted Array](solutions/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/script.ts)
 1. № [35. Search Insert Position](solutions/35.%20Search%20Insert%20Position/script.ts)
