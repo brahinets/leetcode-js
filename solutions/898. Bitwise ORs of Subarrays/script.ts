@@ -1,18 +1,22 @@
 export {subarrayBitwiseORs}
 
 function subarrayBitwiseORs(arr: number[]): number {
-    const seen: Set<number> = new Set<number>()
-    let currentOr: number = 0
+    const result: Set<number> = new Set<number>()
+    let current: Set<number> = new Set<number>([0])
 
-    for (let i: number = 0; i < arr.length; i++) {
-        currentOr = 0
+    for (const x of arr) {
+        const newCurrent: Set<number> = new Set()
+        for (const y of current) {
+            newCurrent.add(x | y)
+        }
+        newCurrent.add(x)
 
-        for (let j: number = i; j < arr.length; j++) {
-            currentOr |= arr[j]
+        current = newCurrent
 
-            seen.add(currentOr)
+        for (const val of current) {
+            result.add(val)
         }
     }
 
-    return seen.size
+    return result.size
 }
