@@ -297,6 +297,7 @@
 1. № [884. Uncommon Words from Two Sentences](solutions/884.%20Uncommon%20Words%20from%20Two%20Sentences/script.ts)
 1. № [885. Spiral Matrix III](solutions/885.%20Spiral%20Matrix%20III/script.ts)
 1. № [889. Construct Binary Tree from Preorder and Postorder Traversal](solutions/889.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Postorder%20Traversal/script.ts)
+1. № [898. Bitwise ORs of Subarrays](solutions/898.%20Bitwise%20ORs%20of%20Subarrays/script.ts)
 1. № [907. Sum of Subarray Minimums](solutions/907.%20Sum%20of%20Subarray%20Minimums/script.ts)
 1. № [909. Snakes and Ladders](solutions/909.%20Snakes%20and%20Ladders/script.ts)
 1. № [912. Sort an Array](solutions/912.%20Sort%20an%20Array/script.ts)
