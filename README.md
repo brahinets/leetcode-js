@@ -79,6 +79,7 @@
 1. № [109. Convert Sorted List to Binary Search Tree](solutions/109.%20Convert%20Sorted%20List%20to%20Binary%20Search%20Tree/script.ts)
 1. № [110. Balanced Binary Tree](solutions/110.%20Balanced%20Binary%20Tree/script.ts)
 1. № [111. Minimum Depth of Binary Tree](solutions/111.%20Minimum%20Depth%20of%20Binary%20Tree/script.ts)
+1. № [118. Pascal's Triangle](solutions/118.%20Pascal%27s%20Triangle/script.ts)
 1. № [119. Pascal's Triangle II](solutions/119.%20Pascal%27s%20Triangle%20II/script.ts)
 1. № [121. Best Time to Buy and Sell Stock](solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/script.ts)
 1. № [125. Valid Palindrome](solutions/125.%20Valid%20Palindrome/script.ts)
