@@ -20,6 +20,11 @@ describe('382. Linked List Random Node', (): void => {
         generatedValues.add(solution.getRandom())
         generatedValues.add(solution.getRandom())
         generatedValues.add(solution.getRandom())
+        generatedValues.add(solution.getRandom())
+        generatedValues.add(solution.getRandom())
+        generatedValues.add(solution.getRandom())
+        generatedValues.add(solution.getRandom())
+        generatedValues.add(solution.getRandom())
 
         expect(generatedValues.size).toBeGreaterThan(1)
     })
