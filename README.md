@@ -716,6 +716,7 @@
 1. № [2558. Take Gifts From the Richest Pile](solutions/2558.%20Take%20Gifts%20From%20the%20Richest%20Pile/script.ts)
 1. № [2559. Count Vowel Strings in Ranges](solutions/2559.%20Count%20Vowel%20Strings%20in%20Ranges/script.ts)
 1. № [2560. House Robber IV](solutions/2560.%20House%20Robber%20IV/script.ts)
+1. № [2561. Rearranging Fruits](solutions/2561.%20Rearranging%20Fruits/script.ts)
 1. № [2563. Count the Number of Fair Pairs](solutions/2563.%20Count%20the%20Number%20of%20Fair%20Pairs/script.ts)
 1. № [2566. Maximum Difference by Remapping a Digit](solutions/2566.%20Maximum%20Difference%20by%20Remapping%20a%20Digit/script.ts)
 1. № [2570. Merge Two 2D Arrays by Summing Values](solutions/2570.%20Merge%20Two%202D%20Arrays%20by%20Summing%20Values/script.ts)
