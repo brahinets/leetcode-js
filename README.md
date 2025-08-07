@@ -834,6 +834,7 @@
 1. № [3343. Count Number of Balanced Permutations](solutions/3343.%20Count%20Number%20of%20Balanced%20Permutations/script.ts)
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
 1. № [3362. Zero Array Transformation III](solutions/3362.%20Zero%20Array%20Transformation%20III/script.ts)
+1. № [3363. Find the Maximum Number of Fruits Collected](solutions/3363.%20Find%20the%20Maximum%20Number%20of%20Fruits%20Collected/script.ts)
 1. № [3372. Maximize the Number of Target Nodes After Connecting Trees I](solutions/3372.%20Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20I/script.ts)
 1. № [3373. Maximize the Number of Target Nodes After Connecting Trees II](solutions/3373.%20Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20II/script.ts)
 1. № [3375. Minimum Operations to Make Array Values Equal to K](solutions/3375.%20Minimum%20Operations%20to%20Make%20Array%20Values%20Equal%20to%20K/script.ts)
