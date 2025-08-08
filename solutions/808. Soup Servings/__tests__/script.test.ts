@@ -12,9 +12,14 @@ describe('808. Soup Servings', (): void => {
             .toBeCloseTo(0.71875, 5)
     })
 
-    it('High chance', (): void => {
+    it('High chance. Precision', (): void => {
         expect(soupServings(850))
             .toBeCloseTo(0.96612, 5)
+    })
+
+    it('High chance', (): void => {
+        expect(soupServings(3505))
+            .toBeCloseTo(0.99992, 5)
     })
 
     it('100% chance', (): void => {

@@ -1,45 +1,38 @@
-import {matrixOf} from "../../common/array-factories"
-
 export {soupServings}
 
-const DOSES: number[][] = [[100, 0], [75, 25], [50, 50], [25, 75]]
-const NO_VALUE: number = -1
-
 function soupServings(n: number): number {
-    if (veryBigChance(n)) {
-        return 1
+    const m: number = Math.ceil(n / 25)
+    const dp: Map<number, Map<number, number>> = new Map<number, Map<number, number>>()
+
+    dp.set(0, new Map<number, number>([[0, 0.5]]))
+
+    for (let k: number = 1; k <= m; k++) {
+        dp.set(k, new Map<number, number>())
+        dp.get(0)!.set(k, 1.0)
+        dp.get(k)!.set(0, 0.0)
+
+        for (let j: number = 1; j <= k; j++) {
+            dp.get(j)!.set(k, calculateDP(j, k, dp))
+            dp.get(k)!.set(j, calculateDP(k, j, dp))
+        }
+
+        if (dp.get(k)!.get(k)! > 1 - 1e-5) {
+            return 1
+        }
     }
 
-    return solve(n, n, matrixOf(NO_VALUE, n + 1, n + 1))
+    return dp.get(m)!.get(m)!
 }
 
-function solve(a: number, b: number, matrix: number[][]): number {
-    if (a === 0 && b === 0) {
-        return 0.5
-    } else if (a === 0) {
-        return 1
-    } else if (b === 0) {
-        return 0
-    } else if (matrix[a][b] !== NO_VALUE) {
-        return matrix[a][b]
-    }
-
-    let probability: number = 0
-    for (let i: number = 0; i < 4; i++) {
-        const rema: number = a - DOSES[i][0]
-        const remb: number = b - DOSES[i][1]
-
-        probability += 0.25 * solve(Math.max(rema, 0), Math.max(remb, 0), matrix)
-    }
-
-    if (probability > 1 - 1e-5) {
-        probability = 1
-    }
-
-    matrix[a][b] = probability
-    return probability
+function calculateDP(i: number, j: number, dp: Map<number, Map<number, number>>): number {
+    return (
+        (getDP(Math.max(0, i - 4), j, dp) +
+            getDP(Math.max(0, i - 3), j - 1, dp) +
+            getDP(Math.max(0, i - 2), Math.max(0, j - 2), dp) +
+            getDP(i - 1, Math.max(0, j - 3), dp)) / 4
+    )
 }
 
-function veryBigChance(n: number): boolean {
-    return n > 5000
+function getDP(i: number, j: number, dp: Map<number, Map<number, number>>): number {
+    return dp.get(i)?.get(j) ?? 0
 }
