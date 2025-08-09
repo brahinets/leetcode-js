@@ -49,6 +49,7 @@
 1. № [44. Wildcard Matching](solutions/44.%20Wildcard%20Matching/script.ts)
 1. № [45. Jump Game II](solutions/45.%20Jump%20Game%20II/script.ts)
 1. № [46. Permutations](solutions/46.%20Permutations/script.ts)
+1. № [47. Permutations II](solutions/47.%20Permutations%20II/script.ts)
 1. № [49. Group Anagrams](solutions/49.%20Group%20Anagrams/script.ts)
 1. № [50. Pow](solutions/50.%20Pow/script.ts)
 1. № [54. Spiral Matrix](solutions/54.%20Spiral%20Matrix/script.ts)
