@@ -1,37 +1,36 @@
-import {arrayOf} from "../../common/array-factories";
+import {arrayOf} from "../../common/array-factories"
 
 export {permuteUnique}
 
 function permuteUnique(nums: number[]): number[][] {
     nums.sort((a: number, b: number): number => a - b)
 
-    const result: number[][] = []
     const used: boolean[] = arrayOf(false, nums.length)
 
-    backtrack([], nums, used, result)
-
-    return result
+    return backtrack([], nums, used)
 }
 
-function backtrack(path: number[], nums: number[], used: boolean[], result: number[][]): void {
+function backtrack(path: number[], nums: number[], used: boolean[]): number[][] {
     if (path.length === nums.length) {
-        result.push([...path])
-        return
+        return [[...path]];
     }
 
+    let result: number[][] = [];
     for (let i: number = 0; i < nums.length; i++) {
         if (used[i]) {
-            continue
+            continue;
         }
 
         if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) {
-            continue
+            continue;
         }
 
-        used[i] = true
-        path.push(nums[i])
-        backtrack(path, nums, used, result)
-        path.pop()
-        used[i] = false
+        used[i] = true;
+        path.push(nums[i]);
+        result = result.concat(backtrack(path, nums, used));
+        path.pop();
+        used[i] = false;
     }
+
+    return result;
 }
