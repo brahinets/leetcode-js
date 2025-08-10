@@ -290,6 +290,7 @@
 1. № [863. All Nodes Distance K in Binary Tree](solutions/863.%20All%20Nodes%20Distance%20K%20in%20Binary%20Tree/script.ts)
 1. № [865. Smallest Subtree with all the Deepest Nodes](solutions/865.%20Smallest%20Subtree%20with%20all%20the%20Deepest%20Nodes/script.ts)
 1. № [867. Transpose Matrix](solutions/867.%20Transpose%20Matrix/script.ts)
+1. № [869. Reordered Power of 2](solutions/869.%20Reordered%20Power%20of%202/script.ts)
 1. № [872. Leaf-Similar Trees](solutions/872.%20Leaf-Similar%20Trees/script.ts)
 1. № [873. Length of Longest Fibonacci Subsequence](solutions/873.%20Length%20of%20Longest%20Fibonacci%20Subsequence/script.ts)
 1. № [874. Walking Robot Simulation](solutions/874.%20Walking%20Robot%20Simulation/script.ts)
