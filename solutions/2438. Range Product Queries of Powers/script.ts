@@ -18,7 +18,7 @@ function productQueries(n: number, queries: number[][]): number[] {
     return product
 }
 
-function createBins(n: number) {
+function createBins(n: number): number[] {
     const bins: number[] = []
     let rep: number = 1
 
