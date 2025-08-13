@@ -145,6 +145,7 @@
 1. № [310. Minimum Height Trees](solutions/310.%20Minimum%20Height%20Trees/script.ts)
 1. № [316. Remove Duplicate Letters](solutions/316.%20Remove%20Duplicate%20Letters/script.ts)
 1. № [319. Bulb Switcher](solutions/319.%20Bulb%20Switcher/script.ts)
+1. № [326. Power of Three](solutions/326.%20Power%20of%20Three/script.ts)
 1. № [330. Patching Array](solutions/330.%20Patching%20Array/script.ts)
 1. № [341. Flatten Nested List Iterator](solutions/341.%20Flatten%20Nested%20List%20Iterator/script.ts)
 1. № [342. Power of Four](solutions/342.%20Power%20of%20Four/script.ts)
