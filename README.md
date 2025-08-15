@@ -54,6 +54,7 @@
 1. № [49. Group Anagrams](solutions/49.%20Group%20Anagrams/script.ts)
 1. № [50. Pow](solutions/50.%20Pow/script.ts)
 1. № [51. N-Queens](solutions/51.%20N-Queens/script.ts)
+1. № [52. N-Queens II](solutions/52.%20N-Queens%20II/script.ts)
 1. № [54. Spiral Matrix](solutions/54.%20Spiral%20Matrix/script.ts)
 1. № [57. Insert Interval](solutions/57.%20Insert%20Interval/script.ts)
 1. № [58. Length of Last Word](solutions/58.%20Length%20of%20Last%20Word/script.ts)
