@@ -401,6 +401,7 @@
 1. № [1310. XOR Queries of a Subarray](solutions/1310.%20XOR%20Queries%20of%20a%20Subarray/script.ts)
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
 1. № [1318. Minimum Flips to Make a OR b Equal to c](solutions/1318.%20Minimum%20Flips%20to%20Make%20a%20OR%20b%20Equal%20to%20c/script.ts)
+1. № [1323. Maximum 69 Number](solutions/1323.%20Maximum%2069%20Number/script.ts)
 1. № [1325. Delete Leaves With a Given Value](solutions/1325.%20Delete%20Leaves%20With%20a%20Given%20Value/script.ts)
 1. № [1331. Rank Transform of an Array](solutions/1331.%20Rank%20Transform%20of%20an%20Array/script.ts)
 1. № [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](solutions/1334.%20Find%20the%20City%20With%20the%20Smallest%20Number%20of%20Neighbors%20at%20a%20Threshold%20Distance/script.ts)
