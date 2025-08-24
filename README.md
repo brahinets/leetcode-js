@@ -63,6 +63,7 @@
 1. № [58. Length of Last Word](solutions/58.%20Length%20of%20Last%20Word/script.ts)
 1. № [59. Spiral Matrix II](solutions/59.%20Spiral%20Matrix%20II/script.ts)
 1. № [60. Permutation Sequence](solutions/60.%20Permutation%20Sequence/script.ts)
+1. № [61. Rotate List](solutions/61.%20Rotate%20List/script.ts)
 1. № [62. Unique Paths](solutions/62.%20Unique%20Paths/script.ts)
 1. № [67. Add Binary](solutions/67.%20Add%20Binary/script.ts)
 1. № [70. Climbing Stairs](solutions/70.%20Climbing%20Stairs/script.ts)
