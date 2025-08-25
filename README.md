@@ -195,6 +195,7 @@
 1. № [476. Number Complement](solutions/476.%20Number%20Complement/script.ts)
 1. № [486. Predict the Winner](solutions/486.%20Predict%20the%20Winner/script.ts)
 1. № [494. Target Sum](solutions/494.%20Target%20Sum/script.ts)
+1. № [498. Diagonal Traverse](solutions/498.%20Diagonal%20Traverse/script.ts)
 1. № [501. Find Mode in Binary Search Tree](solutions/501.%20Find%20Mode%20in%20Binary%20Search%20Tree/script.ts)
 1. № [502. IPO](solutions/502.%20IPO/script.ts)
 1. № [506. Relative Ranks](solutions/506.%20Relative%20Ranks/script.ts)
