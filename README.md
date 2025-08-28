@@ -870,6 +870,7 @@
 1. № [3442. Maximum Difference Between Even and Odd Frequency I](solutions/3442.%20Maximum%20Difference%20Between%20Even%20and%20Odd%20Frequency%20I/script.ts)
 1. № [3443. Maximum Manhattan Distance After K Changes](solutions/3443.%20Maximum%20Manhattan%20Distance%20After%20K%20Changes/script.ts)
 1. № [3445. Maximum Difference Between Even and Odd Frequency II](solutions/3445.%20Maximum%20Difference%20Between%20Even%20and%20Odd%20Frequency%20II/script.ts)
+1. № [3446. Sort Matrix by Diagonals](solutions/3446.%20Sort%20Matrix%20by%20Diagonals/script.ts)
 1. № [3459. Length of Longest V-Shaped Diagonal Segment](solutions/3459.%20Length%20of%20Longest%20V-Shaped%20Diagonal%20Segment/script.ts)
 1. № [3477. Fruits Into Baskets II](solutions/3477.%20Fruits%20Into%20Baskets%20II/script.ts)
 1. № [3479. Fruits Into Baskets III](solutions/3479.%20Fruits%20Into%20Baskets%20III/script.ts)
