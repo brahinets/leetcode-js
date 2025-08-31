@@ -67,6 +67,7 @@
 1. № [62. Unique Paths](solutions/62.%20Unique%20Paths/script.ts)
 1. № [63. Unique Paths II](solutions/63.%20Unique%20Paths%20II/script.ts)
 1. № [64. Minimum Path Sum](solutions/64.%20Minimum%20Path%20Sum/script.ts)
+1. № [65. Valid Number](solutions/65.%20Valid%20Number/script.ts)
 1. № [66. Plus One](solutions/66.%20Plus%20One/script.ts)
 1. № [67. Add Binary](solutions/67.%20Add%20Binary/script.ts)
 1. № [70. Climbing Stairs](solutions/70.%20Climbing%20Stairs/script.ts)
