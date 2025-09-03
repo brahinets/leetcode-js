@@ -816,6 +816,7 @@
 1. № [3016. Minimum Number of Pushes to Type Word II](solutions/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/script.ts)
 1. № [3024. Type of Triangle](solutions/3024.%20Type%20of%20Triangle/script.ts)
 1. № [3025. Find the Number of Ways to Place People I](solutions/3025.%20Find%20the%20Number%20of%20Ways%20to%20Place%20People%20I/script.ts)
+1. № [3027. Find the Number of Ways to Place People II](solutions/3027.%20Find%20the%20Number%20of%20Ways%20to%20Place%20People%20II/script.ts)
 1. № [3042. Count Prefix and Suffix Pairs I](solutions/3042.%20Count%20Prefix%20and%20Suffix%20Pairs%20I/script.ts)
 1. № [3043. Find the Length of the Longest Common Prefix](solutions/3043.%20Find%20the%20Length%20of%20the%20Longest%20Common%20Prefix/script.ts)
 1. № [3066. Minimum Operations to Exceed Threshold Value II](solutions/3066.%20Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20II/script.ts)
