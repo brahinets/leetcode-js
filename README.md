@@ -884,5 +884,6 @@
 1. № [3479. Fruits Into Baskets III](solutions/3479.%20Fruits%20Into%20Baskets%20III/script.ts)
 1. № [3480. Maximize Subarrays After Removing One Conflicting Pair](solutions/3480.%20Maximize%20Subarrays%20After%20Removing%20One%20Conflicting%20Pair/script.ts)
 1. № [3487. Maximum Unique Subarray Sum After Deletion](solutions/3487.%20Maximum%20Unique%20Subarray%20Sum%20After%20Deletion/script.ts)
+1. № [3516. Find Closest Person](solutions/3516.%20Find%20Closest%20Person/script.ts)
 
 </details>
