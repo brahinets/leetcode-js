@@ -770,6 +770,7 @@
 1. № [2707. Extra Characters in a String](solutions/2707.%20Extra%20Characters%20in%20a%20String/script.ts)
 1. № [2709. Greatest Common Divisor Traversal](solutions/2709.%20Greatest%20Common%20Divisor%20Traversal/script.ts)
 1. № [2742. Painting the Walls](solutions/2742.%20Painting%20the%20Walls/script.ts)
+1. № [2749. Minimum Operations to Make the Integer Zero](solutions/2749.%20Minimum%20Operations%20to%20Make%20the%20Integer%20Zero/script.ts)
 1. № [2751. Robot Collisions](solutions/2751.%20Robot%20Collisions/script.ts)
 1. № [2762. Continuous Subarrays](solutions/2762.%20Continuous%20Subarrays/script.ts)
 1. № [2779. Maximum Beauty of an Array After Applying Operation](solutions/2779.%20Maximum%20Beauty%20of%20an%20Array%20After%20Applying%20Operation/script.ts)

@@ -1,0 +1,12 @@
+# 2749. Minimum Operations to Make the Integer Zero
+
+## Medium
+
+You are given two integers `num1` and `num2`. In one operation, you can choose integer `i` in the range `[0, 60]` and
+subtract `2^i + num2` from `num1`. Return the integer denoting the minimum number of operations needed to make `num1`
+equal to `0`. If it is impossible to make `num1` equal to `0`, return `-1`.
+
+### Constraints:
+
+- `1 <= num1 <= 10^9`
+- `-10^9 <= num2 <= 10^9`
