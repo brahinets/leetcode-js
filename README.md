@@ -411,6 +411,7 @@
 1. № [1291. Sequential Digits](solutions/1291.%20Sequential%20Digits/script.ts)
 1. № [1295. Find Numbers with Even Number of Digits](solutions/1295.%20Find%20Numbers%20with%20Even%20Number%20of%20Digits/script.ts)
 1. № [1298. Maximum Candies You Can Get from Boxes](solutions/1298.%20Maximum%20Candies%20You%20Can%20Get%20from%20Boxes/script.ts)
+1. № [1304. Find N Unique Integers Sum up to Zero](solutions/1304.%20Find%20N%20Unique%20Integers%20Sum%20up%20to%20Zero/script.ts)
 1. № [1310. XOR Queries of a Subarray](solutions/1310.%20XOR%20Queries%20of%20a%20Subarray/script.ts)
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
 1. № [1318. Minimum Flips to Make a OR b Equal to c](solutions/1318.%20Minimum%20Flips%20to%20Make%20a%20OR%20b%20Equal%20to%20c/script.ts)
