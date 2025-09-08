@@ -414,6 +414,7 @@
 1. № [1304. Find N Unique Integers Sum up to Zero](solutions/1304.%20Find%20N%20Unique%20Integers%20Sum%20up%20to%20Zero/script.ts)
 1. № [1310. XOR Queries of a Subarray](solutions/1310.%20XOR%20Queries%20of%20a%20Subarray/script.ts)
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
+1. № [1317. Convert Integer to the Sum of Two No-Zero Integers](solutions/1317.%20Convert%20Integer%20to%20the%20Sum%20of%20Two%20No-Zero%20Integers/script.ts)
 1. № [1318. Minimum Flips to Make a OR b Equal to c](solutions/1318.%20Minimum%20Flips%20to%20Make%20a%20OR%20b%20Equal%20to%20c/script.ts)
 1. № [1323. Maximum 69 Number](solutions/1323.%20Maximum%2069%20Number/script.ts)
 1. № [1325. Delete Leaves With a Given Value](solutions/1325.%20Delete%20Leaves%20With%20a%20Given%20Value/script.ts)
