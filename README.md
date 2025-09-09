@@ -673,6 +673,7 @@
 1. № [2311. Longest Binary Subsequence Less Than or Equal to K](solutions/2311.%20Longest%20Binary%20Subsequence%20Less%20Than%20or%20Equal%20to%20K/script.ts)
 1. № [2322. Minimum Score After Removals on a Tree](solutions/2322.%20Minimum%20Score%20After%20Removals%20on%20a%20Tree/script.ts)
 1. № [2326. Spiral Matrix IV](solutions/2326.%20Spiral%20Matrix%20IV/script.ts)
+1. № [2327. Number of People Aware of a Secret](solutions/2327.%20Number%20of%20People%20Aware%20of%20a%20Secret/script.ts)
 1. № [2331. Evaluate Boolean Binary Tree](solutions/2331.%20Evaluate%20Boolean%20Binary%20Tree/script.ts)
 1. № [2336. Smallest Number in Infinite Set](solutions/2336.%20Smallest%20Number%20in%20Infinite%20Set/script.ts)
 1. № [2337. Move Pieces to Obtain a String](solutions/2337.%20Move%20Pieces%20to%20Obtain%20a%20String/script.ts)
