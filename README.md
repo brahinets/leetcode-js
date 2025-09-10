@@ -536,6 +536,7 @@
 1. № [1726. Tuple with Same Product](solutions/1726.%20Tuple%20with%20Same%20Product/script.ts)
 1. № [1727. Largest Submatrix With Rearrangements](solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/script.ts)
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
+1. № [1733. Minimum Number of People to Teach](solutions/1733.%20Minimum%20Number%20of%20People%20to%20Teach/script.ts)
 1. № [1743. Restore the Array From Adjacent Pairs](solutions/1743.%20Restore%20the%20Array%20From%20Adjacent%20Pairs/script.ts)
 1. № [1749. Maximum Absolute Sum of Any Subarray](solutions/1749.%20Maximum%20Absolute%20Sum%20of%20Any%20Subarray/script.ts)
 1. № [1750. Minimum Length of String After Deleting Similar Ends](solutions/1750.%20Minimum%20Length%20of%20String%20After%20Deleting%20Similar%20Ends/script.ts)
