@@ -1,26 +1,17 @@
+import {arrayOfZeros} from "../../common/array-factories"
+
 export {minimumTeachings}
 
 function minimumTeachings(n: number, languages: number[][], friendships: number[][]): number {
-    const needToTeach: Set<number> = new Set<number>()
-    const languageMap: Map<number, Set<number>> = new Map<number, Set<number>>()
+    const needToTeach = new Set<number>()
+    for (const [a, b] of friendships) {
+        const setA: Set<number> = new Set<number>(languages[a - 1])
+        const setB: Set<number> = new Set<number>(languages[b - 1])
 
-    for (let i: number = 0; i < languages.length; i++) {
-        languageMap.set(i + 1, new Set(languages[i]))
-    }
-
-    for (const [friendA, friendB] of friendships) {
-        const langA: Set<number> | undefined = languageMap.get(friendA)
-        const langB: Set<number> | undefined = languageMap.get(friendB)
-
-        if (langA && langB) {
-            const commonLanguages: Set<number> = new Set(
-                [...langA].filter((lang: number): boolean => langB.has(lang)),
-            )
-
-            if (commonLanguages.size === 0) {
-                needToTeach.add(friendA)
-                needToTeach.add(friendB)
-            }
+        const common: boolean = [...setA].some((lang: number): boolean => setB.has(lang))
+        if (!common) {
+            needToTeach.add(a)
+            needToTeach.add(b)
         }
     }
 
@@ -28,21 +19,13 @@ function minimumTeachings(n: number, languages: number[][], friendships: number[
         return 0
     }
 
-    const languageCount: Map<number, number> = new Map<number, number>()
+    const langCount: number[] = arrayOfZeros(n + 1)
     for (const person of needToTeach) {
-        const langs: Set<number> | undefined = languageMap.get(person)
-
-        if (langs) {
-            for (const lang of langs) {
-                languageCount.set(lang, (languageCount.get(lang) ?? 0) + 1)
-            }
+        for (const lang of languages[person - 1]) {
+            langCount[lang]++
         }
     }
 
-    let maxKnown: number = 0
-    for (const count of languageCount.values()) {
-        maxKnown = Math.max(maxKnown, count)
-    }
-
+    const maxKnown: number = Math.max(...langCount)
     return needToTeach.size - maxKnown
 }
