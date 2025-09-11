@@ -1,17 +1,23 @@
 export {sortVowels}
 
-const VOWELS: string[] = ['a', 'e', 'i', 'o', 'u']
+const VOWELS_SET: Set<string> = new Set<string>(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
 
 function sortVowels(s: string): string {
-    const vowels: string[] = s.split('')
-        .filter((ch: string): boolean => isVowel(ch))
-        .sort((a: string, b: string): number => a.charCodeAt(0) - b.charCodeAt(0))
+    const chars: string[] = s.split('')
+    const vowelIndices: number[] = []
+    const vowels: string[] = []
 
-    return s.split('')
-        .map((ch: string): string => isVowel(ch) ? vowels.shift()! : ch)
-        .join('')
-}
+    for (let i: number = 0; i < chars.length; i++) {
+        if (VOWELS_SET.has(chars[i])) {
+            vowelIndices.push(i)
+            vowels.push(chars[i])
+        }
+    }
 
-function isVowel(ch: string): boolean {
-    return VOWELS.includes(ch.toLowerCase())
+    vowels.sort((a: string, b: string): number => a.charCodeAt(0) - b.charCodeAt(0))
+    vowelIndices.forEach((idx: number, i: number) => {
+        chars[idx] = vowels[i]
+    })
+
+    return chars.join('')
 }
