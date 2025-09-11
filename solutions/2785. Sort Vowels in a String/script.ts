@@ -15,9 +15,9 @@ function sortVowels(s: string): string {
     }
 
     vowels.sort((a: string, b: string): number => a.charCodeAt(0) - b.charCodeAt(0))
-    vowelIndices.forEach((idx: number, i: number) => {
-        chars[idx] = vowels[i]
-    })
+    for (let i: number = 0; i < vowelIndices.length; i++) {
+        chars[vowelIndices[i]] = vowels[i]
+    }
 
     return chars.join('')
 }
