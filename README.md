@@ -851,6 +851,7 @@
 1. № [3217. Delete Nodes From Linked List Present in Array](solutions/3217.%20Delete%20Nodes%20From%20Linked%20List%20Present%20in%20Array/script.ts)
 1. № [3021. Alice and Bob Playing Flower Game](solutions/3021.%20Alice%20and%20Bob%20Playing%20Flower%20Game/script.ts)
 1. № [3223. Minimum Length of String After Operations](solutions/3223.%20Minimum%20Length%20of%20String%20After%20Operations/script.ts)
+1. № [3227. Vowels Game in a String](solutions/3227.%20Vowels%20Game%20in%20a%20String/script.ts)
 1. № [3243. Shortest Distance After Road Addition Queries I](solutions/3243.%20Shortest%20Distance%20After%20Road%20Addition%20Queries%20I/script.ts)
 1. № [3254. Find the Power of K-Size Subarrays I](solutions/3254.%20Find%20the%20Power%20of%20K-Size%20Subarrays%20I/script.ts)
 1. № [3264. Final Array State After K Multiplication Operations I](solutions/3264.%20Final%20Array%20State%20After%20K%20Multiplication%20Operations%20I/script.ts)
