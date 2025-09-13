@@ -892,5 +892,6 @@
 1. № [3487. Maximum Unique Subarray Sum After Deletion](solutions/3487.%20Maximum%20Unique%20Subarray%20Sum%20After%20Deletion/script.ts)
 1. № [3495. Minimum Operations to Make Array Elements Zero](solutions/3495.%20Minimum%20Operations%20to%20Make%20Array%20Elements%20Zero/script.ts)
 1. № [3516. Find Closest Person](solutions/3516.%20Find%20Closest%20Person/script.ts)
+1. № [3541. Find Most Frequent Vowel and Consonant](solutions/3541.%20Find%20Most%20Frequent%20Vowel%20and%20Consonant/script.ts)
 
 </details>
