@@ -8,42 +8,38 @@ function spellchecker(wordlist: string[], queries: string[]): string[] {
     const vowelErrorWords: Map<string, string> = new Map<string, string>()
 
     for (const word of wordlist) {
-        const lowerWord: string = word.toLowerCase()
+        const lowerWord = word.toLowerCase()
         if (!caseInsensitiveWords.has(lowerWord)) {
             caseInsensitiveWords.set(lowerWord, word)
         }
 
-        const devoweledWord: string = lowerWord.split('')
-            .map((char: string): string => VOWELS.has(char) ? '*' : char)
-            .join('')
+        const devoweledWord = devowel(lowerWord)
         if (!vowelErrorWords.has(devoweledWord)) {
             vowelErrorWords.set(devoweledWord, word)
         }
     }
 
-    const results: string[] = []
-    for (const query of queries) {
+    return queries.map((query: string): string => {
         if (exactWords.has(query)) {
-            results.push(query)
-            continue
+            return query
         }
 
         const lowerQuery: string = query.toLowerCase()
         if (caseInsensitiveWords.has(lowerQuery)) {
-            results.push(caseInsensitiveWords.get(lowerQuery)!)
-            continue
+            return caseInsensitiveWords.get(lowerQuery)!
         }
 
-        const devoweledQuery: string = lowerQuery.split('')
-            .map((char: string): string => VOWELS.has(char) ? '*' : char)
-            .join('')
-        if (vowelErrorWords.has(devoweledQuery)) {
-            results.push(vowelErrorWords.get(devoweledQuery)!)
-            continue
-        }
+        const devoweledQuery: string = devowel(lowerQuery)
+        return vowelErrorWords.get(devoweledQuery) || ""
+    })
+}
 
-        results.push("")
+function devowel(word: string): string {
+    let result: string = ''
+
+    for (const char of word) {
+        result += VOWELS.has(char) ? '*' : char
     }
 
-    return results
+    return result
 }
