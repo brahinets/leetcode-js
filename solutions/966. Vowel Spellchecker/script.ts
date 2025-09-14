@@ -8,12 +8,12 @@ function spellchecker(wordlist: string[], queries: string[]): string[] {
     const vowelErrorWords: Map<string, string> = new Map<string, string>()
 
     for (const word of wordlist) {
-        const lowerWord = word.toLowerCase()
+        const lowerWord: string = word.toLowerCase()
         if (!caseInsensitiveWords.has(lowerWord)) {
             caseInsensitiveWords.set(lowerWord, word)
         }
 
-        const devoweledWord = devowel(lowerWord)
+        const devoweledWord: string = devowel(lowerWord)
         if (!vowelErrorWords.has(devoweledWord)) {
             vowelErrorWords.set(devoweledWord, word)
         }
