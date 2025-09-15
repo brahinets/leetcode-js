@@ -585,6 +585,7 @@
 1. № [1922. Count Good Numbers](solutions/1922.%20Count%20Good%20Numbers/script.ts)
 1. № [1930. Unique Length-3 Palindromic Subsequences](solutions/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/script.ts)
 1. № [1931. Painting a Grid With Three Different Colors](solutions/1931.%20Painting%20a%20Grid%20With%20Three%20Different%20Colors/script.ts)
+1. № [1935. Maximum Number of Words You Can Type](solutions/1935.%20Maximum%20Number%20of%20Words%20You%20Can%20Type/script.ts)
 1. № [1937. Maximum Number of Points with Cost](solutions/1937.%20Maximum%20Number%20of%20Points%20with%20Cost/script.ts)
 1. № [1942. The Number of the Smallest Unoccupied Chair](solutions/1942.%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair/script.ts)
 1. № [1945. Sum of Digits of String After Convert](solutions/1945.%20Sum%20of%20Digits%20of%20String%20After%20Convert/script.ts)
