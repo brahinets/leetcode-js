@@ -28,7 +28,7 @@ class PriorityQueue<T> {
 
     private siftUp(index: number): void {
         while (index > 0) {
-            const parentIndex = this.parent(index)
+            const parentIndex: number = this.parent(index)
             if (this.compare(this.heap[index], this.heap[parentIndex]) >= 0) {
                 break
             }
@@ -38,16 +38,19 @@ class PriorityQueue<T> {
     }
 
     private siftDown(index: number): void {
-        const size = this.heap.length
+        const size: number = this.heap.length
         while (this.leftChild(index) < size) {
-            let smallest = this.leftChild(index)
-            const right = this.rightChild(index)
+            let smallest: number = this.leftChild(index)
+            const right: number = this.rightChild(index)
+
             if (right < size && this.compare(this.heap[right], this.heap[smallest]) < 0) {
                 smallest = right
             }
+
             if (this.compare(this.heap[index], this.heap[smallest]) <= 0) {
                 break
             }
+
             this.swap(index, smallest)
             index = smallest
         }
@@ -62,12 +65,14 @@ class PriorityQueue<T> {
         if (this.isEmpty()) {
             return undefined
         }
-        const root = this.heap[0]
-        const last = this.heap.pop()
+
+        const root: T = this.heap[0]
+        const last: T | undefined = this.heap.pop()
         if (this.heap.length > 0 && last !== undefined) {
             this.heap[0] = last
             this.siftDown(0)
         }
+
         return root
     }
 
