@@ -881,6 +881,7 @@
 1. № [3396. Minimum Number of Operations to Make Elements in Array Distinct](solutions/3396.%20Minimum%20Number%20of%20Operations%20to%20Make%20Elements%20in%20Array%20Distinct/script.ts)
 1. № [3403. Find the Lexicographically Largest String From the Box I](solutions/3403.%20Find%20the%20Lexicographically%20Largest%20String%20From%20the%20Box%20I/script.ts)
 1. № [3405. Count the Number of Arrays with K Matching Adjacent Elements](solutions/3405.%20Count%20the%20Number%20of%20Arrays%20with%20K%20Matching%20Adjacent%20Elements/script.ts)
+1. № [3408. Design Task Manager](solutions/3408.%20Design%20Task%20Manager/script.ts)
 1. № [3423. Maximum Difference Between Adjacent Elements in a Circular Array](solutions/3423.%20Maximum%20Difference%20Between%20Adjacent%20Elements%20in%20a%20Circular%20Array/script.ts)
 1. № [3439. Reschedule Meetings for Maximum Free Time I](solutions/3439.%20Reschedule%20Meetings%20for%20Maximum%20Free%20Time%20I/script.ts)
 1. № [3440. Reschedule Meetings for Maximum Free Time II](solutions/3440.%20Reschedule%20Meetings%20for%20Maximum%20Free%20Time%20II/script.ts)
