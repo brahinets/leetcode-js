@@ -893,6 +893,7 @@
 1. № [3477. Fruits Into Baskets II](solutions/3477.%20Fruits%20Into%20Baskets%20II/script.ts)
 1. № [3479. Fruits Into Baskets III](solutions/3479.%20Fruits%20Into%20Baskets%20III/script.ts)
 1. № [3480. Maximize Subarrays After Removing One Conflicting Pair](solutions/3480.%20Maximize%20Subarrays%20After%20Removing%20One%20Conflicting%20Pair/script.ts)
+1. № [3484. Design Spreadsheet](solutions/3484.%20Design%20Spreadsheet/script.ts)
 1. № [3487. Maximum Unique Subarray Sum After Deletion](solutions/3487.%20Maximum%20Unique%20Subarray%20Sum%20After%20Deletion/script.ts)
 1. № [3495. Minimum Operations to Make Array Elements Zero](solutions/3495.%20Minimum%20Operations%20to%20Make%20Array%20Elements%20Zero/script.ts)
 1. № [3516. Find Closest Person](solutions/3516.%20Find%20Closest%20Person/script.ts)
