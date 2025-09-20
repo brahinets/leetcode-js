@@ -20,4 +20,11 @@ describe('3508. Implement Router', (): void => {
         expect(router.forwardPacket()).toEqual([7, 4, 90])
         expect(router.forwardPacket()).toEqual([])
     })
+
+    it('Three', (): void => {
+        const router: Router = new Router(2)
+        expect(router.addPacket(2, 5, 1)).toEqual(true)
+        expect(router.forwardPacket()).toEqual([2, 5, 1])
+        expect(router.getCount(5, 1, 1)).toEqual(0)
+    })
 })
