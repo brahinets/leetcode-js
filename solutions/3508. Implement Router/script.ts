@@ -6,6 +6,11 @@ interface Packet {
     timestamp: number
 }
 
+interface Timestamps {
+    startIndex: number
+    timestamps: number[]
+}
+
 class Router {
     private static readonly THERE_ARE_NO_PACKETS: number[] = []
     private static readonly PACKETS_NOT_FOUND_FOR_GIVEN_TIMESTAMP_RANGE = 0
@@ -40,7 +45,7 @@ class Router {
         this.packets.enqueue(packet)
         this.quickAccessPackets.add(packetAsString)
         if (!this.destinationToTimestamps.has(destination)) {
-            this.destinationToTimestamps.set(destination, new Timestamps())
+            this.destinationToTimestamps.set(destination, {startIndex: 0, timestamps: []})
         }
         this.destinationToTimestamps.get(destination)!.timestamps.push(timestamp)
         return true
@@ -50,8 +55,10 @@ class Router {
         if (this.packets.isEmpty()) {
             return Router.THERE_ARE_NO_PACKETS
         }
-        const toRemove = this.packets.dequeue()!
-        const toRemoveAsString = this.convertPacketToString(toRemove)
+
+        const toRemove: Packet = this.packets.dequeue()!
+        const toRemoveAsString: string = this.convertPacketToString(toRemove)
+
         this.quickAccessPackets.delete(toRemoveAsString)
         ++this.destinationToTimestamps.get(toRemove.destination)!.startIndex
         return [toRemove.source, toRemove.destination, toRemove.timestamp]
@@ -61,7 +68,9 @@ class Router {
         if (!this.destinationToTimestamps.has(destination)) {
             return Router.PACKETS_NOT_FOUND_FOR_GIVEN_TIMESTAMP_RANGE
         }
+
         const timestamps = this.destinationToTimestamps.get(destination)!.timestamps
+
         let startIndex = this.destinationToTimestamps.get(destination)!.startIndex
         let endIndex = timestamps.length - 1
         if (
@@ -72,23 +81,16 @@ class Router {
         ) {
             return Router.PACKETS_NOT_FOUND_FOR_GIVEN_TIMESTAMP_RANGE
         }
+
         while (startIndex < endIndex && timestamps[startIndex] < startTime) {
             ++startIndex
         }
+
         while (endIndex > 0 && timestamps[endIndex] > endTime) {
             --endIndex
         }
+
         return endIndex - startIndex + 1
-    }
-}
-
-class Timestamps {
-    startIndex: number
-    timestamps: number[]
-
-    constructor() {
-        this.startIndex = 0
-        this.timestamps = []
     }
 }
 
