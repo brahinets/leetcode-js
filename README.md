@@ -71,6 +71,7 @@
 1. № [66. Plus One](solutions/66.%20Plus%20One/script.ts)
 1. № [67. Add Binary](solutions/67.%20Add%20Binary/script.ts)
 1. № [68. Text Justification](solutions/68.%20Text%20Justification/script.ts)
+1. № [69. Sqrt(x)](solutions/69.%20Sqrt%28x%29/script.ts)
 1. № [70. Climbing Stairs](solutions/70.%20Climbing%20Stairs/script.ts)
 1. № [71. Simplify Path](solutions/71.%20Simplify%20Path/script.ts)
 1. № [73. Set Matrix Zeroes](solutions/73.%20Set%20Matrix%20Zeroes/script.ts)
