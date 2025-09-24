@@ -5,35 +5,45 @@ function fractionToDecimal(numerator: number, denominator: number): string {
         return "0"
     }
 
-    let result = ""
+    let result: string = getSign(numerator, denominator)
+    const absNumerator: number = Math.abs(numerator)
+    const absDenominator: number = Math.abs(denominator)
 
-    if ((numerator < 0) !== (denominator < 0)) {
-        result += "-"
-    }
-    const num: number = Math.abs(numerator)
-    const den: number = Math.abs(denominator)
-
-    result += Math.floor(num / den)
-    let remainder: number = num % den
+    result += getIntegerPart(absNumerator, absDenominator)
+    let remainder: number = absNumerator % absDenominator
     if (remainder === 0) {
         return result
     }
 
     result += "."
-    const map = new Map<number, number>()
-    while (remainder !== 0) {
-        if (map.has(remainder)) {
-            const idx: number = map.get(remainder)!
-            result = result.slice(0, idx) + "(" + result.slice(idx) + ")"
+    result += getDecimalPart(remainder, absDenominator, result.length)
+    return result
+}
 
-            break
+function getSign(numerator: number, denominator: number): string {
+    return (numerator < 0) !== (denominator < 0) ? "-" : ""
+}
+
+function getIntegerPart(numerator: number, denominator: number): string {
+    return Math.floor(numerator / denominator).toString()
+}
+
+function getDecimalPart(remainder: number, denominator: number, offset: number): string {
+    const remainderMap = new Map<number, number>()
+    let decimal: string = ""
+
+    while (remainder !== 0) {
+        if (remainderMap.has(remainder)) {
+            const repeatIndex: number = remainderMap.get(remainder)! - offset
+
+            return decimal.slice(0, repeatIndex) + "(" + decimal.slice(repeatIndex) + ")"
         }
 
-        map.set(remainder, result.length)
+        remainderMap.set(remainder, decimal.length + offset)
         remainder *= 10
-        result += Math.floor(remainder / den)
-        remainder %= den
+        decimal += Math.floor(remainder / denominator).toString()
+        remainder %= denominator
     }
 
-    return result
+    return decimal
 }
