@@ -235,6 +235,7 @@
 1. № [594. Longest Harmonious% Subsequence](solutions/594.%20Longest%20Harmonious%20Subsequence/script.ts)
 1. № [605. Can Place Flowers](solutions/605.%20Can%20Place%20Flowers/script.ts)
 1. № [606. Construct String from Binary Tree](solutions/606.%20Construct%20String%20from%20Binary%20Tree/script.ts)
+1. № [611. Valid Triangle Number](solutions/611.%20Valid%20Triangle%20Number/script.ts)
 1. № [621. Task Scheduler](solutions/621.%20Task%20Scheduler/script.ts)
 1. № [623. Add One Row to Tree](solutions/623.%20Add%20One%20Row%20to%20Tree/script.ts)
 1. № [624. Maximum Distance in Arrays](solutions/624.%20Maximum%20Distance%20in%20Arrays/script.ts)
