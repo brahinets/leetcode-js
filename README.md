@@ -290,6 +290,7 @@
 1. № [796. Rotate String](solutions/796.%20Rotate%20String/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
 1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
+1. № [812. Largest Triangle Area](solutions/812.%20Largest%20Triangle%20Area/script.ts)
 1. № [815. Bus Routes](solutions/815.%20Bus%20Routes/script.ts)
 1. № [823. Binary Trees With Factors](solutions/823.%20Binary%20Trees%20With%20Factors/script.ts)
 1. № [826. Most Profit Assigning Work](solutions/826.%20Most%20Profit%20Assigning%20Work/script.ts)
