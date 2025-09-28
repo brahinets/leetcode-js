@@ -347,6 +347,7 @@
 1. № [962. Maximum Width Ramp](solutions/962.%20Maximum%20Width%20Ramp/script.ts)
 1. № [966. Vowel Spellchecker](solutions/966.%20Vowel%20Spellchecker/script.ts)
 1. № [974. Subarray Sums Divisible by K](solutions/974.%20Subarray%20Sums%20Divisible%20by%20K/script.ts)
+1. № [976. Largest Perimeter Triangle](solutions/976.%20Largest%20Perimeter%20Triangle/script.ts)
 1. № [977. Squares of a Sorted Array](solutions/977.%20Squares%20of%20a%20Sorted%20Array/script.ts)
 1. № [979. Distribute Coins in Binary Tree](solutions/979.%20Distribute%20Coins%20in%20Binary%20Tree/script.ts)
 1. № [981. Time Based Key-Value Store](solutions/981.%20Time%20Based%20Key-Value%20Store/script.ts)
