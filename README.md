@@ -367,6 +367,7 @@
 1. № [1028. Recover a Tree From Preorder Traversal](solutions/1028.%20Recover%20a%20Tree%20From%20Preorder%20Traversal/script.ts)
 1. № [1035. Uncrossed Lines](solutions/1035.%20Uncrossed%20Lines/script.ts)
 1. № [1038. Binary Search Tree to Greater Sum Tree](solutions/1038.%20Binary%20Search%20Tree%20to%20Greater%20Sum%20Tree/script.ts)
+1. № [1039. Minimum Score Triangulation of Polygon](solutions/1039.%20Minimum%20Score%20Triangulation%20of%20Polygon/script.ts)
 1. № [1043. Partition Array for Maximum Sum](solutions/1043.%20Partition%20Array%20for%20Maximum%20Sum/script.ts)
 1. № [1046. Last Stone Weight](solutions/1046.%20Last%20Stone%20Weight/script.ts)
 1. № [1052. Grumpy Bookstore Owner](solutions/1052.%20Grumpy%20Bookstore%20Owner/script.ts)
