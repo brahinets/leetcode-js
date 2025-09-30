@@ -666,6 +666,7 @@
 1. № [2210. Count Hills and Valleys in an Array](solutions/2210.%20Count%20Hills%20and%20Valleys%20in%20an%20Array/script.ts)
 1. № [2215. Find the Difference of Two Arrays](solutions/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/script.ts)
 1. № [2220. Minimum Bit Flips to Convert Number](solutions/2220.%20Minimum%20Bit%20Flips%20to%20Convert%20Number/script.ts)
+1. № [2221. Find Triangular Sum of an Array](solutions/2221.%20Find%20Triangular%20Sum%20of%20an%20Array/script.ts)
 1. № [2225. Find Players With Zero or One Losses](solutions/2225.%20Find%20Players%20With%20Zero%20or%20One%20Losses/script.ts)
 1. № [2226. Maximum Candies Allocated to K Children](solutions/2226.%20Maximum%20Candies%20Allocated%20to%20K%20Children/script.ts)
 1. № [2235. Add Two Integers](solutions/2235.%20Add%20Two%20Integers/script.ts)
