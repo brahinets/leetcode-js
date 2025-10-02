@@ -844,6 +844,7 @@
 1. № [3097. Shortest Subarray With OR at Least K II](solutions/3097.%20Shortest%20Subarray%20With%20OR%20at%20Least%20K%20II/script.ts)
 1. № [3105. Longest Strictly Increasing or Strictly Decreasing Subarray](solutions/3105.%20Longest%20Strictly%20Increasing%20or%20Strictly%20Decreasing%20Subarray/script.ts)
 1. № [3108. Minimum Cost Walk in Weighted Graph](solutions/3108.%20Minimum%20Cost%20Walk%20in%20Weighted%20Graph/script.ts)
+1. № [3100. Water Bottles II](solutions/3100.%20Water%20Bottles%20II/script.ts)
 1. № [3110. Score of a String](solutions/3110.%20Score%20of%20a%20String/script.ts)
 1. № [3133. Minimum Array End](solutions/3133.%20Minimum%20Array%20End/script.ts)
 1. № [3136. Valid Word](solutions/3136.%20Valid%20Word/script.ts)
