@@ -82,6 +82,7 @@
 1. № [78. Subsets](solutions/78.%20Subsets/script.ts)
 1. № [79. Word Search](solutions/79.%20Word%20Search/script.ts)
 1. № [80. Remove Duplicates from Sorted Array II](solutions/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/script.ts)
+1. № [81. Search in Rotated Sorted Array II](solutions/81.%20Search%20in%20Rotated%20Sorted%20Array%20II/script.ts)
 1. № [85. Maximal Rectangle](solutions/85.%20Maximal%20Rectangle/script.ts)
 1. № [86. Partition List](solutions/86.%20Partition%20List/script.ts)
 1. № [91. Decode Ways](solutions/91.%20Decode%20Ways/script.ts)
