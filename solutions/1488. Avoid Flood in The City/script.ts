@@ -11,30 +11,33 @@ function avoidFlood(rains: number[]): number[] {
         if (lake === 0) {
             dryDays.push(i)
             result.push(1)
-        } else {
-            if (lakeMap.has(lake)) {
-                let found: boolean = false
+            continue
+        }
 
-                for (let j: number = 0; j < dryDays.length; j++) {
-                    if (dryDays[j] > lakeMap.get(lake)!) {
-                        result[dryDays[j]] = lake
-                        dryDays.splice(j, 1)
-                        found = true
-
-                        break
-                    }
-                }
-
-                if (!found) {
-                    return []
-                }
+        if (lakeMap.has(lake)) {
+            const dryDayIdx: number = findDryDay(dryDays, lakeMap.get(lake)!)
+            if (dryDayIdx === -1) {
+                return []
             }
 
-            lakeMap.set(lake, i)
+            result[dryDays[dryDayIdx]] = lake
 
-            result.push(-1)
+            dryDays.splice(dryDayIdx, 1)
         }
+
+        lakeMap.set(lake, i)
+        result.push(-1)
     }
 
     return result
+}
+
+function findDryDay(dryDays: number[], lastRainDay: number): number {
+    for (let j: number = 0; j < dryDays.length; j++) {
+        if (dryDays[j] > lastRainDay) {
+            return j
+        }
+    }
+
+    return -1
 }
