@@ -482,6 +482,7 @@
 1. № [1480. Running Sum of 1d Array](solutions/1480.%20Running%20Sum%20of%201d%20Array/script.ts)
 1. № [1481. Least Number of Unique Integers after K Removals](solutions/1481.%20Least%20Number%20of%20Unique%20Integers%20after%20K%20Removals/script.ts)
 1. № [1482. Minimum Number of Days to Make m Bouquets](solutions/1482.%20Minimum%20Number%20of%20Days%20to%20Make%20m%20Bouquets/script.ts)
+1. № [1488. Avoid Flood in The City](solutions/1488.%20Avoid%20Flood%20in%20The%20City/script.ts)
 1. № [1491. Average Salary Excluding the Minimum and Maximum Salary](solutions/1491.%20Average%20Salary%20Excluding%20the%20Minimum%20and%20Maximum%20Salary/script.ts)
 1. № [1493. Longest Subarray of 1's After Deleting One Element](solutions/1493.%20Longest%20Subarray%20of%201%27s%20After%20Deleting%20One%20Element/script.ts)
 1. № [1496. Path Crossing](solutions/1496.%20Path%20Crossing/script.ts)
