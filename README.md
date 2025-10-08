@@ -74,6 +74,7 @@
 1. № [69. Sqrt(x)](solutions/69.%20Sqrt%28x%29/script.ts)
 1. № [70. Climbing Stairs](solutions/70.%20Climbing%20Stairs/script.ts)
 1. № [71. Simplify Path](solutions/71.%20Simplify%20Path/script.ts)
+1. № [72. Edit Distance](solutions/72.%20Edit%20Distance/script.ts)
 1. № [73. Set Matrix Zeroes](solutions/73.%20Set%20Matrix%20Zeroes/script.ts)
 1. № [74. Search a 2D Matrix](solutions/74.%20Search%20a%202D%20Matrix/script.ts)
 1. № [75. Sort Colors](solutions/75.%20Sort%20Colors/script.ts)
