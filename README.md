@@ -854,6 +854,7 @@
 1. № [3110. Score of a String](solutions/3110.%20Score%20of%20a%20String/script.ts)
 1. № [3133. Minimum Array End](solutions/3133.%20Minimum%20Array%20End/script.ts)
 1. № [3136. Valid Word](solutions/3136.%20Valid%20Word/script.ts)
+1. № [3147. Taking Maximum Energy From the Mystic Dungeon](solutions/3147.%20Taking%20Maximum%20Energy%20From%20the%20Mystic%20Dungeon/script.ts)
 1. № [3151. Special Array I](solutions/3151.%20Special%20Array%20I/script.ts)
 1. № [3152. Special Array II](solutions/3152.%20Special%20Array%20II/script.ts)
 1. № [3160. Find the Number of Distinct Colors Among the Balls](solutions/3160.%20Find%20the%20Number%20of%20Distinct%20Colors%20Among%20the%20Balls/script.ts)
