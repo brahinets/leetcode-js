@@ -862,6 +862,7 @@
 1. № [3169. Count Days Without Meetings](solutions/3169.%20Count%20Days%20Without%20Meetings/script.ts)
 1. № [3170. Lexicographically Minimum String After Removing Stars](solutions/3170.%20Lexicographically%20Minimum%20String%20After%20Removing%20Stars/script.ts)
 1. № [3174. Clear Digits](solutions/3174.%20Clear%20Digits/script.ts)
+1. № [3186. Maximum Total Damage With Spell Casting](solutions/3186.%20Maximum%20Total%20Damage%20With%20Spell%20Casting/script.ts)
 1. № [3191. Minimum Operations to Make Binary Array Elements Equal to One I](solutions/3191.%20Minimum%20Operations%20to%20Make%20Binary%20Array%20Elements%20Equal%20to%20One%20I/script.ts)
 1. № [3195. Find the Minimum Area to Cover All Ones I](solutions/3195.%20Find%20the%20Minimum%20Area%20to%20Cover%20All%20Ones%20I/script.ts)
 1. № [3197. Find the Minimum Area to Cover All Ones II](solutions/3197.%20Find%20the%20Minimum%20Area%20to%20Cover%20All%20Ones%20II/script.ts)
