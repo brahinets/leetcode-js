@@ -775,6 +775,7 @@
 1. № [2593. Find Score of an Array After Marking All Elements](solutions/2593.%20Find%20Score%20of%20an%20Array%20After%20Marking%20All%20Elements/script.ts)
 1. № [2594. Minimum Time to Repair Cars](solutions/2594.%20Minimum%20Time%20to%20Repair%20Cars/script.ts)
 1. № [2597. The Number of Beautiful Subsets](solutions/2597.%20The%20Number%20of%20Beautiful%20Subsets/script.ts)
+1. № [2598. Smallest Missing Non-negative Integer After Operations](solutions/2598.%20Smallest%20Missing%20Non-negative%20Integer%20After%20Operations/script.ts)
 1. № [2601. Prime Subtraction Operation](solutions/2601.%20Prime%20Subtraction%20Operation/script.ts)
 1. № [2610. Convert an Array Into a 2D Array With Conditions](solutions/2610.%20Convert%20an%20Array%20Into%20a%202D%20Array%20With%20Conditions/script.ts)
 1. № [2616. Minimize the Maximum Difference of Pairs](solutions/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/script.ts)
