@@ -837,6 +837,7 @@
 1. № [2997. Minimum Number of Operations to Make Array XOR Equal to K](solutions/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/script.ts)
 1. № [2999. Count the Number of Powerful Integers](solutions/2999.%20Count%20the%20Number%20of%20Powerful%20Integers/script.ts)
 1. № [3000. Maximum Area of Longest Diagonal Rectangle](solutions/3000.%20Maximum%20Area%20of%20Longest%20Diagonal%20Rectangle/script.ts)
+1. № [3003. Maximize the Number of Partitions After Operations](solutions/3003.%20Maximize%20the%20Number%20of%20Partitions%20After%20Operations/script.ts)
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
 1. № [3011. Find if Array Can Be Sorted](solutions/3011.%20Find%20if%20Array%20Can%20Be%20Sorted/script.ts)
 1. № [3016. Minimum Number of Pushes to Type Word II](solutions/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/script.ts)
