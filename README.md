@@ -903,6 +903,7 @@
 1. № [3392. Count Subarrays of Length Three With a Condition](solutions/3392.%20Count%20Subarrays%20of%20Length%20Three%20With%20a%20Condition/script.ts)
 1. № [3394. Check if Grid can be Cut into Sections](solutions/3394.%20Check%20if%20Grid%20can%20be%20Cut%20into%20Sections/script.ts)
 1. № [3396. Minimum Number of Operations to Make Elements in Array Distinct](solutions/3396.%20Minimum%20Number%20of%20Operations%20to%20Make%20Elements%20in%20Array%20Distinct/script.ts)
+1. № [3397. Maximum Number of Distinct Elements After Operations](solutions/3397.%20Maximum%20Number%20of%20Distinct%20Elements%20After%20Operations/script.ts)
 1. № [3403. Find the Lexicographically Largest String From the Box I](solutions/3403.%20Find%20the%20Lexicographically%20Largest%20String%20From%20the%20Box%20I/script.ts)
 1. № [3405. Count the Number of Arrays with K Matching Adjacent Elements](solutions/3405.%20Count%20the%20Number%20of%20Arrays%20with%20K%20Matching%20Adjacent%20Elements/script.ts)
 1. № [3408. Design Task Manager](solutions/3408.%20Design%20Task%20Manager/script.ts)
