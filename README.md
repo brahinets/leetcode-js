@@ -527,6 +527,7 @@
 1. № [1611. Minimum One Bit Operations to Make Integers Zero](solutions/1611.%20Minimum%20One%20Bit%20Operations%20to%20Make%20Integers%20Zero/script.ts)
 1. № [1614. Maximum Nesting Depth of the Parentheses](solutions/1614.%20Maximum%20Nesting%20Depth%20of%20the%20Parentheses/script.ts)
 1. № [1624. Largest Substring Between Two Equal Characters](solutions/1624.%20Largest%20Substring%20Between%20Two%20Equal%20Characters/script.ts)
+1. № [1625. Lexicographically Smallest String After Applying Operations](solutions/1625.%20Lexicographically%20Smallest%20String%20After%20Applying%20Operations/script.ts)
 1. № [1630. Arithmetic Subarrays](solutions/1630.%20Arithmetic%20Subarrays/script.ts)
 1. № [1636. Sort Array by Increasing Frequency](solutions/1636.%20Sort%20Array%20by%20Increasing%20Frequency/script.ts)
 1. № [1637. Widest Vertical Area Between Two Points Containing No Points](solutions/1637.%20Widest%20Vertical%20Area%20Between%20Two%20Points%20Containing%20No%20Points/script.ts)
