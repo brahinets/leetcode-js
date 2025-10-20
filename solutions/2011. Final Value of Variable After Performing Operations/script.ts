@@ -1,15 +1,8 @@
 export {finalValueAfterOperations}
 
 function finalValueAfterOperations(operations: string[]): number {
-    let result: number = 0
+    let add: number = operations.filter((operation: string): boolean => operation[1] === "+").length
+    let subtract: number = operations.length - add
 
-    for (const operation of operations) {
-        if (operation[1] === "+") {
-            result++
-        } else {
-            result--
-        }
-    }
-
-    return result
+    return add - subtract
 }
