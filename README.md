@@ -615,6 +615,7 @@
 1. № [1992. Find All Groups of Farmland](solutions/1992.%20Find%20All%20Groups%20of%20Farmland/script.ts)
 1. № [2000. Reverse Prefix of Word](solutions/2000.%20Reverse%20Prefix%20of%20Word/script.ts)
 1. № [2009. Minimum Number of Operations to Make Array Continuous](solutions/2009.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Continuous/script.ts)
+1. № [2011. Final Value of Variable After Performing Operations](solutions/2011.%20Final%20Value%20of%20Variable%20After%20Performing%20Operations/script.ts)
 1. № [2014. Longest Subsequence Repeated k Times](solutions/2014.%20Longest%20Subsequence%20Repeated%20k%20Times/script.ts)
 1. № [2016. Maximum Difference Between Increasing Elements](solutions/2016.%20Maximum%20Difference%20Between%20Increasing%20Elements/script.ts)
 1. № [2017. Grid Game](solutions/2017.%20Grid%20Game/script.ts)
