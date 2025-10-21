@@ -1,6 +1,11 @@
 import {maxFrequency} from '../script'
 
 describe('3346. Maximum Frequency of an Element After Performing Operations I', (): void => {
+    it('Very Complex', (): void => {
+        expect(maxFrequency([2, 70, 73], 39, 2))
+            .toBe(2)
+    })
+
     it('Complex', (): void => {
         expect(maxFrequency([1, 4, 5], 1, 2))
             .toBe(2)

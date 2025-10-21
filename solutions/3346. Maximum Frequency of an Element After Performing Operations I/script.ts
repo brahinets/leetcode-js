@@ -10,10 +10,9 @@ function maxFrequency(nums: number[], k: number, numOperations: number): number 
     for (let right: number = 0; right < nums.length; right++) {
         total += nums[right]
 
-        while (nums[right] * (right - left + 1) - total > k * numOperations) {
+        while (nums[right] * (right - left + 1) - total > k) {
             total -= nums[left]
             left++
-
         }
 
         result = Math.max(result, right - left + 1)
