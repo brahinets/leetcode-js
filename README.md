@@ -895,6 +895,7 @@
 1. № [3337. Total Characters in String After Transformations II](solutions/3337.%20Total%20Characters%20in%20String%20After%20Transformations%20II/script.ts)
 1. № [3342. Find Minimum Time to Reach Last Room II](solutions/3342.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20II/script.ts)
 1. № [3343. Count Number of Balanced Permutations](solutions/3343.%20Count%20Number%20of%20Balanced%20Permutations/script.ts)
+1. № [3346. Maximum Frequency of an Element After Performing Operations I](solutions/3346.%20Maximum%20Frequency%20of%20an%20Element%20After%20Performing%20Operations%20I/script.ts)
 1. № [3350. Adjacent Increasing Subarrays Detection II](solutions/3350.%20Adjacent%20Increasing%20Subarrays%20Detection%20II/script.ts)
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
 1. № [3362. Zero Array Transformation III](solutions/3362.%20Zero%20Array%20Transformation%20III/script.ts)
