@@ -6,6 +6,11 @@ describe('3346. Maximum Frequency of an Element After Performing Operations I', 
             .toBe(2)
     })
 
+    it('No operations', (): void => {
+        expect(maxFrequency([2, 49], 97, 0))
+            .toBe(1)
+    })
+
     it('Complex', (): void => {
         expect(maxFrequency([1, 4, 5], 1, 2))
             .toBe(2)
