@@ -919,6 +919,7 @@
 1. № [3445. Maximum Difference Between Even and Odd Frequency II](solutions/3445.%20Maximum%20Difference%20Between%20Even%20and%20Odd%20Frequency%20II/script.ts)
 1. № [3446. Sort Matrix by Diagonals](solutions/3446.%20Sort%20Matrix%20by%20Diagonals/script.ts)
 1. № [3459. Length of Longest V-Shaped Diagonal Segment](solutions/3459.%20Length%20of%20Longest%20V-Shaped%20Diagonal%20Segment/script.ts)
+1. № [3461. Check If Digits Are Equal in String After Operations I](solutions/3461.%20Check%20If%20Digits%20Are%20Equal%20in%20String%20After%20Operations%20I/script.ts)
 1. № [3477. Fruits Into Baskets II](solutions/3477.%20Fruits%20Into%20Baskets%20II/script.ts)
 1. № [3479. Fruits Into Baskets III](solutions/3479.%20Fruits%20Into%20Baskets%20III/script.ts)
 1. № [3480. Maximize Subarrays After Removing One Conflicting Pair](solutions/3480.%20Maximize%20Subarrays%20After%20Removing%20One%20Conflicting%20Pair/script.ts)
