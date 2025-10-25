@@ -85,6 +85,7 @@
 1. № [80. Remove Duplicates from Sorted Array II](solutions/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/script.ts)
 1. № [81. Search in Rotated Sorted Array II](solutions/81.%20Search%20in%20Rotated%20Sorted%20Array%20II/script.ts)
 1. № [82. Remove Duplicates from Sorted List II](solutions/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II/script.ts)
+1. № [83. Remove Duplicates from Sorted List](solutions/83.%20Remove%20Duplicates%20from%20Sorted%20List/script.ts)
 1. № [85. Maximal Rectangle](solutions/85.%20Maximal%20Rectangle/script.ts)
 1. № [86. Partition List](solutions/86.%20Partition%20List/script.ts)
 1. № [91. Decode Ways](solutions/91.%20Decode%20Ways/script.ts)
