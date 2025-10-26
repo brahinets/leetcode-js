@@ -628,6 +628,7 @@
 1. № [2037. Minimum Number of Moves to Seat Everyone](solutions/2037.%20Minimum%20Number%20of%20Moves%20to%20Seat%20Everyone/script.ts)
 1. № [2038. Remove Colored Pieces if Both Neighbors are the Same Color](solutions/2038.%20Remove%20Colored%20Pieces%20if%20Both%20Neighbors%20are%20the%20Same%20Color/script.ts)
 1. № [2040. Kth Smallest Product of Two Sorted Arrays](solutions/2040.%20Kth%20Smallest%20Product%20of%20Two%20Sorted%20Arrays/script.ts)
+1. № [2043. Simple Bank System](solutions/2043.%20Simple%20Bank%20System/script.ts)
 1. № [2044. Count Number of Maximum Bitwise-OR Subsets](solutions/2044.%20Count%20Number%20of%20Maximum%20Bitwise-OR%20Subsets/script.ts)
 1. № [2045. Second Minimum Time to Reach Destination](solutions/2045.%20Second%20Minimum%20Time%20to%20Reach%20Destination/script.ts)
 1. № [2048. Next Greater Numerically Balanced Number](solutions/2048.%20Next%20Greater%20Numerically%20Balanced%20Number/script.ts)
