@@ -89,6 +89,7 @@
 1. № [84. Largest Rectangle in Histogram](solutions/84.%20Largest%20Rectangle%20in%20Histogram/script.ts)
 1. № [85. Maximal Rectangle](solutions/85.%20Maximal%20Rectangle/script.ts)
 1. № [86. Partition List](solutions/86.%20Partition%20List/script.ts)
+1. № [87. Scramble String](solutions/87.%20Scramble%20String/script.ts)
 1. № [91. Decode Ways](solutions/91.%20Decode%20Ways/script.ts)
 1. № [94. Binary Tree Inorder Traversal](solutions/94.%20Binary%20Tree%20Inorder%20Traversal/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
