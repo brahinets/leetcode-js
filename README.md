@@ -903,6 +903,7 @@
 1. № [3346. Maximum Frequency of an Element After Performing Operations I](solutions/3346.%20Maximum%20Frequency%20of%20an%20Element%20After%20Performing%20Operations%20I/script.ts)
 1. № [3347. Maximum Frequency of an Element After Performing Operations II](solutions/3347.%20Maximum%20Frequency%20of%20an%20Element%20After%20Performing%20Operations%20II/script.ts)
 1. № [3350. Adjacent Increasing Subarrays Detection II](solutions/3350.%20Adjacent%20Increasing%20Subarrays%20Detection%20II/script.ts)
+1. № [3354. Make Array Elements Equal to Zero](solutions/3354.%20Make%20Array%20Elements%20Equal%20to%20Zero/script.ts)
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
 1. № [3362. Zero Array Transformation III](solutions/3362.%20Zero%20Array%20Transformation%20III/script.ts)
 1. № [3363. Find the Maximum Number of Fruits Collected](solutions/3363.%20Find%20the%20Maximum%20Number%20of%20Fruits%20Collected/script.ts)
