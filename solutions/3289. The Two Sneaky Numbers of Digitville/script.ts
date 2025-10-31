@@ -12,5 +12,5 @@ function getSneakyNumbers(nums: number[]): number[] {
         }
     }
 
-    return sneakyNumbers
+    return sneakyNumbers.sort((a: number, b: number): number => a - b)
 }
