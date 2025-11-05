@@ -897,6 +897,7 @@
 1. № [3306. Count of Substrings Containing Every Vowel and K Consonants II](solutions/3306.%20Count%20of%20Substrings%20Containing%20Every%20Vowel%20and%20K%20Consonants%20II/script.ts)
 1. № [3307. Find the K-th Character in String Game II](solutions/3307.%20Find%20the%20K-th%20Character%20in%20String%20Game%20II/script.ts)
 1. № [3318. Find X-Sum of All K-Long Subarrays I](solutions/3318.%20Find%20X-Sum%20of%20All%20K-Long%20Subarrays%20I/script.ts)
+1. № [3321. Find X-Sum of All K-Long Subarrays II](solutions/3321.%20Find%20X-Sum%20of%20All%20K-Long%20Subarrays%20II/script.ts)
 1. № [3330. Find the Original Typed String I](solutions/3330.%20Find%20the%20Original%20Typed%20String%20I/script.ts)
 1. № [3333. Find the Original Typed String II](solutions/3333.%20Find%20the%20Original%20Typed%20String%20II/script.ts)
 1. № [3335. Total Characters in String After Transformations I](solutions/3335.%20Total%20Characters%20in%20String%20After%20Transformations%20I/script.ts)
