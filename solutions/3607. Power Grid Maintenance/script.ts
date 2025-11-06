@@ -31,7 +31,7 @@ function processQueries(
         }
 
         const station: number = minimumOnlineStations.get(root)!
-        if (online[i] === true) {
+        if (online[i]) {
             if (station === -1 || station > i) {
                 minimumOnlineStations.set(root, i)
             }
