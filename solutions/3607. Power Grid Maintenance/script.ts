@@ -9,9 +9,9 @@ function processQueries(
     queries: number[][],
 ): number[] {
     const dsu: DisjointSetUnion = new DisjointSetUnion(c + 1)
-    connections.forEach(([u, v]: number[]): void => {
+    for (const [u, v] of connections) {
         dsu.union(u, v)
-    })
+    }
 
     const online: boolean[] = arrayOf(true, c + 1)
     const offlineCounts: number[] = arrayOfZeros(c + 1)
