@@ -945,5 +945,6 @@
 1. № [3516. Find Closest Person](solutions/3516.%20Find%20Closest%20Person/script.ts)
 1. № [3539. Find Sum of Array Product of Magical Sequences](solutions/3539.%20Find%20Sum%20of%20Array%20Product%20of%20Magical%20Sequences/script.ts)
 1. № [3541. Find Most Frequent Vowel and Consonant](solutions/3541.%20Find%20Most%20Frequent%20Vowel%20and%20Consonant/script.ts)
+1. № [3607. Power Grid Maintenance](solutions/3607.%20Power%20Grid%20Maintenance/script.ts)
 
 </details>
