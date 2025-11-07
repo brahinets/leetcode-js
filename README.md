@@ -770,6 +770,7 @@
 1. № [2542. Maximum Subsequence Score](solutions/2542.%20Maximum%20Subsequence%20Score/script.ts)
 1. № [2551. Put Marbles in Bags](solutions/2551.%20Put%20Marbles%20in%20Bags/script.ts)
 1. № [2523. Closest Prime Numbers in Range](solutions/2523.%20Closest%20Prime%20Numbers%20in%20Range/script.ts)
+1. № [2528. Maximize the Minimum Powered City](solutions/2528.%20Maximize%20the%20Minimum%20Powered%20City/script.ts)
 1. № [2529. Maximum Count of Positive Integer and Negative Integer](solutions/2529.%20Maximum%20Count%20of%20Positive%20Integer%20and%20Negative%20Integer/script.ts)
 1. № [2554. Maximum Number of Integers to Choose From a Range I](solutions/2554.%20Maximum%20Number%20of%20Integers%20to%20Choose%20From%20a%20Range%20I/script.ts)
 1. № [2558. Take Gifts From the Richest Pile](solutions/2558.%20Take%20Gifts%20From%20the%20Richest%20Pile/script.ts)
