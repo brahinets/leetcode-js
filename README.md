@@ -94,6 +94,7 @@
 1. № [89. Gray Code](solutions/89.%20Gray%20Code/script.ts)
 1. № [90. Subsets II](solutions/90.%20Subsets%20II/script.ts)
 1. № [91. Decode Ways](solutions/91.%20Decode%20Ways/script.ts)
+1. № [92. Reverse Linked List II](solutions/92.%20Reverse%20Linked%20List%20II/script.ts)
 1. № [94. Binary Tree Inorder Traversal](solutions/94.%20Binary%20Tree%20Inorder%20Traversal/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
 1. № [100. Same Tree](solutions/100.%20Same%20Tree/script.ts)
