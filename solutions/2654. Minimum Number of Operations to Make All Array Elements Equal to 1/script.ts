@@ -1,16 +1,19 @@
 export {minOperations}
 
 function minOperations(nums: number[]): number {
-    let minLen: number = Number.MAX_SAFE_INTEGER
+    const ones: number = nums.filter((x: number): boolean => x === 1).length
 
-    if (nums.includes(1)) {
-        return nums.length - 1
+    if (ones > 0) {
+        return nums.length - ones
     }
 
-    for (let i = 0; i < nums.length; i++) {
+    let minLen: number = Infinity
+    for (let i: number = 0; i < nums.length; i++) {
         let g: number = nums[i]
-        for (let j = i; j < nums.length; j++) {
+
+        for (let j: number = i + 1; j < nums.length; j++) {
             g = gcd(g, nums[j])
+
             if (g === 1) {
                 minLen = Math.min(minLen, j - i + 1)
                 break
@@ -18,11 +21,7 @@ function minOperations(nums: number[]): number {
         }
     }
 
-    if (minLen === Number.MAX_SAFE_INTEGER) {
-        return -1
-    }
-
-    return minLen - 1 + nums.length - 1
+    return minLen === Infinity ? -1 : minLen + nums.length - 2
 }
 
 function gcd(a: number, b: number): number {
