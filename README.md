@@ -895,6 +895,7 @@
 1. № [3223. Minimum Length of String After Operations](solutions/3223.%20Minimum%20Length%20of%20String%20After%20Operations/script.ts)
 1. № [3227. Vowels Game in a String](solutions/3227.%20Vowels%20Game%20in%20a%20String/script.ts)
 1. № [3228. Maximum Number of Operations to Move Ones to the End](solutions/3228.%20Maximum%20Number%20of%20Operations%20to%20Move%20Ones%20to%20the%20End/script.ts)
+1. № [3234. Count the Number of Substrings With Dominant Ones](solutions/3234.%20Count%20the%20Number%20of%20Substrings%20With%20Dominant%20Ones/script.ts)
 1. № [3243. Shortest Distance After Road Addition Queries I](solutions/3243.%20Shortest%20Distance%20After%20Road%20Addition%20Queries%20I/script.ts)
 1. № [3254. Find the Power of K-Size Subarrays I](solutions/3254.%20Find%20the%20Power%20of%20K-Size%20Subarrays%20I/script.ts)
 1. № [3264. Final Array State After K Multiplication Operations I](solutions/3264.%20Final%20Array%20State%20After%20K%20Multiplication%20Operations%20I/script.ts)
