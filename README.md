@@ -672,6 +672,7 @@
 1. № [2145. Count the Hidden Sequences](solutions/2145.%20Count%20the%20Hidden%20Sequences/script.ts)
 1. № [2147. Number of Ways to Divide a Long Corridor](solutions/2147.%20Number%20of%20Ways%20to%20Divide%20a%20Long%20Corridor/script.ts)
 1. № [2149. Rearrange Array Elements by Sign](solutions/2149.%20Rearrange%20Array%20Elements%20by%20Sign/script.ts)
+1. № [2154. Keep Multiplying Found Values by Two](solutions/2154.%20Keep%20Multiplying%20Found%20Values%20by%20Two/script.ts)
 1. № [2161. Partition Array According to Given Pivot](solutions/2161.%20Partition%20Array%20According%20to%20Given%20Pivot/script.ts)
 1. № [2163. Minimum Difference in Sums After Removal of Elements](solutions/2163.%20Minimum%20Difference%20in%20Sums%20After%20Removal%20of%20Elements/script.ts)
 1. № [2169. Count Operations to Obtain Zero](solutions/2169.%20Count%20Operations%20to%20Obtain%20Zero/script.ts)
