@@ -893,6 +893,7 @@
 1. № [3191. Minimum Operations to Make Binary Array Elements Equal to One I](solutions/3191.%20Minimum%20Operations%20to%20Make%20Binary%20Array%20Elements%20Equal%20to%20One%20I/script.ts)
 1. № [3195. Find the Minimum Area to Cover All Ones I](solutions/3195.%20Find%20the%20Minimum%20Area%20to%20Cover%20All%20Ones%20I/script.ts)
 1. № [3197. Find the Minimum Area to Cover All Ones II](solutions/3197.%20Find%20the%20Minimum%20Area%20to%20Cover%20All%20Ones%20II/script.ts)
+1. № [3190. Find Minimum Operations to Make All Elements Divisible by Three](solutions/3190.%20Find%20Minimum%20Operations%20to%20Make%20All%20Elements%20Divisible%20by%20Three/script.ts)
 1. № [3201. Find the Maximum Length of Valid Subsequence I](solutions/3201.%20Find%20the%20Maximum%20Length%20of%20Valid%20Subsequence%20I/script.ts)
 1. № [3202. Find the Maximum Length of Valid Subsequence II](solutions/3202.%20Find%20the%20Maximum%20Length%20of%20Valid%20Subsequence%20II/script.ts)
 1. № [3203. Find Minimum Diameter After Merging Two Trees](solutions/3203.%20Find%20Minimum%20Diameter%20After%20Merging%20Two%20Trees/script.ts)
