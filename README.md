@@ -378,6 +378,7 @@
 1. № [1007. Minimum Domino Rotations For Equal Row](solutions/1007.%20Minimum%20Domino%20Rotations%20For%20Equal%20Row/script.ts)
 1. № [1009. Complement of Base 10 Integer](solutions/1009.%20Complement%20of%20Base%2010%20Integer/script.ts)
 1. № [1014. Best Sightseeing Pair](solutions/1014.%20Best%20Sightseeing%20Pair/script.ts)
+1. № [1018. Binary Prefix Divisible By 5](solutions/1018.%20Binary%20Prefix%20Divisible%20By%205/script.ts)
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
 1. № [1026. Maximum Difference Between Node and Ancestor](solutions/1026.%20Maximum%20Difference%20Between%20Node%20and%20Ancestor/script.ts)
 1. № [1027. Longest Arithmetic Subsequence](solutions/1027.%20Longest%20Arithmetic%20Subsequence/script.ts)
