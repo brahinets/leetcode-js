@@ -754,6 +754,7 @@
 1. № [2429. Minimize XOR](solutions/2429.%20Minimize%20XOR/script.ts)
 1. № [2433. Find The Original Array of Prefix Xor](solutions/2433.%20Find%20The%20Original%20Array%20of%20Prefix%20Xor/script.ts)
 1. № [2434. Using a Robot to Print the Lexicographically Smallest String](solutions/2434.%20Using%20a%20Robot%20to%20Print%20the%20Lexicographically%20Smallest%20String/script.ts)
+1. № [2435. Paths in Matrix Whose Sum Is Divisible by K](solutions/2435.%20Paths%20in%20Matrix%20Whose%20Sum%20Is%20Divisible%20by%20K/script.ts)
 1. № [2438. Range Product Queries of Powers](solutions/2438.%20Range%20Product%20Queries%20of%20Powers/script.ts)
 1. № [2439. Minimize Maximum of Array](solutions/2439.%20Minimize%20Maximum%20of%20Array/script.ts)
 1. № [2441. Largest Positive Integer That Exists With Its Negative](solutions/2441.%20Largest%20Positive%20Integer%20That%20Exists%20With%20Its%20Negative/script.ts)
