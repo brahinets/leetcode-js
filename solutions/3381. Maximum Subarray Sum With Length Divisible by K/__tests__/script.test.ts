@@ -1,0 +1,18 @@
+import {maxSubarraySum} from '../script'
+
+describe('3381. Maximum Subarray Sum With Length Divisible by K', (): void => {
+    it('One', (): void => {
+        expect(maxSubarraySum([1, 2], 1))
+            .toBe(3)
+    })
+
+    it('Two', (): void => {
+        expect(maxSubarraySum([-1, -2, -3, -4, -5], 4))
+            .toBe(-10)
+    })
+
+    it('Three', (): void => {
+        expect(maxSubarraySum([-5, 1, 2, -3, 4], 2))
+            .toBe(4)
+    })
+})

@@ -937,6 +937,7 @@
 1. № [3372. Maximize the Number of Target Nodes After Connecting Trees I](solutions/3372.%20Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20I/script.ts)
 1. № [3373. Maximize the Number of Target Nodes After Connecting Trees II](solutions/3373.%20Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20II/script.ts)
 1. № [3375. Minimum Operations to Make Array Values Equal to K](solutions/3375.%20Minimum%20Operations%20to%20Make%20Array%20Values%20Equal%20to%20K/script.ts)
+1. № [3381. Maximum Subarray Sum With Length Divisible by K](solutions/3381.%20Maximum%20Subarray%20Sum%20With%20Length%20Divisible%20by%20K/script.ts)
 1. № [3392. Count Subarrays of Length Three With a Condition](solutions/3392.%20Count%20Subarrays%20of%20Length%20Three%20With%20a%20Condition/script.ts)
 1. № [3394. Check if Grid can be Cut into Sections](solutions/3394.%20Check%20if%20Grid%20can%20be%20Cut%20into%20Sections/script.ts)
 1. № [3396. Minimum Number of Operations to Make Elements in Array Distinct](solutions/3396.%20Minimum%20Number%20of%20Operations%20to%20Make%20Elements%20in%20Array%20Distinct/script.ts)
