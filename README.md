@@ -97,6 +97,7 @@
 1. № [92. Reverse Linked List II](solutions/92.%20Reverse%20Linked%20List%20II/script.ts)
 1. № [93. Restore IP Addresses](solutions/93.%20Restore%20IP%20Addresses/script.ts)
 1. № [94. Binary Tree Inorder Traversal](solutions/94.%20Binary%20Tree%20Inorder%20Traversal/script.ts)
+1. № [95. Unique Binary Search Trees II](solutions/95.%20Unique%20Binary%20Search%20Trees%20II/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
 1. № [100. Same Tree](solutions/100.%20Same%20Tree/script.ts)
 1. № [101. Symmetric Tree](solutions/101.%20Symmetric%20Tree/script.ts)
