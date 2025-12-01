@@ -676,6 +676,7 @@
 1. № [2134. Minimum Swaps to Group All 1's Together II](solutions/2134.%20Minimum%20Swaps%20to%20Group%20All%201%27s%20Together%20II/script.ts)
 1. № [2138. Divide a String Into Groups of Size k](solutions/2138.%20Divide%20a%20String%20Into%20Groups%20of%20Size%20k/script.ts)
 1. № [2140. Solving Questions With Brainpower](solutions/2140.%20Solving%20Questions%20With%20Brainpower/script.ts)
+1. № [2141. Maximum Running Time of N Computers](solutions/2141.%20Maximum%20Running%20Time%20of%20N%20Computers/script.ts)
 1. № [2145. Count the Hidden Sequences](solutions/2145.%20Count%20the%20Hidden%20Sequences/script.ts)
 1. № [2147. Number of Ways to Divide a Long Corridor](solutions/2147.%20Number%20of%20Ways%20to%20Divide%20a%20Long%20Corridor/script.ts)
 1. № [2149. Rearrange Array Elements by Sign](solutions/2149.%20Rearrange%20Array%20Elements%20by%20Sign/script.ts)
