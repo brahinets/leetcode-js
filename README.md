@@ -971,5 +971,6 @@
 1. № [3541. Find Most Frequent Vowel and Consonant](solutions/3541.%20Find%20Most%20Frequent%20Vowel%20and%20Consonant/script.ts)
 1. № [3542. Minimum Operations to Convert All Elements to Zero](solutions/3542.%20Minimum%20Operations%20to%20Convert%20All%20Elements%20to%20Zero/script.ts)
 1. № [3607. Power Grid Maintenance](solutions/3607.%20Power%20Grid%20Maintenance/script.ts)
+1. № [3623. Count Number of Trapezoids I](solutions/3623.%20Count%20Number%20of%20Trapezoids%20I/script.ts)
 
 </details>
