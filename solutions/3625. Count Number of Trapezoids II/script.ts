@@ -1,88 +1,113 @@
 export {countTrapezoids}
 
-type PointPair = {
-    p1: number[]
-    p2: number[]
-}
+type SlopeToIntercept = Map<number, number[]>
+type MidToSlope = Map<number, number[]>
+
+const INF_SLOPE: number = 1e9 + 7
 
 function countTrapezoids(points: number[][]): number {
+    const slopeToIntercept: SlopeToIntercept = new Map<number, number[]>()
+    const midToSlope: MidToSlope = new Map<number, number[]>()
+
+    populatePairMaps(points, INF_SLOPE, slopeToIntercept, midToSlope)
+
+    const positivePairs: number = countPairsBySlope(slopeToIntercept)
+    const collinearCorrection: number = countPairsByMid(midToSlope)
+
+    return positivePairs - collinearCorrection
+}
+
+function populatePairMaps(
+    points: number[][],
+    INF_SLOPE: number,
+    slopeToIntercept: SlopeToIntercept,
+    midToSlope: MidToSlope
+): void {
     const n: number = points.length
-    if (n < 4) {
-        return 0
-    }
 
-    const slopes: Map<string, PointPair[]> = new Map<string, PointPair[]>()
+    for (let i: number = 0; i < n; i++) {
+        const [x1, y1] = points[i]
 
-    for (let i: number = 0; i < n; ++i) {
-        for (let j: number = i + 1; j < n; ++j) {
-            const s: string = slope(points[i], points[j])
+        for (let j: number = i + 1; j < n; j++) {
+            const [x2, y2] = points[j]
+            const dx: number = x1 - x2
+            const dy: number = y1 - y2
 
-            if (!slopes.has(s)) {
-                slopes.set(s, [])
+            const {slope, intercept} = computeSlopeIntercept(x1, y1, x2, y2, dx, dy, INF_SLOPE)
+            const midKey: number = computeMidKey(x1, y1, x2, y2)
+
+            if (!slopeToIntercept.has(slope)) {
+                slopeToIntercept.set(slope, [])
             }
+            slopeToIntercept.get(slope)!.push(intercept)
 
-            slopes.get(s)!.push({p1: points[i], p2: points[j]})
+            if (!midToSlope.has(midKey)) {
+                midToSlope.set(midKey, [])
+            }
+            midToSlope.get(midKey)!.push(slope)
         }
     }
+}
 
-    let count: number = 0
-    for (const pairs of slopes.values()) {
-        if (pairs.length < 2) {
+function computeSlopeIntercept(
+    x1: number,
+    y1: number,
+    x2: number,
+    y2: number,
+    dx: number,
+    dy: number,
+    INF_SLOPE: number
+): { slope: number, intercept: number } {
+    if (x2 === x1) {
+        return {slope: INF_SLOPE, intercept: x1}
+    }
+
+    const slope: number = (y2 - y1) / (x2 - x1)
+    const intercept: number = (y1 * dx - x1 * dy) / dx
+
+    return {slope, intercept}
+}
+
+function computeMidKey(x1: number, y1: number, x2: number, y2: number): number {
+    return (x1 + x2) * 10000 + (y1 + y2)
+}
+
+function countPairsBySlope(slopeToIntercept: SlopeToIntercept): number {
+    let total: number = 0
+    for (const intercepts of slopeToIntercept.values()) {
+        if (intercepts.length <= 1) {
             continue
         }
+        total += countCombinationsGroupedByValue(intercepts)
+    }
+    return total
+}
 
-        for (let i: number = 0; i < pairs.length; ++i) {
-            for (let j: number = i + 1; j < pairs.length; ++j) {
-                const {p1: a, p2: b}: PointPair = pairs[i]
-                const {p1: c, p2: d}: PointPair = pairs[j]
+function countPairsByMid(midToSlope: MidToSlope): number {
+    let total: number = 0
 
-                if (orientation(a, b, c) !== 0) {
-                    count++
-                }
-            }
+    for (const slopes of midToSlope.values()) {
+        if (slopes.length <= 1) {
+            continue
         }
+        total += countCombinationsGroupedByValue(slopes)
     }
 
-    return count
+    return total
 }
 
-function slope(p1: number[], p2: number[]): string {
-    const dy: number = p2[1] - p1[1]
-    const dx: number = p2[0] - p1[0]
-    if (dx === 0) {
-        return 'inf'
-    }
-    if (dy === 0) {
-        return '0'
+function countCombinationsGroupedByValue(values: number[]): number {
+    const frequency: Map<number, number> = new Map<number, number>()
+    for (const v of values) {
+        frequency.set(v, (frequency.get(v) || 0) + 1)
     }
 
-    const commonDivisor: number = gcd(dy, dx)
-    let a: number = dy / commonDivisor
-    let b: number = dx / commonDivisor
-
-    if (b < 0) {
-        a = -a
-        b = -b
+    let pairs: number = 0
+    let prefixSum: number = 0
+    for (const count of frequency.values()) {
+        pairs += prefixSum * count
+        prefixSum += count
     }
 
-    return `${a}/${b}`
+    return pairs
 }
-
-function gcd(a: number, b: number): number {
-    if (b === 0) {
-        return a
-    } else {
-        return gcd(b, a % b)
-    }
-}
-
-function orientation(p: number[], q: number[], r: number[]): number {
-    const val: number = (q[1] - p[1]) * (r[0] - q[0]) - (q[0] - p[0]) * (r[1] - q[1])
-
-    if (val === 0) {
-        return 0
-    }
-
-    return (val > 0) ? 1 : 2
-}
-
