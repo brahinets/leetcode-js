@@ -697,6 +697,7 @@
 1. № [2200. Find All K-Distant Indices in an Array](solutions/2200.%20Find%20All%20K-Distant%20Indices%20in%20an%20Array/script.ts)
 1. № [2206. Divide Array Into Equal Pairs](solutions/2206.%20Divide%20Array%20Into%20Equal%20Pairs/script.ts)
 1. № [2210. Count Hills and Valleys in an Array](solutions/2210.%20Count%20Hills%20and%20Valleys%20in%20an%20Array/script.ts)
+1. № [2211. Count Collisions on a Road](solutions/2211.%20Count%20Collisions%20on%20a%20Road/script.ts)
 1. № [2215. Find the Difference of Two Arrays](solutions/2215.%20Find%20the%20Difference%20of%20Two%20Arrays/script.ts)
 1. № [2220. Minimum Bit Flips to Convert Number](solutions/2220.%20Minimum%20Bit%20Flips%20to%20Convert%20Number/script.ts)
 1. № [2221. Find Triangular Sum of an Array](solutions/2221.%20Find%20Triangular%20Sum%20of%20an%20Array/script.ts)
