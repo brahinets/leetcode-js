@@ -950,6 +950,7 @@
 1. № [3405. Count the Number of Arrays with K Matching Adjacent Elements](solutions/3405.%20Count%20the%20Number%20of%20Arrays%20with%20K%20Matching%20Adjacent%20Elements/script.ts)
 1. № [3408. Design Task Manager](solutions/3408.%20Design%20Task%20Manager/script.ts)
 1. № [3423. Maximum Difference Between Adjacent Elements in a Circular Array](solutions/3423.%20Maximum%20Difference%20Between%20Adjacent%20Elements%20in%20a%20Circular%20Array/script.ts)
+1. № [3432. Count Partitions with Even Sum Difference](solutions/3432.%20Count%20Partitions%20with%20Even%20Sum%20Difference/script.ts)
 1. № [3439. Reschedule Meetings for Maximum Free Time I](solutions/3439.%20Reschedule%20Meetings%20for%20Maximum%20Free%20Time%20I/script.ts)
 1. № [3440. Reschedule Meetings for Maximum Free Time II](solutions/3440.%20Reschedule%20Meetings%20for%20Maximum%20Free%20Time%20II/script.ts)
 1. № [3442. Maximum Difference Between Even and Odd Frequency I](solutions/3442.%20Maximum%20Difference%20Between%20Even%20and%20Odd%20Frequency%20I/script.ts)
