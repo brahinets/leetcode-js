@@ -619,6 +619,7 @@
 1. № [1920. Build Array from Permutation](solutions/1920.%20Build%20Array%20from%20Permutation/script.ts)
 1. № [1921. Eliminate Maximum Number of Monsters](solutions/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/script.ts)
 1. № [1922. Count Good Numbers](solutions/1922.%20Count%20Good%20Numbers/script.ts)
+1. № [1925. Count Square Sum Triples](solutions/1925.%20Count%20Square%20Sum%20Triples/script.ts)
 1. № [1930. Unique Length-3 Palindromic Subsequences](solutions/1930.%20Unique%20Length-3%20Palindromic%20Subsequences/script.ts)
 1. № [1931. Painting a Grid With Three Different Colors](solutions/1931.%20Painting%20a%20Grid%20With%20Three%20Different%20Colors/script.ts)
 1. № [1935. Maximum Number of Words You Can Type](solutions/1935.%20Maximum%20Number%20of%20Words%20You%20Can%20Type/script.ts)
