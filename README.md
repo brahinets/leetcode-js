@@ -974,6 +974,7 @@
 1. № [3539. Find Sum of Array Product of Magical Sequences](solutions/3539.%20Find%20Sum%20of%20Array%20Product%20of%20Magical%20Sequences/script.ts)
 1. № [3541. Find Most Frequent Vowel and Consonant](solutions/3541.%20Find%20Most%20Frequent%20Vowel%20and%20Consonant/script.ts)
 1. № [3542. Minimum Operations to Convert All Elements to Zero](solutions/3542.%20Minimum%20Operations%20to%20Convert%20All%20Elements%20to%20Zero/script.ts)
+1. № [3577. Count the Number of Computer Unlocking Permutations](solutions/3577.%20Count%20the%20Number%20of%20Computer%20Unlocking%20Permutations/script.ts)
 1. № [3578. Count Partitions With Max-Min Difference at Most K](solutions/3578.%20Count%20Partitions%20With%20Max-Min%20Difference%20at%20Most%20K/script.ts)
 1. № [3583. Count Special Triplets](solutions/3583.%20Count%20Special%20Triplets/script.ts)
 1. № [3607. Power Grid Maintenance](solutions/3607.%20Power%20Grid%20Maintenance/script.ts)
