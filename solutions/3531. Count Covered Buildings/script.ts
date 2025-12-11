@@ -1,9 +1,9 @@
 import {arrayOf} from "../../common/array-factories"
 
 export function countCoveredBuildings(n: number, buildings: number[][]): number {
-    const maxRow: number[] = arrayOf(n + 1, 0)
+    const maxRow: number[] = arrayOf(0, n + 1)
     const minRow: number[] = arrayOf(n + 1, n + 1)
-    const maxCol: number[] = arrayOf(n + 1, 0)
+    const maxCol: number[] = arrayOf(0, n + 1)
     const minCol: number[] = arrayOf(n + 1, n + 1)
 
     for (const [x, y] of buildings) {
