@@ -26,13 +26,13 @@ function validateCoupons(
     }
 
     valid.sort((a: Coupon, b: Coupon): number => {
-        const catDiff: number = CATEGORY_ORDER[a.businessLine] - CATEGORY_ORDER[b.businessLine]
-
-        if (catDiff !== 0) {
-            return catDiff
+        const orderA: number = CATEGORY_ORDER[a.businessLine]
+        const orderB: number = CATEGORY_ORDER[b.businessLine]
+        if (orderA !== orderB) {
+            return orderA - orderB
         }
 
-        return a.code.localeCompare(b.code)
+        return b.code.localeCompare(a.code)
     })
 
     return valid.map((v: Coupon): string => v.code)
