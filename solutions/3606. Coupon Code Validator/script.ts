@@ -32,7 +32,7 @@ function validateCoupons(
             return orderA - orderB
         }
 
-        return b.code.localeCompare(a.code)
+        return a.code < b.code ? -1 : a.code > b.code ? 1 : 0;
     })
 
     return valid.map((v: Coupon): string => v.code)

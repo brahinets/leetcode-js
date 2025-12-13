@@ -24,4 +24,12 @@ describe('3606. Coupon Code Validator', (): void => {
             [true, true])
         ).toEqual(["MI", "b_"])
     })
+
+    it('Sorting 2', (): void => {
+        expect(validateCoupons(
+            ["Qf8NjqOTYp", "w4xOTEM20C"],
+            ["pharmacy", "pharmacy"],
+            [true, true])
+        ).toEqual(["Qf8NjqOTYp", "w4xOTEM20C"])
+    })
 })
