@@ -979,6 +979,7 @@
 1. № [3577. Count the Number of Computer Unlocking Permutations](solutions/3577.%20Count%20the%20Number%20of%20Computer%20Unlocking%20Permutations/script.ts)
 1. № [3578. Count Partitions With Max-Min Difference at Most K](solutions/3578.%20Count%20Partitions%20With%20Max-Min%20Difference%20at%20Most%20K/script.ts)
 1. № [3583. Count Special Triplets](solutions/3583.%20Count%20Special%20Triplets/script.ts)
+1. № [3606. Coupon Code Validator](solutions/3606.%20Coupon%20Code%20Validator/script.ts)
 1. № [3607. Power Grid Maintenance](solutions/3607.%20Power%20Grid%20Maintenance/script.ts)
 1. № [3623. Count Number of Trapezoids I](solutions/3623.%20Count%20Number%20of%20Trapezoids%20I/script.ts)
 1. № [3625. Count Number of Trapezoids II](solutions/3625.%20Count%20Number%20of%20Trapezoids%20II/script.ts)
