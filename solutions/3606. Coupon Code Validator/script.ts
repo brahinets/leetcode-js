@@ -4,7 +4,7 @@ type Coupon = {
     code: string
     businessLine: string
 }
-
+const CODE_REGEX: RegExp = /^\w+$/
 const ALLOWED_CATEGORIES: Set<string> = new Set<string>(['electronics', 'grocery', 'pharmacy', 'restaurant'])
 const CATEGORY_ORDER: Record<string, number> = {
     electronics: 0,
@@ -39,5 +39,5 @@ function validateCoupons(
 }
 
 function isValidCode(code: string): boolean {
-    return code.length > 0 && /^[a-zA-Z0-9_]+$/.test(code)
+    return code.length > 0 && CODE_REGEX.test(code)
 }
