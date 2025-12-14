@@ -101,6 +101,7 @@
 1. № [96. Unique Binary Search Trees](solutions/96.%20Unique%20Binary%20Search%20Trees/script.ts)
 1. № [97. Interleaving String](solutions/97.%20Interleaving%20String/script.ts)
 1. № [98. Validate Binary Search Tree](solutions/98.%20Validate%20Binary%20Search%20Tree/script.ts)
+1. № [99. Recover Binary Search Tree](solutions/99.%20Recover%20Binary%20Search%20Tree/script.ts)
 1. № [100. Same Tree](solutions/100.%20Same%20Tree/script.ts)
 1. № [101. Symmetric Tree](solutions/101.%20Symmetric%20Tree/script.ts)
 1. № [102. Binary Tree Level Order Traversal](solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal/script.ts)
