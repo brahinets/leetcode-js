@@ -670,6 +670,7 @@
 1. № [2106. Maximum Fruits Harvested After at Most K Steps](solutions/2106.%20Maximum%20Fruits%20Harvested%20After%20at%20Most%20K%20Steps/script.ts)
 1. № [2108. Find First Palindromic String in the Array](solutions/2108.%20Find%20First%20Palindromic%20String%20in%20the%20Array/script.ts)
 1. № [2109. Adding Spaces to a String](solutions/2109.%20Adding%20Spaces%20to%20a%20String/script.ts)
+1. № [2110. Number of Smooth Descent Periods of a Stock](solutions/2110.%20Number%20of%20Smooth%20Descent%20Periods%20of%20a%20Stock/script.ts)
 1. № [2115. Find All Possible Recipes from Given Supplies](solutions/2115.%20Find%20All%20Possible%20Recipes%20from%20Given%20Supplies/script.ts)
 1. № [2116. Check if a Parentheses String Can Be Valid](solutions/2116.%20Check%20if%20a%20Parentheses%20String%20Can%20Be%20Valid/script.ts)
 1. № [2125. Number of Laser Beams in a Bank](solutions/2125.%20Number%20of%20Laser%20Beams%20in%20a%20Bank/script.ts)
