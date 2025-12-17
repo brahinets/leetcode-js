@@ -979,6 +979,7 @@
 1. № [3541. Find Most Frequent Vowel and Consonant](solutions/3541.%20Find%20Most%20Frequent%20Vowel%20and%20Consonant/script.ts)
 1. № [3542. Minimum Operations to Convert All Elements to Zero](solutions/3542.%20Minimum%20Operations%20to%20Convert%20All%20Elements%20to%20Zero/script.ts)
 1. № [3562. Maximum Profit from Trading Stocks with Discounts](solutions/3562.%20Maximum%20Profit%20from%20Trading%20Stocks%20with%20Discounts/script.ts)
+1. № [3573. Best Time to Buy and Sell Stock V](solutions/3573.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20V/script.ts)
 1. № [3577. Count the Number of Computer Unlocking Permutations](solutions/3577.%20Count%20the%20Number%20of%20Computer%20Unlocking%20Permutations/script.ts)
 1. № [3578. Count Partitions With Max-Min Difference at Most K](solutions/3578.%20Count%20Partitions%20With%20Max-Min%20Difference%20at%20Most%20K/script.ts)
 1. № [3583. Count Special Triplets](solutions/3583.%20Count%20Special%20Triplets/script.ts)
