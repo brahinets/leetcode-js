@@ -1,23 +1,7 @@
 export {findAllPeople}
 
 function findAllPeople(n: number, meetings: number[][], firstPerson: number): number[] {
-    const timeMap: Map<number, [number, number][]> = groupMeetingsByTime(meetings)
-    const known: Set<number> = new Set<number>([0, firstPerson])
-    const times: number[] = Array.from(timeMap.keys()).sort((a: number, b: number): number => a - b)
-
-    for (const t of times) {
-        const edges: [number, number][] = timeMap.get(t)!
-        const group: Set<number> = spreadSecretAtTime(edges, known)
-        for (const person of group) {
-            known.add(person)
-        }
-    }
-
-    return Array.from(known).sort((a: number, b: number): number => a - b)
-}
-
-function groupMeetingsByTime(meetings: number[][]): Map<number, [number, number][]> {
-    const timeMap: Map<number, [number, number][]> = new Map<number, [number, number][]>()
+    const timeMap = new Map<number, [number, number][]>()
     for (const [a, b, t] of meetings) {
         if (!timeMap.has(t)) {
             timeMap.set(t, [])
@@ -26,37 +10,49 @@ function groupMeetingsByTime(meetings: number[][]): Map<number, [number, number]
         timeMap.get(t)!.push([a, b])
     }
 
-    return timeMap
-}
+    const times: number[] = Array.from(timeMap.keys()).sort((a: number, b: number): number => a - b)
+    const known: Set<number> = new Set<number>([0, firstPerson])
 
-function spreadSecretAtTime(edges: [number, number][], known: Set<number>): Set<number> {
-    const group: Set<number> = new Set<number>()
+    for (const t of times) {
+        const edges: [number, number][] = timeMap.get(t)!
+        const parent: Map<number, number> = new Map<number, number>()
+        const find: (x: number) => number = (x: number): number => {
+            if (parent.get(x) !== x) {
+                parent.set(x, find(parent.get(x)!))
+            }
 
-    for (const [a, b] of edges) {
-        if (known.has(a) || known.has(b)) {
-            group.add(a)
-            group.add(b)
+            return parent.get(x)!
         }
-    }
 
-    let changed: boolean = true
-    while (changed) {
-        changed = false
+        const union: (x: number, y: number) => void = (x: number, y: number): void => {
+            parent.set(find(x), find(y))
+        }
 
         for (const [a, b] of edges) {
-            if (group.has(a) || group.has(b)) {
-                if (!group.has(a)) {
-                    group.add(a)
-                    changed = true
-                }
+            parent.set(a, a)
+            parent.set(b, b)
+        }
 
-                if (!group.has(b)) {
-                    group.add(b)
-                    changed = true
-                }
+        for (const [a, b] of edges) {
+            union(a, b)
+        }
+
+        const groupMap = new Map<number, number[]>()
+        for (const p of parent.keys()) {
+            const root: number = find(p)
+            if (!groupMap.has(root)) {
+                groupMap.set(root, [])
+            }
+
+            groupMap.get(root)!.push(p)
+        }
+
+        for (const group of groupMap.values()) {
+            if (group.some((p: number): boolean => known.has(p))) {
+                for (const p of group) known.add(p)
             }
         }
     }
 
-    return group
+    return Array.from(known).sort((a: number, b: number): number => a - b)
 }
