@@ -1,7 +1,7 @@
 export {findAllPeople}
 
 function findAllPeople(n: number, meetings: number[][], firstPerson: number): number[] {
-    const timeMap = new Map<number, [number, number][]>()
+    const timeMap: Map<number, [number, number][]> = new Map<number, [number, number][]>()
     for (const [a, b, t] of meetings) {
         if (!timeMap.has(t)) {
             timeMap.set(t, [])
@@ -16,17 +16,6 @@ function findAllPeople(n: number, meetings: number[][], firstPerson: number): nu
     for (const t of times) {
         const edges: [number, number][] = timeMap.get(t)!
         const parent: Map<number, number> = new Map<number, number>()
-        const find: (x: number) => number = (x: number): number => {
-            if (parent.get(x) !== x) {
-                parent.set(x, find(parent.get(x)!))
-            }
-
-            return parent.get(x)!
-        }
-
-        const union: (x: number, y: number) => void = (x: number, y: number): void => {
-            parent.set(find(x), find(y))
-        }
 
         for (const [a, b] of edges) {
             parent.set(a, a)
@@ -34,12 +23,12 @@ function findAllPeople(n: number, meetings: number[][], firstPerson: number): nu
         }
 
         for (const [a, b] of edges) {
-            union(a, b)
+            union(parent, a, b)
         }
 
-        const groupMap = new Map<number, number[]>()
+        const groupMap: Map<number, number[]> = new Map<number, number[]>()
         for (const p of parent.keys()) {
-            const root: number = find(p)
+            const root: number = find(parent, p)
             if (!groupMap.has(root)) {
                 groupMap.set(root, [])
             }
@@ -55,4 +44,16 @@ function findAllPeople(n: number, meetings: number[][], firstPerson: number): nu
     }
 
     return Array.from(known).sort((a: number, b: number): number => a - b)
+}
+
+function find(parent: Map<number, number>, x: number): number {
+    if (parent.get(x) !== x) {
+        parent.set(x, find(parent, parent.get(x)!))
+    }
+
+    return parent.get(x)!
+}
+
+function union(parent: Map<number, number>, x: number, y: number): void {
+    parent.set(find(parent, x), find(parent, y))
 }
