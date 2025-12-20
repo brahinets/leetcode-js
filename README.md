@@ -356,6 +356,7 @@
 1. № [934. Shortest Bridge](solutions/934.%20Shortest%20Bridge/script.ts)
 1. № [935. Knight Dialer](solutions/935.%20Knight%20Dialer/script.ts)
 1. № [938. Range Sum of BST](solutions/938.%20Range%20Sum%20of%20BST/script.ts)
+1. № [944. Delete Columns to Make Sorted](solutions/944.%20Delete%20Columns%20to%20Make%20Sorted/script.ts)
 1. № [945. Minimum Increment to Make Array Unique](solutions/945.%20Minimum%20Increment%20to%20Make%20Array%20Unique/script.ts)
 1. № [946. Validate Stack Sequences](solutions/946.%20Validate%20Stack%20Sequences/script.ts)
 1. № [947. Most Stones Removed with Same Row or Column](solutions/947.%20Most%20Stones%20Removed%20with%20Same%20Row%20or%20Column/script.ts)
