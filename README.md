@@ -363,6 +363,7 @@
 1. № [948. Bag of Tokens](solutions/948.%20Bag%20of%20Tokens/script.ts)
 1. № [950. Reveal Cards In Increasing Order](solutions/950.%20Reveal%20Cards%20In%20Increasing%20Order/script.ts)
 1. № [951. Flip Equivalent Binary Trees](solutions/951.%20Flip%20Equivalent%20Binary%20Trees/script.ts)
+1. № [955. Delete Columns to Make Sorted II](solutions/955.%20Delete%20Columns%20to%20Make%20Sorted%20II/script.ts)
 1. № [956. Tallest Billboard](solutions/956.%20Tallest%20Billboard/script.ts)
 1. № [958. Check Completeness of a Binary Tree](solutions/958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
 1. № [959. Regions Cut By Slashes](solutions/959.%20Regions%20Cut%20By%20Slashes/script.ts)
