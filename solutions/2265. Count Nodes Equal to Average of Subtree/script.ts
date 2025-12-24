@@ -1,4 +1,5 @@
 import {TreeNode} from "../../common/TreeNode"
+import {sum} from "../../common/array-utils"
 
 export {TreeNode, averageOfSubtree}
 
@@ -7,8 +8,8 @@ function averageOfSubtree(root: TreeNode | null): number {
 
     if (root) {
         const values: number[] = collect(root)
-        const sum: number = values.reduce((sum: number, value: number): number => sum + value, 0)
-        const average: number = Math.floor(sum / values.length)
+        const valuesSum: number = sum(values)
+        const average: number = Math.floor(valuesSum / values.length)
 
         if (average === root.val) {
             count++

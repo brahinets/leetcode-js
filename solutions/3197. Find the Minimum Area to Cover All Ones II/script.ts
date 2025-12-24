@@ -1,3 +1,5 @@
+import {sum} from "../../common/array-utils"
+
 export {minimumSum}
 
 function minimumSum(grid: number[][]): number {
@@ -126,7 +128,7 @@ function tryRightLeftSplit(grid: number[][], m: number, n: number): number {
 function calculateMinAreaIfValid(areas: number[]): number {
     const allValid: boolean = areas.every((area: number): boolean => area > 0)
 
-    return allValid ? areas.reduce((sum: number, area: number): number => sum + area, 0) : Infinity
+    return allValid ? sum(areas) : Infinity
 }
 
 function getBoundingRect(r1: number, c1: number, r2: number, c2: number, grid: number[][]): number {

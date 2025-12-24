@@ -1,7 +1,9 @@
+import {sum} from "../../common/array-utils"
+
 export {minimumBoxes}
 
 function minimumBoxes(apple: number[], capacity: number[]): number {
-    const totalApples: number = apple.reduce((sum: number, curr: number): number => sum + curr, 0)
+    const totalApples: number = sum(apple)
     capacity.sort((a: number, b: number): number => b - a)
 
     let usedBoxes: number = 0

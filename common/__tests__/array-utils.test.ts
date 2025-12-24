@@ -1,4 +1,4 @@
-import {arraysAreEqual, binarySearch, count, first, last} from "../array-utils"
+import {arraysAreEqual, binarySearch, count, first, last, sum} from "../array-utils"
 
 describe('Counting', (): void => {
     it('Empty', (): void => {
@@ -14,6 +14,23 @@ describe('Counting', (): void => {
     it('Count strings', (): void => {
         expect(count(["a", "bb", "bb", "ccc", "ccc", "ccc"]))
             .toStrictEqual(new Map<string, number>([["a", 1], ["bb", 2], ["ccc", 3]]))
+    })
+})
+
+describe('Sum', (): void => {
+    it('Empty', (): void => {
+        expect(sum([]))
+            .toBe(0)
+    })
+
+    it('One', (): void => {
+        expect(sum([1]))
+            .toBe(1)
+    })
+
+    it('Many', (): void => {
+        expect(sum([1, 2, 3]))
+            .toBe(6)
     })
 })
 

@@ -1,9 +1,10 @@
 import {matrixOf} from "../../common/array-factories"
+import {sum} from "../../common/array-utils"
 
 export {tallestBillboard}
 
 function tallestBillboard(rods: number[]): number {
-    const maxDiff: number = rods.reduce((sum: number, r: number): number => sum + r, 0)
+    const maxDiff: number = sum(rods)
     return solve(0, rods, 0, matrixOf(-1, rods.length, maxDiff + 1)) / 2
 }
 

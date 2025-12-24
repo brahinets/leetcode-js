@@ -1,4 +1,5 @@
 import {TreeNode} from "../../common/TreeNode"
+import {sum} from "../../common/array-utils"
 
 export {TreeNode, bstToGst}
 
@@ -27,8 +28,7 @@ function traverse(root: TreeNode | null, values: number[]): TreeNode | null {
 }
 
 function findGreatValue(values: number[], value: number): number {
-    return value + values.filter((v: number): boolean => v > value)
-        .reduce((sum: number, val: number): number => sum + val, 0)
+    return value + sum(values.filter((v: number): boolean => v > value))
 }
 
 function collect(node: TreeNode | null): number[] {

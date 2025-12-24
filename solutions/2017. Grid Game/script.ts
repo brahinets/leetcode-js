@@ -1,7 +1,9 @@
+import {sum} from "../../common/array-utils"
+
 export {gridGame}
 
 function gridGame(grid: number[][]): number {
-    let firstRowSum: number = grid[0].reduce((sum: number, num: number): number => sum + num, 0)
+    let firstRowSum: number = sum(grid[0])
 
     let secondRowSum: number = 0
     let minimumSum: number = Infinity

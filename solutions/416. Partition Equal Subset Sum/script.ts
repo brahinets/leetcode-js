@@ -1,15 +1,16 @@
 import {arrayOf} from "../../common/array-factories"
+import {sum} from "../../common/array-utils"
 
 export {canPartition}
 
 function canPartition(nums: number[]): boolean {
-    const sum: number = nums.reduce((sum: number, num: number): number => sum + num, 0)
+    const sumOfItems: number = sum(nums)
 
-    if (sum % 2 !== 0) {
+    if (sumOfItems % 2 !== 0) {
         return false
     }
 
-    const target: number = sum / 2
+    const target: number = sumOfItems / 2
     const dp: boolean[] = arrayOf(false, target + 1)
     dp[0] = true
 

@@ -1,11 +1,13 @@
 import {TreeNode} from "../../common/TreeNode"
+import {sum} from "../../common/array-utils"
 
 export {TreeNode, rangeSumBST}
 
 function rangeSumBST(root: TreeNode | null, low: number, high: number): number {
-    return collectValues(root)
-        .filter((value: number) => value >= low && value <= high)
-        .reduce((sum: number, value: number) => sum + value, 0)
+    let matches: number[] = collectValues(root)
+        .filter((value: number): boolean => value >= low && value <= high)
+
+    return sum(matches)
 }
 
 function collectValues(root: TreeNode | null): number[] {

@@ -1,10 +1,12 @@
+import {sum} from "../../common/array-utils"
+
 export {average}
 
 function average(salary: number[]): number {
     const min: number = Math.min(...salary)
     const max: number = Math.max(...salary)
 
-    const sum: number = salary.reduce((sum: number, value: number): number => sum + value, 0)
+    const salariesSum: number = sum(salary)
 
-    return (sum - min - max) / (salary.length - 2)
+    return (salariesSum - min - max) / (salary.length - 2)
 }

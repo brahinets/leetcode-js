@@ -1,11 +1,12 @@
 import {arrayOf} from "../../common/array-factories"
+import {sum} from "../../common/array-utils"
 
 export {distributeCookies}
 
 function distributeCookies(cookies: number[], k: number): number {
     cookies = cookies.sort((a: number, b: number) => a - b)
 
-    const idealCookiesPerChild: number = cookies.reduce((sum: number, cookie: number): number => sum + cookie, 0) / k
+    const idealCookiesPerChild: number = sum(cookies) / k
     const children: number[][] = arrayOf([], k)
 
     let childId: number = 0
@@ -33,13 +34,13 @@ function distributeCookies(cookies: number[], k: number): number {
 
 
     return children
-        .map((childCookies: number[]): number => childCookies.reduce((sum: number, cookie: number): number => sum + cookie, 0))
+        .map((childCookies: number[]): number => sum(childCookies))
         .reduce((firstChild: number, secondChild: number): number => Math.max(firstChild, secondChild))
 }
 
 function findChildWithMinimumCookies(childrenCookies: number[][]): number {
     const childrenCookiesTotals: number[] = childrenCookies
-        .map((cookies: number[]): number => cookies.reduce((sum: number, cookie: number): number => sum + cookie, 0))
+        .map((cookies: number[]): number => sum(cookies))
 
     let minIndex: number = 0
     let min: number = childrenCookiesTotals[0]
