@@ -890,6 +890,7 @@
 1. № [3068. Find the Maximum Sum of Node Values](solutions/3068.%20Find%20the%20Maximum%20Sum%20of%20Node%20Values/script.ts)
 1. № [3075. Maximize Happiness of Selected Children](solutions/3075.%20Maximize%20Happiness%20of%20Selected%20Children/script.ts)
 1. № [3085. Minimum Deletions to Make String K-Special](solutions/3085.%20Minimum%20Deletions%20to%20Make%20String%20K-Special/script.ts)
+1. № [3074. Apple Redistribution into Boxes](solutions/3074.%20Apple%20Redistribution%20into%20Boxes/script.ts)
 1. № [3097. Shortest Subarray With OR at Least K II](solutions/3097.%20Shortest%20Subarray%20With%20OR%20at%20Least%20K%20II/script.ts)
 1. № [3105. Longest Strictly Increasing or Strictly Decreasing Subarray](solutions/3105.%20Longest%20Strictly%20Increasing%20or%20Strictly%20Decreasing%20Subarray/script.ts)
 1. № [3108. Minimum Cost Walk in Weighted Graph](solutions/3108.%20Minimum%20Cost%20Walk%20in%20Weighted%20Graph/script.ts)
