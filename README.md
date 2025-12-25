@@ -110,6 +110,7 @@
 1. № [105. Construct Binary Tree from Preorder and Inorder Traversal](solutions/105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal/script.ts)
 1. № [106. Construct Binary Tree from Inorder and Postorder Traversal](solutions/106.%20Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal/script.ts)
 1. № [107. Binary Tree Level Order Traversal II](solutions/107.%20Binary%20Tree%20Level%20Order%20Traversal%20II/script.ts)
+1. № [108. Convert Sorted Array to Binary Search Tree](solutions/108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree/script.ts)
 1. № [109. Convert Sorted List to Binary Search Tree](solutions/109.%20Convert%20Sorted%20List%20to%20Binary%20Search%20Tree/script.ts)
 1. № [110. Balanced Binary Tree](solutions/110.%20Balanced%20Binary%20Tree/script.ts)
 1. № [111. Minimum Depth of Binary Tree](solutions/111.%20Minimum%20Depth%20of%20Binary%20Tree/script.ts)
