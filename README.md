@@ -115,6 +115,7 @@
 1. № [110. Balanced Binary Tree](solutions/110.%20Balanced%20Binary%20Tree/script.ts)
 1. № [111. Minimum Depth of Binary Tree](solutions/111.%20Minimum%20Depth%20of%20Binary%20Tree/script.ts)
 1. № [112. Path Sum](solutions/112.%20Path%20Sum/script.ts)
+1. № [113. Path Sum II](solutions/113.%20Path%20Sum%20II/script.ts)
 1. № [114. Flatten Binary Tree to Linked List](solutions/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List/script.ts)
 1. № [118. Pascal's Triangle](solutions/118.%20Pascal%27s%20Triangle/script.ts)
 1. № [119. Pascal's Triangle II](solutions/119.%20Pascal%27s%20Triangle%20II/script.ts)
