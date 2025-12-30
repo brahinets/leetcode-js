@@ -302,6 +302,7 @@
 1. № [744. Find Smallest Letter Greater Than Target](solutions/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target/script.ts)
 1. № [746. Min Cost Climbing Stairs](solutions/746.%20Min%20Cost%20Climbing%20Stairs/script.ts)
 1. № [752. Open the Lock](solutions/752.%20Open%20the%20Lock/script.ts)
+1. № [756. Pyramid Transition Matrix](solutions/756.%20Pyramid%20Transition%20Matrix/script.ts)
 1. № [757. Set Intersection Size At Least Two](solutions/757.%20Set%20Intersection%20Size%20At%20Least%20Two/script.ts)
 1. № [763. Partition Labels](solutions/763.%20Partition%20Labels/script.ts)
 1. № [767. Reorganize String](solutions/767.%20Reorganize%20String/script.ts)
