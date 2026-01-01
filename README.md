@@ -118,6 +118,7 @@
 1. № [113. Path Sum II](solutions/113.%20Path%20Sum%20II/script.ts)
 1. № [114. Flatten Binary Tree to Linked List](solutions/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List/script.ts)
 1. № [115. Distinct Subsequences](solutions/115.%20Distinct%20Subsequences/script.ts)
+1. № [117. Populating Next Right Pointers in Each Node II](solutions/117.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II/script.ts)
 1. № [118. Pascal's Triangle](solutions/118.%20Pascal%27s%20Triangle/script.ts)
 1. № [119. Pascal's Triangle II](solutions/119.%20Pascal%27s%20Triangle%20II/script.ts)
 1. № [120. Triangle](solutions/120.%20Triangle/script.ts)
