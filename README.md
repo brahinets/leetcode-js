@@ -379,6 +379,7 @@
 1. № [958. Check Completeness of a Binary Tree](solutions/958.%20Check%20Completeness%20of%20a%20Binary%20Tree/script.ts)
 1. № [959. Regions Cut By Slashes](solutions/959.%20Regions%20Cut%20By%20Slashes/script.ts)
 1. № [960. Delete Columns to Make Sorted III](solutions/960.%20Delete%20Columns%20to%20Make%20Sorted%20III/script.ts)
+1. № [961. N-Repeated Element in Size 2N Array](solutions/961.%20N-Repeated%20Element%20in%20Size%202N%20Array/script.ts)
 1. № [962. Maximum Width Ramp](solutions/962.%20Maximum%20Width%20Ramp/script.ts)
 1. № [966. Vowel Spellchecker](solutions/966.%20Vowel%20Spellchecker/script.ts)
 1. № [974. Subarray Sums Divisible by K](solutions/974.%20Subarray%20Sums%20Divisible%20by%20K/script.ts)
