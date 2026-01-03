@@ -492,6 +492,7 @@
 1. № [1400. Construct K Palindrome Strings](solutions/1400.%20Construct%20K%20Palindrome%20Strings/script.ts)
 1. № [1404. Number of Steps to Reduce a Number in Binary Representation to One](solutions/1404.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20in%20Binary%20Representation%20to%20One/script.ts)
 1. № [1405. Longest Happy String](solutions/1405.%20Longest%20Happy%20String/script.ts)
+1. № [1411. Number of Ways to Paint N × 3 Grid](solutions/1411.%20Number%20of%20Ways%20to%20Paint%20N%20%C3%97%203%20Grid/script.ts)
 1. № [1415. The k-th Lexicographical String of All Happy Strings of Length n](solutions/1415.%20The%20k-th%20Lexicographical%20String%20of%20All%20Happy%20Strings%20of%20Length%20n/script.ts)
 1. № [1420. Build Array Where You Can Find The Maximum Exactly K Comparisons](solutions/1420.%20Build%20Array%20Where%20You%20Can%20Find%20The%20Maximum%20Exactly%20K%20Comparisons/script.ts)
 1. № [1422. Maximum Score After Splitting a String](solutions/1422.%20Maximum%20Score%20After%20Splitting%20a%20String/script.ts)
