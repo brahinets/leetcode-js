@@ -135,6 +135,7 @@
 1. № [141. Linked List Cycle](solutions/141.%20Linked%20List%20Cycle/script.ts)
 1. № [142. Linked List Cycle II](solutions/142.%20Linked%20List%20Cycle%20II/script.ts)
 1. № [143. Reorder List](solutions/143.%20Reorder%20List/script.ts)
+1. № [144. Binary Tree Preorder Traversal](solutions/144.%20Binary%20Tree%20Preorder%20Traversal/script.ts)
 1. № [145. Binary Tree Postorder Traversal](solutions/145.%20Binary%20Tree%20Postorder%20Traversal/script.ts)
 1. № [146. LRU Cache](solutions/146.%20LRU%20Cache/script.ts)
 1. № [148. Sort List](solutions/148.%20Sort%20List/script.ts)
