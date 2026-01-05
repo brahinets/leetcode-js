@@ -1,14 +1,14 @@
 import {TreeNode} from "../../common/TreeNode";
 
-export {postorderTraversal}
+export {preorderTraversal}
 
-function postorderTraversal(root: TreeNode | null): number[] {
+function preorderTraversal(root: TreeNode | null): number[] {
     const result: number[] = []
 
     if (root !== null) {
         result.push(root.val)
-        result.push(...postorderTraversal(root.left))
-        result.push(...postorderTraversal(root.right))
+        result.push(...preorderTraversal(root.left))
+        result.push(...preorderTraversal(root.right))
     }
 
     return result
