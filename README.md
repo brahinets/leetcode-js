@@ -125,6 +125,7 @@
 1. № [120. Triangle](solutions/120.%20Triangle/script.ts)
 1. № [121. Best Time to Buy and Sell Stock](solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock/script.ts)
 1. № [122. Best Time to Buy and Sell Stock II](solutions/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II/script.ts)
+1. № [123. Best Time to Buy and Sell Stock III](solutions/123.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III/script.ts)
 1. № [125. Valid Palindrome](solutions/125.%20Valid%20Palindrome/script.ts)
 1. № [128. Longest Consecutive Sequence](solutions/128.%20Longest%20Consecutive%20Sequence/script.ts)
 1. № [129. Sum Root to Leaf Numbers](solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers/script.ts)
