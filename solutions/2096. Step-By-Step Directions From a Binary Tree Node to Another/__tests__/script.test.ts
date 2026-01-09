@@ -1,5 +1,5 @@
 import {getDirections} from "../script"
-import {arrayToTree} from "../../../common/tree-utils";
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('2096. Step-By-Step Directions From a Binary Tree Node to Another', (): void => {
 

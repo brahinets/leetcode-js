@@ -16,5 +16,5 @@ function makeGood(s: string): string {
 }
 
 function differentCase(first: string, second: string): boolean {
-    return Math.abs(first.charCodeAt(0) - second.charCodeAt(0)) === 32;
+    return Math.abs(first.charCodeAt(0) - second.charCodeAt(0)) === 32
 }

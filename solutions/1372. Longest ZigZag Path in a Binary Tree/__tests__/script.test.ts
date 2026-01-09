@@ -85,4 +85,4 @@ describe('1372. Longest ZigZag Path in a Binary Tree', (): void => {
                         new TreeNode(1))))
         )).toBe(2)
     })
-});
+})

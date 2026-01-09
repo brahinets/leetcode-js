@@ -1,5 +1,5 @@
 import {createBinaryTree} from '../script'
-import {arrayToTree} from "../../../common/tree-utils";
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('2196. Create Binary Tree From Descriptions', (): void => {
 

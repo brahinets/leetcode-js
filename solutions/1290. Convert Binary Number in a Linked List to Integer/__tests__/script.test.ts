@@ -1,5 +1,5 @@
 import {getDecimalValue} from '../script'
-import {linkedListOf} from "../../../common/list-factories";
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('1290. Convert Binary Number in a Linked List to Integer', (): void => {
     it('Multi digit', (): void => {

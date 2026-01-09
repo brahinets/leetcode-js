@@ -1,5 +1,5 @@
 import {ListNode} from "../../common/ListNode"
-import {matrixOf} from "../../common/array-factories";
+import {matrixOf} from "../../common/array-factories"
 
 export {spiralMatrix}
 

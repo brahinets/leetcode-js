@@ -1,5 +1,5 @@
 import {UndirectedUnweightedGraph} from "../../common/Graph"
-import {matrixOf} from "../../common/array-factories";
+import {matrixOf} from "../../common/array-factories"
 
 export {secondMinimum}
 

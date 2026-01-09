@@ -1,4 +1,4 @@
-import {DisjointSetUnion} from "../../common/DisjointSetUnion";
+import {DisjointSetUnion} from "../../common/DisjointSetUnion"
 
 export {maxNumEdgesToRemove}
 

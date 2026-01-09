@@ -10,14 +10,14 @@ function balanceBST(root: TreeNode | null): TreeNode | null {
 
 function inorderTraversal(node: TreeNode | null): number[] {
     if (node === null) {
-        return [];
+        return []
     }
 
     return [
         ...inorderTraversal(node.left),
         node.val,
         ...inorderTraversal(node.right)
-    ];
+    ]
 }
 
 function buildBalancedBST(nums: number[], start: number, end: number): TreeNode | null {

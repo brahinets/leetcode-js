@@ -1,5 +1,5 @@
 import {spiralMatrix} from '../script'
-import {linkedListOf} from "../../../common/list-factories";
+import {linkedListOf} from "../../../common/list-factories"
 
 describe('2326. Spiral Matrix IV', (): void => {
     it('Single row', (): void => {

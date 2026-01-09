@@ -10,9 +10,9 @@ function findMissingAndRepeatedValues(grid: number[][]): number[] {
 
     for (let num: number = 1; num <= grid.length * grid.length; num++) {
         if (!frequencies.has(num)) {
-            missing = num;
+            missing = num
         } else if (frequencies.get(num) == 2) {
-            repeat = num;
+            repeat = num
         }
     }
 

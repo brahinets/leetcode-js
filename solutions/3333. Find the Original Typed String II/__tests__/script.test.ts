@@ -3,7 +3,7 @@ import {possibleStringCount} from '../script'
 describe('3333. Find the Original Typed String II', (): void => {
     it('Multiple', (): void => {
         expect(possibleStringCount("aabbccdd", 7))
-            .toBe(5);
+            .toBe(5)
     })
 
     it('The only possible string', (): void => {

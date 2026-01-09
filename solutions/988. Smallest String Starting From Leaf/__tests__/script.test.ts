@@ -1,5 +1,5 @@
-import {arrayToTree} from "../../../common/tree-utils";
-import {smallestFromLeaf} from "../script";
+import {arrayToTree} from "../../../common/tree-utils"
+import {smallestFromLeaf} from "../script"
 
 describe('988. Smallest String Starting From Leaf', (): void => {
 

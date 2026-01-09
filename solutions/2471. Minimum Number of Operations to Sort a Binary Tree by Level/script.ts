@@ -42,7 +42,7 @@ function getMinSwaps(original: number[]): number {
         if (original[i] != target[i]) {
             swaps++
 
-            const curPos: number = position.get(target[i])!;
+            const curPos: number = position.get(target[i])!
             position.set(original[i], curPos)
             original[curPos] = original[i]
         }

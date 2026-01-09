@@ -1,5 +1,5 @@
 import {treeQueries} from '../script'
-import {arrayToTree} from "../../../common/tree-utils";
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('2458. Height of Binary Tree After Subtree Removal Queries', (): void => {
     it('One removal', (): void => {

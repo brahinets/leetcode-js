@@ -10,7 +10,7 @@ function countGood(nums: number[], k: number): number {
         const num: number = nums[right]
         const freq: number = countMap.get(num) || 0
 
-        pairs += freq;
+        pairs += freq
         countMap.set(num, freq + 1)
 
         while (pairs >= k) {

@@ -1,5 +1,5 @@
 import {arrayOf} from "../../common/array-factories"
-import {UndirectedWeightedGraph} from "../../common/Graph";
+import {UndirectedWeightedGraph} from "../../common/Graph"
 
 export {modifiedGraphEdges}
 

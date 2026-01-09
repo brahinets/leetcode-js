@@ -17,18 +17,18 @@ function minimumScore(nums: number[], edges: number[][]): number {
     const context: { result: number; sum: number } = {
         result: Infinity,
         sum: sum
-    };
+    }
 
-    dfs(0, -1, nums, e, context);
+    dfs(0, -1, nums, e, context)
 
-    return context.result;
+    return context.result
 }
 
 function calc(part1: number, part2: number, part3: number): number {
     return (
         Math.max(part1, Math.max(part2, part3)) -
         Math.min(part1, Math.min(part2, part3))
-    );
+    )
 }
 
 function dfs2(
@@ -40,22 +40,22 @@ function dfs2(
     e: number[][],
     context: { result: number; sum: number }
 ): number {
-    let son: number = nums[x];
+    let son: number = nums[x]
     for (const y of e[x]) {
         if (y === f) {
-            continue;
+            continue
         }
 
-        son ^= dfs2(y, x, oth, anc, nums, e, context);
+        son ^= dfs2(y, x, oth, anc, nums, e, context)
     }
 
     if (f === anc) {
-        return son;
+        return son
     }
 
-    context.result = Math.min(context.result, calc(oth, son, context.sum ^ oth ^ son));
+    context.result = Math.min(context.result, calc(oth, son, context.sum ^ oth ^ son))
 
-    return son;
+    return son
 }
 
 function dfs(
@@ -65,21 +65,21 @@ function dfs(
     e: number[][],
     context: { result: number; sum: number }
 ): number {
-    let son: number = nums[x];
+    let son: number = nums[x]
 
     for (const y of e[x]) {
         if (y === f) {
-            continue;
+            continue
         }
 
-        son ^= dfs(y, x, nums, e, context);
+        son ^= dfs(y, x, nums, e, context)
     }
 
     for (const y of e[x]) {
         if (y === f) {
-            dfs2(y, x, son, x, nums, e, context);
+            dfs2(y, x, son, x, nums, e, context)
         }
     }
 
-    return son;
+    return son
 }

@@ -1,4 +1,4 @@
-import {matrixOfZeros} from "../../common/array-factories";
+import {matrixOfZeros} from "../../common/array-factories"
 
 export {numberOfWays}
 

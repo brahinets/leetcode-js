@@ -1,4 +1,4 @@
-import {minimumScore} from "../script";
+import {minimumScore} from "../script"
 
 describe('2322. Minimum Score After Removals on a Tree', (): void => {
     it('Positive score', (): void => {

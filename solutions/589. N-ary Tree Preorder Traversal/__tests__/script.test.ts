@@ -40,4 +40,4 @@ describe('589. N-ary Tree Preorder Traversal', (): void => {
             ])
         )).toStrictEqual([1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10])
     })
-});
+})

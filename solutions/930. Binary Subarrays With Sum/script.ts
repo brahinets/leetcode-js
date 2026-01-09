@@ -1,7 +1,7 @@
 export {numSubarraysWithSum}
 
 function numSubarraysWithSum(nums: number[], goal: number): number {
-    return numSubarraysWithMaxSum(nums, goal) - numSubarraysWithMaxSum(nums, goal - 1);
+    return numSubarraysWithMaxSum(nums, goal) - numSubarraysWithMaxSum(nums, goal - 1)
 }
 
 function numSubarraysWithMaxSum(nums: number[], goal: number): number {

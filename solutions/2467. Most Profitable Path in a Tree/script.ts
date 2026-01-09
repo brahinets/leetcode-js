@@ -20,7 +20,7 @@ function mostProfitablePath(edges: number[][], bob: number, amount: number[]): n
     const queue: [number, number, number][] = []
     let front: number = 0
     let back: number = 0
-    queue[back++] = [0, 0, 0];
+    queue[back++] = [0, 0, 0]
     visited[0] = true
 
     while (front < back) {
@@ -29,9 +29,9 @@ function mostProfitablePath(edges: number[][], bob: number, amount: number[]): n
         const bobTime: number = bobPath[node]
 
         if (bobTime === -1 || time < bobTime) {
-            newIncome += amount[node];
+            newIncome += amount[node]
         } else if (time === bobTime) {
-            newIncome += Math.floor(amount[node] / 2);
+            newIncome += Math.floor(amount[node] / 2)
         }
 
         if (tree[node].length === 1 && node !== 0) {

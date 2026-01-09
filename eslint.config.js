@@ -13,6 +13,7 @@ module.exports = [
         rules: {
             ...typescriptPlugin.configs.recommended.rules,
             '@typescript-eslint/no-inferrable-types': 'off',
+            'semi': ['error', 'never'],
         },
     },
 ];

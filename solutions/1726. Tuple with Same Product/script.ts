@@ -1,7 +1,7 @@
 export {tupleSameProduct}
 
 function tupleSameProduct(nums: number[]): number {
-    const map: Map<number, number> = new Map<number, number>();
+    const map: Map<number, number> = new Map<number, number>()
     let count: number = 0
 
     for (let i: number = 0; i < nums.length; i++) {

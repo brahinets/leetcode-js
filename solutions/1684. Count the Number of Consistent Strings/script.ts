@@ -23,5 +23,5 @@ function isConsistent(word: string, allowed: Set<string>): boolean {
         }
     }
 
-    return isConsistent;
+    return isConsistent
 }

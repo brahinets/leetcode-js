@@ -52,5 +52,5 @@ function halfToPalindrome(half: number, isEven: boolean): bigint {
 }
 
 function abs(x: bigint): bigint {
-    return x < BigInt(0) ? -x : x;
+    return x < BigInt(0) ? -x : x
 }

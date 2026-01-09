@@ -1,5 +1,5 @@
 import {replaceValueInTree} from '../script'
-import {arrayToTree} from "../../../common/tree-utils";
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('2641. Cousins in Binary Tree II', (): void => {
     it('One', (): void => {

@@ -1,4 +1,4 @@
-import {arrayOfZeros, matrixOfZeros} from "../../common/array-factories";
+import {arrayOfZeros, matrixOfZeros} from "../../common/array-factories"
 
 export {restoreMatrix}
 

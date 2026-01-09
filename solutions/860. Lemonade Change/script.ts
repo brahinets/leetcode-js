@@ -8,7 +8,7 @@ function lemonadeChange(bills: number[]): boolean {
         switch (payment) {
             case 5:
                 five++
-                break;
+                break
             case 10:
                 if (five === 0) {
                     return false
@@ -16,7 +16,7 @@ function lemonadeChange(bills: number[]): boolean {
 
                 five--
                 ten++
-                break;
+                break
             case 20:
                 if (ten > 0 && five > 0) {
                     ten--

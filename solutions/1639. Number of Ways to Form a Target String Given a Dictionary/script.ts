@@ -24,7 +24,7 @@ function collectFrequencies(wordLength: number, words: string[]): number[][] {
         }
     }
 
-    return charFrequency;
+    return charFrequency
 }
 
 function getWords(

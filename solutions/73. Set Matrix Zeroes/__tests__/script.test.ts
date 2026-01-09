@@ -6,7 +6,7 @@ describe('73. Set Matrix Zeroes', (): void => {
             [1, 1, 1],
             [1, 0, 1],
             [1, 1, 1]
-        ];
+        ]
 
         setZeroes(matrix)
 

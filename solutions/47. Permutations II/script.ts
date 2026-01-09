@@ -12,25 +12,25 @@ function permuteUnique(nums: number[]): number[][] {
 
 function backtrack(path: number[], nums: number[], used: boolean[]): number[][] {
     if (path.length === nums.length) {
-        return [[...path]];
+        return [[...path]]
     }
 
-    let result: number[][] = [];
+    let result: number[][] = []
     for (let i: number = 0; i < nums.length; i++) {
         if (used[i]) {
-            continue;
+            continue
         }
 
         if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) {
-            continue;
+            continue
         }
 
-        used[i] = true;
-        path.push(nums[i]);
-        result = result.concat(backtrack(path, nums, used));
-        path.pop();
-        used[i] = false;
+        used[i] = true
+        path.push(nums[i])
+        result = result.concat(backtrack(path, nums, used))
+        path.pop()
+        used[i] = false
     }
 
-    return result;
+    return result
 }

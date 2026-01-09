@@ -1,8 +1,8 @@
 export {robotSim}
 
 const DIRECTIONS: number[][] = [[0, 1], [1, 0], [0, -1], [-1, 0]]
-const RIGHT: number = -1;
-const LEFT: number = -2;
+const RIGHT: number = -1
+const LEFT: number = -2
 
 function robotSim(commands: number[], obstacles: number[][]): number {
     const obstaclesSet: Set<string> = new Set<string>(obstacles.map(([x, y]: number[]): string => `${x},${y}`))

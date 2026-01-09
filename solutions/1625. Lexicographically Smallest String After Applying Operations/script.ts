@@ -11,7 +11,7 @@ function findLexSmallestString(s: string, a: number, b: number): string {
         for (let oddAdd: number = 0; oddAdd < 10; oddAdd++) {
             const evenAddLimit: number = b % 2 === 0 ? 0 : 9
             for (let evenAdd: number = 0; evenAdd <= evenAddLimit; evenAdd++) {
-                const substring: string = doubled.substring(rotation, rotation + s.length);
+                const substring: string = doubled.substring(rotation, rotation + s.length)
                 const candidate: string = applyOperations(substring, a, oddAdd, evenAdd)
 
                 if (candidate < result) {

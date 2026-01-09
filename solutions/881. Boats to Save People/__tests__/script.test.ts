@@ -20,4 +20,4 @@ describe('881. Boats to Save People', (): void => {
         expect(numRescueBoats([3, 5, 3, 4], 5))
             .toBe(4)
     })
-});
+})

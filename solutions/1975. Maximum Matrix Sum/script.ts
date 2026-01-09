@@ -16,5 +16,5 @@ function maxMatrixSum(matrix: number[][]): number {
         }
     }
 
-    return count % 2 === 0 ? sum : sum - 2 * min;
+    return count % 2 === 0 ? sum : sum - 2 * min
 }

@@ -15,4 +15,4 @@ describe('746. Min Cost Climbing Stairs', (): void => {
         expect(minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]))
             .toBe(6)
     })
-});
+})

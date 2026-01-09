@@ -25,5 +25,5 @@ function prefixSums(words: string[]): number[] {
         prefixSum.push(sum)
     }
 
-    return prefixSum;
+    return prefixSum
 }

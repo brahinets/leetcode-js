@@ -14,7 +14,7 @@ function doubleIt(head: ListNode | null): ListNode | null {
         left += digit * 2
         result.push(left % 10)
 
-        left = left > 9 ? 1 : 0;
+        left = left > 9 ? 1 : 0
     }
 
     if (left > 0) {

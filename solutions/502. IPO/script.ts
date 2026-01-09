@@ -6,7 +6,7 @@ function findMaximizedCapital(
     profits: number[],
     capital: number[]
 ): number {
-    const projects: Project[] = collectProjects(profits, capital);
+    const projects: Project[] = collectProjects(profits, capital)
 
     let result: number = initialCapital
     let projectIndex: number = 0

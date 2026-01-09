@@ -1,5 +1,5 @@
 import {minimumOperations} from '../script'
-import {arrayToTree} from "../../../common/tree-utils";
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('2471. Minimum Number of Operations to Sort a Binary Tree by Level', (): void => {
     it('Sort different level tree', (): void => {

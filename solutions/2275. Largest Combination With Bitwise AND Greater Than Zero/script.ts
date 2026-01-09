@@ -8,17 +8,17 @@ function largestCombination(candidates: number[]): number {
     for (let i: number = 0; i < 24; i++) {
         for (const num of candidates) {
             if ((num & (1 << i)) !== 0) {
-                bitCount[i]++;
+                bitCount[i]++
             }
         }
     }
 
-    let max: number = 0;
+    let max: number = 0
     for (const count of bitCount) {
         if (count > max) {
-            max = count;
+            max = count
         }
     }
 
-    return max;
+    return max
 }

@@ -1,5 +1,5 @@
 import {maxPathSum} from '../script'
-import {arrayToTree} from "../../../common/tree-utils";
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('124. Binary Tree Maximum Path Sum', (): void => {
     it('One', (): void => {

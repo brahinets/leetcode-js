@@ -1,5 +1,5 @@
 import {arrayOfZeros} from "../../common/array-factories"
-import {last} from "../../common/array-utils";
+import {last} from "../../common/array-utils"
 
 export {lengthAfterTransformations}
 

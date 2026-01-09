@@ -3,7 +3,7 @@ export {snakesAndLadders}
 function snakesAndLadders(board: number[][]): number {
     const visited: Set<number> = new Set<number>()
     const queue: [number, number][] = [[1, 0]]
-    const boardCellCount: number = board.length * board.length;
+    const boardCellCount: number = board.length * board.length
 
     while (queue.length > 0) {
         const [square, moves]: [number, number] = queue.shift()!

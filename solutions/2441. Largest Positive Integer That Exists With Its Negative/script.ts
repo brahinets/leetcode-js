@@ -5,7 +5,7 @@ function findMaxK(nums: number[]): number {
     const seen: Set<number> = new Set<number>()
 
     for (const num of nums) {
-        const abs: number = Math.abs(num);
+        const abs: number = Math.abs(num)
 
         if (abs > k && seen.has(-num)) {
             k = abs

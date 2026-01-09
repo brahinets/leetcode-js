@@ -1,5 +1,5 @@
 import {DirectedUnweightedGraph} from '../../common/Graph'
-import {arrayOfZeros, matrixOfZeros} from "../../common/array-factories";
+import {arrayOfZeros, matrixOfZeros} from "../../common/array-factories"
 
 export {largestPathValue}
 

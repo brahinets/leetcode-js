@@ -45,5 +45,5 @@ function prepareCosts(original: string[], changed: string[], cost: number[]): nu
         }
     }
 
-    return minCost;
+    return minCost
 }

@@ -1,4 +1,4 @@
-import {first, last} from "../../common/array-utils";
+import {first, last} from "../../common/array-utils"
 
 export {longestSubarray}
 

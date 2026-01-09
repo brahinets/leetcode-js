@@ -5,9 +5,9 @@ function clearDigits(s: string): string {
 
     for (const char of s) {
         if (isNaN(parseInt(char))) {
-            result.push(char);
+            result.push(char)
         } else {
-            result.pop();
+            result.pop()
         }
     }
 

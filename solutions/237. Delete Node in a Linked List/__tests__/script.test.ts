@@ -1,7 +1,7 @@
 import {deleteNode} from '../script'
 
 import {linkedListOf} from "../../../common/list-factories"
-import {ListNode} from "../../../common/ListNode";
+import {ListNode} from "../../../common/ListNode"
 
 describe('237. Delete Node in a Linked List', (): void => {
 

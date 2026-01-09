@@ -1,5 +1,5 @@
 import {balanceBST} from '../script'
-import {arrayToTree} from "../../../common/tree-utils";
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('1382. Balance a Binary Search Tree', (): void => {
 

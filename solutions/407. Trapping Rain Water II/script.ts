@@ -15,7 +15,7 @@ function trapRainWater(heightMap: number[][]): number {
 }
 
 function processCells(minHeap: Cell[], heightMap: number[][], visited: boolean[][], m: number, n: number): number {
-    const directions: number[][] = [[-1, 0], [1, 0], [0, -1], [0, 1]];
+    const directions: number[][] = [[-1, 0], [1, 0], [0, -1], [0, 1]]
     let waterTrapped: number = 0
 
     while (minHeap.length > 0) {

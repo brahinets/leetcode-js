@@ -1,5 +1,5 @@
 import {maxProduct} from '../script'
-import {arrayToTree} from "../../../common/tree-utils";
+import {arrayToTree} from "../../../common/tree-utils"
 
 describe('1339. Maximum Product of Splitted Binary Tree', (): void => {
     it('Remove edge on top', (): void => {

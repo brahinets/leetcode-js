@@ -20,9 +20,9 @@ function maxFrequency(
 
             maximumFrequency = Math.max(maximumFrequency, frequency)
 
-            const candidates: Set<number> = getCandidates(value, maxIncrementPerElement, numbers[0], numbers.at(-1)!);
+            const candidates: Set<number> = getCandidates(value, maxIncrementPerElement, numbers[0], numbers.at(-1)!)
             for (const candidate of candidates) {
-                candidateValues.add(candidate);
+                candidateValues.add(candidate)
             }
 
             start = index

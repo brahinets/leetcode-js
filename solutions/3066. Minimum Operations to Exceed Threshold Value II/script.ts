@@ -1,7 +1,7 @@
 export {minOperations}
 
 function minOperations(nums: number[], k: number): number {
-    nums.sort((x: number, y: number): number => x - y);
+    nums.sort((x: number, y: number): number => x - y)
 
     const merged: number[] = []
     let result: number = 0
@@ -12,20 +12,20 @@ function minOperations(nums: number[], k: number): number {
     let j: number = 0
     while (sum < k) {
         if (i < nums.length && !(nums[i] > merged[j])) {
-            sum = nums[i++];
+            sum = nums[i++]
         } else {
-            sum = merged[j++];
+            sum = merged[j++]
         }
 
         result = operations
 
         if (i < nums.length && !(nums[i] > merged[j])) {
-            y = nums[i++];
+            y = nums[i++]
         } else {
-            y = merged[j++];
+            y = merged[j++]
         }
 
-        merged.push(sum * 2 + y);
+        merged.push(sum * 2 + y)
 
         operations++
     }
