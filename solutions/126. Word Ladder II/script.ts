@@ -1,86 +1,136 @@
 export {findLadders}
 
+type ParentMap = Map<string, Set<string>>
+type DistanceMap = Map<string, number>
+
 function findLadders(beginWord: string, endWord: string, wordList: string[]): string[][] {
-    const wordSet = new Set(wordList)
+    const wordSet: Set<string> = new Set(wordList)
     
     if (!wordSet.has(endWord)) {
         return []
     }
     
-    // BFS to find shortest distances and build parent relationships
-    const parents = new Map<string, Set<string>>()
-    const distance = new Map<string, number>()
-    const queue: string[] = [beginWord]
-    
-    distance.set(beginWord, 0)
-    parents.set(beginWord, new Set())
-    
-    let found = false
-    
-    while (queue.length > 0 && !found) {
-        const levelSize = queue.length
-        const visited = new Set<string>()
-        
-        for (let i = 0; i < levelSize; i++) {
-            const word = queue.shift()!
-            const currentDistance = distance.get(word)!
-            
-            // Try changing each character
-            for (let j = 0; j < word.length; j++) {
-                const chars = word.split('')
-                
-                for (let c = 97; c <= 122; c++) { // 'a' to 'z'
-                    const char = String.fromCharCode(c)
-                    
-                    if (chars[j] === char) {
-                        continue
-                    }
-                    
-                    chars[j] = char
-                    const nextWord = chars.join('')
-                    
-                    if (!wordSet.has(nextWord)) {
-                        continue
-                    }
-                    
-                    if (nextWord === endWord) {
-                        found = true
-                    }
-                    
-                    // If we haven't seen this word or we're seeing it at the same distance
-                    if (!distance.has(nextWord)) {
-                        distance.set(nextWord, currentDistance + 1)
-                        visited.add(nextWord)
-                        queue.push(nextWord)
-                    }
-                    
-                    // Add parent relationship if this is a shortest path
-                    if (distance.get(nextWord) === currentDistance + 1) {
-                        if (!parents.has(nextWord)) {
-                            parents.set(nextWord, new Set())
-                        }
-                        parents.get(nextWord)!.add(word)
-                    }
-                }
-            }
-        }
-    }
+    const parents: ParentMap = new Map()
+    const distance: DistanceMap = buildDistanceGraph(beginWord, endWord, wordSet, parents)
     
     if (!distance.has(endWord)) {
         return []
     }
     
-    // Backtrack to find all paths
+    return backtrackAllPaths(beginWord, endWord, parents)
+}
+
+function buildDistanceGraph(
+    beginWord: string,
+    endWord: string,
+    wordSet: Set<string>,
+    parents: ParentMap
+): DistanceMap {
+    const distance: DistanceMap = new Map()
+    const queue: string[] = [beginWord]
+    
+    distance.set(beginWord, 0)
+    parents.set(beginWord, new Set())
+    
+    let found: boolean = false
+    
+    while (queue.length > 0 && !found) {
+        found = processLevel(queue, endWord, wordSet, distance, parents)
+    }
+    
+    return distance
+}
+
+function processLevel(
+    queue: string[],
+    endWord: string,
+    wordSet: Set<string>,
+    distance: DistanceMap,
+    parents: ParentMap
+): boolean {
+    const levelSize: number = queue.length
+    const visited: Set<string> = new Set()
+    let found: boolean = false
+    
+    for (let i: number = 0; i < levelSize; i++) {
+        const word: string = queue.shift()!
+        const currentDistance: number = distance.get(word)!
+        
+        const neighbors: string[] = getNeighbors(word, wordSet)
+        
+        for (const neighbor of neighbors) {
+            if (neighbor === endWord) {
+                found = true
+            }
+            
+            if (shouldAddToQueue(neighbor, distance, visited)) {
+                distance.set(neighbor, currentDistance + 1)
+                visited.add(neighbor)
+                queue.push(neighbor)
+            }
+            
+            if (isShortestPath(neighbor, currentDistance, distance)) {
+                addParentRelationship(neighbor, word, parents)
+            }
+        }
+    }
+    
+    return found
+}
+
+function getNeighbors(word: string, wordSet: Set<string>): string[] {
+    const neighbors: string[] = []
+    const wordLength: number = word.length
+    
+    for (let i: number = 0; i < wordLength; i++) {
+        const chars: string[] = word.split('')
+        
+        for (let charCode: number = 97; charCode <= 122; charCode++) {
+            const newChar: string = String.fromCharCode(charCode)
+            
+            if (chars[i] === newChar) {
+                continue
+            }
+            
+            chars[i] = newChar
+            const neighbor: string = chars.join('')
+            
+            if (wordSet.has(neighbor)) {
+                neighbors.push(neighbor)
+            }
+        }
+    }
+    
+    return neighbors
+}
+
+function shouldAddToQueue(word: string, distance: DistanceMap, visited: Set<string>): boolean {
+    return !distance.has(word) && !visited.has(word)
+}
+
+function isShortestPath(word: string, currentDistance: number, distance: DistanceMap): boolean {
+    return distance.get(word) === currentDistance + 1
+}
+
+function addParentRelationship(child: string, parent: string, parents: ParentMap): void {
+    if (!parents.has(child)) {
+        parents.set(child, new Set())
+    }
+    parents.get(child)!.add(parent)
+}
+
+function backtrackAllPaths(beginWord: string, endWord: string, parents: ParentMap): string[][] {
     const result: string[][] = []
-    const path: string[] = []
+    const currentPath: string[] = []
     
     function backtrack(word: string): void {
-        path.push(word)
+        currentPath.push(word)
         
         if (word === beginWord) {
-            result.push([...path].reverse())
+            result.push([...currentPath].reverse())
         } else {
-            const parentSet = parents.get(word)
+            const parentSet: Set<string> | undefined = parents.get(word)
+            
             if (parentSet) {
                 for (const parent of parentSet) {
                     backtrack(parent)
@@ -88,7 +138,7 @@ function findLadders(beginWord: string, endWord: string, wordList: string[]): st
             }
         }
         
-        path.pop()
+        currentPath.pop()
     }
     
     backtrack(endWord)
