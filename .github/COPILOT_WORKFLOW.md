@@ -34,6 +34,10 @@ solutions/[#]. [Problem Name]/
 - **Low complexity**: Extract functions to reduce cognitive complexity
 - **Naming**: Clear, descriptive names for functions and variables
 - **Type aliases**: Define at top for complex types (e.g., `type ParentMap = Map<string, Set<string>>`)
+- **No semicolons**: Don't use semicolons at the end of statements (except required ones in `for` loops)
+  - ✅ `const x: number = 5`
+  - ❌ `const x: number = 5;`
+  - ✅ `for (let i: number = 0; i < n; i++)` (semicolons required here)
 
 ## Workflow
 
