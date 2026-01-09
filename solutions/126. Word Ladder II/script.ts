@@ -10,7 +10,7 @@ function findLadders(beginWord: string, endWord: string, wordList: string[]): st
         return []
     }
     
-    const parents: ParentMap = new Map()
+    const parents: ParentMap = new Map<string, Set<string>>()
     const distance: DistanceMap = buildDistanceGraph(beginWord, endWord, wordSet, parents)
     
     if (!distance.has(endWord)) {
@@ -26,11 +26,11 @@ function buildDistanceGraph(
     wordSet: Set<string>,
     parents: ParentMap
 ): DistanceMap {
-    const distance: DistanceMap = new Map()
+    const distance: DistanceMap = new Map<string, number>()
     const queue: string[] = [beginWord]
     
     distance.set(beginWord, 0)
-    parents.set(beginWord, new Set())
+    parents.set(beginWord, new Set<string>())
     
     let found: boolean = false
     
@@ -49,7 +49,7 @@ function processLevel(
     parents: ParentMap
 ): boolean {
     const levelSize: number = queue.length
-    const visited: Set<string> = new Set()
+    const visited: Set<string> = new Set<string>()
     let found: boolean = false
     
     for (let i: number = 0; i < levelSize; i++) {
@@ -114,7 +114,7 @@ function isShortestPath(word: string, currentDistance: number, distance: Distanc
 
 function addParentRelationship(child: string, parent: string, parents: ParentMap): void {
     if (!parents.has(child)) {
-        parents.set(child, new Set())
+        parents.set(child, new Set<string>())
     }
     parents.get(child)!.add(parent)
 }
