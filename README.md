@@ -132,6 +132,7 @@
 1. № [127. Word Ladder II](solutions/127.%20Word%20Ladder/script.ts)
 1. № [128. Longest Consecutive Sequence](solutions/128.%20Longest%20Consecutive%20Sequence/script.ts)
 1. № [129. Sum Root to Leaf Numbers](solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers/script.ts)
+1. № [130. Surrounded Regions](solutions/130.%20Surrounded%20Regions/script.ts)
 1. № [131. Palindrome Partitioning](solutions/131.%20Palindrome%20Partitioning/script.ts)
 1. № [135. Candy](solutions/135.%20Candy/script.ts)
 1. № [137. Single Number II](solutions/137.%20Single%20Number%20II/script.ts)
