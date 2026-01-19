@@ -464,6 +464,7 @@
 1. № [1289. Minimum Falling Path Sum II](solutions/1289.%20Minimum%20Falling%20Path%20Sum%20II/script.ts)
 1. № [1290. Convert Binary Number in a Linked List to Integer](solutions/1290.%20Convert%20Binary%20Number%20in%20a%20Linked%20List%20to%20Integer/script.ts)
 1. № [1291. Sequential Digits](solutions/1291.%20Sequential%20Digits/script.ts)
+1. № [1292. Maximum Side Length of a Square with Sum Less than or Equal to Threshold](solutions/1292.%20Maximum%20Side%20Length%20of%20a%20Square%20with%20Sum%20Less%20than%20or%20Equal%20to%20Threshold/script.ts)
 1. № [1295. Find Numbers with Even Number of Digits](solutions/1295.%20Find%20Numbers%20with%20Even%20Number%20of%20Digits/script.ts)
 1. № [1298. Maximum Candies You Can Get from Boxes](solutions/1298.%20Maximum%20Candies%20You%20Can%20Get%20from%20Boxes/script.ts)
 1. № [1304. Find N Unique Integers Sum up to Zero](solutions/1304.%20Find%20N%20Unique%20Integers%20Sum%20up%20to%20Zero/script.ts)
