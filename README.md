@@ -1009,6 +1009,7 @@
 1. № [3487. Maximum Unique Subarray Sum After Deletion](solutions/3487.%20Maximum%20Unique%20Subarray%20Sum%20After%20Deletion/script.ts)
 1. № [3494. Find the Minimum Amount of Time to Brew Potions](solutions/3494.%20Find%20the%20Minimum%20Amount%20of%20Time%20to%20Brew%20Potions/script.ts)
 1. № [3495. Minimum Operations to Make Array Elements Zero](solutions/3495.%20Minimum%20Operations%20to%20Make%20Array%20Elements%20Zero/script.ts)
+1. № [3507. Minimum Pair Removal to Sort Array I](solutions/3507.%20Minimum%20Pair%20Removal%20to%20Sort%20Array%20I/script.ts)
 1. № [3508. Implement Router](solutions/3508.%20Implement%20Router/script.ts)
 1. № [3512. Minimum Operations to Make Array Sum Divisible by K](solutions/3512.%20Minimum%20Operations%20to%20Make%20Array%20Sum%20Divisible%20by%20K/script.ts)
 1. № [3516. Find Closest Person](solutions/3516.%20Find%20Closest%20Person/script.ts)
