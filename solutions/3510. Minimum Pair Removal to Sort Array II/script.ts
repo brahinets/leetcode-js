@@ -3,73 +3,106 @@ import {PriorityQueue} from '../../common/PriorityQueue'
 export {minimumPairRemoval}
 
 function minimumPairRemoval(nums: number[]): number {
-    const n = nums.length
-    if (n <= 1) return 0
+    const length = nums.length
 
-    const values: bigint[] = nums.map(x => BigInt(x))
-    const prev: number[] = Array.from({length: n}, (_, i) => i - 1)
-    const next: number[] = Array.from({length: n}, (_, i) => i + 1)
-
-    let inversions = 0
-    for (let i = 0; i < n - 1; i++) {
-        if (values[i] > values[i + 1]) {
-            inversions++
-        }
+    if (length <= 1) {
+        return 0
     }
 
-    if (inversions === 0) return 0
+    const values: bigint[] = nums.map((value) => BigInt(value))
+    const previousIndex: number[] = Array.from({length: length}, (_, index) => index - 1)
+    const nextIndex: number[] = Array.from({length: length}, (_, index) => index + 1)
 
-    const pq = new PriorityQueue<[bigint, number, bigint, bigint]>((a, b) => {
-        if (a[0] !== b[0]) return a[0] < b[0] ? -1 : 1
-        return a[1] - b[1]
+    let inversions = countInversions(values)
+
+    if (inversions === 0) {
+        return 0
+    }
+
+    const queue = new PriorityQueue<[bigint, number, bigint, bigint]>((first, second) => {
+        if (first[0] !== second[0]) {
+            return first[0] < second[0] ? -1 : 1
+        }
+
+        return first[1] - second[1]
     })
 
-    for (let i = 0; i < n - 1; i++) {
-        const sum = values[i] + values[i + 1]
-        pq.enqueue([sum, i, values[i], values[i + 1]])
+    for (let index = 0; index < length - 1; index++) {
+        const sum = values[index] + values[index + 1]
+        queue.enqueue([sum, index, values[index], values[index + 1]])
     }
 
     let operations = 0
 
-    while (inversions > 0 && !pq.isEmpty()) {
-        const [pairSum, i, expectedLeft, expectedRight] = pq.dequeue()!
-        const j = next[i]
+    while (inversions > 0 && !queue.isEmpty()) {
+        const [pairSum, left, expectedLeft, expectedRight] = queue.dequeue()!
+        const right = nextIndex[left]
 
-        if (j >= n || values[i] !== expectedLeft || values[j] !== expectedRight) {
+        const isInvalid = right >= length
+            || values[left] !== expectedLeft
+            || values[right] !== expectedRight
+
+        if (isInvalid) {
             continue
         }
 
         operations++
 
-        const prevIdx = prev[i]
-        const nextNextIdx = next[j]
+        const previous = previousIndex[left]
+        const nextNext = nextIndex[right]
 
-        if (prevIdx >= 0) {
-            if (values[prevIdx] > values[i]) inversions--
-            if (values[prevIdx] > pairSum) inversions++
+        if (previous >= 0) {
+            if (values[previous] > values[left]) {
+                inversions--
+            }
+
+            if (values[previous] > pairSum) {
+                inversions++
+            }
         }
 
-        if (values[j] < values[i]) inversions--
-
-        if (nextNextIdx < n) {
-            if (values[nextNextIdx] < values[j]) inversions--
-            if (values[nextNextIdx] < pairSum) inversions++
+        if (values[right] < values[left]) {
+            inversions--
         }
 
-        values[i] = pairSum
-        next[i] = nextNextIdx
+        if (nextNext < length) {
+            if (values[nextNext] < values[right]) {
+                inversions--
+            }
 
-        if (nextNextIdx < n) {
-            prev[nextNextIdx] = i
-            const newSum = pairSum + values[nextNextIdx]
-            pq.enqueue([newSum, i, pairSum, values[nextNextIdx]])
+            if (values[nextNext] < pairSum) {
+                inversions++
+            }
         }
 
-        if (prevIdx >= 0) {
-            const newSum = values[prevIdx] + pairSum
-            pq.enqueue([newSum, prevIdx, values[prevIdx], pairSum])
+        values[left] = pairSum
+        nextIndex[left] = nextNext
+        nextIndex[right] = length
+
+        if (nextNext < length) {
+            previousIndex[nextNext] = left
+
+            const newSum = pairSum + values[nextNext]
+            queue.enqueue([newSum, left, pairSum, values[nextNext]])
+        }
+
+        if (previous >= 0) {
+            const newSum = values[previous] + pairSum
+            queue.enqueue([newSum, previous, values[previous], pairSum])
         }
     }
 
     return operations
+}
+
+function countInversions(values: bigint[]): number {
+    let inversions = 0
+
+    for (let index = 0; index < values.length - 1; index++) {
+        if (values[index] > values[index + 1]) {
+            inversions++
+        }
+    }
+
+    return inversions
 }
