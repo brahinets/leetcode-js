@@ -3,42 +3,42 @@ import {matrixOf, arrayOfZeros} from "../../common/array-factories"
 export {minCut}
 
 function minCut(s: string): number {
-    const n = s.length
-    if (n <= 1) {
+    const length = s.length
+    if (length <= 1) {
         return 0
     }
 
-    const isPalin: boolean[][] = matrixOf(false, n, n)
+    const isPalindrome: boolean[][] = matrixOf(false, length, length)
 
-    for (let i = 0; i < n; i++) {
-        isPalin[i][i] = true
+    for (let index = 0; index < length; index++) {
+        isPalindrome[index][index] = true
     }
 
-    for (let i = 0; i < n - 1; i++) {
-        isPalin[i][i + 1] = s[i] === s[i + 1]
+    for (let start = 0; start < length - 1; start++) {
+        isPalindrome[start][start + 1] = s[start] === s[start + 1]
     }
 
-    for (let len = 3; len <= n; len++) {
-        for (let i = 0; i <= n - len; i++) {
-            const j = i + len - 1
-            isPalin[i][j] = s[i] === s[j] && isPalin[i + 1][j - 1]
+    for (let substringLength = 3; substringLength <= length; substringLength++) {
+        for (let start = 0; start <= length - substringLength; start++) {
+            const end = start + substringLength - 1
+            isPalindrome[start][end] = s[start] === s[end] && isPalindrome[start + 1][end - 1]
         }
     }
 
-    const dp: number[] = arrayOfZeros(n)
+    const minCuts: number[] = arrayOfZeros(length)
 
-    for (let i = 0; i < n; i++) {
-        if (isPalin[0][i]) {
-            dp[i] = 0
+    for (let end = 0; end < length; end++) {
+        if (isPalindrome[0][end]) {
+            minCuts[end] = 0
         } else {
-            dp[i] = i
-            for (let j = 1; j <= i; j++) {
-                if (isPalin[j][i]) {
-                    dp[i] = Math.min(dp[i], dp[j - 1] + 1)
+            minCuts[end] = end
+            for (let partitionStart = 1; partitionStart <= end; partitionStart++) {
+                if (isPalindrome[partitionStart][end]) {
+                    minCuts[end] = Math.min(minCuts[end], minCuts[partitionStart - 1] + 1)
                 }
             }
         }
     }
 
-    return dp[n - 1]
+    return minCuts[length - 1]
 }
