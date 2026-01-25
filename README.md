@@ -664,6 +664,7 @@
 1. № [1975. Maximum Matrix Sum](solutions/1975.%20Maximum%20Matrix%20Sum/script.ts)
 1. № [1976. Number of Ways to Arrive at Destination](solutions/1976.%20Number%20of%20Ways%20to%20Arrive%20at%20Destination/script.ts)
 1. № [1980. Find Unique Binary String](solutions/1980.%20Find%20Unique%20Binary%20String/script.ts)
+1. № [1984. Minimum Difference Between Highest and Lowest of K Scores](solutions/1984.%20Minimum%20Difference%20Between%20Highest%20and%20Lowest%20of%20K%20Scores/script.ts)
 1. № [1992. Find All Groups of Farmland](solutions/1992.%20Find%20All%20Groups%20of%20Farmland/script.ts)
 1. № [2000. Reverse Prefix of Word](solutions/2000.%20Reverse%20Prefix%20of%20Word/script.ts)
 1. № [2009. Minimum Number of Operations to Make Array Continuous](solutions/2009.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20Continuous/script.ts)
