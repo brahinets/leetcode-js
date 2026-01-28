@@ -1,19 +1,37 @@
-import { matrixOf } from '../../common/array-factories'
+import { matrixOf, arrayOfZeros } from '../../common/array-factories'
 
 export { minCost }
 
 type State = [number, number, number, number]
+
+interface Cell {
+    i: number
+    j: number
+    val: number
+}
 
 function minCost(grid: number[][], k: number): number {
     const m: number = grid.length
     const n: number = grid[0].length
     const INF: number = Number.POSITIVE_INFINITY
 
+    const cells: Cell[] = []
+
+    for (let i: number = 0; i < m; i++) {
+        for (let j: number = 0; j < n; j++) {
+            cells.push({ i, j, val: grid[i][j] })
+        }
+    }
+
+    cells.sort((a: Cell, b: Cell): number => a.val - b.val)
+
     const dist: number[][][] = Array.from(
         { length: k + 1 },
         (): number[][] => matrixOf(INF, m, n)
     )
     dist[0][0][0] = 0
+
+    const teleportedUpTo: number[] = arrayOfZeros(k + 1)
 
     const pq: State[] = [[0, 0, 0, 0]]
 
@@ -54,14 +72,18 @@ function minCost(grid: number[][], k: number): number {
 
         if (t < k) {
             const curVal: number = grid[i][j]
+            const limit: number = upperBound(cells, curVal)
+            const start: number = teleportedUpTo[t + 1]
 
-            for (let ni: number = 0; ni < m; ni++) {
-                for (let nj: number = 0; nj < n; nj++) {
-                    if (grid[ni][nj] <= curVal) {
-                        if (cost < dist[t + 1][ni][nj]) {
-                            dist[t + 1][ni][nj] = cost
-                            heapPush(pq, [cost, ni, nj, t + 1])
-                        }
+            if (limit > start) {
+                teleportedUpTo[t + 1] = limit
+
+                for (let idx: number = start; idx < limit; idx++) {
+                    const cell: Cell = cells[idx]
+
+                    if (cost < dist[t + 1][cell.i][cell.j]) {
+                        dist[t + 1][cell.i][cell.j] = cost
+                        heapPush(pq, [cost, cell.i, cell.j, t + 1])
                     }
                 }
             }
@@ -75,6 +97,23 @@ function minCost(grid: number[][], k: number): number {
     }
 
     return ans
+}
+
+function upperBound(cells: Cell[], val: number): number {
+    let lo: number = 0
+    let hi: number = cells.length
+
+    while (lo < hi) {
+        const mid: number = (lo + hi) >> 1
+
+        if (cells[mid].val <= val) {
+            lo = mid + 1
+        } else {
+            hi = mid
+        }
+    }
+
+    return lo
 }
 
 function heapPush(pq: State[], state: State): void {
