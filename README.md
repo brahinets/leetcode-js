@@ -911,6 +911,7 @@
 1. № [3000. Maximum Area of Longest Diagonal Rectangle](solutions/3000.%20Maximum%20Area%20of%20Longest%20Diagonal%20Rectangle/script.ts)
 1. № [3003. Maximize the Number of Partitions After Operations](solutions/3003.%20Maximize%20the%20Number%20of%20Partitions%20After%20Operations/script.ts)
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
+1. № [3010. Divide an Array Into Subarrays With Minimum Cost I](solutions/3010.%20Divide%20an%20Array%20Into%20Subarrays%20With%20Minimum%20Cost%20I/script.ts)
 1. № [3011. Find if Array Can Be Sorted](solutions/3011.%20Find%20if%20Array%20Can%20Be%20Sorted/script.ts)
 1. № [3016. Minimum Number of Pushes to Type Word II](solutions/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/script.ts)
 1. № [3021. Alice and Bob Playing Flower Game](solutions/3021.%20Alice%20and%20Bob%20Playing%20Flower%20Game/script.ts)
