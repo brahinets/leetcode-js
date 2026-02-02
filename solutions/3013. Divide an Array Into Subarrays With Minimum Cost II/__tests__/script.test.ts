@@ -1,0 +1,28 @@
+import { minimumCost } from '../script'
+
+describe('3013. Divide an Array Into Subarrays With Minimum Cost II', (): void => {
+    it('Example 1: k=3, dist=3 with optimal split at indices 0,2,5', (): void => {
+        expect(minimumCost([1, 3, 2, 6, 4, 2], 3, 3))
+            .toBe(5)
+    })
+
+    it('Example 2: k=4, dist=3 picks four smallest starting elements', (): void => {
+        expect(minimumCost([10, 1, 2, 2, 2, 1], 4, 3))
+            .toBe(15)
+    })
+
+    it('Example 3: k=3, dist=1 with tight distance constraint', (): void => {
+        expect(minimumCost([10, 8, 18, 9], 3, 1))
+            .toBe(36)
+    })
+
+    it('Handles minimum array length k=2', (): void => {
+        expect(minimumCost([5, 3], 2, 1))
+            .toBe(8)
+    })
+
+    it('Handles case where all elements in window must be picked', (): void => {
+        expect(minimumCost([1, 2, 3, 4], 3, 1))
+            .toBe(6)
+    })
+})

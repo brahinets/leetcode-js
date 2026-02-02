@@ -913,6 +913,7 @@
 1. № [3005. Count Elements With Maximum Frequency](solutions/3005.%20Count%20Elements%20With%20Maximum%20Frequency/script.ts)
 1. № [3010. Divide an Array Into Subarrays With Minimum Cost I](solutions/3010.%20Divide%20an%20Array%20Into%20Subarrays%20With%20Minimum%20Cost%20I/script.ts)
 1. № [3011. Find if Array Can Be Sorted](solutions/3011.%20Find%20if%20Array%20Can%20Be%20Sorted/script.ts)
+1. № [3013. Divide an Array Into Subarrays With Minimum Cost II](solutions/3013.%20Divide%20an%20Array%20Into%20Subarrays%20With%20Minimum%20Cost%20II/script.ts)
 1. № [3016. Minimum Number of Pushes to Type Word II](solutions/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/script.ts)
 1. № [3021. Alice and Bob Playing Flower Game](solutions/3021.%20Alice%20and%20Bob%20Playing%20Flower%20Game/script.ts)
 1. № [3024. Type of Triangle](solutions/3024.%20Type%20of%20Triangle/script.ts)
