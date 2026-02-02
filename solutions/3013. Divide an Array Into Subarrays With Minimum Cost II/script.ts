@@ -1,6 +1,6 @@
 export { minimumCost }
 
-import { PriorityQueue } from '../../common/PriorityQueue'
+import { PriorityQueue as CustomPriorityQueue} from '../../common/PriorityQueue'
 import { arrayOf } from '../../common/array-factories'
 
 type ValueWithIndex = [number, number]
@@ -9,8 +9,8 @@ function minimumCost(nums: number[], k: number, dist: number): number {
     const n: number = nums.length
     const elementsToSelect: number = k - 1
 
-    const smallestMaxHeap: PriorityQueue<ValueWithIndex> = new PriorityQueue<ValueWithIndex>((a: ValueWithIndex, b: ValueWithIndex): number => b[0] - a[0] || b[1] - a[1])
-    const remainingMinHeap: PriorityQueue<ValueWithIndex> = new PriorityQueue<ValueWithIndex>((a: ValueWithIndex, b: ValueWithIndex): number => a[0] - b[0] || a[1] - b[1])
+    const smallestMaxHeap: CustomPriorityQueue<ValueWithIndex> = new CustomPriorityQueue<ValueWithIndex>((a: ValueWithIndex, b: ValueWithIndex): number => b[0] - a[0] || b[1] - a[1])
+    const remainingMinHeap: CustomPriorityQueue<ValueWithIndex> = new CustomPriorityQueue<ValueWithIndex>((a: ValueWithIndex, b: ValueWithIndex): number => a[0] - b[0] || a[1] - b[1])
 
     const inSmallest: boolean[] = arrayOf(false, n)
     const removed: boolean[] = arrayOf(false, n)
