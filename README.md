@@ -1035,6 +1035,7 @@
 1. № [3607. Power Grid Maintenance](solutions/3607.%20Power%20Grid%20Maintenance/script.ts)
 1. № [3623. Count Number of Trapezoids I](solutions/3623.%20Count%20Number%20of%20Trapezoids%20I/script.ts)
 1. № [3625. Count Number of Trapezoids II](solutions/3625.%20Count%20Number%20of%20Trapezoids%20II/script.ts)
+1. № [3634. Minimum Removals to Balance Array](solutions/3634.%20Minimum%20Removals%20to%20Balance%20Array/script.ts)
 1. № [3637. Trionic Array I](solutions/3637.%20Trionic%20Array%20I/script.ts)
 1. № [3640. Trionic Array II](solutions/3640.%20Trionic%20Array%20II/script.ts)
 1. № [3650. Minimum Cost Path with Edge Reversals](solutions/3650.%20Minimum%20Cost%20Path%20with%20Edge%20Reversals/script.ts)
