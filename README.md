@@ -136,6 +136,7 @@
 1. № [131. Palindrome Partitioning](solutions/131.%20Palindrome%20Partitioning/script.ts)
 1. № [132. Palindrome Partitioning II](solutions/132.%20Palindrome%20Partitioning%20II/script.ts)
 1. № [133. Clone Graph](solutions/133.%20Clone%20Graph/script.ts)
+1. № [134. Gas Station](solutions/134.%20Gas%20Station/script.ts)
 1. № [135. Candy](solutions/135.%20Candy/script.ts)
 1. № [137. Single Number II](solutions/137.%20Single%20Number%20II/script.ts)
 1. № [138. Copy List with Random Pointer](solutions/138.%20Copy%20List%20with%20Random%20Pointer/script.ts)
