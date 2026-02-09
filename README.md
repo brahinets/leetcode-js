@@ -138,6 +138,7 @@
 1. № [133. Clone Graph](solutions/133.%20Clone%20Graph/script.ts)
 1. № [134. Gas Station](solutions/134.%20Gas%20Station/script.ts)
 1. № [135. Candy](solutions/135.%20Candy/script.ts)
+1. № [136. Single Number](solutions/136.%20Single%20Number/script.ts)
 1. № [137. Single Number II](solutions/137.%20Single%20Number%20II/script.ts)
 1. № [138. Copy List with Random Pointer](solutions/138.%20Copy%20List%20with%20Random%20Pointer/script.ts)
 1. № [139. Word Break](solutions/139.%20Word%20Break/script.ts)
