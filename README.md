@@ -1044,5 +1044,6 @@
 1. № [3650. Minimum Cost Path with Edge Reversals](solutions/3650.%20Minimum%20Cost%20Path%20with%20Edge%20Reversals/script.ts)
 1. № [3651. Minimum Cost Path with Teleportations](solutions/3651.%20Minimum%20Cost%20Path%20with%20Teleportations/script.ts)
 1. № [3652. Best Time to Buy and Sell Stock using Strategy](solutions/3652.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20using%20Strategy/script.ts)
+1. № [3719. Longest Balanced Subarray I](solutions/3719.%20Longest%20Balanced%20Subarray%20I/script.ts)
 
 </details>
