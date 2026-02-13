@@ -6,12 +6,14 @@ function longestBalanced(s: string): number {
 
     for (let distinctCount = 1; distinctCount <= 26; distinctCount++) {
         for (let frequency = Math.floor(length / distinctCount); frequency >= 1; frequency--) {
-            if (distinctCount * frequency <= result) {
+            const windowSize = distinctCount * frequency
+
+            if (windowSize <= result) {
                 break
             }
 
-            if (hasBalancedWindow(s, distinctCount, frequency)) {
-                result = distinctCount * frequency
+            if (hasBalancedWindow(s, length, distinctCount, frequency, windowSize)) {
+                result = windowSize
                 break
             }
         }
@@ -20,57 +22,58 @@ function longestBalanced(s: string): number {
     return result
 }
 
-function hasBalancedWindow(s: string, distinctCount: number, frequency: number): boolean {
-    const length: number = s.length
-    const windowSize: number = distinctCount * frequency
-
+function hasBalancedWindow(
+    s: string,
+    length: number,
+    distinctCount: number,
+    frequency: number,
+    windowSize: number
+): boolean {
     if (windowSize > length) {
         return false
     }
 
-    const charFrequency: Map<string, number> = new Map()
-    const frequencyCount: Map<number, number> = new Map()
+    const charFreq: number[] = new Array(26).fill(0)
+    const freqCount: number[] = new Array(windowSize + 1).fill(0)
+    let distinctChars: number = 0
+    const aCode: number = 97 // 'a'.charCodeAt(0)
 
-    const addChar = (char: string): void => {
-        const oldFrequency: number = charFrequency.get(char) ?? 0
+    const addChar = (charCode: number): void => {
+        const idx: number = charCode - aCode
+        const oldFreq: number = charFreq[idx]
 
-        if (oldFrequency > 0) {
-            const count: number = frequencyCount.get(oldFrequency)! - 1
-
-            if (count === 0) {
-                frequencyCount.delete(oldFrequency)
-            } else {
-                frequencyCount.set(oldFrequency, count)
-            }
+        if (oldFreq > 0) {
+            freqCount[oldFreq]--
+        } else {
+            distinctChars++
         }
 
-        charFrequency.set(char, oldFrequency + 1)
-        frequencyCount.set(oldFrequency + 1, (frequencyCount.get(oldFrequency + 1) ?? 0) + 1)
+        const newFreq: number = oldFreq + 1
+        charFreq[idx] = newFreq
+        freqCount[newFreq]++
     }
 
-    const removeChar = (char: string): void => {
-        const oldFrequency: number = charFrequency.get(char)!
-        const count: number = frequencyCount.get(oldFrequency)! - 1
+    const removeChar = (charCode: number): void => {
+        const idx: number = charCode - aCode
+        const oldFreq: number = charFreq[idx]
 
-        if (count === 0) {
-            frequencyCount.delete(oldFrequency)
-        } else {
-            frequencyCount.set(oldFrequency, count)
-        }
+        freqCount[oldFreq]--
 
-        if (oldFrequency === 1) {
-            charFrequency.delete(char)
+        const newFreq: number = oldFreq - 1
+        charFreq[idx] = newFreq
+        
+        if (newFreq === 0) {
+            distinctChars--
         } else {
-            charFrequency.set(char, oldFrequency - 1)
-            frequencyCount.set(oldFrequency - 1, (frequencyCount.get(oldFrequency - 1) ?? 0) + 1)
+            freqCount[newFreq]++
         }
     }
 
     const isBalanced = (): boolean =>
-        charFrequency.size === distinctCount && frequencyCount.size === 1 && frequencyCount.has(frequency)
+        distinctChars === distinctCount && freqCount[frequency] === distinctCount
 
-    for (let index = 0; index < windowSize; index++) {
-        addChar(s[index])
+    for (let i = 0; i < windowSize; i++) {
+        addChar(s.charCodeAt(i))
     }
 
     if (isBalanced()) {
@@ -78,8 +81,8 @@ function hasBalancedWindow(s: string, distinctCount: number, frequency: number):
     }
 
     for (let right = windowSize; right < length; right++) {
-        addChar(s[right])
-        removeChar(s[right - windowSize])
+        addChar(s.charCodeAt(right))
+        removeChar(s.charCodeAt(right - windowSize))
 
         if (isBalanced()) {
             return true

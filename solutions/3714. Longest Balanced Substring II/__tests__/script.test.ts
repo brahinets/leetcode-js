@@ -7,6 +7,11 @@ describe('3714. Longest Balanced Substring II', (): void => {
             .toBe(4)
     })
 
+    it('Several characters', (): void => {
+        expect(longestBalanced('cbbac'))
+            .toBe(3)
+    })
+
     it('Two distinct chars equal frequency', (): void => {
         expect(longestBalanced('aabb'))
             .toBe(4)
@@ -60,5 +65,10 @@ describe('3714. Longest Balanced Substring II', (): void => {
     it('Large string all same char', (): void => {
         expect(longestBalanced('z'.repeat(100000)))
             .toBe(100000)
+    })
+
+    it('Load test', (): void => {
+        expect(longestBalanced('cbaaacbaababcbbbaaacbbbccbabbabccbbbcabaccaccccbccababbcacacbcbbacbaabbaaccbacccbbaacbccccbaaccaabbcabaaaaccabaabbcbcbbbbabbbbccbacaabaaaabbccaccbcbbcacaccccabaacaacaacacabcccbbbcacabcbbacbaaaaacaaaaabccbbccaacacbbbcbabcbacacbabbcccaacaaaccbacaaacaaccbcabbacbabbbbaccbcbccccabccbccbaaaaaacacbabccbcbccaaabaccbcacbbbcbccabbbbaabcaabacccbcbccaccaccacabcaaaabcbbaacaabbabcbabaacbabccaaabacbbcbbcbcbbbbcacacbcbcccaacabbca'))
+            .toBe(225)
     })
 })
