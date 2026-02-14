@@ -333,6 +333,7 @@
 1. № [790. Domino and Tromino Tiling](solutions/790.%20Domino%20and%20Tromino%20Tiling/script.ts)
 1. № [791. Custom Sort String](solutions/791.%20Custom%20Sort%20String/script.ts)
 1. № [796. Rotate String](solutions/796.%20Rotate%20String/script.ts)
+1. № [799. Champagne Tower](solutions/799.%20Champagne%20Tower/script.ts)
 1. № [802. Find Eventual Safe States](solutions/802.%20Find%20Eventual%20Safe%20States/script.ts)
 1. № [808. Soup Servings](solutions/808.%20Soup%20Servings/script.ts)
 1. № [812. Largest Triangle Area](solutions/812.%20Largest%20Triangle%20Area/script.ts)
