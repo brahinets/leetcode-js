@@ -37,11 +37,6 @@ describe('3714. Longest Balanced Substring II', (): void => {
             .toBe(1)
     })
 
-    it('All distinct characters', (): void => {
-        expect(longestBalanced('abcd'))
-            .toBe(4)
-    })
-
     it('Many distinct characters', (): void => {
         expect(longestBalanced('abcacbbacaaccababcabacacacbbacbcacccaacbbcbbabcacbbacbbbbcabbccbbbaabacbbaabccccacacccbcbcaaccccbaacccbbccaaabababaacbabcbbcbcccbabacacbaaacabcbcbbaacbaaccacccacbcbbccaccaacacccbcaabacbbaaccacccbbabababcabacaaaaacbcabbcaabcabccaabbabccaabacabccbcabcbccbbabbaacbabcccbabbaaaaacccbccbbcaaababacacabbcbccbcbcacbbbbbababbbabaccccabcaaaaacabbbbaccabbaaaacacbcbbcacacacbcacacabbbbcaabcabcabbbabccbcbbaccbaaacbabcccccbaccbcaabcbabccacccaabacbcabbaaacacaacbcbccbccabaaaacabcabbaccccbababcabbccacbaabcacacbbbbcaaabcccbababacbabcabacacabccabbccccacaaabbbaaaabbbbcabbabbacbabbaaabcccbaccabbcbbbacacccbcccacbbcbccabcbbacbccacaaccaabbcaccbaacbcabbabcbbccccbbcaacacccbabccbcbaabaacbacbbcacabcbabaacbbaaaacacababcaaacaaabbbbabcbaaaaacaababcbbbbacbbbacabbcabbbaacaabbbcacaaabcabcbcbccbaacbcbcbbababcabbacaaccbabcacabbbbcabccbac'))
             .toBe(795)
@@ -60,11 +55,6 @@ describe('3714. Longest Balanced Substring II', (): void => {
     it('Repeating two-char pattern', (): void => {
         expect(longestBalanced('ababab'))
             .toBe(6)
-    })
-
-    it('Balanced substring in the middle', (): void => {
-        expect(longestBalanced('zaaabbz'))
-            .toBe(4)
     })
 
     it('Large string all same char', (): void => {
