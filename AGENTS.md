@@ -32,6 +32,7 @@
 ## Project Structure
 
 - Group files by solution id domain
+- Always add readme file to solution. Register solution in global readme
 - Place utility functions in a dedicated `common` directory
 - Keep each file and function focused on a single responsibility
 
