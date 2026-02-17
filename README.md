@@ -220,6 +220,7 @@
 1. № [392. Is Subsequence](solutions/392.%20Is%20Subsequence/script.ts)
 1. № [394. Decode String](solutions/394.%20Decode%20String/script.ts)
 1. № [399. Evaluate Division](solutions/399.%20Evaluate%20Division/script.ts)
+1. № [401. Binary Watch](solutions/401.%20Binary%20Watch/script.ts)
 1. № [402. Remove K Digits](solutions/402.%20Remove%20K%20Digits/script.ts)
 1. № [403. Frog Jump](solutions/403.%20Frog%20Jump/script.ts)
 1. № [404. Sum of Left Leaves](solutions/404.%20Sum%20of%20Left%20Leaves/script.ts)
