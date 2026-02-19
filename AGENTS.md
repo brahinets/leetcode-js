@@ -32,7 +32,7 @@
 ## Project Structure
 
 - Group files by solution id domain
-- Always add readme file to solution. Register solution in global readme
+- Always add readme file to solution. Register solution in root readme file too.
 - Place utility functions in a dedicated `common` directory
 - Keep each file and function focused on a single responsibility
 
@@ -50,3 +50,10 @@
 - Name test files with the `.test.ts` suffix
 - Write descriptive test names that explain the expected behavior
 - Follow the Arrange–Act–Assert pattern
+
+## CVS
+
+- Never add yourself as co-author. All commits must be on behalf of developer
+- Commit only staged changes
+- Commit message must represent problem solved but not summary of modified files
+- Git commits for solutions must follow pattern '#{issue number} {issue name}' for example: '#160 Intersection of Two Linked Lists'
