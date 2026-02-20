@@ -304,6 +304,7 @@
 1. № [692. Top K Frequent Words](solutions/692.%20Top%20K%20Frequent%20Words/script.ts)
 1. № [693. Binary Number with Alternating Bits](solutions/693.%20Binary%20Number%20with%20Alternating%20Bits/script.ts)
 1. № [696. Count Binary Substrings](solutions/696.%20Count%20Binary%20Substrings/script.ts)
+1. № [761. Special Binary String](solutions/761.%20Special%20Binary%20String/script.ts)
 1. № [703. Kth Largest Element in a Stream](solutions/703.%20Kth%20Largest%20Element%20in%20a%20Stream/script.ts)
 1. № [704. Binary Search](solutions/704.%20Binary%20Search/script.ts)
 1. № [705. Design HashSet](solutions/705.%20Design%20HashSet/script.ts)
