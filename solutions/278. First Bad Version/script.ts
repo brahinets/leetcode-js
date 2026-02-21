@@ -1,11 +1,5 @@
 export {solution}
 
-/**
- * The knows API is defined in the parent class Relation.
- * isBadVersion(version: number): boolean {
- *     ...
- * }
- */
 function solution(isBadVersion: (version: number) => boolean): (n: number) => number {
     return function (n: number): number {
         let left: number = 0
