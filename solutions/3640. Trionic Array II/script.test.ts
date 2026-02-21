@@ -1,4 +1,4 @@
-import { maxSumTrionic } from './solution'
+import { maxSumTrionic } from './script'
 
 describe('3640. Trionic Array II', () => {
     it('Non positives', () => {
