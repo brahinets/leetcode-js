@@ -423,6 +423,7 @@
 1. № [1015. Smallest Integer Divisible by K](solutions/1015.%20Smallest%20Integer%20Divisible%20by%20K/script.ts)
 1. № [1018. Binary Prefix Divisible By 5](solutions/1018.%20Binary%20Prefix%20Divisible%20By%205/script.ts)
 1. № [1020. Number of Enclaves](solutions/1020.%20Number%20of%20Enclaves/script.ts)
+1. № [1022. Sum of Root To Leaf Binary Numbers](solutions/1022.%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers/script.ts)
 1. № [1026. Maximum Difference Between Node and Ancestor](solutions/1026.%20Maximum%20Difference%20Between%20Node%20and%20Ancestor/script.ts)
 1. № [1027. Longest Arithmetic Subsequence](solutions/1027.%20Longest%20Arithmetic%20Subsequence/script.ts)
 1. № [1028. Recover a Tree From Preorder Traversal](solutions/1028.%20Recover%20a%20Tree%20From%20Preorder%20Traversal/script.ts)
