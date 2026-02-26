@@ -156,6 +156,7 @@
 1. № [151. Reverse Words in a String](solutions/151.%20Reverse%20Words%20in%20a%20String/script.ts)
 1. № [152. Maximum Product Subarray](solutions/152.%20Maximum%20Product%20Subarray/script.ts)
 1. № [153. Find Minimum in Rotated Sorted Array](solutions/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array/script.ts)
+1. № [154. Find Minimum in Rotated Sorted Array II](solutions/154.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II/script.ts)
 1. № [155. Min Stack](solutions/155.%20Min%20Stack/script.ts)
 1. № [160. Intersection of Two Linked Lists](solutions/160.%20Intersection%20of%20Two%20Linked%20Lists/script.ts)
 1. № [165. Compare Version Numbers](solutions/165.%20Compare%20Version%20Numbers/script.ts)
