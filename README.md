@@ -606,6 +606,7 @@
 1. № [1662. Check If Two String Arrays are Equivalent](solutions/1662.%20Check%20If%20Two%20String%20Arrays%20are%20Equivalent/script.ts)
 1. № [1669. Merge In Between Linked Lists](solutions/1669.%20Merge%20In%20Between%20Linked%20Lists/script.ts)
 1. № [1671. Minimum Number of Removals to Make Mountain Array](solutions/1671.%20Minimum%20Number%20of%20Removals%20to%20Make%20Mountain%20Array/script.ts)
+1. № [1680. Concatenation of Consecutive Binary Numbers](solutions/1680.%20Concatenation%20of%20Consecutive%20Binary%20Numbers/script.ts)
 1. № [1684. Count the Number of Consistent Strings](solutions/1684.%20Count%20the%20Number%20of%20Consistent%20Strings/script.ts)
 1. № [1685. Sum of Absolute Differences in a Sorted Array](solutions/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/script.ts)
 1. № [1688. Count of Matches in Tournament](solutions/1688.%20Count%20of%20Matches%20in%20Tournament/script.ts)
