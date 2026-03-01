@@ -610,6 +610,7 @@
 1. № [1684. Count the Number of Consistent Strings](solutions/1684.%20Count%20the%20Number%20of%20Consistent%20Strings/script.ts)
 1. № [1685. Sum of Absolute Differences in a Sorted Array](solutions/1685.%20Sum%20of%20Absolute%20Differences%20in%20a%20Sorted%20Array/script.ts)
 1. № [1688. Count of Matches in Tournament](solutions/1688.%20Count%20of%20Matches%20in%20Tournament/script.ts)
+1. № [1689. Partitioning Into Minimum Number of Deci-Binary Numbers](solutions/1689.%20Partitioning%20Into%20Minimum%20Number%20of%20Deci-Binary%20Numbers/script.ts)
 1. № [1695. Maximum Erasure Value](solutions/1695.%20Maximum%20Erasure%20Value/script.ts)
 1. № [1700. Number of Students Unable to Eat Lunch](solutions/1700.%20Number%20of%20Students%20Unable%20to%20Eat%20Lunch/script.ts)
 1. № [1701. Average Waiting Time](solutions/1701.%20Average%20Waiting%20Time/script.ts)
