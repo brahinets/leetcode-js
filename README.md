@@ -571,6 +571,7 @@
 1. № [1531. String Compression II](solutions/1531.%20String%20Compression%20II/script.ts)
 1. № [1534. Count Good Triplets](solutions/1534.%20Count%20Good%20Triplets/script.ts)
 1. № [1535. Find the Winner of an Array Game](solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game/script.ts)
+1. № [1536. Minimum Swaps to Arrange a Binary Grid](solutions/1536.%20Minimum%20Swaps%20to%20Arrange%20a%20Binary%20Grid/script.ts)
 1. № [1539. Kth Missing Positive Number](solutions/1539.%20Kth%20Missing%20Positive%20Number/script.ts)
 1. № [1544. Make The String Great](solutions/1544.%20Make%20The%20String%20Great/script.ts)
 1. № [1545. Find Kth Bit in Nth Binary String](solutions/1545.%20Find%20Kth%20Bit%20in%20Nth%20Binary%20String/script.ts)
