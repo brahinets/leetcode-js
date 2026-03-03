@@ -50,6 +50,7 @@
 - Name test files with the `.test.ts` suffix
 - Write descriptive test names that explain the expected behavior
 - Follow the Arrange–Act–Assert pattern
+- Name test cases to represent tested case, not data
 
 ## CVS
 
