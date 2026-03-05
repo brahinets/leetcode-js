@@ -160,6 +160,7 @@
 1. № [155. Min Stack](solutions/155.%20Min%20Stack/script.ts)
 1. № [160. Intersection of Two Linked Lists](solutions/160.%20Intersection%20of%20Two%20Linked%20Lists/script.ts)
 1. № [162. Find Peak Element](solutions/162.%20Find%20Peak%20Element/script.ts)
+1. № [164. Maximum Gap](solutions/164.%20Maximum%20Gap/script.ts)
 1. № [165. Compare Version Numbers](solutions/165.%20Compare%20Version%20Numbers/script.ts)
 1. № [166. Fraction to Recurring Decimal](solutions/166.%20Fraction%20to%20Recurring%20Decimal/script.ts)
 1. № [167. Two Sum II - Input Array Is Sorted](solutions/167.%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted/script.ts)
