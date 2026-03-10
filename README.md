@@ -959,6 +959,7 @@
 1. № [3100. Water Bottles II](solutions/3100.%20Water%20Bottles%20II/script.ts)
 1. № [3110. Score of a String](solutions/3110.%20Score%20of%20a%20String/script.ts)
 1. № [3129. Find All Possible Stable Binary Arrays I](solutions/3129.%20Find%20All%20Possible%20Stable%20Binary%20Arrays%20I/script.ts)
+1. № [3130. Find All Possible Stable Binary Arrays II](solutions/3130.%20Find%20All%20Possible%20Stable%20Binary%20Arrays%20II/script.ts)
 1. № [3133. Minimum Array End](solutions/3133.%20Minimum%20Array%20End/script.ts)
 1. № [3136. Valid Word](solutions/3136.%20Valid%20Word/script.ts)
 1. № [3147. Taking Maximum Energy From the Mystic Dungeon](solutions/3147.%20Taking%20Maximum%20Energy%20From%20the%20Mystic%20Dungeon/script.ts)
