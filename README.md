@@ -1075,5 +1075,6 @@
 1. № [3714. Longest Balanced Substring II](solutions/3714.%20Longest%20Balanced%20Substring%20II/script.ts)
 1. № [3719. Longest Balanced Subarray I](solutions/3719.%20Longest%20Balanced%20Subarray%20I/script.ts)
 1. № [3721. Longest Balanced Subarray II](solutions/3721.%20Longest%20Balanced%20Subarray%20II/script.ts)
+1. № [3902. Maximize Spanning Tree Stability with Upgrades](solutions/3902.%20Maximize%20Spanning%20Tree%20Stability%20with%20Upgrades/script.ts)
 
 </details>
