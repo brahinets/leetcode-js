@@ -665,6 +665,7 @@
 1. № [1865. Finding Pairs With a Certain Sum](solutions/1865.%20Finding%20Pairs%20With%20a%20Certain%20Sum/script.ts)
 1. № [1870. Minimum Speed to Arrive on Time](solutions/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/script.ts)
 1. № [1877. Minimize Maximum Pair Sum in Array](solutions/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array/script.ts)
+1. № [1878. Get Biggest Three Rhombus Sums in a Grid](solutions/1878.%20Get%20Biggest%20Three%20Rhombus%20Sums%20in%20a%20Grid/script.ts)
 1. № [1887. Reduction Operations to Make the Array Elements Equal](solutions/1887.%20Reduction%20Operations%20to%20Make%20the%20Array%20Elements%20Equal/script.ts)
 1. № [1888. Minimum Number of Flips to Make the Binary String Alternating](solutions/1888.%20Minimum%20Number%20of%20Flips%20to%20Make%20the%20Binary%20String%20Alternating/script.ts)
 1. № [1894. Find the Student that Will Replace the Chalk](solutions/1894.%20Find%20the%20Student%20that%20Will%20Replace%20the%20Chalk/script.ts)
