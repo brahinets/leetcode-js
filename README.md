@@ -954,6 +954,7 @@
 1. № [3047. Find the Largest Area of Square Inside Two Rectangles](solutions/3047.%20Find%20the%20Largest%20Area%20of%20Square%20Inside%20Two%20Rectangles/script.ts)
 1. № [3066. Minimum Operations to Exceed Threshold Value II](solutions/3066.%20Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20II/script.ts)
 1. № [3068. Find the Maximum Sum of Node Values](solutions/3068.%20Find%20the%20Maximum%20Sum%20of%20Node%20Values/script.ts)
+1. № [3070. Count Submatrices with Top-Left Element and Sum Less Than k](solutions/3070.%20Count%20Submatrices%20with%20Top-Left%20Element%20and%20Sum%20Less%20Than%20k/script.ts)
 1. № [3075. Maximize Happiness of Selected Children](solutions/3075.%20Maximize%20Happiness%20of%20Selected%20Children/script.ts)
 1. № [3085. Minimum Deletions to Make String K-Special](solutions/3085.%20Minimum%20Deletions%20to%20Make%20String%20K-Special/script.ts)
 1. № [3074. Apple Redistribution into Boxes](solutions/3074.%20Apple%20Redistribution%20into%20Boxes/script.ts)
