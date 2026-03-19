@@ -984,6 +984,7 @@
 1. № [3202. Find the Maximum Length of Valid Subsequence II](solutions/3202.%20Find%20the%20Maximum%20Length%20of%20Valid%20Subsequence%20II/script.ts)
 1. № [3203. Find Minimum Diameter After Merging Two Trees](solutions/3203.%20Find%20Minimum%20Diameter%20After%20Merging%20Two%20Trees/script.ts)
 1. № [3208. Alternating Groups II](solutions/3208.%20Alternating%20Groups%20II/script.ts)
+1. № [3212. Count Submatrices With Equal Frequency of X and Y](solutions/3212.%20Count%20Submatrices%20With%20Equal%20Frequency%20of%20X%20and%20Y/script.ts)
 1. № [3217. Delete Nodes From Linked List Present in Array](solutions/3217.%20Delete%20Nodes%20From%20Linked%20List%20Present%20in%20Array/script.ts)
 1. № [3223. Minimum Length of String After Operations](solutions/3223.%20Minimum%20Length%20of%20String%20After%20Operations/script.ts)
 1. № [3227. Vowels Game in a String](solutions/3227.%20Vowels%20Game%20in%20a%20String/script.ts)
