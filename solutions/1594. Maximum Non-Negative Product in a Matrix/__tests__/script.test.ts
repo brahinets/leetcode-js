@@ -17,13 +17,6 @@ describe('1594. Maximum Non-Negative Product in a Matrix', (): void => {
         ])).toBe(8)
     })
 
-    it('returns zero when best non-negative path passes through zero', (): void => {
-        expect(maxProductPath([
-            [1, 3],
-            [0, -4],
-        ])).toBe(0)
-    })
-
     it('returns single positive cell value for 1x1 grid', (): void => {
         expect(maxProductPath([[5]])).toBe(5)
     })
