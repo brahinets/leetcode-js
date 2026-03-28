@@ -868,6 +868,7 @@
 1. № [2563. Count the Number of Fair Pairs](solutions/2563.%20Count%20the%20Number%20of%20Fair%20Pairs/script.ts)
 1. № [2566. Maximum Difference by Remapping a Digit](solutions/2566.%20Maximum%20Difference%20by%20Remapping%20a%20Digit/script.ts)
 1. № [2570. Merge Two 2D Arrays by Summing Values](solutions/2570.%20Merge%20Two%202D%20Arrays%20by%20Summing%20Values/script.ts)
+1. № [2573. Find the String with LCP](solutions/2573.%20Find%20the%20String%20with%20LCP/script.ts)
 1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)
 1. № [2577. Minimum Time to Visit a Cell In a Grid](solutions/2577.%20Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/script.ts)[2579. Count Total Number of Colored Cells](solutions/2579.%20Count%20Total%20Number%20of%20Colored%20Cells/script.ts)
 1. № [2582. Pass the Pillow](solutions/2582.%20Pass%20the%20Pillow/script.ts)
