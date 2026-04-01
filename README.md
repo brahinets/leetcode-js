@@ -170,6 +170,8 @@
 1. № [172. Factorial Trailing Zeroes](solutions/172.%20Factorial%20Trailing%20Zeroes/script.ts)
 1. № [173. Binary Search Tree Iterator](solutions/173.%20Binary%20Search%20Tree%20Iterator/script.ts)
 1. № [174. Dungeon Game](solutions/174.%20Dungeon%20Game/script.ts)
+1. № [176. Second Highest Salary](solutions/176.%20Second%20Highest%20Salary/script.ts)
+1. № [177. Nth Highest Salary](solutions/177.%20Nth%20Highest%20Salary/script.ts)
 1. № [179. Largest Number](solutions/179.%20Largest%20Number/script.ts)
 1. № [190. Reverse Bits](solutions/190.%20Reverse%20Bits/script.ts)
 1. № [191. Number of 1 Bits](solutions/191.%20Number%20of%201%20Bits/script.ts)
