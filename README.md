@@ -1041,6 +1041,7 @@
 1. № [3403. Find the Lexicographically Largest String From the Box I](solutions/3403.%20Find%20the%20Lexicographically%20Largest%20String%20From%20the%20Box%20I/script.ts)
 1. № [3405. Count the Number of Arrays with K Matching Adjacent Elements](solutions/3405.%20Count%20the%20Number%20of%20Arrays%20with%20K%20Matching%20Adjacent%20Elements/script.ts)
 1. № [3408. Design Task Manager](solutions/3408.%20Design%20Task%20Manager/script.ts)
+1. № [3418. Maximum Amount of Money Robot Can Earn](solutions/3418.%20Maximum%20Amount%20of%20Money%20Robot%20Can%20Earn/script.ts)
 1. № [3423. Maximum Difference Between Adjacent Elements in a Circular Array](solutions/3423.%20Maximum%20Difference%20Between%20Adjacent%20Elements%20in%20a%20Circular%20Array/script.ts)
 1. № [3432. Count Partitions with Even Sum Difference](solutions/3432.%20Count%20Partitions%20with%20Even%20Sum%20Difference/script.ts)
 1. № [3433. Count Mentions Per User](solutions/3433.%20Count%20Mentions%20Per%20User/script.ts)
