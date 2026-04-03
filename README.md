@@ -1090,6 +1090,7 @@
 1. № [3650. Minimum Cost Path with Edge Reversals](solutions/3650.%20Minimum%20Cost%20Path%20with%20Edge%20Reversals/script.ts)
 1. № [3651. Minimum Cost Path with Teleportations](solutions/3651.%20Minimum%20Cost%20Path%20with%20Teleportations/script.ts)
 1. № [3652. Best Time to Buy and Sell Stock using Strategy](solutions/3652.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20using%20Strategy/script.ts)
+1. № [3661. Maximum Walls Destroyed by Robots](solutions/3661.%20Maximum%20Walls%20Destroyed%20by%20Robots/script.ts)
 1. № [3666. Minimum Operations to Equalize Binary String](solutions/3666.%20Minimum%20Operations%20to%20Equalize%20Binary%20String/script.ts)
 1. № [3713. Longest Balanced Substring I](solutions/3713.%20Longest%20Balanced%20Substring%20I/script.ts)
 1. № [3714. Longest Balanced Substring II](solutions/3714.%20Longest%20Balanced%20Substring%20II/script.ts)

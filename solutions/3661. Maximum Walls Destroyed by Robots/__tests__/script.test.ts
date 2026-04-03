@@ -1,0 +1,43 @@
+import { maximumWallsDestroyed } from '../script'
+
+describe('3661. Maximum Walls Destroyed by Robots', (): void => {
+    it('returns zero when there are no walls', (): void => {
+        expect(maximumWallsDestroyed([0], [5], []))
+            .toBe(0)
+    })
+
+    it('returns count of walls within left firing range of single robot', (): void => {
+        expect(maximumWallsDestroyed([10], [5], [5, 7]))
+            .toBe(2)
+    })
+
+    it('returns count of walls within right firing range of single robot', (): void => {
+        expect(maximumWallsDestroyed([10], [5], [12, 15]))
+            .toBe(2)
+    })
+
+    it('chooses direction with more walls for single robot', (): void => {
+        expect(maximumWallsDestroyed([10], [5], [5, 7, 12]))
+            .toBe(2)
+    })
+
+    it('stops bullet at adjacent robot and counts walls up to that robot', (): void => {
+        expect(maximumWallsDestroyed([0, 10], [20, 20], [5]))
+            .toBe(1)
+    })
+
+    it('avoids double counting walls when adjacent robots fire toward each other', (): void => {
+        expect(maximumWallsDestroyed([5, 10], [3, 4], [2, 7, 8, 13]))
+            .toBe(3)
+    })
+
+    it('fires all robots right to maximize walls on the far right', (): void => {
+        expect(maximumWallsDestroyed([0, 100], [10, 10], [5, 95]))
+            .toBe(2)
+    })
+
+    it('handles wall at same position as robot', (): void => {
+        expect(maximumWallsDestroyed([5], [0], [5]))
+            .toBe(1)
+    })
+})
