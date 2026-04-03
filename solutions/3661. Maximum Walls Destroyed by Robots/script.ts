@@ -1,4 +1,4 @@
-export { maximumWallsDestroyed }
+export { maxWalls }
 
 function lowerIndex(array: number[], value: number): number {
     let low: number = 0
@@ -80,7 +80,7 @@ function computeOverlapCount(
     return countWallsInRange(sortedWalls, overlapLow, overlapHigh)
 }
 
-function maximumWallsDestroyed(robots: number[], distance: number[], walls: number[]): number {
+function maxWalls(robots: number[], distance: number[], walls: number[]): number {
     const numberOfRobots: number = robots.length
 
     const sortedRobots: [number, number][] = robots
