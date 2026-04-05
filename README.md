@@ -303,6 +303,7 @@
 1. № [648. Replace Words](solutions/648.%20Replace%20Words/script.ts)
 1. № [649. Dota2 Senate](solutions/649.%20Dota2%20Senate/script.ts)
 1. № [650. 2 Keys Keyboard](solutions/650.%202%20Keys%20Keyboard/script.ts)
+1. № [657. Robot Return to Origin](solutions/657.%20Robot%20Return%20to%20Origin/script.ts)
 1. № [661. Image Smoother](solutions/661.%20Image%20Smoother/script.ts)
 1. № [664. Strange Printer](solutions/664.%20Strange%20Printer/script.ts)
 1. № [670. Maximum Swap](solutions/670.%20Maximum%20Swap/script.ts)
