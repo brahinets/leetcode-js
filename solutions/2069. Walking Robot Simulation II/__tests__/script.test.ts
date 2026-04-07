@@ -6,64 +6,92 @@ describe('2069. Walking Robot Simulation II', (): void => {
         expect(robot.getPos()).toEqual([0, 0])
     })
 
-    it('returns South direction before any step', (): void => {
-        const robot = new Robot(6, 3)
-        expect(robot.getDir()).toBe('South')
-    })
-
-    it('moves North after first 2 steps', (): void => {
+    it('moves East along bottom after 2 steps', (): void => {
         const robot = new Robot(6, 3)
         robot.step(2)
+        expect(robot.getPos()).toEqual([2, 0])
+        expect(robot.getDir()).toBe('East')
+    })
+
+    it('returns [4,0] East after step(2)+step(2)', (): void => {
+        const robot = new Robot(6, 3)
+        robot.step(2)
+        robot.step(2)
+        expect(robot.getPos()).toEqual([4, 0])
+        expect(robot.getDir()).toBe('East')
+    })
+
+    it('bottom-right corner (5,0) has East direction', (): void => {
+        const robot = new Robot(6, 3)
+        robot.step(5)
+        expect(robot.getPos()).toEqual([5, 0])
+        expect(robot.getDir()).toBe('East')
+    })
+
+    it('returns [1,2] West after 11 cumulative steps', (): void => {
+        const robot = new Robot(6, 3)
+        robot.step(2)
+        robot.step(2)
+        robot.step(2)
+        robot.step(1)
+        robot.step(4)
+        expect(robot.getPos()).toEqual([1, 2])
+        expect(robot.getDir()).toBe('West')
+    })
+
+    it('top-left corner (0,2) has West direction', (): void => {
+        const robot = new Robot(6, 3)
+        robot.step(12)
         expect(robot.getPos()).toEqual([0, 2])
-        expect(robot.getDir()).toBe('North')
+        expect(robot.getDir()).toBe('West')
     })
 
-    it('moves East after reaching top-left corner', (): void => {
-        const robot = new Robot(6, 3)
-        robot.step(2)
-        robot.step(2)
-        expect(robot.getPos()).toEqual([2, 2])
-        expect(robot.getDir()).toBe('East')
-    })
-
-    it('continues East along top edge', (): void => {
-        const robot = new Robot(6, 3)
-        robot.step(2)
-        robot.step(2)
-        robot.step(2)
-        expect(robot.getPos()).toEqual([4, 2])
-        expect(robot.getDir()).toBe('East')
-    })
-
-    it('wraps full perimeter back to origin facing North', (): void => {
+    it('wraps full perimeter back to origin facing South', (): void => {
         const robot = new Robot(6, 3)
         const perimeter = 2 * (6 - 1) + 2 * (3 - 1) // 14
         robot.step(perimeter)
         expect(robot.getPos()).toEqual([0, 0])
-        expect(robot.getDir()).toBe('North')
+        expect(robot.getDir()).toBe('South')
     })
 
     it('handles large step count by using modulo', (): void => {
         const robot = new Robot(6, 3)
         const perimeter = 2 * (6 - 1) + 2 * (3 - 1) // 14
         robot.step(perimeter + 2)
-        expect(robot.getPos()).toEqual([0, 2])
-        expect(robot.getDir()).toBe('North')
-    })
-
-    it('returns South after step at top-left (width=2, height=2)', (): void => {
-        const robot = new Robot(2, 2)
-        robot.step(3)
-        expect(robot.getPos()).toEqual([1, 0])
-        expect(robot.getDir()).toBe('South')
+        expect(robot.getPos()).toEqual([2, 0])
+        expect(robot.getDir()).toBe('East')
     })
 
     it('traverses West segment correctly', (): void => {
         const robot = new Robot(6, 3)
-        // North: indices 0-2, East: indices 3-7, South: indices 8-9, West: indices 10-13
-        // index 10 = (4,0) West
-        robot.step(10)
-        expect(robot.getPos()).toEqual([4, 0])
+        // index 9 = (3,2) West
+        robot.step(9)
+        expect(robot.getPos()).toEqual([3, 2])
+        expect(robot.getDir()).toBe('West')
+    })
+
+    it('handles 2x2 grid after 3 steps', (): void => {
+        const robot = new Robot(2, 2)
+        // perimeter: (0,0)S (1,0)E (1,1)N (0,1)W
+        robot.step(3)
+        expect(robot.getPos()).toEqual([0, 1])
+        expect(robot.getDir()).toBe('West')
+    })
+
+    it('20x13 grid: step(12)+step(21) → [17,12] West', (): void => {
+        const robot = new Robot(20, 13)
+        robot.step(12)
+        robot.step(21)
+        expect(robot.getPos()).toEqual([17, 12])
+        expect(robot.getDir()).toBe('West')
+    })
+
+    it('20x13 grid: step(12)+step(21)+step(17) → [0,12] West', (): void => {
+        const robot = new Robot(20, 13)
+        robot.step(12)
+        robot.step(21)
+        robot.step(17)
+        expect(robot.getPos()).toEqual([0, 12])
         expect(robot.getDir()).toBe('West')
     })
 })

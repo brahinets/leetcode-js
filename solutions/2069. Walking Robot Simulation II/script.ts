@@ -1,40 +1,50 @@
 export { Robot }
 
 class Robot {
-    private readonly perimeter: Array<{ pos: [number, number]; dir: string }>
-    private index: number
-    private hasStarted: boolean
+    private moved: boolean = false;
+    private idx: number = 0;
+    private pos: number[][] = [];
+    private dir: number[] = [];
+    private toDir: Map<number, string> = new Map();
 
     constructor(width: number, height: number) {
-        this.perimeter = []
-        this.index = 0
-        this.hasStarted = false
+        this.toDir.set(0, "East");
+        this.toDir.set(1, "North");
+        this.toDir.set(2, "West");
+        this.toDir.set(3, "South");
 
-        for (let y = 0; y < height; y++) {
-            this.perimeter.push({ pos: [0, y], dir: 'North' })
+        for (let i = 0; i < width; ++i) {
+            this.pos.push([i, 0]);
+            this.dir.push(0);
         }
-        for (let x = 1; x < width; x++) {
-            this.perimeter.push({ pos: [x, height - 1], dir: 'East' })
+        for (let i = 1; i < height; ++i) {
+            this.pos.push([width - 1, i]);
+            this.dir.push(1);
         }
-        for (let y = height - 2; y >= 0; y--) {
-            this.perimeter.push({ pos: [width - 1, y], dir: 'South' })
+        for (let i = width - 2; i >= 0; --i) {
+            this.pos.push([i, height - 1]);
+            this.dir.push(2);
         }
-        for (let x = width - 2; x >= 1; x--) {
-            this.perimeter.push({ pos: [x, 0], dir: 'West' })
+        for (let i = height - 2; i > 0; --i) {
+            this.pos.push([0, i]);
+            this.dir.push(3);
         }
+        this.dir[0] = 3;
     }
 
     step(num: number): void {
-        this.hasStarted = true
-        this.index = (this.index + num) % this.perimeter.length
+        this.moved = true;
+        this.idx = (this.idx + num) % this.pos.length;
     }
 
-    getPos(): [number, number] {
-        return this.perimeter[this.index].pos
+    getPos(): number[] {
+        return this.pos[this.idx];
     }
 
     getDir(): string {
-        if (!this.hasStarted) return 'South'
-        return this.perimeter[this.index].dir
+        if (!this.moved) {
+            return "East";
+        }
+        return this.toDir.get(this.dir[this.idx])!;
     }
 }
