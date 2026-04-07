@@ -726,6 +726,7 @@
 1. № [2054. Two Best Non-Overlapping Events](solutions/2054.%20Two%20Best%20Non-Overlapping%20Events/script.ts)
 1. № [2058. Find the Minimum and Maximum Number of Nodes Between Critical Points](solutions/2058.%20Find%20the%20Minimum%20and%20Maximum%20Number%20of%20Nodes%20Between%20Critical%20Points/script.ts)
 1. № [2064. Minimized Maximum of Products Distributed to Any Store](solutions/2064.%20Minimized%20Maximum%20of%20Products%20Distributed%20to%20Any%20Store/script.ts)
+1. № [2069. Walking Robot Simulation II](solutions/2069.%20Walking%20Robot%20Simulation%20II/script.ts)
 1. № [2070. Most Beautiful Item for Each Query](solutions/2070.%20Most%20Beautiful%20Item%20for%20Each%20Query/script.ts)
 1. № [2071. Maximum Number of Tasks You Can Assign](solutions/2071.%20Maximum%20Number%20of%20Tasks%20You%20Can%20Assign/script.ts)
 1. № [2073. Time Needed to Buy Tickets](solutions/2073.%20Time%20Needed%20to%20Buy%20Tickets/script.ts)
