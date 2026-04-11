@@ -1097,6 +1097,7 @@
 1. № [3653. XOR After Range Multiplication Queries I](solutions/3653.%20XOR%20After%20Range%20Multiplication%20Queries%20I/script.ts)
 1. № [3655. XOR After Range Multiplication Queries II](solutions/3655.%20XOR%20After%20Range%20Multiplication%20Queries%20II/script.ts)
 1. № [3740. Minimum Distance Between Three Equal Elements I](solutions/3740.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20I/script.ts)
+1. № [3741. Minimum Distance Between Three Equal Elements II](solutions/3741.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20II/script.ts)
 1. № [3661. Maximum Walls Destroyed by Robots](solutions/3661.%20Maximum%20Walls%20Destroyed%20by%20Robots/script.ts)
 1. № [3666. Minimum Operations to Equalize Binary String](solutions/3666.%20Minimum%20Operations%20to%20Equalize%20Binary%20String/script.ts)
 1. № [3713. Longest Balanced Substring I](solutions/3713.%20Longest%20Balanced%20Substring%20I/script.ts)
