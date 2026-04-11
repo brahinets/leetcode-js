@@ -3,6 +3,7 @@
 ## Code Style
 
 - Always specify explicit data types for variables, parameters, and return values - never rely on type inference
+- Always specify generic type arguments explicitly on constructor calls and generic function invocations — never rely on inference from the left-hand side annotation (e.g. use `new Map<string, number>()` not `new Map()`)
 - Do not use semicolons at the end of statements
 - Always use curly braces for all control flow statements, including single-line `if`, `else`, `for`, `while`, and similar blocks
 - Never use abbreviations in variable names, function names, class names, or comments - always use full, descriptive words (for example, `message` instead of `msg`, `request` instead of `req`, `response` instead of `res`, `error` instead of `err`, `configuration` instead of `config`, `parameter` instead of `param`, `document` instead of `doc`, `application` instead of `app`, `button` instead of `btn`, `temporary` instead of `tmp`, `index` instead of `idx`, `number` instead of `num`, `information` instead of `info`, `callback` instead of `cb`)
@@ -21,6 +22,7 @@
 - Use 4-space indentation
 - Use single quotes for strings
 - Place opening curly braces on the same line as the statement
+- Always add an empty line after the closing brace of a control flow statement (`if`, `else`, `for`, `while`, etc.), unless the closing brace is immediately followed by another closing brace
 
 ## Naming
 
