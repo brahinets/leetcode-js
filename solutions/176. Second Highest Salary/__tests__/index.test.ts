@@ -1,7 +1,7 @@
 import {Employee, secondHighestSalary} from '../script'
 
 describe('176. Second Highest Salary', () => {
-    it('should return second highest salary when multiple distinct salaries exist', () => {
+    it('second highest salary when multiple distinct salaries exist', () => {
         const employees: Employee[] = [
             {id: 1, salary: 100},
             {id: 2, salary: 200},
@@ -11,7 +11,7 @@ describe('176. Second Highest Salary', () => {
             .toBe(200)
     })
 
-    it('should return null when there is only one distinct salary', () => {
+    it('null when there is only one distinct salary', () => {
         const employees: Employee[] = [
             {id: 1, salary: 100},
             {id: 2, salary: 100},
@@ -21,19 +21,19 @@ describe('176. Second Highest Salary', () => {
             .toBeNull()
     })
 
-    it('should return null when employee list is empty', () => {
+    it('null when employee list is empty', () => {
         const employees: Employee[] = []
         expect(secondHighestSalary(employees))
             .toBeNull()
     })
 
-    it('should return null when there is only one employee', () => {
+    it('null when there is only one employee', () => {
         const employees: Employee[] = [{id: 1, salary: 100}]
         expect(secondHighestSalary(employees))
             .toBeNull()
     })
 
-    it('should handle duplicate salaries and return the second distinct highest', () => {
+    it('second distinct highest with duplicate salaries', () => {
         const employees: Employee[] = [
             {id: 1, salary: 100},
             {id: 2, salary: 300},

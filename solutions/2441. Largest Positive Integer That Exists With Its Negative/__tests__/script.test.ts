@@ -6,7 +6,7 @@ describe('2441. Largest Positive Integer That Exists With Its Negative', (): voi
             .toBe(3)
     })
 
-    it('Found multiple. Return bigger', (): void => {
+    it('biggest among multiple found pairs', (): void => {
         expect(findMaxK([-1, 10, 6, 7, -7, 1]))
             .toBe(7)
     })

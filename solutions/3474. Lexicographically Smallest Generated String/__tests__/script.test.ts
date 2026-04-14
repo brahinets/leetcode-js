@@ -1,32 +1,32 @@
 import { generateString } from '../script'
 
 describe('3474. Lexicographically Smallest Generated String', (): void => {
-    it('returns lexicographically smallest string satisfying T and F constraints', (): void => {
+    it('lexicographically smallest string satisfying T and F constraints', (): void => {
         expect(generateString('TFTF', 'ab'))
             .toBe('ababa')
     })
 
-    it('returns empty string when T constraints conflict with each other', (): void => {
+    it('empty string when T constraints conflict with each other', (): void => {
         expect(generateString('TFTF', 'abc'))
             .toBe('')
     })
 
-    it('returns smallest single character not equal to str2 for single F', (): void => {
+    it('smallest single character not equal to str2 for single F', (): void => {
         expect(generateString('F', 'd'))
             .toBe('a')
     })
 
-    it('returns str2 for single T', (): void => {
+    it('str2 for single T constraint', (): void => {
         expect(generateString('T', 'abc'))
             .toBe('abc')
     })
 
-    it('returns empty string when adjacent T constraints produce conflicting overlapping values', (): void => {
+    it('empty string when adjacent T constraints produce conflicting overlapping values', (): void => {
         expect(generateString('TT', 'ab'))
             .toBe('')
     })
 
-    it('returns all-a string when F windows already differ from str2', (): void => {
+    it('all-a string when F windows already differ from str2', (): void => {
         expect(generateString('FF', 'ab'))
             .toBe('aaa')
     })
@@ -36,7 +36,7 @@ describe('3474. Lexicographically Smallest Generated String', (): void => {
             .toBe('aba')
     })
 
-    it('returns empty string when all positions in F window are locked and match str2', (): void => {
+    it('empty string when all positions in F window are locked and match str2', (): void => {
         expect(generateString('TFT', 'aa'))
             .toBe('')
     })

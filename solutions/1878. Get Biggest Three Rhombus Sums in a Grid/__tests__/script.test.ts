@@ -1,7 +1,7 @@
 import { getBiggestThree } from '../script'
 
 describe('1878. Get Biggest Three Rhombus Sums in a Grid', (): void => {
-    it('returns three biggest distinct rhombus sums from 5x5 grid', (): void => {
+    it('three biggest distinct rhombus sums from 5x5 grid', (): void => {
         expect(getBiggestThree([
             [3, 4, 5, 1, 3],
             [3, 3, 4, 2, 3],
@@ -11,7 +11,7 @@ describe('1878. Get Biggest Three Rhombus Sums in a Grid', (): void => {
         ])).toEqual([228, 216, 211])
     })
 
-    it('returns three biggest sums from 3x3 grid', (): void => {
+    it('three biggest sums from 3x3 grid', (): void => {
         expect(getBiggestThree([
             [1, 2, 3],
             [4, 5, 6],
@@ -19,15 +19,15 @@ describe('1878. Get Biggest Three Rhombus Sums in a Grid', (): void => {
         ])).toEqual([20, 9, 8])
     })
 
-    it('returns single element when all values are the same', (): void => {
+    it('single element when all values are the same', (): void => {
         expect(getBiggestThree([[7, 7, 7]])).toEqual([7])
     })
 
-    it('returns single cell for 1x1 grid', (): void => {
+    it('single cell for 1x1 grid', (): void => {
         expect(getBiggestThree([[42]])).toEqual([42])
     })
 
-    it('returns distinct sums only, not duplicates', (): void => {
+    it('distinct sums only without duplicates', (): void => {
         // All cells equal — only one distinct rhombus sum exists
         expect(getBiggestThree([
             [1, 1, 1],

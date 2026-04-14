@@ -1,17 +1,17 @@
 import { maxWalls } from '../script'
 
 describe('3661. Maximum Walls Destroyed by Robots', (): void => {
-    it('returns zero when there are no walls', (): void => {
+    it('zero walls when wall list is empty', (): void => {
         expect(maxWalls([0], [5], []))
             .toBe(0)
     })
 
-    it('returns count of walls within left firing range of single robot', (): void => {
+    it('walls within left firing range of single robot are counted', (): void => {
         expect(maxWalls([10], [5], [5, 7]))
             .toBe(2)
     })
 
-    it('returns count of walls within right firing range of single robot', (): void => {
+    it('walls within right firing range of single robot are counted', (): void => {
         expect(maxWalls([10], [5], [12, 15]))
             .toBe(2)
     })

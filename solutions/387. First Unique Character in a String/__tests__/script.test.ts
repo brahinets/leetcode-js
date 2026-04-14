@@ -6,7 +6,7 @@ describe('387. First Unique Character in a String', (): void => {
             .toStrictEqual(0)
     })
 
-    it('Multiple character is unique and first returned', (): void => {
+    it('index of first among multiple unique characters', (): void => {
         expect(firstUniqChar("loveleetcode"))
             .toStrictEqual(2)
     })

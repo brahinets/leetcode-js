@@ -12,12 +12,12 @@ describe('3902. Maximize Spanning Tree Stability with Upgrades', (): void => {
             .toBe(6)
     })
 
-    it('returns -1 when must-edges form a cycle', (): void => {
+    it('-1 when must-edges form a cycle', (): void => {
         expect(maxStability(3, [[0, 1, 1, 1], [1, 2, 1, 1], [2, 0, 1, 1]], 0))
             .toBe(-1)
     })
 
-    it('returns -1 when graph cannot be connected', (): void => {
+    it('-1 when graph cannot be connected', (): void => {
         expect(maxStability(4, [[0, 1, 5, 0]], 2))
             .toBe(-1)
     })

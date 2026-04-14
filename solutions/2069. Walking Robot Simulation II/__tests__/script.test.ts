@@ -1,7 +1,7 @@
 import { Robot } from '../script'
 
 describe('2069. Walking Robot Simulation II', (): void => {
-    it('returns initial position before any step', (): void => {
+    it('initial position before any step', (): void => {
         const robot = new Robot(6, 3)
         expect(robot.getPos()).toEqual([0, 0])
     })
@@ -13,7 +13,7 @@ describe('2069. Walking Robot Simulation II', (): void => {
         expect(robot.getDir()).toBe('East')
     })
 
-    it('returns [4,0] East after step(2)+step(2)', (): void => {
+    it('[4,0] East after step(2)+step(2)', (): void => {
         const robot = new Robot(6, 3)
         robot.step(2)
         robot.step(2)
@@ -28,7 +28,7 @@ describe('2069. Walking Robot Simulation II', (): void => {
         expect(robot.getDir()).toBe('East')
     })
 
-    it('returns [1,2] West after 11 cumulative steps', (): void => {
+    it('[1,2] West after 11 cumulative steps', (): void => {
         const robot = new Robot(6, 3)
         robot.step(2)
         robot.step(2)

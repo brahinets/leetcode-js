@@ -17,17 +17,17 @@ describe('3719. Longest Balanced Subarray I', (): void => {
             .toBe(3)
     })
 
-    it('Single element returns zero', (): void => {
+    it('zero length for single element', (): void => {
         expect(longestBalancedSubarray([1]))
             .toBe(0)
     })
 
-    it('All even numbers returns zero', (): void => {
+    it('zero length when all elements are even', (): void => {
         expect(longestBalancedSubarray([2, 4, 6, 8]))
             .toBe(0)
     })
 
-    it('All odd numbers returns zero', (): void => {
+    it('zero length when all elements are odd', (): void => {
         expect(longestBalancedSubarray([1, 3, 5, 7]))
             .toBe(0)
     })

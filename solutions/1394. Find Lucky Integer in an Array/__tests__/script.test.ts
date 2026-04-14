@@ -6,7 +6,7 @@ describe('1394. Find Lucky Integer in an Array', (): void => {
             .toBe(2)
     })
 
-    it('Multiple lucky. Return biggest', (): void => {
+    it('biggest among multiple lucky numbers', (): void => {
         expect(findLucky([1, 2, 2, 3, 3, 3]))
             .toBe(3)
     })

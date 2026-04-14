@@ -21,7 +21,7 @@ describe('178. Rank Scores', () => {
         expect(rankScores(scores)).toEqual(expected)
     })
 
-    it('should return rank 1 for all scores when all are equal', () => {
+    it('rank 1 for all scores when all are equal', () => {
         const scores: Score[] = [
             {id: 1, score: 5.00},
             {id: 2, score: 5.00},
@@ -51,13 +51,13 @@ describe('178. Rank Scores', () => {
         expect(rankScores(scores)).toEqual(expected)
     })
 
-    it('should return a single ranked score when there is only one entry', () => {
+    it('single ranked score when there is only one entry', () => {
         const scores: Score[] = [{id: 1, score: 7.50}]
         const expected: RankedScore[] = [{score: 7.50, rank: 1}]
         expect(rankScores(scores)).toEqual(expected)
     })
 
-    it('should return empty array when input is empty', () => {
+    it('empty array when input is empty', () => {
         const scores: Score[] = []
         expect(rankScores(scores)).toEqual([])
     })

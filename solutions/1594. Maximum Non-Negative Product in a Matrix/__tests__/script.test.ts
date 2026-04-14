@@ -1,7 +1,7 @@
 import { maxProductPath } from '../script'
 
 describe('1594. Maximum Non-Negative Product in a Matrix', (): void => {
-    it('returns -1 when all paths yield negative products', (): void => {
+    it('-1 when all paths yield negative products', (): void => {
         expect(maxProductPath([
             [-1, -2, -3],
             [-2, -3, -3],
@@ -9,7 +9,7 @@ describe('1594. Maximum Non-Negative Product in a Matrix', (): void => {
         ])).toBe(-1)
     })
 
-    it('returns maximum product when path includes two negatives', (): void => {
+    it('maximum product when path includes two negatives', (): void => {
         expect(maxProductPath([
             [1, -2, 1],
             [1, -2, 1],
@@ -17,11 +17,11 @@ describe('1594. Maximum Non-Negative Product in a Matrix', (): void => {
         ])).toBe(8)
     })
 
-    it('returns single positive cell value for 1x1 grid', (): void => {
+    it('single positive cell value for 1x1 grid', (): void => {
         expect(maxProductPath([[5]])).toBe(5)
     })
 
-    it('returns -1 for 1x1 grid with negative value', (): void => {
+    it('-1 for 1x1 grid with negative value', (): void => {
         expect(maxProductPath([[-3]])).toBe(-1)
     })
 })

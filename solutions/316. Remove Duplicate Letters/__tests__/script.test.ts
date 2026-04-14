@@ -11,7 +11,7 @@ describe('316. Remove Duplicate Letters', (): void => {
             .toBe("abc")
     })
 
-    it('Should return smallest in lexicographical order', (): void => {
+    it('smallest lexicographical order when letters have varying occurrence counts', (): void => {
         expect(removeDuplicateLetters("cbacdcbc"))
             .toBe("acdb")
     })

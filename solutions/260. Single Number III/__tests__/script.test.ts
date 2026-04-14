@@ -7,12 +7,12 @@ describe('260. Single Number III', (): void => {
             .toEqual([3, 5])
     })
 
-    it('All unique. Return in the same order', (): void => {
+    it('all unique numbers in same order as input', (): void => {
         expect(singleNumber([-1, 0]))
             .toEqual([-1, 0])
     })
 
-    it('All unique. Return in different order', (): void => {
+    it('all unique numbers in different order than input', (): void => {
         expect(singleNumber([0, 1]))
             .toEqual([1, 0])
     })

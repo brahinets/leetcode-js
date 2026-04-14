@@ -20,7 +20,7 @@ describe('1622. Fancy Sequence', (): void => {
             .toBe(20)
     })
 
-    it('returns -1 for out-of-bounds index', (): void => {
+    it('-1 for out-of-bounds index', (): void => {
         const fancy: Fancy = new Fancy()
         fancy.append(5)
         expect(fancy.getIndex(1))
@@ -29,7 +29,7 @@ describe('1622. Fancy Sequence', (): void => {
             .toBe(-1)
     })
 
-    it('returns correct value without any addAll or multAll', (): void => {
+    it('value unchanged when no addAll or multAll applied', (): void => {
         const fancy: Fancy = new Fancy()
         fancy.append(3)
         fancy.append(7)
@@ -67,7 +67,7 @@ describe('1622. Fancy Sequence', (): void => {
             .toBe(5)
     })
 
-    it('returns result modulo 1e9+7', (): void => {
+    it('result is computed modulo 1e9+7', (): void => {
         const fancy: Fancy = new Fancy()
         fancy.append(1_000_000_000)
         fancy.multAll(1_000_000_000)

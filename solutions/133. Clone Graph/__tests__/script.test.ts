@@ -28,7 +28,7 @@ describe('133. Clone Graph', (): void => {
             .toBe(original)
     })
 
-    it('Returns null for null input', (): void => {
+    it('null for null input', (): void => {
         const cloned: _Node | null = cloneGraph(null)
         expect(cloned)
             .toBeNull()

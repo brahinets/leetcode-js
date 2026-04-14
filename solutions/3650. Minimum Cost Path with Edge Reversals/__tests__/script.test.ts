@@ -11,7 +11,7 @@ describe('3650. Minimum Cost Path with Edge Reversals', (): void => {
             .toBe(3)
     })
 
-    it('Unreachable destination returns -1', (): void => {
+    it('-1 when destination is unreachable', (): void => {
         expect(minCost(3, [[1, 2, 1]]))
             .toBe(-1)
     })

@@ -1,7 +1,7 @@
 import {Employee, getNthHighestSalary} from '../script'
 
 describe('177. Nth Highest Salary', () => {
-    it('should return nth highest salary when enough distinct salaries exist', () => {
+    it('nth highest salary when enough distinct salaries exist', () => {
         const employees: Employee[] = [
             {id: 1, salary: 100},
             {id: 2, salary: 200},
@@ -11,7 +11,7 @@ describe('177. Nth Highest Salary', () => {
             .toBe(200)
     })
 
-    it('should return the highest salary when n is 1', () => {
+    it('highest salary when n is 1', () => {
         const employees: Employee[] = [
             {id: 1, salary: 100},
             {id: 2, salary: 200},
@@ -21,7 +21,7 @@ describe('177. Nth Highest Salary', () => {
             .toBe(300)
     })
 
-    it('should return null when n exceeds number of distinct salaries', () => {
+    it('null when n exceeds number of distinct salaries', () => {
         const employees: Employee[] = [
             {id: 1, salary: 100},
             {id: 2, salary: 200},
@@ -30,13 +30,13 @@ describe('177. Nth Highest Salary', () => {
             .toBeNull()
     })
 
-    it('should return null when employee list is empty', () => {
+    it('null when employee list is empty', () => {
         const employees: Employee[] = []
         expect(getNthHighestSalary(employees, 1))
             .toBeNull()
     })
 
-    it('should return null when there is only one distinct salary and n is 2', () => {
+    it('null when there is only one distinct salary and n is 2', () => {
         const employees: Employee[] = [
             {id: 1, salary: 100},
             {id: 2, salary: 100},
@@ -46,7 +46,7 @@ describe('177. Nth Highest Salary', () => {
             .toBeNull()
     })
 
-    it('should handle duplicate salaries and return the nth distinct highest', () => {
+    it('nth distinct highest when duplicate salaries exist', () => {
         const employees: Employee[] = [
             {id: 1, salary: 100},
             {id: 2, salary: 300},

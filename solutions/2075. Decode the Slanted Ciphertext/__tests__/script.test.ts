@@ -1,7 +1,7 @@
 import { decodeCiphertext } from '../script'
 
 describe('2075. Decode the Slanted Ciphertext', (): void => {
-    it('returns encoded text unchanged when rows is one', (): void => {
+    it('encoded text unchanged when rows is one', (): void => {
         expect(decodeCiphertext('coding', 1))
             .toBe('coding')
     })

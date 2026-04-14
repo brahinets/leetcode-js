@@ -15,7 +15,7 @@ describe('3643. Flip Square Submatrix Vertically', (): void => {
         )).toEqual([[3,4,4,2],[2,3,2,3]])
     })
 
-    it('returns the grid unchanged when k equals 1', (): void => {
+    it('grid unchanged when k equals 1', (): void => {
         expect(reverseSubmatrix([[1,2],[3,4]], 0, 1, 1))
             .toEqual([[1,2],[3,4]])
     })
