@@ -858,6 +858,7 @@
 1. № [2493. Divide Nodes Into the Maximum Number of Groups](solutions/2493.%20Divide%20Nodes%20Into%20the%20Maximum%20Number%20of%20Groups/script.ts)
 1. № [2501. Longest Square Streak in an Array](solutions/2501.%20Longest%20Square%20Streak%20in%20an%20Array/script.ts)
 1. № [2503. Maximum Number of Points From Grid Queries](solutions/2503.%20Maximum%20Number%20of%20Points%20From%20Grid%20Queries/script.ts)
+1. № [2515. Shortest Distance to Target String in a Circular Array](solutions/2515.%20Shortest%20Distance%20to%20Target%20String%20in%20a%20Circular%20Array/script.ts)
 1. № [2516. Take K of Each Character From Left and Right](solutions/2516.%20Take%20K%20of%20Each%20Character%20From%20Left%20and%20Right/script.ts)
 1. № [2523. Closest Prime Numbers in Range](solutions/2523.%20Closest%20Prime%20Numbers%20in%20Range/script.ts)
 1. № [2528. Maximize the Minimum Powered City](solutions/2528.%20Maximize%20the%20Minimum%20Powered%20City/script.ts)
