@@ -1,6 +1,6 @@
-export { closetTarget }
+export { closestTarget }
 
-function closetTarget(words: string[], target: string, startIndex: number): number {
+function closestTarget(words: string[], target: string, startIndex: number): number {
     const length: number = words.length
     let minimumDistance: number = -1
 
