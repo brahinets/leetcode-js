@@ -1,6 +1,6 @@
-export { minimumDistance }
+export { minMirrorPairDistance }
 
-function minimumDistance(numbers: number[]): number {
+function minMirrorPairDistance(numbers: number[]): number {
     const reverseMap: Map<number, number> = new Map<number, number>()
     let minimumResult: number = Infinity
 
