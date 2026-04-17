@@ -1108,6 +1108,7 @@
 1. № [3721. Longest Balanced Subarray II](solutions/3721.%20Longest%20Balanced%20Subarray%20II/script.ts)
 1. № [3740. Minimum Distance Between Three Equal Elements I](solutions/3740.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20I/script.ts)
 1. № [3741. Minimum Distance Between Three Equal Elements II](solutions/3741.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20II/script.ts)
+1. № [3761. Minimum Absolute Distance Between Mirror Pairs](solutions/3761.%20Minimum%20Absolute%20Distance%20Between%20Mirror%20Pairs/script.ts)
 1. № [3884. Minimum Absolute Difference in Sliding Submatrix](solutions/3884.%20Minimum%20Absolute%20Difference%20in%20Sliding%20Submatrix/script.ts)
 1. № [3902. Maximize Spanning Tree Stability with Upgrades](solutions/3902.%20Maximize%20Spanning%20Tree%20Stability%20with%20Upgrades/script.ts)
 
