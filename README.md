@@ -666,6 +666,7 @@
 1. № [1845. Seat Reservation Manager](solutions/1845.%20Seat%20Reservation%20Manager/script.ts)
 1. № [1846. Maximum Element After Decreasing and Rearranging](solutions/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging/script.ts)
 1. № [1848. Minimum Distance to the Target Element](solutions/1848.%20Minimum%20Distance%20to%20the%20Target%20Element/script.ts)
+1. № [1855. Maximum Distance Between a Pair of Values](solutions/1855.%20Maximum%20Distance%20Between%20a%20Pair%20of%20Values/script.ts)
 1. № [1857. Largest Color Value in a Directed Graph](solutions/1857.%20Largest%20Color%20Value%20in%20a%20Directed%20Graph/script.ts)
 1. № [1861. Rotating the Box](solutions/1861.%20Rotating%20the%20Box/script.ts)
 1. № [1863. Sum of All Subset XOR Totals](solutions/1863.%20Sum%20of%20All%20Subset%20XOR%20Totals/script.ts)
