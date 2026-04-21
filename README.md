@@ -633,6 +633,7 @@
 1. № [1717. Maximum Score From Removing Substrings](solutions/1717.%20Maximum%20Score%20From%20Removing%20Substrings/script.ts)
 1. № [1718. Construct the Lexicographically Largest Valid Sequence](solutions/1718.%20Construct%20the%20Lexicographically%20Largest%20Valid%20Sequence/script.ts)
 1. № [1721. Swapping Nodes in a Linked List](solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List/script.ts)
+1. № [1722. Minimize Hamming Distance After Swap Operations](solutions/1722.%20Minimize%20Hamming%20Distance%20After%20Swap%20Operations/script.ts)
 1. № [1726. Tuple with Same Product](solutions/1726.%20Tuple%20with%20Same%20Product/script.ts)
 1. № [1727. Largest Submatrix With Rearrangements](solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/script.ts)
 1. № [1732. Find the Highest Altitude](solutions/1732.%20Find%20the%20Highest%20Altitude/script.ts)
