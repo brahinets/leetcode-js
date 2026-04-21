@@ -24,29 +24,30 @@ function minimumHammingDistance(
         union(first, second)
     }
 
-    const componentSourceValues = new Map<number, number[]>()
+    const componentSourceFreq: Map<number, Map<number, number>> = new Map<number, Map<number, number>>()
 
     for (let index: number = 0; index < length; index++) {
         const root: number = find(index)
 
-        if (!componentSourceValues.has(root)) {
-            componentSourceValues.set(root, [])
+        if (!componentSourceFreq.has(root)) {
+            componentSourceFreq.set(root, new Map<number, number>())
         }
 
-        componentSourceValues.get(root)!.push(source[index])
+        const freq: Map<number, number> = componentSourceFreq.get(root)!
+        freq.set(source[index], (freq.get(source[index]) ?? 0) + 1)
     }
 
     let hammingDistance: number = 0
 
     for (let index: number = 0; index < length; index++) {
         const root: number = find(index)
-        const sourceValues: number[] = componentSourceValues.get(root)!
-        const matchPosition: number = sourceValues.indexOf(target[index])
+        const freq: Map<number, number> = componentSourceFreq.get(root)!
+        const count: number = freq.get(target[index]) ?? 0
 
-        if (matchPosition === -1) {
+        if (count === 0) {
             hammingDistance++
         } else {
-            sourceValues.splice(matchPosition, 1)
+            freq.set(target[index], count - 1)
         }
     }
 
