@@ -924,6 +924,7 @@
 1. № [2816. Double a Number Represented as a Linked List](solutions/2816.%20Double%20a%20Number%20Represented%20as%20a%20Linked%20List/script.ts)
 1. № [2818. Apply Operations to Maximize Score](solutions/2818.%20Apply%20Operations%20to%20Maximize%20Score/script.ts)
 1. № [2825. Make String a Subsequence Using Cyclic Increments](solutions/2825.%20Make%20String%20a%20Subsequence%20Using%20Cyclic%20Increments/script.ts)
+1. № [2833. Furthest Point From Origin](solutions/2833.%20Furthest%20Point%20From%20Origin/script.ts)
 1. № [2839. Check if Strings Can be Made Equal With Operations I](solutions/2839.%20Check%20if%20Strings%20Can%20be%20Made%20Equal%20With%20Operations%20I/script.ts)
 1. № [2840. Check if Strings Can be Made Equal With Operations II](solutions/2840.%20Check%20if%20Strings%20Can%20be%20Made%20Equal%20With%20Operations%20II/script.ts)
 1. № [2843. Count Symmetric Integers](solutions/2843.%20Count%20Symmetric%20Integers/script.ts)
