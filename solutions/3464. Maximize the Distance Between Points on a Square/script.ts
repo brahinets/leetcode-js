@@ -1,14 +1,96 @@
 export { maxDistance }
 
+function toPerimeterPosition(x: number, y: number, side: number): number {
+    if (y === 0) {
+        return x
+    }
+
+    if (x === side) {
+        return side + y
+    }
+
+    if (y === side) {
+        return 2 * side + (side - x)
+    }
+
+    return 3 * side + (side - y)
+}
+
+function extendedPosition(positions: readonly number[], index: number, circumference: number): number {
+    const length = positions.length
+
+    return index < length ? positions[index]! : positions[index - length]! + circumference
+}
+
+function firstIndexAtLeast(
+    positions: readonly number[],
+    target: number,
+    low: number,
+    high: number,
+    circumference: number,
+): number {
+    let left = low
+    let right = high
+
+    while (left < right) {
+        const middle = Math.floor((left + right) / 2)
+
+        if (extendedPosition(positions, middle, circumference) >= target) {
+            right = middle
+        } else {
+            left = middle + 1
+        }
+    }
+
+    return left
+}
+
+function canSelectKPoints(
+    positions: readonly number[],
+    k: number,
+    minimumDistance: number,
+    circumference: number,
+): boolean {
+    const length = positions.length
+
+    for (let startIndex = 0; startIndex < length; startIndex++) {
+        let currentIndex = startIndex
+        let isValid = true
+
+        for (let count = 1; count < k; count++) {
+            const target = extendedPosition(positions, currentIndex, circumference) + minimumDistance
+            const nextIndex = firstIndexAtLeast(positions, target, currentIndex + 1, startIndex + length, circumference)
+
+            if (nextIndex >= startIndex + length) {
+                isValid = false
+                break
+            }
+
+            currentIndex = nextIndex
+        }
+
+        if (isValid &&
+            extendedPosition(positions, currentIndex, circumference) + minimumDistance <= positions[startIndex]! + circumference) {
+            return true
+        }
+    }
+
+    return false
+}
+
 function maxDistance(side: number, points: number[][], k: number): number {
-    let left: number = 0
-    let right: number = 2 * side
-    let result: number = 0
+    const circumference = 4 * side
+    const positions: number[] = points.map(([x, y]: number[]): number => toPerimeterPosition(x!, y!, side))
+    positions.sort((first: number, second: number): number => first - second)
+
+    let left = 0
+    let right = 2 * side
+    let result = 0
 
     while (left <= right) {
-        const middle: number = Math.floor((left + right) / 2)
+        const middle = Math.floor((left + right) / 2)
 
-        if (canSelectKPoints(points, k, middle)) {
+        if (canSelectKPoints(positions, k, middle, circumference)) {
             result = middle
             left = middle + 1
         } else {
@@ -17,44 +99,4 @@ function maxDistance(side: number, points: number[][], k: number): number {
     }
 
     return result
-}
-
-function manhattan(points: number[][], firstIndex: number, secondIndex: number): number {
-    return Math.abs(points[firstIndex][0] - points[secondIndex][0]) +
-        Math.abs(points[firstIndex][1] - points[secondIndex][1])
-}
-
-function backtrack(points: number[][], k: number, minimumDistance: number, startIndex: number, chosen: number[]): boolean {
-    if (chosen.length === k) {
-        return true
-    }
-
-    for (let index = startIndex; index < points.length; index++) {
-        let isValid: boolean = true
-
-        for (const chosenIndex of chosen) {
-            if (manhattan(points, index, chosenIndex) < minimumDistance) {
-                isValid = false
-                break
-            }
-        }
-
-        if (!isValid) {
-            continue
-        }
-
-        chosen.push(index)
-
-        if (backtrack(points, k, minimumDistance, index + 1, chosen)) {
-            return true
-        }
-
-        chosen.pop()
-    }
-
-    return false
-}
-
-function canSelectKPoints(points: number[][], k: number, minimumDistance: number): boolean {
-    return backtrack(points, k, minimumDistance, 0, [])
 }
