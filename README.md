@@ -588,6 +588,7 @@
 1. № [1545. Find Kth Bit in Nth Binary String](solutions/1545.%20Find%20Kth%20Bit%20in%20Nth%20Binary%20String/script.ts)
 1. № [1550. Three Consecutive Odds](solutions/1550.%20Three%20Consecutive%20Odds/script.ts)
 1. № [1552. Magnetic Force Between Two Balls](solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/script.ts)
+1. № [1559. Detect Cycles in 2D Grid](solutions/1559.%20Detect%20Cycles%20in%202D%20Grid/script.ts)
 1. № [1561. Maximum Number of Coins You Can Get](solutions/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/script.ts)
 1. № [1568. Minimum Number of Days to Disconnect Island](solutions/1568.%20Minimum%20Number%20of%20Days%20to%20Disconnect%20Island/script.ts)
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
