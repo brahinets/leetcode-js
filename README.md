@@ -525,6 +525,7 @@
 1. № [1381. Design a Stack With Increment Operation](solutions/1381.%20Design%20a%20Stack%20With%20Increment%20Operation/script.ts)
 1. № [1382. Balance a Binary Search Tree](solutions/1382.%20Balance%20a%20Binary%20Search%20Tree/script.ts)
 1. № [1390. Four Divisors](solutions/1390.%20Four%20Divisors/script.ts)
+1. № [1391. Check if There is a Valid Path in a Grid](solutions/1391.%20Check%20if%20There%20is%20a%20Valid%20Path%20in%20a%20Grid/script.ts)
 1. № [1394. Find Lucky Integer in an Array](solutions/1394.%20Find%20Lucky%20Integer%20in%20an%20Array/script.ts)
 1. № [1395. Count Number of Teams](solutions/1395.%20Count%20Number%20of%20Teams/script.ts)
 1. № [1396. Design Underground System](solutions/1396.%20Design%20Underground%20System/script.ts)
