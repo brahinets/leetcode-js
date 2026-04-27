@@ -1069,6 +1069,7 @@
 1. № [3454. Separate Squares II](solutions/3454.%20Separate%20Squares%20II/script.ts)
 1. № [3459. Length of Longest V-Shaped Diagonal Segment](solutions/3459.%20Length%20of%20Longest%20V-Shaped%20Diagonal%20Segment/script.ts)
 1. № [3461. Check If Digits Are Equal in String After Operations I](solutions/3461.%20Check%20If%20Digits%20Are%20Equal%20in%20String%20After%20Operations%20I/script.ts)
+1. № [3464. Maximize the Distance Between Points on a Square](solutions/3464.%20Maximize%20the%20Distance%20Between%20Points%20on%20a%20Square/script.ts)
 1. № [3474. Lexicographically Smallest Generated String](solutions/3474.%20Lexicographically%20Smallest%20Generated%20String/script.ts)
 1. № [3477. Fruits Into Baskets II](solutions/3477.%20Fruits%20Into%20Baskets%20II/script.ts)
 1. № [3479. Fruits Into Baskets III](solutions/3479.%20Fruits%20Into%20Baskets%20III/script.ts)
