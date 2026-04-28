@@ -1,25 +1,25 @@
 export {minOperations}
 
 function minOperations(grid: number[][], x: number): number {
-    const arr: number[] = []
-    for (let i: number = 0; i < grid.length; i++) {
-        for (let j: number = 0; j < grid[0].length; j++) {
-            arr.push(grid[i][j])
+    const values: number[] = []
+    for (let rowIndex: number = 0; rowIndex < grid.length; rowIndex++) {
+        for (let columnIndex: number = 0; columnIndex < grid[0].length; columnIndex++) {
+            values.push(grid[rowIndex][columnIndex])
         }
     }
 
-    arr.sort((a: number, b: number): number => a - b)
+    values.sort((first: number, second: number): number => first - second)
 
-    const median: number = arr[Math.floor(arr.length / 2)]
+    const median: number = values[Math.floor(values.length / 2)]
     let operations: number = 0
 
-    for (const num of arr) {
-        const diff: number = Math.abs(num - median)
-        if (diff % x !== 0) {
+    for (const value of values) {
+        const difference: number = Math.abs(value - median)
+        if (difference % x !== 0) {
             return -1
         }
 
-        operations += diff / x
+        operations += difference / x
     }
 
     return operations
