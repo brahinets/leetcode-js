@@ -1011,6 +1011,7 @@
 1. № [3212. Count Submatrices With Equal Frequency of X and Y](solutions/3212.%20Count%20Submatrices%20With%20Equal%20Frequency%20of%20X%20and%20Y/script.ts)
 1. № [3217. Delete Nodes From Linked List Present in Array](solutions/3217.%20Delete%20Nodes%20From%20Linked%20List%20Present%20in%20Array/script.ts)
 1. № [3223. Minimum Length of String After Operations](solutions/3223.%20Minimum%20Length%20of%20String%20After%20Operations/script.ts)
+1. № [3225. Maximum Score From Grid Operations](solutions/3225.%20Maximum%20Score%20From%20Grid%20Operations/script.ts)
 1. № [3227. Vowels Game in a String](solutions/3227.%20Vowels%20Game%20in%20a%20String/script.ts)
 1. № [3228. Maximum Number of Operations to Move Ones to the End](solutions/3228.%20Maximum%20Number%20of%20Operations%20to%20Move%20Ones%20to%20the%20End/script.ts)
 1. № [3234. Count the Number of Substrings With Dominant Ones](solutions/3234.%20Count%20the%20Number%20of%20Substrings%20With%20Dominant%20Ones/script.ts)
