@@ -3,7 +3,7 @@ import {ListNode} from "../../common/ListNode"
 export {rotateRight}
 
 function rotateRight(head: ListNode | null, k: number): ListNode | null {
-    if (!head || k === 0) {
+    if (!head || !head.next) {
         return head
     }
 
@@ -15,19 +15,20 @@ function rotateRight(head: ListNode | null, k: number): ListNode | null {
         length++
     }
 
-    k = k % length
-    if (k === 0) {
+    const rotation: number = k % length
+    if (rotation === 0) {
         return head
     }
 
+    tail.next = head
+
     let newTail: ListNode = head
-    for (let i: number = 1; i < length - k; i++) {
+    for (let i: number = 0; i < length - rotation - 1; i++) {
         newTail = newTail.next as ListNode
     }
 
-    const newHead: ListNode | null = newTail.next
+    const newHead: ListNode = newTail.next as ListNode
     newTail.next = null
-    tail.next = head
 
     return newHead
 }
