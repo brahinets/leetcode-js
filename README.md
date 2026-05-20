@@ -511,6 +511,7 @@
 1. № [1335. Minimum Difficulty of a Job Schedule](solutions/1335.%20Minimum%20Difficulty%20of%20a%20Job%20Schedule/script.ts)
 1. № [1339. Maximum Product of Splitted Binary Tree](solutions/1339.%20Maximum%20Product%20of%20Splitted%20Binary%20Tree/script.ts)
 1. № [1344. Angle Between Hands of a Clock](solutions/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/script.ts)
+1. № [1345. Jump Game IV](solutions/1345.%20Jump%20Game%20IV/script.ts)
 1. № [1346. Check If N and Its Double Exist](solutions/1346.%20Check%20If%20N%20and%20Its%20Double%20Exist/script.ts)
 1. № [1347. Minimum Number of Steps to Make Two Strings Anagram](solutions/1347.%20Minimum%20Number%20of%20Steps%20to%20Make%20Two%20Strings%20Anagram/script.ts)
 1. № [1351. Count Negative Numbers in a Sorted Matrix](solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/script.ts)
