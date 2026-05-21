@@ -499,6 +499,7 @@
 1. № [1295. Find Numbers with Even Number of Digits](solutions/1295.%20Find%20Numbers%20with%20Even%20Number%20of%20Digits/script.ts)
 1. № [1298. Maximum Candies You Can Get from Boxes](solutions/1298.%20Maximum%20Candies%20You%20Can%20Get%20from%20Boxes/script.ts)
 1. № [1304. Find N Unique Integers Sum up to Zero](solutions/1304.%20Find%20N%20Unique%20Integers%20Sum%20up%20to%20Zero/script.ts)
+1. № [1306. Jump Game III](solutions/1306.%20Jump%20Game%20III/script.ts)
 1. № [1310. XOR Queries of a Subarray](solutions/1310.%20XOR%20Queries%20of%20a%20Subarray/script.ts)
 1. № [1312. Minimum Insertion Steps to Make a String Palindrome](solutions/1312.%20Minimum%20Insertion%20Steps%20to%20Make%20a%20String%20Palindrome/script.ts)
 1. № [1317. Convert Integer to the Sum of Two No-Zero Integers](solutions/1317.%20Convert%20Integer%20to%20the%20Sum%20of%20Two%20No-Zero%20Integers/script.ts)
