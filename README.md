@@ -922,6 +922,7 @@
 1. № [2762. Continuous Subarrays](solutions/2762.%20Continuous%20Subarrays/script.ts)
 1. № [2779. Maximum Beauty of an Array After Applying Operation](solutions/2779.%20Maximum%20Beauty%20of%20an%20Array%20After%20Applying%20Operation/script.ts)
 1. № [2780. Minimum Index of a Valid Split](solutions/2780.%20Minimum%20Index%20of%20a%20Valid%20Split/script.ts)
+1. № [2784. Check if Array is Good](solutions/2784.%20Check%20if%20Array%20is%20Good/script.ts)
 1. № [2785. Sort Vowels in a String](solutions/2785.%20Sort%20Vowels%20in%20a%20String/script.ts)
 1. № [2787. Ways to Express an Integer as Sum of Powers](solutions/2787.%20Ways%20to%20Express%20an%20Integer%20as%20Sum%20of%20Powers/script.ts)
 1. № [2799. Count Complete Subarrays in an Array](solutions/2799.%20Count%20Complete%20Subarrays%20in%20an%20Array/script.ts)
