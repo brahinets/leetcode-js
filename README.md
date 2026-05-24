@@ -624,6 +624,7 @@
 1. № [1653. Minimum Deletions to Make String Balanced](solutions/1653.%20Minimum%20Deletions%20to%20Make%20String%20Balanced/script.ts)
 1. № [1657. Determine if Two Strings Are Close](solutions/1657.%20Determine%20if%20Two%20Strings%20Are%20Close/script.ts)
 1. № [1662. Check If Two String Arrays are Equivalent](solutions/1662.%20Check%20If%20Two%20String%20Arrays%20are%20Equivalent/script.ts)
+1. № [1665. Minimum Initial Energy to Finish Tasks](solutions/1665.%20Minimum%20Initial%20Energy%20to%20Finish%20Tasks/script.ts)
 1. № [1669. Merge In Between Linked Lists](solutions/1669.%20Merge%20In%20Between%20Linked%20Lists/script.ts)
 1. № [1671. Minimum Number of Removals to Make Mountain Array](solutions/1671.%20Minimum%20Number%20of%20Removals%20to%20Make%20Mountain%20Array/script.ts)
 1. № [1674. Minimum Moves to Make Array Complementary](solutions/1674.%20Minimum%20Moves%20to%20Make%20Array%20Complementary/script.ts)
