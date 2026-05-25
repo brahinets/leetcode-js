@@ -681,6 +681,7 @@
 1. № [1863. Sum of All Subset XOR Totals](solutions/1863.%20Sum%20of%20All%20Subset%20XOR%20Totals/script.ts)
 1. № [1865. Finding Pairs With a Certain Sum](solutions/1865.%20Finding%20Pairs%20With%20a%20Certain%20Sum/script.ts)
 1. № [1870. Minimum Speed to Arrive on Time](solutions/1870.%20Minimum%20Speed%20to%20Arrive%20on%20Time/script.ts)
+1. № [1871. Jump Game VII](solutions/1871.%20Jump%20Game%20VII/script.ts)
 1. № [1877. Minimize Maximum Pair Sum in Array](solutions/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array/script.ts)
 1. № [1878. Get Biggest Three Rhombus Sums in a Grid](solutions/1878.%20Get%20Biggest%20Three%20Rhombus%20Sums%20in%20a%20Grid/script.ts)
 1. № [1886. Determine Whether Matrix Can Be Obtained By Rotation](solutions/1886.%20Determine%20Whether%20Matrix%20Can%20Be%20Obtained%20By%20Rotation/script.ts)
