@@ -996,6 +996,7 @@
 1. № [3108. Minimum Cost Walk in Weighted Graph](solutions/3108.%20Minimum%20Cost%20Walk%20in%20Weighted%20Graph/script.ts)
 1. № [3110. Score of a String](solutions/3110.%20Score%20of%20a%20String/script.ts)
 1. № [3120. Count the Number of Special Characters I](solutions/3120.%20Count%20the%20Number%20of%20Special%20Characters%20I/script.ts)
+1. № [3121. Count the Number of Special Characters II](solutions/3121.%20Count%20the%20Number%20of%20Special%20Characters%20II/script.ts)
 1. № [3129. Find All Possible Stable Binary Arrays I](solutions/3129.%20Find%20All%20Possible%20Stable%20Binary%20Arrays%20I/script.ts)
 1. № [3130. Find All Possible Stable Binary Arrays II](solutions/3130.%20Find%20All%20Possible%20Stable%20Binary%20Arrays%20II/script.ts)
 1. № [3133. Minimum Array End](solutions/3133.%20Minimum%20Array%20End/script.ts)
