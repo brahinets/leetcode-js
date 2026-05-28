@@ -990,6 +990,7 @@
 1. № [3074. Apple Redistribution into Boxes](solutions/3074.%20Apple%20Redistribution%20into%20Boxes/script.ts)
 1. № [3075. Maximize Happiness of Selected Children](solutions/3075.%20Maximize%20Happiness%20of%20Selected%20Children/script.ts)
 1. № [3085. Minimum Deletions to Make String K-Special](solutions/3085.%20Minimum%20Deletions%20to%20Make%20String%20K-Special/script.ts)
+1. № [3093. Longest Common Suffix Queries](solutions/3093.%20Longest%20Common%20Suffix%20Queries/script.ts)
 1. № [3097. Shortest Subarray With OR at Least K II](solutions/3097.%20Shortest%20Subarray%20With%20OR%20at%20Least%20K%20II/script.ts)
 1. № [3100. Water Bottles II](solutions/3100.%20Water%20Bottles%20II/script.ts)
 1. № [3105. Longest Strictly Increasing or Strictly Decreasing Subarray](solutions/3105.%20Longest%20Strictly%20Increasing%20or%20Strictly%20Decreasing%20Subarray/script.ts)
