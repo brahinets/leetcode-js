@@ -1032,6 +1032,7 @@
 1. № [3272. Find the Count of Good Integers](solutions/3272.%20Find%20the%20Count%20of%20Good%20Integers/script.ts)
 1. № [3289. The Two Sneaky Numbers of Digitville](solutions/3289.%20The%20Two%20Sneaky%20Numbers%20of%20Digitville/script.ts)
 1. № [3296. Minimum Number of Seconds to Make Mountain Height Zero](solutions/3296.%20Minimum%20Number%20of%20Seconds%20to%20Make%20Mountain%20Height%20Zero/script.ts)
+1. № [3300. Minimum Element After Replacement With Digit Sum](solutions/3300.%20Minimum%20Element%20After%20Replacement%20With%20Digit%20Sum/script.ts)
 1. № [3304. Find the K-th Character in String Game I](solutions/3304.%20Find%20the%20K-th%20Character%20in%20String%20Game%20I/script.ts)
 1. № [3306. Count of Substrings Containing Every Vowel and K Consonants II](solutions/3306.%20Count%20of%20Substrings%20Containing%20Every%20Vowel%20and%20K%20Consonants%20II/script.ts)
 1. № [3307. Find the K-th Character in String Game II](solutions/3307.%20Find%20the%20K-th%20Character%20in%20String%20Game%20II/script.ts)
