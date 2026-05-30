@@ -1006,6 +1006,7 @@
 1. № [3151. Special Array I](solutions/3151.%20Special%20Array%20I/script.ts)
 1. № [3152. Special Array II](solutions/3152.%20Special%20Array%20II/script.ts)
 1. № [3160. Find the Number of Distinct Colors Among the Balls](solutions/3160.%20Find%20the%20Number%20of%20Distinct%20Colors%20Among%20the%20Balls/script.ts)
+1. № [3161. Block Placement Queries](solutions/3161.%20Block%20Placement%20Queries/script.ts)
 1. № [3163. String Compression III](solutions/3163.%20String%20Compression%20III/script.ts)
 1. № [3169. Count Days Without Meetings](solutions/3169.%20Count%20Days%20Without%20Meetings/script.ts)
 1. № [3170. Lexicographically Minimum String After Removing Stars](solutions/3170.%20Lexicographically%20Minimum%20String%20After%20Removing%20Stars/script.ts)
