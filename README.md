@@ -759,6 +759,7 @@
 1. № [2115. Find All Possible Recipes from Given Supplies](solutions/2115.%20Find%20All%20Possible%20Recipes%20from%20Given%20Supplies/script.ts)
 1. № [2116. Check if a Parentheses String Can Be Valid](solutions/2116.%20Check%20if%20a%20Parentheses%20String%20Can%20Be%20Valid/script.ts)
 1. № [2125. Number of Laser Beams in a Bank](solutions/2125.%20Number%20of%20Laser%20Beams%20in%20a%20Bank/script.ts)
+1. № [2126. Destroying Asteroids](solutions/2126.%20Destroying%20Asteroids/script.ts)
 1. № [2127. Maximum Employees to Be Invited to a Meeting](solutions/2127.%20Maximum%20Employees%20to%20Be%20Invited%20to%20a%20Meeting/script.ts)
 1. № [2130. Maximum Twin Sum of a Linked List](solutions/2130.%20Maximum%20Twin%20Sum%20of%20a%20Linked%20List/script.ts)
 1. № [2131. Longest Palindrome by Concatenating Two Letter Words](solutions/2131.%20Longest%20Palindrome%20by%20Concatenating%20Two%20Letter%20Words/script.ts)
