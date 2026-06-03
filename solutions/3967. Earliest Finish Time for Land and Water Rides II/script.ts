@@ -1,3 +1,5 @@
+import { arrayOf } from "../../common/array-factories"
+
 export { earliestFinishTime }
 
 function earliestFinishTime(
@@ -19,12 +21,10 @@ function earliestFinishTime(
     const landCount: number = landRides.length
     const waterCount: number = waterRides.length
 
-    // prefixMinDuration[i] = min duration among rides 0..i (already open at or before some cutoff)
-    // suffixMinEnd[i]      = min (start + duration) among rides i..count-1 (must wait for them to open)
-    const prefixMinWaterDuration: number[] = new Array<number>(waterCount).fill(Infinity)
-    const suffixMinWaterEnd: number[] = new Array<number>(waterCount + 1).fill(Infinity)
-    const prefixMinLandDuration: number[] = new Array<number>(landCount).fill(Infinity)
-    const suffixMinLandEnd: number[] = new Array<number>(landCount + 1).fill(Infinity)
+    const prefixMinWaterDuration: number[] = arrayOf(Infinity, waterCount)
+    const suffixMinWaterEnd: number[] = arrayOf(Infinity, waterCount + 1)
+    const prefixMinLandDuration: number[] = arrayOf(Infinity, landCount)
+    const suffixMinLandEnd: number[] = arrayOf(Infinity, landCount + 1)
 
     prefixMinWaterDuration[0] = waterRides[0][1]
     for (let index: number = 1; index < waterCount; index++) {
@@ -46,10 +46,6 @@ function earliestFinishTime(
 
     let result: number = Infinity
 
-    // Case 1: land first, then water
-    // For each land ride: board at its opening, finish at landEnd.
-    // Water rides with start <= landEnd: board at landEnd, total = landEnd + min(waterDuration)
-    // Water rides with start > landEnd: board at their opening, total = min(waterStart + waterDuration)
     for (let index: number = 0; index < landCount; index++) {
         const landEnd: number = landRides[index][0] + landRides[index][1]
         const splitIndex: number = upperBound(waterRides, landEnd)
@@ -63,7 +59,6 @@ function earliestFinishTime(
         }
     }
 
-    // Case 2: water first, then land
     for (let index: number = 0; index < waterCount; index++) {
         const waterEnd: number = waterRides[index][0] + waterRides[index][1]
         const splitIndex: number = upperBound(landRides, waterEnd)
@@ -80,7 +75,6 @@ function earliestFinishTime(
     return result
 }
 
-// Returns the number of rides with start <= cutoff (i.e., first index with start > cutoff)
 function upperBound(rides: [number, number][], cutoff: number): number {
     let low: number = 0
     let high: number = rides.length
