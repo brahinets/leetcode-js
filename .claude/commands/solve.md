@@ -56,7 +56,7 @@ Format (match existing solution READMEs exactly):
 
 ## <difficulty>
 
-<full problem description, preserving all formatting, constraints, examples, and follow-ups>
+<full problem description, preserving all formatting, constraints, and follow-ups. Do not put examples, they are self-described in tests>
 ```
 
 ### 6. Register in root `README.md`
@@ -86,6 +86,6 @@ git add "solutions/<number>. <title>/README.md"
 git add README.md
 ```
 
-Commit message must follow the pattern: `#<number> <title>`
+Prepare commit message, must follow the pattern: `#<number> <title>`. But do not commit
 
 Do NOT add yourself as co-author.
