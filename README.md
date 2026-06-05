@@ -511,6 +511,7 @@
 1. № [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](solutions/1334.%20Find%20the%20City%20With%20the%20Smallest%20Number%20of%20Neighbors%20at%20a%20Threshold%20Distance/script.ts)
 1. № [1335. Minimum Difficulty of a Job Schedule](solutions/1335.%20Minimum%20Difficulty%20of%20a%20Job%20Schedule/script.ts)
 1. № [1339. Maximum Product of Splitted Binary Tree](solutions/1339.%20Maximum%20Product%20of%20Splitted%20Binary%20Tree/script.ts)
+1. № [1340. Jump Game V](solutions/1340.%20Jump%20Game%20V/script.ts)
 1. № [1344. Angle Between Hands of a Clock](solutions/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/script.ts)
 1. № [1345. Jump Game IV](solutions/1345.%20Jump%20Game%20IV/script.ts)
 1. № [1346. Check If N and Its Double Exist](solutions/1346.%20Check%20If%20N%20and%20Its%20Double%20Exist/script.ts)
