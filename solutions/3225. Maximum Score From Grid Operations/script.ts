@@ -1,10 +1,12 @@
+import {arrayOf, matrixOf} from "../../common/array-factories"
+
 export { maximumScore }
 
 function buildColumnPrefix(grid: number[][], size: number): number[][] {
     const columnPrefix: number[][] = []
 
     for (let column = 0; column < size; column++) {
-        const prefix = new Array<number>(size).fill(0)
+        const prefix: number[] = arrayOf(0, size)
         prefix[0] = grid[0]![column]!
 
         for (let row = 1; row < size; row++) {
@@ -25,39 +27,29 @@ function columnRangeSum(columnPrefix: number[][], column: number, fromRow: numbe
     return columnPrefix[column]![toRow]! - (fromRow > 0 ? columnPrefix[column]![fromRow - 1]! : 0)
 }
 
-function makeGrid(rows: number, columns: number, fill: number): number[][] {
-    const grid: number[][] = []
-
-    for (let row = 0; row < rows; row++) {
-        grid.push(new Array<number>(columns).fill(fill))
-    }
-
-    return grid
-}
-
 function maximumScore(grid: number[][]): number {
     const size = grid.length
     const columnPrefix = buildColumnPrefix(grid, size)
     const NEGATIVE_INFINITY = Number.NEGATIVE_INFINITY
 
-    let dp = makeGrid(size + 1, size + 1, NEGATIVE_INFINITY)
+    let dp = matrixOf(NEGATIVE_INFINITY, size + 1, size + 1)
 
     for (let currentCut = 0; currentCut <= size; currentCut++) {
         dp[0]![currentCut] = 0
     }
 
     for (let column = 0; column < size - 1; column++) {
-        const nextDp = makeGrid(size + 1, size + 1, NEGATIVE_INFINITY)
+        const nextDp = matrixOf(NEGATIVE_INFINITY, size + 1, size + 1)
 
         for (let currentCut = 0; currentCut <= size; currentCut++) {
-            const prefixMax = new Array<number>(size + 1).fill(NEGATIVE_INFINITY)
+            const prefixMax: number[] = arrayOf(NEGATIVE_INFINITY, size + 1)
             prefixMax[0] = dp[0]![currentCut]!
 
             for (let previousCut = 1; previousCut <= size; previousCut++) {
                 prefixMax[previousCut] = Math.max(prefixMax[previousCut - 1]!, dp[previousCut]![currentCut]!)
             }
 
-            const suffixMaxG = new Array<number>(size + 2).fill(NEGATIVE_INFINITY)
+            const suffixMaxG: number[] = arrayOf(NEGATIVE_INFINITY, size + 2)
 
             for (let previousCut = size; previousCut >= 0; previousCut--) {
                 const base = dp[previousCut]![currentCut]!

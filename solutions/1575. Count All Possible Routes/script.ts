@@ -1,3 +1,5 @@
+import {arrayOf} from "../../common/array-factories"
+
 export {countRoutes}
 
 const mod: number = 1e9 + 7
@@ -28,7 +30,7 @@ function routesOnFuel(citiesCount: number, fuel: number, finish: number): number
     for (let start: number = 0; start < citiesCount; start++) {
         const minPossibleRoutes: number = start === finish ? 1 : 0
 
-        routes[start] = new Array(fuel + 1).fill(minPossibleRoutes)
+        routes[start] = arrayOf(minPossibleRoutes, fuel + 1)
     }
 
     return routes

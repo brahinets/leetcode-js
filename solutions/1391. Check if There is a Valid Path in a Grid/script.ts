@@ -1,3 +1,5 @@
+import {matrixOf} from "../../common/array-factories"
+
 export { hasValidPath }
 
 type Direction = 'left' | 'right' | 'up' | 'down'
@@ -29,10 +31,7 @@ const OPPOSITE_DIRECTION: Readonly<Record<Direction, Direction>> = {
 function hasValidPath(grid: number[][]): boolean {
     const rows: number = grid.length
     const columns: number = grid[0].length
-    const visited: boolean[][] = Array.from<unknown, boolean[]>(
-        { length: rows },
-        () => new Array<boolean>(columns).fill(false)
-    )
+    const visited: boolean[][] = matrixOf(false, rows, columns)
     const stack: Array<[number, number]> = [[0, 0]]
     visited[0][0] = true
 
