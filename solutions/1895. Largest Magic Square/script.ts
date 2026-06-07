@@ -1,3 +1,5 @@
+import {sum} from "../../common/array-utils"
+
 export {largestMagicSquare}
 
 function largestMagicSquare(grid: number[][]): number {
@@ -19,14 +21,10 @@ function largestMagicSquare(grid: number[][]): number {
 }
 
 function isMagicSquare(grid: number[][], startRow: number, startCol: number, size: number): boolean {
-    const targetSum: number = grid[startRow]
-        .slice(startCol, startCol + size)
-        .reduce((a: number, b: number): number => a + b, 0)
+    const targetSum: number = sum(grid[startRow].slice(startCol, startCol + size))
 
     for (let r: number = startRow; r < startRow + size; r++) {
-        const rowSum: number = grid[r]
-            .slice(startCol, startCol + size)
-            .reduce((a: number, b: number): number => a + b, 0)
+        const rowSum: number = sum(grid[r].slice(startCol, startCol + size))
 
         if (rowSum !== targetSum) {
             return false

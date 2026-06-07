@@ -1,8 +1,10 @@
+import {sum} from "../../common/array-utils"
+
 export {maxRunTime}
 
 function maxRunTime(n: number, batteries: number[]): number {
     let left: number = 1
-    let right: number = Math.floor(batteries.reduce((a: number, b: number): number => a + b, 0) / n)
+    let right: number = Math.floor(sum(batteries) / n)
 
     while (left < right) {
         const mid: number = Math.ceil((left + right) / 2)

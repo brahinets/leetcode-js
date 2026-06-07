@@ -1,4 +1,5 @@
 import {matrixOfZeros} from "../../common/array-factories"
+import {sum} from "../../common/array-utils"
 
 export {findJudge}
 
@@ -19,8 +20,4 @@ function findJudge(n: number, trust: number[][]): number {
     }
 
     return -1
-}
-
-function sum(nums: number[]): number {
-    return nums.reduce((prev: number, curr: number): number => prev + curr, 0)
 }

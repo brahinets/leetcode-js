@@ -1,7 +1,9 @@
+import {sum} from "../../common/array-utils"
+
 export {countPartitions}
 
 function countPartitions(nums: number[]): number {
-    const sum: number = nums.reduce((a: number, b: number): number => a + b, 0)
+    const totalSum: number = sum(nums)
 
-    return sum % 2 === 0 ? nums.length - 1 : 0
+    return totalSum % 2 === 0 ? nums.length - 1 : 0
 }

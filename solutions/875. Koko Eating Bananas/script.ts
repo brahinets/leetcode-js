@@ -1,3 +1,5 @@
+import {sum} from "../../common/array-utils"
+
 export {minEatingSpeed}
 
 function minEatingSpeed(piles: number[], h: number): number {
@@ -8,9 +10,7 @@ function minEatingSpeed(piles: number[], h: number): number {
     while (left < right) {
         const mid: number = Math.floor((left + right) / 2)
 
-        const time: number = piles
-            .map((pile: number) => Math.ceil(pile / mid))
-            .reduce((s: number, e: number) => s + e, 0)
+        const time: number = sum(piles.map((pile: number) => Math.ceil(pile / mid)))
 
         if (time <= h) {
             right = mid

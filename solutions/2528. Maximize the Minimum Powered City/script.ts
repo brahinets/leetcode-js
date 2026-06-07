@@ -1,11 +1,12 @@
 import {arrayOfZeros} from "../../common/array-factories"
+import {sum} from "../../common/array-utils"
 
 export {maxPower}
 
 function maxPower(stations: number[], radius: number, maxAdditions: number): number {
     const powerDiff: number[] = buildPowerDiff(stations, radius)
     const minPower: number = Math.min(...stations)
-    const maxPowerPossible: number = stations.reduce((a: number, b: number): number => a + b, 0) + maxAdditions
+    const maxPowerPossible: number = sum(stations) + maxAdditions
     let answer: number = 0
     let lo: number = minPower
     let hi: number = maxPowerPossible

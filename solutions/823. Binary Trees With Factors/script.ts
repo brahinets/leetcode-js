@@ -1,3 +1,5 @@
+import {sum} from "../../common/array-utils"
+
 export {numFactoredBinaryTrees}
 
 const MOD: number = 10 ** 9 + 7
@@ -18,5 +20,5 @@ function numFactoredBinaryTrees(arr: number[]): number {
         }
     }
 
-    return [...dp.values()].reduce((total: number, value: number): number => total + value, 0) % MOD
+    return sum([...dp.values()]) % MOD
 }

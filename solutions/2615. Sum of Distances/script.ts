@@ -1,4 +1,5 @@
 import { arrayOfZeros } from "../../common/array-factories"
+import { sum } from "../../common/array-utils"
 
 export { distance }
 
@@ -16,7 +17,7 @@ function distance(numbers: number[]): number[] {
 
     for (const [, indices] of groups) {
         const total: number = indices.length
-        const totalSum: number = indices.reduce((sum: number, value: number): number => sum + value, 0)
+        const totalSum: number = sum(indices)
         let leftSum: number = 0
 
         for (let position: number = 0; position < total; position++) {

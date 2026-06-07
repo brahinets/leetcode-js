@@ -1,7 +1,9 @@
+import {sum} from "../../common/array-utils"
+
 export {leftRightDifference}
 
 function leftRightDifference(numbers: number[]): number[] {
-    const totalSum: number = numbers.reduce((sum: number, value: number): number => sum + value, 0)
+    const totalSum: number = sum(numbers)
     const answer: number[] = []
     let leftSum: number = 0
 

@@ -1,7 +1,9 @@
+import {sum} from "../../common/array-utils"
+
 export {minSwaps}
 
 function minSwaps(nums: number[]): number {
-    const totalOnes: number = nums.reduce((ones: number, val: number): number => ones + val, 0)
+    const totalOnes: number = sum(nums)
 
     let swaps: number = Number.MAX_SAFE_INTEGER
     let onesInWindow: number = nums[0]

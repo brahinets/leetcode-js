@@ -1,3 +1,5 @@
+import {sum} from "../../common/array-utils"
+
 export {maxSum}
 
 function maxSum(nums: number[]): number {
@@ -6,5 +8,5 @@ function maxSum(nums: number[]): number {
 
     return positiveUnique.size === 0
         ? Math.max(...nums)
-        : [...positiveUnique].reduce((a: number, b: number): number => a + b, 0)
+        : sum([...positiveUnique])
 }

@@ -1,7 +1,9 @@
+import {sum} from "../../common/array-utils"
+
 export {chalkReplacer}
 
 function chalkReplacer(chalk: number[], k: number): number {
-    const steps: number = chalk.reduce((acc, curr) => acc + curr, 0)
+    const steps: number = sum(chalk)
     k %= steps
 
     let student: number = 0

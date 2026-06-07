@@ -1,3 +1,5 @@
+import {sum} from "../../common/array-utils"
+
 export {pickGifts}
 
 function pickGifts(gifts: number[], k: number): number {
@@ -15,5 +17,5 @@ function pickGifts(gifts: number[], k: number): number {
         )
     }
 
-    return gifts.reduce((a: number, b: number): number => a + b, 0)
+    return sum(gifts)
 }

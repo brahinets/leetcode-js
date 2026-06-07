@@ -1,4 +1,4 @@
-import {count} from "../../common/array-utils"
+import {count, sum} from "../../common/array-utils"
 
 export {maxFrequencyElements}
 
@@ -7,8 +7,7 @@ function maxFrequencyElements(nums: number[]): number {
 
     const maxFrequency: number = Math.max(...counts.values())
 
-    return [...counts.entries()]
+    return sum([...counts.entries()]
         .filter(([, count]: [number, number]): boolean => maxFrequency === count)
-        .map(([, count]: [number, number]): number => count)
-        .reduce((sum: number, count: number): number => sum + count, 0)
+        .map(([, count]: [number, number]): number => count))
 }

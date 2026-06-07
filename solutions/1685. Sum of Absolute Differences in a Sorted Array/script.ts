@@ -1,7 +1,9 @@
+import {sum} from "../../common/array-utils"
+
 export {getSumAbsoluteDifferences}
 
 function getSumAbsoluteDifferences(nums: number[]): number[] {
-    const sum: number = nums.reduce((a: number, b: number): number => a + b, 0)
+    const totalSum: number = sum(nums)
 
     const result: number[] = []
     let leftSum: number = 0
@@ -9,7 +11,7 @@ function getSumAbsoluteDifferences(nums: number[]): number[] {
         const countBefore: number = i - 1
         const countAfter: number = nums.length - i - 1
 
-        const rightSum: number = sum - leftSum
+        const rightSum: number = totalSum - leftSum
         const before: number = nums[i] * countBefore - leftSum
         const after: number = rightSum - nums[i] * countAfter
 
