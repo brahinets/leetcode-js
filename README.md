@@ -1110,6 +1110,7 @@
 1. № [3542. Minimum Operations to Convert All Elements to Zero](solutions/3542.%20Minimum%20Operations%20to%20Convert%20All%20Elements%20to%20Zero/script.ts)
 1. № [3546. Equal Sum Grid Partition I](solutions/3546.%20Equal%20Sum%20Grid%20Partition%20I/script.ts)
 1. № [3548. Equal Sum Grid Partition II](solutions/3548.%20Equal%20Sum%20Grid%20Partition%20II/script.ts)
+1. № [3558. Number of Ways to Assign Edge Weights I](solutions/3558.%20Number%20of%20Ways%20to%20Assign%20Edge%20Weights%20I/script.ts)
 1. № [3562. Maximum Profit from Trading Stocks with Discounts](solutions/3562.%20Maximum%20Profit%20from%20Trading%20Stocks%20with%20Discounts/script.ts)
 1. № [3573. Best Time to Buy and Sell Stock V](solutions/3573.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20V/script.ts)
 1. № [3577. Count the Number of Computer Unlocking Permutations](solutions/3577.%20Count%20the%20Number%20of%20Computer%20Unlocking%20Permutations/script.ts)
