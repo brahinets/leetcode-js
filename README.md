@@ -1146,6 +1146,7 @@
 1. № [3753. Total Waviness of Numbers in Range II](solutions/3753.%20Total%20Waviness%20of%20Numbers%20in%20Range%20II/script.ts)
 1. № [3761. Minimum Absolute Distance Between Mirror Pairs](solutions/3761.%20Minimum%20Absolute%20Distance%20Between%20Mirror%20Pairs/script.ts)
 1. № [3783. Mirror Distance of an Integer](solutions/3783.%20Mirror%20Distance%20of%20an%20Integer/script.ts)
+1. № [3838. Weighted Word Mapping](solutions/3838.%20Weighted%20Word%20Mapping/script.ts)
 1. № [3884. Minimum Absolute Difference in Sliding Submatrix](solutions/3884.%20Minimum%20Absolute%20Difference%20in%20Sliding%20Submatrix/script.ts)
 1. № [3902. Maximize Spanning Tree Stability with Upgrades](solutions/3902.%20Maximize%20Spanning%20Tree%20Stability%20with%20Upgrades/script.ts)
 1. № [3967. Earliest Finish Time for Land and Water Rides II](solutions/3967.%20Earliest%20Finish%20Time%20for%20Land%20and%20Water%20Rides%20II/script.ts)
