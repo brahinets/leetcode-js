@@ -50,6 +50,7 @@
 
 ## Testing
 
+- All code style rules (explicit types, naming, formatting) apply equally to test files
 - Name test files with the `.test.ts` suffix
 - Write descriptive test names that explain the expected behavior
 - Follow the Arrange–Act–Assert pattern
