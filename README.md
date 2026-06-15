@@ -750,6 +750,7 @@
 1. № [2090. K Radius Subarray Averages](solutions/2090.%20K%20Radius%20Subarray%20Averages/script.ts)
 1. № [2092. Find All People With Secret](solutions/2092.%20Find%20All%20People%20With%20Secret/script.ts)
 1. № [2094. Finding 3-Digit Even Numbers](solutions/2094.%20Finding%203-Digit%20Even%20Numbers/script.ts)
+1. № [2095. Delete the Middle Node of a Linked List](solutions/2095.%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List/script.ts)
 1. № [2096. Step-By-Step Directions From a Binary Tree Node to Another](solutions/2096.%20Step-By-Step%20Directions%20From%20a%20Binary%20Tree%20Node%20to%20Another/script.ts)
 1. № [2097. Valid Arrangement of Pairs](solutions/2097.%20Valid%20Arrangement%20of%20Pairs/script.ts)
 1. № [2099. Find Subsequence of Length K With the Largest Sum](solutions/2099.%20Find%20Subsequence%20of%20Length%20K%20With%20the%20Largest%20Sum/script.ts)
