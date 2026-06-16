@@ -54,6 +54,7 @@
 - Name test files with the `.test.ts` suffix
 - Write descriptive test names that explain the expected behavior
 - Follow the Arrange–Act–Assert pattern
+- Always place the matcher on a new line from the `expect()` call — `.toBe(...)`, `.toEqual(...)`, etc. must start on the line after `expect(...)`
 - Name test cases to represent tested case, not data
 - Do not start test names with "returns" — describe the scenario or condition instead (e.g. `'single element'`, `'no mirror pairs'`, `'palindrome mirrors itself forming a pair'`)
 
