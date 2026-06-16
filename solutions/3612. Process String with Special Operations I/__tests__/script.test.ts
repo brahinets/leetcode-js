@@ -1,10 +1,10 @@
-import { processString } from '../script'
+import { processStr } from '../script'
 
 describe('3612. Process String with Special Operations I', (): void => {
     it('duplicates then appends then reverses then removes last character', (): void => {
         const input: string = 'a#b%*'
 
-        const result: string = processString(input)
+        const result: string = processStr(input)
 
         expect(result)
             .toBe('ba')
@@ -13,7 +13,7 @@ describe('3612. Process String with Special Operations I', (): void => {
     it('removes single character then duplicates empty string', (): void => {
         const input: string = 'z*#'
 
-        const result: string = processString(input)
+        const result: string = processStr(input)
 
         expect(result)
             .toBe('')
@@ -22,7 +22,7 @@ describe('3612. Process String with Special Operations I', (): void => {
     it('single lowercase letter', (): void => {
         const input: string = 'a'
 
-        const result: string = processString(input)
+        const result: string = processStr(input)
 
         expect(result)
             .toBe('a')
@@ -31,7 +31,7 @@ describe('3612. Process String with Special Operations I', (): void => {
     it('remove on empty string is a no-op', (): void => {
         const input: string = '*'
 
-        const result: string = processString(input)
+        const result: string = processStr(input)
 
         expect(result)
             .toBe('')
@@ -40,7 +40,7 @@ describe('3612. Process String with Special Operations I', (): void => {
     it('reverse of empty string is empty', (): void => {
         const input: string = '%'
 
-        const result: string = processString(input)
+        const result: string = processStr(input)
 
         expect(result)
             .toBe('')
@@ -49,7 +49,7 @@ describe('3612. Process String with Special Operations I', (): void => {
     it('duplicate grows string correctly', (): void => {
         const input: string = 'ab#'
 
-        const result: string = processString(input)
+        const result: string = processStr(input)
 
         expect(result)
             .toBe('abab')
@@ -58,7 +58,7 @@ describe('3612. Process String with Special Operations I', (): void => {
     it('multiple special operations chained', (): void => {
         const input: string = 'abc%#*'
 
-        const result: string = processString(input)
+        const result: string = processStr(input)
 
         expect(result)
             .toBe('cbacb')
@@ -67,7 +67,7 @@ describe('3612. Process String with Special Operations I', (): void => {
     it('all removes on single characters leaves empty string', (): void => {
         const input: string = 'ab**'
 
-        const result: string = processString(input)
+        const result: string = processStr(input)
 
         expect(result)
             .toBe('')

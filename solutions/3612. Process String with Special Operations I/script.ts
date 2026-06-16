@@ -1,6 +1,6 @@
-export { processString };
+export { processStr };
 
-function processString(s: string): string {
+function processStr(s: string): string {
     let result: string = "";
 
     for (const character of s) {
