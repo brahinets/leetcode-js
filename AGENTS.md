@@ -34,7 +34,7 @@
 ## Project Structure
 
 - Group files by solution id domain
-- Always add readme file to solution. Register solution in root readme file too.
+- Always add readme file to solution. Register solution in root readme file too. The README title must include the problem number: `# <number>. <title>`.
 - Place utility functions in a dedicated `common` directory
 - Keep each file and function focused on a single responsibility
 - Always prefer importing and reusing existing utilities from the `common` directory rather than reimplementing them inline. Before writing any helper, read the relevant file in `common/` — it contains modules for arrays, lists, trees, graphs, maps, and strings, plus data structures (`DisjointSetUnion`, `PriorityQueue`, `Graph`)
