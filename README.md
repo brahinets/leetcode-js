@@ -1121,6 +1121,7 @@
 1. № [3606. Coupon Code Validator](solutions/3606.%20Coupon%20Code%20Validator/script.ts)
 1. № [3607. Power Grid Maintenance](solutions/3607.%20Power%20Grid%20Maintenance/script.ts)
 1. № [3612. Process String with Special Operations I](solutions/3612.%20Process%20String%20with%20Special%20Operations%20I/script.ts)
+1. № [3614. Process String with Special Operations II](solutions/3614.%20Process%20String%20with%20Special%20Operations%20II/script.ts)
 1. № [3623. Count Number of Trapezoids I](solutions/3623.%20Count%20Number%20of%20Trapezoids%20I/script.ts)
 1. № [3625. Count Number of Trapezoids II](solutions/3625.%20Count%20Number%20of%20Trapezoids%20II/script.ts)
 1. № [3633. Earliest Finish Time for Land and Water Rides I](solutions/3633.%20Earliest%20Finish%20Time%20for%20Land%20and%20Water%20Rides%20I/script.ts)
