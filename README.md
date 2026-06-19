@@ -697,6 +697,7 @@
 1. № [1910. Remove All Occurrences of a Substring](solutions/1910.%20Remove%20All%20Occurrences%20of%20a%20Substring/script.ts)
 1. № [1912. Design Movie Rental System](solutions/1912.%20Design%20Movie%20Rental%20System/script.ts)
 1. № [1913. Maximum Product Difference Between Two Pairs](solutions/1913.%20Maximum%20Product%20Difference%20Between%20Two%20Pairs/script.ts)
+1. № [1914. Cyclically Rotating a Grid](solutions/1914.%20Cyclically%20Rotating%20a%20Grid/script.ts)
 1. № [1915. Number of Wonderful Substrings](solutions/1915.%20Number%20of%20Wonderful%20Substrings/script.ts)
 1. № [1920. Build Array from Permutation](solutions/1920.%20Build%20Array%20from%20Permutation/script.ts)
 1. № [1921. Eliminate Maximum Number of Monsters](solutions/1921.%20Eliminate%20Maximum%20Number%20of%20Monsters/script.ts)
