@@ -712,6 +712,7 @@
 1. № [1948. Delete Duplicate Folders in System](solutions/1948.%20Delete%20Duplicate%20Folders%20in%20System/script.ts)
 1. № [1957. Delete Characters to Make Fancy String](solutions/1957.%20Delete%20Characters%20to%20Make%20Fancy%20String/script.ts)
 1. № [1963. Minimum Number of Swaps to Make the String Balanced](solutions/1963.%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20String%20Balanced/script.ts)
+1. № [1968. Maximum Building Height](solutions/1968.%20Maximum%20Building%20Height/script.ts)
 1. № [1970. Last Day Where You Can Still Cross](solutions/1970.%20Last%20Day%20Where%20You%20Can%20Still%20Cross/script.ts)
 1. № [1971. Find if Path Exists in Graph](solutions/1971.%20Find%20if%20Path%20Exists%20in%20Graph/script.ts)
 1. № [1975. Maximum Matrix Sum](solutions/1975.%20Maximum%20Matrix%20Sum/script.ts)
