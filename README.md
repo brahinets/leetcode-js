@@ -672,6 +672,7 @@
 1. № [1822. Sign of the Product of an Array](solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array/script.ts)
 1. № [1823. Find the Winner of the Circular Game](solutions/1823.%20Find%20the%20Winner%20of%20the%20Circular%20Game/script.ts)
 1. № [1829. Maximum XOR for Each Query](solutions/1829.%20Maximum%20XOR%20for%20Each%20Query/script.ts)
+1. № [1833. Maximum Ice Cream Bars](solutions/1833.%20Maximum%20Ice%20Cream%20Bars/script.ts)
 1. № [1838. Frequency of the Most Frequent Element](solutions/1838.%20Frequency%20of%20the%20Most%20Frequent%20Element/script.ts)
 1. № [1845. Seat Reservation Manager](solutions/1845.%20Seat%20Reservation%20Manager/script.ts)
 1. № [1846. Maximum Element After Decreasing and Rearranging](solutions/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging/script.ts)
