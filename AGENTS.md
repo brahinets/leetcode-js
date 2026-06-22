@@ -2,6 +2,7 @@
 
 ## Code Style
 
+- Order functions so that callers appear before the functions they call — the exported/top-level entry point goes first, and helpers follow in the order they are first invoked (Clean Code stepdown rule)
 - Always specify explicit data types for variables, parameters, and return values - never rely on type inference
 - Always specify generic type arguments explicitly on constructor calls and generic function invocations — never rely on inference from the left-hand side annotation (e.g. use `new Map<string, number>()` not `new Map()`)
 - Do not use semicolons at the end of statements
