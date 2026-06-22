@@ -470,6 +470,7 @@
 1. № [1160. Find Words That Can Be Formed by Characters](solutions/1160.%20Find%20Words%20That%20Can%20Be%20Formed%20by%20Characters/script.ts)
 1. № [1161. Maximum Level Sum of a Binary Tree](solutions/1161.%20Maximum%20Level%20Sum%20of%20a%20Binary%20Tree/script.ts)
 1. № [1171. Remove Zero Sum Consecutive Nodes from Linked List](solutions/1171.%20Remove%20Zero%20Sum%20Consecutive%20Nodes%20from%20Linked%20List/script.ts)
+1. № [1189. Maximum Number of Balloons](solutions/1189.%20Maximum%20Number%20of%20Balloons/script.ts)
 1. № [1190. Reverse Substrings Between Each Pair of Parentheses](solutions/1190.%20Reverse%20Substrings%20Between%20Each%20Pair%20of%20Parentheses/script.ts)
 1. № [1200. Minimum Absolute Difference](solutions/1200.%20Minimum%20Absolute%20Difference/script.ts)
 1. № [1207. Unique Number of Occurrences](solutions/1207.%20Unique%20Number%20of%20Occurrences/script.ts)
