@@ -1143,6 +1143,7 @@
 1. № [3666. Minimum Operations to Equalize Binary String](solutions/3666.%20Minimum%20Operations%20to%20Equalize%20Binary%20String/script.ts)
 1. № [3689. Maximum Total Subarray Value I](solutions/3689.%20Maximum%20Total%20Subarray%20Value%20I/script.ts)
 1. № [3691. Maximum Total Subarray Value II](solutions/3691.%20Maximum%20Total%20Subarray%20Value%20II/script.ts)
+1. № [3699. Number of ZigZag Arrays I](solutions/3699.%20Number%20of%20ZigZag%20Arrays%20I/script.ts)
 1. № [3713. Longest Balanced Substring I](solutions/3713.%20Longest%20Balanced%20Substring%20I/script.ts)
 1. № [3714. Longest Balanced Substring II](solutions/3714.%20Longest%20Balanced%20Substring%20II/script.ts)
 1. № [3719. Longest Balanced Subarray I](solutions/3719.%20Longest%20Balanced%20Subarray%20I/script.ts)
