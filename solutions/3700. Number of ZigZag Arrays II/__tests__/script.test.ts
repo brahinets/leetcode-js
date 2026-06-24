@@ -71,6 +71,17 @@ describe('3700. Number of ZigZag Arrays II', (): void => {
         expect(result).toBeGreaterThanOrEqual(0)
         expect(result).toBeLessThan(1_000_000_007)
     })
+
+    it('load test', (): void => {
+        const n: number = 10_000
+        const l: number = 1
+        const r: number = 75
+
+        const result: number = zigZagArrays(n, l, r)
+
+        expect(result).toBeGreaterThanOrEqual(0)
+        expect(result).toBeLessThan(1_000_000_007)
+    })
 })
 
 function bruteForceCount(n: number, l: number, r: number): number {
