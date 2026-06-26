@@ -1150,6 +1150,7 @@
 1. № [3719. Longest Balanced Subarray I](solutions/3719.%20Longest%20Balanced%20Subarray%20I/script.ts)
 1. № [3721. Longest Balanced Subarray II](solutions/3721.%20Longest%20Balanced%20Subarray%20II/script.ts)
 1. № [3737. Count Subarrays With Majority Element I](solutions/3737.%20Count%20Subarrays%20With%20Majority%20Element%20I/script.ts)
+1. № [3739. Count Subarrays With Majority Element II](solutions/3739.%20Count%20Subarrays%20With%20Majority%20Element%20II/script.ts)
 1. № [3740. Minimum Distance Between Three Equal Elements I](solutions/3740.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20I/script.ts)
 1. № [3741. Minimum Distance Between Three Equal Elements II](solutions/3741.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20II/script.ts)
 1. № [3742. Maximum Path Score in a Grid](solutions/3742.%20Maximum%20Path%20Score%20in%20a%20Grid/script.ts)
