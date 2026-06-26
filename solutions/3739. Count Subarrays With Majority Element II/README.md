@@ -1,4 +1,4 @@
-# Count Subarrays With Majority Element II
+# 3739. Count Subarrays With Majority Element II
 
 ## Hard
 
