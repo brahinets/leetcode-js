@@ -1140,6 +1140,7 @@
 1. № [3652. Best Time to Buy and Sell Stock using Strategy](solutions/3652.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20using%20Strategy/script.ts)
 1. № [3653. XOR After Range Multiplication Queries I](solutions/3653.%20XOR%20After%20Range%20Multiplication%20Queries%20I/script.ts)
 1. № [3655. XOR After Range Multiplication Queries II](solutions/3655.%20XOR%20After%20Range%20Multiplication%20Queries%20II/script.ts)
+1. № [3660. Jump Game IX](solutions/3660.%20Jump%20Game%20IX/script.ts)
 1. № [3661. Maximum Walls Destroyed by Robots](solutions/3661.%20Maximum%20Walls%20Destroyed%20by%20Robots/script.ts)
 1. № [3666. Minimum Operations to Equalize Binary String](solutions/3666.%20Minimum%20Operations%20to%20Equalize%20Binary%20String/script.ts)
 1. № [3689. Maximum Total Subarray Value I](solutions/3689.%20Maximum%20Total%20Subarray%20Value%20I/script.ts)
