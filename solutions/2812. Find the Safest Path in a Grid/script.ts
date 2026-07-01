@@ -1,4 +1,5 @@
 import {matrixOf} from "../../common/array-factories"
+import {PriorityQueue} from "../../common/PriorityQueue"
 
 export {maximumSafenessFactor}
 
@@ -15,16 +16,14 @@ const THIEF: number = 1
 function maximumSafenessFactor(grid: number[][]): number {
     const safenessGrid: number[][] = buildSafenessGrid(grid)
 
-    const safenessPriority: [number, number, number][] = [[0, 0, safenessGrid[0][0]]]
+    const maxHeap: PriorityQueue<[number, number, number]> = new PriorityQueue<[number, number, number]>(
+        (a, b) => b[2] - a[2]
+    )
+    maxHeap.enqueue([0, 0, safenessGrid[0][0]])
     safenessGrid[0][0] = VISITED
-    while (safenessPriority.length > 0) {
-        let maxIndex: number = 0
-        for (let i: number = 1; i < safenessPriority.length; i++) {
-            if (safenessPriority[i][2] > safenessPriority[maxIndex][2]) {
-                maxIndex = i
-            }
-        }
-        const [x, y, safeness]: number[] = safenessPriority.splice(maxIndex, 1)[0]
+
+    while (!maxHeap.isEmpty()) {
+        const [x, y, safeness]: [number, number, number] = maxHeap.dequeue()!
 
         if (x === grid.length - 1 && y === grid[0].length - 1) {
             return safeness
@@ -35,7 +34,7 @@ function maximumSafenessFactor(grid: number[][]): number {
             const newY: number = y + moveY
 
             if (inBounds(safenessGrid, newX, newY) && safenessGrid[newX][newY] !== VISITED) {
-                safenessPriority.push([newX, newY, Math.min(safeness, safenessGrid[newX][newY])])
+                maxHeap.enqueue([newX, newY, Math.min(safeness, safenessGrid[newX][newY])])
                 safenessGrid[newX][newY] = VISITED
             }
         }
@@ -53,27 +52,21 @@ function buildSafenessGrid(grid: number[][]): number[][] {
             if (grid[i][j] === THIEF) {
                 toVisit.push([i, j])
                 safenessGrid[i][j] = 0
-            } else {
-                safenessGrid[i][j] = -1
             }
         }
     }
 
-    while (toVisit.length > 0) {
-        const currentLevelSize: number = toVisit.length
+    let head: number = 0
+    while (head < toVisit.length) {
+        const [x, y]: [number, number] = toVisit[head++]
 
-        for (let i: number = 0; i < currentLevelSize; i++) {
-            const [x, y]: number[] = toVisit.shift()!
+        for (const [moveX, moveY] of TURNS) {
+            const newX: number = x + moveX
+            const newY: number = y + moveY
 
-            for (const [moveX, moveY] of TURNS) {
-                const cellSafeness: number = safenessGrid[x][y]
-                const newX: number = x + moveX
-                const newY: number = y + moveY
-
-                if (inBounds(safenessGrid, newX, newY) && safenessGrid[newX][newY] === NOT_VISITED) {
-                    safenessGrid[newX][newY] = cellSafeness + 1
-                    toVisit.push([newX, newY])
-                }
+            if (inBounds(safenessGrid, newX, newY) && safenessGrid[newX][newY] === NOT_VISITED) {
+                safenessGrid[newX][newY] = safenessGrid[x][y] + 1
+                toVisit.push([newX, newY])
             }
         }
     }
