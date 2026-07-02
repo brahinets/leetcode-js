@@ -1044,6 +1044,7 @@
 1. № [3254. Find the Power of K-Size Subarrays I](solutions/3254.%20Find%20the%20Power%20of%20K-Size%20Subarrays%20I/script.ts)
 1. № [3264. Final Array State After K Multiplication Operations I](solutions/3264.%20Final%20Array%20State%20After%20K%20Multiplication%20Operations%20I/script.ts)
 1. № [3272. Find the Count of Good Integers](solutions/3272.%20Find%20the%20Count%20of%20Good%20Integers/script.ts)
+1. № [3286. Find a Safe Walk Through a Grid](solutions/3286.%20Find%20a%20Safe%20Walk%20Through%20a%20Grid/script.ts)
 1. № [3289. The Two Sneaky Numbers of Digitville](solutions/3289.%20The%20Two%20Sneaky%20Numbers%20of%20Digitville/script.ts)
 1. № [3296. Minimum Number of Seconds to Make Mountain Height Zero](solutions/3296.%20Minimum%20Number%20of%20Seconds%20to%20Make%20Mountain%20Height%20Zero/script.ts)
 1. № [3300. Minimum Element After Replacement With Digit Sum](solutions/3300.%20Minimum%20Element%20After%20Replacement%20With%20Digit%20Sum/script.ts)
