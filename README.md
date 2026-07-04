@@ -878,6 +878,7 @@
 1. № [2487. Remove Nodes From Linked List](solutions/2487.%20Remove%20Nodes%20From%20Linked%20List/script.ts)
 1. № [2490. Circular Sentence](solutions/2490.%20Circular%20Sentence/script.ts)
 1. № [2491. Divide Players Into Teams of Equal Skill](solutions/2491.%20Divide%20Players%20Into%20Teams%20of%20Equal%20Skill/script.ts)
+1. № [2492. Minimum Score of a Path Between Two Cities](solutions/2492.%20Minimum%20Score%20of%20a%20Path%20Between%20Two%20Cities/script.ts)
 1. № [2493. Divide Nodes Into the Maximum Number of Groups](solutions/2493.%20Divide%20Nodes%20Into%20the%20Maximum%20Number%20of%20Groups/script.ts)
 1. № [2501. Longest Square Streak in an Array](solutions/2501.%20Longest%20Square%20Streak%20in%20an%20Array/script.ts)
 1. № [2503. Maximum Number of Points From Grid Queries](solutions/2503.%20Maximum%20Number%20of%20Points%20From%20Grid%20Queries/script.ts)
