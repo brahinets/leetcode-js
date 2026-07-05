@@ -499,6 +499,7 @@
 1. № [1292. Maximum Side Length of a Square with Sum Less than or Equal to Threshold](solutions/1292.%20Maximum%20Side%20Length%20of%20a%20Square%20with%20Sum%20Less%20than%20or%20Equal%20to%20Threshold/script.ts)
 1. № [1295. Find Numbers with Even Number of Digits](solutions/1295.%20Find%20Numbers%20with%20Even%20Number%20of%20Digits/script.ts)
 1. № [1298. Maximum Candies You Can Get from Boxes](solutions/1298.%20Maximum%20Candies%20You%20Can%20Get%20from%20Boxes/script.ts)
+1. № [1301. Number of Paths with Max Score](solutions/1301.%20Number%20of%20Paths%20with%20Max%20Score/script.ts)
 1. № [1304. Find N Unique Integers Sum up to Zero](solutions/1304.%20Find%20N%20Unique%20Integers%20Sum%20up%20to%20Zero/script.ts)
 1. № [1306. Jump Game III](solutions/1306.%20Jump%20Game%20III/script.ts)
 1. № [1310. XOR Queries of a Subarray](solutions/1310.%20XOR%20Queries%20of%20a%20Subarray/script.ts)
