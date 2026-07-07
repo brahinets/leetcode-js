@@ -1165,6 +1165,7 @@
 1. № [3742. Maximum Path Score in a Grid](solutions/3742.%20Maximum%20Path%20Score%20in%20a%20Grid/script.ts)
 1. № [3751. Total Waviness of Numbers in Range I](solutions/3751.%20Total%20Waviness%20of%20Numbers%20in%20Range%20I/script.ts)
 1. № [3753. Total Waviness of Numbers in Range II](solutions/3753.%20Total%20Waviness%20of%20Numbers%20in%20Range%20II/script.ts)
+1. № [3754. Concatenate Non-Zero Digits and Multiply by Sum I](solutions/3754.%20Concatenate%20Non-Zero%20Digits%20and%20Multiply%20by%20Sum%20I/script.ts)
 1. № [3761. Minimum Absolute Distance Between Mirror Pairs](solutions/3761.%20Minimum%20Absolute%20Distance%20Between%20Mirror%20Pairs/script.ts)
 1. № [3783. Mirror Distance of an Integer](solutions/3783.%20Mirror%20Distance%20of%20an%20Integer/script.ts)
 1. № [3838. Weighted Word Mapping](solutions/3838.%20Weighted%20Word%20Mapping/script.ts)
