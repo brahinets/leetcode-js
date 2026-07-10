@@ -1118,6 +1118,7 @@
 1. № [3516. Find Closest Person](solutions/3516.%20Find%20Closest%20Person/script.ts)
 1. № [3531. Count Covered Buildings](solutions/3531.%20Count%20Covered%20Buildings/script.ts)
 1. № [3532. Path Existence Queries in a Graph I](solutions/3532.%20Path%20Existence%20Queries%20in%20a%20Graph%20I/script.ts)
+1. № [3534. Path Existence Queries in a Graph II](solutions/3534.%20Path%20Existence%20Queries%20in%20a%20Graph%20II/script.ts)
 1. № [3539. Find Sum of Array Product of Magical Sequences](solutions/3539.%20Find%20Sum%20of%20Array%20Product%20of%20Magical%20Sequences/script.ts)
 1. № [3541. Find Most Frequent Vowel and Consonant](solutions/3541.%20Find%20Most%20Frequent%20Vowel%20and%20Consonant/script.ts)
 1. № [3542. Minimum Operations to Convert All Elements to Zero](solutions/3542.%20Minimum%20Operations%20to%20Convert%20All%20Elements%20to%20Zero/script.ts)
