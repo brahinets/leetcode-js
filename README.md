@@ -174,6 +174,7 @@
 1. № [177. Nth Highest Salary](solutions/177.%20Nth%20Highest%20Salary/script.ts)
 1. № [178. Rank Scores](solutions/178.%20Rank%20Scores/script.ts)
 1. № [179. Largest Number](solutions/179.%20Largest%20Number/script.ts)
+1. № [187. Repeated DNA Sequences](solutions/187.%20Repeated%20DNA%20Sequences/script.ts)
 1. № [190. Reverse Bits](solutions/190.%20Reverse%20Bits/script.ts)
 1. № [191. Number of 1 Bits](solutions/191.%20Number%20of%201%20Bits/script.ts)
 1. № [198. House Robber](solutions/198.%20House%20Robber/script.ts)
