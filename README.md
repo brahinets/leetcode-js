@@ -1062,6 +1062,7 @@
 1. № [3330. Find the Original Typed String I](solutions/3330.%20Find%20the%20Original%20Typed%20String%20I/script.ts)
 1. № [3333. Find the Original Typed String II](solutions/3333.%20Find%20the%20Original%20Typed%20String%20II/script.ts)
 1. № [3335. Total Characters in String After Transformations I](solutions/3335.%20Total%20Characters%20in%20String%20After%20Transformations%20I/script.ts)
+1. № [3336. Find the Number of Subsequences With Equal GCD](solutions/3336.%20Find%20the%20Number%20of%20Subsequences%20With%20Equal%20GCD/script.ts)
 1. № [3337. Total Characters in String After Transformations II](solutions/3337.%20Total%20Characters%20in%20String%20After%20Transformations%20II/script.ts)
 1. № [3341. Find Minimum Time to Reach Last Room I](solutions/3341.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20I/script.ts)
 1. № [3342. Find Minimum Time to Reach Last Room II](solutions/3342.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20II/script.ts)
