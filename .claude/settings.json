@@ -6,6 +6,10 @@
       "Write",
       "Edit",
       "WebFetch"
+    ],
+    "deny": [
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
