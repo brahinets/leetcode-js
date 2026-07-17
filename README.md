@@ -1055,6 +1055,7 @@
 1. № [3304. Find the K-th Character in String Game I](solutions/3304.%20Find%20the%20K-th%20Character%20in%20String%20Game%20I/script.ts)
 1. № [3306. Count of Substrings Containing Every Vowel and K Consonants II](solutions/3306.%20Count%20of%20Substrings%20Containing%20Every%20Vowel%20and%20K%20Consonants%20II/script.ts)
 1. № [3307. Find the K-th Character in String Game II](solutions/3307.%20Find%20the%20K-th%20Character%20in%20String%20Game%20II/script.ts)
+1. № [3312. Sorted GCD Pair Queries](solutions/3312.%20Sorted%20GCD%20Pair%20Queries/script.ts)
 1. № [3314. Construct the Minimum Bitwise Array I](solutions/3314.%20Construct%20the%20Minimum%20Bitwise%20Array%20I/script.ts)
 1. № [3315. Construct the Minimum Bitwise Array II](solutions/3315.%20Construct%20the%20Minimum%20Bitwise%20Array%20II/script.ts)
 1. № [3318. Find X-Sum of All K-Long Subarrays I](solutions/3318.%20Find%20X-Sum%20of%20All%20K-Long%20Subarrays%20I/script.ts)
