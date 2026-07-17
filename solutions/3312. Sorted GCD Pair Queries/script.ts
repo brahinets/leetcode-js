@@ -1,52 +1,50 @@
 export { gcdValues }
 
+import { arrayOfZeros } from '../../common/array-factories'
+
 function gcdValues(nums: number[], queries: number[]): number[] {
     const maxNum: number = Math.max(...nums)
-    const countPairs: Map<number, number> = new Map<number, number>()
+    const frequency: number[] = arrayOfZeros(maxNum + 1)
 
-    for (let i: number = 0; i < nums.length; i++) {
-        const divisorsI: number[] = getDivisors(nums[i])
-        for (let j: number = i + 1; j < nums.length; j++) {
-            const gcdValue: number = gcd(nums[i], nums[j])
-            countPairs.set(gcdValue, (countPairs.get(gcdValue) ?? 0) + 1)
+    for (const num of nums) {
+        frequency[num]++
+    }
+
+    const gcdCount: number[] = arrayOfZeros(maxNum + 1)
+
+    for (let g: number = maxNum; g >= 1; g--) {
+        let pairCount: number = 0
+        for (let multiple: number = g; multiple <= maxNum; multiple += g) {
+            pairCount += frequency[multiple]
+        }
+        gcdCount[g] = Math.floor((pairCount * (pairCount - 1)) / 2)
+
+        for (let multiple: number = 2 * g; multiple <= maxNum; multiple += g) {
+            gcdCount[g] -= gcdCount[multiple]
         }
     }
 
-    const gcdPairs: number[] = []
-    for (const [gcdValue, count] of countPairs) {
-        for (let k: number = 0; k < count; k++) {
-            gcdPairs.push(gcdValue)
-        }
+    const cumulative: number[] = arrayOfZeros(maxNum + 1)
+    for (let g: number = 1; g <= maxNum; g++) {
+        cumulative[g] = cumulative[g - 1] + gcdCount[g]
     }
 
-    gcdPairs.sort((a: number, b: number) => a - b)
-
-    const result: number[] = []
+    const answer: number[] = []
     for (const query of queries) {
-        result.push(gcdPairs[query])
-    }
-
-    return result
-}
-
-function gcd(a: number, b: number): number {
-    while (b !== 0) {
-        const temp: number = b
-        b = a % b
-        a = temp
-    }
-    return a
-}
-
-function getDivisors(num: number): number[] {
-    const divisors: number[] = []
-    for (let i: number = 1; i * i <= num; i++) {
-        if (num % i === 0) {
-            divisors.push(i)
-            if (i !== num / i) {
-                divisors.push(num / i)
+        let left: number = 1
+        let right: number = maxNum
+        let found: number = maxNum
+        while (left <= right) {
+            const mid: number = Math.floor((left + right) / 2)
+            if (cumulative[mid] <= query) {
+                left = mid + 1
+            } else {
+                found = mid
+                right = mid - 1
             }
         }
+        answer.push(found)
     }
-    return divisors.sort((a: number, b: number) => a - b)
+
+    return answer
 }
