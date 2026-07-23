@@ -1,6 +1,6 @@
-export { gcdSum }
+export { sumOfGcdOfFormedPairs }
 
-function gcdSum(nums: number[]): number {
+function sumOfGcdOfFormedPairs(nums: number[]): number {
     const n: number = nums.length
     const prefixGcd: number[] = []
 
