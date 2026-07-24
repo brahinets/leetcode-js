@@ -6,8 +6,7 @@ describe('3514. Number of Unique XOR Triplets II', (): void => {
 
         const result: number = uniqueXorTriplets(nums)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('four consecutive elements each reachable', (): void => {
@@ -15,8 +14,7 @@ describe('3514. Number of Unique XOR Triplets II', (): void => {
 
         const result: number = uniqueXorTriplets(nums)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('single element yields only itself', (): void => {
@@ -24,8 +22,7 @@ describe('3514. Number of Unique XOR Triplets II', (): void => {
 
         const result: number = uniqueXorTriplets(nums)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('duplicate values collapse to distinct set', (): void => {
@@ -33,8 +30,7 @@ describe('3514. Number of Unique XOR Triplets II', (): void => {
 
         const result: number = uniqueXorTriplets(nums)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('two identical values behave like a single element', (): void => {
@@ -42,8 +38,7 @@ describe('3514. Number of Unique XOR Triplets II', (): void => {
 
         const result: number = uniqueXorTriplets(nums)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('zero is reachable when three values cancel out', (): void => {
@@ -51,7 +46,7 @@ describe('3514. Number of Unique XOR Triplets II', (): void => {
 
         const result: number = uniqueXorTriplets(nums)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
+
 })
