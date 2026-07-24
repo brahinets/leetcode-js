@@ -1123,6 +1123,7 @@
 1. № [3510. Minimum Pair Removal to Sort Array II](solutions/3510.%20Minimum%20Pair%20Removal%20to%20Sort%20Array%20II/script.ts)
 1. № [3512. Minimum Operations to Make Array Sum Divisible by K](solutions/3512.%20Minimum%20Operations%20to%20Make%20Array%20Sum%20Divisible%20by%20K/script.ts)
 1. № [3513. Number of Unique XOR Triplets I](solutions/3513.%20Number%20of%20Unique%20XOR%20Triplets%20I/script.ts)
+1. № [3514. Number of Unique XOR Triplets II](solutions/3514.%20Number%20of%20Unique%20XOR%20Triplets%20II/script.ts)
 1. № [3516. Find Closest Person](solutions/3516.%20Find%20Closest%20Person/script.ts)
 1. № [3531. Count Covered Buildings](solutions/3531.%20Count%20Covered%20Buildings/script.ts)
 1. № [3532. Path Existence Queries in a Graph I](solutions/3532.%20Path%20Existence%20Queries%20in%20a%20Graph%20I/script.ts)
