@@ -726,6 +726,7 @@
 1. № [1971. Find if Path Exists in Graph](solutions/1971.%20Find%20if%20Path%20Exists%20in%20Graph/script.ts)
 1. № [1975. Maximum Matrix Sum](solutions/1975.%20Maximum%20Matrix%20Sum/script.ts)
 1. № [1976. Number of Ways to Arrive at Destination](solutions/1976.%20Number%20of%20Ways%20to%20Arrive%20at%20Destination/script.ts)
+1. № [1979. Find Greatest Common Divisor of Array](solutions/1979.%20Find%20Greatest%20Common%20Divisor%20of%20Array/script.ts)
 1. № [1980. Find Unique Binary String](solutions/1980.%20Find%20Unique%20Binary%20String/script.ts)
 1. № [1984. Minimum Difference Between Highest and Lowest of K Scores](solutions/1984.%20Minimum%20Difference%20Between%20Highest%20and%20Lowest%20of%20K%20Scores/script.ts)
 1. № [1992. Find All Groups of Farmland](solutions/1992.%20Find%20All%20Groups%20of%20Farmland/script.ts)

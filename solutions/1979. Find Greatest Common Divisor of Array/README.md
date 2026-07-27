@@ -1,0 +1,12 @@
+# 1979. Find Greatest Common Divisor of Array
+
+## Easy
+
+Given an integer array `nums`, return *the **greatest common divisor** of the smallest number and largest number in* `nums`.
+
+The **greatest common divisor** of two numbers is the largest positive integer that evenly divides both numbers.
+
+### Constraints
+
+- `2 <= nums.length <= 1000`
+- `1 <= nums[i] <= 1000`
