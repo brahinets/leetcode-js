@@ -1,6 +1,6 @@
-export {PredictTheWinner}
+export {predictTheWinner}
 
-function PredictTheWinner(nums: number[]): boolean {
+function predictTheWinner(nums: number[]): boolean {
     return maxDiff(nums, 0, nums.length - 1) >= 0
 }
 

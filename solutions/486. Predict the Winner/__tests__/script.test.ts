@@ -1,18 +1,18 @@
-import {PredictTheWinner} from '../script'
+import {predictTheWinner} from '../script'
 
 describe('486. Predict the Winner', (): void => {
     it('Cannot win', (): void => {
-        expect(PredictTheWinner([1, 5, 2]))
+        expect(predictTheWinner([1, 5, 2]))
             .toBe(false)
     })
 
     it('Can win easy', (): void => {
-        expect(PredictTheWinner([1, 5, 233, 7]))
+        expect(predictTheWinner([1, 5, 233, 7]))
             .toBe(true)
     })
 
     it('Can win by equality', (): void => {
-        expect(PredictTheWinner([1, 1, 1, 1]))
+        expect(predictTheWinner([1, 1, 1, 1]))
             .toBe(true)
     })
 })
