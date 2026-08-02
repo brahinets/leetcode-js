@@ -388,6 +388,7 @@
 1. № [874. Walking Robot Simulation](solutions/874.%20Walking%20Robot%20Simulation/script.ts)
 1. № [875. Koko Eating Bananas](solutions/875.%20Koko%20Eating%20Bananas/script.ts)
 1. № [876. Middle of the Linked List](solutions/876.%20Middle%20of%20the%20Linked%20List/script.ts)
+1. № [877. Stone Game](solutions/877.%20Stone%20Game/script.ts)
 1. № [880. Decoded String at Index](solutions/880.%20Decoded%20String%20at%20Index/script.ts)
 1. № [881. Boats to Save People](solutions/881.%20Boats%20to%20Save%20People/script.ts)
 1. № [884. Uncommon Words from Two Sentences](solutions/884.%20Uncommon%20Words%20from%20Two%20Sentences/script.ts)
