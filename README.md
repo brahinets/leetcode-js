@@ -1176,6 +1176,7 @@
 1. № [3714. Longest Balanced Substring II](solutions/3714.%20Longest%20Balanced%20Substring%20II/script.ts)
 1. № [3719. Longest Balanced Subarray I](solutions/3719.%20Longest%20Balanced%20Subarray%20I/script.ts)
 1. № [3721. Longest Balanced Subarray II](solutions/3721.%20Longest%20Balanced%20Subarray%20II/script.ts)
+1. № [3731. Find Missing Elements](solutions/3731.%20Find%20Missing%20Elements/script.ts)
 1. № [3737. Count Subarrays With Majority Element I](solutions/3737.%20Count%20Subarrays%20With%20Majority%20Element%20I/script.ts)
 1. № [3739. Count Subarrays With Majority Element II](solutions/3739.%20Count%20Subarrays%20With%20Majority%20Element%20II/script.ts)
 1. № [3740. Minimum Distance Between Three Equal Elements I](solutions/3740.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20I/script.ts)
