@@ -2,7 +2,7 @@ import {arrayOfZeros} from '../../common/array-factories'
 
 export {smallestPalindrome}
 
-function smallestPalindromicRearrangement(s: string): string {
+function smallestPalindrome(s: string): string {
     const characterCounts: number[] = countCharacters(s)
     const half: string = buildHalf(characterCounts)
     const middleCharacter: string = extractMiddleCharacter(characterCounts)
