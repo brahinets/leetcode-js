@@ -1075,6 +1075,7 @@
 1. № [3341. Find Minimum Time to Reach Last Room I](solutions/3341.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20I/script.ts)
 1. № [3342. Find Minimum Time to Reach Last Room II](solutions/3342.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room%20II/script.ts)
 1. № [3343. Count Number of Balanced Permutations](solutions/3343.%20Count%20Number%20of%20Balanced%20Permutations/script.ts)
+1. № [3345. Smallest Divisible Digit Product I](solutions/3345.%20Smallest%20Divisible%20Digit%20Product%20I/script.ts)
 1. № [3346. Maximum Frequency of an Element After Performing Operations I](solutions/3346.%20Maximum%20Frequency%20of%20an%20Element%20After%20Performing%20Operations%20I/script.ts)
 1. № [3347. Maximum Frequency of an Element After Performing Operations II](solutions/3347.%20Maximum%20Frequency%20of%20an%20Element%20After%20Performing%20Operations%20II/script.ts)
 1. № [3349. Adjacent Increasing Subarrays Detection I](solutions/3349.%20Adjacent%20Increasing%20Subarrays%20Detection%20I/script.ts)
