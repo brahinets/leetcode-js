@@ -1078,6 +1078,7 @@
 1. № [3345. Smallest Divisible Digit Product I](solutions/3345.%20Smallest%20Divisible%20Digit%20Product%20I/script.ts)
 1. № [3346. Maximum Frequency of an Element After Performing Operations I](solutions/3346.%20Maximum%20Frequency%20of%20an%20Element%20After%20Performing%20Operations%20I/script.ts)
 1. № [3347. Maximum Frequency of an Element After Performing Operations II](solutions/3347.%20Maximum%20Frequency%20of%20an%20Element%20After%20Performing%20Operations%20II/script.ts)
+1. № [3348. Smallest Divisible Digit Product II](solutions/3348.%20Smallest%20Divisible%20Digit%20Product%20II/script.ts)
 1. № [3349. Adjacent Increasing Subarrays Detection I](solutions/3349.%20Adjacent%20Increasing%20Subarrays%20Detection%20I/script.ts)
 1. № [3350. Adjacent Increasing Subarrays Detection II](solutions/3350.%20Adjacent%20Increasing%20Subarrays%20Detection%20II/script.ts)
 1. № [3354. Make Array Elements Equal to Zero](solutions/3354.%20Make%20Array%20Elements%20Equal%20to%20Zero/script.ts)
