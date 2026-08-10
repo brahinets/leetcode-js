@@ -586,6 +586,7 @@
 1. № [1504. Count Submatrices With All Ones](solutions/1504.%20Count%20Submatrices%20With%20All%20Ones/script.ts)
 1. № [1508. Range Sum of Sorted Subarray Sums](solutions/1508.%20Range%20Sum%20of%20Sorted%20Subarray%20Sums/script.ts)
 1. № [1509. Minimum Difference Between Largest and Smallest Value in Three Moves](solutions/1509.%20Minimum%20Difference%20Between%20Largest%20and%20Smallest%20Value%20in%20Three%20Moves/script.ts)
+1. № [1510. Stone Game IV](solutions/1510.%20Stone%20Game%20IV/script.ts)
 1. № [1512. Number of Good Pairs](solutions/1512.%20Number%20of%20Good%20Pairs/script.ts)
 1. № [1513. Number of Substrings With Only 1s](solutions/1513.%20Number%20of%20Substrings%20With%20Only%201s/script.ts)
 1. № [1514. Path with Maximum Probability](solutions/1514.%20Path%20with%20Maximum%20Probability/script.ts)
