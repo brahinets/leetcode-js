@@ -992,6 +992,7 @@
 1. № [2976. Minimum Cost to Convert String I](solutions/2976.%20Minimum%20Cost%20to%20Convert%20String%20I/script.ts)
 1. № [2977. Minimum Cost to Convert String II](solutions/2977.%20Minimum%20Cost%20to%20Convert%20String%20II/script.ts)
 1. № [2981. Find Longest Special Substring That Occurs Thrice I](solutions/2981.%20Find%20Longest%20Special%20Substring%20That%20Occurs%20Thrice%20I/script.ts)
+1. № [2996. Smallest Missing Integer Greater Than Sequential Prefix Sum](solutions/2996.%20Smallest%20Missing%20Integer%20Greater%20Than%20Sequential%20Prefix%20Sum/script.ts)
 1. № [2997. Minimum Number of Operations to Make Array XOR Equal to K](solutions/2997.%20Minimum%20Number%20of%20Operations%20to%20Make%20Array%20XOR%20Equal%20to%20K/script.ts)
 1. № [2999. Count the Number of Powerful Integers](solutions/2999.%20Count%20the%20Number%20of%20Powerful%20Integers/script.ts)
 1. № [3000. Maximum Area of Longest Diagonal Rectangle](solutions/3000.%20Maximum%20Area%20of%20Longest%20Diagonal%20Rectangle/script.ts)
