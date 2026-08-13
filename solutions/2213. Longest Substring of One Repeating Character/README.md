@@ -1,0 +1,20 @@
+# 2213. Longest Substring of One Repeating Character
+
+## Hard
+
+You are given a 0-indexed string `s`. You are also given a 0-indexed string `queryCharacters` of length `k` and a
+0-indexed array of integer indices `queryIndices` of length `k`, both of which are used to describe `k` queries.
+
+The `i`th query updates the character in `s` at index `queryIndices[i]` to the character `queryCharacters[i]`.
+
+Return an array `lengths` of length `k` where `lengths[i]` is the length of the longest substring of `s` consisting
+of only one repeating character after the `i`th query is performed.
+
+### Constraints
+
+- `1 <= s.length <= 10^5`
+- `s` consists of lowercase English letters.
+- `k == queryCharacters.length == queryIndices.length`
+- `1 <= k <= 10^5`
+- `queryCharacters` consists of lowercase English letters.
+- `0 <= queryIndices[i] < s.length`
