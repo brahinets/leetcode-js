@@ -1,10 +1,10 @@
-export { maximumNumberOfFamilies }
+export { maxNumberOfFamilies }
 
 const LEFT_RANGE_MASK: number = (1 << 1) | (1 << 2) | (1 << 3) | (1 << 4)
 const MIDDLE_RANGE_MASK: number = (1 << 3) | (1 << 4) | (1 << 5) | (1 << 6)
 const RIGHT_RANGE_MASK: number = (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8)
 
-function maximumNumberOfFamilies(rowCount: number, reservedSeats: number[][]): number {
+function maxNumberOfFamilies(rowCount: number, reservedSeats: number[][]): number {
     const seatMaskByRow: Map<number, number> = new Map<number, number>()
     for (const reservation of reservedSeats) {
         const rowNumber: number = reservation[0]
