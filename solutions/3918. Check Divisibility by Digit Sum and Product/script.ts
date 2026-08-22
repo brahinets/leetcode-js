@@ -1,6 +1,6 @@
-export {isDivisible}
+export {checkDivisibility}
 
-function isDivisible(number: number): boolean {
+function checkDivisibility(number: number): boolean {
     let digitSum: number = 0
     let digitProduct: number = 1
     let remainingNumber: number = number
