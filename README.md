@@ -1205,6 +1205,7 @@
 1. № [3867. Sum of GCD of Formed Pairs](solutions/3867.%20Sum%20of%20GCD%20of%20Formed%20Pairs/script.ts)
 1. № [3884. Minimum Absolute Difference in Sliding Submatrix](solutions/3884.%20Minimum%20Absolute%20Difference%20in%20Sliding%20Submatrix/script.ts)
 1. № [3902. Maximize Spanning Tree Stability with Upgrades](solutions/3902.%20Maximize%20Spanning%20Tree%20Stability%20with%20Upgrades/script.ts)
+1. № [3918. Check Divisibility by Digit Sum and Product](solutions/3918.%20Check%20Divisibility%20by%20Digit%20Sum%20and%20Product/script.ts)
 1. № [3967. Earliest Finish Time for Land and Water Rides II](solutions/3967.%20Earliest%20Finish%20Time%20for%20Land%20and%20Water%20Rides%20II/script.ts)
 
 </details>
