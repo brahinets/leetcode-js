@@ -1,6 +1,6 @@
-export {smallestMissingMultipleOfK}
+export {missingMultiple}
 
-function smallestMissingMultipleOfK(nums: number[], k: number): number {
+function missingMultiple(nums: number[], k: number): number {
     const numberSet: Set<number> = new Set<number>(nums)
 
     let multiple: number = k
