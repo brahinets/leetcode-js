@@ -1196,6 +1196,7 @@
 1. № [3720. Lexicographically Smallest Permutation Greater Than Target](solutions/3720.%20Lexicographically%20Smallest%20Permutation%20Greater%20Than%20Target/script.ts)
 1. № [3721. Longest Balanced Subarray II](solutions/3721.%20Longest%20Balanced%20Subarray%20II/script.ts)
 1. № [3731. Find Missing Elements](solutions/3731.%20Find%20Missing%20Elements/script.ts)
+1. № [3734. Lexicographically Smallest Palindromic Permutation Greater Than Target](solutions/3734.%20Lexicographically%20Smallest%20Palindromic%20Permutation%20Greater%20Than%20Target/script.ts)
 1. № [3737. Count Subarrays With Majority Element I](solutions/3737.%20Count%20Subarrays%20With%20Majority%20Element%20I/script.ts)
 1. № [3739. Count Subarrays With Majority Element II](solutions/3739.%20Count%20Subarrays%20With%20Majority%20Element%20II/script.ts)
 1. № [3740. Minimum Distance Between Three Equal Elements I](solutions/3740.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20I/script.ts)
