@@ -1190,6 +1190,7 @@
 1. № [3691. Maximum Total Subarray Value II](solutions/3691.%20Maximum%20Total%20Subarray%20Value%20II/script.ts)
 1. № [3699. Number of ZigZag Arrays I](solutions/3699.%20Number%20of%20ZigZag%20Arrays%20I/script.ts)
 1. № [3700. Number of ZigZag Arrays II](solutions/3700.%20Number%20of%20ZigZag%20Arrays%20II/script.ts)
+1. № [3705. Find Largest Almost Missing Integer](solutions/3705.%20Find%20Largest%20Almost%20Missing%20Integer/script.ts)
 1. № [3713. Longest Balanced Substring I](solutions/3713.%20Longest%20Balanced%20Substring%20I/script.ts)
 1. № [3714. Longest Balanced Substring II](solutions/3714.%20Longest%20Balanced%20Substring%20II/script.ts)
 1. № [3718. Smallest Missing Multiple of K](solutions/3718.%20Smallest%20Missing%20Multiple%20of%20K/script.ts)
