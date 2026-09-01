@@ -1160,6 +1160,7 @@
 1. № [3558. Number of Ways to Assign Edge Weights I](solutions/3558.%20Number%20of%20Ways%20to%20Assign%20Edge%20Weights%20I/script.ts)
 1. № [3559. Number of Ways to Assign Edge Weights II](solutions/3559.%20Number%20of%20Ways%20to%20Assign%20Edge%20Weights%20II/script.ts)
 1. № [3562. Maximum Profit from Trading Stocks with Discounts](solutions/3562.%20Maximum%20Profit%20from%20Trading%20Stocks%20with%20Discounts/script.ts)
+1. № [3568. Minimum Moves to Clean the Classroom](solutions/3568.%20Minimum%20Moves%20to%20Clean%20the%20Classroom/script.ts)
 1. № [3573. Best Time to Buy and Sell Stock V](solutions/3573.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20V/script.ts)
 1. № [3577. Count the Number of Computer Unlocking Permutations](solutions/3577.%20Count%20the%20Number%20of%20Computer%20Unlocking%20Permutations/script.ts)
 1. № [3578. Count Partitions With Max-Min Difference at Most K](solutions/3578.%20Count%20Partitions%20With%20Max-Min%20Difference%20at%20Most%20K/script.ts)
