@@ -1218,7 +1218,8 @@
 1. № [3884. Minimum Absolute Difference in Sliding Submatrix](solutions/3884.%20Minimum%20Absolute%20Difference%20in%20Sliding%20Submatrix/script.ts)
 1. № [3902. Maximize Spanning Tree Stability with Upgrades](solutions/3902.%20Maximize%20Spanning%20Tree%20Stability%20with%20Upgrades/script.ts)
 2. № [3903. Smallest Stable Index I](solutions/3903.%20Smallest%20Stable%20Index%20I/script.ts)
-3. № [3918. Check Divisibility by Digit Sum and Product](solutions/3918.%20Check%20Divisibility%20by%20Digit%20Sum%20and%20Product/script.ts)
+3. № [3904. Smallest Stable Index II](solutions/3904.%20Smallest%20Stable%20Index%20II/script.ts)
+4. № [3918. Check Divisibility by Digit Sum and Product](solutions/3918.%20Check%20Divisibility%20by%20Digit%20Sum%20and%20Product/script.ts)
 4. № [3967. Earliest Finish Time for Land and Water Rides II](solutions/3967.%20Earliest%20Finish%20Time%20for%20Land%20and%20Water%20Rides%20II/script.ts)
 
 </details>
