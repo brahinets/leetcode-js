@@ -1,11 +1,11 @@
 import { arrayOfZeros } from "../../common/array-factories"
 
-export { distinctSubsequencesII }
+export { distinctSubseqII }
 
 const MODULO: number = 1_000_000_007
 const ALPHABET_SIZE: number = 26
 
-function distinctSubsequencesII(s: string): number {
+function distinctSubseqII(s: string): number {
     const endingCounts: number[] = arrayOfZeros(ALPHABET_SIZE)
     let totalCount: number = 0
 
