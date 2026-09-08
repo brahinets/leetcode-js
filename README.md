@@ -1215,6 +1215,7 @@
 1. № [3783. Mirror Distance of an Integer](solutions/3783.%20Mirror%20Distance%20of%20an%20Integer/script.ts)
 1. № [3838. Weighted Word Mapping](solutions/3838.%20Weighted%20Word%20Mapping/script.ts)
 1. № [3867. Sum of GCD of Formed Pairs](solutions/3867.%20Sum%20of%20GCD%20of%20Formed%20Pairs/script.ts)
+1. № [3870. Count Commas in Range](solutions/3870.%20Count%20Commas%20in%20Range/script.ts)
 1. № [3875. Construct Uniform Parity Array I](solutions/3875.%20Construct%20Uniform%20Parity%20Array%20I/script.ts)
 1. № [3876. Construct Uniform Parity Array II](solutions/3876.%20Construct%20Uniform%20Parity%20Array%20II/script.ts)
 1. № [3884. Minimum Absolute Difference in Sliding Submatrix](solutions/3884.%20Minimum%20Absolute%20Difference%20in%20Sliding%20Submatrix/script.ts)
