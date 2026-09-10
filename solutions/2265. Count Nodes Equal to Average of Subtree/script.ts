@@ -1,35 +1,29 @@
-import {TreeNode} from "../../common/TreeNode"
-import {sum} from "../../common/array-utils"
+import { TreeNode } from "../../common/TreeNode"
 
-export {TreeNode, averageOfSubtree}
+export { TreeNode, averageOfSubtree }
 
-function averageOfSubtree(root: TreeNode | null): number {
-    let count: number = 0
-
-    if (root) {
-        const values: number[] = collect(root)
-        const valuesSum: number = sum(values)
-        const average: number = Math.floor(valuesSum / values.length)
-
-        if (average === root.val) {
-            count++
-        }
-
-        count += averageOfSubtree(root.left) + averageOfSubtree(root.right)
-    }
-
-    return count
+interface SubtreeSummary {
+    sum: number
+    count: number
+    matchCount: number
 }
 
-function collect(node: TreeNode | null): number[] {
-    const values: number[] = []
+function averageOfSubtree(root: TreeNode | null): number {
+    return summarize(root).matchCount
+}
 
-    if (node) {
-        values.push(node.val)
-
-        values.push(...collect(node.left))
-        values.push(...collect(node.right))
+function summarize(node: TreeNode | null): SubtreeSummary {
+    if (!node) {
+        return { sum: 0, count: 0, matchCount: 0 }
     }
 
-    return values
+    const left: SubtreeSummary = summarize(node.left)
+    const right: SubtreeSummary = summarize(node.right)
+
+    const sum: number = left.sum + right.sum + node.val
+    const count: number = left.count + right.count + 1
+    const average: number = Math.floor(sum / count)
+    const matchCount: number = left.matchCount + right.matchCount + (average === node.val ? 1 : 0)
+
+    return { sum, count, matchCount }
 }
