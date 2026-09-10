@@ -1,8 +1,9 @@
 export { maxNumberOfFamilies }
 
-const LEFT_RANGE_MASK: number = (1 << 1) | (1 << 2) | (1 << 3) | (1 << 4)
-const MIDDLE_RANGE_MASK: number = (1 << 3) | (1 << 4) | (1 << 5) | (1 << 6)
-const RIGHT_RANGE_MASK: number = (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8)
+const FOUR_SEAT_WINDOW_MASK: number = 0b1111
+const LEFT_RANGE_MASK: number = FOUR_SEAT_WINDOW_MASK << 1
+const MIDDLE_RANGE_MASK: number = FOUR_SEAT_WINDOW_MASK << 3
+const RIGHT_RANGE_MASK: number = FOUR_SEAT_WINDOW_MASK << 5
 
 function maxNumberOfFamilies(rowCount: number, reservedSeats: number[][]): number {
     const seatMaskByRow: Map<number, number> = new Map<number, number>()
@@ -34,9 +35,5 @@ function countFamiliesInRow(seatMask: number): number {
         return 2
     }
 
-    if (isLeftRangeAvailable || isMiddleRangeAvailable || isRightRangeAvailable) {
-        return 1
-    }
-
-    return 0
+    return isLeftRangeAvailable || isMiddleRangeAvailable || isRightRangeAvailable ? 1 : 0
 }
