@@ -1134,6 +1134,7 @@
 1. № [3477. Fruits Into Baskets II](solutions/3477.%20Fruits%20Into%20Baskets%20II/script.ts)
 1. № [3479. Fruits Into Baskets III](solutions/3479.%20Fruits%20Into%20Baskets%20III/script.ts)
 1. № [3480. Maximize Subarrays After Removing One Conflicting Pair](solutions/3480.%20Maximize%20Subarrays%20After%20Removing%20One%20Conflicting%20Pair/script.ts)
+1. № [3483. Unique 3-Digit Even Numbers](solutions/3483.%20Unique%203-Digit%20Even%20Numbers/script.ts)
 1. № [3484. Design Spreadsheet](solutions/3484.%20Design%20Spreadsheet/script.ts)
 1. № [3487. Maximum Unique Subarray Sum After Deletion](solutions/3487.%20Maximum%20Unique%20Subarray%20Sum%20After%20Deletion/script.ts)
 1. № [3488. Closest Equal Element Queries](solutions/3488.%20Closest%20Equal%20Element%20Queries/script.ts)
