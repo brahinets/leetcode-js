@@ -1,8 +1,8 @@
 import { arrayOfZeros } from "../../common/array-factories"
 
-export { countUniqueThreeDigitEvenNumbers }
+export { totalNumbers }
 
-function countUniqueThreeDigitEvenNumbers(digits: number[]): number {
+function totalNumbers(digits: number[]): number {
     const digitCounts: number[] = arrayOfZeros(10)
 
     for (const digit of digits) {
