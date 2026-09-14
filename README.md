@@ -367,6 +367,7 @@
 1. № [827. Making A Large Island](solutions/827.%20Making%20A%20Large%20Island/script.ts)
 1. № [834. Sum of Distances in Tree](solutions/834.%20Sum%20of%20Distances%20in%20Tree/script.ts)
 1. № [835. Image Overlap](solutions/835.%20Image%20Overlap/script.ts)
+1. № [836. Rectangle Overlap](solutions/836.%20Rectangle%20Overlap/script.ts)
 1. № [837. New 21 Game](solutions/837.%20New%2021%20Game/script.ts)
 1. № [838. Push Dominoes](solutions/838.%20Push%20Dominoes/script.ts)
 1. № [840. Magic Squares In Grid](solutions/840.%20Magic%20Squares%20In%20Grid/script.ts)
