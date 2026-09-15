@@ -890,6 +890,7 @@
 1. № [2466. Count Ways To Build Good Strings](solutions/2466.%20Count%20Ways%20To%20Build%20Good%20Strings/script.ts)
 1. № [2467. Most Profitable Path in a Tree](solutions/2467.%20Most%20Profitable%20Path%20in%20a%20Tree/script.ts)
 1. № [2471. Minimum Number of Operations to Sort a Binary Tree by Level](solutions/2471.%20Minimum%20Number%20of%20Operations%20to%20Sort%20a%20Binary%20Tree%20by%20Level/script.ts)
+1. № [2472. Maximum Number of Non-overlapping Palindrome Substrings](solutions/2472.%20Maximum%20Number%20of%20Non-overlapping%20Palindrome%20Substrings/script.ts)
 1. № [2482. Difference Between Ones and Zeros in Row and Column](solutions/2482.%20Difference%20Between%20Ones%20and%20Zeros%20in%20Row%20and%20Column/script.ts)
 1. № [2483. Minimum Penalty for a Shop](solutions/2483.%20Minimum%20Penalty%20for%20a%20Shop/script.ts)
 1. № [2485. Find the Pivot Integer](solutions/2485.%20Find%20the%20Pivot%20Integer/script.ts)
