@@ -1,3 +1,5 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export {stringIndices}
 
 interface TrieNode {
@@ -61,7 +63,7 @@ function stringIndices(wordsContainer: readonly string[], wordsQuery: readonly s
         }
     }
 
-    const result: number[] = new Array<number>(wordsQuery.length)
+    const result: number[] = arrayOfZeros(wordsQuery.length)
 
     for (let queryIndex: number = 0; queryIndex < wordsQuery.length; queryIndex++) {
         const query: string = wordsQuery[queryIndex]

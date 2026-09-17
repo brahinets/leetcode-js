@@ -1,4 +1,5 @@
 import {count} from "../../common/array-utils"
+import {arrayOfZeros} from "../../common/array-factories"
 
 export {findErrorNums}
 
@@ -14,6 +15,7 @@ function findDuplicated(counts: Map<number, number>): number {
 }
 
 function findMissing(totalCount: number, counts: Map<number, number>): number {
-    return Array.from({length: totalCount}, (_, i) => i + 1)
+    return arrayOfZeros(totalCount)
+        .map((_: number, i: number): number => i + 1)
         .find((num: number) => !counts.has(num))!
 }

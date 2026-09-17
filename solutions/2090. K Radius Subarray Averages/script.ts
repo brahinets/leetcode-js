@@ -1,8 +1,10 @@
+import {arrayOf} from '../../common/array-factories'
+
 export {getAverages}
 
 function getAverages(nums: number[], radius: number): number[] {
     const windowSize: number = radius * 2 + 1
-    const avg: number[] = new Array(nums.length).fill(-1)
+    const avg: number[] = arrayOf(-1, nums.length)
 
     if (windowSize > nums.length) {
         return avg

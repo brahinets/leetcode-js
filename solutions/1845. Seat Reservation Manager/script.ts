@@ -1,10 +1,12 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export {SeatManager}
 
 class SeatManager {
     private readonly seats: number[]
 
     constructor(n: number) {
-        this.seats = new Array(n)
+        this.seats = arrayOfZeros(n)
     }
 
     reserve(): number {

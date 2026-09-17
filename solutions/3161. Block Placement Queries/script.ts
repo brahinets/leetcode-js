@@ -1,3 +1,5 @@
+import {arrayOf} from '../../common/array-factories'
+
 export {getResults}
 
 const MAX_POSITION: number = 50001
@@ -29,7 +31,7 @@ class SegmentTree {
 
     constructor(size: number) {
         this.size = size
-        this.tree = new Array<SegmentTreeNode>(4 * size).fill({maxGap: 0, leftActive: EMPTY, rightActive: EMPTY})
+        this.tree = arrayOf<SegmentTreeNode>({maxGap: 0, leftActive: EMPTY, rightActive: EMPTY}, 4 * size)
     }
 
     insert(node: number, start: number, end: number, position: number): void {

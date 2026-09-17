@@ -1,4 +1,5 @@
 import {count} from "../../common/array-utils"
+import {arrayOf} from "../../common/array-factories"
 
 export {reorganizeString}
 
@@ -6,7 +7,7 @@ function reorganizeString(s: string): string {
     const charsSortedByCountAsc: [string, number][] = [...count(s.split("")).entries()]
         .sort(([, count1], [, count2]): number => count1 - count2)
 
-    const result: string[] = Array(s.length).fill("")
+    const result: string[] = arrayOf("", s.length)
 
     let i: number = 0
     while (charsSortedByCountAsc.length > 0) {

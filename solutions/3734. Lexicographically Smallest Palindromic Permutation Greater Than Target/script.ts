@@ -1,3 +1,5 @@
+import {arrayOf, arrayOfZeros} from '../../common/array-factories'
+
 export {lexPalindromicPermutation}
 
 const ALPHABET_SIZE: number = 26
@@ -23,7 +25,7 @@ function lexPalindromicPermutation(s: string, target: string): string {
     const middleLetterIndex: number | null = isLengthOdd ? oddLetterIndices[0] : null
     const halfLength: number = Math.floor(length / 2)
     const pairCount: number[] = letterFrequency.map((count: number): number => Math.floor(count / 2))
-    const greaterAlternativeAtIndex: Array<number | null> = new Array<number | null>(halfLength).fill(null)
+    const greaterAlternativeAtIndex: Array<number | null> = arrayOf<number | null>(null, halfLength)
 
     let matchedHalfLength: number = halfLength
 
@@ -67,7 +69,7 @@ function lexPalindromicPermutation(s: string, target: string): string {
 }
 
 function countLetterFrequency(word: string): number[] {
-    const letterFrequency: number[] = new Array<number>(ALPHABET_SIZE).fill(0)
+    const letterFrequency: number[] = arrayOfZeros(ALPHABET_SIZE)
 
     for (const character of word) {
         letterFrequency[character.charCodeAt(0) - LOWERCASE_A_CHARACTER_CODE] += 1

@@ -1,10 +1,11 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export {smallestSufficientTeam}
 
 function smallestSufficientTeam(req_skills: string[], people: string[][]): number[] {
     const teams: Array<Set<number>> = formTeams(people, skillsByPopularity(people, req_skills))
 
-    let minTeam: Set<number> = new Set<number>(new Array(people.length)
-        .fill(0)
+    let minTeam: Set<number> = new Set<number>(arrayOfZeros(people.length)
         .map((_: number, index: number): number => index))
 
     for (const team of teams) {

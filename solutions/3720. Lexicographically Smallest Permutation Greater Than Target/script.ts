@@ -1,4 +1,4 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import {arrayOf, arrayOfZeros} from '../../common/array-factories'
 
 export {lexGreaterPermutation}
 
@@ -8,7 +8,7 @@ const LOWERCASE_A_CHARACTER_CODE: number = 'a'.charCodeAt(0)
 function lexGreaterPermutation(s: string, target: string): string {
     const length: number = s.length
     const letterFrequency: number[] = countLetterFrequency(s)
-    const greaterAlternativeAtIndex: Array<number | null> = new Array<number | null>(length).fill(null)
+    const greaterAlternativeAtIndex: Array<number | null> = arrayOf<number | null>(null, length)
 
     let matchedLength: number = length
 

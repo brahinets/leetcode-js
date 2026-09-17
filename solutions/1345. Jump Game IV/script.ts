@@ -1,3 +1,5 @@
+import {arrayOf} from '../../common/array-factories'
+
 export { minJumps }
 
 function minJumps(array: number[]): number {
@@ -19,7 +21,7 @@ function minJumps(array: number[]): number {
         valueToIndices.get(value)!.push(index)
     }
 
-    const visited: boolean[] = new Array<boolean>(array.length).fill(false)
+    const visited: boolean[] = arrayOf<boolean>(false, array.length)
     const queue: number[] = [0]
     visited[0] = true
     let steps: number = 0

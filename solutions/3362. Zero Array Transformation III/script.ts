@@ -1,4 +1,5 @@
 import {PriorityQueue} from "../../common/PriorityQueue"
+import {arrayOfZeros} from "../../common/array-factories"
 
 export {maxRemoval}
 
@@ -7,7 +8,7 @@ function maxRemoval(nums: number[], queries: number[][]): number {
 
     const heap: PriorityQueue<number> = new PriorityQueue<number>((a: number, b: number): number => b - a)
 
-    const deltaArray: number[] = new Array(nums.length + 1).fill(0)
+    const deltaArray: number[] = arrayOfZeros(nums.length + 1)
     let operations: number = 0
 
     for (let i: number = 0, j = 0; i < nums.length; i++) {

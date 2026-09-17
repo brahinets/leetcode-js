@@ -1,3 +1,5 @@
+import {arrayOf} from '../../common/array-factories'
+
 export {assignEdgeWeights}
 
 const MODULO: number = 1_000_000_007
@@ -24,7 +26,7 @@ function assignEdgeWeights(edges: number[][]): number {
 }
 
 function findMaximumDepth(adjacency: number[][], numberOfNodes: number): number {
-    const visited: boolean[] = new Array<boolean>(numberOfNodes + 1).fill(false)
+    const visited: boolean[] = arrayOf<boolean>(false, numberOfNodes + 1)
     let queue: number[] = [1]
     visited[1] = true
     let depth: number = 0

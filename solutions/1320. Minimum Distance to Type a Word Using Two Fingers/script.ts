@@ -1,3 +1,5 @@
+import {arrayOf} from '../../common/array-factories'
+
 export { minimumDistance }
 
 const KEYBOARD_COLUMNS: number = 6
@@ -16,14 +18,14 @@ function minimumDistance(word: string): number {
     const INFINITY: number = Number.MAX_SAFE_INTEGER
     const STATE_COUNT: number = UNPLACED + 1
 
-    let costByInactivePosition: number[] = new Array<number>(STATE_COUNT).fill(INFINITY)
+    let costByInactivePosition: number[] = arrayOf<number>(INFINITY, STATE_COUNT)
     costByInactivePosition[UNPLACED] = 0
 
     for (let characterIndex: number = 0; characterIndex < word.length; characterIndex++) {
         const currentLetter: number = word.charCodeAt(characterIndex) - 65
         const previousLetter: number = characterIndex > 0 ? word.charCodeAt(characterIndex - 1) - 65 : UNPLACED
 
-        const nextCostByInactivePosition: number[] = new Array<number>(STATE_COUNT).fill(INFINITY)
+        const nextCostByInactivePosition: number[] = arrayOf<number>(INFINITY, STATE_COUNT)
 
         for (let inactivePosition: number = 0; inactivePosition < STATE_COUNT; inactivePosition++) {
             const currentCost: number = costByInactivePosition[inactivePosition]

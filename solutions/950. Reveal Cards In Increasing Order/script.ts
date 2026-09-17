@@ -1,8 +1,10 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export {deckRevealedIncreasing}
 
 function deckRevealedIncreasing(deck: number[]): number[] {
     const result: number[] = []
-    const queue: number[] = Array.from(Array(deck.length).keys())
+    const queue: number[] = arrayOfZeros(deck.length).map((_: number, index: number): number => index)
 
     deck.sort((a: number, b: number): number => a - b)
 

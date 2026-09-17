@@ -1,3 +1,5 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export {earliestAndLatest}
 
 type PlayerId = number
@@ -13,7 +15,7 @@ function earliestAndLatest(n: number, firstPlayer: PlayerId, secondPlayer: Playe
 
     memo.clear()
 
-    return dfs(Array.from({length: n}, (_: number, i: number): number => i + 1), 1, firstPlayer, secondPlayer)
+    return dfs(arrayOfZeros(n).map((_: number, i: number): number => i + 1), 1, firstPlayer, secondPlayer)
 }
 
 function backtrack(

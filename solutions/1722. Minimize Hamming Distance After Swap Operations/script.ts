@@ -1,3 +1,5 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export { minimumHammingDistance }
 
 function minimumHammingDistance(
@@ -6,7 +8,7 @@ function minimumHammingDistance(
     allowedSwaps: number[][]
 ): number {
     const length: number = source.length
-    const parent: number[] = Array.from<number>({ length }).map((_: number, index: number): number => index)
+    const parent: number[] = arrayOfZeros(length).map((_: number, index: number): number => index)
 
     function find(index: number): number {
         if (parent[index] !== index) {

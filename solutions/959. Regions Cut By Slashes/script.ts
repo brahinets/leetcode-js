@@ -1,3 +1,5 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export {regionsBySlashes}
 
 function regionsBySlashes(grid: string[]): number {
@@ -8,7 +10,7 @@ function regionsBySlashes(grid: string[]): number {
 }
 
 function buildUnions(size: number, n: number, grid: string[]): number[] {
-    const dsu: number[] = Array.from({length: size}, (_, i) => i)
+    const dsu: number[] = arrayOfZeros(size).map((_: number, i: number): number => i)
 
     grid.forEach((row: string, i: number): void =>
         row.split('').forEach((cell: string, j: number): void => {

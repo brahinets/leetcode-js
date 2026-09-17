@@ -1,12 +1,14 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export {onesMinusZeros}
 
 function onesMinusZeros(grid: number[][]): number[][] {
     const rows: number = grid.length
     const cols: number = grid[0].length
 
-    const onesInRow: number[] = new Array(rows).fill(0)
+    const onesInRow: number[] = arrayOfZeros(rows)
         .map((_: number, i: number): number => valuesInRow(grid, i, 1))
-    const onesInColumn: number[] = new Array(cols).fill(0)
+    const onesInColumn: number[] = arrayOfZeros(cols)
         .map((_: number, i: number): number => valuesInColumn(grid, i, 1))
 
     const result: number[][] = []

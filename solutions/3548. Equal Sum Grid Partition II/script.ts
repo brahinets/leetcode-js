@@ -1,3 +1,5 @@
+import {arrayOfZeros} from '../../common/array-factories'
+
 export { canPartitionGrid }
 
 function canPartitionGrid(grid: number[][]): boolean {
@@ -30,7 +32,7 @@ function checkHorizontalCuts(
     columns: number,
     total: number,
 ): boolean {
-    const sectionDifferences: number[] = new Array(rows - 1)
+    const sectionDifferences: number[] = arrayOfZeros(rows - 1)
 
     if (checkHorizontalTopSections(grid, rows, columns, total, sectionDifferences)) {
         return true
@@ -140,7 +142,7 @@ function checkVerticalCuts(
     columns: number,
     total: number,
 ): boolean {
-    const sectionDifferences: number[] = new Array(columns - 1)
+    const sectionDifferences: number[] = arrayOfZeros(columns - 1)
 
     if (checkVerticalLeftSections(grid, rows, columns, total, sectionDifferences)) {
         return true

@@ -23,7 +23,7 @@ function maxStability(n: number, edges: number[][], k: number): number {
 }
 
 function canAchieve(n: number, edges: number[][], k: number, middle: number): boolean {
-    const parent: number[] = Array.from({ length: n }, (_, index) => index)
+    const parent: number[] = arrayOfZeros(n).map((_: number, index: number): number => index)
     const rank: number[] = arrayOfZeros(n)
 
     for (const [source, target, strength, isMandatory] of edges) {

@@ -1,4 +1,5 @@
 import {PriorityQueue} from '../../common/PriorityQueue'
+import {arrayOfZeros} from '../../common/array-factories'
 
 export {minimumPairRemoval}
 
@@ -10,8 +11,8 @@ function minimumPairRemoval(nums: number[]): number {
     }
 
     const values: bigint[] = nums.map((value) => BigInt(value))
-    const previousIndex: number[] = Array.from({length: length}, (_, index) => index - 1)
-    const nextIndex: number[] = Array.from({length: length}, (_, index) => index + 1)
+    const previousIndex: number[] = arrayOfZeros(length).map((_: number, index: number): number => index - 1)
+    const nextIndex: number[] = arrayOfZeros(length).map((_: number, index: number): number => index + 1)
 
     let inversions = countInversions(values)
 
