@@ -596,6 +596,7 @@
 1. № [1513. Number of Substrings With Only 1s](solutions/1513.%20Number%20of%20Substrings%20With%20Only%201s/script.ts)
 1. № [1514. Path with Maximum Probability](solutions/1514.%20Path%20with%20Maximum%20Probability/script.ts)
 1. № [1518. Water Bottles](solutions/1518.%20Water%20Bottles/script.ts)
+1. № [1520. Maximum Number of Non-Overlapping Substrings](solutions/1520.%20Maximum%20Number%20of%20Non-Overlapping%20Substrings/script.ts)
 1. № [1523. Count Odd Numbers in an Interval Range](solutions/1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range/script.ts)
 1. № [1524. Number of Sub-arrays With Odd Sum](solutions/1524.%20Number%20of%20Sub-arrays%20With%20Odd%20Sum/script.ts)
 1. № [1526. Minimum Number of Increments on Subarrays to Form a Target Array](solutions/1526.%20Minimum%20Number%20of%20Increments%20on%20Subarrays%20to%20Form%20a%20Target%20Array/script.ts)
