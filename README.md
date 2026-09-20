@@ -1146,6 +1146,7 @@
 1. № [3488. Closest Equal Element Queries](solutions/3488.%20Closest%20Equal%20Element%20Queries/script.ts)
 1. № [3494. Find the Minimum Amount of Time to Brew Potions](solutions/3494.%20Find%20the%20Minimum%20Amount%20of%20Time%20to%20Brew%20Potions/script.ts)
 1. № [3495. Minimum Operations to Make Array Elements Zero](solutions/3495.%20Minimum%20Operations%20to%20Make%20Array%20Elements%20Zero/script.ts)
+1. № [3498. Reverse Degree of a String](solutions/3498.%20Reverse%20Degree%20of%20a%20String/script.ts)
 1. № [3499. Maximize Active Section with Trade I](solutions/3499.%20Maximize%20Active%20Section%20with%20Trade%20I/script.ts)
 1. № [3501. Maximize Active Section with Trade II](solutions/3501.%20Maximize%20Active%20Section%20with%20Trade%20II/script.ts)
 1. № [3507. Minimum Pair Removal to Sort Array I](solutions/3507.%20Minimum%20Pair%20Removal%20to%20Sort%20Array%20I/script.ts)
