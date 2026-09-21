@@ -1157,6 +1157,7 @@
 1. № [3514. Number of Unique XOR Triplets II](solutions/3514.%20Number%20of%20Unique%20XOR%20Triplets%20II/script.ts)
 1. № [3516. Find Closest Person](solutions/3516.%20Find%20Closest%20Person/script.ts)
 1. № [3517. Smallest Palindromic Rearrangement I](solutions/3517.%20Smallest%20Palindromic%20Rearrangement%20I/script.ts)
+1. № [3524. Find X Value of Array I](solutions/3524.%20Find%20X%20Value%20of%20Array%20I/script.ts)
 1. № [3531. Count Covered Buildings](solutions/3531.%20Count%20Covered%20Buildings/script.ts)
 1. № [3532. Path Existence Queries in a Graph I](solutions/3532.%20Path%20Existence%20Queries%20in%20a%20Graph%20I/script.ts)
 1. № [3534. Path Existence Queries in a Graph II](solutions/3534.%20Path%20Existence%20Queries%20in%20a%20Graph%20II/script.ts)
