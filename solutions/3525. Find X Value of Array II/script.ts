@@ -1,188 +1,284 @@
-import { matrixOfZeros } from '../../common/array-factories'
-
 export { resultArray }
 
-interface SegmentTreeNode {
+interface QueryAccumulator {
+    started: boolean
     productResidue: number
-    transitionCounts: number[][]
+    matrix: Float64Array
 }
 
 function resultArray(nums: number[], k: number, queries: number[][]): number[] {
     const elementCount: number = nums.length
     const values: number[] = [...nums]
-    const segmentTree: SegmentTreeNode[] = createSegmentTree(elementCount, k)
+    const treeSize: number = 4 * elementCount
+    const matrixSize: number = k * k
+    const productResidues: Float64Array = new Float64Array(treeSize + 1)
+    const transitionCounts: Float64Array = new Float64Array((treeSize + 1) * matrixSize)
 
-    buildSegmentTree(segmentTree, values, k, 1, 0, elementCount - 1)
+    buildSegmentTree(productResidues, transitionCounts, values, k, matrixSize, 1, 0, elementCount - 1)
 
     const identityResidue: number = 1 % k
     const results: number[] = []
+    const accumulator: QueryAccumulator = {
+        started: false,
+        productResidue: 0,
+        matrix: new Float64Array(matrixSize)
+    }
 
     for (const [index, value, start, x] of queries) {
         values[index] = value
-        updateSegmentTree(segmentTree, values, k, 1, 0, elementCount - 1, index)
+        updateSegmentTree(productResidues, transitionCounts, values, k, matrixSize, 1, 0, elementCount - 1, index)
 
-        const rangeNode: SegmentTreeNode = querySegmentTree(
-            segmentTree,
+        accumulator.started = false
+        querySegmentTree(
+            productResidues,
+            transitionCounts,
             k,
+            matrixSize,
             1,
             0,
             elementCount - 1,
             start,
-            elementCount - 1
+            elementCount - 1,
+            accumulator
         )
 
-        results.push(rangeNode.transitionCounts[identityResidue][x])
+        results.push(accumulator.matrix[identityResidue * k + x])
     }
 
     return results
 }
 
-function createSegmentTree(elementCount: number, k: number): SegmentTreeNode[] {
-    const treeSize: number = 4 * elementCount
-    const segmentTree: SegmentTreeNode[] = []
-
-    for (let nodeIndex: number = 0; nodeIndex <= treeSize; nodeIndex++) {
-        segmentTree.push(createEmptyNode(k))
-    }
-
-    return segmentTree
-}
-
 function buildSegmentTree(
-    segmentTree: SegmentTreeNode[],
+    productResidues: Float64Array,
+    transitionCounts: Float64Array,
     values: readonly number[],
     k: number,
+    matrixSize: number,
     nodeIndex: number,
     segmentStart: number,
     segmentEnd: number
 ): void {
     if (segmentStart === segmentEnd) {
-        segmentTree[nodeIndex] = createLeafNode(values[segmentStart], k)
+        writeLeafNode(productResidues, transitionCounts, values, k, matrixSize, nodeIndex, segmentStart)
         return
     }
 
     const segmentMiddle: number = Math.floor((segmentStart + segmentEnd) / 2)
-    buildSegmentTree(segmentTree, values, k, nodeIndex * 2, segmentStart, segmentMiddle)
-    buildSegmentTree(segmentTree, values, k, nodeIndex * 2 + 1, segmentMiddle + 1, segmentEnd)
+    buildSegmentTree(
+        productResidues,
+        transitionCounts,
+        values,
+        k,
+        matrixSize,
+        nodeIndex * 2,
+        segmentStart,
+        segmentMiddle
+    )
+    buildSegmentTree(
+        productResidues,
+        transitionCounts,
+        values,
+        k,
+        matrixSize,
+        nodeIndex * 2 + 1,
+        segmentMiddle + 1,
+        segmentEnd
+    )
 
-    segmentTree[nodeIndex] = mergeNodes(segmentTree[nodeIndex * 2], segmentTree[nodeIndex * 2 + 1], k)
+    mergeChildren(productResidues, transitionCounts, k, matrixSize, nodeIndex, nodeIndex * 2, nodeIndex * 2 + 1)
 }
 
 function updateSegmentTree(
-    segmentTree: SegmentTreeNode[],
+    productResidues: Float64Array,
+    transitionCounts: Float64Array,
     values: readonly number[],
     k: number,
+    matrixSize: number,
     nodeIndex: number,
     segmentStart: number,
     segmentEnd: number,
     targetIndex: number
 ): void {
     if (segmentStart === segmentEnd) {
-        segmentTree[nodeIndex] = createLeafNode(values[segmentStart], k)
+        writeLeafNode(productResidues, transitionCounts, values, k, matrixSize, nodeIndex, segmentStart)
         return
     }
 
     const segmentMiddle: number = Math.floor((segmentStart + segmentEnd) / 2)
 
     if (targetIndex <= segmentMiddle) {
-        updateSegmentTree(segmentTree, values, k, nodeIndex * 2, segmentStart, segmentMiddle, targetIndex)
+        updateSegmentTree(
+            productResidues,
+            transitionCounts,
+            values,
+            k,
+            matrixSize,
+            nodeIndex * 2,
+            segmentStart,
+            segmentMiddle,
+            targetIndex
+        )
     } else {
-        updateSegmentTree(segmentTree, values, k, nodeIndex * 2 + 1, segmentMiddle + 1, segmentEnd, targetIndex)
+        updateSegmentTree(
+            productResidues,
+            transitionCounts,
+            values,
+            k,
+            matrixSize,
+            nodeIndex * 2 + 1,
+            segmentMiddle + 1,
+            segmentEnd,
+            targetIndex
+        )
     }
 
-    segmentTree[nodeIndex] = mergeNodes(segmentTree[nodeIndex * 2], segmentTree[nodeIndex * 2 + 1], k)
+    mergeChildren(productResidues, transitionCounts, k, matrixSize, nodeIndex, nodeIndex * 2, nodeIndex * 2 + 1)
 }
 
 function querySegmentTree(
-    segmentTree: readonly SegmentTreeNode[],
+    productResidues: Float64Array,
+    transitionCounts: Float64Array,
     k: number,
+    matrixSize: number,
     nodeIndex: number,
     segmentStart: number,
     segmentEnd: number,
     queryStart: number,
-    queryEnd: number
-): SegmentTreeNode {
+    queryEnd: number,
+    accumulator: QueryAccumulator
+): void {
     if (queryStart <= segmentStart && segmentEnd <= queryEnd) {
-        return segmentTree[nodeIndex]
+        if (accumulator.started) {
+            mergeAccumulator(accumulator, productResidues, transitionCounts, k, matrixSize, nodeIndex)
+        } else {
+            initializeAccumulator(accumulator, productResidues, transitionCounts, matrixSize, nodeIndex)
+        }
+
+        return
     }
 
     const segmentMiddle: number = Math.floor((segmentStart + segmentEnd) / 2)
 
-    if (queryEnd <= segmentMiddle) {
-        return querySegmentTree(segmentTree, k, nodeIndex * 2, segmentStart, segmentMiddle, queryStart, queryEnd)
+    if (queryStart <= segmentMiddle) {
+        querySegmentTree(
+            productResidues,
+            transitionCounts,
+            k,
+            matrixSize,
+            nodeIndex * 2,
+            segmentStart,
+            segmentMiddle,
+            queryStart,
+            queryEnd,
+            accumulator
+        )
     }
 
-    if (queryStart > segmentMiddle) {
-        return querySegmentTree(
-            segmentTree,
+    if (queryEnd > segmentMiddle) {
+        querySegmentTree(
+            productResidues,
+            transitionCounts,
             k,
+            matrixSize,
             nodeIndex * 2 + 1,
             segmentMiddle + 1,
             segmentEnd,
             queryStart,
-            queryEnd
+            queryEnd,
+            accumulator
         )
     }
-
-    const leftResult: SegmentTreeNode = querySegmentTree(
-        segmentTree,
-        k,
-        nodeIndex * 2,
-        segmentStart,
-        segmentMiddle,
-        queryStart,
-        queryEnd
-    )
-
-    const rightResult: SegmentTreeNode = querySegmentTree(
-        segmentTree,
-        k,
-        nodeIndex * 2 + 1,
-        segmentMiddle + 1,
-        segmentEnd,
-        queryStart,
-        queryEnd
-    )
-
-    return mergeNodes(leftResult, rightResult, k)
 }
 
-function createLeafNode(value: number, k: number): SegmentTreeNode {
-    const residue: number = value % k
-    const transitionCounts: number[][] = matrixOfZeros(k, k)
+function writeLeafNode(
+    productResidues: Float64Array,
+    transitionCounts: Float64Array,
+    values: readonly number[],
+    k: number,
+    matrixSize: number,
+    nodeIndex: number,
+    position: number
+): void {
+    const residue: number = values[position] % k
+    const base: number = nodeIndex * matrixSize
+
+    for (let cellIndex: number = 0; cellIndex < matrixSize; cellIndex++) {
+        transitionCounts[base + cellIndex] = 0
+    }
 
     for (let startResidue: number = 0; startResidue < k; startResidue++) {
-        transitionCounts[startResidue][(startResidue * residue) % k] = 1
+        transitionCounts[base + startResidue * k + ((startResidue * residue) % k)] = 1
     }
 
-    return {
-        productResidue: residue,
-        transitionCounts
-    }
+    productResidues[nodeIndex] = residue
 }
 
-function mergeNodes(leftNode: SegmentTreeNode, rightNode: SegmentTreeNode, k: number): SegmentTreeNode {
-    const transitionCounts: number[][] = matrixOfZeros(k, k)
+function mergeChildren(
+    productResidues: Float64Array,
+    transitionCounts: Float64Array,
+    k: number,
+    matrixSize: number,
+    targetIndex: number,
+    leftIndex: number,
+    rightIndex: number
+): void {
+    const targetBase: number = targetIndex * matrixSize
+    const leftBase: number = leftIndex * matrixSize
+    const rightBase: number = rightIndex * matrixSize
+    const leftProductResidue: number = productResidues[leftIndex]
+    const rightProductResidue: number = productResidues[rightIndex]
 
     for (let startResidue: number = 0; startResidue < k; startResidue++) {
-        const middleResidue: number = (startResidue * leftNode.productResidue) % k
+        const middleResidue: number = (startResidue * leftProductResidue) % k
 
         for (let endResidue: number = 0; endResidue < k; endResidue++) {
-            transitionCounts[startResidue][endResidue] =
-                leftNode.transitionCounts[startResidue][endResidue] +
-                rightNode.transitionCounts[middleResidue][endResidue]
+            transitionCounts[targetBase + startResidue * k + endResidue] =
+                transitionCounts[leftBase + startResidue * k + endResidue] +
+                transitionCounts[rightBase + middleResidue * k + endResidue]
         }
     }
 
-    return {
-        productResidue: (leftNode.productResidue * rightNode.productResidue) % k,
-        transitionCounts
-    }
+    productResidues[targetIndex] = (leftProductResidue * rightProductResidue) % k
 }
 
-function createEmptyNode(k: number): SegmentTreeNode {
-    return {
-        productResidue: 0,
-        transitionCounts: matrixOfZeros(k, k)
+function initializeAccumulator(
+    accumulator: QueryAccumulator,
+    productResidues: Float64Array,
+    transitionCounts: Float64Array,
+    matrixSize: number,
+    nodeIndex: number
+): void {
+    const base: number = nodeIndex * matrixSize
+
+    for (let cellIndex: number = 0; cellIndex < matrixSize; cellIndex++) {
+        accumulator.matrix[cellIndex] = transitionCounts[base + cellIndex]
     }
+
+    accumulator.productResidue = productResidues[nodeIndex]
+    accumulator.started = true
+}
+
+function mergeAccumulator(
+    accumulator: QueryAccumulator,
+    productResidues: Float64Array,
+    transitionCounts: Float64Array,
+    k: number,
+    matrixSize: number,
+    nodeIndex: number
+): void {
+    const base: number = nodeIndex * matrixSize
+    const leftProductResidue: number = accumulator.productResidue
+    const rightProductResidue: number = productResidues[nodeIndex]
+
+    for (let startResidue: number = 0; startResidue < k; startResidue++) {
+        const middleResidue: number = (startResidue * leftProductResidue) % k
+
+        for (let endResidue: number = 0; endResidue < k; endResidue++) {
+            const cellIndex: number = startResidue * k + endResidue
+            accumulator.matrix[cellIndex] =
+                accumulator.matrix[cellIndex] + transitionCounts[base + middleResidue * k + endResidue]
+        }
+    }
+
+    accumulator.productResidue = (leftProductResidue * rightProductResidue) % k
 }
