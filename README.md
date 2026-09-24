@@ -1169,6 +1169,7 @@
 1. № [3542. Minimum Operations to Convert All Elements to Zero](solutions/3542.%20Minimum%20Operations%20to%20Convert%20All%20Elements%20to%20Zero/script.ts)
 1. № [3546. Equal Sum Grid Partition I](solutions/3546.%20Equal%20Sum%20Grid%20Partition%20I/script.ts)
 1. № [3548. Equal Sum Grid Partition II](solutions/3548.%20Equal%20Sum%20Grid%20Partition%20II/script.ts)
+1. № [3550. Smallest Index With Digit Sum Equal to Index](solutions/3550.%20Smallest%20Index%20With%20Digit%20Sum%20Equal%20to%20Index/script.ts)
 1. № [3558. Number of Ways to Assign Edge Weights I](solutions/3558.%20Number%20of%20Ways%20to%20Assign%20Edge%20Weights%20I/script.ts)
 1. № [3559. Number of Ways to Assign Edge Weights II](solutions/3559.%20Number%20of%20Ways%20to%20Assign%20Edge%20Weights%20II/script.ts)
 1. № [3562. Maximum Profit from Trading Stocks with Discounts](solutions/3562.%20Maximum%20Profit%20from%20Trading%20Stocks%20with%20Discounts/script.ts)
