@@ -462,6 +462,7 @@
 1. № [1091. Shortest Path in Binary Matrix](solutions/1091.%20Shortest%20Path%20in%20Binary%20Matrix/script.ts)
 1. № [1092. Shortest Common Supersequence](solutions/1092.%20Shortest%20Common%20Supersequence/script.ts)
 1. № [1095. Find in Mountain Array](solutions/1095.%20Find%20in%20Mountain%20Array/script.ts)
+1. № [1096. Brace Expansion II](solutions/1096.%20Brace%20Expansion%20II/script.ts)
 1. № [1105. Filling Bookcase Shelves](solutions/1105.%20Filling%20Bookcase%20Shelves/script.ts)
 1. № [1106. Parsing A Boolean Expression](solutions/1106.%20Parsing%20A%20Boolean%20Expression/script.ts)
 1. № [1110. Delete Nodes And Return Forest](solutions/1110.%20Delete%20Nodes%20And%20Return%20Forest/script.ts)
