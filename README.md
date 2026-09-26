@@ -687,6 +687,7 @@
 1. № [1799. Maximize Score After N Operations](solutions/1799.%20Maximize%20Score%20After%20N%20Operations/script.ts)
 1. № [1800. Maximum Ascending Subarray Sum](solutions/1800.%20Maximum%20Ascending%20Subarray%20Sum/script.ts)
 1. № [1802. Maximum Value at a Given Index in a Bounded Array](solutions/1802.%20Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array/script.ts)
+1. № [1807. Evaluate the Bracket Pairs of a String](solutions/1807.%20Evaluate%20the%20Bracket%20Pairs%20of%20a%20String/script.ts)
 1. № [1813. Sentence Similarity III](solutions/1813.%20Sentence%20Similarity%20III/script.ts)
 1. № [1814. Count Nice Pairs in an Array](solutions/1814.%20Count%20Nice%20Pairs%20in%20an%20Array/script.ts)
 1. № [1822. Sign of the Product of an Array](solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array/script.ts)
