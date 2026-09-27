@@ -1,5 +1,5 @@
-export {matrixOf, matrixOfZeros, matrixOfEmptyStrings}
-export {arrayOf, arrayOfZeros}
+export { matrixOf, matrixOfZeros, matrixOfEmptyStrings }
+export { arrayOf, arrayOfZeros }
 
 function matrixOfEmptyStrings(rows: number, cols: number): string[][] {
     return matrixOf("", rows, cols)

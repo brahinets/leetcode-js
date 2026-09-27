@@ -1,4 +1,4 @@
-export {doesValidArrayExist}
+export { doesValidArrayExist }
 
 function doesValidArrayExist(derived: number[]): boolean {
     const original: number[] = [0]
