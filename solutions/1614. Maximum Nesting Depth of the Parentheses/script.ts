@@ -1,4 +1,4 @@
-export {maxDepth}
+export { maxDepth }
 
 function maxDepth(s: string): number {
     let depth: number = 0
