@@ -466,6 +466,7 @@
 1. № [1105. Filling Bookcase Shelves](solutions/1105.%20Filling%20Bookcase%20Shelves/script.ts)
 1. № [1106. Parsing A Boolean Expression](solutions/1106.%20Parsing%20A%20Boolean%20Expression/script.ts)
 1. № [1110. Delete Nodes And Return Forest](solutions/1110.%20Delete%20Nodes%20And%20Return%20Forest/script.ts)
+1. № [1111. Maximum Nesting Depth of Two Valid Parentheses Strings](solutions/1111.%20Maximum%20Nesting%20Depth%20of%20Two%20Valid%20Parentheses%20Strings/script.ts)
 1. № [1122. Relative Sort Array](solutions/1122.%20Relative%20Sort%20Array/script.ts)
 1. № [1123. Lowest Common Ancestor of Deepest Leaves](solutions/1123.%20Lowest%20Common%20Ancestor%20of%20Deepest%20Leaves/script.ts)
 1. № [1125. Smallest Sufficient Team](solutions/1125.%20Smallest%20Sufficient%20Team/script.ts)
