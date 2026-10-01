@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from "../../common/TreeNode"
 
-export {preorderTraversal}
+export { preorderTraversal }
 
 function preorderTraversal(root: TreeNode | null): number[] {
     const result: number[] = []
