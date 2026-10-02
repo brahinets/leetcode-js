@@ -1,4 +1,4 @@
-export {generateParenthesis}
+export { generateParenthesis }
 
 function generateParenthesis(n: number): string[] {
     const result: string[] = []
