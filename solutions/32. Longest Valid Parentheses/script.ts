@@ -1,4 +1,4 @@
-export {longestValidParentheses}
+export { longestValidParentheses }
 
 function longestValidParentheses(s: string): number {
     const stack: number[] = []
