@@ -550,6 +550,7 @@
 1. № [1396. Design Underground System](solutions/1396.%20Design%20Underground%20System/script.ts)
 1. № [1399. Count Largest Group](solutions/1399.%20Count%20Largest%20Group/script.ts)
 1. № [1400. Construct K Palindrome Strings](solutions/1400.%20Construct%20K%20Palindrome%20Strings/script.ts)
+1. № [1401. Circle and Rectangle Overlapping](solutions/1401.%20Circle%20and%20Rectangle%20Overlapping/script.ts)
 1. № [1404. Number of Steps to Reduce a Number in Binary Representation to One](solutions/1404.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20in%20Binary%20Representation%20to%20One/script.ts)
 1. № [1405. Longest Happy String](solutions/1405.%20Longest%20Happy%20String/script.ts)
 1. № [1406. Stone Game III](solutions/1406.%20Stone%20Game%20III/script.ts)
