@@ -375,6 +375,7 @@
 1. № [846. Hand of Straights](solutions/846.%20Hand%20of%20Straights/script.ts)
 1. № [852. Peak Index in a Mountain Array](solutions/852.%20Peak%20Index%20in%20a%20Mountain%20Array/script.ts)
 1. № [853. Car Fleet](solutions/853.%20Car%20Fleet/script.ts)
+1. № [856. Score of Parentheses](solutions/856.%20Score%20of%20Parentheses/script.ts)
 1. № [857. Minimum Cost to Hire K Workers](solutions/857.%20Minimum%20Cost%20to%20Hire%20K%20Workers/script.ts)
 1. № [859. Buddy Strings](solutions/859.%20Buddy%20Strings/script.ts)
 1. № [860. Lemonade Change](solutions/860.%20Lemonade%20Change/script.ts)
