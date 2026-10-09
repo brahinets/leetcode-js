@@ -1,6 +1,6 @@
-export { minimumInsertions }
+export { minInsertions }
 
-function minimumInsertions(s: string): number {
+function minInsertions(s: string): number {
     let insertions: number = 0
     let requiredClosing: number = 0
 

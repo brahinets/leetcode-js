@@ -1,10 +1,10 @@
-import { minimumInsertions } from '../script'
+import { minInsertions } from '../script'
 
 describe('1541. Minimum Insertions to Balance a Parentheses String', (): void => {
     it('one closing parenthesis is missing from the last group', (): void => {
         const s: string = '(()))'
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(1)
@@ -13,7 +13,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('already balanced string', (): void => {
         const s: string = '())'
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(0)
@@ -22,7 +22,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('closing parentheses before opening and unmatched opening at the end', (): void => {
         const s: string = '))())('
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(3)
@@ -31,7 +31,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('only opening parentheses', (): void => {
         const s: string = '(((((('
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(12)
@@ -40,7 +40,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('only closing parentheses', (): void => {
         const s: string = ')))))))'
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(5)
@@ -49,7 +49,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('single opening parenthesis', (): void => {
         const s: string = '('
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(2)
@@ -58,7 +58,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('single closing parenthesis', (): void => {
         const s: string = ')'
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(2)
@@ -67,7 +67,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('opening parenthesis followed by a single closing parenthesis', (): void => {
         const s: string = '()'
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(1)
@@ -76,7 +76,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('opening parenthesis interrupts a lone closing parenthesis', (): void => {
         const s: string = '()('
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(3)
@@ -85,7 +85,7 @@ describe('1541. Minimum Insertions to Balance a Parentheses String', (): void =>
     it('nested opening parentheses share the closing pairs', (): void => {
         const s: string = '(())())'
 
-        const result: number = minimumInsertions(s)
+        const result: number = minInsertions(s)
 
         expect(result)
             .toBe(2)
