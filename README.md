@@ -995,6 +995,7 @@
 1. № [2873. Maximum Value of an Ordered Triplet I](solutions/2873.%20Maximum%20Value%20of%20an%20Ordered%20Triplet%20I/script.ts)
 1. № [2874. Maximum Value of an Ordered Triplet II](solutions/2874.%20Maximum%20Value%20of%20an%20Ordered%20Triplet%20II/script.ts)
 1. № [2894. Divisible and Non-divisible Sums Difference](solutions/2894.%20Divisible%20and%20Non-divisible%20Sums%20Difference/script.ts)
+1. № [2897. Apply Operations on Array to Maximize Sum of Squares](solutions/2897.%20Apply%20Operations%20on%20Array%20to%20Maximize%20Sum%20of%20Squares/script.ts)
 1. № [2900. Longest Unequal Adjacent Groups Subsequence I](solutions/2900.%20Longest%20Unequal%20Adjacent%20Groups%20Subsequence%20I/script.ts)
 1. № [2901. Longest Unequal Adjacent Groups Subsequence II](solutions/2901.%20Longest%20Unequal%20Adjacent%20Groups%20Subsequence%20II/script.ts)
 1. № [2904. Shortest and Lexicographically Smallest Beautiful String](solutions/2904.%20Shortest%20and%20Lexicographically%20Smallest%20Beautiful%20String/script.ts)
