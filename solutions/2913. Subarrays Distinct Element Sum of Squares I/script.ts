@@ -1,6 +1,6 @@
-export { sumSquares }
+export { sumCounts }
 
-function sumSquares(nums: number[]): number {
+function sumCounts(nums: number[]): number {
     let total: number = 0
 
     for (let start: number = 0; start < nums.length; start++) {
