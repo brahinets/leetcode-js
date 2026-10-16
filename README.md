@@ -1002,6 +1002,7 @@
 1. № [2906. Construct Product Matrix](solutions/2906.%20Construct%20Product%20Matrix/script.ts)
 1. № [2913. Subarrays Distinct Element Sum of Squares I](solutions/2913.%20Subarrays%20Distinct%20Element%20Sum%20of%20Squares%20I/script.ts)
 1. № [2914. Minimum Number of Changes to Make Binary String Beautiful](solutions/2914.%20Minimum%20Number%20of%20Changes%20to%20Make%20Binary%20String%20Beautiful/script.ts)
+1. № [2916. Subarrays Distinct Element Sum of Squares II](solutions/2916.%20Subarrays%20Distinct%20Element%20Sum%20of%20Squares%20II/script.ts)
 1. № [2918. Minimum Equal Sum of Two Arrays After Replacing Zeros](solutions/2918.%20Minimum%20Equal%20Sum%20of%20Two%20Arrays%20After%20Replacing%20Zeros/script.ts)
 1. № [2924. Find Champion II](solutions/2924.%20Find%20Champion%20II/script.ts)
 1. № [2929. Distribute Candies Among Children II](solutions/2929.%20Distribute%20Candies%20Among%20Children%20II/script.ts)
