@@ -621,6 +621,7 @@
 1. № [1561. Maximum Number of Coins You Can Get](solutions/1561.%20Maximum%20Number%20of%20Coins%20You%20Can%20Get/script.ts)
 1. № [1563. Stone Game V](solutions/1563.%20Stone%20Game%20V/script.ts)
 1. № [1568. Minimum Number of Days to Disconnect Island](solutions/1568.%20Minimum%20Number%20of%20Days%20to%20Disconnect%20Island/script.ts)
+1. № [1569. Number of Ways to Reorder Array to Get Same BST](solutions/1569.%20Number%20of%20Ways%20to%20Reorder%20Array%20to%20Get%20Same%20BST/script.ts)
 1. № [1572. Matrix Diagonal Sum](solutions/1572.%20Matrix%20Diagonal%20Sum/script.ts)
 1. № [1574. Shortest Subarray to be Removed to Make Array Sorted](solutions/1574.%20Shortest%20Subarray%20to%20be%20Removed%20to%20Make%20Array%20Sorted/script.ts)
 1. № [1575. Count All Possible Routes](solutions/1575.%20Count%20All%20Possible%20Routes/script.ts)
