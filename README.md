@@ -783,6 +783,7 @@
 1. № [2075. Decode the Slanted Ciphertext](solutions/2075.%20Decode%20the%20Slanted%20Ciphertext/script.ts)
 1. № [2078. Two Furthest Houses With Different Colors](solutions/2078.%20Two%20Furthest%20Houses%20With%20Different%20Colors/script.ts)
 1. № [2081. Sum of k-Mirror Numbers](solutions/2081.%20Sum%20of%20k-Mirror%20Numbers/script.ts)
+1. № [2089. Find Target Indices After Sorting Array](solutions/2089.%20Find%20Target%20Indices%20After%20Sorting%20Array/script.ts)
 1. № [2090. K Radius Subarray Averages](solutions/2090.%20K%20Radius%20Subarray%20Averages/script.ts)
 1. № [2092. Find All People With Secret](solutions/2092.%20Find%20All%20People%20With%20Secret/script.ts)
 1. № [2094. Finding 3-Digit Even Numbers](solutions/2094.%20Finding%203-Digit%20Even%20Numbers/script.ts)
