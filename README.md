@@ -1252,6 +1252,7 @@
 1. № [3875. Construct Uniform Parity Array I](solutions/3875.%20Construct%20Uniform%20Parity%20Array%20I/script.ts)
 1. № [3876. Construct Uniform Parity Array II](solutions/3876.%20Construct%20Uniform%20Parity%20Array%20II/script.ts)
 1. № [3884. Minimum Absolute Difference in Sliding Submatrix](solutions/3884.%20Minimum%20Absolute%20Difference%20in%20Sliding%20Submatrix/script.ts)
+1. № [3886. Sum of Sortable Integers](solutions/3886.%20Sum%20of%20Sortable%20Integers/script.ts)
 1. № [3902. Maximize Spanning Tree Stability with Upgrades](solutions/3902.%20Maximize%20Spanning%20Tree%20Stability%20with%20Upgrades/script.ts)
 2. № [3903. Smallest Stable Index I](solutions/3903.%20Smallest%20Stable%20Index%20I/script.ts)
 3. № [3904. Smallest Stable Index II](solutions/3904.%20Smallest%20Stable%20Index%20II/script.ts)
