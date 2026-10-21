@@ -1246,6 +1246,7 @@
 1. № [3761. Minimum Absolute Distance Between Mirror Pairs](solutions/3761.%20Minimum%20Absolute%20Distance%20Between%20Mirror%20Pairs/script.ts)
 1. № [3783. Mirror Distance of an Integer](solutions/3783.%20Mirror%20Distance%20of%20an%20Integer/script.ts)
 1. № [3838. Weighted Word Mapping](solutions/3838.%20Weighted%20Word%20Mapping/script.ts)
+1. № [3863. Minimum Operations to Sort a String](solutions/3863.%20Minimum%20Operations%20to%20Sort%20a%20String/script.ts)
 1. № [3867. Sum of GCD of Formed Pairs](solutions/3867.%20Sum%20of%20GCD%20of%20Formed%20Pairs/script.ts)
 1. № [3870. Count Commas in Range](solutions/3870.%20Count%20Commas%20in%20Range/script.ts)
 1. № [3871. Count Commas in Range II](solutions/3871.%20Count%20Commas%20in%20Range%20II/script.ts)
