@@ -1258,6 +1258,7 @@
 2. № [3903. Smallest Stable Index I](solutions/3903.%20Smallest%20Stable%20Index%20I/script.ts)
 3. № [3904. Smallest Stable Index II](solutions/3904.%20Smallest%20Stable%20Index%20II/script.ts)
 4. № [3918. Check Divisibility by Digit Sum and Product](solutions/3918.%20Check%20Divisibility%20by%20Digit%20Sum%20and%20Product/script.ts)
+4. № [3942. Minimum Operations to Sort a Permutation](solutions/3942.%20Minimum%20Operations%20to%20Sort%20a%20Permutation/script.ts)
 4. № [3967. Earliest Finish Time for Land and Water Rides II](solutions/3967.%20Earliest%20Finish%20Time%20for%20Land%20and%20Water%20Rides%20II/script.ts)
 
 </details>
