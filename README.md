@@ -880,6 +880,7 @@
 1. № [2402. Meeting Rooms III](solutions/2402.%20Meeting%20Rooms%20III/script.ts)
 1. № [2405. Optimal Partition of String](solutions/2405.%20Optimal%20Partition%20of%20String/script.ts)
 1. № [2406. Divide Intervals Into Minimum Number of Groups](solutions/2406.%20Divide%20Intervals%20Into%20Minimum%20Number%20of%20Groups/script.ts)
+1. № [2409. Count Days Spent Together](solutions/2409.%20Count%20Days%20Spent%20Together/script.ts)
 1. № [2410. Maximum Matching of Players With Trainers](solutions/2410.%20Maximum%20Matching%20of%20Players%20With%20Trainers/script.ts)
 1. № [2411. Smallest Subarrays With Maximum Bitwise OR](solutions/2411.%20Smallest%20Subarrays%20With%20Maximum%20Bitwise%20OR/script.ts)
 1. № [2414. Length of the Longest Alphabetical Continuous Substring](solutions/2414.%20Length%20of%20the%20Longest%20Alphabetical%20Continuous%20Substring/script.ts)
