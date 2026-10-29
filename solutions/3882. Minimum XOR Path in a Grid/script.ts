@@ -15,22 +15,21 @@ function minCost(grid: number[][]): number {
     for (let row: number = 0; row < rows; row++) {
         for (let column: number = 0; column < columns; column++) {
             const cellValue: number = grid[row][column]
-            const cellXorValues: Set<number> = xorValues[row][column]
 
             if (row === 0 && column === 0) {
-                cellXorValues.add(cellValue)
+                xorValues[row][column].add(cellValue)
                 continue
             }
 
             if (row > 0) {
                 for (const upperValue of xorValues[row - 1][column]) {
-                    cellXorValues.add(upperValue ^ cellValue)
+                    xorValues[row][column].add(upperValue ^ cellValue)
                 }
             }
 
             if (column > 0) {
                 for (const leftValue of xorValues[row][column - 1]) {
-                    cellXorValues.add(leftValue ^ cellValue)
+                    xorValues[row][column].add(leftValue ^ cellValue)
                 }
             }
         }
