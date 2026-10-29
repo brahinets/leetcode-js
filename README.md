@@ -1252,6 +1252,7 @@
 1. № [3838. Weighted Word Mapping](solutions/3838.%20Weighted%20Word%20Mapping/script.ts)
 1. № [3863. Minimum Operations to Sort a String](solutions/3863.%20Minimum%20Operations%20to%20Sort%20a%20String/script.ts)
 1. № [3867. Sum of GCD of Formed Pairs](solutions/3867.%20Sum%20of%20GCD%20of%20Formed%20Pairs/script.ts)
+1. № [3841. Palindromic Path Queries in a Tree](solutions/3841.%20Palindromic%20Path%20Queries%20in%20a%20Tree/script.ts)
 1. № [3870. Count Commas in Range](solutions/3870.%20Count%20Commas%20in%20Range/script.ts)
 1. № [3871. Count Commas in Range II](solutions/3871.%20Count%20Commas%20in%20Range%20II/script.ts)
 1. № [3875. Construct Uniform Parity Array I](solutions/3875.%20Construct%20Uniform%20Parity%20Array%20I/script.ts)
