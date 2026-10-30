@@ -1267,5 +1267,6 @@
 4. № [3942. Minimum Operations to Sort a Permutation](solutions/3942.%20Minimum%20Operations%20to%20Sort%20a%20Permutation/script.ts)
 4. № [3963. Create Grid With Exactly One Path](solutions/3963.%20Create%20Grid%20With%20Exactly%20One%20Path/script.ts)
 4. № [3967. Earliest Finish Time for Land and Water Rides II](solutions/3967.%20Earliest%20Finish%20Time%20for%20Land%20and%20Water%20Rides%20II/script.ts)
+1. № [3970. Shortest Path With At Most K Consecutive Identical Characters](solutions/3970.%20Shortest%20Path%20With%20At%20Most%20K%20Consecutive%20Identical%20Characters/script.ts)
 
 </details>
