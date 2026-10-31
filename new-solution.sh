@@ -62,6 +62,7 @@ if [[ -z "$MODE" ]]; then
 fi
 
 cat > "$TMP/prepare.mjs" <<'PREPARE_EOF'
+import { execFileSync } from 'node:child_process'
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
@@ -88,6 +89,7 @@ registerInRootReadme(root, PROBLEM)
 console.log(`Created solutions/${PROBLEM.folder}`)
 console.log(`  README.md, script.ts, __tests__/script.test.ts`)
 console.log(`Registered the solution in the root README.md`)
+stageFiles(root, PROBLEM)
 console.log('Next: fill in script.ts, rename the generated example tests, then run: npx jest')
 if (PROBLEM.degraded) {
     console.log('WARNING: data came from a fallback source - verify the README content.')
@@ -558,8 +560,20 @@ function cleanScrapeText(text) {
     return blocks.map((block) => wrap(block, 120).join('\n')).join('\n\n')
 }
 
-function registerInRootReadme(root, problem) {
-    const readmePath = join(root, 'README.md')
+function stageFiles(root, problem) {
+    try {
+        execFileSync(
+            'git',
+            ['-C', root, 'add', join('solutions', problem.folder), 'README.md'],
+            { stdio: 'inherit' }
+        )
+        console.log('Staged the new files in git')
+    } catch {
+        console.error('Warning: could not stage files in git')
+    }
+}
+
+function registerInRootReadme(root, problem) {    const readmePath = join(root, 'README.md')
     const readme = readFileSync(readmePath, 'utf8')
     if (readme.includes(`№ [${problem.id}. ${problem.title}]`)) {
         return
