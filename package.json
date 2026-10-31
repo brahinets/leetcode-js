@@ -37,7 +37,7 @@
     "jest": "^30.5.2",
     "prettier": "^3.9.10",
     "ts-node": "^10.9.2",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.0"
   },
   "allowScripts": {
     "@parcel/watcher@2.6.0": true,
