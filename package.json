@@ -6,7 +6,7 @@
     "preinstall": "node -v && npm -v",
     "test": "jest",
     "lint": "eslint .",
-    "upgrade-dependencies": "ncu -u",
+    "upgrade-dependencies": "npx --yes npm-check-updates -u",
     "build": "tsc"
   },
   "repository": {
@@ -27,15 +27,15 @@
   },
   "homepage": "https://github.com/brahinets/leetcode-js#readme",
   "devDependencies": {
-    "@swc/core": "^1.15.46",
+    "@swc/core": "^1.16.21",
     "@swc/jest": "^0.2.39",
     "@types/jest": "^30.0.0",
-    "@types/node": "^26.1.1",
-    "@typescript-eslint/eslint-plugin": "^8.65.0",
-    "@typescript-eslint/parser": "^8.65.0",
-    "eslint": "^10.7.0",
-    "jest": "^30.4.2",
-    "prettier": "^3.9.6",
+    "@types/node": "^26.6.6",
+    "@typescript-eslint/eslint-plugin": "^8.72.1",
+    "@typescript-eslint/parser": "^8.72.1",
+    "eslint": "^10.14.0",
+    "jest": "^30.5.2",
+    "prettier": "^3.9.10",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }
