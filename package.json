@@ -38,5 +38,10 @@
     "prettier": "^3.9.10",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "@swc/core@1.16.21": true,
+    "unrs-resolver@1.12.2": true
   }
 }
