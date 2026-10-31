@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Creates a solution template for a LeetCode problem.
 #
-# Usage: scripts/new-solution.sh <leetcode-url-or-slug>
+# Usage: ./new-solution.sh <leetcode-url-or-slug>
 #
 # Fetches the problem statement from leetcode.com (falls back to
 # leetcode.cn, then to a text-proxy scrape of the problem page),
@@ -17,7 +17,7 @@ if [[ $# -ne 1 ]]; then
     exit 1
 fi
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 INPUT="$1"
 
 SLUG="$(echo "$INPUT" | sed -E 's~https?://[^/]+/problems/([a-z0-9-]+).*~\1~')"
@@ -567,26 +567,30 @@ function registerInRootReadme(root, problem) {
     const link = `1. № [${problem.id}. ${problem.title}](solutions/${problem.folder.replace(/ /g, '%20')}/script.ts)`
     const lines = readme.split('\n')
     const problemNumber = parseInt(problem.id, 10)
-    let insertionIndex = -1
+    let firstGreaterIndex = -1
+    let lastEntryIndex = -1
     for (let index = 0; index < lines.length; index++) {
         const entryMatch = lines[index].match(/^\d+\. № \[(\d+)\./)
         if (!entryMatch) {
-            if (insertionIndex !== -1) {
+            if (lastEntryIndex !== -1) {
                 break
             }
             continue
         }
-        if (parseInt(entryMatch[1], 10) > problemNumber) {
-            insertionIndex = index
+        if (firstGreaterIndex === -1 && parseInt(entryMatch[1], 10) > problemNumber) {
+            firstGreaterIndex = index
             break
         }
-        insertionIndex = index
+        lastEntryIndex = index
     }
-    if (insertionIndex === -1) {
+    if (firstGreaterIndex !== -1) {
+        lines.splice(firstGreaterIndex, 0, link)
+    } else if (lastEntryIndex !== -1) {
+        lines.splice(lastEntryIndex + 1, 0, link)
+    } else {
         console.error('Warning: could not find the solution list in the root README.md')
         return
     }
-    lines.splice(insertionIndex + 1, 0, link)
     writeFileSync(readmePath, lines.join('\n'))
 }
 PREPARE_EOF
