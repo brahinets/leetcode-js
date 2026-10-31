@@ -1221,6 +1221,7 @@
 1. № [3658. GCD of Odd and Even Sums](solutions/3658.%20GCD%20of%20Odd%20and%20Even%20Sums/script.ts)
 1. № [3660. Jump Game IX](solutions/3660.%20Jump%20Game%20IX/script.ts)
 1. № [3661. Maximum Walls Destroyed by Robots](solutions/3661.%20Maximum%20Walls%20Destroyed%20by%20Robots/script.ts)
+1. № [3665. Twisted Mirror Path Count](solutions/3665.%20Twisted%20Mirror%20Path%20Count/script.ts)
 1. № [3666. Minimum Operations to Equalize Binary String](solutions/3666.%20Minimum%20Operations%20to%20Equalize%20Binary%20String/script.ts)
 1. № [3689. Maximum Total Subarray Value I](solutions/3689.%20Maximum%20Total%20Subarray%20Value%20I/script.ts)
 1. № [3691. Maximum Total Subarray Value II](solutions/3691.%20Maximum%20Total%20Subarray%20Value%20II/script.ts)
