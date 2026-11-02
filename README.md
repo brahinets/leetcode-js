@@ -258,6 +258,7 @@
 1. № [455. Assign Cookies](solutions/455.%20Assign%20Cookies/script.ts)
 1. № [458. Poor Pigs](solutions/458.%20Poor%20Pigs/script.ts)
 1. № [459. Repeated Substring Pattern](solutions/459.%20Repeated%20Substring%20Pattern/script.ts)
+1. № [462. Minimum Moves to Equal Array Elements II](solutions/462.%20Minimum%20Moves%20to%20Equal%20Array%20Elements%20II/script.ts)
 1. № [463. Island Perimeter](solutions/463.%20Island%20Perimeter/script.ts)
 1. № [474. Ones and Zeroes](solutions/474.%20Ones%20and%20Zeroes/script.ts)
 1. № [476. Number Complement](solutions/476.%20Number%20Complement/script.ts)
