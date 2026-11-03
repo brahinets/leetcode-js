@@ -1241,6 +1241,7 @@
 1. № [3727. Maximum Alternating Sum of Squares](solutions/3727.%20Maximum%20Alternating%20Sum%20of%20Squares/script.ts)
 1. № [3731. Find Missing Elements](solutions/3731.%20Find%20Missing%20Elements/script.ts)
 1. № [3734. Lexicographically Smallest Palindromic Permutation Greater Than Target](solutions/3734.%20Lexicographically%20Smallest%20Palindromic%20Permutation%20Greater%20Than%20Target/script.ts)
+1. № [3736. Minimum Moves to Equal Array Elements III](solutions/3736.%20Minimum%20Moves%20to%20Equal%20Array%20Elements%20III/script.ts)
 1. № [3737. Count Subarrays With Majority Element I](solutions/3737.%20Count%20Subarrays%20With%20Majority%20Element%20I/script.ts)
 1. № [3739. Count Subarrays With Majority Element II](solutions/3739.%20Count%20Subarrays%20With%20Majority%20Element%20II/script.ts)
 1. № [3740. Minimum Distance Between Three Equal Elements I](solutions/3740.%20Minimum%20Distance%20Between%20Three%20Equal%20Elements%20I/script.ts)
