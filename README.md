@@ -1171,6 +1171,7 @@
 1. № [3498. Reverse Degree of a String](solutions/3498.%20Reverse%20Degree%20of%20a%20String/script.ts)
 1. № [3499. Maximize Active Section with Trade I](solutions/3499.%20Maximize%20Active%20Section%20with%20Trade%20I/script.ts)
 1. № [3501. Maximize Active Section with Trade II](solutions/3501.%20Maximize%20Active%20Section%20with%20Trade%20II/script.ts)
+1. № [3505. Minimum Operations to Make Elements Within K Subarrays Equal](solutions/3505.%20Minimum%20Operations%20to%20Make%20Elements%20Within%20K%20Subarrays%20Equal/script.ts)
 1. № [3507. Minimum Pair Removal to Sort Array I](solutions/3507.%20Minimum%20Pair%20Removal%20to%20Sort%20Array%20I/script.ts)
 1. № [3508. Implement Router](solutions/3508.%20Implement%20Router/script.ts)
 1. № [3510. Minimum Pair Removal to Sort Array II](solutions/3510.%20Minimum%20Pair%20Removal%20to%20Sort%20Array%20II/script.ts)
