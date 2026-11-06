@@ -1,6 +1,6 @@
 export {queryResults}
 
-function queryResults(limit: number, queries: number[][]): number[] {
+function queryResults(_limit: number, queries: number[][]): number[] {
     let result = []
     const colorMap: Map<number, number> = new Map<number, number>()
     const ballMap: Map<number, number> = new Map<number, number>()

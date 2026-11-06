@@ -8,7 +8,7 @@ function checkStrings(first: string, second: string): boolean {
 function sortedCharacters(text: string, parity: number): string {
     return text
         .split('')
-        .filter((character: string, index: number): boolean => index % 2 === parity)
+        .filter((_character: string, index: number): boolean => index % 2 === parity)
         .sort()
         .join('')
 }

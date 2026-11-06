@@ -10,7 +10,7 @@ class MovieRentingSystem {
     private readonly moviePriceByKey: Map<ShopMovieKey, number> = new Map()
     private readonly rentedMovies: Set<ShopMovieKey> = new Set()
 
-    constructor(shopCount: number, movieEntries: number[][]) {
+    constructor(_shopCount: number, movieEntries: number[][]) {
         for (const [shopId, movieId, price] of movieEntries) {
             let shopMovieEntries: number[][] | undefined = this.availableMoviesById.get(movieId)
 

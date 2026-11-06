@@ -2,7 +2,7 @@ import {UndirectedUnweightedGraph} from "../../common/Graph"
 
 export {maxKDivisibleComponents}
 
-function maxKDivisibleComponents(n: number, edges: number[][], values: number[], k: number): number {
+function maxKDivisibleComponents(_n: number, edges: number[][], values: number[], k: number): number {
     const graph: UndirectedUnweightedGraph = new UndirectedUnweightedGraph()
     for (const [a, b] of edges) {
         graph.addEdge(a, b)

@@ -42,7 +42,7 @@ function findLongestTwoCharacters(s: string): number {
     return maxLength
 }
 
-function findLongestBalancedPair(s: string, firstChar: string, secondChar: string, skipChar: string): number {
+function findLongestBalancedPair(s: string, firstChar: string, _secondChar: string, skipChar: string): number {
     const differenceToIndex: Map<number, number> = new Map<number, number>()
     differenceToIndex.set(0, -1)
     let difference: number = 0

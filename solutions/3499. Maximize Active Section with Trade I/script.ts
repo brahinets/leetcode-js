@@ -11,14 +11,12 @@ function maxActiveSectionsAfterTrade(s: string): number {
     const augmented: string = '1' + s + '1'
     const n: number = augmented.length
 
-    let blockCount: number = 0
     let previousZeroLength: number = -1
     let maxGain: number = 0
 
     let i: number = 0
     while (i < n) {
         if (augmented[i] === '1') {
-            blockCount++
             while (i < n && augmented[i] === '1') {
                 i++
             }

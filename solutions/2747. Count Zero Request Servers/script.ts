@@ -6,8 +6,7 @@ function countServers(
     intervalLength: number,
     queries: number[]
 ): number[] {
-    const queryIndices: number[] = queries
-        .map((value: number, index: number): number => index)
+    const queryIndices: number[] = Array.from<number>(queries.keys())
         .sort((first: number, second: number): number => {
             return queries[first] - queries[second]
         })

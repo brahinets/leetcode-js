@@ -1,6 +1,6 @@
 export {findAllPeople}
 
-function findAllPeople(n: number, meetings: number[][], firstPerson: number): number[] {
+function findAllPeople(_n: number, meetings: number[][], firstPerson: number): number[] {
     const timeMap: Map<number, [number, number][]> = new Map<number, [number, number][]>()
     for (const [a, b, t] of meetings) {
         if (!timeMap.has(t)) {

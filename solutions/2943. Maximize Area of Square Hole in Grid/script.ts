@@ -1,8 +1,8 @@
 export {maximizeSquareHoleArea}
 
 function maximizeSquareHoleArea(
-    n: number,
-    m: number,
+    _n: number,
+    _m: number,
     horizontalBars: number[],
     verticalBars: number[]
 ): number {

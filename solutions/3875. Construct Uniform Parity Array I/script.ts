@@ -1,5 +1,5 @@
 export { uniformArray }
 
-function uniformArray(numbers: number[]): boolean {
+function uniformArray(_numbers: number[]): boolean {
     return true
 }
