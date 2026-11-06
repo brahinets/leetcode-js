@@ -974,6 +974,7 @@
 1. № [2709. Greatest Common Divisor Traversal](solutions/2709.%20Greatest%20Common%20Divisor%20Traversal/script.ts)
 1. № [2742. Painting the Walls](solutions/2742.%20Painting%20the%20Walls/script.ts)
 1. № [2749. Minimum Operations to Make the Integer Zero](solutions/2749.%20Minimum%20Operations%20to%20Make%20the%20Integer%20Zero/script.ts)
+1. № [2747. Count Zero Request Servers](solutions/2747.%20Count%20Zero%20Request%20Servers/script.ts)
 1. № [2751. Robot Collisions](solutions/2751.%20Robot%20Collisions/script.ts)
 1. № [2762. Continuous Subarrays](solutions/2762.%20Continuous%20Subarrays/script.ts)
 1. № [2778. Sum of Squares of Special Elements](solutions/2778.%20Sum%20of%20Squares%20of%20Special%20Elements/script.ts)
