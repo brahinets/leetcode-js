@@ -1233,6 +1233,7 @@
 1. № [3666. Minimum Operations to Equalize Binary String](solutions/3666.%20Minimum%20Operations%20to%20Equalize%20Binary%20String/script.ts)
 1. № [3689. Maximum Total Subarray Value I](solutions/3689.%20Maximum%20Total%20Subarray%20Value%20I/script.ts)
 1. № [3691. Maximum Total Subarray Value II](solutions/3691.%20Maximum%20Total%20Subarray%20Value%20II/script.ts)
+1. № [3693. Climbing Stairs II](solutions/3693.%20Climbing%20Stairs%20II/script.ts)
 1. № [3699. Number of ZigZag Arrays I](solutions/3699.%20Number%20of%20ZigZag%20Arrays%20I/script.ts)
 1. № [3700. Number of ZigZag Arrays II](solutions/3700.%20Number%20of%20ZigZag%20Arrays%20II/script.ts)
 1. № [3702. Longest Subsequence With Non-Zero Bitwise XOR](solutions/3702.%20Longest%20Subsequence%20With%20Non-Zero%20Bitwise%20XOR/script.ts)
