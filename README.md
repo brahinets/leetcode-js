@@ -1147,6 +1147,7 @@
 1. № [3408. Design Task Manager](solutions/3408.%20Design%20Task%20Manager/script.ts)
 1. № [3414. Maximum Score of Non-overlapping Intervals](solutions/3414.%20Maximum%20Score%20of%20Non-overlapping%20Intervals/script.ts)
 1. № [3418. Maximum Amount of Money Robot Can Earn](solutions/3418.%20Maximum%20Amount%20of%20Money%20Robot%20Can%20Earn/script.ts)
+1. № [3420. Count Non-Decreasing Subarrays After K Operations](solutions/3420.%20Count%20Non-Decreasing%20Subarrays%20After%20K%20Operations/script.ts)
 1. № [3423. Maximum Difference Between Adjacent Elements in a Circular Array](solutions/3423.%20Maximum%20Difference%20Between%20Adjacent%20Elements%20in%20a%20Circular%20Array/script.ts)
 1. № [3432. Count Partitions with Even Sum Difference](solutions/3432.%20Count%20Partitions%20with%20Even%20Sum%20Difference/script.ts)
 1. № [3433. Count Mentions Per User](solutions/3433.%20Count%20Mentions%20Per%20User/script.ts)

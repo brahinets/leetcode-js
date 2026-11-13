@@ -1,0 +1,19 @@
+# 3420. Count Non-Decreasing Subarrays After K Operations
+
+## Hard
+
+You are given an array `nums` of `n` integers and an integer `k`.
+
+For each subarray of `nums`, you can apply **up to** `k` operations on it. In each operation, you increment any element of the subarray by 1.
+
+**Note** that each subarray is considered independently, meaning changes made to one subarray do not persist to another.
+
+Return the number of subarrays that you can make **non-decreasing** after performing at most `k` operations.
+
+An array is said to be **non-decreasing** if each element is greater than or equal to its previous element, if it exists.
+
+**Constraints:**
+
+- `1 <= nums.length <= 10^5`
+- `1 <= nums[i] <= 10^9`
+- `1 <= k <= 10^9`
