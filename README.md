@@ -1132,6 +1132,7 @@
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
 1. № [3362. Zero Array Transformation III](solutions/3362.%20Zero%20Array%20Transformation%20III/script.ts)
 1. № [3363. Find the Maximum Number of Fruits Collected](solutions/3363.%20Find%20the%20Maximum%20Number%20of%20Fruits%20Collected/script.ts)
+1. № [3364. Minimum Positive Sum Subarray ](solutions/3364.%20Minimum%20Positive%20Sum%20Subarray%20/script.ts)
 1. № [3370. Smallest Number With All Set Bits](solutions/3370.%20Smallest%20Number%20With%20All%20Set%20Bits/script.ts)
 1. № [3372. Maximize the Number of Target Nodes After Connecting Trees I](solutions/3372.%20Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20I/script.ts)
 1. № [3373. Maximize the Number of Target Nodes After Connecting Trees II](solutions/3373.%20Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20II/script.ts)
