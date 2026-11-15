@@ -6,8 +6,7 @@ describe('628. Maximum Product of Three Numbers', (): void => {
 
         const result: number = maximumProduct(nums)
 
-        expect(result)
-            .toBe(6)
+        expect(result).toBe(6)
     })
 
     it('largest three beat other combinations', (): void => {
@@ -15,8 +14,7 @@ describe('628. Maximum Product of Three Numbers', (): void => {
 
         const result: number = maximumProduct(nums)
 
-        expect(result)
-            .toBe(24)
+        expect(result).toBe(24)
     })
 
     it('all negative numbers', (): void => {
@@ -24,8 +22,7 @@ describe('628. Maximum Product of Three Numbers', (): void => {
 
         const result: number = maximumProduct(nums)
 
-        expect(result)
-            .toBe(-6)
+        expect(result).toBe(-6)
     })
 
     it('two large negatives with a positive maximize the product', (): void => {
@@ -33,8 +30,7 @@ describe('628. Maximum Product of Three Numbers', (): void => {
 
         const result: number = maximumProduct(nums)
 
-        expect(result)
-            .toBe(60)
+        expect(result).toBe(60)
     })
 
     it('contains zeros', (): void => {
@@ -42,8 +38,7 @@ describe('628. Maximum Product of Three Numbers', (): void => {
 
         const result: number = maximumProduct(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('mix where three positives win over two negatives', (): void => {
@@ -51,8 +46,7 @@ describe('628. Maximum Product of Three Numbers', (): void => {
 
         const result: number = maximumProduct(nums)
 
-        expect(result)
-            .toBe(336)
+        expect(result).toBe(336)
     })
 
     it('duplicate maximum values', (): void => {
@@ -60,7 +54,6 @@ describe('628. Maximum Product of Three Numbers', (): void => {
 
         const result: number = maximumProduct(nums)
 
-        expect(result)
-            .toBe(125)
+        expect(result).toBe(125)
     })
 })

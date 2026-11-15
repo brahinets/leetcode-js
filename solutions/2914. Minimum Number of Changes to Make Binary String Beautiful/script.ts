@@ -1,4 +1,4 @@
-export {minChanges}
+export { minChanges }
 
 function minChanges(s: string): number {
     let minChangesRequired: number = 0

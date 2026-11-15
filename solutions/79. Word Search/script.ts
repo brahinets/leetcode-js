@@ -1,4 +1,4 @@
-export {exist}
+export { exist }
 
 const USED: string = '.'
 const turns: number[][] = [
@@ -20,7 +20,13 @@ function exist(board: string[][], word: string): boolean {
     return false
 }
 
-function dfs(row: number, col: number, board: string[][], word: string, index: number): boolean {
+function dfs(
+    row: number,
+    col: number,
+    board: string[][],
+    word: string,
+    index: number
+): boolean {
     if (index >= word.length) {
         return true
     }
@@ -40,12 +46,20 @@ function dfs(row: number, col: number, board: string[][], word: string, index: n
         board[row][col] = word.charAt(index)
     }
 
-
     return false
 }
 
-function isValidContinue(row: number, col: number, board: string[][], requiredLetter: string): boolean {
-    return row >= 0 && row < board.length
-        && col >= 0 && col <= board[0].length
-        && board[row][col] === requiredLetter
+function isValidContinue(
+    row: number,
+    col: number,
+    board: string[][],
+    requiredLetter: string
+): boolean {
+    return (
+        row >= 0 &&
+        row < board.length &&
+        col >= 0 &&
+        col <= board[0].length &&
+        board[row][col] === requiredLetter
+    )
 }

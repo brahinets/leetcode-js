@@ -1,4 +1,4 @@
-export {nextGreatestLetter}
+export { nextGreatestLetter }
 
 function nextGreatestLetter(letters: string[], target: string): string {
     let i: number = 0

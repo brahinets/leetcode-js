@@ -1,37 +1,33 @@
-import { cloneGraph, _Node } from '../script'
-
+import { _Node, cloneGraph } from '../script'
 
 describe('133. Clone Graph', (): void => {
-
     it('Clones a 4-node cyclic graph', (): void => {
-        const adjList: number[][] = [[2, 4], [1, 3], [2, 4], [1, 3]]
+        const adjList: number[][] = [
+            [2, 4],
+            [1, 3],
+            [2, 4],
+            [1, 3]
+        ]
         const original: _Node | null = buildGraph(adjList)
         const cloned: _Node | null = cloneGraph(original)
 
-        expect(graphToAdjList(cloned))
-            .toEqual(adjList)
-        expect(cloned).not
-            .toBe(original)
+        expect(graphToAdjList(cloned)).toEqual(adjList)
+        expect(cloned).not.toBe(original)
     })
 
     it('Clones a single node with no neighbors', (): void => {
         const original: _Node = new _Node(1)
         const cloned: _Node | null = cloneGraph(original)
 
-        expect(cloned).not
-            .toBeNull()
-        expect(cloned!.val)
-            .toBe(1)
-        expect(cloned!.neighbors)
-            .toEqual([])
-        expect(cloned).not
-            .toBe(original)
+        expect(cloned).not.toBeNull()
+        expect(cloned!.val).toBe(1)
+        expect(cloned!.neighbors).toEqual([])
+        expect(cloned).not.toBe(original)
     })
 
     it('null for null input', (): void => {
         const cloned: _Node | null = cloneGraph(null)
-        expect(cloned)
-            .toBeNull()
+        expect(cloned).toBeNull()
     })
 
     it('Clones two bidirectionally connected nodes', (): void => {
@@ -39,10 +35,8 @@ describe('133. Clone Graph', (): void => {
         const original: _Node | null = buildGraph(adjList)
         const cloned: _Node | null = cloneGraph(original)
 
-        expect(graphToAdjList(cloned))
-            .toEqual(adjList)
-        expect(cloned).not
-            .toBe(original)
+        expect(graphToAdjList(cloned)).toEqual(adjList)
+        expect(cloned).not.toBe(original)
     })
 })
 
@@ -89,9 +83,14 @@ function graphToAdjList(node: _Node | null): number[][] {
         }
     }
 
-    const sortedVals: number[] = Array.from(nodeMap.keys()).sort((a: number, b: number): number => a - b)
+    const sortedVals: number[] = Array.from(nodeMap.keys()).sort(
+        (a: number, b: number): number => a - b
+    )
     for (const val of sortedVals) {
-        const neighbors: number[] = nodeMap.get(val)!.neighbors.map((n: _Node): number => n.val).sort((a: number, b: number): number => a - b)
+        const neighbors: number[] = nodeMap
+            .get(val)!
+            .neighbors.map((n: _Node): number => n.val)
+            .sort((a: number, b: number): number => a - b)
         result.push(neighbors)
     }
 

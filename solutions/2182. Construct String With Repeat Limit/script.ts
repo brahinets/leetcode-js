@@ -1,9 +1,9 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {repeatLimitedString}
+export { repeatLimitedString }
 
 function repeatLimitedString(s: string, repeatLimit: number): string {
-    const frequency: Map<string, number> = count(s.split(""))
+    const frequency: Map<string, number> = count(s.split(''))
     const result: string[] = []
 
     const sortedChars: string[] = Array.from(frequency.keys()).sort().reverse()
@@ -17,7 +17,10 @@ function repeatLimitedString(s: string, repeatLimit: number): string {
 
         if (frequency.get(currentChar)! > 0) {
             let smallerCharIndex: number = 1
-            while (smallerCharIndex < sortedChars.length && frequency.get(sortedChars[smallerCharIndex]) === 0) {
+            while (
+                smallerCharIndex < sortedChars.length &&
+                frequency.get(sortedChars[smallerCharIndex]) === 0
+            ) {
                 smallerCharIndex++
             }
 

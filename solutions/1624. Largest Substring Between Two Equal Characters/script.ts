@@ -1,7 +1,7 @@
-export {maxLengthBetweenEqualCharacters}
+export { maxLengthBetweenEqualCharacters }
 
 function maxLengthBetweenEqualCharacters(s: string): number {
-    const chars: string[] = s.split("")
+    const chars: string[] = s.split('')
     const first: Map<string, number> = new Map<string, number>()
     const last: Map<string, number> = new Map<string, number>()
 

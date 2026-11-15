@@ -1,7 +1,6 @@
 import { minNumberOfSeconds } from '../script'
 
 describe('3296. Minimum Number of Seconds to Make Mountain Height Zero', (): void => {
-
     it('distributes work across three workers optimally', (): void => {
         // w0 reduces 1 (2s), w1 reduces 2 (3s), w2 reduces 1 (1s) → max = 3
         expect(minNumberOfSeconds(4, [2, 1, 1])).toBe(3)

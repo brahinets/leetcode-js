@@ -1,10 +1,11 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, getMinimumDifference}
+export { TreeNode, getMinimumDifference }
 
 function getMinimumDifference(root: TreeNode | null): number {
-    const values: number[] = collectValues(root)
-        .sort((a: number, b: number): number => a - b)
+    const values: number[] = collectValues(root).sort(
+        (a: number, b: number): number => a - b
+    )
 
     let min: number = values[1] - values[0]
     for (let i: number = 1; i < values.length; i++) {
@@ -18,6 +19,10 @@ function collectValues(root: TreeNode | null): number[] {
     if (!root) {
         return []
     } else {
-        return [root.val, ...collectValues(root.left), ...collectValues(root.right)]
+        return [
+            root.val,
+            ...collectValues(root.left),
+            ...collectValues(root.right)
+        ]
     }
 }

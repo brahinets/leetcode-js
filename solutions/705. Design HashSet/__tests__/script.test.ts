@@ -1,7 +1,6 @@
-import {MyHashSet} from "../script"
+import { MyHashSet } from '../script'
 
 describe('705. Design HashSet', (): void => {
-
     it('Test', (): void => {
         const set: MyHashSet = new MyHashSet()
         let contains: boolean

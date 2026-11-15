@@ -1,4 +1,4 @@
-export {countAndSay}
+export { countAndSay }
 
 function countAndSay(n: number): string {
     let result: string = '1'

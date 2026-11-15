@@ -1,4 +1,4 @@
-export {slidingPuzzle}
+export { slidingPuzzle }
 
 function slidingPuzzle(board: number[][]): number {
     const target: string = '123450'

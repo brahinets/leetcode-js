@@ -1,13 +1,16 @@
-import {arrayOf, matrixOfZeros} from "../../common/array-factories";
+import { arrayOf, matrixOfZeros } from '../../common/array-factories'
 
-export {subsequencePairCount}
+export { subsequencePairCount }
 
 function subsequencePairCount(nums: number[]): number {
     const MOD: number = 10 ** 9 + 7
     const n: number = nums.length
     const maxVal: number = Math.max(...nums)
 
-    const dp: number[][][] = arrayOf(matrixOfZeros(maxVal + 1, maxVal + 1), n + 1)
+    const dp: number[][][] = arrayOf(
+        matrixOfZeros(maxVal + 1, maxVal + 1),
+        n + 1
+    )
 
     dp[0][0][0] = 1
 
@@ -17,10 +20,12 @@ function subsequencePairCount(nums: number[]): number {
                 if (dp[i][g1][g2] === 0) continue
 
                 const newG1: number = g1 === 0 ? nums[i] : gcd(g1, nums[i])
-                dp[i + 1][newG1][g2] = (dp[i + 1][newG1][g2] + dp[i][g1][g2]) % MOD
+                dp[i + 1][newG1][g2] =
+                    (dp[i + 1][newG1][g2] + dp[i][g1][g2]) % MOD
 
                 const newG2: number = g2 === 0 ? nums[i] : gcd(g2, nums[i])
-                dp[i + 1][g1][newG2] = (dp[i + 1][g1][newG2] + dp[i][g1][g2]) % MOD
+                dp[i + 1][g1][newG2] =
+                    (dp[i + 1][g1][newG2] + dp[i][g1][g2]) % MOD
 
                 dp[i + 1][g1][g2] = (dp[i + 1][g1][g2] + dp[i][g1][g2]) % MOD
             }

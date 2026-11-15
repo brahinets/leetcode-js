@@ -1,4 +1,4 @@
-export {findXSum}
+export { findXSum }
 
 type FrequencyPair = [number, number]
 
@@ -85,12 +85,16 @@ class TopXFrequencySum {
     private insertToTrees(p: FrequencyPair): void {
         const [freq, value]: [number, number] = p
         const minTopX: AvlNode<FrequencyPair> | null = this.topXTree.min()
-        if (this.topXTree.count() < this.x || (minTopX && comparator(p, minTopX.value) > 0)) {
+        if (
+            this.topXTree.count() < this.x ||
+            (minTopX && comparator(p, minTopX.value) > 0)
+        ) {
             this.topXSum += BigInt(freq) * BigInt(value)
             this.topXTree.insert(p)
 
             if (this.topXTree.count() > this.x) {
-                const smallestTopX: AvlNode<FrequencyPair> | null = this.topXTree.min()
+                const smallestTopX: AvlNode<FrequencyPair> | null =
+                    this.topXTree.min()
 
                 if (smallestTopX) {
                     const value: FrequencyPair = smallestTopX.value
@@ -113,7 +117,8 @@ class TopXFrequencySum {
             this.topXTree.remove(p)
 
             if (this.remainingTree.count() > 0) {
-                const largestRemaining: AvlNode<FrequencyPair> | null = this.remainingTree.max()
+                const largestRemaining: AvlNode<FrequencyPair> | null =
+                    this.remainingTree.max()
 
                 if (largestRemaining) {
                     const value: [number, number] = largestRemaining.value
@@ -216,7 +221,8 @@ class AvlTree<T> {
     }
 
     private updateHeight(node: AvlNode<T>): void {
-        node.height = 1 + Math.max(this.height(node.left), this.height(node.right))
+        node.height =
+            1 + Math.max(this.height(node.left), this.height(node.right))
     }
 
     private rotateRight(y: AvlNode<T>): AvlNode<T> {

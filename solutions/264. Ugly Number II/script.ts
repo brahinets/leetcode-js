@@ -1,6 +1,6 @@
-import {first} from "../../common/array-utils"
+import { first } from '../../common/array-utils'
 
-export {nthUglyNumber}
+export { nthUglyNumber }
 
 function nthUglyNumber(n: number): number {
     const uglies: Set<number> = new Set<number>([1])

@@ -1,4 +1,4 @@
-export {numMagicSquaresInside}
+export { numMagicSquaresInside }
 
 function numMagicSquaresInside(grid: number[][]): number {
     let count: number = 0

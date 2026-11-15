@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {wordSubsets}
+export { wordSubsets }
 
 const ALPHABET_LENGTH: number = 26
 

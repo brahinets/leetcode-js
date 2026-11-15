@@ -1,4 +1,4 @@
-export {minOperations}
+export { minOperations }
 
 function minOperations(queries: number[][]): number {
     let min: bigint = 0n

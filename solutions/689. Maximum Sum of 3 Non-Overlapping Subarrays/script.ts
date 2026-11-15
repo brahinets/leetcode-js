@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maxSumOfThreeSubarrays}
+export { maxSumOfThreeSubarrays }
 
 function maxSumOfThreeSubarrays(nums: number[], k: number): number[] {
     const sums: number[] = calculatePrefixSums(nums)
@@ -58,14 +58,23 @@ function calculateRightMaxSubarraySums(sums: number[], k: number): number[] {
     return right
 }
 
-function findMaxSumOfThreeSubarrays(sums: number[], left: number[], right: number[], k: number): number[] {
+function findMaxSumOfThreeSubarrays(
+    sums: number[],
+    left: number[],
+    right: number[],
+    k: number
+): number[] {
     let maxSum: number = 0
 
     let result: number[] = []
     for (let i: number = k; i <= sums.length - 1 - 2 * k; i++) {
         const l: number = left[i - 1]
         const r: number = right[i + k]
-        const sum: number = (sums[i + k] - sums[i]) + (sums[l + k] - sums[l]) + (sums[r + k] - sums[r])
+        const sum: number =
+            sums[i + k] -
+            sums[i] +
+            (sums[l + k] - sums[l]) +
+            (sums[r + k] - sums[r])
 
         if (sum > maxSum) {
             maxSum = sum

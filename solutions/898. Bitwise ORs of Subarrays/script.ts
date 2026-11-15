@@ -1,4 +1,4 @@
-export {subarrayBitwiseORs}
+export { subarrayBitwiseORs }
 
 function subarrayBitwiseORs(arr: number[]): number {
     const result: Set<number> = new Set<number>()

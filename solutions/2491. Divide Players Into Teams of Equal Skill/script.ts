@@ -1,4 +1,4 @@
-export {dividePlayers}
+export { dividePlayers }
 
 function dividePlayers(skill: number[]): number {
     skill.sort((a: number, b: number): number => a - b)

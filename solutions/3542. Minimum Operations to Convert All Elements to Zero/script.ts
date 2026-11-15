@@ -1,4 +1,4 @@
-export {minOperations}
+export { minOperations }
 
 function minOperations(numbers: number[]): number {
     const stack: number[] = []

@@ -1,4 +1,4 @@
-import { arrayOfZeros } from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
 export { distinctSubseqII }
 
@@ -14,7 +14,9 @@ function distinctSubseqII(s: string): number {
         const previousEndingCount: number = endingCounts[characterIndex]
         const newEndingCount: number = (totalCount + 1) % MODULO
 
-        totalCount = (totalCount - previousEndingCount + newEndingCount + MODULO) % MODULO
+        totalCount =
+            (totalCount - previousEndingCount + newEndingCount + MODULO) %
+            MODULO
         endingCounts[characterIndex] = newEndingCount
     }
 

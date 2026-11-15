@@ -1,4 +1,4 @@
-export {longestSubarray}
+export { longestSubarray }
 
 function longestSubarray(nums: number[]): number {
     let maxCount: number = 0
@@ -21,7 +21,10 @@ function longestSubarray(nums: number[]): number {
             brokenSize++
         }
 
-        maxCount = Math.max(brokenSize >= barrierSize ? end - start - 1 : end - start, maxCount)
+        maxCount = Math.max(
+            brokenSize >= barrierSize ? end - start - 1 : end - start,
+            maxCount
+        )
     }
 
     return brokenSize >= barrierSize ? maxCount : maxCount - 1

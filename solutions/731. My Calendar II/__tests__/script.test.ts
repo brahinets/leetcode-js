@@ -1,4 +1,4 @@
-import {MyCalendarTwo} from '../script'
+import { MyCalendarTwo } from '../script'
 
 describe('731. My Calendar II', (): void => {
     it('Test', (): void => {

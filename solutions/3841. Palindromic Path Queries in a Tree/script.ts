@@ -102,10 +102,7 @@ class XorSegmentTree {
 }
 
 function buildAdjacency(n: number, edges: number[][]): number[][] {
-    const adjacency: number[][] = Array.from(
-        { length: n },
-        (): number[] => []
-    )
+    const adjacency: number[][] = Array.from({ length: n }, (): number[] => [])
 
     for (const edge of edges) {
         adjacency[edge[0]].push(edge[1])
@@ -147,8 +144,10 @@ function decomposeTree(adjacency: number[][]): TreeDecomposition {
 
         subtreeSize[ancestor] += subtreeSize[node]
 
-        if (heavyChild[ancestor] === -1
-            || subtreeSize[node] > subtreeSize[heavyChild[ancestor]]) {
+        if (
+            heavyChild[ancestor] === -1 ||
+            subtreeSize[node] > subtreeSize[heavyChild[ancestor]]
+        ) {
             heavyChild[ancestor] = node
         }
     }

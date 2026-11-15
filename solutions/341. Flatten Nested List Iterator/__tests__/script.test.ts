@@ -1,8 +1,12 @@
-import {NestedInteger, NestedIterator} from '../script'
+import { NestedInteger, NestedIterator } from '../script'
 
 describe('341. Flatten Nested List Iterator', (): void => {
     it('No inner level', (): void => {
-        const iterator: NestedIterator = new NestedIterator([new NestedInteger(1), new NestedInteger(2), new NestedInteger(3)])
+        const iterator: NestedIterator = new NestedIterator([
+            new NestedInteger(1),
+            new NestedInteger(2),
+            new NestedInteger(3)
+        ])
         const result: number[] = []
         while (iterator.hasNext()) {
             result.push(iterator.next())
@@ -12,7 +16,11 @@ describe('341. Flatten Nested List Iterator', (): void => {
     })
 
     it('One inner level', (): void => {
-        const iterator: NestedIterator = new NestedIterator([new NestedInteger([new NestedInteger(1), new NestedInteger(1)]), new NestedInteger(2), new NestedInteger([new NestedInteger(1), new NestedInteger(1)])])
+        const iterator: NestedIterator = new NestedIterator([
+            new NestedInteger([new NestedInteger(1), new NestedInteger(1)]),
+            new NestedInteger(2),
+            new NestedInteger([new NestedInteger(1), new NestedInteger(1)])
+        ])
         const result: number[] = []
         while (iterator.hasNext()) {
             result.push(iterator.next())
@@ -22,7 +30,11 @@ describe('341. Flatten Nested List Iterator', (): void => {
     })
 
     it('Multiple inner level', (): void => {
-        const iterator: NestedIterator = new NestedIterator([new NestedInteger(1), new NestedInteger(4), new NestedInteger(6)])
+        const iterator: NestedIterator = new NestedIterator([
+            new NestedInteger(1),
+            new NestedInteger(4),
+            new NestedInteger(6)
+        ])
         const result: number[] = []
         while (iterator.hasNext()) {
             result.push(iterator.next())

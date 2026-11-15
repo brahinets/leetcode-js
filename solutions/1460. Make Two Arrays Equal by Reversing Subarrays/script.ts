@@ -1,7 +1,7 @@
-import {count} from "../../common/array-utils"
-import {mapsAreEqual} from "../../common/map-utils"
+import { count } from '../../common/array-utils'
+import { mapsAreEqual } from '../../common/map-utils'
 
-export {canBeEqual}
+export { canBeEqual }
 
 function canBeEqual(target: number[], arr: number[]): boolean {
     const countsTarget: Map<number, number> = count(target)

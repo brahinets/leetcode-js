@@ -1,4 +1,4 @@
-export {minimumRecolors}
+export { minimumRecolors }
 
 function minimumRecolors(blocks: string, k: number): number {
     let left: number = 0

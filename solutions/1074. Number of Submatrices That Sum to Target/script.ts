@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {numSubmatrixSumTarget}
+export { numSubmatrixSumTarget }
 
 function numSubmatrixSumTarget(matrix: number[][], target: number): number {
     const prefixSums: number[][] = calculatePrefixSums(matrix)
@@ -12,13 +12,17 @@ function numSubmatrixSumTarget(matrix: number[][], target: number): number {
             prefixSumFrequencies.set(0, 1)
 
             for (let col: number = 1; col < prefixSums[0].length; col++) {
-                const sum: number = prefixSums[row2][col] - prefixSums[row1 - 1][col]
+                const sum: number =
+                    prefixSums[row2][col] - prefixSums[row1 - 1][col]
 
                 if (prefixSumFrequencies.has(sum - target)) {
                     result += prefixSumFrequencies.get(sum - target)!
                 }
 
-                prefixSumFrequencies.set(sum, (prefixSumFrequencies.get(sum) || 0) + 1)
+                prefixSumFrequencies.set(
+                    sum,
+                    (prefixSumFrequencies.get(sum) || 0) + 1
+                )
             }
         }
     }
@@ -33,7 +37,11 @@ function calculatePrefixSums(matrix: number[][]): number[][] {
     const sums: number[][] = matrixOfZeros(rows + 1, cols + 1)
     for (let r: number = 1; r <= rows; r++) {
         for (let c: number = 1; c <= cols; c++) {
-            sums[r][c] = matrix[r - 1][c - 1] + sums[r - 1][c] + sums[r][c - 1] - sums[r - 1][c - 1]
+            sums[r][c] =
+                matrix[r - 1][c - 1] +
+                sums[r - 1][c] +
+                sums[r][c - 1] -
+                sums[r - 1][c - 1]
         }
     }
 

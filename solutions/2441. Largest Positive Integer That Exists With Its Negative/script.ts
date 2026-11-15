@@ -1,4 +1,4 @@
-export {findMaxK}
+export { findMaxK }
 
 function findMaxK(nums: number[]): number {
     let k: number = -1

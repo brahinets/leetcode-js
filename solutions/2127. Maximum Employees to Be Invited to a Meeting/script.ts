@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maximumInvitations}
+export { maximumInvitations }
 
 function maximumInvitations(favorite: number[]): number {
     const inDegree: number[] = arrayOfZeros(favorite.length)
@@ -19,7 +19,10 @@ function maximumInvitations(favorite: number[]): number {
     while (queue.length > 0) {
         const current: number = queue.shift()!
         const favourite: number = favorite[current]
-        longestChain[favourite] = Math.max(longestChain[favourite], longestChain[current] + 1)
+        longestChain[favourite] = Math.max(
+            longestChain[favourite],
+            longestChain[current] + 1
+        )
         inDegree[favourite]--
 
         if (inDegree[favourite] === 0) {

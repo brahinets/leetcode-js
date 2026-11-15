@@ -2,7 +2,8 @@
 
 ## Easy
 
-Given an `m x n` integer matrix `mat` and an integer `k`, even-indexed rows are cyclically shifted left and odd-indexed rows are cyclically shifted right, repeated `k` times.
+Given an `m x n` integer matrix `mat` and an integer `k`, even-indexed rows are cyclically shifted left and odd-indexed
+rows are cyclically shifted right, repeated `k` times.
 
 Return `true` if the resulting matrix is identical to the original matrix, otherwise return `false`.
 

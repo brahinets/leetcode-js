@@ -1,4 +1,4 @@
-export {numOfUnplacedFruits}
+export { numOfUnplacedFruits }
 
 function numOfUnplacedFruits(fruits: number[], baskets: number[]): number {
     const blockSize: number = Math.ceil(Math.sqrt(baskets.length))

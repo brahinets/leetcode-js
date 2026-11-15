@@ -1,8 +1,11 @@
-import {TreeNode} from '../../common/TreeNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {removeLeafNodes}
+export { removeLeafNodes }
 
-function removeLeafNodes(root: TreeNode | null, target: number): TreeNode | null {
+function removeLeafNodes(
+    root: TreeNode | null,
+    target: number
+): TreeNode | null {
     if (!root) {
         return null
     }

@@ -1,4 +1,4 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
 export { minimumHammingDistance }
 
@@ -8,7 +8,9 @@ function minimumHammingDistance(
     allowedSwaps: number[][]
 ): number {
     const length: number = source.length
-    const parent: number[] = arrayOfZeros(length).map((_: number, index: number): number => index)
+    const parent: number[] = arrayOfZeros(length).map(
+        (_: number, index: number): number => index
+    )
 
     function find(index: number): number {
         if (parent[index] !== index) {
@@ -26,7 +28,10 @@ function minimumHammingDistance(
         union(first, second)
     }
 
-    const componentSourceFreq: Map<number, Map<number, number>> = new Map<number, Map<number, number>>()
+    const componentSourceFreq: Map<number, Map<number, number>> = new Map<
+        number,
+        Map<number, number>
+    >()
 
     for (let index: number = 0; index < length; index++) {
         const root: number = find(index)

@@ -1,7 +1,6 @@
-import {findPeakElement} from '../script'
+import { findPeakElement } from '../script'
 
 describe('162. Find Peak Element', (): void => {
-
     it('Single element', (): void => {
         expect(findPeakElement([1])).toBe(0)
     })

@@ -1,4 +1,4 @@
-export {isPathCrossing}
+export { isPathCrossing }
 
 function isPathCrossing(path: string): boolean {
     const visited: Set<string> = new Set<string>()
@@ -33,7 +33,10 @@ function isPathCrossing(path: string): boolean {
 }
 
 class Point {
-    constructor(private x: number, private y: number) {
+    constructor(
+        private x: number,
+        private y: number
+    ) {
         this.x = x
         this.y = y
     }

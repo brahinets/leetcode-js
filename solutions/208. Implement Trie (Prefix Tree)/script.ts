@@ -1,4 +1,4 @@
-export {Trie}
+export { Trie }
 
 class TrieNode {
     children: Map<string, TrieNode>

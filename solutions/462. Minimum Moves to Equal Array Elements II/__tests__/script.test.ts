@@ -1,4 +1,4 @@
-import {minMoves2} from "../script"
+import { minMoves2 } from '../script'
 
 describe('462. Minimum Moves to Equal Array Elements II', (): void => {
     it('aligns all elements on the middle value with two moves', (): void => {
@@ -6,8 +6,7 @@ describe('462. Minimum Moves to Equal Array Elements II', (): void => {
 
         const result: number = minMoves2(numbers)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('aligns elements on a value between the middle pair for even length', (): void => {
@@ -15,8 +14,7 @@ describe('462. Minimum Moves to Equal Array Elements II', (): void => {
 
         const result: number = minMoves2(numbers)
 
-        expect(result)
-            .toBe(16)
+        expect(result).toBe(16)
     })
 
     it('requires no moves when elements are already equal', (): void => {
@@ -24,8 +22,7 @@ describe('462. Minimum Moves to Equal Array Elements II', (): void => {
 
         const result: number = minMoves2(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('handles a single element array', (): void => {
@@ -33,8 +30,7 @@ describe('462. Minimum Moves to Equal Array Elements II', (): void => {
 
         const result: number = minMoves2(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('handles negative values in the array', (): void => {
@@ -42,8 +38,7 @@ describe('462. Minimum Moves to Equal Array Elements II', (): void => {
 
         const result: number = minMoves2(numbers)
 
-        expect(result)
-            .toBe(2000000000)
+        expect(result).toBe(2000000000)
     })
 
     it('aligns toward a value other than the extremes when outliers are present', (): void => {
@@ -51,7 +46,6 @@ describe('462. Minimum Moves to Equal Array Elements II', (): void => {
 
         const result: number = minMoves2(numbers)
 
-        expect(result)
-            .toBe(14)
+        expect(result).toBe(14)
     })
 })

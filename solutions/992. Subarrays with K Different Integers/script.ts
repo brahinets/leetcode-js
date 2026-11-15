@@ -1,5 +1,4 @@
-export {subarraysWithKDistinct}
-
+export { subarraysWithKDistinct }
 
 function subarraysWithKDistinct(nums: number[], k: number): number {
     return window(nums, k) - window(nums, k - 1)

@@ -1,6 +1,6 @@
-import {TreeNode} from '../../common/TreeNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {inorderTraversal, TreeNode}
+export { inorderTraversal, TreeNode }
 
 function inorderTraversal(root: TreeNode | null): number[] {
     const result: number[] = []

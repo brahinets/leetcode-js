@@ -1,4 +1,4 @@
-export {minimumDeletions}
+export { minimumDeletions }
 
 function minimumDeletions(s: string): number {
     let bCount: number = 0

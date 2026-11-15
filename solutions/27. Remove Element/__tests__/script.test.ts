@@ -1,7 +1,6 @@
-import {removeElement} from '../script'
+import { removeElement } from '../script'
 
 describe('27. Remove Element', (): void => {
-
     it('Several', (): void => {
         const input: number[] = [3, 2, 2, 3]
         const left: number = removeElement(input, 2)

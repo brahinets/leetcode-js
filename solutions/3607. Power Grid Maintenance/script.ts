@@ -1,12 +1,12 @@
-import {DisjointSetUnion} from "../../common/DisjointSetUnion"
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { DisjointSetUnion } from '../../common/DisjointSetUnion'
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {processQueries}
+export { processQueries }
 
 function processQueries(
     c: number,
     connections: number[][],
-    queries: number[][],
+    queries: number[][]
 ): number[] {
     const dsu: DisjointSetUnion = new DisjointSetUnion(c + 1)
     for (const [u, v] of connections) {

@@ -1,13 +1,14 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {getLengthOfOptimalCompression}
+export { getLengthOfOptimalCompression }
 
 function getLengthOfOptimalCompression(s: string, k: number): number {
     const minFor: number[][] = matrixOfZeros(s.length + 1, k + 1)
 
     for (let start: number = s.length - 1; start >= 0; start--) {
         for (let deletes: number = 0; deletes <= k; deletes++) {
-            minFor[start][deletes] = deletes > 0 ? minFor[start + 1][deletes - 1] : Infinity
+            minFor[start][deletes] =
+                deletes > 0 ? minFor[start + 1][deletes - 1] : Infinity
 
             let sameChars: number = 0
             let deletesLeft: number = deletes

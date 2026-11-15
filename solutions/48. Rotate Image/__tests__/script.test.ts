@@ -1,4 +1,4 @@
-import {rotate} from '../script'
+import { rotate } from '../script'
 
 describe('48. Rotate Image', (): void => {
     it('Simple', (): void => {
@@ -21,8 +21,8 @@ describe('48. Rotate Image', (): void => {
         expect(matrix).toEqual([
             [7, 4, 1],
             [8, 5, 2],
-            [9, 6, 3]]
-        )
+            [9, 6, 3]
+        ])
     })
 
     it('Big', (): void => {
@@ -39,7 +39,7 @@ describe('48. Rotate Image', (): void => {
             [15, 13, 2, 5],
             [14, 3, 4, 1],
             [12, 6, 8, 9],
-            [16, 7, 10, 11]]
-        )
+            [16, 7, 10, 11]
+        ])
     })
 })

@@ -1,8 +1,8 @@
-export {peakIndexInMountainArray}
+export { peakIndexInMountainArray }
 
 function peakIndexInMountainArray(arr: number[]): number {
     if (arr.length < 3) {
-        throw new Error("Input must contain at least three elements")
+        throw new Error('Input must contain at least three elements')
     }
 
     let max: number = arr[0]

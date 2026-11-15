@@ -1,4 +1,4 @@
-export {MyQueue}
+export { MyQueue }
 
 class MyQueue {
     private readonly data: number[]

@@ -1,4 +1,4 @@
-export {sortColors}
+export { sortColors }
 
 const RED: number = 0
 const WHITE: number = 1
@@ -19,6 +19,6 @@ function buildRelativity(): Map<number, number> {
     return new Map<number, number>([
         [RED, 0],
         [WHITE, 1],
-        [BLUE, 2],
+        [BLUE, 2]
     ])
 }

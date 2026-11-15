@@ -1,4 +1,4 @@
-export {maxAbsoluteSum}
+export { maxAbsoluteSum }
 
 function maxAbsoluteSum(nums: number[]): number {
     let maxSum: number = 0

@@ -3,7 +3,9 @@ export { sumCounts }
 const MODULO: number = 1_000_000_007
 
 function sumCounts(nums: number[]): number {
-    const tree: SquaredDistinctCountTree = new SquaredDistinctCountTree(nums.length)
+    const tree: SquaredDistinctCountTree = new SquaredDistinctCountTree(
+        nums.length
+    )
     const lastIndexByValue: Map<number, number> = new Map<number, number>()
     let total: number = 0
 
@@ -39,7 +41,14 @@ class SquaredDistinctCountTree {
         return this.sumsOfSquares[1]
     }
 
-    private update(nodeIndex: number, nodeLeft: number, nodeRight: number, left: number, right: number, value: number): void {
+    private update(
+        nodeIndex: number,
+        nodeLeft: number,
+        nodeRight: number,
+        left: number,
+        right: number,
+        value: number
+    ): void {
         if (right < nodeLeft || nodeRight < left) {
             return
         }
@@ -54,26 +63,54 @@ class SquaredDistinctCountTree {
 
         this.pushDown(nodeIndex, nodeLeft, middle, nodeRight)
         this.update(2 * nodeIndex, nodeLeft, middle, left, right, value)
-        this.update(2 * nodeIndex + 1, middle + 1, nodeRight, left, right, value)
+        this.update(
+            2 * nodeIndex + 1,
+            middle + 1,
+            nodeRight,
+            left,
+            right,
+            value
+        )
         this.pullUp(nodeIndex)
     }
 
-    private applyAddition(nodeIndex: number, length: number, value: number): void {
-        this.sumsOfSquares[nodeIndex] += 2 * value * this.sums[nodeIndex] + length * value * value
+    private applyAddition(
+        nodeIndex: number,
+        length: number,
+        value: number
+    ): void {
+        this.sumsOfSquares[nodeIndex] +=
+            2 * value * this.sums[nodeIndex] + length * value * value
         this.sums[nodeIndex] += length * value
         this.pendingAdditions[nodeIndex] += value
     }
 
-    private pushDown(nodeIndex: number, nodeLeft: number, middle: number, nodeRight: number): void {
+    private pushDown(
+        nodeIndex: number,
+        nodeLeft: number,
+        middle: number,
+        nodeRight: number
+    ): void {
         const pendingAddition: number = this.pendingAdditions[nodeIndex]
 
-        this.applyAddition(2 * nodeIndex, middle - nodeLeft + 1, pendingAddition)
-        this.applyAddition(2 * nodeIndex + 1, nodeRight - middle, pendingAddition)
+        this.applyAddition(
+            2 * nodeIndex,
+            middle - nodeLeft + 1,
+            pendingAddition
+        )
+        this.applyAddition(
+            2 * nodeIndex + 1,
+            nodeRight - middle,
+            pendingAddition
+        )
         this.pendingAdditions[nodeIndex] = 0
     }
 
     private pullUp(nodeIndex: number): void {
-        this.sums[nodeIndex] = this.sums[2 * nodeIndex] + this.sums[2 * nodeIndex + 1]
-        this.sumsOfSquares[nodeIndex] = this.sumsOfSquares[2 * nodeIndex] + this.sumsOfSquares[2 * nodeIndex + 1]
+        this.sums[nodeIndex] =
+            this.sums[2 * nodeIndex] + this.sums[2 * nodeIndex + 1]
+        this.sumsOfSquares[nodeIndex] =
+            this.sumsOfSquares[2 * nodeIndex] +
+            this.sumsOfSquares[2 * nodeIndex + 1]
     }
 }

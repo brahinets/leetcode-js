@@ -1,4 +1,4 @@
-export {maxFrequency}
+export { maxFrequency }
 
 function maxFrequency(nums: number[], k: number): number {
     nums = nums.sort((a: number, b: number): number => a - b)

@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minTime}
+export { minTime }
 
 function minTime(skill: number[], mana: number[]): number {
     const times: number[] = arrayOfZeros(skill.length)

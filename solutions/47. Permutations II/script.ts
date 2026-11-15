@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {permuteUnique}
+export { permuteUnique }
 
 function permuteUnique(nums: number[]): number[][] {
     nums.sort((a: number, b: number): number => a - b)
@@ -10,7 +10,11 @@ function permuteUnique(nums: number[]): number[][] {
     return backtrack([], nums, used)
 }
 
-function backtrack(path: number[], nums: number[], used: boolean[]): number[][] {
+function backtrack(
+    path: number[],
+    nums: number[],
+    used: boolean[]
+): number[][] {
     if (path.length === nums.length) {
         return [[...path]]
     }

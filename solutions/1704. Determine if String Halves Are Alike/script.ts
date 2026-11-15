@@ -1,4 +1,4 @@
-export {halvesAreAlike}
+export { halvesAreAlike }
 
 function halvesAreAlike(s: string): boolean {
     const middle: number = Math.floor(s.length / 2)
@@ -9,9 +9,9 @@ function halvesAreAlike(s: string): boolean {
 }
 
 function keepVowels(s: string): string[] {
-    return s.split("").filter(isVowel)
+    return s.split('').filter(isVowel)
 }
 
 function isVowel(s: string): boolean {
-    return ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"].includes(s)
+    return ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'].includes(s)
 }

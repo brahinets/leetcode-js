@@ -1,4 +1,4 @@
-export {findArray}
+export { findArray }
 
 function findArray(pref: number[]): number[] {
     const arr: number[] = [pref[0]]

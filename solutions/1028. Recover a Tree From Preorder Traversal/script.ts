@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {recoverFromPreorder}
+export { recoverFromPreorder }
 
 function recoverFromPreorder(traversal: string): TreeNode | null {
     const stack: TreeNode[] = []
@@ -15,7 +15,9 @@ function recoverFromPreorder(traversal: string): TreeNode | null {
 
         let value: number = 0
         while (index < traversal.length && isDigit(traversal.charAt(index))) {
-            value = value * 10 + (traversal.charAt(index).charCodeAt(0) - '0'.charCodeAt(0))
+            value =
+                value * 10 +
+                (traversal.charAt(index).charCodeAt(0) - '0'.charCodeAt(0))
             index++
         }
 

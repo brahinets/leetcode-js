@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {firstMissingPositive}
+export { firstMissingPositive }
 
 function firstMissingPositive(nums: number[]): number {
     const present: boolean[] = arrayOf(false, nums.length + 1)

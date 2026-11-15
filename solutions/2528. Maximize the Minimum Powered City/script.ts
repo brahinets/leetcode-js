@@ -1,9 +1,13 @@
-import {arrayOfZeros} from "../../common/array-factories"
-import {sum} from "../../common/array-utils"
+import { arrayOfZeros } from '../../common/array-factories'
+import { sum } from '../../common/array-utils'
 
-export {maxPower}
+export { maxPower }
 
-function maxPower(stations: number[], radius: number, maxAdditions: number): number {
+function maxPower(
+    stations: number[],
+    radius: number,
+    maxAdditions: number
+): number {
     const powerDiff: number[] = buildPowerDiff(stations, radius)
     const minPower: number = Math.min(...stations)
     const maxPowerPossible: number = sum(stations) + maxAdditions
@@ -40,7 +44,12 @@ function buildPowerDiff(stations: number[], radius: number): number[] {
     return powerDiff
 }
 
-function canAchieve(targetPower: number, powerDiff: number[], radius: number, maxAdditions: number): boolean {
+function canAchieve(
+    targetPower: number,
+    powerDiff: number[],
+    radius: number,
+    maxAdditions: number
+): boolean {
     const stationCount: number = powerDiff.length - 1
     const currentDiff: number[] = [...powerDiff]
     let currentPower: number = 0

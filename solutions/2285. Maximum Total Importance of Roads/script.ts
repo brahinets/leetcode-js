@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maximumImportance}
+export { maximumImportance }
 
 function maximumImportance(n: number, roads: number[][]): number {
     const degrees: number[] = collectDegrees(n, roads)
@@ -8,7 +8,7 @@ function maximumImportance(n: number, roads: number[][]): number {
     let value: number = 1
     let total: number = 0
     for (const degree of degrees) {
-        total += (value * degree)
+        total += value * degree
         value++
     }
 

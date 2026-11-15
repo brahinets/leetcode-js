@@ -1,4 +1,4 @@
-export {RandomizedSet}
+export { RandomizedSet }
 
 class RandomizedSet {
     private readonly values: Set<number>

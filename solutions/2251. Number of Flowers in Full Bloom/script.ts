@@ -1,6 +1,6 @@
-import {binarySearch} from "../../common/array-utils"
+import { binarySearch } from '../../common/array-utils'
 
-export {fullBloomFlowers}
+export { fullBloomFlowers }
 
 function fullBloomFlowers(flowers: number[][], people: number[]): number[] {
     const starts: number[] = []

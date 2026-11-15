@@ -7,8 +7,7 @@ describe('2897. Apply Operations on Array to Maximize Sum of Squares', (): void 
 
         const result: number = maxSum(nums, k)
 
-        expect(result)
-            .toBe(261)
+        expect(result).toBe(261)
     })
 
     it('no operation improves the selection', (): void => {
@@ -17,8 +16,7 @@ describe('2897. Apply Operations on Array to Maximize Sum of Squares', (): void 
 
         const result: number = maxSum(nums, k)
 
-        expect(result)
-            .toBe(90)
+        expect(result).toBe(90)
     })
 
     it('single element', (): void => {
@@ -27,8 +25,7 @@ describe('2897. Apply Operations on Array to Maximize Sum of Squares', (): void 
 
         const result: number = maxSum(nums, k)
 
-        expect(result)
-            .toBe(25)
+        expect(result).toBe(25)
     })
 
     it('single pick collects every available bit position', (): void => {
@@ -37,8 +34,7 @@ describe('2897. Apply Operations on Array to Maximize Sum of Squares', (): void 
 
         const result: number = maxSum(nums, k)
 
-        expect(result)
-            .toBe(9)
+        expect(result).toBe(9)
     })
 
     it('all elements picked leaves leftover bits in the last element', (): void => {
@@ -47,8 +43,7 @@ describe('2897. Apply Operations on Array to Maximize Sum of Squares', (): void 
 
         const result: number = maxSum(nums, k)
 
-        expect(result)
-            .toBe(18)
+        expect(result).toBe(18)
     })
 
     it('identical powers of two merge into one value', (): void => {
@@ -57,8 +52,7 @@ describe('2897. Apply Operations on Array to Maximize Sum of Squares', (): void 
 
         const result: number = maxSum(nums, k)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('result is reduced by modulo for large values', (): void => {
@@ -67,7 +61,6 @@ describe('2897. Apply Operations on Array to Maximize Sum of Squares', (): void 
 
         const result: number = maxSum(nums, k)
 
-        expect(result)
-            .toBe(4900000)
+        expect(result).toBe(4900000)
     })
 })

@@ -1,4 +1,4 @@
-export {combinationSum}
+export { combinationSum }
 
 function combinationSum(candidates: number[], target: number): number[][] {
     const result: number[][] = []
@@ -9,7 +9,13 @@ function combinationSum(candidates: number[], target: number): number[][] {
     return result
 }
 
-function backtrack(start: number, remaining: number, result: number[][], combination: number[], candidates: number[]): void {
+function backtrack(
+    start: number,
+    remaining: number,
+    result: number[][],
+    combination: number[],
+    candidates: number[]
+): void {
     if (remaining === 0) {
         result.push([...combination])
         return

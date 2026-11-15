@@ -1,4 +1,4 @@
-export {maximumScore}
+export { maximumScore }
 
 function maximumScore(nums: number[], k: number): number {
     let maxScore: number = nums[k]
@@ -12,7 +12,10 @@ function maximumScore(nums: number[], k: number): number {
 
         if (canMoveLeft && canMoveRight) {
             const betterMoveRight: boolean = nums[right + 1] > nums[left - 1]
-            goodMin = Math.min(goodMin, nums[betterMoveRight ? ++right : --left])
+            goodMin = Math.min(
+                goodMin,
+                nums[betterMoveRight ? ++right : --left]
+            )
         } else {
             goodMin = Math.min(goodMin, nums[canMoveLeft ? --left : ++right])
         }

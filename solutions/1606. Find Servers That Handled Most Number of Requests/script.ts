@@ -16,18 +16,28 @@ const byFreeTime: (a: BusyServer, b: BusyServer) => number = (
     return a[1] - b[1]
 }
 
-function busiestServers(k: number, arrival: number[], load: number[]): number[] {
+function busiestServers(
+    k: number,
+    arrival: number[],
+    load: number[]
+): number[] {
     const available: PriorityQueue<number> = new PriorityQueue<number>(
         (a: number, b: number): number => a - b
     )
-    const busy: PriorityQueue<BusyServer> = new PriorityQueue<BusyServer>(byFreeTime)
+    const busy: PriorityQueue<BusyServer> = new PriorityQueue<BusyServer>(
+        byFreeTime
+    )
     const handledCounts: number[] = arrayOfZeros(k)
 
     for (let serverIndex: number = 0; serverIndex < k; serverIndex++) {
         available.enqueue(serverIndex)
     }
 
-    for (let requestIndex: number = 0; requestIndex < arrival.length; requestIndex++) {
+    for (
+        let requestIndex: number = 0;
+        requestIndex < arrival.length;
+        requestIndex++
+    ) {
         while (true) {
             const nextServer: BusyServer | undefined = busy.dequeue()
 
@@ -43,7 +53,8 @@ function busiestServers(k: number, arrival: number[], load: number[]): number[] 
             }
 
             const serverIndex: number = nextServer[1]
-            const cycleOffset: number = (((serverIndex - requestIndex) % k) + k) % k
+            const cycleOffset: number =
+                (((serverIndex - requestIndex) % k) + k) % k
 
             available.enqueue(requestIndex + cycleOffset)
         }

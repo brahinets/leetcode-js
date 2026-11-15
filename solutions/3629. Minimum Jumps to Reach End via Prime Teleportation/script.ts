@@ -90,7 +90,7 @@ function buildPrimeToIndices(numbers: number[]): Map<number, number[]> {
                 lastPrime = prime
             }
 
-            value = value / prime | 0
+            value = (value / prime) | 0
         }
     }
 
@@ -102,7 +102,11 @@ function buildSmallestPrimeFactor(): Int32Array {
 
     for (let prime: number = 2; prime < MAX_VALUE; prime++) {
         if (smallestPrimeFactor[prime] === 0) {
-            for (let multiple: number = prime; multiple < MAX_VALUE; multiple += prime) {
+            for (
+                let multiple: number = prime;
+                multiple < MAX_VALUE;
+                multiple += prime
+            ) {
                 if (smallestPrimeFactor[multiple] === 0) {
                     smallestPrimeFactor[multiple] = prime
                 }

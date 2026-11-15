@@ -1,4 +1,4 @@
-export {checkStraightLine}
+export { checkStraightLine }
 
 function checkStraightLine(coordinates: number[][]): boolean {
     if (coordinates.length <= 2) {

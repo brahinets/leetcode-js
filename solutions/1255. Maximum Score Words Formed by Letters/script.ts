@@ -1,8 +1,12 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {maxScoreWords}
+export { maxScoreWords }
 
-function maxScoreWords(words: string[], letters: string[], score: number[]): number {
+function maxScoreWords(
+    words: string[],
+    letters: string[],
+    score: number[]
+): number {
     let maxScore: number = 0
 
     for (const subset of subsets(words)) {

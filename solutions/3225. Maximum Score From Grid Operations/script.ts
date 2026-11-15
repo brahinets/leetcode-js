@@ -1,4 +1,4 @@
-import {arrayOf, matrixOf} from "../../common/array-factories"
+import { arrayOf, matrixOf } from '../../common/array-factories'
 
 export { maximumScore }
 
@@ -19,12 +19,20 @@ function buildColumnPrefix(grid: number[][], size: number): number[][] {
     return columnPrefix
 }
 
-function columnRangeSum(columnPrefix: number[][], column: number, fromRow: number, toRow: number): number {
+function columnRangeSum(
+    columnPrefix: number[][],
+    column: number,
+    fromRow: number,
+    toRow: number
+): number {
     if (fromRow > toRow || toRow < 0) {
         return 0
     }
 
-    return columnPrefix[column]![toRow]! - (fromRow > 0 ? columnPrefix[column]![fromRow - 1]! : 0)
+    return (
+        columnPrefix[column]![toRow]! -
+        (fromRow > 0 ? columnPrefix[column]![fromRow - 1]! : 0)
+    )
 }
 
 function maximumScore(grid: number[][]): number {
@@ -46,26 +54,49 @@ function maximumScore(grid: number[][]): number {
             prefixMax[0] = dp[0]![currentCut]!
 
             for (let previousCut = 1; previousCut <= size; previousCut++) {
-                prefixMax[previousCut] = Math.max(prefixMax[previousCut - 1]!, dp[previousCut]![currentCut]!)
+                prefixMax[previousCut] = Math.max(
+                    prefixMax[previousCut - 1]!,
+                    dp[previousCut]![currentCut]!
+                )
             }
 
             const suffixMaxG: number[] = arrayOf(NEGATIVE_INFINITY, size + 2)
 
             for (let previousCut = size; previousCut >= 0; previousCut--) {
                 const base = dp[previousCut]![currentCut]!
-                const value = base === NEGATIVE_INFINITY
-                    ? NEGATIVE_INFINITY
-                    : base + columnRangeSum(columnPrefix, column, currentCut, previousCut - 1)
+                const value =
+                    base === NEGATIVE_INFINITY
+                        ? NEGATIVE_INFINITY
+                        : base +
+                          columnRangeSum(
+                              columnPrefix,
+                              column,
+                              currentCut,
+                              previousCut - 1
+                          )
 
-                suffixMaxG[previousCut] = Math.max(value, suffixMaxG[previousCut + 1]!)
+                suffixMaxG[previousCut] = Math.max(
+                    value,
+                    suffixMaxG[previousCut + 1]!
+                )
             }
 
             for (let nextCut = 0; nextCut <= size; nextCut++) {
-                const caseA = prefixMax[nextCut]! === NEGATIVE_INFINITY
-                    ? NEGATIVE_INFINITY
-                    : prefixMax[nextCut]! + columnRangeSum(columnPrefix, column, currentCut, nextCut - 1)
+                const caseA =
+                    prefixMax[nextCut]! === NEGATIVE_INFINITY
+                        ? NEGATIVE_INFINITY
+                        : prefixMax[nextCut]! +
+                          columnRangeSum(
+                              columnPrefix,
+                              column,
+                              currentCut,
+                              nextCut - 1
+                          )
 
-                const caseB = nextCut < size ? suffixMaxG[nextCut + 1]! : NEGATIVE_INFINITY
+                const caseB =
+                    nextCut < size
+                        ? suffixMaxG[nextCut + 1]!
+                        : NEGATIVE_INFINITY
                 const best = Math.max(caseA, caseB)
 
                 if (best > nextDp[currentCut]![nextCut]!) {
@@ -87,7 +118,14 @@ function maximumScore(grid: number[][]): number {
                 continue
             }
 
-            const total = base + columnRangeSum(columnPrefix, size - 1, currentCut, previousCut - 1)
+            const total =
+                base +
+                columnRangeSum(
+                    columnPrefix,
+                    size - 1,
+                    currentCut,
+                    previousCut - 1
+                )
 
             if (total > answer) {
                 answer = total

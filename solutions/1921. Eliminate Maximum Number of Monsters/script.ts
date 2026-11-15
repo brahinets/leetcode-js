@@ -1,4 +1,4 @@
-export {eliminateMaximum}
+export { eliminateMaximum }
 
 function eliminateMaximum(dist: number[], speed: number[]): number {
     const arrivalTimes: number[] = dist

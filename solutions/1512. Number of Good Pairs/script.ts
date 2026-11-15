@@ -1,4 +1,4 @@
-export {numIdenticalPairs}
+export { numIdenticalPairs }
 
 function numIdenticalPairs(nums: number[]): number {
     let goodPairs: number = 0

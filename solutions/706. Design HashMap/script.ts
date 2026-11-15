@@ -1,4 +1,4 @@
-export {MyHashMap}
+export { MyHashMap }
 
 class MyHashMap {
     private readonly data: Array<number | undefined>

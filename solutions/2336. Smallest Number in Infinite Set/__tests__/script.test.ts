@@ -1,4 +1,4 @@
-import {SmallestInfiniteSet} from '../script'
+import { SmallestInfiniteSet } from '../script'
 
 describe('2336. Smallest Number in Infinite Set', (): void => {
     it('Test', (): void => {
@@ -26,6 +26,5 @@ describe('2336. Smallest Number in Infinite Set', (): void => {
 
         number = set.popSmallest()
         expect(number).toBe(5)
-
     })
 })

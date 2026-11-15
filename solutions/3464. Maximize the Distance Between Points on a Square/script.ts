@@ -16,10 +16,16 @@ function toPerimeterPosition(x: number, y: number, side: number): number {
     return 3 * side + (side - y)
 }
 
-function extendedPosition(positions: readonly number[], index: number, circumference: number): number {
+function extendedPosition(
+    positions: readonly number[],
+    index: number,
+    circumference: number
+): number {
     const length = positions.length
 
-    return index < length ? positions[index]! : positions[index - length]! + circumference
+    return index < length
+        ? positions[index]!
+        : positions[index - length]! + circumference
 }
 
 function firstIndexAtLeast(
@@ -27,7 +33,7 @@ function firstIndexAtLeast(
     target: number,
     low: number,
     high: number,
-    circumference: number,
+    circumference: number
 ): number {
     let left = low
     let right = high
@@ -49,7 +55,7 @@ function canSelectKPoints(
     positions: readonly number[],
     k: number,
     minimumDistance: number,
-    circumference: number,
+    circumference: number
 ): boolean {
     const length = positions.length
 
@@ -58,8 +64,16 @@ function canSelectKPoints(
         let isValid = true
 
         for (let count = 1; count < k; count++) {
-            const target = extendedPosition(positions, currentIndex, circumference) + minimumDistance
-            const nextIndex = firstIndexAtLeast(positions, target, currentIndex + 1, startIndex + length, circumference)
+            const target =
+                extendedPosition(positions, currentIndex, circumference) +
+                minimumDistance
+            const nextIndex = firstIndexAtLeast(
+                positions,
+                target,
+                currentIndex + 1,
+                startIndex + length,
+                circumference
+            )
 
             if (nextIndex >= startIndex + length) {
                 isValid = false
@@ -69,8 +83,12 @@ function canSelectKPoints(
             currentIndex = nextIndex
         }
 
-        if (isValid &&
-            extendedPosition(positions, currentIndex, circumference) + minimumDistance <= positions[startIndex]! + circumference) {
+        if (
+            isValid &&
+            extendedPosition(positions, currentIndex, circumference) +
+                minimumDistance <=
+                positions[startIndex]! + circumference
+        ) {
             return true
         }
     }
@@ -80,7 +98,9 @@ function canSelectKPoints(
 
 function maxDistance(side: number, points: number[][], k: number): number {
     const circumference = 4 * side
-    const positions: number[] = points.map(([x, y]: number[]): number => toPerimeterPosition(x!, y!, side))
+    const positions: number[] = points.map(([x, y]: number[]): number =>
+        toPerimeterPosition(x!, y!, side)
+    )
     positions.sort((first: number, second: number): number => first - second)
 
     let left = 0

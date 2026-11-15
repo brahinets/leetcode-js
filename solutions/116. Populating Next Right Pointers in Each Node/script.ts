@@ -1,6 +1,6 @@
-import {_Node as Node} from "../../common/_Node"
+import { _Node as Node } from '../../common/_Node'
 
-export {connect}
+export { connect }
 
 function connect(root: Node | null): Node | null {
     if (root === null) {

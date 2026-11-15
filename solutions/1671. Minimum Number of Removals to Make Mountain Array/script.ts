@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {minimumMountainRemovals}
+export { minimumMountainRemovals }
 
 function minimumMountainRemovals(nums: number[]): number {
     const lis: number[] = arrayOf(1, nums.length)

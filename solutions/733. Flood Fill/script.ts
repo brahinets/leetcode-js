@@ -1,6 +1,11 @@
-export {floodFill}
+export { floodFill }
 
-function floodFill(image: number[][], sr: number, sc: number, color: number): number[][] {
+function floodFill(
+    image: number[][],
+    sr: number,
+    sc: number,
+    color: number
+): number[][] {
     const startColor: number = image[sr][sc]
 
     if (startColor === color) {
@@ -10,7 +15,13 @@ function floodFill(image: number[][], sr: number, sc: number, color: number): nu
     return floodFills(image, sr, sc, color, startColor)
 }
 
-function floodFills(image: number[][], sr: number, sc: number, newColor: number, startColor: number): number[][] {
+function floodFills(
+    image: number[][],
+    sr: number,
+    sc: number,
+    newColor: number,
+    startColor: number
+): number[][] {
     if (sr < 0 || sc < 0 || sr >= image.length || sc >= image[0].length) {
         return image
     }

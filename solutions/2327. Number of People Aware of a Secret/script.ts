@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {peopleAwareOfSecret}
+export { peopleAwareOfSecret }
 
 const MOD: number = 1e9 + 7
 

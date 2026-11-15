@@ -1,4 +1,4 @@
-export {countFairPairs}
+export { countFairPairs }
 
 function countFairPairs(nums: number[], lower: number, upper: number): number {
     nums.sort((a: number, b: number): number => a - b)

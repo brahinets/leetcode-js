@@ -1,4 +1,4 @@
-export {checkValidCuts}
+export { checkValidCuts }
 
 function checkValidCuts(_n: number, rectangles: number[][]): boolean {
     return checkCuts(rectangles, 0) || checkCuts(rectangles, 1)

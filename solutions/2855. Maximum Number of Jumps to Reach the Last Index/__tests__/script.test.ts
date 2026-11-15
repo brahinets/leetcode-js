@@ -7,8 +7,7 @@ describe('2855. Maximum Number of Jumps to Reach the Last Index', (): void => {
 
         const result: number = maximumJumps(numbers, target)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('all consecutive jumps when target covers all adjacent differences', (): void => {
@@ -17,8 +16,7 @@ describe('2855. Maximum Number of Jumps to Reach the Last Index', (): void => {
 
         const result: number = maximumJumps(numbers, target)
 
-        expect(result)
-            .toBe(5)
+        expect(result).toBe(5)
     })
 
     it('no path when target is zero and all elements differ', (): void => {
@@ -27,8 +25,7 @@ describe('2855. Maximum Number of Jumps to Reach the Last Index', (): void => {
 
         const result: number = maximumJumps(numbers, target)
 
-        expect(result)
-            .toBe(-1)
+        expect(result).toBe(-1)
     })
 
     it('single jump on two equal elements with target zero', (): void => {
@@ -37,8 +34,7 @@ describe('2855. Maximum Number of Jumps to Reach the Last Index', (): void => {
 
         const result: number = maximumJumps(numbers, target)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('reaches last index by skipping unreachable middle element', (): void => {
@@ -47,8 +43,7 @@ describe('2855. Maximum Number of Jumps to Reach the Last Index', (): void => {
 
         const result: number = maximumJumps(numbers, target)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('unreachable last index when no chain of jumps connects start to end', (): void => {
@@ -57,7 +52,6 @@ describe('2855. Maximum Number of Jumps to Reach the Last Index', (): void => {
 
         const result: number = maximumJumps(numbers, target)
 
-        expect(result)
-            .toBe(-1)
+        expect(result).toBe(-1)
     })
 })

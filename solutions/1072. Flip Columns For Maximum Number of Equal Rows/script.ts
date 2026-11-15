@@ -1,4 +1,4 @@
-export {maxEqualRowsAfterFlips}
+export { maxEqualRowsAfterFlips }
 
 function maxEqualRowsAfterFlips(matrix: number[][]): number {
     const map: Map<string, number> = new Map<string, number>()

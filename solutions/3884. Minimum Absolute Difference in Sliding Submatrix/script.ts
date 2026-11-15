@@ -1,4 +1,4 @@
-import { matrixOfZeros } from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
 export { minAbsDiff }
 
@@ -11,23 +11,39 @@ function minAbsDiff(grid: number[][], k: number): number[][] {
 
     for (let row: number = 0; row < resultRows; row++) {
         for (let column: number = 0; column < resultColumns; column++) {
-            answer[row][column] = computeMinDiffInSubmatrix(grid, row, column, k)
+            answer[row][column] = computeMinDiffInSubmatrix(
+                grid,
+                row,
+                column,
+                k
+            )
         }
     }
 
     return answer
 }
 
-function computeMinDiffInSubmatrix(grid: number[][], startRow: number, startColumn: number, size: number): number {
+function computeMinDiffInSubmatrix(
+    grid: number[][],
+    startRow: number,
+    startColumn: number,
+    size: number
+): number {
     const values: Set<number> = new Set()
 
     for (let row: number = startRow; row < startRow + size; row++) {
-        for (let column: number = startColumn; column < startColumn + size; column++) {
+        for (
+            let column: number = startColumn;
+            column < startColumn + size;
+            column++
+        ) {
             values.add(grid[row][column])
         }
     }
 
-    const sorted: number[] = Array.from(values).sort((first: number, second: number): number => first - second)
+    const sorted: number[] = Array.from(values).sort(
+        (first: number, second: number): number => first - second
+    )
 
     if (sorted.length < 2) {
         return 0
@@ -40,7 +56,10 @@ function findMinConsecutiveDiff(sorted: number[]): number {
     let minimumDifference: number = Infinity
 
     for (let index: number = 1; index < sorted.length; index++) {
-        minimumDifference = Math.min(minimumDifference, sorted[index] - sorted[index - 1])
+        minimumDifference = Math.min(
+            minimumDifference,
+            sorted[index] - sorted[index - 1]
+        )
     }
 
     return minimumDifference

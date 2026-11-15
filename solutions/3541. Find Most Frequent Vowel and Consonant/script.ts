@@ -1,8 +1,8 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {maxFreqSum}
+export { maxFreqSum }
 
-const VOWELS: string = "aeiou"
+const VOWELS: string = 'aeiou'
 
 function maxFreqSum(s: string): number {
     const counts: Map<string, number> = count(s.split(''))

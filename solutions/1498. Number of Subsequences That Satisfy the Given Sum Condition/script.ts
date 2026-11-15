@@ -1,6 +1,6 @@
-import {binarySearch} from "../../common/array-utils"
+import { binarySearch } from '../../common/array-utils'
 
-export {numSubseq}
+export { numSubseq }
 
 const MOD: number = 1e9 + 7
 

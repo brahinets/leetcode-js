@@ -13,7 +13,9 @@ function maximumJumps(numbers: number[], target: number): number {
                 continue
             }
 
-            const difference: number = Math.abs(numbers[destination] - numbers[source])
+            const difference: number = Math.abs(
+                numbers[destination] - numbers[source]
+            )
 
             if (difference <= target) {
                 maximumJumpsTo[destination] = Math.max(

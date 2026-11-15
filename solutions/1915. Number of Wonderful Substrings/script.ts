@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {wonderfulSubstrings}
+export { wonderfulSubstrings }
 
 function wonderfulSubstrings(word: string): number {
     const start: string = 'a'

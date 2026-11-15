@@ -1,4 +1,4 @@
-import { _NodeRandom as _Node} from '../../common/_NodeRandom'
+import { _NodeRandom as _Node } from '../../common/_NodeRandom'
 
 export { copyRandomList }
 

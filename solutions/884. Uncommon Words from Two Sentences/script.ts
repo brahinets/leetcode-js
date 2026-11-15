@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {uncommonFromSentences}
+export { uncommonFromSentences }
 
 function uncommonFromSentences(s1: string, s2: string): string[] {
     const words1: string[] = s1.split(' ')

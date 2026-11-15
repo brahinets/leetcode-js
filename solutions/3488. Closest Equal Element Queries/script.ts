@@ -34,14 +34,26 @@ function solveQueries(numbers: number[], queries: number[]): number[] {
         const previousIndex: number = indices[(position - 1 + count) % count]
         const nextIndex: number = indices[(position + 1) % count]
 
-        const distanceToPrevious: number = circularDistance(queryIndex, previousIndex, length)
-        const distanceToNext: number = circularDistance(queryIndex, nextIndex, length)
+        const distanceToPrevious: number = circularDistance(
+            queryIndex,
+            previousIndex,
+            length
+        )
+        const distanceToNext: number = circularDistance(
+            queryIndex,
+            nextIndex,
+            length
+        )
 
         return Math.min(distanceToPrevious, distanceToNext)
     })
 }
 
-function circularDistance(indexA: number, indexB: number, length: number): number {
+function circularDistance(
+    indexA: number,
+    indexB: number,
+    length: number
+): number {
     const absoluteDistance: number = Math.abs(indexA - indexB)
     return Math.min(absoluteDistance, length - absoluteDistance)
 }

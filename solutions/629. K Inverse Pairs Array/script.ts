@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {kInversePairs}
+export { kInversePairs }
 
 const mod: number = 1e9 + 7
 
@@ -12,7 +12,11 @@ function kInversePairs(n: number, k: number): number {
         for (let pairs: number = 0; pairs <= k; pairs++) {
             const maxAllowedPairs: number = Math.min(pairs, size - 1)
 
-            for (let newValues: number = 0; newValues <= maxAllowedPairs; newValues++) {
+            for (
+                let newValues: number = 0;
+                newValues <= maxAllowedPairs;
+                newValues++
+            ) {
                 dp[size][pairs] += dp[size - 1][pairs - newValues]
                 dp[size][pairs] %= mod
             }

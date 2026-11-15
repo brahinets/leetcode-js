@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {removeNthFromEnd, ListNode}
+export { removeNthFromEnd, ListNode }
 
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     let slow: ListNode | null = head

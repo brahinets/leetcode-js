@@ -1,4 +1,4 @@
-export {isPowerOfThree}
+export { isPowerOfThree }
 
 export const MAX_ALLOWED_DEVIATION: number = 10 ** -10
 

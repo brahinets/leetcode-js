@@ -1,4 +1,4 @@
-export {openLock}
+export { openLock }
 
 function openLock(deadends: string[], target: string): number {
     const dead: Set<string> = new Set<string>(deadends)
@@ -9,7 +9,8 @@ function openLock(deadends: string[], target: string): number {
     const queue: [string, number][] = [['0000', 0]]
     const visited: Set<string> = new Set<string>(['0000'])
     while (queue.length > 0) {
-        const [currentCombination, currentDepth]: [string, number] = queue.shift()!
+        const [currentCombination, currentDepth]: [string, number] =
+            queue.shift()!
 
         if (currentCombination === target) {
             return currentDepth
@@ -17,8 +18,12 @@ function openLock(deadends: string[], target: string): number {
 
         for (let wheel: number = 0; wheel < 4; wheel++) {
             for (const turn of [-1, 1]) {
-                const newDigit: number = (Number(currentCombination[wheel]) + turn + 10) % 10
-                const newCombination: string = currentCombination.slice(0, wheel) + newDigit + currentCombination.slice(wheel + 1)
+                const newDigit: number =
+                    (Number(currentCombination[wheel]) + turn + 10) % 10
+                const newCombination: string =
+                    currentCombination.slice(0, wheel) +
+                    newDigit +
+                    currentCombination.slice(wheel + 1)
 
                 if (!visited.has(newCombination) && !dead.has(newCombination)) {
                     queue.push([newCombination, currentDepth + 1])

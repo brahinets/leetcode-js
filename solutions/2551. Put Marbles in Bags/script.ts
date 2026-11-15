@@ -1,15 +1,15 @@
-export {putMarbles}
+export { putMarbles }
 
 function putMarbles(weights: number[], k: number): number {
     if (weights.length < k) {
-        throw new Error("Not enough data")
+        throw new Error('Not enough data')
     }
 
     const pairWeights: number[] = collectWeights(weights)
 
     let answer: number = 0
     for (let i: number = 0; i < k - 1; ++i) {
-        answer += pairWeights[(weights.length - 1) - i - 1] - pairWeights[i]
+        answer += pairWeights[weights.length - 1 - i - 1] - pairWeights[i]
     }
 
     return answer

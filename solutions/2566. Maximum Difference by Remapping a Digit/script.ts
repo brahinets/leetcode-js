@@ -1,4 +1,4 @@
-export {minMaxDifference}
+export { minMaxDifference }
 
 function minMaxDifference(num: number): number {
     const digits: string[] = num.toString().split('')
@@ -7,11 +7,7 @@ function minMaxDifference(num: number): number {
     return maxNum - minNum
 }
 
-function remapDigits(
-    digits: string[],
-    from: string,
-    to: string
-): string[] {
+function remapDigits(digits: string[], from: string, to: string): string[] {
     return digits.map(function (d: string): string {
         if (d === from) {
             return to
@@ -22,7 +18,9 @@ function remapDigits(
 }
 
 function getMaxNum(digits: string[]): number {
-    const firstNonNine: string | undefined = digits.find(function (d: string): boolean {
+    const firstNonNine: string | undefined = digits.find(function (
+        d: string
+    ): boolean {
         return d !== '9'
     })
     if (firstNonNine !== undefined) {

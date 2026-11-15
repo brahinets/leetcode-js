@@ -1,4 +1,4 @@
-export {winnerOfGame}
+export { winnerOfGame }
 
 function winnerOfGame(colors: string): boolean {
     let countA: number = 0

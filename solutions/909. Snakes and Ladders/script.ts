@@ -1,4 +1,4 @@
-export {snakesAndLadders}
+export { snakesAndLadders }
 
 function snakesAndLadders(board: number[][]): number {
     const visited: Set<number> = new Set<number>()
@@ -17,7 +17,10 @@ function snakesAndLadders(board: number[][]): number {
                 continue
             }
 
-            const [row, col]: [number, number] = getCoordinates(nextSquare, board.length)
+            const [row, col]: [number, number] = getCoordinates(
+                nextSquare,
+                board.length
+            )
             if (board[row][col] !== -1) {
                 nextSquare = board[row][col]
             }

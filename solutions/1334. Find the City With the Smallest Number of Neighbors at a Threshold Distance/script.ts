@@ -1,13 +1,21 @@
-import {arrayOfZeros, matrixOf} from "../../common/array-factories"
+import { arrayOfZeros, matrixOf } from '../../common/array-factories'
 
-export {findTheCity}
+export { findTheCity }
 
-function findTheCity(n: number, edges: number[][], distanceThreshold: number): number {
+function findTheCity(
+    n: number,
+    edges: number[][],
+    distanceThreshold: number
+): number {
     const dist: number[][] = initializeDistanceMatrix(n, edges)
 
     floydWarshall(n, dist)
 
-    const reachableCitiesCount: number[] = countReachableCities(n, dist, distanceThreshold)
+    const reachableCitiesCount: number[] = countReachableCities(
+        n,
+        dist,
+        distanceThreshold
+    )
 
     return findCityWithFewestReachable(n, reachableCitiesCount)
 }
@@ -37,7 +45,11 @@ function floydWarshall(n: number, dist: number[][]): void {
     }
 }
 
-function countReachableCities(n: number, dist: number[][], distanceThreshold: number): number[] {
+function countReachableCities(
+    n: number,
+    dist: number[][],
+    distanceThreshold: number
+): number[] {
     const reachableCitiesCount: number[] = arrayOfZeros(n)
 
     for (let i: number = 0; i < n; i++) {
@@ -51,7 +63,10 @@ function countReachableCities(n: number, dist: number[][], distanceThreshold: nu
     return reachableCitiesCount
 }
 
-function findCityWithFewestReachable(n: number, reachableCitiesCount: number[]): number {
+function findCityWithFewestReachable(
+    n: number,
+    reachableCitiesCount: number[]
+): number {
     let city: number = 0
     let minCount: number = n
 

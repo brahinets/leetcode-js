@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {minimumTotalDistance}
+export { minimumTotalDistance }
 
 function minimumTotalDistance(robot: number[], factory: number[][]): number {
     robot.sort((a: number, b: number): number => a - b)

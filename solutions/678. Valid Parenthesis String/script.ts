@@ -1,4 +1,4 @@
-export {checkValidString}
+export { checkValidString }
 
 function checkValidString(s: string): boolean {
     let minPossibleOpen: number = 0

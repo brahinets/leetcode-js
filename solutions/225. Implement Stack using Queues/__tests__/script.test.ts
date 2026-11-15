@@ -1,4 +1,4 @@
-import {MyStack} from "../script"
+import { MyStack } from '../script'
 
 describe('225. Implement Stack using Queues', (): void => {
     it('Test ', (): void => {
@@ -21,10 +21,8 @@ describe('225. Implement Stack using Queues', (): void => {
         const empty2: boolean = myStack.empty()
         expect(empty2).toBe(true)
 
-        expect(() => myStack.top())
-            .toThrow("Illegal state")
+        expect(() => myStack.top()).toThrow('Illegal state')
 
-        expect(() => myStack.pop())
-            .toThrow("Illegal state")
+        expect(() => myStack.pop()).toThrow('Illegal state')
     })
 })

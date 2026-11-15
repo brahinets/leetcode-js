@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {trap}
+export { trap }
 
 function trap(height: number[]): number {
     const leftBorderByPosition: number[] = getLeftBorderByPosition(height)
@@ -8,7 +8,10 @@ function trap(height: number[]): number {
 
     let water: number = 0
     for (let i: number = 0; i < height.length; i++) {
-        const minHeight: number = Math.min(leftBorderByPosition[i], rightBorderByPosition[i])
+        const minHeight: number = Math.min(
+            leftBorderByPosition[i],
+            rightBorderByPosition[i]
+        )
 
         if (minHeight > height[i]) {
             water += minHeight - height[i]

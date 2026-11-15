@@ -1,11 +1,6 @@
-export {merge}
+export { merge }
 
-function merge(
-    nums1: number[],
-    m: number,
-    nums2: number[],
-    n: number
-): void {
+function merge(nums1: number[], m: number, nums2: number[], n: number): void {
     let targetIndex: number = m - 1
     let sourceIndex: number = n - 1
     let mergeIndex: number = m + n - 1

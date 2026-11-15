@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, kthGrammar}
+export { TreeNode, kthGrammar }
 
 function kthGrammar(n: number, k: number): number {
     if (n === 1) {

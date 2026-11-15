@@ -1,6 +1,6 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {sumSubarrayMins}
+export { sumSubarrayMins }
 
 const mod: number = 1e9 + 7
 

@@ -1,4 +1,4 @@
-export {carFleet}
+export { carFleet }
 
 function carFleet(target: number, position: number[], speed: number[]): number {
     const participants: Participant[] = collectParticipants(position, speed)
@@ -6,7 +6,8 @@ function carFleet(target: number, position: number[], speed: number[]): number {
 
     let maxTime: number = 0
     for (const participant of participants) {
-        const timeToTarget: number = (target - participant.position) / participant.speed
+        const timeToTarget: number =
+            (target - participant.position) / participant.speed
 
         if (timeToTarget > maxTime) {
             fleet++
@@ -17,11 +18,15 @@ function carFleet(target: number, position: number[], speed: number[]): number {
     return fleet
 }
 
-function collectParticipants(position: number[], speed: number[]): Participant[] {
+function collectParticipants(
+    position: number[],
+    speed: number[]
+): Participant[] {
     return position
         .map((_: number, i: number) => new Participant(position[i], speed[i]))
-        .sort((first: Participant, second: Participant): number =>
-            second.position - first.position
+        .sort(
+            (first: Participant, second: Participant): number =>
+                second.position - first.position
         )
 }
 

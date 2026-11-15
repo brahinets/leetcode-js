@@ -1,4 +1,4 @@
-export {subsetsWithDup}
+export { subsetsWithDup }
 
 function subsetsWithDup(nums: number[]): number[][] {
     nums.sort((a: number, b: number): number => a - b)

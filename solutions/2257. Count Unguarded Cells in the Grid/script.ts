@@ -1,13 +1,18 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {countUnguarded}
+export { countUnguarded }
 
 const UNGUARDED: number = 0
 const GUARDED: number = 1
 const GUARD: number = 2
 const WALL: number = 3
 
-function countUnguarded(m: number, n: number, guards: number[][], walls: number[][]): number {
+function countUnguarded(
+    m: number,
+    n: number,
+    guards: number[][],
+    walls: number[][]
+): number {
     const grid: number[][] = matrixOfZeros(m, n)
 
     for (let guard of guards) {

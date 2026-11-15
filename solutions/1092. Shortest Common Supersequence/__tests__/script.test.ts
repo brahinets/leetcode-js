@@ -1,13 +1,13 @@
-import {shortestCommonSupersequence} from '../script'
+import { shortestCommonSupersequence } from '../script'
 
 describe('1092. Shortest Common Supersequence', (): void => {
     it('Complex string', (): void => {
-        expect(shortestCommonSupersequence("abac", "cab"))
-            .toBe("cabac")
+        expect(shortestCommonSupersequence('abac', 'cab')).toBe('cabac')
     })
 
     it('Just string', (): void => {
-        expect(shortestCommonSupersequence("aaaaaaaa", "aaaaaaaa"))
-            .toBe("aaaaaaaa")
+        expect(shortestCommonSupersequence('aaaaaaaa', 'aaaaaaaa')).toBe(
+            'aaaaaaaa'
+        )
     })
 })

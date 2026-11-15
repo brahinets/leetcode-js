@@ -2,7 +2,8 @@
 
 ## Easy
 
-There are `n` houses evenly lined in a row. Each house is painted with one of the given colors in the integer array `colors` where `colors[i]` is the color of the `i`th house.
+There are `n` houses evenly lined in a row. Each house is painted with one of the given colors in the integer array
+`colors` where `colors[i]` is the color of the `i`th house.
 
 Return the **maximum distance** between **two** houses with **different** colors.
 

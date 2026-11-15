@@ -1,6 +1,8 @@
-export {solution}
+export { solution }
 
-function solution(isBadVersion: (version: number) => boolean): (n: number) => number {
+function solution(
+    isBadVersion: (version: number) => boolean
+): (n: number) => number {
     return function (n: number): number {
         let left: number = 0
         let right: number = n

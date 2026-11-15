@@ -1,4 +1,4 @@
-export {maximizeSquareHoleArea}
+export { maximizeSquareHoleArea }
 
 function maximizeSquareHoleArea(
     _n: number,
@@ -12,7 +12,8 @@ function maximizeSquareHoleArea(
     const maxConsecutiveHorizontal: number = maxConsecutiveRun(sortedHorizontal)
     const maxConsecutiveVertical: number = maxConsecutiveRun(sortedVertical)
 
-    const sideLength: number = Math.min(maxConsecutiveHorizontal, maxConsecutiveVertical) + 1
+    const sideLength: number =
+        Math.min(maxConsecutiveHorizontal, maxConsecutiveVertical) + 1
 
     return sideLength * sideLength
 }

@@ -1,4 +1,4 @@
-export {maxScoreSightseeingPair}
+export { maxScoreSightseeingPair }
 
 function maxScoreSightseeingPair(values: number[]): number {
     let maxScore: number = 0

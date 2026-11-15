@@ -1,4 +1,4 @@
-export {partitionLabels}
+export { partitionLabels }
 
 function partitionLabels(s: string): number[] {
     let lastIndices: Map<string, number> = new Map<string, number>()

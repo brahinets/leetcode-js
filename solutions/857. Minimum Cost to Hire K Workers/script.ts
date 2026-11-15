@@ -1,6 +1,10 @@
-export {mincostToHireWorkers}
+export { mincostToHireWorkers }
 
-function mincostToHireWorkers(quality: number[], wage: number[], k: number): number {
+function mincostToHireWorkers(
+    quality: number[],
+    wage: number[],
+    k: number
+): number {
     const workers: Worker[] = collectWorkers(quality, wage)
 
     const pool: number[] = []

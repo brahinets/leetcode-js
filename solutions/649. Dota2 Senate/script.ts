@@ -1,20 +1,27 @@
-export {predictPartyVictory}
+export { predictPartyVictory }
 
-const BAN: string = "BAN"
-const RADIANT= "R"
-const DIRE= "D"
+const BAN: string = 'BAN'
+const RADIANT = 'R'
+const DIRE = 'D'
 
 function canVote(member: string): boolean {
     return member !== BAN
 }
 
 function hasVoters(members: string[]): boolean {
-    const hasRadiant: boolean = members.find((member: string): boolean => member === RADIANT) !== undefined
-    const hasDire: boolean = members.find((member: string): boolean => member === DIRE) !== undefined
+    const hasRadiant: boolean =
+        members.find((member: string): boolean => member === RADIANT) !==
+        undefined
+    const hasDire: boolean =
+        members.find((member: string): boolean => member === DIRE) !== undefined
     return hasRadiant && hasDire
 }
 
-function findNextOpponentToBan(attackerIndex: number, members: string[], toBan: "R" | "D"):number {
+function findNextOpponentToBan(
+    attackerIndex: number,
+    members: string[],
+    toBan: 'R' | 'D'
+): number {
     let next: number = attackerIndex + 1
 
     while (members[next] !== toBan) {
@@ -25,23 +32,30 @@ function findNextOpponentToBan(attackerIndex: number, members: string[], toBan: 
 }
 
 function predictPartyVictory(senate: string): string {
-    const members: string[] = senate.split("")
+    const members: string[] = senate.split('')
     const roundCounter: RoundCounter = new RoundCounter(members.length)
 
     while (hasVoters(members)) {
         const member: string = members[roundCounter.get()]
-        const toBan: "R" | "D" = member === RADIANT ? DIRE : RADIANT
+        const toBan: 'R' | 'D' = member === RADIANT ? DIRE : RADIANT
 
         if (canVote(member)) {
-            const opponentToBan: number = findNextOpponentToBan(roundCounter.next(), members, toBan)
+            const opponentToBan: number = findNextOpponentToBan(
+                roundCounter.next(),
+                members,
+                toBan
+            )
             members[opponentToBan] = BAN
         }
 
         roundCounter.increment()
     }
 
-    return members.filter((e: string): boolean => e !== BAN)
-        .find((e: string): boolean => e === RADIANT) === RADIANT ? "Radiant" : "Dire"
+    return members
+        .filter((e: string): boolean => e !== BAN)
+        .find((e: string): boolean => e === RADIANT) === RADIANT
+        ? 'Radiant'
+        : 'Dire'
 }
 
 class RoundCounter {

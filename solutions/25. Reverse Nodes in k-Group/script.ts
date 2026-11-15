@@ -1,8 +1,11 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {reverseKGroup}
+export { reverseKGroup }
 
-function reverseKGroup(head: ListNode | null, groupSize: number): ListNode | null {
+function reverseKGroup(
+    head: ListNode | null,
+    groupSize: number
+): ListNode | null {
     let currentNode: ListNode | null = head
     let groupStartNode: ListNode | null = head
     const groupValues: number[] = []

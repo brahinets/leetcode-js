@@ -1,4 +1,4 @@
-export {getDescentPeriods}
+export { getDescentPeriods }
 
 function getDescentPeriods(prices: number[]): number {
     let totalPeriods: number = 0

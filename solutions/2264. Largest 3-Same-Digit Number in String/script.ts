@@ -1,14 +1,15 @@
-export {largestGoodInteger}
+export { largestGoodInteger }
 
 function largestGoodInteger(num: string): string {
-    const nums: number[] = findAllGoodNumbers(num)
-        .sort((a: number, b: number): number => b - a)
+    const nums: number[] = findAllGoodNumbers(num).sort(
+        (a: number, b: number): number => b - a
+    )
 
     if (nums.length === 0) {
-        return ""
+        return ''
     }
 
-    return nums[0].toString().padStart(3, "0")
+    return nums[0].toString().padStart(3, '0')
 }
 
 function findAllGoodNumbers(num: string): number[] {

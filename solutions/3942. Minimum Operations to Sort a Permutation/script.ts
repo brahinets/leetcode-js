@@ -12,7 +12,8 @@ function minOperations(numbers: number[]): number {
     }
 
     if (isDescendingRotation(numbers, maximumPosition)) {
-        const costWithReversal: number = 1 + Math.min(maximumPosition, length - maximumPosition)
+        const costWithReversal: number =
+            1 + Math.min(maximumPosition, length - maximumPosition)
         if (minimumOperations === -1 || costWithReversal < minimumOperations) {
             minimumOperations = costWithReversal
         }

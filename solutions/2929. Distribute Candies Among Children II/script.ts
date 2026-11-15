@@ -1,9 +1,13 @@
-export {distributeCandies}
+export { distributeCandies }
 
 function distributeCandies(n: number, limit: number): number {
     let ways: number = 0
 
-    for (let candiesChild1: number = 0; candiesChild1 <= Math.min(n, limit); candiesChild1++) {
+    for (
+        let candiesChild1: number = 0;
+        candiesChild1 <= Math.min(n, limit);
+        candiesChild1++
+    ) {
         const remainingCandies: number = n - candiesChild1
 
         const minCandiesChild2: number = Math.max(0, remainingCandies - limit)

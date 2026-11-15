@@ -1,10 +1,10 @@
-export {longestContinuousSubstring}
+export { longestContinuousSubstring }
 
 function longestContinuousSubstring(s: string): number {
     let maxLength: number = 1
     let currentLength: number = 1
 
-    for (let i:number = 1; i < s.length; i++) {
+    for (let i: number = 1; i < s.length; i++) {
         if (s.charCodeAt(i) === s.charCodeAt(i - 1) + 1) {
             currentLength++
         } else {

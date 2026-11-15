@@ -1,4 +1,4 @@
-export {findKDistantIndices}
+export { findKDistantIndices }
 
 function findKDistantIndices(nums: number[], key: number, k: number): number[] {
     const kDistantIndices: number[] = []

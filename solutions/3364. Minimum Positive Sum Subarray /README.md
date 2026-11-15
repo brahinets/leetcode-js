@@ -1,4 +1,4 @@
-# 3364. Minimum Positive Sum Subarray 
+# 3364. Minimum Positive Sum Subarray
 
 ## Easy
 

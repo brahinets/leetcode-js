@@ -6,8 +6,7 @@ describe('1406. Stone Game III', (): void => {
 
         const result: string = stoneGameIII(piles)
 
-        expect(result)
-            .toBe('Bob')
+        expect(result).toBe('Bob')
     })
 
     it('alice takes all three piles to avoid the trailing negative pile', (): void => {
@@ -15,8 +14,7 @@ describe('1406. Stone Game III', (): void => {
 
         const result: string = stoneGameIII(piles)
 
-        expect(result)
-            .toBe('Alice')
+        expect(result).toBe('Alice')
     })
 
     it('tie when alice takes the first three piles', (): void => {
@@ -24,8 +22,7 @@ describe('1406. Stone Game III', (): void => {
 
         const result: string = stoneGameIII(piles)
 
-        expect(result)
-            .toBe('Tie')
+        expect(result).toBe('Tie')
     })
 
     it('single pile taken entirely by alice', (): void => {
@@ -33,8 +30,7 @@ describe('1406. Stone Game III', (): void => {
 
         const result: string = stoneGameIII(piles)
 
-        expect(result)
-            .toBe('Alice')
+        expect(result).toBe('Alice')
     })
 
     it('alice must plan three moves ahead', (): void => {
@@ -42,7 +38,6 @@ describe('1406. Stone Game III', (): void => {
 
         const result: string = stoneGameIII(piles)
 
-        expect(result)
-            .toBe('Alice')
+        expect(result).toBe('Alice')
     })
 })

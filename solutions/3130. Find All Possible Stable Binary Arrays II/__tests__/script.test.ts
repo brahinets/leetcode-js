@@ -1,7 +1,6 @@
 import { numberOfStableArrays } from '../script'
 
 describe('3130. Find All Possible Stable Binary Arrays II', (): void => {
-
     it('counts both orderings when limit allows any placement', (): void => {
         expect(numberOfStableArrays(1, 1, 2)).toBe(2)
     })

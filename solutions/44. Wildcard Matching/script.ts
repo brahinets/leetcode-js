@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {isMatch}
+export { isMatch }
 
 function isMatch(s: string, p: string): boolean {
     const dp: boolean[][] = matrixOf(false, s.length + 1, p.length + 1)

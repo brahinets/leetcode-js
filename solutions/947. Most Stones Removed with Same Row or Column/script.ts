@@ -1,12 +1,15 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {removeStones}
+export { removeStones }
 
 function removeStones(stones: number[][]): number {
     const adjacency: number[][] = arrayOf([], stones.length)
     for (let i: number = 0; i < stones.length; i++) {
         for (let j: number = i + 1; j < stones.length; j++) {
-            if (stones[i][0] === stones[j][0] || stones[i][1] === stones[j][1]) {
+            if (
+                stones[i][0] === stones[j][0] ||
+                stones[i][1] === stones[j][1]
+            ) {
                 adjacency[i].push(j)
                 adjacency[j].push(i)
             }
@@ -25,7 +28,11 @@ function removeStones(stones: number[][]): number {
     return stones.length - numOfConnectedComponents
 }
 
-function dfs(adjacencyList: number[][], visited: boolean[], stone: number): void {
+function dfs(
+    adjacencyList: number[][],
+    visited: boolean[],
+    stone: number
+): void {
     visited[stone] = true
 
     for (const neighbor of adjacencyList[stone]) {
@@ -34,4 +41,3 @@ function dfs(adjacencyList: number[][], visited: boolean[], stone: number): void
         }
     }
 }
-

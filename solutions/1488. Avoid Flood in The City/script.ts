@@ -1,4 +1,4 @@
-export {avoidFlood}
+export { avoidFlood }
 
 function avoidFlood(rains: number[]): number[] {
     const result: number[] = []

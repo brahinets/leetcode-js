@@ -17,4 +17,4 @@ the answer fits in a 32-bit integer.
 ### Constraints:
 
 - `1 <= s.length <= 100`
-- `s` contains only digits and may contain leading zero(s).
+- `s` contains only digits and may contain leading zero (s).

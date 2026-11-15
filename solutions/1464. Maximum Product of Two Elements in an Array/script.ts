@@ -1,4 +1,4 @@
-export {maxProduct}
+export { maxProduct }
 
 function maxProduct(nums: number[]): number {
     nums = nums.sort((a: number, b: number): number => b - a)

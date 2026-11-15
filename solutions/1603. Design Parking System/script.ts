@@ -1,5 +1,4 @@
-export {ParkingSystem}
-
+export { ParkingSystem }
 
 enum CarType {
     SmallCar = 1,
@@ -8,7 +7,6 @@ enum CarType {
 }
 
 class ParkingSystem {
-
     private capacity: Map<CarType, number>
 
     constructor(small: number, medium: number, big: number) {
@@ -30,6 +28,6 @@ class ParkingSystem {
             return true
         }
 
-        throw new Error("Unsupported car type provided")
+        throw new Error('Unsupported car type provided')
     }
 }

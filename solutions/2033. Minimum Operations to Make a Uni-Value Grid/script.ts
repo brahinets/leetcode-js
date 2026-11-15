@@ -1,9 +1,13 @@
-export {minOperations}
+export { minOperations }
 
 function minOperations(grid: number[][], x: number): number {
     const values: number[] = []
     for (let rowIndex: number = 0; rowIndex < grid.length; rowIndex++) {
-        for (let columnIndex: number = 0; columnIndex < grid[0].length; columnIndex++) {
+        for (
+            let columnIndex: number = 0;
+            columnIndex < grid[0].length;
+            columnIndex++
+        ) {
             values.push(grid[rowIndex][columnIndex])
         }
     }

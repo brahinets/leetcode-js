@@ -1,4 +1,4 @@
-export {minimumOperations}
+export { minimumOperations }
 
 function minimumOperations(numbers: number[]): number {
     let totalOperations: number = 0

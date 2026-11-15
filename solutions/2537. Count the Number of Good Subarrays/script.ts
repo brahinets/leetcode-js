@@ -1,4 +1,4 @@
-export {countGood}
+export { countGood }
 
 function countGood(nums: number[], k: number): number {
     const countMap: Map<number, number> = new Map<number, number>()

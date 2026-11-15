@@ -1,4 +1,4 @@
-export {setZeroes}
+export { setZeroes }
 
 function setZeroes(matrix: number[][]): void {
     let firstRowZero: boolean = false

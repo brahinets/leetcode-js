@@ -1,4 +1,4 @@
-export {longestMonotonicSubarray}
+export { longestMonotonicSubarray }
 
 function longestMonotonicSubarray(nums: number[]): number {
     let max: number = 1

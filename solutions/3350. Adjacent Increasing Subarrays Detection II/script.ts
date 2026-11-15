@@ -1,4 +1,4 @@
-export {maxIncreasingSubarrays}
+export { maxIncreasingSubarrays }
 
 function maxIncreasingSubarrays(nums: number[]): number {
     let currentLen: number = 1

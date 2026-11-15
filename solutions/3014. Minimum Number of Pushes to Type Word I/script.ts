@@ -1,4 +1,4 @@
-export {minimumPushes}
+export { minimumPushes }
 
 const KEYS_COUNT: number = 8
 

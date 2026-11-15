@@ -1,4 +1,4 @@
-# 69. Sqrt(x)
+# 69. Sqrt (x)
 
 ## Easy
 

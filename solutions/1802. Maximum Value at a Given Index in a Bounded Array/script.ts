@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {maxValue}
+export { maxValue }
 
 function maxValue(n: number, index: number, maxSum: number): number {
     let nums: number[] = arrayOf(1, n)

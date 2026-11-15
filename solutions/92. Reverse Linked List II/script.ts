@@ -1,8 +1,12 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {reverseBetween, ListNode}
+export { reverseBetween, ListNode }
 
-function reverseBetween(head: ListNode | null, left: number, right: number): ListNode | null {
+function reverseBetween(
+    head: ListNode | null,
+    left: number,
+    right: number
+): ListNode | null {
     if (head === null || left === right) {
         return head
     }

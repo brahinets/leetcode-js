@@ -1,12 +1,14 @@
-import {PriorityQueue} from "../../common/PriorityQueue"
-import {arrayOfZeros} from "../../common/array-factories"
+import { PriorityQueue } from '../../common/PriorityQueue'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maxRemoval}
+export { maxRemoval }
 
 function maxRemoval(nums: number[], queries: number[][]): number {
     queries.sort((a: number[], b: number[]): number => a[0] - b[0])
 
-    const heap: PriorityQueue<number> = new PriorityQueue<number>((a: number, b: number): number => b - a)
+    const heap: PriorityQueue<number> = new PriorityQueue<number>(
+        (a: number, b: number): number => b - a
+    )
 
     const deltaArray: number[] = arrayOfZeros(nums.length + 1)
     let operations: number = 0

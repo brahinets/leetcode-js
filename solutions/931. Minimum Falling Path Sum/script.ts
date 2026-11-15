@@ -1,4 +1,4 @@
-export {minFallingPathSum}
+export { minFallingPathSum }
 
 function minFallingPathSum(matrix: number[][]): number {
     let maxBefore: number[] = matrix[0]

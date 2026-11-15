@@ -36,8 +36,7 @@ function uniquePaths(grid: number[][]): number {
                 'down'
             )
 
-            pathCounts[row][column] =
-                (rightPaths + downPaths) % PATH_MODULUS
+            pathCounts[row][column] = (rightPaths + downPaths) % PATH_MODULUS
         }
     }
 

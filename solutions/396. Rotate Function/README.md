@@ -4,7 +4,8 @@
 
 You are given an integer array `nums` of length `n`.
 
-Assume `Bk` to be an array obtained by rotating `nums` by `k` positions clock-wise. We define the rotation function `F` on `nums` as follows:
+Assume `Bk` to be an array obtained by rotating `nums` by `k` positions clock-wise. We define the rotation function `F`
+on `nums` as follows:
 
 `F(k) = 0 * Bk[0] + 1 * Bk[1] + 2 * Bk[2] + ... + (n - 1) * Bk[n - 1]`
 

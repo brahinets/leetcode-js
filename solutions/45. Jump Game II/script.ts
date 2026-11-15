@@ -1,4 +1,4 @@
-export {jump}
+export { jump }
 
 function jump(nums: number[]): number {
     let jumps: number = 0

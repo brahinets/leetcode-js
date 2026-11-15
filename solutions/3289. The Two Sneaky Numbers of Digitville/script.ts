@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {getSneakyNumbers}
+export { getSneakyNumbers }
 
 function getSneakyNumbers(nums: number[]): number[] {
     const numCount: Map<number, number> = count(nums)

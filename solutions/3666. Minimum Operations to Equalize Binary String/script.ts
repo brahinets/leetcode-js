@@ -1,4 +1,4 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
 export { minOperations }
 
@@ -15,7 +15,9 @@ function minOperations(s: string, k: number): number {
         return 0
     }
 
-    const parent: number[] = arrayOfZeros(n + 5).map((_: number, i: number): number => i)
+    const parent: number[] = arrayOfZeros(n + 5).map(
+        (_: number, i: number): number => i
+    )
     parent[zeros] = zeros + 2
 
     let queue: number[] = [zeros]

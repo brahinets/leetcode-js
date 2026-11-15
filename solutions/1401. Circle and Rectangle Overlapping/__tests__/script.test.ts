@@ -10,10 +10,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 3
         const y2: number = 1
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('rectangle is entirely below the circle', (): void => {
@@ -25,10 +32,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 2
         const y2: number = -1
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(false)
+        expect(result).toBe(false)
     })
 
     it('circle center sits on a rectangle corner', (): void => {
@@ -40,10 +54,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 0
         const y2: number = 1
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('circle center is inside the rectangle', (): void => {
@@ -55,10 +76,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 10
         const y2: number = 10
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('rectangle is entirely enclosed by the circle', (): void => {
@@ -70,10 +98,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 1
         const y2: number = 1
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('circle and rectangle are far apart', (): void => {
@@ -85,10 +120,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 20
         const y2: number = 20
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(false)
+        expect(result).toBe(false)
     })
 
     it('closest point is a rectangle corner exactly one radius away', (): void => {
@@ -100,10 +142,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 10
         const y2: number = 10
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('closest point is a rectangle corner farther than the radius', (): void => {
@@ -115,10 +164,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 10
         const y2: number = 10
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(false)
+        expect(result).toBe(false)
     })
 
     it('closest point lies on a rectangle edge exactly one radius away', (): void => {
@@ -130,10 +186,17 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 5
         const y2: number = 10
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('maximum coordinate magnitudes at the limits of the constraints', (): void => {
@@ -145,9 +208,16 @@ describe('1401. Circle and Rectangle Overlapping', (): void => {
         const x2: number = 10000
         const y2: number = 10000
 
-        const result: boolean = checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)
+        const result: boolean = checkOverlap(
+            radius,
+            xCenter,
+            yCenter,
+            x1,
+            y1,
+            x2,
+            y2
+        )
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 })

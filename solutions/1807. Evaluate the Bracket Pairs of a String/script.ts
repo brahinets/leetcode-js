@@ -1,4 +1,4 @@
-export {evaluate}
+export { evaluate }
 
 const UNKNOWN_VALUE: string = '?'
 

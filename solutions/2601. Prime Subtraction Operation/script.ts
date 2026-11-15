@@ -1,4 +1,4 @@
-export {primeSubOperation}
+export { primeSubOperation }
 
 function primeSubOperation(nums: number[]): boolean {
     for (let i: number = 0; i < nums.length; i++) {
@@ -27,7 +27,6 @@ function primeSubOperation(nums: number[]): boolean {
 
     return true
 }
-
 
 function isPrime(number: number): boolean {
     if (number < 2) {

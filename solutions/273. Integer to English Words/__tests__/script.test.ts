@@ -1,38 +1,35 @@
-import {numberToWords} from '../script'
+import { numberToWords } from '../script'
 
 describe('273. Integer to English Words', (): void => {
     it('Unsupported', (): void => {
-        expect(() => numberToWords(-1))
-            .toThrow("Unsupported number: -1")
+        expect(() => numberToWords(-1)).toThrow('Unsupported number: -1')
     })
 
     it('Zero', (): void => {
-        expect(numberToWords(0))
-            .toBe("Zero")
+        expect(numberToWords(0)).toBe('Zero')
     })
 
     it('Singular', (): void => {
-        expect(numberToWords(2))
-            .toBe("Two")
+        expect(numberToWords(2)).toBe('Two')
     })
 
     it('Decimals', (): void => {
-        expect(numberToWords(12))
-            .toBe("Twelve")
+        expect(numberToWords(12)).toBe('Twelve')
     })
 
     it('Hundreds', (): void => {
-        expect(numberToWords(123))
-            .toBe("One Hundred Twenty Three")
+        expect(numberToWords(123)).toBe('One Hundred Twenty Three')
     })
 
     it('Thousands', (): void => {
-        expect(numberToWords(12345))
-            .toBe("Twelve Thousand Three Hundred Forty Five")
+        expect(numberToWords(12345)).toBe(
+            'Twelve Thousand Three Hundred Forty Five'
+        )
     })
 
     it('Millions', (): void => {
-        expect(numberToWords(1234567))
-            .toBe("One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven")
+        expect(numberToWords(1234567)).toBe(
+            'One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven'
+        )
     })
 })

@@ -1,4 +1,4 @@
-import {stoneGameVIII} from '../script'
+import { stoneGameVIII } from '../script'
 
 describe('1872. Stone Game VIII', (): void => {
     it('alternating sign stones require weighing partial merges', (): void => {

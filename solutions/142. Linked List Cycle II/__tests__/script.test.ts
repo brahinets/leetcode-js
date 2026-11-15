@@ -1,12 +1,10 @@
-import {detectCycle, ListNode} from '../script'
+import { detectCycle, ListNode } from '../script'
 
 describe('142. Linked List Cycle II', (): void => {
-
     it('Does not cycle', (): void => {
         const node0: ListNode = new ListNode(1)
 
-        expect(detectCycle(node0))
-            .toEqual(null)
+        expect(detectCycle(node0)).toEqual(null)
     })
 
     it('Cycles with start', (): void => {
@@ -15,8 +13,7 @@ describe('142. Linked List Cycle II', (): void => {
         node0.next = node1
         node1.next = node0
 
-        expect(detectCycle(node0))
-            .toEqual(node0)
+        expect(detectCycle(node0)).toEqual(node0)
     })
 
     it('Cycles with non start', (): void => {
@@ -29,7 +26,6 @@ describe('142. Linked List Cycle II', (): void => {
         node2.next = node3
         node3.next = node1
 
-        expect(detectCycle(node0))
-            .toEqual(node1)
+        expect(detectCycle(node0)).toEqual(node1)
     })
 })

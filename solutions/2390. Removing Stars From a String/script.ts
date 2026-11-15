@@ -1,16 +1,15 @@
-export {removeStars}
-
+export { removeStars }
 
 function removeStars(s: string): string {
     const data: string[] = []
 
     for (const char of s) {
-        if (char === "*") {
+        if (char === '*') {
             data.pop()
         } else {
             data.push(char)
         }
     }
 
-    return data.join("")
+    return data.join('')
 }

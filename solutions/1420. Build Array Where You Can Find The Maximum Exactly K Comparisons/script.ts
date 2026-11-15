@@ -1,6 +1,6 @@
-import {arrayOf, matrixOf} from "../../common/array-factories"
+import { arrayOf, matrixOf } from '../../common/array-factories'
 
-export {numOfArrays}
+export { numOfArrays }
 
 const MOD: number = 10 ** 9 + 7
 
@@ -11,7 +11,8 @@ function numOfArrays(n: number, m: number, k: number): number {
     for (let i: number = 1; i < n; i++) {
         for (let cost: number = 0; cost < Math.min(i + 1, k); cost++) {
             for (let max: number = 0; max < m; max++) {
-                dp[i][cost][max] = (dp[i][cost][max] + (max + 1) * dp[i - 1][cost][max]) % MOD
+                dp[i][cost][max] =
+                    (dp[i][cost][max] + (max + 1) * dp[i - 1][cost][max]) % MOD
 
                 if (cost != 0) {
                     let sum: number = 0

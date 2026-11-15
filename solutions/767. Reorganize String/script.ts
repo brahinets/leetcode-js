@@ -1,20 +1,21 @@
-import {count} from "../../common/array-utils"
-import {arrayOf} from "../../common/array-factories"
+import { count } from '../../common/array-utils'
+import { arrayOf } from '../../common/array-factories'
 
-export {reorganizeString}
+export { reorganizeString }
 
 function reorganizeString(s: string): string {
-    const charsSortedByCountAsc: [string, number][] = [...count(s.split("")).entries()]
-        .sort(([, count1], [, count2]): number => count1 - count2)
+    const charsSortedByCountAsc: [string, number][] = [
+        ...count(s.split('')).entries()
+    ].sort(([, count1], [, count2]): number => count1 - count2)
 
-    const result: string[] = arrayOf("", s.length)
+    const result: string[] = arrayOf('', s.length)
 
     let i: number = 0
     while (charsSortedByCountAsc.length > 0) {
-        const [topChar, topCount] = charsSortedByCountAsc.pop() ?? ["", 0]
+        const [topChar, topCount] = charsSortedByCountAsc.pop() ?? ['', 0]
 
         if (topCount > Math.ceil(s.length / 2)) {
-            return ""
+            return ''
         }
 
         for (let j = 0; j < topCount; j++) {
@@ -27,5 +28,5 @@ function reorganizeString(s: string): string {
         }
     }
 
-    return result.join("")
+    return result.join('')
 }

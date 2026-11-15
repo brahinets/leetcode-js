@@ -1,4 +1,4 @@
-export {longestSubarray}
+export { longestSubarray }
 
 function longestSubarray(nums: number[]): number {
     let max: number = 0

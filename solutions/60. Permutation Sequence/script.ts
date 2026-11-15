@@ -1,4 +1,4 @@
-export {getPermutation}
+export { getPermutation }
 
 function getPermutation(n: number, k: number): string {
     const numbers: number[] = []

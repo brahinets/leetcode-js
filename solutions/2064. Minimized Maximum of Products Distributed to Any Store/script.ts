@@ -1,4 +1,4 @@
-export {minimizedMaximum}
+export { minimizedMaximum }
 
 function canDistribute(x: number, quantities: number[], n: number): boolean {
     let j: number = 0

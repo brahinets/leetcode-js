@@ -1,4 +1,4 @@
-export {minKBitFlips}
+export { minKBitFlips }
 
 const FLIPPED: number = -1
 

@@ -1,12 +1,19 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {mergeKLists, ListNode}
+export { mergeKLists, ListNode }
 
 function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
-    return lists.reduce((prev: ListNode | null, curr: ListNode | null) => mergeTwoLists(prev, curr), null)
+    return lists.reduce(
+        (prev: ListNode | null, curr: ListNode | null) =>
+            mergeTwoLists(prev, curr),
+        null
+    )
 }
 
-const mergeTwoLists = function (list1: ListNode | null, list2: ListNode | null): ListNode | null {
+const mergeTwoLists = function (
+    list1: ListNode | null,
+    list2: ListNode | null
+): ListNode | null {
     const node: ListNode = new ListNode()
     let head: ListNode = node
 

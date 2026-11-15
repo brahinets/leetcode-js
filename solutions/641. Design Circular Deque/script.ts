@@ -1,4 +1,4 @@
-export {MyCircularDeque}
+export { MyCircularDeque }
 
 class MyCircularDeque {
     private readonly data: number[]

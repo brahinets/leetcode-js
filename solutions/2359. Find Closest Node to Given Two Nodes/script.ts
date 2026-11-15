@@ -1,9 +1,13 @@
-import {DirectedWeightedGraph} from "../../common/Graph"
-import {arrayOf} from "../../common/array-factories"
+import { DirectedWeightedGraph } from '../../common/Graph'
+import { arrayOf } from '../../common/array-factories'
 
-export {closestMeetingNode}
+export { closestMeetingNode }
 
-function closestMeetingNode(edges: number[], node1: number, node2: number): number {
+function closestMeetingNode(
+    edges: number[],
+    node1: number,
+    node2: number
+): number {
     const graph: DirectedWeightedGraph = buildGraph(edges)
     const distancesToFirst: number[] = getDistances(graph, node1, edges.length)
     const distancesToSecond: number[] = getDistances(graph, node2, edges.length)
@@ -13,9 +17,15 @@ function closestMeetingNode(edges: number[], node1: number, node2: number): numb
 
     for (let i: number = 0; i < edges.length; i++) {
         if (distancesToFirst[i] !== -1 && distancesToSecond[i] !== -1) {
-            const maxDistance: number = Math.max(distancesToFirst[i], distancesToSecond[i])
+            const maxDistance: number = Math.max(
+                distancesToFirst[i],
+                distancesToSecond[i]
+            )
 
-            if (maxDistance < minDistance || (maxDistance === minDistance && i < result)) {
+            if (
+                maxDistance < minDistance ||
+                (maxDistance === minDistance && i < result)
+            ) {
                 result = i
 
                 minDistance = maxDistance
@@ -40,7 +50,11 @@ function buildGraph(edges: number[]): DirectedWeightedGraph {
     return graph
 }
 
-function getDistances(graph: DirectedWeightedGraph, start: number, nodesCount: number): number[] {
+function getDistances(
+    graph: DirectedWeightedGraph,
+    start: number,
+    nodesCount: number
+): number[] {
     const distances: number[] = arrayOf(-1, nodesCount)
     let current: number = start
     let distance: number = 0

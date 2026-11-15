@@ -7,7 +7,7 @@ unit per second. Some of the ants move to the left, the other move to the right.
 directions meet at some point, they change their directions and continue moving again. Assume changing directions does
 not take any additional time. When an ant reaches one end of the plank at a time `t`, it falls out of the plank
 immediately. Given an integer `n` and two integer arrays `left` and `right`, the positions of the ants moving to the
-left and the right, return the moment when the last ant(s) fall out of the plank.
+left and the right, return the moment when the last ant (s) fall out of the plank.
 
 ### Constraints:
 

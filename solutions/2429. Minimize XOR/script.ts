@@ -1,4 +1,4 @@
-export {minimizeXor}
+export { minimizeXor }
 
 function minimizeXor(num1: number, num2: number): number {
     let result: number = 0
@@ -8,7 +8,10 @@ function minimizeXor(num1: number, num2: number): number {
     let currentBit: number = 31
 
     while (setBitsCount < targetSetBitsCount) {
-        if (isSet(num1, currentBit) || (targetSetBitsCount - setBitsCount > currentBit)) {
+        if (
+            isSet(num1, currentBit) ||
+            targetSetBitsCount - setBitsCount > currentBit
+        ) {
             result = setBit(result, currentBit)
             setBitsCount++
         }

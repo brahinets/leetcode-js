@@ -1,9 +1,9 @@
-export {isValid}
+export { isValid }
 
 const BRACES: Map<string, string> = new Map<string, string>([
-    ["[", "]"],
-    ["{", "}"],
-    ["(", ")"]
+    ['[', ']'],
+    ['{', '}'],
+    ['(', ')']
 ])
 
 const isValid = function (s: string): boolean {
@@ -12,7 +12,7 @@ const isValid = function (s: string): boolean {
 
     for (const ch of s) {
         if (!allowedCharacters.includes(ch)) {
-            throw new Error("Illegal character")
+            throw new Error('Illegal character')
         }
 
         if (BRACES.has(ch)) {
@@ -30,7 +30,10 @@ const isValid = function (s: string): boolean {
     return openedBraces.length === 0
 }
 
-function getKeyByValue(map: Map<string, string>, targetValue: string): string | null {
+function getKeyByValue(
+    map: Map<string, string>,
+    targetValue: string
+): string | null {
     for (const [key, value] of map) {
         if (value === targetValue) {
             return key

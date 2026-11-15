@@ -1,4 +1,4 @@
-export {bagOfTokensScore}
+export { bagOfTokensScore }
 
 function bagOfTokensScore(tokens: number[], power: number): number {
     tokens = tokens.sort((a: number, b: number): number => a - b)

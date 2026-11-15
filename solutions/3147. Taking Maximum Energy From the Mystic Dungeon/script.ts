@@ -1,4 +1,4 @@
-export {maximumEnergy}
+export { maximumEnergy }
 
 function maximumEnergy(energy: number[], k: number): number {
     let max: number = -Number.MAX_SAFE_INTEGER

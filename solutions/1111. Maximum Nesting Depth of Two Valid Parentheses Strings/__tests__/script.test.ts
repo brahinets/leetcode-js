@@ -62,26 +62,28 @@ function assertOptimalSplit(sequence: string, assignments: number[]): void {
     const firstGroup: string = extractGroup(sequence, assignments, 0)
     const secondGroup: string = extractGroup(sequence, assignments, 1)
 
-    expect(assignments.length)
-        .toBe(sequence.length)
+    expect(assignments.length).toBe(sequence.length)
 
-    expect(firstGroup.length + secondGroup.length)
-        .toBe(sequence.length)
+    expect(firstGroup.length + secondGroup.length).toBe(sequence.length)
 
-    expect(isValidParenthesesString(firstGroup))
-        .toBe(true)
+    expect(isValidParenthesesString(firstGroup)).toBe(true)
 
-    expect(isValidParenthesesString(secondGroup))
-        .toBe(true)
+    expect(isValidParenthesesString(secondGroup)).toBe(true)
 
-    const combinedDepth: number = Math.max(computeMaximumDepth(firstGroup), computeMaximumDepth(secondGroup))
+    const combinedDepth: number = Math.max(
+        computeMaximumDepth(firstGroup),
+        computeMaximumDepth(secondGroup)
+    )
     const expectedDepth: number = Math.ceil(computeMaximumDepth(sequence) / 2)
 
-    expect(combinedDepth)
-        .toBe(expectedDepth)
+    expect(combinedDepth).toBe(expectedDepth)
 }
 
-function extractGroup(sequence: string, assignments: number[], groupIdentifier: number): string {
+function extractGroup(
+    sequence: string,
+    assignments: number[],
+    groupIdentifier: number
+): string {
     let group: string = ''
 
     for (let index: number = 0; index < sequence.length; index++) {

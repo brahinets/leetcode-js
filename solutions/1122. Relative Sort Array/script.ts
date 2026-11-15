@@ -1,4 +1,4 @@
-export {relativeSortArray}
+export { relativeSortArray }
 
 function relativeSortArray(arr1: number[], arr2: number[]): number[] {
     const relativity: Map<number, number> = buildRelativity(arr2)

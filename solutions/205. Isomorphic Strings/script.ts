@@ -1,4 +1,4 @@
-export {isIsomorphic}
+export { isIsomorphic }
 
 function isIsomorphic(first: string, second: string): boolean {
     if (first.length !== second.length) {
@@ -12,8 +12,10 @@ function isIsomorphic(first: string, second: string): boolean {
         const a: string = first[i]
         const b: string = second[i]
 
-        if ((firstToSecond.has(a) && firstToSecond.get(a) !== b) ||
-            (secondToFirst.has(b) && secondToFirst.get(b) !== a)) {
+        if (
+            (firstToSecond.has(a) && firstToSecond.get(a) !== b) ||
+            (secondToFirst.has(b) && secondToFirst.get(b) !== a)
+        ) {
             return false
         }
 

@@ -1,8 +1,11 @@
-import {UndirectedWeightedGraph} from "../../common/Graph"
+import { UndirectedWeightedGraph } from '../../common/Graph'
 
-export {minimumDiameterAfterMerge}
+export { minimumDiameterAfterMerge }
 
-function minimumDiameterAfterMerge(edges1: number[][], edges2: number[][]): number {
+function minimumDiameterAfterMerge(
+    edges1: number[][],
+    edges2: number[][]
+): number {
     const diameter1: number = calculateDiameter(buildGraph(edges1))
     const diameter2: number = calculateDiameter(buildGraph(edges2))
 

@@ -1,13 +1,22 @@
-import {arrayOf, matrixOf} from "../../common/array-factories"
+import { arrayOf, matrixOf } from '../../common/array-factories'
 
-export {cherryPickup}
+export { cherryPickup }
 
 function cherryPickup(grid: number[][]): number {
-    const maxForRowByRobot1Col1Robot2Col2: number[][][] = arrayOf(matrixOf(-1, grid[0].length, grid[0].length), grid.length)
+    const maxForRowByRobot1Col1Robot2Col2: number[][][] = arrayOf(
+        matrixOf(-1, grid[0].length, grid[0].length),
+        grid.length
+    )
     return walk(grid, 0, 0, grid[0].length - 1, maxForRowByRobot1Col1Robot2Col2)
 }
 
-function walk(grid: number[][], row: number, col1: number, col2: number, memo: number[][][]): number {
+function walk(
+    grid: number[][],
+    row: number,
+    col1: number,
+    col2: number,
+    memo: number[][][]
+): number {
     if (row === grid.length) {
         return 0
     } else if (memo[row][col1][col2] > -1) {
@@ -23,8 +32,17 @@ function walk(grid: number[][], row: number, col1: number, col2: number, memo: n
             for (let off2: number = -1; off2 < 2; off2++) {
                 const nextCol2: number = col2 + off2
 
-                if (nextCol2 < grid[0].length && nextCol2 >= 0 && nextCol1 < nextCol2) {
-                    best = Math.max(best, grid[row][col1] + grid[row][col2] + walk(grid, row + 1, nextCol1, nextCol2, memo))
+                if (
+                    nextCol2 < grid[0].length &&
+                    nextCol2 >= 0 &&
+                    nextCol1 < nextCol2
+                ) {
+                    best = Math.max(
+                        best,
+                        grid[row][col1] +
+                            grid[row][col2] +
+                            walk(grid, row + 1, nextCol1, nextCol2, memo)
+                    )
                 }
             }
         }

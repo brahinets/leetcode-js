@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {chalkReplacer}
+export { chalkReplacer }
 
 function chalkReplacer(chalk: number[], k: number): number {
     const steps: number = sum(chalk)

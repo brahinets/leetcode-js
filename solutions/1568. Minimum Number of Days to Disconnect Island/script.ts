@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {minDays}
+export { minDays }
 
 function minDays(grid: number[][]): number {
     if (countIslands(grid) !== 1) {
@@ -39,16 +39,30 @@ function countIslands(grid: number[][]): number {
     return sizes.length
 }
 
-function dfs(x: number, y: number, grid: number[][], visited: boolean[][]): number {
-    if (x < 0 || y < 0 || x >= grid.length || y >= grid[0].length || grid[x][y] === 0 || visited[x][y]) {
+function dfs(
+    x: number,
+    y: number,
+    grid: number[][],
+    visited: boolean[][]
+): number {
+    if (
+        x < 0 ||
+        y < 0 ||
+        x >= grid.length ||
+        y >= grid[0].length ||
+        grid[x][y] === 0 ||
+        visited[x][y]
+    ) {
         return 0
     }
 
     visited[x][y] = true
 
-    return 1 +
+    return (
+        1 +
         dfs(x + 1, y, grid, visited) +
         dfs(x - 1, y, grid, visited) +
         dfs(x, y + 1, grid, visited) +
         dfs(x, y - 1, grid, visited)
+    )
 }

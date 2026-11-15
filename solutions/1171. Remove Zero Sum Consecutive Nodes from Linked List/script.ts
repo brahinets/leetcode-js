@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {removeZeroSumSublists, ListNode}
+export { removeZeroSumSublists, ListNode }
 
 function removeZeroSumSublists(head: ListNode | null): ListNode | null {
     const originalHead: ListNode | null = new ListNode(0, head)

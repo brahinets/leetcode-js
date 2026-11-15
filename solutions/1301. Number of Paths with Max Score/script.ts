@@ -1,6 +1,6 @@
-import {matrixOf, matrixOfZeros} from '../../common/array-factories'
+import { matrixOf, matrixOfZeros } from '../../common/array-factories'
 
-export {pathsWithMaxScore}
+export { pathsWithMaxScore }
 
 const MODULO: number = 1e9 + 7
 const UNREACHABLE: number = -1
@@ -37,20 +37,35 @@ function pathsWithMaxScore(board: string[]): number[] {
     return [finalScore, pathCountGrid[size - 1][size - 1]]
 }
 
-function updateCell(board: string[], maxScoreGrid: number[][], pathCountGrid: number[][], row: number, column: number): void {
+function updateCell(
+    board: string[],
+    maxScoreGrid: number[][],
+    pathCountGrid: number[][],
+    row: number,
+    column: number
+): void {
     const character: string = board[row][column]
 
     if (character === 'X') {
         return
     }
 
-    const reachableNeighbors: ReachableNeighbor[] = collectReachableNeighbors(maxScoreGrid, pathCountGrid, row, column)
+    const reachableNeighbors: ReachableNeighbor[] = collectReachableNeighbors(
+        maxScoreGrid,
+        pathCountGrid,
+        row,
+        column
+    )
 
     if (reachableNeighbors.length === 0) {
         return
     }
 
-    const bestNeighborScore: number = Math.max(...reachableNeighbors.map((neighbor: ReachableNeighbor): number => neighbor.score))
+    const bestNeighborScore: number = Math.max(
+        ...reachableNeighbors.map(
+            (neighbor: ReachableNeighbor): number => neighbor.score
+        )
+    )
 
     let combinedCount: number = 0
 
@@ -66,8 +81,17 @@ function updateCell(board: string[], maxScoreGrid: number[][], pathCountGrid: nu
     pathCountGrid[row][column] = combinedCount
 }
 
-function collectReachableNeighbors(maxScoreGrid: number[][], pathCountGrid: number[][], row: number, column: number): ReachableNeighbor[] {
-    const neighborPositions: number[][] = [[row - 1, column], [row, column - 1], [row - 1, column - 1]]
+function collectReachableNeighbors(
+    maxScoreGrid: number[][],
+    pathCountGrid: number[][],
+    row: number,
+    column: number
+): ReachableNeighbor[] {
+    const neighborPositions: number[][] = [
+        [row - 1, column],
+        [row, column - 1],
+        [row - 1, column - 1]
+    ]
     const reachableNeighbors: ReachableNeighbor[] = []
 
     for (const [neighborRow, neighborColumn] of neighborPositions) {
@@ -81,7 +105,10 @@ function collectReachableNeighbors(maxScoreGrid: number[][], pathCountGrid: numb
             continue
         }
 
-        reachableNeighbors.push({score: neighborScore, count: pathCountGrid[neighborRow][neighborColumn]})
+        reachableNeighbors.push({
+            score: neighborScore,
+            count: pathCountGrid[neighborRow][neighborColumn]
+        })
     }
 
     return reachableNeighbors

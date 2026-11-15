@@ -1,10 +1,13 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {smallestChair}
+export { smallestChair }
 
 function smallestChair(times: number[][], targetFriend: number): number {
     const targetTime: number[] = times[targetFriend]
-    times.sort(([firstStart,]: number[], [secondStart,]: number[]): number => firstStart - secondStart)
+    times.sort(
+        ([firstStart]: number[], [secondStart]: number[]): number =>
+            firstStart - secondStart
+    )
 
     const chairTime: number[] = arrayOfZeros(times.length)
 

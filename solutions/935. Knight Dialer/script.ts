@@ -1,10 +1,14 @@
-export {knightDialer}
+export { knightDialer }
 
 const turns: number[][] = [
-    [-2, -1], [-1, -2],
-    [2, -1], [1, -2],
-    [2, 1], [1, 2],
-    [-2, 1], [-1, 2]
+    [-2, -1],
+    [-1, -2],
+    [2, -1],
+    [1, -2],
+    [2, 1],
+    [1, 2],
+    [-2, 1],
+    [-1, 2]
 ]
 
 const MOD: number = 10 ** 9 + 7
@@ -22,7 +26,12 @@ function knightDialer(n: number): number {
     return chance % MOD
 }
 
-function chanceOfSafeEnds(turnsLeft: number, row: number, column: number, memo: Map<string, number>): number {
+function chanceOfSafeEnds(
+    turnsLeft: number,
+    row: number,
+    column: number,
+    memo: Map<string, number>
+): number {
     if (!isInsideBoard(row, column)) {
         return 0
     }
@@ -43,7 +52,8 @@ function chanceOfSafeEnds(turnsLeft: number, row: number, column: number, memo: 
         const nextCol: number = column + turn[1]
 
         if (isInsideBoard(nextRow, nextCol)) {
-            probability += chanceOfSafeEnds(turnsLeft - 1, nextRow, nextCol, memo) % MOD
+            probability +=
+                chanceOfSafeEnds(turnsLeft - 1, nextRow, nextCol, memo) % MOD
         }
     }
     memo.set(memoKey, probability)

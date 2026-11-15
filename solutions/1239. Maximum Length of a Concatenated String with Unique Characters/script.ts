@@ -1,7 +1,7 @@
-export {maxLength}
+export { maxLength }
 
 function maxLength(arr: string[]): number {
-    return backtrack(arr, "", 0)
+    return backtrack(arr, '', 0)
 }
 
 function backtrack(strings: string[], prefix: string, start: number): number {

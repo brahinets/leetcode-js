@@ -1,7 +1,7 @@
-export {numSteps}
+export { numSteps }
 
 function numSteps(s: string): number {
-    let bits: string[] = s.split("")
+    let bits: string[] = s.split('')
 
     let steps: number = 0
     while (bits.length > 1) {

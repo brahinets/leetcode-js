@@ -1,4 +1,4 @@
-export {averageWaitingTime}
+export { averageWaitingTime }
 
 function averageWaitingTime(customers: number[][]): number {
     let totalWaitTime: number = 0

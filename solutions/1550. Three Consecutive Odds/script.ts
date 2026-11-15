@@ -1,4 +1,4 @@
-export {threeConsecutiveOdds}
+export { threeConsecutiveOdds }
 
 function threeConsecutiveOdds(arr: number[]): boolean {
     for (let i: number = 0; i < arr.length - 2; i++) {

@@ -4,7 +4,8 @@
 
 You are given an integer array `nums` of length `n` and an integer `k`.
 
-Choose exactly `k` non-empty subarrays `nums[l..r]` of `nums`. Subarrays may overlap, and you may choose the same subarray (same `l` and `r`) more than once.
+Choose exactly `k` non-empty subarrays `nums[l..r]` of `nums`. Subarrays may overlap, and you may choose the same
+subarray (same `l` and `r`) more than once.
 
 For a chosen subarray `nums[l..r]`, its **value** is:
 

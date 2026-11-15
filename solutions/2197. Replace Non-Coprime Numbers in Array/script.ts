@@ -1,4 +1,4 @@
-export {replaceNonCoprimes}
+export { replaceNonCoprimes }
 
 function replaceNonCoprimes(nums: number[]): number[] {
     const stack: number[] = []
@@ -29,5 +29,5 @@ function gcd(a: number, b: number): number {
 }
 
 function lcm(a: number, b: number): number {
-    return a * b / gcd(a, b)
+    return (a * b) / gcd(a, b)
 }

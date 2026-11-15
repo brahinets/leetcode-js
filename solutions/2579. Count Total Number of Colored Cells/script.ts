@@ -1,4 +1,4 @@
-export {coloredCells}
+export { coloredCells }
 
 function coloredCells(n: number): number {
     let numBlueCells: number = 1

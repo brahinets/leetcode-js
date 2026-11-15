@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {maxCandies}
+export { maxCandies }
 
 function maxCandies(
     status: number[],

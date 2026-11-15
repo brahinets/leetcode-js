@@ -1,4 +1,4 @@
-export {buildArray}
+export { buildArray }
 
 function buildArray(nums: number[]): number[] {
     const result: number[] = []

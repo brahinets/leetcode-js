@@ -6,8 +6,7 @@ describe('1563. Stone Game V', (): void => {
 
         const result: number = stoneGameV(stoneValue)
 
-        expect(result)
-            .toBe(18)
+        expect(result).toBe(18)
     })
 
     it('equal values let alice choose which half survives every round', (): void => {
@@ -15,8 +14,7 @@ describe('1563. Stone Game V', (): void => {
 
         const result: number = stoneGameV(stoneValue)
 
-        expect(result)
-            .toBe(28)
+        expect(result).toBe(28)
     })
 
     it('single stone ends the game with no score', (): void => {
@@ -24,8 +22,7 @@ describe('1563. Stone Game V', (): void => {
 
         const result: number = stoneGameV(stoneValue)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('two stones score the smaller one', (): void => {
@@ -33,8 +30,7 @@ describe('1563. Stone Game V', (): void => {
 
         const result: number = stoneGameV(stoneValue)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('maximum stone value at the boundary of the allowed range', (): void => {
@@ -42,7 +38,6 @@ describe('1563. Stone Game V', (): void => {
 
         const result: number = stoneGameV(stoneValue)
 
-        expect(result)
-            .toBe(3000000)
+        expect(result).toBe(3000000)
     })
 })

@@ -4,9 +4,11 @@
 
 You are given an array of **positive** integers `nums`, and a **positive** integer `k`.
 
-You are allowed to perform an operation **once** on `nums`, where in each operation you can remove any **non-overlapping** prefix and suffix from `nums` such that `nums` remains **non-empty**.
+You are allowed to perform an operation **once** on `nums`, where in each operation you can remove any
+**non-overlapping** prefix and suffix from `nums` such that `nums` remains **non-empty**.
 
-You need to find the **x-value** of `nums`, which is the number of ways to perform this operation so that the **product** of the remaining elements leaves a *remainder* of `x` when divided by `k`.
+You need to find the **x-value** of `nums`, which is the number of ways to perform this operation so that the
+**product** of the remaining elements leaves a *remainder* of `x` when divided by `k`.
 
 Return an array `result` of size `k` where `result[x]` is the **x-value** of `nums` for `0 <= x <= k - 1`.
 

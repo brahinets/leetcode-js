@@ -1,7 +1,7 @@
-import {arrayOfZeros} from "../../common/array-factories"
-import {UndirectedWeightedGraph} from "../../common/Graph"
+import { arrayOfZeros } from '../../common/array-factories'
+import { UndirectedWeightedGraph } from '../../common/Graph'
 
-export {maxProbability}
+export { maxProbability }
 
 function maxProbability(
     n: number,
@@ -21,9 +21,15 @@ function maxProbability(
     while (queue.length > 0) {
         const currentNode: number = queue.shift()!
 
-        for (const [nextNode, pathProbability] of graph.getNeighbours(currentNode)) {
-            if (maxProbability[currentNode] * pathProbability > maxProbability[nextNode]) {
-                maxProbability[nextNode] = maxProbability[currentNode] * pathProbability
+        for (const [nextNode, pathProbability] of graph.getNeighbours(
+            currentNode
+        )) {
+            if (
+                maxProbability[currentNode] * pathProbability >
+                maxProbability[nextNode]
+            ) {
+                maxProbability[nextNode] =
+                    maxProbability[currentNode] * pathProbability
                 queue.push(nextNode)
             }
         }

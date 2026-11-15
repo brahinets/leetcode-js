@@ -1,8 +1,13 @@
-import {UndirectedUnweightedGraph} from "../../common/Graph"
+import { UndirectedUnweightedGraph } from '../../common/Graph'
 
-export {maxKDivisibleComponents}
+export { maxKDivisibleComponents }
 
-function maxKDivisibleComponents(_n: number, edges: number[][], values: number[], k: number): number {
+function maxKDivisibleComponents(
+    _n: number,
+    edges: number[][],
+    values: number[],
+    k: number
+): number {
     const graph: UndirectedUnweightedGraph = new UndirectedUnweightedGraph()
     for (const [a, b] of edges) {
         graph.addEdge(a, b)
@@ -25,7 +30,13 @@ function dfs(
 
     for (const [neighbor] of graph.getNeighbours(node)) {
         if (neighbor !== parent) {
-            const [childSum, childComponents]: [number, number] = dfs(neighbor, node, graph, values, k)
+            const [childSum, childComponents]: [number, number] = dfs(
+                neighbor,
+                node,
+                graph,
+                values,
+                k
+            )
 
             if (childSum % k === 0) {
                 components += 1

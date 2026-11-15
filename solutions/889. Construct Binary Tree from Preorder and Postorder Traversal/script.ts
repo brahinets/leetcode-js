@@ -1,8 +1,11 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {constructFromPrePost}
+export { constructFromPrePost }
 
-function constructFromPrePost(preorder: number[], postorder: number[]): TreeNode | null {
+function constructFromPrePost(
+    preorder: number[],
+    postorder: number[]
+): TreeNode | null {
     let numOfNodes: number = preorder.length
 
     const indexInPostOrder: number[] = []

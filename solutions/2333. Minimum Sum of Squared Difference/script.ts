@@ -1,7 +1,14 @@
 export { minSumSquareDiff }
 
-function minSumSquareDiff(nums1: number[], nums2: number[], k1: number, k2: number): number {
-    const differences: number[] = nums1.map((value: number, index: number): number => Math.abs(value - nums2[index]))
+function minSumSquareDiff(
+    nums1: number[],
+    nums2: number[],
+    k1: number,
+    k2: number
+): number {
+    const differences: number[] = nums1.map(
+        (value: number, index: number): number => Math.abs(value - nums2[index])
+    )
     const maximumDifference: number = Math.max(...differences)
     const counts: number[] = new Array<number>(maximumDifference + 1).fill(0)
 
@@ -21,7 +28,9 @@ function minSumSquareDiff(nums1: number[], nums2: number[], k1: number, k2: numb
 
         if (remaining < elementsAtLevel) {
             const untouched: number = elementsAtLevel - remaining
-            const topSum: number = untouched * level * level + remaining * (level - 1) * (level - 1)
+            const topSum: number =
+                untouched * level * level +
+                remaining * (level - 1) * (level - 1)
 
             return topSum + sumOfSquaresBelow(counts, level)
         }

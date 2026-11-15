@@ -1,4 +1,4 @@
-export {numberOfSpecialChars}
+export { numberOfSpecialChars }
 
 function numberOfSpecialChars(word: string): number {
     const lastLowerIndex: Map<string, number> = new Map<string, number>()

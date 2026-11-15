@@ -1,6 +1,10 @@
-export {checkArithmeticSubarrays}
+export { checkArithmeticSubarrays }
 
-function checkArithmeticSubarrays(nums: number[], l: number[], r: number[]): boolean[] {
+function checkArithmeticSubarrays(
+    nums: number[],
+    l: number[],
+    r: number[]
+): boolean[] {
     const result: boolean[] = []
 
     for (let i: number = 0; i < l.length; i++) {

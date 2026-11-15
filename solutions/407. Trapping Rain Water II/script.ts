@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {trapRainWater}
+export { trapRainWater }
 
 function trapRainWater(heightMap: number[][]): number {
     if (heightMap.length === 0 || heightMap[0].length === 0) {
@@ -8,14 +8,35 @@ function trapRainWater(heightMap: number[][]): number {
     }
 
     const minHeap: Cell[] = []
-    const visited: boolean[][] = matrixOf(false, heightMap.length, heightMap[0].length)
+    const visited: boolean[][] = matrixOf(
+        false,
+        heightMap.length,
+        heightMap[0].length
+    )
     addBoundaryCellsToHeap(minHeap, visited, heightMap)
 
-    return processCells(minHeap, heightMap, visited, heightMap.length, heightMap[0].length)
+    return processCells(
+        minHeap,
+        heightMap,
+        visited,
+        heightMap.length,
+        heightMap[0].length
+    )
 }
 
-function processCells(minHeap: Cell[], heightMap: number[][], visited: boolean[][], m: number, n: number): number {
-    const directions: number[][] = [[-1, 0], [1, 0], [0, -1], [0, 1]]
+function processCells(
+    minHeap: Cell[],
+    heightMap: number[][],
+    visited: boolean[][],
+    m: number,
+    n: number
+): number {
+    const directions: number[][] = [
+        [-1, 0],
+        [1, 0],
+        [0, -1],
+        [0, 1]
+    ]
     let waterTrapped: number = 0
 
     while (minHeap.length > 0) {
@@ -35,7 +56,9 @@ function processCells(minHeap: Cell[], heightMap: number[][], visited: boolean[]
                     waterTrapped += height - heightMap[nx][ny]
                 }
 
-                minHeap.push(new Cell(nx, ny, Math.max(height, heightMap[nx][ny])))
+                minHeap.push(
+                    new Cell(nx, ny, Math.max(height, heightMap[nx][ny]))
+                )
             }
         }
 
@@ -46,11 +69,18 @@ function processCells(minHeap: Cell[], heightMap: number[][], visited: boolean[]
 }
 
 class Cell {
-    constructor(public x: number, public y: number, public height: number) {
-    }
+    constructor(
+        public x: number,
+        public y: number,
+        public height: number
+    ) {}
 }
 
-function addBoundaryCellsToHeap(minHeap: Cell[], visited: boolean[][], heightMap: number[][]): void {
+function addBoundaryCellsToHeap(
+    minHeap: Cell[],
+    visited: boolean[][],
+    heightMap: number[][]
+): void {
     for (let i: number = 0; i < heightMap.length; i++) {
         for (let j: number = 0; j < heightMap[0].length; j++) {
             if (isBoundary(i, j, heightMap.length, heightMap[0].length)) {
@@ -67,6 +97,12 @@ function isBoundary(i: number, j: number, m: number, n: number): boolean {
     return i === 0 || j === 0 || i === m - 1 || j === n - 1
 }
 
-function isValidCell(nx: number, ny: number, m: number, n: number, visited: boolean[][]): boolean {
+function isValidCell(
+    nx: number,
+    ny: number,
+    m: number,
+    n: number,
+    visited: boolean[][]
+): boolean {
     return nx >= 0 && ny >= 0 && nx < m && ny < n && !visited[nx][ny]
 }

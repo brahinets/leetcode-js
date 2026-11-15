@@ -1,4 +1,4 @@
-export {canMakeArithmeticProgression}
+export { canMakeArithmeticProgression }
 
 function canMakeArithmeticProgression(arr: number[]): boolean {
     if (arr.length <= 2) {

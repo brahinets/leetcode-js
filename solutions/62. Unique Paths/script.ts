@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {uniquePaths}
+export { uniquePaths }
 
 function uniquePaths(m: number, n: number): number {
     const matrix: number[][] = matrixOfZeros(m, n)

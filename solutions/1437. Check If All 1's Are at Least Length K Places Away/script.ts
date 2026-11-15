@@ -1,4 +1,4 @@
-export {kLengthApart}
+export { kLengthApart }
 
 function kLengthApart(nums: number[], k: number): boolean {
     let lastOneIndex: number = -1
@@ -14,5 +14,4 @@ function kLengthApart(nums: number[], k: number): boolean {
     }
 
     return true
-
 }

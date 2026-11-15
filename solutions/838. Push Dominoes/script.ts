@@ -1,4 +1,4 @@
-export {pushDominoes}
+export { pushDominoes }
 
 function pushDominoes(dominoes: string): string {
     const positions: number[] = [-1]
@@ -37,7 +37,12 @@ function pushDominoes(dominoes: string): string {
                 const distLeft: number = i - left
                 const distRight: number = right - i
 
-                result[i] = distLeft === distRight ? '.' : distLeft < distRight ? 'R' : 'L'
+                result[i] =
+                    distLeft === distRight
+                        ? '.'
+                        : distLeft < distRight
+                          ? 'R'
+                          : 'L'
             }
         }
     }

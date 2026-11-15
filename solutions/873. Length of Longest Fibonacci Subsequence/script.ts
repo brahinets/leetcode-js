@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {lenLongestFibSubseq}
+export { lenLongestFibSubseq }
 
 function lenLongestFibSubseq(arr: number[]): number {
     const index: Map<number, number> = new Map<number, number>()

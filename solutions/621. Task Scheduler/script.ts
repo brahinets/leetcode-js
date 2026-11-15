@@ -1,14 +1,16 @@
-export {leastInterval}
+export { leastInterval }
 
 function leastInterval(tasks: string[], n: number): number {
     const work: Map<string, number> = collectWork(tasks)
 
-    const counts: number[] = [...work.values()]
-        .sort((firstCount: number, secondCount: number): number =>secondCount - firstCount)
+    const counts: number[] = [...work.values()].sort(
+        (firstCount: number, secondCount: number): number =>
+            secondCount - firstCount
+    )
 
     const maxFreq: number = counts[0] - 1
     let idleSlots: number = maxFreq * n
-    for (let i: number = 1; i < counts.length;i++) {
+    for (let i: number = 1; i < counts.length; i++) {
         idleSlots -= Math.min(counts[i], maxFreq)
     }
 

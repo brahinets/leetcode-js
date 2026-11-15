@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {countVowelPermutation}
+export { countVowelPermutation }
 
 const mod: number = 1e9 + 7
 
@@ -18,5 +18,8 @@ function countVowelPermutation(n: number): number {
         dp[i][4] = (dp[i - 1][2] + dp[i - 1][3]) % mod
     }
 
-    return dp[n - 1].reduce((acc: number, val: number): number => (acc + val) % mod, 0)
+    return dp[n - 1].reduce(
+        (acc: number, val: number): number => (acc + val) % mod,
+        0
+    )
 }

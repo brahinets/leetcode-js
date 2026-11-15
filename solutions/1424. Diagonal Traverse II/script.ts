@@ -1,4 +1,4 @@
-export {findDiagonalOrder}
+export { findDiagonalOrder }
 
 function findDiagonalOrder(nums: number[][]): number[] {
     const diagonals: number[][] = []

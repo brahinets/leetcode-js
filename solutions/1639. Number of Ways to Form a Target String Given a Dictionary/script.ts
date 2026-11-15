@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {numWays}
+export { numWays }
 
 const MOD: number = 10 ** 9 + 7
 
@@ -39,7 +39,10 @@ function getWords(
         return 1
     }
 
-    if (wordsIndex == words[0].length || words[0].length - wordsIndex < target.length - targetIndex) {
+    if (
+        wordsIndex == words[0].length ||
+        words[0].length - wordsIndex < target.length - targetIndex
+    ) {
         return 0
     }
 
@@ -47,12 +50,27 @@ function getWords(
         return dp[wordsIndex][targetIndex]
     }
 
-    const currentPosition: number = target.charCodeAt(targetIndex) - 'a'.charCodeAt(0)
+    const currentPosition: number =
+        target.charCodeAt(targetIndex) - 'a'.charCodeAt(0)
 
     let countWays: number = 0
-    countWays += getWords(words, target, wordsIndex + 1, targetIndex, dp, charFrequency)
-    countWays += getWords(words, target, wordsIndex + 1, targetIndex + 1, dp, charFrequency)
-        * charFrequency[wordsIndex][currentPosition]
+    countWays += getWords(
+        words,
+        target,
+        wordsIndex + 1,
+        targetIndex,
+        dp,
+        charFrequency
+    )
+    countWays +=
+        getWords(
+            words,
+            target,
+            wordsIndex + 1,
+            targetIndex + 1,
+            dp,
+            charFrequency
+        ) * charFrequency[wordsIndex][currentPosition]
 
     dp[wordsIndex][targetIndex] = countWays % MOD
 

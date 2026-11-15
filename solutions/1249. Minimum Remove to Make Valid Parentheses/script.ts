@@ -1,4 +1,4 @@
-export {minRemoveToMakeValid}
+export { minRemoveToMakeValid }
 
 function minRemoveToMakeValid(s: string): string {
     const chars: string[] = s.split('')
@@ -23,5 +23,5 @@ function minRemoveToMakeValid(s: string): string {
         }
     }
 
-    return chars.join("")
+    return chars.join('')
 }

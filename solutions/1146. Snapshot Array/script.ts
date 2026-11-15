@@ -1,4 +1,4 @@
-export {SnapshotArray}
+export { SnapshotArray }
 
 class SnapshotArray {
     private readonly deltas: Map<number, Map<number, number>>
@@ -15,7 +15,7 @@ class SnapshotArray {
 
     set(index: number, val: number): void {
         if (index > this.length) {
-            throw new Error("Element index is out of bounds")
+            throw new Error('Element index is out of bounds')
         }
 
         this.delta.set(index, val)
@@ -32,11 +32,11 @@ class SnapshotArray {
 
     get(index: number, snapId: number): number {
         if (index > this.length) {
-            throw new Error("Element index is out of bounds")
+            throw new Error('Element index is out of bounds')
         }
 
         if (snapId > this.snaps) {
-            throw new Error("Snap does not exist")
+            throw new Error('Snap does not exist')
         }
 
         let result: number = 0
@@ -52,7 +52,11 @@ class SnapshotArray {
         return result
     }
 
-    private applyDelta(result: number, index: number, map: Map<number, number>): number {
+    private applyDelta(
+        result: number,
+        index: number,
+        map: Map<number, number>
+    ): number {
         const delta: number | undefined = map.get(index)
         return delta === undefined ? result : delta
     }

@@ -1,4 +1,4 @@
-export {findMin}
+export { findMin }
 
 function findMin(nums: number[]): number {
     let left: number = 0

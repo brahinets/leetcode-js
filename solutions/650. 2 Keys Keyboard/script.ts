@@ -1,4 +1,4 @@
-export {minSteps}
+export { minSteps }
 
 function minSteps(n: number): number {
     let steps: number = 0

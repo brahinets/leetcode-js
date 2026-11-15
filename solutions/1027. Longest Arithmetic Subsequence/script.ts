@@ -1,4 +1,4 @@
-export {longestArithSeqLength}
+export { longestArithSeqLength }
 
 function longestArithSeqLength(nums: number[]): number {
     let maxLength: number = 0

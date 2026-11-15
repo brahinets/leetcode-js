@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {kthDistinct}
+export { kthDistinct }
 
 function kthDistinct(arr: string[], k: number): string {
     const counts: Map<string, number> = count(arr)
@@ -15,5 +15,5 @@ function kthDistinct(arr: string[], k: number): string {
         }
     }
 
-    return ""
+    return ''
 }

@@ -1,4 +1,4 @@
-export {sumFourDivisors}
+export { sumFourDivisors }
 
 function sumFourDivisors(nums: number[]): number {
     let totalSum: number = 0

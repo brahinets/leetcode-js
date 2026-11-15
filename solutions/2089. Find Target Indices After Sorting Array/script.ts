@@ -1,4 +1,4 @@
-export {targetIndices}
+export { targetIndices }
 
 function targetIndices(nums: number[], target: number): number[] {
     const smallerCount: number = countSmaller(nums, target)

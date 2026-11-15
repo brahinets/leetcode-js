@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {minimumScore}
+export { minimumScore }
 
 function minimumScore(nums: number[], edges: number[][]): number {
     const e: number[][] = arrayOf([], nums.length)
@@ -53,7 +53,10 @@ function dfs2(
         return son
     }
 
-    context.result = Math.min(context.result, calc(oth, son, context.sum ^ oth ^ son))
+    context.result = Math.min(
+        context.result,
+        calc(oth, son, context.sum ^ oth ^ son)
+    )
 
     return son
 }

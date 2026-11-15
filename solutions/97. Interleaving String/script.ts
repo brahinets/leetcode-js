@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {isInterleave}
+export { isInterleave }
 
 function isInterleave(s1: string, s2: string, s3: string): boolean {
     if (s1.length + s2.length !== s3.length) {

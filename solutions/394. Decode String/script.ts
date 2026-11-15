@@ -1,23 +1,23 @@
-export {decodeString}
+export { decodeString }
 
 function decodeString(s: string): string {
-    let result: string = ""
+    let result: string = ''
 
-    const chars: string[] = s.split("")
+    const chars: string[] = s.split('')
     let char
-    let multiplier: string = ""
+    let multiplier: string = ''
 
     while ((char = chars.shift()) !== undefined) {
         if (isDigit(char)) {
             multiplier += char
-        } else if (char === "[") {
-            let block: string = ""
+        } else if (char === '[') {
+            let block: string = ''
             const blocks: string[] = [char]
             while ((char = chars.shift()) !== undefined) {
-                if (char === "[") {
+                if (char === '[') {
                     block += char
                     blocks.push(char)
-                } else if (char === "]") {
+                } else if (char === ']') {
                     block += char
                     blocks.pop()
                 } else {
@@ -31,10 +31,10 @@ function decodeString(s: string): string {
             }
 
             result += decodeString(block).repeat(Number(multiplier))
-            multiplier = ""
+            multiplier = ''
         } else {
             result += char
-            multiplier = ""
+            multiplier = ''
         }
     }
 

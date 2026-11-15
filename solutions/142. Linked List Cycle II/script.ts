@@ -1,12 +1,12 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {detectCycle, ListNode}
+export { detectCycle, ListNode }
 
 function detectCycle(head: ListNode | null): ListNode | null {
     let fast: ListNode | null = head
     let slow: ListNode | null = head
 
-    while (fast&& fast.next) {
+    while (fast && fast.next) {
         fast = fast.next.next
         slow = slow!.next
 

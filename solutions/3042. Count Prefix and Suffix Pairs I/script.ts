@@ -1,4 +1,4 @@
-export {countPrefixSuffixPairs}
+export { countPrefixSuffixPairs }
 
 function countPrefixSuffixPairs(words: string[]): number {
     let count: number = 0

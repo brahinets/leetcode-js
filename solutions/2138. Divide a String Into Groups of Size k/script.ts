@@ -1,4 +1,4 @@
-export {divideString}
+export { divideString }
 
 function divideString(s: string, k: number, fill: string): string[] {
     const result: string[] = []

@@ -1,6 +1,11 @@
-export {spiralMatrixIII}
+export { spiralMatrixIII }
 
-function spiralMatrixIII(rows: number, cols: number, rStart: number, cStart: number): number[][] {
+function spiralMatrixIII(
+    rows: number,
+    cols: number,
+    rStart: number,
+    cStart: number
+): number[][] {
     let r: number = rStart
     let c: number = cStart
     let res: number[][] = [[r, c]]

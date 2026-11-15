@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {maxRunTime}
+export { maxRunTime }
 
 function maxRunTime(n: number, batteries: number[]): number {
     let left: number = 1

@@ -1,12 +1,16 @@
-import {TreeNode} from '../../common/TreeNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {maxAncestorDiff, TreeNode}
+export { maxAncestorDiff, TreeNode }
 
 function maxAncestorDiff(root: TreeNode): number {
     return dfs(root, root.val, root.val)
 }
 
-function dfs(node: TreeNode | null, minAncestor: number, maxAncestor: number): number {
+function dfs(
+    node: TreeNode | null,
+    minAncestor: number,
+    maxAncestor: number
+): number {
     if (!node) {
         return maxAncestor - minAncestor
     }

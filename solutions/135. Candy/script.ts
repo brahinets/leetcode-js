@@ -1,7 +1,7 @@
-import {arrayOf} from "../../common/array-factories"
-import {sum} from "../../common/array-utils"
+import { arrayOf } from '../../common/array-factories'
+import { sum } from '../../common/array-utils'
 
-export {candy}
+export { candy }
 
 function candy(ratings: number[]): number {
     const childrenCount: number = ratings.length

@@ -1,4 +1,4 @@
-export {findTheLongestSubstring}
+export { findTheLongestSubstring }
 
 const vowels: string = 'aeiou'
 

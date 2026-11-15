@@ -1,6 +1,6 @@
-import {findComplement} from "../476. Number Complement/script"
+import { findComplement } from '../476. Number Complement/script'
 
-export {bitwiseComplement}
+export { bitwiseComplement }
 
 function bitwiseComplement(n: number): number {
     return findComplement(n)

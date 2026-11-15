@@ -1,4 +1,4 @@
-export {minAddToMakeValid}
+export { minAddToMakeValid }
 
 function minAddToMakeValid(s: string): number {
     const stack: string[] = []

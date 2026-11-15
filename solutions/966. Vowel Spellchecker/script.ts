@@ -1,4 +1,4 @@
-export {spellchecker}
+export { spellchecker }
 
 const VOWELS: Set<string> = new Set(['a', 'e', 'i', 'o', 'u'])
 
@@ -30,7 +30,7 @@ function spellchecker(wordlist: string[], queries: string[]): string[] {
         }
 
         const devoweledQuery: string = devowel(lowerQuery)
-        return vowelErrorWords.get(devoweledQuery) || ""
+        return vowelErrorWords.get(devoweledQuery) || ''
     })
 }
 

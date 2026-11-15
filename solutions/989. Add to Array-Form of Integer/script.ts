@@ -1,7 +1,8 @@
-export {addToArrayForm}
+export { addToArrayForm }
 
 function addToArrayForm(num: number[], k: number): number[] {
-    const nums: number[] = k.toString()
+    const nums: number[] = k
+        .toString()
         .split('')
         .map((n: string): number => Number(n))
 

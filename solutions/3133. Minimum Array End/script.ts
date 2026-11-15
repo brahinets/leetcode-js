@@ -1,4 +1,4 @@
-export {minEnd}
+export { minEnd }
 
 function minEnd(n: number, x: number): number {
     let result: bigint = BigInt(x)

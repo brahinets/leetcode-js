@@ -2,7 +2,8 @@
 
 ## Hard
 
-You are given a string `s` consisting of lowercase English letters and the special characters: `'*'`, `'#'`, and `'%'`, and an integer `k`.
+You are given a string `s` consisting of lowercase English letters and the special characters: `'*'`, `'#'`, and `'%'`,
+and an integer `k`.
 
 Build a new string `result` by processing `s` according to the following rules from **left to right**:
 

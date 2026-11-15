@@ -1,4 +1,4 @@
-export {minimumLength}
+export { minimumLength }
 
 function minimumLength(s: string): number {
     let start: number = 0

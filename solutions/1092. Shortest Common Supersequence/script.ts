@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {shortestCommonSupersequence}
+export { shortestCommonSupersequence }
 
 function shortestCommonSupersequence(str1: string, str2: string): string {
     const dp: number[][] = matrixOfZeros(str1.length + 1, str2.length + 1)
@@ -17,7 +17,7 @@ function shortestCommonSupersequence(str1: string, str2: string): string {
 
     let i: number = str1.length
     let j: number = str2.length
-    let result: string = ""
+    let result: string = ''
 
     while (i > 0 && j > 0) {
         if (str1[i - 1] === str2[j - 1]) {

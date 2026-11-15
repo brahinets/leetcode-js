@@ -1,4 +1,4 @@
-export {findComplement}
+export { findComplement }
 
 function findComplement(num: number): number {
     let bits: string[] = num.toString(2).split('')

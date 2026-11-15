@@ -1,4 +1,4 @@
-export {areSentencesSimilar}
+export { areSentencesSimilar }
 
 function areSentencesSimilar(sentence1: string, sentence2: string): boolean {
     const words1: string[] = sentence1.split(' ')

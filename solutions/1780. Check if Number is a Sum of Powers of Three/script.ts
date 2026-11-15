@@ -1,4 +1,4 @@
-export {checkPowersOfThree}
+export { checkPowersOfThree }
 
 function checkPowersOfThree(n: number): boolean {
     while (n > 1) {

@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {reorderedPowerOf2}
+export { reorderedPowerOf2 }
 
 function reorderedPowerOf2(n: number): boolean {
     const targetCount: string = countDigits(n)
@@ -24,4 +24,3 @@ function countDigits(num: number): string {
 
     return digits.join(',')
 }
-

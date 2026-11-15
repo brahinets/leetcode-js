@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {topKFrequent}
+export { topKFrequent }
 
 function topKFrequent(values: number[], k: number): number[] {
     const counting: Map<number, number> = count(values)
@@ -20,7 +20,8 @@ function topKFrequent(values: number[], k: number): number[] {
 
 function sort(values: number[], counting: Map<number, number>): number[] {
     return [...values].sort((v1: number, v2: number): number => {
-        const counter: number = (counting.get(v1) ?? 0) - (counting.get(v2) ?? 0)
+        const counter: number =
+            (counting.get(v1) ?? 0) - (counting.get(v2) ?? 0)
 
         if (counter !== 0) {
             return counter

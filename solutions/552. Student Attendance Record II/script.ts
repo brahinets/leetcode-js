@@ -1,6 +1,6 @@
-import {arrayOf, matrixOf} from "../../common/array-factories"
+import { arrayOf, matrixOf } from '../../common/array-factories'
 
-export {checkRecord}
+export { checkRecord }
 
 const MOD: number = 10 ** 9 + 7
 
@@ -23,20 +23,23 @@ function buildPossibleStates(n: number, memo: number[][][]): void {
     for (let i: number = 1; i <= n; i++) {
         for (let totalAbsence: number = 0; totalAbsence < 2; totalAbsence++) {
             for (let totalLate: number = 0; totalLate < 3; totalLate++) {
-                memo[i][totalAbsence][0] = (
-                    memo[i][totalAbsence][0] + memo[i - 1][totalAbsence][totalLate]
-                ) % MOD
+                memo[i][totalAbsence][0] =
+                    (memo[i][totalAbsence][0] +
+                        memo[i - 1][totalAbsence][totalLate]) %
+                    MOD
 
                 if (totalLate < 2) {
-                    memo[i][totalAbsence][totalLate + 1] = (
-                        memo[i][totalAbsence][totalLate + 1] + memo[i - 1][totalAbsence][totalLate]
-                    ) % MOD
+                    memo[i][totalAbsence][totalLate + 1] =
+                        (memo[i][totalAbsence][totalLate + 1] +
+                            memo[i - 1][totalAbsence][totalLate]) %
+                        MOD
                 }
 
                 if (totalAbsence < 1) {
-                    memo[i][totalAbsence + 1][0] = (
-                        memo[i][totalAbsence + 1][0] + memo[i - 1][totalAbsence][totalLate]
-                    ) % MOD
+                    memo[i][totalAbsence + 1][0] =
+                        (memo[i][totalAbsence + 1][0] +
+                            memo[i - 1][totalAbsence][totalLate]) %
+                        MOD
                 }
             }
         }

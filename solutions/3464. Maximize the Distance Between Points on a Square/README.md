@@ -2,11 +2,14 @@
 
 ## Hard
 
-You are given an integer `side`, representing the edge length of a square with corners at `(0, 0)`, `(0, side)`, `(side, 0)`, and `(side, side)` on a Cartesian plane.
+You are given an integer `side`, representing the edge length of a square with corners at `(0, 0)`, `(0, side)`,
+`(side, 0)`, and `(side, side)` on a Cartesian plane.
 
-You are also given a positive integer `k` and a 2D integer array `points`, where `points[i] = [xi, yi]` represents the coordinate of a point lying on the boundary of the square.
+You are also given a positive integer `k` and a 2D integer array `points`, where `points[i] = [xi, yi]` represents the
+coordinate of a point lying on the boundary of the square.
 
-You need to select `k` elements among `points` such that the minimum Manhattan distance between any two points is maximized.
+You need to select `k` elements among `points` such that the minimum Manhattan distance between any two points is
+maximized.
 
 Return the maximum possible minimum Manhattan distance between the selected k points.
 
@@ -18,6 +21,6 @@ The Manhattan Distance between two cells `(xi, yi)` and `(xj, yj)` is `|xi - xj|
 - `4 <= points.length <= min(4 * side, 15 * 10^3)`
 - `points[i] == [xi, yi]`
 - The input is generated such that:
-  - `points[i]` lies on the boundary of the square.
-  - All `points[i]` are unique.
+    - `points[i]` lies on the boundary of the square.
+    - All `points[i]` are unique.
 - `4 <= k <= min(25, points.length)`

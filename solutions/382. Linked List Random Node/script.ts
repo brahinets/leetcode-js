@@ -1,6 +1,6 @@
-import {ListNode} from '../../common/ListNode'
+import { ListNode } from '../../common/ListNode'
 
-export {ListNode, Solution}
+export { ListNode, Solution }
 
 class Solution {
     private readonly list: ListNode
@@ -8,7 +8,7 @@ class Solution {
 
     constructor(head: ListNode | null) {
         if (!head) {
-            throw new Error("List cannot be empty")
+            throw new Error('List cannot be empty')
         }
 
         this.list = head
@@ -17,10 +17,6 @@ class Solution {
             this.size++
             head = head.next
         }
-    }
-
-    private getRandomInt(maxExclusive: number): number {
-        return Math.floor(Math.random() * maxExclusive)
     }
 
     getRandom(): number {
@@ -34,5 +30,9 @@ class Solution {
         }
 
         return node.val
+    }
+
+    private getRandomInt(maxExclusive: number): number {
+        return Math.floor(Math.random() * maxExclusive)
     }
 }

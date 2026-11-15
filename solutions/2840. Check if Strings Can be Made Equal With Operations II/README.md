@@ -7,7 +7,9 @@ You are given two strings `s1` and `s2`, both of length `n`, consisting of lower
 Return `true` if you can make the strings `s1` and `s2` equal, and `false` otherwise.
 
 You can apply the following operation on **either** of the two strings **any number of times**:
-- Choose any two indices `i` and `j` such that `i < j` and `j - i` is **even**, then swap the two characters at those indices in the string.
+
+- Choose any two indices `i` and `j` such that `i < j` and `j - i` is **even**, then swap the two characters at those
+  indices in the string.
 
 ### Constraints:
 

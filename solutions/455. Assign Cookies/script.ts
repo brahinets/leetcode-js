@@ -1,4 +1,4 @@
-export {findContentChildren}
+export { findContentChildren }
 
 function findContentChildren(g: number[], s: number[]): number {
     const greediness: number[] = g.sort((a: number, b: number): number => a - b)

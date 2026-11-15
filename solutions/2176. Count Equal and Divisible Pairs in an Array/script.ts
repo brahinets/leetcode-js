@@ -1,4 +1,4 @@
-export {countPairs}
+export { countPairs }
 
 function countPairs(nums: number[], k: number): number {
     let count: number = 0

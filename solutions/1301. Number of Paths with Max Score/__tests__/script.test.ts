@@ -1,4 +1,4 @@
-import {pathsWithMaxScore} from '../script'
+import { pathsWithMaxScore } from '../script'
 
 describe('1301. Number of Paths with Max Score', (): void => {
     it('single obstacle forces one route around it', (): void => {
@@ -6,8 +6,7 @@ describe('1301. Number of Paths with Max Score', (): void => {
 
         const result: number[] = pathsWithMaxScore(board)
 
-        expect(result)
-            .toEqual([7, 1])
+        expect(result).toEqual([7, 1])
     })
 
     it('two distinct routes reach the same maximum score', (): void => {
@@ -15,8 +14,7 @@ describe('1301. Number of Paths with Max Score', (): void => {
 
         const result: number[] = pathsWithMaxScore(board)
 
-        expect(result)
-            .toEqual([4, 2])
+        expect(result).toEqual([4, 2])
     })
 
     it('middle row entirely blocked leaves no route', (): void => {
@@ -24,8 +22,7 @@ describe('1301. Number of Paths with Max Score', (): void => {
 
         const result: number[] = pathsWithMaxScore(board)
 
-        expect(result)
-            .toEqual([0, 0])
+        expect(result).toEqual([0, 0])
     })
 
     it('minimum sized board ties between the two orthogonal detours', (): void => {
@@ -33,8 +30,7 @@ describe('1301. Number of Paths with Max Score', (): void => {
 
         const result: number[] = pathsWithMaxScore(board)
 
-        expect(result)
-            .toEqual([9, 2])
+        expect(result).toEqual([9, 2])
     })
 
     it('diagonal shortcut stays available even when the orthogonal detour is blocked', (): void => {
@@ -42,8 +38,7 @@ describe('1301. Number of Paths with Max Score', (): void => {
 
         const result: number[] = pathsWithMaxScore(board)
 
-        expect(result)
-            .toEqual([1, 1])
+        expect(result).toEqual([1, 1])
     })
 
     it('every cell shares the same value so every route to the destination ties', (): void => {
@@ -51,8 +46,7 @@ describe('1301. Number of Paths with Max Score', (): void => {
 
         const result: number[] = pathsWithMaxScore(board)
 
-        expect(result)
-            .toEqual([0, 13])
+        expect(result).toEqual([0, 13])
     })
 
     it('largest board favors the longest route and wraps the count modulo 1e9 + 7', (): void => {
@@ -75,11 +69,8 @@ describe('1301. Number of Paths with Max Score', (): void => {
 
         const result: number[] = pathsWithMaxScore(board)
 
-        expect(result[0])
-            .toBe(9 * (2 * (rowCount - 1) - 1))
-        expect(result[1])
-            .toBeGreaterThanOrEqual(0)
-        expect(result[1])
-            .toBeLessThan(1e9 + 7)
+        expect(result[0]).toBe(9 * (2 * (rowCount - 1) - 1))
+        expect(result[1]).toBeGreaterThanOrEqual(0)
+        expect(result[1]).toBeLessThan(1e9 + 7)
     })
 })

@@ -6,8 +6,7 @@ describe('3505. Minimum Operations to Make Elements Within K Subarrays Equal', (
 
         const result: number = minOperations(nums, 3, 2)
 
-        expect(result)
-            .toBe(8)
+        expect(result).toBe(8)
     })
 
     it('adjacent windows share a common value', (): void => {
@@ -15,8 +14,7 @@ describe('3505. Minimum Operations to Make Elements Within K Subarrays Equal', (
 
         const result: number = minOperations(nums, 2, 2)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('single window covering whole array', (): void => {
@@ -24,8 +22,7 @@ describe('3505. Minimum Operations to Make Elements Within K Subarrays Equal', (
 
         const result: number = minOperations(nums, 2, 1)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('already equal elements need no operations', (): void => {
@@ -33,8 +30,7 @@ describe('3505. Minimum Operations to Make Elements Within K Subarrays Equal', (
 
         const result: number = minOperations(nums, 2, 2)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('extreme values far apart', (): void => {
@@ -42,7 +38,6 @@ describe('3505. Minimum Operations to Make Elements Within K Subarrays Equal', (
 
         const result: number = minOperations(nums, 2, 1)
 
-        expect(result)
-            .toBe(2000000)
+        expect(result).toBe(2000000)
     })
 })

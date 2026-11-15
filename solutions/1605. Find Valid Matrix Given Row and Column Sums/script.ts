@@ -1,6 +1,6 @@
-import {arrayOfZeros, matrixOfZeros} from "../../common/array-factories"
+import { arrayOfZeros, matrixOfZeros } from '../../common/array-factories'
 
-export {restoreMatrix}
+export { restoreMatrix }
 
 function restoreMatrix(rowSum: number[], colSum: number[]): number[][] {
     const matrix: number[][] = matrixOfZeros(rowSum.length, colSum.length)
@@ -12,7 +12,7 @@ function restoreMatrix(rowSum: number[], colSum: number[]): number[][] {
         for (let j = 0; j < colSum.length; j++) {
             matrix[i][j] = Math.min(
                 rowSum[i] - currentRow[i],
-                colSum[j] - currentColumn[j],
+                colSum[j] - currentColumn[j]
             )
 
             currentRow[i] += matrix[i][j]

@@ -10,7 +10,7 @@ function minMirrorPairDistance(numbers: number[]): number {
         if (reverseMap.has(value)) {
             const previousIndex: number = reverseMap.get(value)!
             const distance: number = index - previousIndex
-            
+
             minimumResult = Math.min(minimumResult, distance)
         }
 

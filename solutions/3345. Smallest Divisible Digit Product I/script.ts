@@ -1,4 +1,4 @@
-export {smallestNumber}
+export { smallestNumber }
 
 function smallestNumber(number: number, divisor: number): number {
     for (let candidate: number = number; ; candidate++) {

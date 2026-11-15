@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {findSubstring}
+export { findSubstring }
 
 function findSubstring(s: string, words: string[]): number[] {
     const wordCount: number = words.length
@@ -19,7 +19,10 @@ function findSubstring(s: string, words: string[]): number[] {
 
         while (j < wordCount) {
             const startIndex: number = i + j * wordLength
-            const word: string = s.substring(startIndex, startIndex + wordLength)
+            const word: string = s.substring(
+                startIndex,
+                startIndex + wordLength
+            )
 
             if (!wordCounts.has(word)) {
                 break

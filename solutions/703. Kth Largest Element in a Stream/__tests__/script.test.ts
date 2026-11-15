@@ -1,4 +1,4 @@
-import {KthLargest} from '../script'
+import { KthLargest } from '../script'
 
 describe('703. Kth Largest Element in a Stream', (): void => {
     it('Verify', (): void => {

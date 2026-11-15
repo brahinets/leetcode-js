@@ -1,9 +1,9 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {minimumDeletions}
+export { minimumDeletions }
 
 function minimumDeletions(word: string, k: number): number {
-    const counts: Map<string, number> = count(word.split(""))
+    const counts: Map<string, number> = count(word.split(''))
 
     let minimumDeletions: number = word.length
     for (const a of counts.values()) {

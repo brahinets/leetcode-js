@@ -1,4 +1,4 @@
-export {removeAnagrams}
+export { removeAnagrams }
 
 function removeAnagrams(words: string[]): string[] {
     const unique: string[] = []

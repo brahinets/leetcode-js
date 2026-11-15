@@ -1,4 +1,4 @@
-export {numWaterBottles}
+export { numWaterBottles }
 
 function numWaterBottles(numBottles: number, numExchange: number): number {
     let consumed: number = 0

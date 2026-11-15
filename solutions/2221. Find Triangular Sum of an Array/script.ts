@@ -1,4 +1,4 @@
-export {triangularSum}
+export { triangularSum }
 
 function triangularSum(nums: number[]): number {
     let current: number[] = nums

@@ -1,4 +1,4 @@
-export {appendCharacters}
+export { appendCharacters }
 
 function appendCharacters(s: string, t: string): number {
     let prefix: number = 0

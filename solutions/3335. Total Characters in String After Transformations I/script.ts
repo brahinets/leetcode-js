@@ -1,7 +1,7 @@
-import {arrayOfZeros} from "../../common/array-factories"
-import {last} from "../../common/array-utils"
+import { arrayOfZeros } from '../../common/array-factories'
+import { last } from '../../common/array-utils'
 
-export {lengthAfterTransformations}
+export { lengthAfterTransformations }
 
 const MOD: number = 1e9 + 7
 const ALPHABET_LENGTH: number = 26
@@ -9,7 +9,7 @@ const ALPHABET_LENGTH: number = 26
 function lengthAfterTransformations(s: string, t: number): number {
     let counts: number[] = arrayOfZeros(ALPHABET_LENGTH)
     for (const ch of s) {
-        counts[ch.charCodeAt(0) - "a".charCodeAt(0)]++
+        counts[ch.charCodeAt(0) - 'a'.charCodeAt(0)]++
     }
 
     for (let round: number = 0; round < t; round++) {

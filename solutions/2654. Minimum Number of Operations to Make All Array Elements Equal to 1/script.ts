@@ -1,4 +1,4 @@
-export {minOperations}
+export { minOperations }
 
 function minOperations(nums: number[]): number {
     const ones: number = nums.filter((x: number): boolean => x === 1).length
@@ -26,7 +26,7 @@ function minOperations(nums: number[]): number {
 
 function gcd(a: number, b: number): number {
     while (b !== 0) {
-        [a, b] = [b, a % b]
+        ;[a, b] = [b, a % b]
     }
 
     return a

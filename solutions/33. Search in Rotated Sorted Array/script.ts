@@ -1,4 +1,4 @@
-export {search}
+export { search }
 
 function search(nums: number[], target: number): number {
     let left: number = 0

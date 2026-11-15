@@ -1,6 +1,6 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {smallestPalindrome}
+export { smallestPalindrome }
 
 const LETTER_COUNT: number = 26
 const COUNT_LIMIT: number = 10 ** 6
@@ -9,7 +9,10 @@ const CHARACTER_CODE_OF_LETTER_A: number = 'a'.charCodeAt(0)
 function smallestPalindrome(s: string, k: number): string {
     const characterCounts: number[] = countCharacters(s)
     const halfCounts: number[] = halveCounts(characterCounts)
-    const totalPermutations: number = countPermutationsCapped(halfCounts, COUNT_LIMIT)
+    const totalPermutations: number = countPermutationsCapped(
+        halfCounts,
+        COUNT_LIMIT
+    )
 
     if (totalPermutations < k) {
         return ''
@@ -51,7 +54,10 @@ function extractMiddleCharacter(characterCounts: number[]): string {
     return ''
 }
 
-function countPermutationsCapped(characterCounts: number[], limit: number): number {
+function countPermutationsCapped(
+    characterCounts: number[],
+    limit: number
+): number {
     let remainingLength: number = sumOfCounts(characterCounts)
     let product: number = 1
 
@@ -62,7 +68,12 @@ function countPermutationsCapped(characterCounts: number[], limit: number): numb
             continue
         }
 
-        product = multiplyByBinomialCapped(product, remainingLength, count, limit)
+        product = multiplyByBinomialCapped(
+            product,
+            remainingLength,
+            count,
+            limit
+        )
 
         if (product > limit) {
             return product
@@ -74,7 +85,12 @@ function countPermutationsCapped(characterCounts: number[], limit: number): numb
     return product
 }
 
-function multiplyByBinomialCapped(product: number, n: number, r: number, limit: number): number {
+function multiplyByBinomialCapped(
+    product: number,
+    n: number,
+    r: number,
+    limit: number
+): number {
     const smallerSide: number = Math.min(r, n - r)
 
     for (let step: number = 1; step <= smallerSide; step++) {
@@ -100,8 +116,10 @@ function selectKthHalf(characterCounts: number[], k: number): string {
             }
 
             characterCounts[index]--
-            const permutationsWithCharacter: number =
-                countPermutationsCapped(characterCounts, COUNT_LIMIT)
+            const permutationsWithCharacter: number = countPermutationsCapped(
+                characterCounts,
+                COUNT_LIMIT
+            )
 
             if (remainingRank > permutationsWithCharacter) {
                 remainingRank -= permutationsWithCharacter

@@ -11,7 +11,8 @@ export function canPlaceFlowers(flowerbed: number[], n: number): boolean {
         const prev: number = i - 1
         const next: number = i + 1
         const noLeftBlockers: boolean = prev < 0 || flowerbed[prev] === 0
-        const norRightBlockers: boolean = next >= flowerbed.length || flowerbed[next] === 0
+        const norRightBlockers: boolean =
+            next >= flowerbed.length || flowerbed[next] === 0
 
         if (noLeftBlockers && norRightBlockers) {
             i += 2

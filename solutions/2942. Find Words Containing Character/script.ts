@@ -1,4 +1,4 @@
-export {findWordsContaining}
+export { findWordsContaining }
 
 function findWordsContaining(words: string[], x: string): number[] {
     const result: number[] = []

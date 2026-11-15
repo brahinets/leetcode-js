@@ -1,4 +1,4 @@
-export {longestSquareStreak}
+export { longestSquareStreak }
 
 function longestSquareStreak(nums: number[]): number {
     let longestStreak: number = 0

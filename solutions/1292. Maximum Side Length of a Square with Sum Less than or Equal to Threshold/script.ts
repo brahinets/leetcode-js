@@ -1,13 +1,20 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {maxSideLength}
+export { maxSideLength }
 
 function maxSideLength(mat: number[][], threshold: number): number {
-    const prefixSum: number[][] = matrixOfZeros(mat.length + 1, mat[0].length + 1)
+    const prefixSum: number[][] = matrixOfZeros(
+        mat.length + 1,
+        mat[0].length + 1
+    )
 
     for (let r: number = 1; r <= mat.length; r++) {
         for (let c: number = 1; c <= mat[0].length; c++) {
-            prefixSum[r][c] = mat[r - 1][c - 1] + prefixSum[r - 1][c] + prefixSum[r][c - 1] - prefixSum[r - 1][c - 1]
+            prefixSum[r][c] =
+                mat[r - 1][c - 1] +
+                prefixSum[r - 1][c] +
+                prefixSum[r][c - 1] -
+                prefixSum[r - 1][c - 1]
         }
     }
 
@@ -21,7 +28,11 @@ function maxSideLength(mat: number[][], threshold: number): number {
 
         for (let r: number = mid; r <= mat.length; r++) {
             for (let c: number = mid; c <= mat[0].length; c++) {
-                const total: number = prefixSum[r][c] - prefixSum[r - mid][c] - prefixSum[r][c - mid] + prefixSum[r - mid][c - mid]
+                const total: number =
+                    prefixSum[r][c] -
+                    prefixSum[r - mid][c] -
+                    prefixSum[r][c - mid] +
+                    prefixSum[r - mid][c - mid]
 
                 if (total <= threshold) {
                     found = true

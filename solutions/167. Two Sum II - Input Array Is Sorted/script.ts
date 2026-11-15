@@ -1,4 +1,4 @@
-export {twoSum}
+export { twoSum }
 
 function twoSum(numbers: number[], target: number): number[] {
     for (let i: number = 0; i < numbers.length; i++) {

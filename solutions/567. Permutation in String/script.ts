@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {checkInclusion}
+export { checkInclusion }
 
 const ALPHABET_SHIFT = 97
 

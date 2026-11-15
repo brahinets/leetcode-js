@@ -1,4 +1,4 @@
-export {diagonalSum}
+export { diagonalSum }
 
 function diagonalSum(mat: number[][]): number {
     let sum: number = 0

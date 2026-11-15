@@ -1,4 +1,4 @@
-export {closestPrimes}
+export { closestPrimes }
 
 function closestPrimes(left: number, right: number): number[] {
     let prevPrime: number = -1
@@ -17,10 +17,8 @@ function closestPrimes(left: number, right: number): number[] {
                     closestB = candidate
                 }
 
-                if (difference == 2 || difference == 1) return [
-                    prevPrime,
-                    candidate,
-                ]
+                if (difference == 2 || difference == 1)
+                    return [prevPrime, candidate]
             }
 
             prevPrime = candidate

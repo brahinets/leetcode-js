@@ -1,11 +1,19 @@
 export { uniformArray }
 
 function uniformArray(numbers: number[]): boolean {
-    return canConstructWithTargetParity(numbers, 0) || canConstructWithTargetParity(numbers, 1)
+    return (
+        canConstructWithTargetParity(numbers, 0) ||
+        canConstructWithTargetParity(numbers, 1)
+    )
 }
 
-function canConstructWithTargetParity(numbers: number[], targetParity: number): boolean {
-    const sortedNumbers: number[] = [...numbers].sort((first: number, second: number): number => first - second)
+function canConstructWithTargetParity(
+    numbers: number[],
+    targetParity: number
+): boolean {
+    const sortedNumbers: number[] = [...numbers].sort(
+        (first: number, second: number): number => first - second
+    )
     const hasSeenParity: boolean[] = [false, false]
 
     for (const number of sortedNumbers) {

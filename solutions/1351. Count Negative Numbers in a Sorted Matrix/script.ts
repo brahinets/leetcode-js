@@ -1,4 +1,4 @@
-export {countNegatives}
+export { countNegatives }
 
 function countNegatives(grid: number[][]): number {
     let count: number = 0

@@ -17,7 +17,6 @@ describe('3499. Maximize Active Section with Trade I', (): void => {
         expect(result).toBe(5)
     })
 
-
     it('handles ones', (): void => {
         const input: string = '11'
 

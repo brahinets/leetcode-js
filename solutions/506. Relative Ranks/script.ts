@@ -1,9 +1,9 @@
-export {findRelativeRanks}
+export { findRelativeRanks }
 
 const NAMED_PLACE: Map<number, string> = new Map<number, string>([
-    [1, "Gold Medal"],
-    [2, "Silver Medal"],
-    [3, "Bronze Medal"]
+    [1, 'Gold Medal'],
+    [2, 'Silver Medal'],
+    [3, 'Bronze Medal']
 ])
 
 function findRelativeRanks(score: number[]): string[] {

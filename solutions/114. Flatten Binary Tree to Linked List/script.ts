@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {flatten}
+export { flatten }
 
 function flatten(root: TreeNode | null): void {
     if (root) {

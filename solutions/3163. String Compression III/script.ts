@@ -1,4 +1,4 @@
-export {compressedString}
+export { compressedString }
 
 function compressedString(word: string): string {
     let comp: string = ''
@@ -8,7 +8,11 @@ function compressedString(word: string): string {
         let consecutiveCount: number = 0
         const currentChar: string = word[i]
 
-        while (i < word.length && consecutiveCount < 9 && word[i] === currentChar) {
+        while (
+            i < word.length &&
+            consecutiveCount < 9 &&
+            word[i] === currentChar
+        ) {
             consecutiveCount++
             i++
         }

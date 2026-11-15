@@ -1,4 +1,4 @@
-export {findWinners}
+export { findWinners }
 
 function findWinners(matches: number[][]): number[][] {
     const games: Map<number, Set<number>> = collectLoses(matches)

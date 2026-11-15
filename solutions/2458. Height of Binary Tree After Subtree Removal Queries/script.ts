@@ -1,15 +1,15 @@
-import {TreeNode} from "../../common/TreeNode"
-import {arrayOfZeros} from "../../common/array-factories"
+import { TreeNode } from '../../common/TreeNode'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {treeQueries}
+export { treeQueries }
 
 function treeQueries(root: TreeNode | null, queries: number[]): number[] {
     const maxHeightAfterRemoval: number[] = arrayOfZeros(100001)
 
-    traverseLeftToRight(root, 0, maxHeightAfterRemoval, {currentMaxHeight: 0})
-    traverseRightToLeft(root, 0, maxHeightAfterRemoval, {currentMaxHeight: 0})
+    traverseLeftToRight(root, 0, maxHeightAfterRemoval, { currentMaxHeight: 0 })
+    traverseRightToLeft(root, 0, maxHeightAfterRemoval, { currentMaxHeight: 0 })
 
-    return queries.map(query => maxHeightAfterRemoval[query])
+    return queries.map((query) => maxHeightAfterRemoval[query])
 }
 
 function traverseLeftToRight(
@@ -26,8 +26,18 @@ function traverseLeftToRight(
 
     state.currentMaxHeight = Math.max(state.currentMaxHeight, currentHeight)
 
-    traverseLeftToRight(node.left, currentHeight + 1, maxHeightAfterRemoval, state)
-    traverseLeftToRight(node.right, currentHeight + 1, maxHeightAfterRemoval, state)
+    traverseLeftToRight(
+        node.left,
+        currentHeight + 1,
+        maxHeightAfterRemoval,
+        state
+    )
+    traverseLeftToRight(
+        node.right,
+        currentHeight + 1,
+        maxHeightAfterRemoval,
+        state
+    )
 }
 
 function traverseRightToLeft(
@@ -47,7 +57,16 @@ function traverseRightToLeft(
 
     state.currentMaxHeight = Math.max(currentHeight, state.currentMaxHeight)
 
-    traverseRightToLeft(node.right, currentHeight + 1, maxHeightAfterRemoval, state)
-    traverseRightToLeft(node.left, currentHeight + 1, maxHeightAfterRemoval, state)
+    traverseRightToLeft(
+        node.right,
+        currentHeight + 1,
+        maxHeightAfterRemoval,
+        state
+    )
+    traverseRightToLeft(
+        node.left,
+        currentHeight + 1,
+        maxHeightAfterRemoval,
+        state
+    )
 }
-

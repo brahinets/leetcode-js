@@ -1,4 +1,4 @@
-export {canJump}
+export { canJump }
 
 function canJump(nums: number[]): boolean {
     let maxReach: number = 0

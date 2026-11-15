@@ -1,4 +1,4 @@
-import {leftRightDifference} from '../script'
+import { leftRightDifference } from '../script'
 
 describe('2574. Left and Right Sum Differences', (): void => {
     it('multiple elements with varied sums on each side', (): void => {

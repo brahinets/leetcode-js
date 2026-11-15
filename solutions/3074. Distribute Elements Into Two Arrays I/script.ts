@@ -1,4 +1,4 @@
-export {resultArray}
+export { resultArray }
 
 function resultArray(nums: number[]): number[] {
     const firstArray: number[] = [nums[0]]
@@ -7,7 +7,10 @@ function resultArray(nums: number[]): number[] {
     for (let index: number = 2; index < nums.length; index++) {
         const currentNumber: number = nums[index]
 
-        if (firstArray[firstArray.length - 1] > secondArray[secondArray.length - 1]) {
+        if (
+            firstArray[firstArray.length - 1] >
+            secondArray[secondArray.length - 1]
+        ) {
             firstArray.push(currentNumber)
         } else {
             secondArray.push(currentNumber)

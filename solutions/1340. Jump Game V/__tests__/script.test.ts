@@ -2,7 +2,10 @@ import { maxJumps } from '../script'
 
 describe('1340. Jump Game V', (): void => {
     it('finds maximum visitable indices from best starting point', (): void => {
-        const result: number = maxJumps([6, 4, 14, 6, 8, 13, 9, 7, 10, 6, 12], 2)
+        const result: number = maxJumps(
+            [6, 4, 14, 6, 8, 13, 9, 7, 10, 6, 12],
+            2
+        )
 
         expect(result).toBe(4)
     })

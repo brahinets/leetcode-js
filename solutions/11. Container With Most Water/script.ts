@@ -1,4 +1,4 @@
-export {maxArea}
+export { maxArea }
 
 function maxArea(height: number[]): number {
     let max: number = 0

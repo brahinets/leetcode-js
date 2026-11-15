@@ -1,4 +1,4 @@
-export {checkIfExist}
+export { checkIfExist }
 
 function checkIfExist(arr: number[]): boolean {
     for (let i: number = 0; i < arr.length; i++) {

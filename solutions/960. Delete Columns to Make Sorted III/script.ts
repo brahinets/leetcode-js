@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {minDeletionSize}
+export { minDeletionSize }
 
 function minDeletionSize(strs: string[]): number {
     const dp: number[] = arrayOf(1, strs[0].length)

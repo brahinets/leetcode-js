@@ -1,4 +1,4 @@
-export {compareVersion}
+export { compareVersion }
 
 function compareVersion(version1: string, version2: string): number {
     const v1: number[] = parseVersion(version1)
@@ -22,5 +22,5 @@ function compareVersion(version1: string, version2: string): number {
 }
 
 function parseVersion(version: string): number[] {
-    return version.split(".").map(Number)
+    return version.split('.').map(Number)
 }

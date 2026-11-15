@@ -1,4 +1,4 @@
-import {shortestBeautifulSubstring} from '../script'
+import { shortestBeautifulSubstring } from '../script'
 
 describe('2904. Shortest and Lexicographically Smallest Beautiful String', (): void => {
     it('multiple shortest substrings exist and the smallest lexicographically wins', (): void => {
@@ -28,6 +28,8 @@ describe('2904. Shortest and Lexicographically Smallest Beautiful String', (): v
     it('large input completes efficiently', (): void => {
         const binaryString: string = '1'.repeat(50) + '0'.repeat(50)
 
-        expect(shortestBeautifulSubstring(binaryString, 50)).toBe('1'.repeat(50))
+        expect(shortestBeautifulSubstring(binaryString, 50)).toBe(
+            '1'.repeat(50)
+        )
     })
 })

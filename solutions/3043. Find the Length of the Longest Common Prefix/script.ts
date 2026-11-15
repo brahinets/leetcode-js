@@ -1,5 +1,4 @@
-export {longestCommonPrefix}
-
+export { longestCommonPrefix }
 
 function longestCommonPrefix(arr1: number[], arr2: number[]): number {
     const cache: Set<number> = new Set<number>()

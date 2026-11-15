@@ -1,4 +1,4 @@
-import {minimumPairRemoval} from '../script'
+import { minimumPairRemoval } from '../script'
 
 describe('3507. Minimum Pair Removal to Sort Array I', (): void => {
     it('Requires multiple merges to become non-decreasing', (): void => {

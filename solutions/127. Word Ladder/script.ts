@@ -1,6 +1,10 @@
-export {ladderLength}
+export { ladderLength }
 
-function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {
+function ladderLength(
+    beginWord: string,
+    endWord: string,
+    wordList: string[]
+): number {
     if (!wordList.includes(endWord)) {
         return 0
     }
@@ -17,19 +21,20 @@ function ladderLength(beginWord: string, endWord: string, wordList: string[]): n
             return level
         }
 
-        for (let i:number = 0; i < currentWord.length; i++) {
-            for (let charCode:number = 97; charCode <= 122; charCode++) {
+        for (let i: number = 0; i < currentWord.length; i++) {
+            for (let charCode: number = 97; charCode <= 122; charCode++) {
                 const letter: string = String.fromCharCode(charCode)
 
                 if (letter === currentWord[i]) {
                     continue
                 }
 
-                const nextWord: string = currentWord.slice(0, i) + letter + currentWord.slice(i + 1)
+                const nextWord: string =
+                    currentWord.slice(0, i) + letter + currentWord.slice(i + 1)
 
                 if (wordSet.has(nextWord) && !visited.has(nextWord)) {
                     visited.add(nextWord)
-                    
+
                     queue.push([nextWord, level + 1])
                 }
             }

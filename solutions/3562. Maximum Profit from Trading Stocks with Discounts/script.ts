@@ -1,13 +1,13 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {maxProfit}
+export { maxProfit }
 
 function maxProfit(
     n: number,
     present: number[],
     future: number[],
     hierarchy: number[][],
-    budget: number,
+    budget: number
 ): number {
     const g: number[][] = arrayOf([], n)
     for (const e of hierarchy) {
@@ -19,7 +19,13 @@ function maxProfit(
     return resultDp[budget]
 }
 
-function dfs(present: number[], future: number[], budget: number, g: number[][], u: number): readonly [number[], number[], number] {
+function dfs(
+    present: number[],
+    future: number[],
+    budget: number,
+    g: number[][],
+    u: number
+): readonly [number[], number[], number] {
     const cost: number = present[u]
     const dCost: number = Math.floor(present[u] / 2)
 
@@ -41,11 +47,11 @@ function dfs(present: number[], future: number[], budget: number, g: number[][],
             for (let sub: number = 0; sub <= Math.min(vSize, i); sub++) {
                 nextSubProfit0[i] = Math.max(
                     nextSubProfit0[i],
-                    subProfit0[i - sub] + childDp0[sub],
+                    subProfit0[i - sub] + childDp0[sub]
                 )
                 nextSubProfit1[i] = Math.max(
                     nextSubProfit1[i],
-                    subProfit1[i - sub] + childDp1[sub],
+                    subProfit1[i - sub] + childDp1[sub]
                 )
             }
         }
@@ -58,15 +64,13 @@ function dfs(present: number[], future: number[], budget: number, g: number[][],
         dp1[i] = subProfit0[i]
 
         if (i >= cost) {
-            dp0[i] = Math.max(dp0[i], subProfit1[i - cost] + future[u] - cost,)
+            dp0[i] = Math.max(dp0[i], subProfit1[i - cost] + future[u] - cost)
         }
 
         if (i >= dCost) {
-            dp1[i] = Math.max(dp1[i], subProfit1[i - dCost] + future[u] - dCost,)
+            dp1[i] = Math.max(dp1[i], subProfit1[i - dCost] + future[u] - dCost)
         }
     }
 
     return [dp0, dp1, uSize]
 }
-
-

@@ -1,6 +1,6 @@
-export {maxDifference}
+export { maxDifference }
 
-const digits: string[] = ["0", "1", "2", "3", "4", "5"]
+const digits: string[] = ['0', '1', '2', '3', '4', '5']
 
 function maxDifference(s: string, k: number): number {
     let maxDiff: number = -Infinity
@@ -11,7 +11,12 @@ function maxDifference(s: string, k: number): number {
                 continue
             }
 
-            const minDiffByStatus: number[] = [Infinity, Infinity, Infinity, Infinity]
+            const minDiffByStatus: number[] = [
+                Infinity,
+                Infinity,
+                Infinity,
+                Infinity
+            ]
             let countA: number = 0
             let countB: number = 0
             let prevCountA: number = 0
@@ -28,9 +33,15 @@ function maxDifference(s: string, k: number): number {
                 }
 
                 while (right - left >= k && countB - prevCountB >= 2) {
-                    const leftStatus: number = getParityStatus(prevCountA, prevCountB)
+                    const leftStatus: number = getParityStatus(
+                        prevCountA,
+                        prevCountB
+                    )
 
-                    minDiffByStatus[leftStatus] = Math.min(minDiffByStatus[leftStatus], prevCountA - prevCountB)
+                    minDiffByStatus[leftStatus] = Math.min(
+                        minDiffByStatus[leftStatus],
+                        prevCountA - prevCountB
+                    )
 
                     left++
 
@@ -46,7 +57,10 @@ function maxDifference(s: string, k: number): number {
                 const rightStatus: number = getParityStatus(countA, countB)
                 const flippedAStatus: number = rightStatus ^ 2
                 if (minDiffByStatus[flippedAStatus] !== Infinity) {
-                    maxDiff = Math.max(maxDiff, countA - countB - minDiffByStatus[flippedAStatus])
+                    maxDiff = Math.max(
+                        maxDiff,
+                        countA - countB - minDiffByStatus[flippedAStatus]
+                    )
                 }
             }
         }

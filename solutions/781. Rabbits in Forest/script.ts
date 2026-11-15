@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {numRabbits}
+export { numRabbits }
 
 function numRabbits(answers: number[]): number {
     const counts: Map<number, number> = count(answers)

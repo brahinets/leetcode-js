@@ -1,4 +1,4 @@
-export {waysToSplitArray}
+export { waysToSplitArray }
 
 function waysToSplitArray(nums: number[]): number {
     const prefSum: number[] = [nums[0]]

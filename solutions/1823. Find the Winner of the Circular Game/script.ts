@@ -1,4 +1,4 @@
-export {findTheWinner}
+export { findTheWinner }
 
 function findTheWinner(n: number, k: number): number {
     let winner: number = 0

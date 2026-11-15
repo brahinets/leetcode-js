@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {maxDotProduct}
+export { maxDotProduct }
 
 function maxDotProduct(nums1: number[], nums2: number[]): number {
     const dp: number[][] = matrixOf(-Infinity, nums1.length, nums2.length)
@@ -18,7 +18,10 @@ function maxDotProduct(nums1: number[], nums2: number[]): number {
             }
 
             if (i > 0 && j > 0) {
-                dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - 1] + nums1[i] * nums2[j])
+                dp[i][j] = Math.max(
+                    dp[i][j],
+                    dp[i - 1][j - 1] + nums1[i] * nums2[j]
+                )
             }
         }
     }

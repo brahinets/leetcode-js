@@ -6,8 +6,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result.sort())
-            .toEqual(['(())()', '()()()'])
+        expect(result.sort()).toEqual(['(())()', '()()()'])
     })
 
     it('letters mixed with parentheses and multiple solutions', (): void => {
@@ -15,8 +14,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result.sort())
-            .toEqual(['(a())()', '(a)()()'])
+        expect(result.sort()).toEqual(['(a())()', '(a)()()'])
     })
 
     it('only a closing parenthesis must be removed leaving empty string', (): void => {
@@ -24,8 +22,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result)
-            .toEqual([''])
+        expect(result).toEqual([''])
     })
 
     it('already valid string stays unchanged', (): void => {
@@ -33,8 +30,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result)
-            .toEqual(['(a)b(c)'])
+        expect(result).toEqual(['(a)b(c)'])
     })
 
     it('string without parentheses', (): void => {
@@ -42,8 +38,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result)
-            .toEqual(['abc'])
+        expect(result).toEqual(['abc'])
     })
 
     it('single letter', (): void => {
@@ -51,8 +46,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result)
-            .toEqual(['x'])
+        expect(result).toEqual(['x'])
     })
 
     it('only opening parentheses', (): void => {
@@ -60,8 +54,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result)
-            .toEqual([''])
+        expect(result).toEqual([''])
     })
 
     it('only closing parentheses', (): void => {
@@ -69,8 +62,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result)
-            .toEqual([''])
+        expect(result).toEqual([''])
     })
 
     it('extra opening parenthesis in front of a valid pair', (): void => {
@@ -78,8 +70,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result)
-            .toEqual(['()'])
+        expect(result).toEqual(['()'])
     })
 
     it('duplicate results are not repeated', (): void => {
@@ -87,8 +78,7 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result.sort())
-            .toEqual(['(k)', 'k()'])
+        expect(result.sort()).toEqual(['(k)', 'k()'])
     })
 
     it('removal of both kinds of parentheses is required', (): void => {
@@ -96,7 +86,6 @@ describe('301. Remove Invalid Parentheses', (): void => {
 
         const result: string[] = removeInvalidParentheses(s)
 
-        expect(result)
-            .toEqual(['f'])
+        expect(result).toEqual(['f'])
     })
 })

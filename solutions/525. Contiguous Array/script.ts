@@ -1,4 +1,4 @@
-export {findMaxLength}
+export { findMaxLength }
 
 function findMaxLength(nums: number[]): number {
     let max: number = 0

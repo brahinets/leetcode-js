@@ -1,11 +1,12 @@
-import {arrayOfZeros} from "../../common/array-factories"
-import {UndirectedUnweightedGraph} from "../../common/Graph"
-import {undirectedUnweightedGraphFromEdges} from "../../common/graph-factories"
+import { arrayOfZeros } from '../../common/array-factories'
+import { UndirectedUnweightedGraph } from '../../common/Graph'
+import { undirectedUnweightedGraphFromEdges } from '../../common/graph-factories'
 
-export {sumOfDistancesInTree}
+export { sumOfDistancesInTree }
 
 function sumOfDistancesInTree(n: number, edges: number[][]): number[] {
-    const graph: UndirectedUnweightedGraph = undirectedUnweightedGraphFromEdges(edges)
+    const graph: UndirectedUnweightedGraph =
+        undirectedUnweightedGraphFromEdges(edges)
     const result: number[] = arrayOfZeros(n)
     const subtreeSizes: number[] = arrayOfZeros(n)
 
@@ -23,7 +24,10 @@ function sumOfDistancesInTree(n: number, edges: number[][]): number[] {
     const dfs2 = (node: number, parent: number): void => {
         for (const neighbor of graph.getNeighbours(node).keys()) {
             if (neighbor !== parent) {
-                result[neighbor] = result[node] + (n - subtreeSizes[neighbor]) - subtreeSizes[neighbor]
+                result[neighbor] =
+                    result[node] +
+                    (n - subtreeSizes[neighbor]) -
+                    subtreeSizes[neighbor]
                 dfs2(neighbor, node)
             }
         }

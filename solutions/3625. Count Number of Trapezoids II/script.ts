@@ -1,4 +1,4 @@
-export {countTrapezoids}
+export { countTrapezoids }
 
 type SlopeToIntercept = Map<number, number[]>
 type MidToSlope = Map<number, number[]>
@@ -33,7 +33,15 @@ function populatePairMaps(
             const dx: number = x1 - x2
             const dy: number = y1 - y2
 
-            const {slope, intercept} = computeSlopeIntercept(x1, y1, x2, y2, dx, dy, INF_SLOPE)
+            const { slope, intercept } = computeSlopeIntercept(
+                x1,
+                y1,
+                x2,
+                y2,
+                dx,
+                dy,
+                INF_SLOPE
+            )
             const midKey: number = computeMidKey(x1, y1, x2, y2)
 
             if (!slopeToIntercept.has(slope)) {
@@ -57,15 +65,15 @@ function computeSlopeIntercept(
     dx: number,
     dy: number,
     INF_SLOPE: number
-): { slope: number, intercept: number } {
+): { slope: number; intercept: number } {
     if (x2 === x1) {
-        return {slope: INF_SLOPE, intercept: x1}
+        return { slope: INF_SLOPE, intercept: x1 }
     }
 
     const slope: number = (y2 - y1) / (x2 - x1)
     const intercept: number = (y1 * dx - x1 * dy) / dx
 
-    return {slope, intercept}
+    return { slope, intercept }
 }
 
 function computeMidKey(x1: number, y1: number, x2: number, y2: number): number {

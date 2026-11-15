@@ -1,4 +1,4 @@
-export {repairCars}
+export { repairCars }
 
 function repairCars(ranks: number[], cars: number): number {
     let low: number = 1

@@ -1,4 +1,4 @@
-export {missingMultiple}
+export { missingMultiple }
 
 function missingMultiple(nums: number[], k: number): number {
     const numberSet: Set<number> = new Set<number>(nums)

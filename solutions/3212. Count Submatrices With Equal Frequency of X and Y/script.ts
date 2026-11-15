@@ -1,4 +1,4 @@
-import { matrixOfZeros } from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
 export { numberOfSubmatrices }
 
@@ -29,7 +29,10 @@ function numberOfSubmatrices(grid: string[][]): number {
                 prefixY[row][column] -= prefixY[row - 1][column - 1]
             }
 
-            if (prefixX[row][column] > 0 && prefixX[row][column] === prefixY[row][column]) {
+            if (
+                prefixX[row][column] > 0 &&
+                prefixX[row][column] === prefixY[row][column]
+            ) {
                 count++
             }
         }

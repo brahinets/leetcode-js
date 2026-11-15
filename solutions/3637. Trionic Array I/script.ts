@@ -1,4 +1,4 @@
-export {isTrionic}
+export { isTrionic }
 
 function isTrionic(nums: number[]): boolean {
     const n: number = nums.length

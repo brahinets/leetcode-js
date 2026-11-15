@@ -1,4 +1,4 @@
-export {subsets}
+export { subsets }
 
 function subsets(nums: number[]): number[][] {
     const subsets: number[][] = [[]]

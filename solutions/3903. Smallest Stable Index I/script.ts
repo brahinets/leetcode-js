@@ -1,4 +1,4 @@
-export {firstStableIndex}
+export { firstStableIndex }
 
 function firstStableIndex(nums: number[], k: number): number {
     const n: number = nums.length

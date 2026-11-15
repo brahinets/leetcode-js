@@ -1,9 +1,14 @@
-import {UndirectedUnweightedGraph} from "../../common/Graph"
-import {matrixOf} from "../../common/array-factories"
+import { UndirectedUnweightedGraph } from '../../common/Graph'
+import { matrixOf } from '../../common/array-factories'
 
-export {secondMinimum}
+export { secondMinimum }
 
-function secondMinimum(n: number, edges: number[][], time: number, change: number): number {
+function secondMinimum(
+    n: number,
+    edges: number[][],
+    time: number,
+    change: number
+): number {
     const graph: UndirectedUnweightedGraph = createGraph(edges)
 
     const dist: number[][] = matrixOf(Number.MAX_SAFE_INTEGER, n + 1, 2)
@@ -48,8 +53,13 @@ function createGraph(edges: number[][]): UndirectedUnweightedGraph {
     return graph
 }
 
-function insertSorted(arr: [number, number][], element: [number, number]): void {
-    const index: number = arr.findIndex(([time]: number[]): boolean => time > element[0])
+function insertSorted(
+    arr: [number, number][],
+    element: [number, number]
+): void {
+    const index: number = arr.findIndex(
+        ([time]: number[]): boolean => time > element[0]
+    )
 
     if (index === -1) {
         arr.push(element)

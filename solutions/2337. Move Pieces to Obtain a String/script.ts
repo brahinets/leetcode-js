@@ -1,4 +1,4 @@
-export {canChange}
+export { canChange }
 
 function canChange(start: string, target: string): boolean {
     if (start === target) {

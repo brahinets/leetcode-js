@@ -1,5 +1,5 @@
-export {isSameTree, TreeNode}
-import {TreeNode} from '../../common/TreeNode'
+export { isSameTree, TreeNode }
+import { TreeNode } from '../../common/TreeNode'
 
 function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
     if (!p && !q) {
@@ -22,5 +22,7 @@ function isSameNode(left: TreeNode | null, right: TreeNode | null): boolean {
         return false
     }
 
-    return isSameNode(left.left, right.left) && isSameNode(left.right, right.right)
+    return (
+        isSameNode(left.left, right.left) && isSameNode(left.right, right.right)
+    )
 }

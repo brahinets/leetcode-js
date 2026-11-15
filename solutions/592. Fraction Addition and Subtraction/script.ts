@@ -1,4 +1,4 @@
-export {fractionAddition}
+export { fractionAddition }
 
 function fractionAddition(expression: string): string {
     const fractions: string[] = expression.split(/(?=[-+])/)

@@ -1,4 +1,4 @@
-export {pivotArray}
+export { pivotArray }
 
 function pivotArray(nums: number[], pivot: number): number[] {
     const result: number[] = []

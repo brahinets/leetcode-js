@@ -1,4 +1,4 @@
-export {numberOfAlternatingGroups}
+export { numberOfAlternatingGroups }
 
 function numberOfAlternatingGroups(colors: number[], k: number): number {
     const extendedColors: number[] = []

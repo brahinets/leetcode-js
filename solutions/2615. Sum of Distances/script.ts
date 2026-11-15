@@ -1,5 +1,5 @@
-import { arrayOfZeros } from "../../common/array-factories"
-import { sum } from "../../common/array-utils"
+import { arrayOfZeros } from '../../common/array-factories'
+import { sum } from '../../common/array-utils'
 
 export { distance }
 
@@ -26,7 +26,11 @@ function distance(numbers: number[]): number[] {
             const rightCount: number = total - 1 - position
             const rightSum: number = totalSum - leftSum - currentIndex
 
-            result[currentIndex] = currentIndex * leftCount - leftSum + rightSum - currentIndex * rightCount
+            result[currentIndex] =
+                currentIndex * leftCount -
+                leftSum +
+                rightSum -
+                currentIndex * rightCount
             leftSum += currentIndex
         }
     }

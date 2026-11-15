@@ -1,4 +1,4 @@
-export {separateSquares}
+export { separateSquares }
 
 type HorizontalSlice = [number, number, number]
 
@@ -18,7 +18,7 @@ function separateSquares(squares: number[][]): number {
 
     sortEvents(events)
 
-    const {slices, totalArea, lastY} = buildHorizontalSlices(events)
+    const { slices, totalArea, lastY } = buildHorizontalSlices(events)
 
     return findSeparatingY(slices, totalArea, lastY)
 }
@@ -32,16 +32,27 @@ function createEvents(inputSquares: number[][]): SweepEvent[] {
         const yOrigin: number = square[1]
         const sideLength: number = square[2]
 
-        events.push({x: yOrigin, delta: 1, y1: xOrigin, y2: xOrigin + sideLength})
-        events.push({x: yOrigin + sideLength, delta: -1, y1: xOrigin, y2: xOrigin + sideLength})
+        events.push({
+            x: yOrigin,
+            delta: 1,
+            y1: xOrigin,
+            y2: xOrigin + sideLength
+        })
+        events.push({
+            x: yOrigin + sideLength,
+            delta: -1,
+            y1: xOrigin,
+            y2: xOrigin + sideLength
+        })
     }
 
     return events
 }
 
 function sortEvents(events: SweepEvent[]): void {
-    events.sort((a: SweepEvent, b: SweepEvent): number =>
-        a.x - b.x || b.delta - a.delta || a.y1 - b.y1 || a.y2 - b.y2
+    events.sort(
+        (a: SweepEvent, b: SweepEvent): number =>
+            a.x - b.x || b.delta - a.delta || a.y1 - b.y1 || a.y2 - b.y2
     )
 }
 
@@ -50,7 +61,10 @@ function computeUnionWidth(intervals: Array<[number, number]>): number {
         return 0
     }
 
-    intervals.sort((a: [number, number], b: [number, number]): number => a[0] - b[0] || a[1] - b[1])
+    intervals.sort(
+        (a: [number, number], b: [number, number]): number =>
+            a[0] - b[0] || a[1] - b[1]
+    )
 
     let totalWidth: number = 0
     let currentLeft: number = intervals[0][0]
@@ -74,12 +88,12 @@ function computeUnionWidth(intervals: Array<[number, number]>): number {
 }
 
 function buildHorizontalSlices(events: SweepEvent[]): {
-    slices: HorizontalSlice[];
-    totalArea: number;
+    slices: HorizontalSlice[]
+    totalArea: number
     lastY: number
 } {
     if (events.length === 0) {
-        return {slices: [], totalArea: 0, lastY: 0}
+        return { slices: [], totalArea: 0, lastY: 0 }
     }
 
     const activeIntervals: Array<[number, number]> = []
@@ -93,7 +107,9 @@ function buildHorizontalSlices(events: SweepEvent[]): {
 
         if (currentY > previousY && activeIntervals.length > 0) {
             const sliceHeight: number = currentY - previousY
-            const sliceWidth: number = computeUnionWidth(activeIntervals.slice())
+            const sliceWidth: number = computeUnionWidth(
+                activeIntervals.slice()
+            )
 
             horizontalSlices.push([previousY, sliceHeight, sliceWidth])
             accumulatedArea += sliceHeight * sliceWidth
@@ -103,7 +119,10 @@ function buildHorizontalSlices(events: SweepEvent[]): {
             activeIntervals.push([event.y1, event.y2])
         } else {
             for (let k: number = 0; k < activeIntervals.length; k += 1) {
-                if (activeIntervals[k][0] === event.y1 && activeIntervals[k][1] === event.y2) {
+                if (
+                    activeIntervals[k][0] === event.y1 &&
+                    activeIntervals[k][1] === event.y2
+                ) {
                     activeIntervals.splice(k, 1)
 
                     break
@@ -114,10 +133,18 @@ function buildHorizontalSlices(events: SweepEvent[]): {
         previousY = currentY
     }
 
-    return {slices: horizontalSlices, totalArea: accumulatedArea, lastY: previousY}
+    return {
+        slices: horizontalSlices,
+        totalArea: accumulatedArea,
+        lastY: previousY
+    }
 }
 
-function findSeparatingY(slices: HorizontalSlice[], totalArea: number, fallbackY: number): number {
+function findSeparatingY(
+    slices: HorizontalSlice[],
+    totalArea: number,
+    fallbackY: number
+): number {
     const halfArea: number = totalArea / 2
     let accumulator: number = 0
 

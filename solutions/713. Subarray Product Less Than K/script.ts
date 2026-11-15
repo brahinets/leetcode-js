@@ -1,4 +1,4 @@
-export {numSubarrayProductLessThanK}
+export { numSubarrayProductLessThanK }
 
 function numSubarrayProductLessThanK(nums: number[], k: number): number {
     if (k <= 1) {
@@ -23,5 +23,4 @@ function numSubarrayProductLessThanK(nums: number[], k: number): number {
     }
 
     return count
-
 }

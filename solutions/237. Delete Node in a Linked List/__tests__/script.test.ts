@@ -1,10 +1,9 @@
-import {deleteNode} from '../script'
+import { deleteNode } from '../script'
 
-import {linkedListOf} from "../../../common/list-factories"
-import {ListNode} from "../../../common/ListNode"
+import { linkedListOf } from '../../../common/list-factories'
+import { ListNode } from '../../../common/ListNode'
 
 describe('237. Delete Node in a Linked List', (): void => {
-
     it('Delete head node', (): void => {
         const last: ListNode = new ListNode(9)
         const middle: ListNode = new ListNode(1, last)

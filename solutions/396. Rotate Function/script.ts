@@ -1,4 +1,4 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
 export { maxRotateFunction }
 
@@ -6,9 +6,12 @@ function maxRotateFunction(nums: number[]): number {
     const length: number = nums.length
     const totalSum: number = sum(nums)
 
-    let currentF: number = nums.reduce((accumulator: number, value: number, index: number): number => {
-        return accumulator + index * value
-    }, 0)
+    let currentF: number = nums.reduce(
+        (accumulator: number, value: number, index: number): number => {
+            return accumulator + index * value
+        },
+        0
+    )
 
     let maximum: number = currentF
 

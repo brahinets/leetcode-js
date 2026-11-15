@@ -1,4 +1,4 @@
-export {maxSubarrayLength}
+export { maxSubarrayLength }
 
 function maxSubarrayLength(nums: number[], k: number): number {
     const frequencies: Map<number, number> = new Map<number, number>()

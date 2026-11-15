@@ -1,6 +1,6 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maxTotalValue}
+export { maxTotalValue }
 
 type Combine = (first: number, second: number) => number
 
@@ -16,7 +16,7 @@ function maxTotalValue(numbers: number[], k: number): number {
     const tables: RangeTables = {
         maximumTable: buildSparseTable(numbers, logTable, Math.max),
         minimumTable: buildSparseTable(numbers, logTable, Math.min),
-        logTable,
+        logTable
     }
 
     const maximumValue: number = subarrayValue(tables, 0, length - 1)
@@ -26,7 +26,10 @@ function maxTotalValue(numbers: number[], k: number): number {
     let chosenCount: number = 0
     let leftBoundary: number = -1
     for (let right: number = 0; right < length; right++) {
-        while (leftBoundary + 1 <= right && subarrayValue(tables, leftBoundary + 1, right) > threshold) {
+        while (
+            leftBoundary + 1 <= right &&
+            subarrayValue(tables, leftBoundary + 1, right) > threshold
+        ) {
             leftBoundary++
         }
 
@@ -40,12 +43,21 @@ function maxTotalValue(numbers: number[], k: number): number {
     return threshold * (k - chosenCount) + sumOfValues
 }
 
-function findThreshold(tables: RangeTables, length: number, k: number, maximumValue: number): number {
+function findThreshold(
+    tables: RangeTables,
+    length: number,
+    k: number,
+    maximumValue: number
+): number {
     let low: number = 0
     let high: number = maximumValue
     while (low < high) {
         const middle: number = Math.floor((low + high + 1) / 2)
-        const count: number = countSubarraysWithValueAtLeast(tables, length, middle)
+        const count: number = countSubarraysWithValueAtLeast(
+            tables,
+            length,
+            middle
+        )
         if (count >= k) {
             low = middle
         } else {
@@ -56,11 +68,18 @@ function findThreshold(tables: RangeTables, length: number, k: number, maximumVa
     return low
 }
 
-function countSubarraysWithValueAtLeast(tables: RangeTables, length: number, threshold: number): number {
+function countSubarraysWithValueAtLeast(
+    tables: RangeTables,
+    length: number,
+    threshold: number
+): number {
     let count: number = 0
     let leftBoundary: number = -1
     for (let right: number = 0; right < length; right++) {
-        while (leftBoundary + 1 <= right && subarrayValue(tables, leftBoundary + 1, right) >= threshold) {
+        while (
+            leftBoundary + 1 <= right &&
+            subarrayValue(tables, leftBoundary + 1, right) >= threshold
+        ) {
             leftBoundary++
         }
 
@@ -70,19 +89,41 @@ function countSubarraysWithValueAtLeast(tables: RangeTables, length: number, thr
     return count
 }
 
-function subarrayValue(tables: RangeTables, left: number, right: number): number {
-    return rangeQuery(tables.maximumTable, tables.logTable, left, right, Math.max)
-        - rangeQuery(tables.minimumTable, tables.logTable, left, right, Math.min)
+function subarrayValue(
+    tables: RangeTables,
+    left: number,
+    right: number
+): number {
+    return (
+        rangeQuery(
+            tables.maximumTable,
+            tables.logTable,
+            left,
+            right,
+            Math.max
+        ) -
+        rangeQuery(tables.minimumTable, tables.logTable, left, right, Math.min)
+    )
 }
 
-function rangeQuery(table: number[][], logTable: number[], left: number, right: number, combine: Combine): number {
+function rangeQuery(
+    table: number[][],
+    logTable: number[],
+    left: number,
+    right: number,
+    combine: Combine
+): number {
     const span: number = right - left + 1
     const power: number = logTable[span]
 
     return combine(table[power][left], table[power][right - (1 << power) + 1])
 }
 
-function buildSparseTable(numbers: number[], logTable: number[], combine: Combine): number[][] {
+function buildSparseTable(
+    numbers: number[],
+    logTable: number[],
+    combine: Combine
+): number[][] {
     const length: number = numbers.length
     const maximumPower: number = logTable[length] + 1
     const table: number[][] = []

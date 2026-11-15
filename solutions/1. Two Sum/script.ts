@@ -1,4 +1,4 @@
-export {twoSum}
+export { twoSum }
 
 function twoSum(nums: number[], target: number): number[] {
     for (let i: number = 0; i < nums.length; i++) {
@@ -13,5 +13,5 @@ function twoSum(nums: number[], target: number): number[] {
         }
     }
 
-    throw new Error("Match not found")
+    throw new Error('Match not found')
 }

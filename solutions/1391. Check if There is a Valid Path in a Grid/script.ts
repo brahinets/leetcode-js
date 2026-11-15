@@ -1,4 +1,4 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
 export { hasValidPath }
 
@@ -11,21 +11,22 @@ const STREET_CONNECTIONS: readonly (readonly Direction[])[] = [
     ['left', 'down'],
     ['right', 'down'],
     ['left', 'up'],
-    ['right', 'up'],
+    ['right', 'up']
 ]
 
-const DIRECTION_DELTA: Readonly<Record<Direction, readonly [number, number]>> = {
-    left:  [0, -1],
-    right: [0,  1],
-    up:    [-1, 0],
-    down:  [1,  0],
-}
+const DIRECTION_DELTA: Readonly<Record<Direction, readonly [number, number]>> =
+    {
+        left: [0, -1],
+        right: [0, 1],
+        up: [-1, 0],
+        down: [1, 0]
+    }
 
 const OPPOSITE_DIRECTION: Readonly<Record<Direction, Direction>> = {
-    left:  'right',
+    left: 'right',
     right: 'left',
-    up:    'down',
-    down:  'up',
+    up: 'down',
+    down: 'up'
 }
 
 function hasValidPath(grid: number[][]): boolean {
@@ -47,7 +48,12 @@ function hasValidPath(grid: number[][]): boolean {
             const nextRow: number = row + deltaRow
             const nextColumn: number = column + deltaColumn
 
-            if (nextRow < 0 || nextRow >= rows || nextColumn < 0 || nextColumn >= columns) {
+            if (
+                nextRow < 0 ||
+                nextRow >= rows ||
+                nextColumn < 0 ||
+                nextColumn >= columns
+            ) {
                 continue
             }
 
@@ -55,7 +61,11 @@ function hasValidPath(grid: number[][]): boolean {
                 continue
             }
 
-            if (!STREET_CONNECTIONS[grid[nextRow][nextColumn]].includes(OPPOSITE_DIRECTION[direction])) {
+            if (
+                !STREET_CONNECTIONS[grid[nextRow][nextColumn]].includes(
+                    OPPOSITE_DIRECTION[direction]
+                )
+            ) {
                 continue
             }
 

@@ -1,17 +1,17 @@
-export {evalRPN}
+export { evalRPN }
 
 const OPERATORS: Map<string, (a: number, b: number) => number> = new Map([
-    ["+", (a: number, b: number): number => a + b],
-    ["-", (a: number, b: number): number => a - b],
-    ["*", (a: number, b: number): number => a * b],
-    ["/", (a: number, b: number): number => Math.trunc(a / b)],
+    ['+', (a: number, b: number): number => a + b],
+    ['-', (a: number, b: number): number => a - b],
+    ['*', (a: number, b: number): number => a * b],
+    ['/', (a: number, b: number): number => Math.trunc(a / b)]
 ])
 
 function evalRPN(tokens: string[]): number {
     while (tokens.length > 1) {
         const processableTokenIndex: number = findProcessableTokenIndex(tokens)
         if (processableTokenIndex === -1) {
-            throw new Error("No processable token found")
+            throw new Error('No processable token found')
         }
 
         const result: number = evaluate(
@@ -27,9 +27,10 @@ function evalRPN(tokens: string[]): number {
 }
 
 function evaluate(num1: number, num2: number, token: string): number {
-    const fun: ((a: number, b: number) => number) | undefined = OPERATORS.get(token)
+    const fun: ((a: number, b: number) => number) | undefined =
+        OPERATORS.get(token)
     if (fun === undefined) {
-        throw new Error("Not processable token")
+        throw new Error('Not processable token')
     } else {
         return fun(num1, num2)
     }

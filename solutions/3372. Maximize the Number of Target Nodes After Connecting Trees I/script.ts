@@ -1,8 +1,12 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {maxTargetNodes}
+export { maxTargetNodes }
 
-function maxTargetNodes(edges1: number[][], edges2: number[][], k: number): number[] {
+function maxTargetNodes(
+    edges1: number[][],
+    edges2: number[][],
+    k: number
+): number[] {
     const tree1: number[][] = buildAdjList(edges1, edges1.length + 1)
     const tree2: number[][] = buildAdjList(edges2, edges2.length + 1)
 
@@ -15,7 +19,6 @@ function maxTargetNodes(edges1: number[][], edges2: number[][], k: number): numb
     for (let i: number = 0; i < edges2.length + 1; i++) {
         withinK2.push(countWithinK(tree2, i, k - 1))
     }
-
 
     const result: number[] = []
     for (let i: number = 0; i < edges1.length + 1; i++) {

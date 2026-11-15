@@ -6,8 +6,7 @@ describe('3536. Maximum Product of Two Digits', (): void => {
 
         const result: number = maxProduct(n)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('repeated digit may be used twice', (): void => {
@@ -15,8 +14,7 @@ describe('3536. Maximum Product of Two Digits', (): void => {
 
         const result: number = maxProduct(n)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('picks the two largest digits among three', (): void => {
@@ -24,8 +22,7 @@ describe('3536. Maximum Product of Two Digits', (): void => {
 
         const result: number = maxProduct(n)
 
-        expect(result)
-            .toBe(8)
+        expect(result).toBe(8)
     })
 
     it('smallest possible input', (): void => {
@@ -33,8 +30,7 @@ describe('3536. Maximum Product of Two Digits', (): void => {
 
         const result: number = maxProduct(n)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('two largest digits are not adjacent', (): void => {
@@ -42,8 +38,7 @@ describe('3536. Maximum Product of Two Digits', (): void => {
 
         const result: number = maxProduct(n)
 
-        expect(result)
-            .toBe(72)
+        expect(result).toBe(72)
     })
 
     it('largest input within constraints', (): void => {
@@ -51,8 +46,7 @@ describe('3536. Maximum Product of Two Digits', (): void => {
 
         const result: number = maxProduct(n)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('all identical largest digits', (): void => {
@@ -60,7 +54,6 @@ describe('3536. Maximum Product of Two Digits', (): void => {
 
         const result: number = maxProduct(n)
 
-        expect(result)
-            .toBe(81)
+        expect(result).toBe(81)
     })
 })

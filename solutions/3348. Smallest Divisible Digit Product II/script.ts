@@ -1,4 +1,4 @@
-export {smallestNumber}
+export { smallestNumber }
 
 const PRIMES: ReadonlyArray<number> = [2, 3, 5, 7]
 
@@ -9,60 +9,88 @@ const PRIME_FACTORS_BY_DIGIT: ReadonlyArray<ReadonlyMap<number, number>> = [
     new Map<number, number>([[3, 1]]),
     new Map<number, number>([[2, 2]]),
     new Map<number, number>([[5, 1]]),
-    new Map<number, number>([[2, 1], [3, 1]]),
+    new Map<number, number>([
+        [2, 1],
+        [3, 1]
+    ]),
     new Map<number, number>([[7, 1]]),
     new Map<number, number>([[2, 3]]),
-    new Map<number, number>([[3, 2]]),
+    new Map<number, number>([[3, 2]])
 ]
 
 function smallestNumber(numberString: string, divisor: number): string {
-    const requiredPrimeCounts: Map<number, number> | null = getRequiredPrimeCounts(divisor)
+    const requiredPrimeCounts: Map<number, number> | null =
+        getRequiredPrimeCounts(divisor)
     if (requiredPrimeCounts === null) {
         return '-1'
     }
 
-    const minimalDigitCounts: Map<number, number> = getMinimalDigitCounts(requiredPrimeCounts)
+    const minimalDigitCounts: Map<number, number> =
+        getMinimalDigitCounts(requiredPrimeCounts)
     if (sumOfCounts(minimalDigitCounts) > numberString.length) {
         return buildDigitString(minimalDigitCounts)
     }
 
-    let remainingPrimeCounts: Map<number, number> = getPrimeCountsFromDigits(numberString)
+    let remainingPrimeCounts: Map<number, number> =
+        getPrimeCountsFromDigits(numberString)
     const firstZeroIndex: number = numberString.indexOf('0')
-    if (firstZeroIndex === -1 && isSubset(requiredPrimeCounts, remainingPrimeCounts)) {
+    if (
+        firstZeroIndex === -1 &&
+        isSubset(requiredPrimeCounts, remainingPrimeCounts)
+    ) {
         return numberString
     }
 
-    const boundaryIndex: number = firstZeroIndex === -1 ? numberString.length : firstZeroIndex
+    const boundaryIndex: number =
+        firstZeroIndex === -1 ? numberString.length : firstZeroIndex
 
     for (let index: number = numberString.length - 1; index >= 0; index--) {
         const digit: number = Number(numberString[index])
-        remainingPrimeCounts = subtractCounts(remainingPrimeCounts, PRIME_FACTORS_BY_DIGIT[digit])
+        remainingPrimeCounts = subtractCounts(
+            remainingPrimeCounts,
+            PRIME_FACTORS_BY_DIGIT[digit]
+        )
         if (index > boundaryIndex) {
             continue
         }
 
         const spaceAfterDigit: number = numberString.length - 1 - index
-        const missingBeforeDigit: Map<number, number> = subtractCounts(requiredPrimeCounts, remainingPrimeCounts)
-        for (let biggerDigit: number = digit + 1; biggerDigit < 10; biggerDigit++) {
+        const missingBeforeDigit: Map<number, number> = subtractCounts(
+            requiredPrimeCounts,
+            remainingPrimeCounts
+        )
+        for (
+            let biggerDigit: number = digit + 1;
+            biggerDigit < 10;
+            biggerDigit++
+        ) {
             const missingPrimeCounts: Map<number, number> = subtractCounts(
                 missingBeforeDigit,
-                PRIME_FACTORS_BY_DIGIT[biggerDigit],
+                PRIME_FACTORS_BY_DIGIT[biggerDigit]
             )
-            const factorsAfterReplacement: Map<number, number> = getMinimalDigitCounts(missingPrimeCounts)
+            const factorsAfterReplacement: Map<number, number> =
+                getMinimalDigitCounts(missingPrimeCounts)
             const digitsNeeded: number = sumOfCounts(factorsAfterReplacement)
             if (digitsNeeded <= spaceAfterDigit) {
                 const fillOnesCount: number = spaceAfterDigit - digitsNeeded
-                return numberString.slice(0, index)
-                    + String(biggerDigit)
-                    + '1'.repeat(fillOnesCount)
-                    + buildDigitString(factorsAfterReplacement)
+                return (
+                    numberString.slice(0, index) +
+                    String(biggerDigit) +
+                    '1'.repeat(fillOnesCount) +
+                    buildDigitString(factorsAfterReplacement)
+                )
             }
         }
     }
 
-    const factorsForExtendedNumber: Map<number, number> = getMinimalDigitCounts(requiredPrimeCounts)
-    const leadingOnesCount: number = numberString.length + 1 - sumOfCounts(factorsForExtendedNumber)
-    return '1'.repeat(leadingOnesCount) + buildDigitString(factorsForExtendedNumber)
+    const factorsForExtendedNumber: Map<number, number> =
+        getMinimalDigitCounts(requiredPrimeCounts)
+    const leadingOnesCount: number =
+        numberString.length + 1 - sumOfCounts(factorsForExtendedNumber)
+    return (
+        '1'.repeat(leadingOnesCount) +
+        buildDigitString(factorsForExtendedNumber)
+    )
 }
 
 function getRequiredPrimeCounts(divisor: number): Map<number, number> | null {
@@ -82,7 +110,9 @@ function getRequiredPrimeCounts(divisor: number): Map<number, number> | null {
     return remainingDivisor === 1 ? primeCounts : null
 }
 
-function getMinimalDigitCounts(primeCounts: ReadonlyMap<number, number>): Map<number, number> {
+function getMinimalDigitCounts(
+    primeCounts: ReadonlyMap<number, number>
+): Map<number, number> {
     const countOfPrime2: number = primeCounts.get(2) ?? 0
     const countOfPrime3: number = primeCounts.get(3) ?? 0
     const countOfPrime5: number = primeCounts.get(5) ?? 0
@@ -152,14 +182,24 @@ function getPrimeCountsFromDigits(numberString: string): Map<number, number> {
     return primeCounts
 }
 
-function isSubset(required: ReadonlyMap<number, number>, available: ReadonlyMap<number, number>): boolean {
-    return PRIMES.every((prime: number): boolean => (available.get(prime) ?? 0) >= (required.get(prime) ?? 0))
+function isSubset(
+    required: ReadonlyMap<number, number>,
+    available: ReadonlyMap<number, number>
+): boolean {
+    return PRIMES.every(
+        (prime: number): boolean =>
+            (available.get(prime) ?? 0) >= (required.get(prime) ?? 0)
+    )
 }
 
-function subtractCounts(minuend: ReadonlyMap<number, number>, subtrahend: ReadonlyMap<number, number>): Map<number, number> {
+function subtractCounts(
+    minuend: ReadonlyMap<number, number>,
+    subtrahend: ReadonlyMap<number, number>
+): Map<number, number> {
     const result: Map<number, number> = new Map<number, number>()
     for (const prime of PRIMES) {
-        const difference: number = (minuend.get(prime) ?? 0) - (subtrahend.get(prime) ?? 0)
+        const difference: number =
+            (minuend.get(prime) ?? 0) - (subtrahend.get(prime) ?? 0)
         result.set(prime, Math.max(0, difference))
     }
 

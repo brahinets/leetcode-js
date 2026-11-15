@@ -1,6 +1,11 @@
-export {numberOfPowerfulInt}
+export { numberOfPowerfulInt }
 
-function numberOfPowerfulInt(start: number, finish: number, limit: number, s: string): number {
+function numberOfPowerfulInt(
+    start: number,
+    finish: number,
+    limit: number,
+    s: string
+): number {
     const startStr: string = (start - 1).toString()
     const finishStr: string = finish.toString()
 

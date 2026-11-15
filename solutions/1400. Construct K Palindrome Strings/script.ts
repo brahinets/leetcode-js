@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {canConstruct}
+export { canConstruct }
 
 function canConstruct(s: string, k: number): boolean {
     if (s.length < k) {

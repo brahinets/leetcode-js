@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minOperations}
+export { minOperations }
 
 function minOperations(boxes: string): number[] {
     const answer: number[] = arrayOfZeros(boxes.length)

@@ -1,6 +1,6 @@
-import {DisjointSetUnion} from "../../common/DisjointSetUnion"
+import { DisjointSetUnion } from '../../common/DisjointSetUnion'
 
-export {magnificentSets}
+export { magnificentSets }
 
 function magnificentSets(n: number, edges: number[][]): number {
     const dsu: DisjointSetUnion = new DisjointSetUnion(n + 1)
@@ -30,7 +30,10 @@ function magnificentSets(n: number, edges: number[][]): number {
         let maxGroupsInComponent = 0
 
         for (const startNode of nodes) {
-            const groups: number | null = bfsCheckBipartiteAndLongestPath(startNode, graph)
+            const groups: number | null = bfsCheckBipartiteAndLongestPath(
+                startNode,
+                graph
+            )
 
             if (groups === null) {
                 return -1
@@ -44,7 +47,10 @@ function magnificentSets(n: number, edges: number[][]): number {
     return maxGroups
 }
 
-function bfsCheckBipartiteAndLongestPath(start: number, graph: Map<number, number[]>): number | null {
+function bfsCheckBipartiteAndLongestPath(
+    start: number,
+    graph: Map<number, number[]>
+): number | null {
     const levels: Map<number, number> = new Map<number, number>([[start, 1]])
     const queue: number[] = [start]
 

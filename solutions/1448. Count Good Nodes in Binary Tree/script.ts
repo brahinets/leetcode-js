@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, goodNodes}
+export { TreeNode, goodNodes }
 
 function goodNodes(root: TreeNode | null): number {
     if (!root) {

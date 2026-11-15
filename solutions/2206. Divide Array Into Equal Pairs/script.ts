@@ -1,4 +1,4 @@
-export {divideArray}
+export { divideArray }
 
 function divideArray(nums: number[]): boolean {
     nums.sort((a: number, b: number): number => a - b)

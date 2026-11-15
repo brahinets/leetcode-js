@@ -1,4 +1,4 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
 export { maxPathScore }
 
@@ -32,7 +32,10 @@ function maxPathScore(grid: number[][], k: number): number {
 
             for (let cost = cellCost; cost <= k; cost++) {
                 const fromAbove = previousRow[col]![cost - cellCost]!
-                const fromLeft = col > 0 ? currentRow[col - 1]![cost - cellCost]! : UNREACHABLE
+                const fromLeft =
+                    col > 0
+                        ? currentRow[col - 1]![cost - cellCost]!
+                        : UNREACHABLE
                 const best = Math.max(fromAbove, fromLeft)
 
                 if (best >= 0) {

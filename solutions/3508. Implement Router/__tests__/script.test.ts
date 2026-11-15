@@ -1,4 +1,4 @@
-import {Router} from '../script'
+import { Router } from '../script'
 
 describe('3508. Implement Router', (): void => {
     it('One', (): void => {

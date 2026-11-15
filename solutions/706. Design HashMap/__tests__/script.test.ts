@@ -1,4 +1,4 @@
-import {MyHashMap} from "../script"
+import { MyHashMap } from '../script'
 
 describe('706. Design HashMap', (): void => {
     it('Test Valid', (): void => {

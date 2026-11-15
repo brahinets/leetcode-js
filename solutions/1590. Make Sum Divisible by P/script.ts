@@ -1,11 +1,11 @@
-export {minSubarray}
+export { minSubarray }
 
 function minSubarray(nums: number[], p: number): number {
-    const sum: number = nums.reduce((acc: number, cur: number): number => acc + cur, 0) % p
+    const sum: number =
+        nums.reduce((acc: number, cur: number): number => acc + cur, 0) % p
     if (sum === 0) {
         return 0
     }
-
 
     const map: Map<number, number> = new Map<number, number>([[0, -1]])
     let prefix: number = 0

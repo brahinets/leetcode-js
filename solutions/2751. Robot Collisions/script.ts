@@ -1,8 +1,12 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, survivedRobotsHealths}
+export { TreeNode, survivedRobotsHealths }
 
-function survivedRobotsHealths(positions: number[], healths: number[], directions: string): number[] {
+function survivedRobotsHealths(
+    positions: number[],
+    healths: number[],
+    directions: string
+): number[] {
     const robots: Robot[] = []
     const map: Map<number, Robot> = new Map<number, Robot>()
 

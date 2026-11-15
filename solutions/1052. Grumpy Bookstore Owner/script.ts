@@ -1,6 +1,10 @@
-export {maxSatisfied}
+export { maxSatisfied }
 
-function maxSatisfied(customers: number[], grumpy: number[], minutes: number): number {
+function maxSatisfied(
+    customers: number[],
+    grumpy: number[],
+    minutes: number
+): number {
     let totalHappy: number = 0
     let extraHappy: number = 0
     let currentExtra: number = 0

@@ -1,6 +1,6 @@
-import {mapsAreEqual} from "../../common/map-utils"
+import { mapsAreEqual } from '../../common/map-utils'
 
-export {findAnagrams}
+export { findAnagrams }
 
 function countChars(str: string): Map<string, number> {
     const charsCounts: Map<string, number> = new Map<string, number>()
@@ -23,7 +23,10 @@ function findAnagrams(s: string, p: string): number[] {
     const charsP: Map<string, number> = countChars(p)
 
     for (let i: number = 0; i < s.length - p.length + 1; i++) {
-        const anagram: boolean = mapsAreEqual(countChars(s.substring(i, i + p.length)), charsP)
+        const anagram: boolean = mapsAreEqual(
+            countChars(s.substring(i, i + p.length)),
+            charsP
+        )
 
         if (anagram) {
             anagramsBeginnings.push(i)

@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maximumTotalDamage}
+export { maximumTotalDamage }
 
 function maximumTotalDamage(power: number[]): number {
     if (power.length === 0) {
@@ -9,11 +9,15 @@ function maximumTotalDamage(power: number[]): number {
 
     const powerDamages: Map<number, number> = new Map<number, number>()
     for (const spellPower of power) {
-        powerDamages.set(spellPower, (powerDamages.get(spellPower) || 0) + spellPower)
+        powerDamages.set(
+            spellPower,
+            (powerDamages.get(spellPower) || 0) + spellPower
+        )
     }
 
-
-    const sortedUniquePowers: number[] = [...powerDamages.keys()].sort((a: number, b: number): number => a - b)
+    const sortedUniquePowers: number[] = [...powerDamages.keys()].sort(
+        (a: number, b: number): number => a - b
+    )
     const powerCount: number = sortedUniquePowers.length
     const maxDamage: number[] = arrayOfZeros(powerCount)
 
@@ -23,7 +27,10 @@ function maximumTotalDamage(power: number[]): number {
         const damageWithoutCurrent: number = i > 0 ? maxDamage[i - 1] : 0
 
         let damageWithCurrent: number = damageOfCurrentPower
-        const lastCompatibleIndex: number = findLastCompatiblePowerIndex(sortedUniquePowers, currentPower - 2)
+        const lastCompatibleIndex: number = findLastCompatiblePowerIndex(
+            sortedUniquePowers,
+            currentPower - 2
+        )
 
         if (lastCompatibleIndex !== -1) {
             damageWithCurrent += maxDamage[lastCompatibleIndex]
@@ -35,7 +42,10 @@ function maximumTotalDamage(power: number[]): number {
     return maxDamage[powerCount - 1]
 }
 
-function findLastCompatiblePowerIndex(sortedPowers: number[], target: number): number {
+function findLastCompatiblePowerIndex(
+    sortedPowers: number[],
+    target: number
+): number {
     let low: number = 0
     let high: number = sortedPowers.length - 1
     let lastCompatibleIndex: number = -1

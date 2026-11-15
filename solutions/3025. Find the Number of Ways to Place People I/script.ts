@@ -1,4 +1,4 @@
-export {numberOfPairs}
+export { numberOfPairs }
 
 type Point = [number, number]
 
@@ -15,7 +15,9 @@ function numberOfPairs(points: number[][]): number {
             const lowerRight: Point = [points[j][0], points[j][1]]
 
             if (isValidUpperLeftToLowerRightPair(upperLeft, lowerRight)) {
-                if (hasNoPointsInRectangle(points, upperLeft, lowerRight, i, j)) {
+                if (
+                    hasNoPointsInRectangle(points, upperLeft, lowerRight, i, j)
+                ) {
                     validPairCount++
                 }
             }
@@ -25,7 +27,10 @@ function numberOfPairs(points: number[][]): number {
     return validPairCount
 }
 
-function isValidUpperLeftToLowerRightPair(upperLeft: Point, lowerRight: Point): boolean {
+function isValidUpperLeftToLowerRightPair(
+    upperLeft: Point,
+    lowerRight: Point
+): boolean {
     return upperLeft[0] <= lowerRight[0] && upperLeft[1] >= lowerRight[1]
 }
 
@@ -50,7 +55,11 @@ function hasNoPointsInRectangle(
     return true
 }
 
-function isPointInRectangle(point: Point, upperLeft: Point, lowerRight: Point): boolean {
+function isPointInRectangle(
+    point: Point,
+    upperLeft: Point,
+    lowerRight: Point
+): boolean {
     const [x, y] = point
     const [leftX, topY] = upperLeft
     const [rightX, bottomY] = lowerRight

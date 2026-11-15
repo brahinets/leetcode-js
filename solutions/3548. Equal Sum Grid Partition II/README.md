@@ -2,7 +2,8 @@
 
 ## Hard
 
-Given an `m x n` matrix `grid` of positive integers, determine if you can make **either one horizontal or one vertical cut** such that:
+Given an `m x n` matrix `grid` of positive integers, determine if you can make **either one horizontal or one vertical
+cut** such that:
 
 - Both resulting sections are **non-empty**
 - The sums of both sections are **equal**, or can be made equal by **discounting at most one cell** from either section

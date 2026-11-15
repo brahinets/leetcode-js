@@ -1,4 +1,4 @@
-import {ProductOfNumbers} from '../script'
+import { ProductOfNumbers } from '../script'
 
 describe('1352. Product of the Last K Numbers', (): void => {
     it('One', (): void => {

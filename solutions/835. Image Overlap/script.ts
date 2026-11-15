@@ -4,9 +4,22 @@ function largestOverlap(img1: number[][], img2: number[][]): number {
     const imageSize: number = img1.length
     let maximumOverlap: number = 0
 
-    for (let rowShift: number = -(imageSize - 1); rowShift <= imageSize - 1; rowShift++) {
-        for (let columnShift: number = -(imageSize - 1); columnShift <= imageSize - 1; columnShift++) {
-            const overlap: number = calculateOverlap(img1, img2, rowShift, columnShift)
+    for (
+        let rowShift: number = -(imageSize - 1);
+        rowShift <= imageSize - 1;
+        rowShift++
+    ) {
+        for (
+            let columnShift: number = -(imageSize - 1);
+            columnShift <= imageSize - 1;
+            columnShift++
+        ) {
+            const overlap: number = calculateOverlap(
+                img1,
+                img2,
+                rowShift,
+                columnShift
+            )
             maximumOverlap = Math.max(maximumOverlap, overlap)
         }
     }
@@ -18,7 +31,7 @@ function calculateOverlap(
     firstImage: number[][],
     secondImage: number[][],
     rowShift: number,
-    columnShift: number,
+    columnShift: number
 ): number {
     const imageSize: number = firstImage.length
     let overlap: number = 0

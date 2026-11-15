@@ -1,4 +1,4 @@
-export {minBitFlips}
+export { minBitFlips }
 
 function minBitFlips(start: number, goal: number): number {
     const startBin: string = start.toString(2)

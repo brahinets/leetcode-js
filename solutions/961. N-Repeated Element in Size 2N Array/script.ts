@@ -1,4 +1,4 @@
-export {repeatedNTimes}
+export { repeatedNTimes }
 
 function repeatedNTimes(nums: number[]): number {
     const seen: Set<number> = new Set<number>()

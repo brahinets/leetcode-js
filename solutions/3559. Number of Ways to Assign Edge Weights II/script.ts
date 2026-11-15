@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from '../../common/array-factories'
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {assignEdgeWeights}
+export { assignEdgeWeights }
 
 const MODULO: number = 1_000_000_007
 
@@ -20,7 +20,10 @@ function assignEdgeWeights(edges: number[][], queries: number[][]): number[] {
         adjacency[second].push(first)
     }
 
-    const maximumLevel: number = Math.max(1, Math.ceil(Math.log2(numberOfNodes)))
+    const maximumLevel: number = Math.max(
+        1,
+        Math.ceil(Math.log2(numberOfNodes))
+    )
     const depth: number[] = arrayOfZeros(numberOfNodes + 1)
     const ancestors: number[][] = []
 
@@ -28,7 +31,13 @@ function assignEdgeWeights(edges: number[][], queries: number[][]): number[] {
         ancestors.push(arrayOfZeros(numberOfNodes + 1))
     }
 
-    fillAncestorsAndDepth(adjacency, numberOfNodes, depth, ancestors, maximumLevel)
+    fillAncestorsAndDepth(
+        adjacency,
+        numberOfNodes,
+        depth,
+        ancestors,
+        maximumLevel
+    )
 
     const powersOfTwo: number[] = buildPowersOfTwo(numberOfNodes)
     const answer: number[] = []
@@ -36,7 +45,13 @@ function assignEdgeWeights(edges: number[][], queries: number[][]): number[] {
     for (const query of queries) {
         const first: number = query[0]
         const second: number = query[1]
-        const distance: number = computeDistance(first, second, depth, ancestors, maximumLevel)
+        const distance: number = computeDistance(
+            first,
+            second,
+            depth,
+            ancestors,
+            maximumLevel
+        )
 
         if (distance === 0) {
             answer.push(0)
@@ -53,7 +68,7 @@ function fillAncestorsAndDepth(
     numberOfNodes: number,
     depth: number[],
     ancestors: number[][],
-    maximumLevel: number,
+    maximumLevel: number
 ): void {
     const visited: boolean[] = arrayOf(false, numberOfNodes + 1)
     let queue: number[] = [1]
@@ -80,7 +95,8 @@ function fillAncestorsAndDepth(
 
     for (let level: number = 1; level <= maximumLevel; level++) {
         for (let node: number = 1; node <= numberOfNodes; node++) {
-            ancestors[level][node] = ancestors[level - 1][ancestors[level - 1][node]]
+            ancestors[level][node] =
+                ancestors[level - 1][ancestors[level - 1][node]]
         }
     }
 }
@@ -90,9 +106,15 @@ function computeDistance(
     second: number,
     depth: number[],
     ancestors: number[][],
-    maximumLevel: number,
+    maximumLevel: number
 ): number {
-    const lowestCommonAncestor: number = findLowestCommonAncestor(first, second, depth, ancestors, maximumLevel)
+    const lowestCommonAncestor: number = findLowestCommonAncestor(
+        first,
+        second,
+        depth,
+        ancestors,
+        maximumLevel
+    )
 
     return depth[first] + depth[second] - 2 * depth[lowestCommonAncestor]
 }
@@ -102,7 +124,7 @@ function findLowestCommonAncestor(
     second: number,
     depth: number[],
     ancestors: number[][],
-    maximumLevel: number,
+    maximumLevel: number
 ): number {
     let deeper: number = first
     let shallower: number = second

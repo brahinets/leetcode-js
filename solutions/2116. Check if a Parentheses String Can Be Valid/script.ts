@@ -1,6 +1,6 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {canBeValid}
+export { canBeValid }
 
 function canBeValid(s: string, locked: string): boolean {
     if (s.length % 2 == 1) {
@@ -25,7 +25,11 @@ function canBeValid(s: string, locked: string): boolean {
         }
     }
 
-    while (openBrackets.length > 0 && unlocked.length > 0 && last(openBrackets)! < last(unlocked)!) {
+    while (
+        openBrackets.length > 0 &&
+        unlocked.length > 0 &&
+        last(openBrackets)! < last(unlocked)!
+    ) {
         openBrackets.pop()
         unlocked.pop()
     }

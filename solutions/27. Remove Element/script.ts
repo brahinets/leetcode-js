@@ -1,4 +1,4 @@
-export {removeElement}
+export { removeElement }
 
 function removeElement(nums: number[], val: number): number {
     while (nums.includes(val)) {

@@ -1,4 +1,4 @@
-export {maxMatrixSum}
+export { maxMatrixSum }
 
 function maxMatrixSum(matrix: number[][]): number {
     let sum: number = 0

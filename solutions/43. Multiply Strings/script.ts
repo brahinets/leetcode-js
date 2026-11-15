@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {multiply}
+export { multiply }
 
 function multiply(num1: string, num2: string): string {
     if (num1 === '0' || num2 === '0') {

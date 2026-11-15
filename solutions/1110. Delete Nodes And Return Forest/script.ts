@@ -1,8 +1,11 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, delNodes}
+export { TreeNode, delNodes }
 
-function delNodes(root: TreeNode | null, to_delete: number[]): Array<TreeNode | null> {
+function delNodes(
+    root: TreeNode | null,
+    to_delete: number[]
+): Array<TreeNode | null> {
     const toDelete: Set<number> = new Set<number>(to_delete)
     const res: Array<TreeNode | null> = []
 

@@ -8,7 +8,7 @@ function constructTransformedArray(nums: number[]): number[] {
         if (nums[i] === 0) {
             result[i] = 0
         } else {
-            const targetIndex: number = ((i + nums[i]) % n + n) % n
+            const targetIndex: number = (((i + nums[i]) % n) + n) % n
             result[i] = nums[targetIndex]
         }
     }

@@ -1,4 +1,4 @@
-export {minElement}
+export { minElement }
 
 function digitSum(value: number): number {
     let sum: number = 0

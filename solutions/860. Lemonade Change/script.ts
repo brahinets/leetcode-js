@@ -1,4 +1,4 @@
-export {lemonadeChange}
+export { lemonadeChange }
 
 function lemonadeChange(bills: number[]): boolean {
     let five: number = 0

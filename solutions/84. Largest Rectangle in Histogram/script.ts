@@ -1,4 +1,4 @@
-export {largestRectangleArea}
+export { largestRectangleArea }
 
 function largestRectangleArea(heights: number[]): number {
     const n: number = heights.length
@@ -11,7 +11,10 @@ function largestRectangleArea(heights: number[]): number {
     for (let i: number = 0; i <= n; i++) {
         const h: number = i === n ? 0 : heights[i]
 
-        while (stack[stack.length - 1] !== -1 && heights[stack[stack.length - 1]] > h) {
+        while (
+            stack[stack.length - 1] !== -1 &&
+            heights[stack[stack.length - 1]] > h
+        ) {
             const height: number = heights[stack.pop() as number]
             const width: number = i - (stack[stack.length - 1] as number) - 1
             const area: number = height * width

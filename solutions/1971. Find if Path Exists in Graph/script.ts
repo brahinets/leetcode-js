@@ -1,8 +1,13 @@
-import {UndirectedUnweightedGraph} from "../../common/Graph"
+import { UndirectedUnweightedGraph } from '../../common/Graph'
 
-export {validPath}
+export { validPath }
 
-function validPath(_n: number, edges: number[][], source: number, destination: number): boolean {
+function validPath(
+    _n: number,
+    edges: number[][],
+    source: number,
+    destination: number
+): boolean {
     const graph: UndirectedUnweightedGraph = new UndirectedUnweightedGraph()
     for (const [a, b] of edges) {
         graph.addEdge(a, b)
@@ -10,4 +15,3 @@ function validPath(_n: number, edges: number[][], source: number, destination: n
 
     return graph.pathExist(source, destination)
 }
-

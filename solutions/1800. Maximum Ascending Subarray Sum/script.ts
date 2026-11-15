@@ -1,4 +1,4 @@
-export {maxAscendingSum}
+export { maxAscendingSum }
 
 function maxAscendingSum(nums: number[]): number {
     let maxSum: number = nums[0]

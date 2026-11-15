@@ -1,4 +1,4 @@
-export {minTimeToVisitAllPoints}
+export { minTimeToVisitAllPoints }
 
 function minTimeToVisitAllPoints(points: number[][]): number {
     let time: number = 0

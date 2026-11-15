@@ -1,4 +1,4 @@
-export {shortestBridge}
+export { shortestBridge }
 
 const ISLAND: number = 1
 const VISITED: number = 2
@@ -10,13 +10,20 @@ function shortestBridge(grid: number[][]): number {
     }
     visitIsland(grid, firstIsland[0], firstIsland[1])
 
-    const firstIslandCoordinates: Array<number[]> = collectIslandCoordinates(grid, 1)
-    const secondIslandCoordinates: Array<number[]> = collectIslandCoordinates(grid, 2)
+    const firstIslandCoordinates: Array<number[]> = collectIslandCoordinates(
+        grid,
+        1
+    )
+    const secondIslandCoordinates: Array<number[]> = collectIslandCoordinates(
+        grid,
+        2
+    )
     let minBridge: number = grid.length + grid.length - 1
 
     for (const first of firstIslandCoordinates) {
         for (const second of secondIslandCoordinates) {
-            const bridgeSize: number = distance(first[0], first[1], second[0], second[1]) - 1
+            const bridgeSize: number =
+                distance(first[0], first[1], second[0], second[1]) - 1
 
             if (bridgeSize < minBridge) {
                 minBridge = bridgeSize
@@ -27,7 +34,12 @@ function shortestBridge(grid: number[][]): number {
     return minBridge
 }
 
-function distance(firstX: number, firstY: number, secondX: number, secondY: number) {
+function distance(
+    firstX: number,
+    firstY: number,
+    secondX: number,
+    secondY: number
+) {
     return Math.abs(firstX - secondX) + Math.abs(firstY - secondY)
 }
 
@@ -57,8 +69,17 @@ function collectIslandCoordinates(grid: number[][], islandCode: number) {
     return coordinates
 }
 
-function visitIsland(sea: number[][], islandCoordinateX: number, islandCoordinateY: number): void {
-    if (islandCoordinateX < 0 || islandCoordinateY < 0 || islandCoordinateX >= sea.length || islandCoordinateY >= sea[0].length) {
+function visitIsland(
+    sea: number[][],
+    islandCoordinateX: number,
+    islandCoordinateY: number
+): void {
+    if (
+        islandCoordinateX < 0 ||
+        islandCoordinateY < 0 ||
+        islandCoordinateX >= sea.length ||
+        islandCoordinateY >= sea[0].length
+    ) {
         return
     }
 

@@ -1,4 +1,4 @@
-export {minPairSum}
+export { minPairSum }
 
 function minPairSum(nums: number[]): number {
     nums = nums.sort((a: number, b: number): number => a - b)

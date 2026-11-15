@@ -1,4 +1,4 @@
-export {longestSubsequence}
+export { longestSubsequence }
 
 function longestSubsequence(binary: string, maxValue: number): number {
     let count: number = 0

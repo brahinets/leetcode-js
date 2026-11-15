@@ -1,4 +1,4 @@
-export {WordDictionary}
+export { WordDictionary }
 
 class WordDictionary {
     private readonly words: Set<string>
@@ -28,7 +28,7 @@ class WordDictionary {
 
         const len: number = target.length
         for (let i: number = 0; i < len; i++) {
-            if (target[i] === ".") {
+            if (target[i] === '.') {
                 continue
             }
 

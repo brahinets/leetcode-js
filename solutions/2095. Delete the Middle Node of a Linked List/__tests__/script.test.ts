@@ -1,9 +1,8 @@
-import {deleteMiddle} from '../script'
-import {linkedListOf} from '../../../common/list-factories'
-import {ListNode} from '../../../common/ListNode'
+import { deleteMiddle } from '../script'
+import { linkedListOf } from '../../../common/list-factories'
+import { ListNode } from '../../../common/ListNode'
 
 describe('2095. Delete the Middle Node of a Linked List', (): void => {
-
     it('odd length list deletes center node', (): void => {
         const head: ListNode | null = linkedListOf(1, 3, 4, 7, 1, 2, 6)
 

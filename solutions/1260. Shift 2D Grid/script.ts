@@ -15,7 +15,8 @@ function shiftGrid(grid: number[][], k: number): number[][] {
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             const currentIndex: number = i * cols + j
-            const newIndex: number = (currentIndex + normalizedK) % totalElements
+            const newIndex: number =
+                (currentIndex + normalizedK) % totalElements
             const newRow: number = Math.floor(newIndex / cols)
             const newCol: number = newIndex % cols
             result[newRow][newCol] = grid[i][j]

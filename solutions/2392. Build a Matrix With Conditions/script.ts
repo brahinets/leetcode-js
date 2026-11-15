@@ -1,8 +1,16 @@
-import {arrayOf, arrayOfZeros, matrixOfZeros} from "../../common/array-factories"
+import {
+    arrayOf,
+    arrayOfZeros,
+    matrixOfZeros
+} from '../../common/array-factories'
 
-export {buildMatrix}
+export { buildMatrix }
 
-function buildMatrix(size: number, rowConditions: number[][], columnConditions: number[][]): number[][] {
+function buildMatrix(
+    size: number,
+    rowConditions: number[][],
+    columnConditions: number[][]
+): number[][] {
     const orderedRows: number[] = topologicalSort(rowConditions, size)
     const orderedColumns: number[] = topologicalSort(columnConditions, size)
 

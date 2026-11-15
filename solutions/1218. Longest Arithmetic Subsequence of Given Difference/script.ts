@@ -1,4 +1,4 @@
-export {longestSubsequence}
+export { longestSubsequence }
 
 function longestSubsequence(arr: number[], difference: number): number {
     const subsequenceCounts: Map<number, number> = new Map<number, number>()

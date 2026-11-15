@@ -1,4 +1,4 @@
-export {areAlmostEqual}
+export { areAlmostEqual }
 
 function areAlmostEqual(s1: string, s2: string): boolean {
     if (s1 === s2) {

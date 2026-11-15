@@ -1,4 +1,4 @@
-export {maximumElementAfterDecrementingAndRearranging}
+export { maximumElementAfterDecrementingAndRearranging }
 
 function maximumElementAfterDecrementingAndRearranging(arr: number[]): number {
     arr = arr.sort((a: number, b: number) => a - b)

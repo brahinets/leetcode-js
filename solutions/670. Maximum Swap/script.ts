@@ -1,8 +1,10 @@
-export {maximumSwap}
+export { maximumSwap }
 
 function maximumSwap(num: number): number {
     const digits: string[] = num.toString().split('')
-    const digitsSorted: string[] = num.toString().split('')
+    const digitsSorted: string[] = num
+        .toString()
+        .split('')
         .sort((a: string, b: string): number => Number(b) - Number(a))
 
     let i: number = 0

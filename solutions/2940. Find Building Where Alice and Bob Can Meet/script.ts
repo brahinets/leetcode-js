@@ -1,9 +1,12 @@
-import {PriorityQueue} from "../../common/PriorityQueue"
-import {arrayOf} from "../../common/array-factories"
+import { PriorityQueue } from '../../common/PriorityQueue'
+import { arrayOf } from '../../common/array-factories'
 
-export {leftmostBuildingQueries}
+export { leftmostBuildingQueries }
 
-function leftmostBuildingQueries(heights: number[], queries: number[][]): number[] {
+function leftmostBuildingQueries(
+    heights: number[],
+    queries: number[][]
+): number[] {
     const storeQueries: number[][][] = arrayOf([], heights.length)
 
     const maxIndex: PriorityQueue<number[]> = new PriorityQueue<number[]>(
@@ -22,7 +25,10 @@ function leftmostBuildingQueries(heights: number[], queries: number[][]): number
         } else if (a == b) {
             result[currQuery] = a
         } else {
-            storeQueries[Math.max(a, b)].push([Math.max(heights[a], heights[b]), currQuery])
+            storeQueries[Math.max(a, b)].push([
+                Math.max(heights[a], heights[b]),
+                currQuery
+            ])
         }
     }
 

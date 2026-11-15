@@ -1,4 +1,4 @@
-export {maximumSubarraySum}
+export { maximumSubarraySum }
 
 function maximumSubarraySum(nums: number[], k: number): number {
     let ans: number = 0

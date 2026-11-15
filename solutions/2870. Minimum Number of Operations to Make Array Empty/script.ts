@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {minOperations}
+export { minOperations }
 
 function minOperations(nums: number[]): number {
     const counts: Map<number, number> = count(nums)

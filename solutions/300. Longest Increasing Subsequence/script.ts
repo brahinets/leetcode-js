@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {lengthOfLIS}
+export { lengthOfLIS }
 
 function lengthOfLIS(nums: number[]): number {
     const longestSubsequencesByIndex: number[] = arrayOf(1, nums.length)

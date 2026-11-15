@@ -1,4 +1,4 @@
-import {binaryDigitScore} from '../script'
+import { binaryDigitScore } from '../script'
 
 describe('4092. Binary Digit Score', (): void => {
     it('first has more set bits so scores by product', (): void => {
@@ -7,8 +7,7 @@ describe('4092. Binary Digit Score', (): void => {
 
         const result: number = binaryDigitScore(a, b)
 
-        expect(result)
-            .toBe(6)
+        expect(result).toBe(6)
     })
 
     it('second has more set bits so scores by division', (): void => {
@@ -17,8 +16,7 @@ describe('4092. Binary Digit Score', (): void => {
 
         const result: number = binaryDigitScore(a, b)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('equal set bits score by product', (): void => {
@@ -27,8 +25,7 @@ describe('4092. Binary Digit Score', (): void => {
 
         const result: number = binaryDigitScore(a, b)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('division truncates toward zero', (): void => {
@@ -37,8 +34,7 @@ describe('4092. Binary Digit Score', (): void => {
 
         const result: number = binaryDigitScore(a, b)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('division uses integer division when not divisible', (): void => {
@@ -47,8 +43,7 @@ describe('4092. Binary Digit Score', (): void => {
 
         const result: number = binaryDigitScore(a, b)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('minimum values', (): void => {
@@ -57,8 +52,7 @@ describe('4092. Binary Digit Score', (): void => {
 
         const result: number = binaryDigitScore(a, b)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('maximum values', (): void => {
@@ -67,7 +61,6 @@ describe('4092. Binary Digit Score', (): void => {
 
         const result: number = binaryDigitScore(a, b)
 
-        expect(result)
-            .toBe(9)
+        expect(result).toBe(9)
     })
 })

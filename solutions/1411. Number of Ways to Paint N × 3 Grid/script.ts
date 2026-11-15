@@ -1,4 +1,4 @@
-export {numOfWays}
+export { numOfWays }
 
 const MOD: number = 1e9 + 7
 

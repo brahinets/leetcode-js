@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {maxSubarrays}
+export { maxSubarrays }
 
 type MinConflicts = {
     minConflict1: number[]
@@ -12,7 +12,10 @@ type DeletionsResult = {
     deletionCounts: number[]
 }
 
-function prepareMinConflicts(n: number, conflictingPairs: number[][]): MinConflicts {
+function prepareMinConflicts(
+    n: number,
+    conflictingPairs: number[][]
+): MinConflicts {
     const minConflict1: number[] = arrayOf(Number.MAX_SAFE_INTEGER, n + 1)
     const minConflict2: number[] = arrayOf(Number.MAX_SAFE_INTEGER, n + 1)
 
@@ -28,7 +31,7 @@ function prepareMinConflicts(n: number, conflictingPairs: number[][]): MinConfli
         }
     }
 
-    return {minConflict1, minConflict2}
+    return { minConflict1, minConflict2 }
 }
 
 function calculateDeletions(
@@ -43,25 +46,38 @@ function calculateDeletions(
 
     for (let i: number = n; i >= 1; i--) {
         if (minConflict1[currentMinIndex] > minConflict1[i]) {
-            minConflict2Value = Math.min(minConflict2Value, minConflict1[currentMinIndex])
+            minConflict2Value = Math.min(
+                minConflict2Value,
+                minConflict1[currentMinIndex]
+            )
             currentMinIndex = i
         } else {
             minConflict2Value = Math.min(minConflict2Value, minConflict1[i])
         }
 
-        const rightBound: number = Math.min(minConflict1[currentMinIndex], n + 1)
+        const rightBound: number = Math.min(
+            minConflict1[currentMinIndex],
+            n + 1
+        )
         totalSubarrays += rightBound - i
 
-        const deletionBound: number = Math.min(Math.min(minConflict2Value, minConflict2[currentMinIndex]), n + 1)
+        const deletionBound: number = Math.min(
+            Math.min(minConflict2Value, minConflict2[currentMinIndex]),
+            n + 1
+        )
         deletionCounts[currentMinIndex] += deletionBound - rightBound
     }
 
-    return {totalSubarrays, deletionCounts}
+    return { totalSubarrays, deletionCounts }
 }
 
 function maxSubarrays(n: number, conflictingPairs: number[][]): number {
     const minConflicts: MinConflicts = prepareMinConflicts(n, conflictingPairs)
-    const deletions: DeletionsResult = calculateDeletions(n, minConflicts.minConflict1, minConflicts.minConflict2)
+    const deletions: DeletionsResult = calculateDeletions(
+        n,
+        minConflicts.minConflict1,
+        minConflicts.minConflict2
+    )
 
     const maxDeletions: number = Math.max(...deletions.deletionCounts)
 

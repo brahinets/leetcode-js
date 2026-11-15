@@ -1,4 +1,4 @@
-export {flowerGame}
+export { flowerGame }
 
 function flowerGame(n: number, m: number): number {
     const oddAlice: number = Math.floor((n + 1) / 2)

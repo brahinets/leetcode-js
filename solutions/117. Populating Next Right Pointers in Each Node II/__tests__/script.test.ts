@@ -1,5 +1,5 @@
-import {connect} from '../script'
-import {_Node} from "../../../common/_Node"
+import { connect } from '../script'
+import { _Node } from '../../../common/_Node'
 
 describe('117. Populating Next Right Pointers in Each Node II', (): void => {
     it('Complex tree', (): void => {
@@ -18,20 +18,16 @@ describe('117. Populating Next Right Pointers in Each Node II', (): void => {
 
         const input = new _Node(
             1,
-            new _Node(2,
-                new _Node(4),
-                new _Node(5)),
-            new _Node(3,
-                null,
-                new _Node(7))
+            new _Node(2, new _Node(4), new _Node(5)),
+            new _Node(3, null, new _Node(7))
         )
 
         expect(connect(input)).toEqual(output)
     })
 
     it('Empty tree', (): void => {
-        expect(connect(new _Node(0, null, null, null)))
-            .toEqual(new _Node(0, null, null, null))
+        expect(connect(new _Node(0, null, null, null))).toEqual(
+            new _Node(0, null, null, null)
+        )
     })
 })
-

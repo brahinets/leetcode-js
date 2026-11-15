@@ -6,8 +6,7 @@ describe('2778. Sum of Squares of Special Elements', (): void => {
 
         const result: number = sumOfSquares(nums)
 
-        expect(result)
-            .toBe(21)
+        expect(result).toBe(21)
     })
 
     it('length with many divisors', (): void => {
@@ -15,8 +14,7 @@ describe('2778. Sum of Squares of Special Elements', (): void => {
 
         const result: number = sumOfSquares(nums)
 
-        expect(result)
-            .toBe(63)
+        expect(result).toBe(63)
     })
 
     it('single element is always special', (): void => {
@@ -24,8 +22,7 @@ describe('2778. Sum of Squares of Special Elements', (): void => {
 
         const result: number = sumOfSquares(nums)
 
-        expect(result)
-            .toBe(25)
+        expect(result).toBe(25)
     })
 
     it('prime length makes only first and last elements special', (): void => {
@@ -33,8 +30,7 @@ describe('2778. Sum of Squares of Special Elements', (): void => {
 
         const result: number = sumOfSquares(nums)
 
-        expect(result)
-            .toBe(25)
+        expect(result).toBe(25)
     })
 
     it('maximum length with maximum values', (): void => {
@@ -42,7 +38,6 @@ describe('2778. Sum of Squares of Special Elements', (): void => {
 
         const result: number = sumOfSquares(nums)
 
-        expect(result)
-            .toBe(15000)
+        expect(result).toBe(15000)
     })
 })

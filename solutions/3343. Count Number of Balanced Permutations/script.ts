@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros, matrixOf} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros, matrixOf } from '../../common/array-factories'
 
-export {countBalancedPermutations}
+export { countBalancedPermutations }
 
 const MOD: bigint = 1_000_000_007n
 
@@ -15,9 +15,13 @@ function countBalancedPermutations(numberString: string): number {
         factorials[index] = (factorials[index - 1] * BigInt(index)) % MOD
     }
 
-    inverseFactorials[MAX_DIGITS] = computeModularPower(factorials[MAX_DIGITS], MOD - 2n)
+    inverseFactorials[MAX_DIGITS] = computeModularPower(
+        factorials[MAX_DIGITS],
+        MOD - 2n
+    )
     for (let index: number = MAX_DIGITS; index >= 1; index--) {
-        inverseFactorials[index - 1] = (inverseFactorials[index] * BigInt(index)) % MOD
+        inverseFactorials[index - 1] =
+            (inverseFactorials[index] * BigInt(index)) % MOD
     }
 
     const totalDigits: number = numberString.length
@@ -41,8 +45,16 @@ function countBalancedPermutations(numberString: string): number {
         return 0
     }
 
-    let dpTableCurrent: bigint[][] = matrixOf(0n, numberOfEvenPositions + 1, halfSumTarget + 1)
-    let dpTableNext: bigint[][] = matrixOf(0n, numberOfEvenPositions + 1, halfSumTarget + 1)
+    let dpTableCurrent: bigint[][] = matrixOf(
+        0n,
+        numberOfEvenPositions + 1,
+        halfSumTarget + 1
+    )
+    let dpTableNext: bigint[][] = matrixOf(
+        0n,
+        numberOfEvenPositions + 1,
+        halfSumTarget + 1
+    )
     dpTableCurrent[0][0] = 1n
 
     for (let digitValue: number = 0; digitValue <= 9; digitValue++) {
@@ -54,8 +66,9 @@ function countBalancedPermutations(numberString: string): number {
         const binomialCoefficients: bigint[] = arrayOf(0n, frequency + 1)
         for (let k: number = 0; k <= frequency; k++) {
             binomialCoefficients[k] =
-                (factorials[frequency] * inverseFactorials[k] % MOD) *
-                inverseFactorials[frequency - k] % MOD
+                (((factorials[frequency] * inverseFactorials[k]) % MOD) *
+                    inverseFactorials[frequency - k]) %
+                MOD
         }
 
         for (let count: number = 0; count <= numberOfEvenPositions; count++) {
@@ -63,15 +76,26 @@ function countBalancedPermutations(numberString: string): number {
         }
 
         for (let count: number = 0; count <= numberOfEvenPositions; count++) {
-            for (let currentSum: number = 0; currentSum <= halfSumTarget; currentSum++) {
+            for (
+                let currentSum: number = 0;
+                currentSum <= halfSumTarget;
+                currentSum++
+            ) {
                 const currentWays: bigint = dpTableCurrent[count][currentSum]
                 if (currentWays === 0n) {
                     continue
                 }
 
-                const maxAdditional: number = Math.min(frequency, numberOfEvenPositions - count)
+                const maxAdditional: number = Math.min(
+                    frequency,
+                    numberOfEvenPositions - count
+                )
 
-                for (let tryCount: number = 0; tryCount <= maxAdditional; tryCount++) {
+                for (
+                    let tryCount: number = 0;
+                    tryCount <= maxAdditional;
+                    tryCount++
+                ) {
                     const newCount: number = count + tryCount
                     const newSum: number = currentSum + tryCount * digitValue
 
@@ -80,25 +104,30 @@ function countBalancedPermutations(numberString: string): number {
                     }
 
                     dpTableNext[newCount][newSum] =
-                        (dpTableNext[newCount][newSum] + currentWays * binomialCoefficients[tryCount]) % MOD
+                        (dpTableNext[newCount][newSum] +
+                            currentWays * binomialCoefficients[tryCount]) %
+                        MOD
                 }
             }
         }
 
-        [dpTableCurrent, dpTableNext] = [dpTableNext, dpTableCurrent]
+        ;[dpTableCurrent, dpTableNext] = [dpTableNext, dpTableCurrent]
     }
 
-    const waysToPickTarget: bigint = dpTableCurrent[numberOfEvenPositions][halfSumTarget]
+    const waysToPickTarget: bigint =
+        dpTableCurrent[numberOfEvenPositions][halfSumTarget]
     if (waysToPickTarget === 0n) {
         return 0
     }
 
     let totalArrangements: bigint =
-        (waysToPickTarget * factorials[numberOfEvenPositions] % MOD) *
-        factorials[numberOfOddPositions] % MOD
+        (((waysToPickTarget * factorials[numberOfEvenPositions]) % MOD) *
+            factorials[numberOfOddPositions]) %
+        MOD
 
     for (let d: number = 0; d <= 9; d++) {
-        totalArrangements = (totalArrangements * inverseFactorials[digitFrequencies[d]]) % MOD
+        totalArrangements =
+            (totalArrangements * inverseFactorials[digitFrequencies[d]]) % MOD
     }
 
     return Number(totalArrangements)

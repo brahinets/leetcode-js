@@ -1,14 +1,20 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minimumTeachings}
+export { minimumTeachings }
 
-function minimumTeachings(n: number, languages: number[][], friendships: number[][]): number {
+function minimumTeachings(
+    n: number,
+    languages: number[][],
+    friendships: number[][]
+): number {
     const needToTeach = new Set<number>()
     for (const [a, b] of friendships) {
         const setA: Set<number> = new Set<number>(languages[a - 1])
         const setB: Set<number> = new Set<number>(languages[b - 1])
 
-        const common: boolean = [...setA].some((lang: number): boolean => setB.has(lang))
+        const common: boolean = [...setA].some((lang: number): boolean =>
+            setB.has(lang)
+        )
         if (!common) {
             needToTeach.add(a)
             needToTeach.add(b)

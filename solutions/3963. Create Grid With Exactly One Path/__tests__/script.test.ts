@@ -3,9 +3,8 @@ import { createGrid } from '../script'
 function countPaths(grid: string[]): number {
     const rows: number = grid.length
     const columns: number = grid[0].length
-    const paths: number[][] = Array.from(
-        { length: rows },
-        (): number[] => new Array<number>(columns).fill(0)
+    const paths: number[][] = Array.from({ length: rows }, (): number[] =>
+        new Array<number>(columns).fill(0)
     )
 
     for (let row: number = 0; row < rows; row++) {
@@ -29,7 +28,6 @@ function countPaths(grid: string[]): number {
 }
 
 describe('3963. Create Grid With Exactly One Path', (): void => {
-
     it('rectangular grid with more columns than rows', (): void => {
         // Arrange
         const m: number = 2
@@ -39,8 +37,7 @@ describe('3963. Create Grid With Exactly One Path', (): void => {
         const result: string[] = createGrid(m, n)
 
         // Assert
-        expect(countPaths(result))
-            .toBe(1)
+        expect(countPaths(result)).toBe(1)
     })
 
     it('square grid', (): void => {
@@ -52,8 +49,7 @@ describe('3963. Create Grid With Exactly One Path', (): void => {
         const result: string[] = createGrid(m, n)
 
         // Assert
-        expect(countPaths(result))
-            .toBe(1)
+        expect(countPaths(result)).toBe(1)
     })
 
     it('single row', (): void => {
@@ -65,8 +61,7 @@ describe('3963. Create Grid With Exactly One Path', (): void => {
         const result: string[] = createGrid(m, n)
 
         // Assert
-        expect(result)
-            .toEqual(['....'])
+        expect(result).toEqual(['....'])
     })
 
     it('single column', (): void => {
@@ -78,8 +73,7 @@ describe('3963. Create Grid With Exactly One Path', (): void => {
         const result: string[] = createGrid(m, n)
 
         // Assert
-        expect(result)
-            .toEqual(['.', '.', '.', '.'])
+        expect(result).toEqual(['.', '.', '.', '.'])
     })
 
     it('single cell', (): void => {
@@ -91,8 +85,7 @@ describe('3963. Create Grid With Exactly One Path', (): void => {
         const result: string[] = createGrid(m, n)
 
         // Assert
-        expect(result)
-            .toEqual(['.'])
+        expect(result).toEqual(['.'])
     })
 
     it('more rows than columns', (): void => {
@@ -104,8 +97,7 @@ describe('3963. Create Grid With Exactly One Path', (): void => {
         const result: string[] = createGrid(m, n)
 
         // Assert
-        expect(countPaths(result))
-            .toBe(1)
+        expect(countPaths(result)).toBe(1)
     })
 
     it('maximum size grid', (): void => {
@@ -117,7 +109,6 @@ describe('3963. Create Grid With Exactly One Path', (): void => {
         const result: string[] = createGrid(m, n)
 
         // Assert
-        expect(countPaths(result))
-            .toBe(1)
+        expect(countPaths(result)).toBe(1)
     })
 })

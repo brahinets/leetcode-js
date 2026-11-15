@@ -15,7 +15,11 @@ function rotatedDigits(n: number): number {
     return count
 }
 
-function isGood(number: number, invalidDigits: ReadonlySet<number>, changingDigits: ReadonlySet<number>): boolean {
+function isGood(
+    number: number,
+    invalidDigits: ReadonlySet<number>,
+    changingDigits: ReadonlySet<number>
+): boolean {
     let hasChangingDigit: boolean = false
     let remaining: number = number
 

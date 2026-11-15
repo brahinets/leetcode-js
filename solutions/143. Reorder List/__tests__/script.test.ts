@@ -1,6 +1,6 @@
-import {ListNode, reorderList} from '../script'
+import { ListNode, reorderList } from '../script'
 
-import {linkedListOf} from "../../../common/list-factories"
+import { linkedListOf } from '../../../common/list-factories'
 
 describe('143. Reorder List', (): void => {
     it('Reorder null list', (): void => {

@@ -1,4 +1,4 @@
-export {getLastMoment}
+export { getLastMoment }
 
 function getLastMoment(n: number, left: number[], right: number[]): number {
     let lastMoment: number = 0

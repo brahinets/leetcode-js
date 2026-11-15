@@ -1,4 +1,4 @@
-export {maxVowels}
+export { maxVowels }
 
 const VOWELS: string[] = ['a', 'e', 'i', 'o', 'u']
 

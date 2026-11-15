@@ -1,4 +1,4 @@
-export {mostBooked}
+export { mostBooked }
 
 function mostBooked(n: number, meetings: number[][]): number {
     const availability: Map<number, number> = new Map<number, number>()
@@ -8,14 +8,19 @@ function mostBooked(n: number, meetings: number[][]): number {
         bookings.set(i, 0)
     }
 
-    meetings.sort(([startFirst,]: number[], [startSecond,]: number[]): number => {
+    meetings.sort(([startFirst]: number[], [startSecond]: number[]): number => {
         return startFirst - startSecond
     })
 
     for (const [start, end] of meetings) {
         const room: number = findFirstAvailableRoom(start, availability)
 
-        availability.set(room, availability.get(room)! <= start ? end : (availability.get(room)! + (end - start)))
+        availability.set(
+            room,
+            availability.get(room)! <= start
+                ? end
+                : availability.get(room)! + (end - start)
+        )
         bookings.set(room, bookings.get(room)! + 1)
     }
 
@@ -31,7 +36,10 @@ function mostBooked(n: number, meetings: number[][]): number {
     return maxBooked
 }
 
-function findFirstAvailableRoom(start: number, availability: Map<number, number>): number {
+function findFirstAvailableRoom(
+    start: number,
+    availability: Map<number, number>
+): number {
     const bookings: [number, number][] = [...availability.entries()]
 
     for (const [room, freeSince] of bookings) {
@@ -40,12 +48,17 @@ function findFirstAvailableRoom(start: number, availability: Map<number, number>
         }
     }
 
-    return bookings.sort(([roomFirst, sinceFirst]: [number, number], [roomSecond, sinceSecond]: [number, number]): number => {
-        const since: number = sinceFirst - sinceSecond
-        if (since !== 0) {
-            return since
-        }
+    return bookings.sort(
+        (
+            [roomFirst, sinceFirst]: [number, number],
+            [roomSecond, sinceSecond]: [number, number]
+        ): number => {
+            const since: number = sinceFirst - sinceSecond
+            if (since !== 0) {
+                return since
+            }
 
-        return Math.min(roomFirst, roomSecond)
-    })[0][0]
+            return Math.min(roomFirst, roomSecond)
+        }
+    )[0][0]
 }

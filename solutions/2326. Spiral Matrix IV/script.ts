@@ -1,7 +1,7 @@
-import {ListNode} from "../../common/ListNode"
-import {matrixOf} from "../../common/array-factories"
+import { ListNode } from '../../common/ListNode'
+import { matrixOf } from '../../common/array-factories'
 
-export {spiralMatrix}
+export { spiralMatrix }
 
 function spiralMatrix(m: number, n: number, head: ListNode | null): number[][] {
     const matrix: number[][] = matrixOf(-1, m, n)

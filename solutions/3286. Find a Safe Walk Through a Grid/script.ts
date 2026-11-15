@@ -1,7 +1,7 @@
-import {matrixOf} from "../../common/array-factories"
-import {PriorityQueue} from "../../common/PriorityQueue"
+import { matrixOf } from '../../common/array-factories'
+import { PriorityQueue } from '../../common/PriorityQueue'
 
-export {findSafeWalk}
+export { findSafeWalk }
 
 const TURNS: [number, number][] = [
     [-1, 0],
@@ -24,9 +24,9 @@ function computeMinimumHealthLoss(grid: number[][]): number {
     const healthLossGrid: number[][] = matrixOf(Infinity, rowCount, columnCount)
     healthLossGrid[0][0] = grid[0][0]
 
-    const minHeap: PriorityQueue<[number, number, number]> = new PriorityQueue<[number, number, number]>(
-        (a, b) => a[2] - b[2]
-    )
+    const minHeap: PriorityQueue<[number, number, number]> = new PriorityQueue<
+        [number, number, number]
+    >((a, b) => a[2] - b[2])
     minHeap.enqueue([0, 0, grid[0][0]])
 
     while (!minHeap.isEmpty()) {
@@ -41,7 +41,8 @@ function computeMinimumHealthLoss(grid: number[][]): number {
             const newY: number = y + moveY
 
             if (inBounds(grid, newX, newY)) {
-                const newHealthLoss: number = healthLoss + (grid[newX][newY] === UNSAFE ? 1 : 0)
+                const newHealthLoss: number =
+                    healthLoss + (grid[newX][newY] === UNSAFE ? 1 : 0)
 
                 if (newHealthLoss < healthLossGrid[newX][newY]) {
                     healthLossGrid[newX][newY] = newHealthLoss
@@ -55,5 +56,7 @@ function computeMinimumHealthLoss(grid: number[][]): number {
 }
 
 function inBounds(grid: number[][], row: number, column: number): boolean {
-    return row >= 0 && column >= 0 && row < grid.length && column < grid[0].length
+    return (
+        row >= 0 && column >= 0 && row < grid.length && column < grid[0].length
+    )
 }

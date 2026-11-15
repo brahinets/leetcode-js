@@ -1,4 +1,4 @@
-export {minimumPairRemoval}
+export { minimumPairRemoval }
 
 function minimumPairRemoval(nums: number[]): number {
     let operations = 0

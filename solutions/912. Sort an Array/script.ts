@@ -1,4 +1,4 @@
-export {sortArray}
+export { sortArray }
 
 function sortArray(nums: number[]): number[] {
     if (nums.length <= 1) {

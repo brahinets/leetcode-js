@@ -1,6 +1,10 @@
-export {countInterestingSubarrays}
+export { countInterestingSubarrays }
 
-function countInterestingSubarrays(nums: number[], modulo: number, k: number): number {
+function countInterestingSubarrays(
+    nums: number[],
+    modulo: number,
+    k: number
+): number {
     let count: number = 0
 
     let prefixSum: number = 0

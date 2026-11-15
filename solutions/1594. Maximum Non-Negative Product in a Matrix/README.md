@@ -2,9 +2,12 @@
 
 ## Medium
 
-You are given a `m x n` matrix `grid`. Initially, you are located at the top-left corner `(0, 0)`, and in each step, you can only move right or down in the matrix.
+You are given a `m x n` matrix `grid`. Initially, you are located at the top-left corner `(0, 0)`, and in each step, you
+can only move right or down in the matrix.
 
-Among all possible paths starting from the top-left corner `(0, 0)` and ending in the bottom-right corner `(m - 1, n - 1)`, find the path with the **maximum non-negative product**. The product of a path is the product of all integers in the grid cells visited along the path.
+Among all possible paths starting from the top-left corner `(0, 0)` and ending in the bottom-right corner
+`(m - 1, n - 1)`, find the path with the **maximum non-negative product**. The product of a path is the product of all
+integers in the grid cells visited along the path.
 
 Return the _maximum non-negative product_ **modulo** `10^9 + 7`. If the maximum product is **negative**, return `-1`.
 

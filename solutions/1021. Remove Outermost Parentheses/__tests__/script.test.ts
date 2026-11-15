@@ -6,8 +6,7 @@ describe('1021. Remove Outermost Parentheses', (): void => {
 
         const result: string = removeOuterParentheses(s)
 
-        expect(result)
-            .toBe('()()()')
+        expect(result).toBe('()()()')
     })
 
     it('multiple primitives with deeper nesting', (): void => {
@@ -15,8 +14,7 @@ describe('1021. Remove Outermost Parentheses', (): void => {
 
         const result: string = removeOuterParentheses(s)
 
-        expect(result)
-            .toBe('()()()()(())')
+        expect(result).toBe('()()()()(())')
     })
 
     it('primitives that contain nothing inside', (): void => {
@@ -24,8 +22,7 @@ describe('1021. Remove Outermost Parentheses', (): void => {
 
         const result: string = removeOuterParentheses(s)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 
     it('single primitive with one nested pair', (): void => {
@@ -33,8 +30,7 @@ describe('1021. Remove Outermost Parentheses', (): void => {
 
         const result: string = removeOuterParentheses(s)
 
-        expect(result)
-            .toBe('()')
+        expect(result).toBe('()')
     })
 
     it('single primitive with deep nesting', (): void => {
@@ -42,8 +38,7 @@ describe('1021. Remove Outermost Parentheses', (): void => {
 
         const result: string = removeOuterParentheses(s)
 
-        expect(result)
-            .toBe('(())')
+        expect(result).toBe('(())')
     })
 
     it('single primitive holding concatenated pairs', (): void => {
@@ -51,8 +46,7 @@ describe('1021. Remove Outermost Parentheses', (): void => {
 
         const result: string = removeOuterParentheses(s)
 
-        expect(result)
-            .toBe('()()()')
+        expect(result).toBe('()()()')
     })
 
     it('minimum length allowed by the constraints', (): void => {
@@ -60,7 +54,6 @@ describe('1021. Remove Outermost Parentheses', (): void => {
 
         const result: string = removeOuterParentheses(s)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 })

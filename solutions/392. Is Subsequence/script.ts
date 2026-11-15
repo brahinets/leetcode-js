@@ -1,4 +1,4 @@
-export {isSubsequence}
+export { isSubsequence }
 
 function isSubsequence(s: string, t: string): boolean {
     let matched: number = 0
@@ -15,7 +15,6 @@ function isSubsequence(s: string, t: string): boolean {
                 break
             }
         }
-
     }
 
     return matched === s.length

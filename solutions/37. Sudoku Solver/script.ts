@@ -1,4 +1,4 @@
-export {solveSudoku}
+export { solveSudoku }
 
 function solveSudoku(grid: string[][]): void {
     solve(grid)
@@ -41,14 +41,19 @@ function findEmptyCell(grid: string[][]): [number, number] | null {
     return null
 }
 
-function canPlaceDigit(grid: string[][], row: number, col: number, digit: string): boolean {
+function canPlaceDigit(
+    grid: string[][],
+    row: number,
+    col: number,
+    digit: string
+): boolean {
     for (let i: number = 0; i < 9; i++) {
         if (grid[row][i] === digit || grid[i][col] === digit) {
             return false
         }
 
         const boxRow: number = 3 * Math.floor(row / 3) + Math.floor(i / 3)
-        const boxCol: number = 3 * Math.floor(col / 3) + i % 3
+        const boxCol: number = 3 * Math.floor(col / 3) + (i % 3)
 
         if (grid[boxRow][boxCol] === digit) {
             return false

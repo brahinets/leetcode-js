@@ -2,9 +2,11 @@
 
 ## Medium
 
-You are given a directed, weighted graph with `n` nodes labeled from `0` to `n - 1`, and an array `edges` where `edges[i] = [ui, vi, wi]` represents a directed edge from node `ui` to node `vi` with cost `wi`.
+You are given a directed, weighted graph with `n` nodes labeled from `0` to `n - 1`, and an array `edges` where
+`edges[i] = [ui, vi, wi]` represents a directed edge from node `ui` to node `vi` with cost `wi`.
 
-Each node `ui` has a switch that can be used at most once: when you arrive at `ui` and have not yet used its switch, you may activate it on one of its incoming edges `vi → ui` reverse that edge to `ui → vi` and immediately traverse it.
+Each node `ui` has a switch that can be used at most once: when you arrive at `ui` and have not yet used its switch, you
+may activate it on one of its incoming edges `vi → ui` reverse that edge to `ui → vi` and immediately traverse it.
 
 The reversal is only valid for that single move, and using a reversed edge costs `2 * wi`.
 

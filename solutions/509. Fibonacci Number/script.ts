@@ -1,7 +1,13 @@
-export {fib}
+export { fib }
 
 function fib(n: number): number {
-    return nthFib(n, new Map<number, number>([[0, 0], [1, 1]]))
+    return nthFib(
+        n,
+        new Map<number, number>([
+            [0, 0],
+            [1, 1]
+        ])
+    )
 }
 
 function nthFib(n: number, memo: Map<number, number>): number {

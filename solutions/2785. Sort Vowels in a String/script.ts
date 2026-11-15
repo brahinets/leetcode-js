@@ -1,6 +1,17 @@
-export {sortVowels}
+export { sortVowels }
 
-const VOWELS_CHARS: Set<string> = new Set<string>(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
+const VOWELS_CHARS: Set<string> = new Set<string>([
+    'a',
+    'e',
+    'i',
+    'o',
+    'u',
+    'A',
+    'E',
+    'I',
+    'O',
+    'U'
+])
 
 function sortVowels(s: string): string {
     const chars: string[] = s.split('')
@@ -14,7 +25,9 @@ function sortVowels(s: string): string {
         }
     }
 
-    vowels.sort((a: string, b: string): number => a.charCodeAt(0) - b.charCodeAt(0))
+    vowels.sort(
+        (a: string, b: string): number => a.charCodeAt(0) - b.charCodeAt(0)
+    )
     for (let i: number = 0; i < vowelIndices.length; i++) {
         chars[vowelIndices[i]] = vowels[i]
     }

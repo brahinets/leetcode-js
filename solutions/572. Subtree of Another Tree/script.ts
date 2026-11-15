@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, isSubtree}
+export { TreeNode, isSubtree }
 
 function isSubtree(root: TreeNode | null, subRoot: TreeNode | null): boolean {
     if (!root && !subRoot) {
@@ -11,9 +11,11 @@ function isSubtree(root: TreeNode | null, subRoot: TreeNode | null): boolean {
         return false
     }
 
-    return equal(root, subRoot)
-        || isSubtree(root?.left ?? null, subRoot)
-        || isSubtree(root?.right ?? null, subRoot)
+    return (
+        equal(root, subRoot) ||
+        isSubtree(root?.left ?? null, subRoot) ||
+        isSubtree(root?.right ?? null, subRoot)
+    )
 }
 
 function equal(first: TreeNode | null, second: TreeNode | null): boolean {

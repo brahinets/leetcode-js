@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {topKFrequent}
+export { topKFrequent }
 
 function topKFrequent(values: string[], k: number): string[] {
     const counting: Map<string, number> = count(values)
@@ -18,9 +18,12 @@ function topKFrequent(values: string[], k: number): string[] {
     return result
 }
 
-function byCountDescendingThenLexicographically(counting: Map<string, number>): Comparator<string> {
+function byCountDescendingThenLexicographically(
+    counting: Map<string, number>
+): Comparator<string> {
     return (v1: string, v2: string): number => {
-        const counter: number = (counting.get(v1) ?? 0) - (counting.get(v2) ?? 0)
+        const counter: number =
+            (counting.get(v1) ?? 0) - (counting.get(v2) ?? 0)
 
         if (counter !== 0) {
             return counter

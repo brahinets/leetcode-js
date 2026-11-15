@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {minimumSum}
+export { minimumSum }
 
 function minimumSum(grid: number[][]): number {
     const m: number = grid.length
@@ -131,7 +131,13 @@ function calculateMinAreaIfValid(areas: number[]): number {
     return allValid ? sum(areas) : Infinity
 }
 
-function getBoundingRect(r1: number, c1: number, r2: number, c2: number, grid: number[][]): number {
+function getBoundingRect(
+    r1: number,
+    c1: number,
+    r2: number,
+    c2: number,
+    grid: number[][]
+): number {
     let minRow: number = r2
     let maxRow: number = r1 - 1
     let minCol: number = c2

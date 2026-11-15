@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {average}
+export { average }
 
 function average(salary: number[]): number {
     const min: number = Math.min(...salary)

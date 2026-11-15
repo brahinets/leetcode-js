@@ -1,4 +1,4 @@
-export {makeGood}
+export { makeGood }
 
 function makeGood(s: string): string {
     let i: number = 0

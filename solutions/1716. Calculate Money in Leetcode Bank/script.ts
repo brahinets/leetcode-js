@@ -1,4 +1,4 @@
-export {totalMoney}
+export { totalMoney }
 
 function totalMoney(n: number): number {
     let sum: number = 0

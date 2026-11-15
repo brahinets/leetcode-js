@@ -1,4 +1,4 @@
-export {restoreArray}
+export { restoreArray }
 
 function restoreArray(adjacentPairs: number[][]): number[] {
     const neighbours: Map<number, number[]> = collectAdjacency(adjacentPairs)
@@ -15,7 +15,10 @@ function restoreArray(adjacentPairs: number[][]): number[] {
     while (result.length < adjacentPairs.length + 1) {
         const lastNode: number = result[result.length - 1]
         const neighbors: number[] = neighbours.get(lastNode)!
-        const nextNode: number = neighbors[0] === result[result.length - 2] ? neighbors[1] : neighbors[0]
+        const nextNode: number =
+            neighbors[0] === result[result.length - 2]
+                ? neighbors[1]
+                : neighbors[0]
         result.push(nextNode)
     }
 

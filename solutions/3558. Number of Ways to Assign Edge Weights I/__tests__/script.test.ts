@@ -1,4 +1,4 @@
-import {assignEdgeWeights} from '../script'
+import { assignEdgeWeights } from '../script'
 
 describe('3558. Number of Ways to Assign Edge Weights I', (): void => {
     it('single edge admits exactly one odd assignment', (): void => {
@@ -10,7 +10,11 @@ describe('3558. Number of Ways to Assign Edge Weights I', (): void => {
     })
 
     it('straight chain of three edges yields four odd assignments', (): void => {
-        const edges: number[][] = [[1, 2], [2, 3], [3, 4]]
+        const edges: number[][] = [
+            [1, 2],
+            [2, 3],
+            [3, 4]
+        ]
 
         const result: number = assignEdgeWeights(edges)
 
@@ -18,7 +22,12 @@ describe('3558. Number of Ways to Assign Edge Weights I', (): void => {
     })
 
     it('branching tree counts only the deepest path length', (): void => {
-        const edges: number[][] = [[1, 2], [1, 3], [3, 4], [4, 5]]
+        const edges: number[][] = [
+            [1, 2],
+            [1, 3],
+            [3, 4],
+            [4, 5]
+        ]
 
         const result: number = assignEdgeWeights(edges)
 
@@ -26,7 +35,11 @@ describe('3558. Number of Ways to Assign Edge Weights I', (): void => {
     })
 
     it('star shaped tree has depth one', (): void => {
-        const edges: number[][] = [[1, 2], [1, 3], [1, 4]]
+        const edges: number[][] = [
+            [1, 2],
+            [1, 3],
+            [1, 4]
+        ]
 
         const result: number = assignEdgeWeights(edges)
 
@@ -34,7 +47,10 @@ describe('3558. Number of Ways to Assign Edge Weights I', (): void => {
     })
 
     it('two level chain doubles the count', (): void => {
-        const edges: number[][] = [[1, 2], [2, 3]]
+        const edges: number[][] = [
+            [1, 2],
+            [2, 3]
+        ]
 
         const result: number = assignEdgeWeights(edges)
 

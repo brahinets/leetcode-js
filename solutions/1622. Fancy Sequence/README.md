@@ -10,7 +10,8 @@ Write an API that generates fancy sequences using the `append`, `addAll`, and `m
 - `void append(val)` — Appends an integer `val` to the end of the sequence.
 - `void addAll(inc)` — Increments all existing values in the sequence by `inc`.
 - `void multAll(m)` — Multiplies all existing values in the sequence by `m`.
-- `int getIndex(idx)` — Gets the current value at index `idx` (0-indexed) modulo **10⁹ + 7**. Returns **-1** if the index is out of bounds.
+- `int getIndex(idx)` — Gets the current value at index `idx` (0-indexed) modulo **10⁹ + 7**. Returns **-1** if the
+  index is out of bounds.
 
 ### Example:
 

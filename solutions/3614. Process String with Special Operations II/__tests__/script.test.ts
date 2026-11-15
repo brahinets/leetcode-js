@@ -7,8 +7,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('a')
+        expect(result).toBe('a')
     })
 
     it('reverses then duplicates then removes then duplicates again', (): void => {
@@ -17,8 +16,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('d')
+        expect(result).toBe('d')
     })
 
     it('position out of bounds on empty result string', (): void => {
@@ -27,8 +25,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('.')
+        expect(result).toBe('.')
     })
 
     it('position zero on single character', (): void => {
@@ -37,8 +34,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('a')
+        expect(result).toBe('a')
     })
 
     it('position out of bounds on non-empty result', (): void => {
@@ -47,8 +43,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('.')
+        expect(result).toBe('.')
     })
 
     it('duplicate doubles string and second half mirrors first', (): void => {
@@ -57,8 +52,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('b')
+        expect(result).toBe('b')
     })
 
     it('reverse flips character order', (): void => {
@@ -67,8 +61,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('c')
+        expect(result).toBe('c')
     })
 
     it('star removes last character so previous becomes last', (): void => {
@@ -77,8 +70,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('b')
+        expect(result).toBe('b')
     })
 
     it('star on empty string is no-op', (): void => {
@@ -87,8 +79,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('a')
+        expect(result).toBe('a')
     })
 
     it('large position in massively duplicated string maps to correct source character', (): void => {
@@ -97,8 +88,7 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('a')
+        expect(result).toBe('a')
     })
 
     it('reverse then duplicate then position in second half maps through both operations', (): void => {
@@ -107,7 +97,6 @@ describe('3614. Process String with Special Operations II', (): void => {
 
         const result: string = processStr(input, position)
 
-        expect(result)
-            .toBe('b')
+        expect(result).toBe('b')
     })
 })

@@ -1,4 +1,4 @@
-export {findFarmland}
+export { findFarmland }
 
 function findFarmland(land: number[][]): number[][] {
     const lands: number[][] = []
@@ -14,7 +14,11 @@ function findFarmland(land: number[][]): number[][] {
     return lands
 }
 
-function visitFarmland(grid: number[][], islandCoordinateX: number, islandCoordinateY: number): number[] {
+function visitFarmland(
+    grid: number[][],
+    islandCoordinateX: number,
+    islandCoordinateY: number
+): number[] {
     let endX: number = islandCoordinateX
     let endY: number = islandCoordinateY
 

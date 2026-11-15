@@ -1,8 +1,12 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maxFrequency}
+export { maxFrequency }
 
-function maxFrequency(nums: number[], k: number, numOperations: number): number {
+function maxFrequency(
+    nums: number[],
+    k: number,
+    numOperations: number
+): number {
     const maxValue: number = Math.max(...nums)
     const arrayLength: number = maxValue + k + 2
     const frequency: number[] = arrayOfZeros(arrayLength)
@@ -24,9 +28,12 @@ function maxFrequency(nums: number[], k: number, numOperations: number): number 
 
         const leftBound: number = Math.max(0, targetValue - k)
         const rightBound: number = Math.min(arrayLength - 1, targetValue + k)
-        const totalInRange: number = prefixSums[rightBound] - (leftBound > 0 ? prefixSums[leftBound - 1] : 0)
+        const totalInRange: number =
+            prefixSums[rightBound] -
+            (leftBound > 0 ? prefixSums[leftBound - 1] : 0)
         const otherElements: number = totalInRange - frequency[targetValue]
-        const possibleFrequency: number = frequency[targetValue] + Math.min(numOperations, otherElements)
+        const possibleFrequency: number =
+            frequency[targetValue] + Math.min(numOperations, otherElements)
 
         maxFrequency = Math.max(maxFrequency, possibleFrequency)
     }

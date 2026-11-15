@@ -1,11 +1,11 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {minWindow}
+export { minWindow }
 
 function minWindow(s: string, t: string): string {
     let min: string | undefined = undefined
 
-    const required: Map<string, number> = count(t.split(""))
+    const required: Map<string, number> = count(t.split(''))
     const present: Map<string, number> = new Map<string, number>()
 
     let start: number = 0
@@ -24,17 +24,20 @@ function minWindow(s: string, t: string): string {
         }
     }
 
-    return min ?? ""
+    return min ?? ''
 }
 
-function missing(required: Map<string, number>, present: Map<string, number>): number {
+function missing(
+    required: Map<string, number>,
+    present: Map<string, number>
+): number {
     let missing: number = 0
 
     for (const [letter, need] of required) {
         if (!present.has(letter)) {
             missing += need
         } else if (present.get(letter)! < need) {
-            missing += (need - present.get(letter)!)
+            missing += need - present.get(letter)!
         }
     }
 

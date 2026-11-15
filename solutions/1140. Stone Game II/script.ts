@@ -1,6 +1,6 @@
-import {arrayOfZeros, matrixOfZeros} from "../../common/array-factories"
+import { arrayOfZeros, matrixOfZeros } from '../../common/array-factories'
 
-export {stoneGameII}
+export { stoneGameII }
 
 function stoneGameII(piles: number[]): number {
     const dp: number[][] = matrixOfZeros(piles.length, piles.length)

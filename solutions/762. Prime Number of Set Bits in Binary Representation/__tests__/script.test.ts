@@ -17,5 +17,3 @@ describe('762. Prime Number of Set Bits in Binary Representation', (): void => {
         expect(countPrimeSetBits(3, 3)).toBe(1)
     })
 })
-
-

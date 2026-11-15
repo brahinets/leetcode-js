@@ -1,24 +1,19 @@
-import {singleNumber} from '../script'
+import { singleNumber } from '../script'
 
 describe('137. Single Number II', (): void => {
-
     it('Element not found', (): void => {
-        expect(() => singleNumber([]))
-            .toThrow("Element not found")
+        expect(() => singleNumber([])).toThrow('Element not found')
     })
 
     it('Has none three times', (): void => {
-        expect(singleNumber([1]))
-            .toBe(1)
+        expect(singleNumber([1])).toBe(1)
     })
 
     it('Has one three times', (): void => {
-        expect(singleNumber([2, 2, 3, 2]))
-            .toBe(3)
+        expect(singleNumber([2, 2, 3, 2])).toBe(3)
     })
 
     it('Has several three times', (): void => {
-        expect(singleNumber([0, 1, 0, 1, 0, 1, 99]))
-            .toBe(99)
+        expect(singleNumber([0, 1, 0, 1, 0, 1, 99])).toBe(99)
     })
 })

@@ -1,6 +1,9 @@
-export {climbStairs}
+export { climbStairs }
 
-function climbStairs(n: number, memo: Map<number, number> = new Map<number, number>()): number {
+function climbStairs(
+    n: number,
+    memo: Map<number, number> = new Map<number, number>()
+): number {
     if (n === 0 || n === 1) {
         return 1
     }

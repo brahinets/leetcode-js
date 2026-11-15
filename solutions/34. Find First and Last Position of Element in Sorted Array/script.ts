@@ -1,4 +1,4 @@
-export {searchRange}
+export { searchRange }
 
 function searchRange(nums: number[], target: number): number[] {
     const position: number = nums.indexOf(target)

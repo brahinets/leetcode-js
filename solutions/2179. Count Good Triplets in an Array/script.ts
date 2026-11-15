@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {goodTriplets}
+export { goodTriplets }
 
 function goodTriplets(nums1: number[], nums2: number[]): number {
     const pos2: number[] = []

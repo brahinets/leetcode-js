@@ -1,4 +1,4 @@
-import {CustomStack} from '../script'
+import { CustomStack } from '../script'
 
 describe('1381. Design a Stack With Increment Operation', (): void => {
     it('One', (): void => {

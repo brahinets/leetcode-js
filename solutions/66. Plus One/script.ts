@@ -1,4 +1,4 @@
-export {plusOne}
+export { plusOne }
 
 function plusOne(digits: number[]): number[] {
     for (let i: number = digits.length - 1; i >= 0; i--) {

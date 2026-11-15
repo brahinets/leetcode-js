@@ -1,4 +1,4 @@
-export {minimizeMax}
+export { minimizeMax }
 
 function minimizeMax(nums: number[], p: number): number {
     if (p === 0 || nums.length === 0) {

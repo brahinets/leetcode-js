@@ -1,4 +1,4 @@
-export {maximumTripletValue}
+export { maximumTripletValue }
 
 function maximumTripletValue(nums: number[]): number {
     let max: number = 0

@@ -1,4 +1,4 @@
-export {MyHashSet}
+export { MyHashSet }
 
 class MyHashSet {
     private data: Map<number, boolean>

@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {maximumLength}
+export { maximumLength }
 
 function maximumLength(nums: number[], k: number): number {
     const dp: number[][] = matrixOfZeros(k, k)

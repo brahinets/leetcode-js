@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {sumRootToLeaf}
+export { sumRootToLeaf }
 
 function sumRootToLeaf(root: TreeNode | null): number {
     return dfs(root, 0)

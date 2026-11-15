@@ -1,4 +1,4 @@
-export {isPrefixOfWord}
+export { isPrefixOfWord }
 
 function isPrefixOfWord(sentence: string, searchWord: string): number {
     const words: string[] = sentence.split(' ')

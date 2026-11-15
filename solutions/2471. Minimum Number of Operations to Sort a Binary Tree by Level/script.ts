@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {minimumOperations}
+export { minimumOperations }
 
 function minimumOperations(root: TreeNode | null): number {
     const queue: TreeNode[] = [root!]
@@ -30,7 +30,9 @@ function minimumOperations(root: TreeNode | null): number {
 }
 
 function getMinSwaps(original: number[]): number {
-    let target: number[] = [...original].sort((a: number, b: number): number => a - b)
+    let target: number[] = [...original].sort(
+        (a: number, b: number): number => a - b
+    )
 
     const position: Map<number, number> = new Map<number, number>()
     for (let i: number = 0; i < original.length; i++) {

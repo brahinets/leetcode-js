@@ -14,7 +14,8 @@ If the two linked lists have no intersection at all, return `null`.
 - `0 <= skipA <= m`
 - `0 <= skipB <= n`
 - `skipA == m` and `skipB == n` if `listA` and `listB` do not intersect.
-- `listA` and `listB` intersect if there is some index `i` and `j` such that `listA[i]` and `listB[j]` are the same node.
+- `listA` and `listB` intersect if there is some index `i` and `j` such that `listA[i]` and `listB[j]` are the same
+  node.
 
 ### Follow-up:
 

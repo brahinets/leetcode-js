@@ -1,6 +1,6 @@
-import {isPalindrome} from '../../common/string-utils'
+import { isPalindrome } from '../../common/string-utils'
 
-export {partition}
+export { partition }
 
 function partition(s: string): string[][] {
     return track(s, 0, [])
@@ -26,4 +26,3 @@ function track(str: string, start: number, results: string[]): string[][] {
 
     return result
 }
-

@@ -1,4 +1,4 @@
-export {largestSubmatrix}
+export { largestSubmatrix }
 
 function largestSubmatrix(matrix: number[][]): number {
     for (let i: number = 0; i < matrix.length; i++) {

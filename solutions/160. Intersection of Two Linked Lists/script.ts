@@ -1,8 +1,11 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {ListNode, getIntersectionNode}
+export { ListNode, getIntersectionNode }
 
-function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {
+function getIntersectionNode(
+    headA: ListNode | null,
+    headB: ListNode | null
+): ListNode | null {
     let pA: ListNode | null = headA
     let pB: ListNode | null = headB
 

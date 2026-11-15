@@ -1,6 +1,6 @@
-import {TreeNode} from '../../common/TreeNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {levelOrder, TreeNode}
+export { levelOrder, TreeNode }
 
 function levelOrder(root: TreeNode | null): number[][] {
     return [...collect(root, 0).values()]

@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {nextBeautifulNumber}
+export { nextBeautifulNumber }
 
 function nextBeautifulNumber(n: number): number {
     let candidate: number = n + 1

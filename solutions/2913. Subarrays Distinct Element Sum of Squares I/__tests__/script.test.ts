@@ -1,5 +1,4 @@
-import {sumCounts} from '../script'
-
+import { sumCounts } from '../script'
 
 describe('2913. Subarrays Distinct Element Sum of Squares I', (): void => {
     it('handles repeated values lowering distinct counts', (): void => {
@@ -7,8 +6,7 @@ describe('2913. Subarrays Distinct Element Sum of Squares I', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(15)
+        expect(result).toBe(15)
     })
 
     it('handles identical values keeping distinct count at one', (): void => {
@@ -16,8 +14,7 @@ describe('2913. Subarrays Distinct Element Sum of Squares I', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('handles single element', (): void => {
@@ -25,8 +22,7 @@ describe('2913. Subarrays Distinct Element Sum of Squares I', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('handles all distinct values maximizing each subarray count', (): void => {
@@ -34,7 +30,6 @@ describe('2913. Subarrays Distinct Element Sum of Squares I', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(20)
+        expect(result).toBe(20)
     })
 })

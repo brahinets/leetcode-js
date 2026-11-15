@@ -1,8 +1,14 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {findCheapestPrice}
+export { findCheapestPrice }
 
-function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {
+function findCheapestPrice(
+    n: number,
+    flights: number[][],
+    src: number,
+    dst: number,
+    k: number
+): number {
     let minCostsToCity: number[] = arrayOf(Number.MAX_VALUE, n)
     minCostsToCity[src] = 0
 
@@ -11,7 +17,10 @@ function findCheapestPrice(n: number, flights: number[][], src: number, dst: num
 
         for (const [from, to, cost] of flights) {
             if (minCostsToCity[from] !== Number.MAX_VALUE) {
-                minCostsWithStops[to] = Math.min(minCostsWithStops[to], cost + minCostsToCity[from])
+                minCostsWithStops[to] = Math.min(
+                    minCostsWithStops[to],
+                    cost + minCostsToCity[from]
+                )
             }
         }
 

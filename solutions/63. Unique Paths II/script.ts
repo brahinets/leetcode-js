@@ -1,13 +1,19 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {uniquePathsWithObstacles}
+export { uniquePathsWithObstacles }
 
 function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
-    if (obstacleGrid[0][0] === 1 || obstacleGrid[obstacleGrid.length - 1][obstacleGrid[0].length - 1] === 1) {
+    if (
+        obstacleGrid[0][0] === 1 ||
+        obstacleGrid[obstacleGrid.length - 1][obstacleGrid[0].length - 1] === 1
+    ) {
         return 0
     }
 
-    const dp: number[][] = matrixOfZeros(obstacleGrid.length, obstacleGrid[0].length)
+    const dp: number[][] = matrixOfZeros(
+        obstacleGrid.length,
+        obstacleGrid[0].length
+    )
     dp[0][0] = 1
 
     for (let i: number = 0; i < obstacleGrid.length; i++) {

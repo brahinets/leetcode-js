@@ -1,4 +1,4 @@
-export {insert}
+export { insert }
 
 function insert(intervals: number[][], newInterval: number[]): number[][] {
     let [newStart, newEnd]: number[] = newInterval

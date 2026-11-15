@@ -1,9 +1,9 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {longestSubsequenceRepeatedK, countSubsequence}
+export { longestSubsequenceRepeatedK, countSubsequence }
 
 function longestSubsequenceRepeatedK(s: string, k: number): string {
-    const frequency: Map<string, number> = count(s.split(""))
+    const frequency: Map<string, number> = count(s.split(''))
 
     const candidates: string[] = Array.from(frequency.entries())
         .filter(([, count]: [string, number]): boolean => count >= k)

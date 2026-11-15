@@ -1,9 +1,9 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {minimumLength}
+export { minimumLength }
 
 function minimumLength(s: string): number {
-    let charFrequencies: Map<string, number> = count(s.split(""))
+    let charFrequencies: Map<string, number> = count(s.split(''))
 
     let deleteCount: number = 0
     for (const frequency of charFrequencies.values()) {

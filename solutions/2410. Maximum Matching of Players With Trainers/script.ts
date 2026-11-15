@@ -1,6 +1,9 @@
-export {matchPlayersAndTrainers}
+export { matchPlayersAndTrainers }
 
-function matchPlayersAndTrainers(players: number[], trainers: number[]): number {
+function matchPlayersAndTrainers(
+    players: number[],
+    trainers: number[]
+): number {
     players.sort((a: number, b: number): number => a - b)
     trainers.sort((a: number, b: number): number => a - b)
 

@@ -1,4 +1,4 @@
-export {convert}
+export { convert }
 
 function convert(s: string, numRows: number): string {
     const matrix: string[][] = []
@@ -18,12 +18,16 @@ function convert(s: string, numRows: number): string {
             }
         } else {
             for (let i: number = numRows - 1; i >= 0 && chars.length > 0; i--) {
-                for (let j: number = 1; j < numRows - 1 && chars.length > 0; j++) {
+                for (
+                    let j: number = 1;
+                    j < numRows - 1 && chars.length > 0;
+                    j++
+                ) {
                     if (i + j + 1 === numRows) {
                         const char: string = chars.shift() || ''
                         matrix[i].push(char)
                     } else {
-                        matrix[i].push("")
+                        matrix[i].push('')
                     }
                 }
             }
@@ -32,5 +36,5 @@ function convert(s: string, numRows: number): string {
         toBottom = !toBottom
     }
 
-    return matrix.reduce((str: string, row: string[]) => str + row.join(""), "")
+    return matrix.reduce((str: string, row: string[]) => str + row.join(''), '')
 }

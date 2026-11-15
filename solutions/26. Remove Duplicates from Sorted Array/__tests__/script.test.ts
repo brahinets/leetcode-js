@@ -1,7 +1,6 @@
-import {removeDuplicates} from '../script'
+import { removeDuplicates } from '../script'
 
 describe('26. Remove Duplicates from Sorted Array', (): void => {
-
     it('Remove one', (): void => {
         const input: number[] = [1, 1, 2]
         const left: number = removeDuplicates(input)
@@ -17,5 +16,4 @@ describe('26. Remove Duplicates from Sorted Array', (): void => {
         expect(left).toBe(5)
         expect(input).toStrictEqual([0, 1, 2, 3, 4])
     })
-
 })

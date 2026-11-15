@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {minimumTotal}
+export { minimumTotal }
 
 function minimumTotal(triangle: number[][]): number {
     const n: number = triangle.length

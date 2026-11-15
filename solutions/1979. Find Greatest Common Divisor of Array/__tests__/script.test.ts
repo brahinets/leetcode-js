@@ -6,8 +6,7 @@ describe('1979. Find Greatest Common Divisor of Array', (): void => {
 
         const result: number = findGCD(nums)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('coprime extremes yield one', (): void => {
@@ -15,8 +14,7 @@ describe('1979. Find Greatest Common Divisor of Array', (): void => {
 
         const result: number = findGCD(nums)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('all elements identical', (): void => {
@@ -24,8 +22,7 @@ describe('1979. Find Greatest Common Divisor of Array', (): void => {
 
         const result: number = findGCD(nums)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('extremes at the ends of an unsorted array', (): void => {
@@ -33,8 +30,7 @@ describe('1979. Find Greatest Common Divisor of Array', (): void => {
 
         const result: number = findGCD(nums)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('smallest value is one', (): void => {
@@ -42,8 +38,7 @@ describe('1979. Find Greatest Common Divisor of Array', (): void => {
 
         const result: number = findGCD(nums)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('two elements where one divides the other', (): void => {
@@ -51,7 +46,6 @@ describe('1979. Find Greatest Common Divisor of Array', (): void => {
 
         const result: number = findGCD(nums)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 })

@@ -1,4 +1,4 @@
-export {MyCalendar}
+export { MyCalendar }
 
 class MyCalendar {
     private readonly calendar: number[][]

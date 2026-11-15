@@ -37,7 +37,10 @@ function minimumCost(
         return node.stringId
     }
 
-    function getSubstringIds(str: string, position: number): Map<number, number> {
+    function getSubstringIds(
+        str: string,
+        position: number
+    ): Map<number, number> {
         const ids: Map<number, number> = new Map()
         let node: TrieNode = trie
 
@@ -74,13 +77,19 @@ function minimumCost(
             if (minCost[i][k] === INF) continue
             for (let j: number = 0; j < stringIdCount; j++) {
                 if (minCost[k][j] === INF) continue
-                minCost[i][j] = Math.min(minCost[i][j], minCost[i][k] + minCost[k][j])
+                minCost[i][j] = Math.min(
+                    minCost[i][j],
+                    minCost[i][k] + minCost[k][j]
+                )
             }
         }
     }
 
-    const lengths: number[] = [...new Set([...original, ...changed].map((s: string): number => s.length))]
-        .sort((a: number, b: number): number => a - b)
+    const lengths: number[] = [
+        ...new Set(
+            [...original, ...changed].map((s: string): number => s.length)
+        )
+    ].sort((a: number, b: number): number => a - b)
 
     const cache: Map<number, number> = new Map()
 
@@ -88,7 +97,10 @@ function minimumCost(
         if (position >= sourceLength) return 0
         if (cache.has(position)) return cache.get(position)!
 
-        let result: number = source[position] === target[position] ? findMinCost(position + 1) : INF
+        let result: number =
+            source[position] === target[position]
+                ? findMinCost(position + 1)
+                : INF
 
         const sourceIds: Map<number, number> = getSubstringIds(source, position)
         const targetIds: Map<number, number> = getSubstringIds(target, position)

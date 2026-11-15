@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {findLHS}
+export { findLHS }
 
 function findLHS(nums: number[]): number {
     const numCount: Map<number, number> = count(nums)
@@ -8,7 +8,10 @@ function findLHS(nums: number[]): number {
 
     for (const currentNum of numCount.keys()) {
         if (numCount.has(currentNum + 1)) {
-            maxLength = Math.max(maxLength, numCount.get(currentNum)! + numCount.get(currentNum + 1)!)
+            maxLength = Math.max(
+                maxLength,
+                numCount.get(currentNum)! + numCount.get(currentNum + 1)!
+            )
         }
     }
 

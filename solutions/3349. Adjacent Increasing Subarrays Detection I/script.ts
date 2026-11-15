@@ -1,4 +1,4 @@
-export {hasIncreasingSubarrays}
+export { hasIncreasingSubarrays }
 
 function hasIncreasingSubarrays(nums: number[], k: number): boolean {
     let increment: number = 1
@@ -13,7 +13,13 @@ function hasIncreasingSubarrays(nums: number[], k: number): boolean {
             increment = 1
         }
 
-        maxLen = Math.max(maxLen, Math.max(Math.floor(increment / 2), Math.min(previousIncrement, increment)))
+        maxLen = Math.max(
+            maxLen,
+            Math.max(
+                Math.floor(increment / 2),
+                Math.min(previousIncrement, increment)
+            )
+        )
 
         if (maxLen >= k) {
             return true

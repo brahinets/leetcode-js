@@ -1,4 +1,4 @@
-export {maxTotalValue}
+export { maxTotalValue }
 
 function maxTotalValue(numbers: number[], k: number): number {
     let maximum: number = numbers[0]

@@ -1,8 +1,12 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {lowestCommonAncestor, TreeNode}
+export { lowestCommonAncestor, TreeNode }
 
-function lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode): TreeNode {
+function lowestCommonAncestor(
+    root: TreeNode,
+    p: TreeNode,
+    q: TreeNode
+): TreeNode {
     let lca: TreeNode | null = root
 
     while (lca) {
@@ -16,7 +20,7 @@ function lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode): TreeNod
     }
 
     if (!lca) {
-        throw new Error("Lowest Common Ancestor not detected")
+        throw new Error('Lowest Common Ancestor not detected')
     }
 
     return lca

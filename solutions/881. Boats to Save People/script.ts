@@ -1,4 +1,4 @@
-export {numRescueBoats}
+export { numRescueBoats }
 
 function numRescueBoats(people: number[], limit: number): number {
     people = people.sort((a: number, b: number) => a - b)
@@ -10,9 +10,11 @@ function numRescueBoats(people: number[], limit: number): number {
         let peopleInOneBoat: number = 0
         let onePerson: number
 
-
-        while (onePerson = people.pop() || 0) {
-            if (peopleWeightInOneBoat + onePerson <= limit && peopleInOneBoat < 2) {
+        while ((onePerson = people.pop() || 0)) {
+            if (
+                peopleWeightInOneBoat + onePerson <= limit &&
+                peopleInOneBoat < 2
+            ) {
                 peopleWeightInOneBoat += onePerson
                 peopleInOneBoat++
             } else {
@@ -21,8 +23,11 @@ function numRescueBoats(people: number[], limit: number): number {
             }
         }
 
-        while (onePerson = people.shift() || 0) {
-            if (peopleWeightInOneBoat + onePerson <= limit && peopleInOneBoat < 2) {
+        while ((onePerson = people.shift() || 0)) {
+            if (
+                peopleWeightInOneBoat + onePerson <= limit &&
+                peopleInOneBoat < 2
+            ) {
                 peopleWeightInOneBoat += onePerson
                 peopleInOneBoat++
             } else {

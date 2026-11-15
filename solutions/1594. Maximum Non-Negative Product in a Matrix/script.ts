@@ -1,4 +1,4 @@
-import { matrixOfZeros } from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
 export { maxProductPath }
 
@@ -28,11 +28,11 @@ function maxProductPath(grid: number[][]): number {
         for (let column: number = 1; column < columns; column++) {
             const fromTop: number[] = [
                 maxProduct[row - 1][column] * grid[row][column],
-                minProduct[row - 1][column] * grid[row][column],
+                minProduct[row - 1][column] * grid[row][column]
             ]
             const fromLeft: number[] = [
                 maxProduct[row][column - 1] * grid[row][column],
-                minProduct[row][column - 1] * grid[row][column],
+                minProduct[row][column - 1] * grid[row][column]
             ]
             const candidates: number[] = [...fromTop, ...fromLeft]
             maxProduct[row][column] = Math.max(...candidates)

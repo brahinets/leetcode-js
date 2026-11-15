@@ -1,4 +1,4 @@
-export {specialArray}
+export { specialArray }
 
 function specialArray(nums: number[]): number {
     nums = nums.sort((a: number, b: number) => a - b)

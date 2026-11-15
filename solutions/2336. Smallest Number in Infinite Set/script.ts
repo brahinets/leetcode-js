@@ -1,4 +1,4 @@
-export {SmallestInfiniteSet}
+export { SmallestInfiniteSet }
 
 class SmallestInfiniteSet {
     private ranges: Range[]
@@ -11,7 +11,10 @@ class SmallestInfiniteSet {
         let min: number = 0
 
         for (let i: number = 0; i < this.ranges.length; i++) {
-            if (this.ranges[i].start > number && this.ranges[i].start < this.ranges[min].start) {
+            if (
+                this.ranges[i].start > number &&
+                this.ranges[i].start < this.ranges[min].start
+            ) {
                 min = i
             }
         }
@@ -60,7 +63,11 @@ class SmallestInfiniteSet {
             const before: Range[] = this.ranges.slice(0, bigger)
             const after: Range[] = this.ranges.slice(bigger + 1)
 
-            this.ranges = [...before, new Range(num, this.ranges[bigger].end), ...after]
+            this.ranges = [
+                ...before,
+                new Range(num, this.ranges[bigger].end),
+                ...after
+            ]
         } else {
             this.ranges.push(new Range(num, num))
         }

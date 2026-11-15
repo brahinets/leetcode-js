@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {minSwaps}
+export { minSwaps }
 
 function minSwaps(nums: number[]): number {
     const totalOnes: number = sum(nums)

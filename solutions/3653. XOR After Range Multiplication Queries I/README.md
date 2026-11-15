@@ -2,7 +2,8 @@
 
 ## Medium
 
-You are given an integer array `nums` of length `n` and a 2D integer array `queries` of size `q`, where `queries[i] = [l, r, k, v]`.
+You are given an integer array `nums` of length `n` and a 2D integer array `queries` of size `q`, where
+`queries[i] = [l, r, k, v]`.
 
 For each query, multiply every element at indices `l, l+k, l+2k, ...` (up to `r`) by `v` modulo `10^9 + 7`.
 

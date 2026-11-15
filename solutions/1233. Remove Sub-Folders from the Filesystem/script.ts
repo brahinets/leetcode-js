@@ -1,4 +1,4 @@
-export {removeSubfolders}
+export { removeSubfolders }
 
 function removeSubfolders(folder: string[]): string[] {
     folder.sort()

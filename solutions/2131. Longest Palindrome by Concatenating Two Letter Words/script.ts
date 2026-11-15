@@ -1,4 +1,4 @@
-export {longestPalindrome}
+export { longestPalindrome }
 
 function longestPalindrome(words: string[]): number {
     const pairs: Map<string, number> = new Map<string, number>()

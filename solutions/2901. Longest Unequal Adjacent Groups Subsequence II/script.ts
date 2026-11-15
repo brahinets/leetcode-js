@@ -1,8 +1,11 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {getWordsInLongestSubsequence}
+export { getWordsInLongestSubsequence }
 
-function getWordsInLongestSubsequence(words: string[], groups: number[]): string[] {
+function getWordsInLongestSubsequence(
+    words: string[],
+    groups: number[]
+): string[] {
     const dp: number[] = arrayOf(1, groups.length)
     const previousIndices: number[] = arrayOf(-1, groups.length)
     let maxIndex: number = 0
@@ -45,7 +48,11 @@ function isHammingDistanceOne(word1: string, word2: string): boolean {
     return differences === 1
 }
 
-function buildSubsequence(words: string[], previousIndices: number[], startIndex: number): string[] {
+function buildSubsequence(
+    words: string[],
+    previousIndices: number[],
+    startIndex: number
+): string[] {
     const subsequence: string[] = []
 
     for (let i: number = startIndex; i >= 0; i = previousIndices[i]) {

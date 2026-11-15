@@ -5,11 +5,11 @@
 You are given two categories of theme park attractions: **land rides** and **water rides**.
 
 - **Land rides**
-  - `landStartTime[i]` – the earliest time the `i`th land ride can be boarded.
-  - `landDuration[i]` – how long the `i`th land ride lasts.
+    - `landStartTime[i]` – the earliest time the `i`th land ride can be boarded.
+    - `landDuration[i]` – how long the `i`th land ride lasts.
 - **Water rides**
-  - `waterStartTime[j]` – the earliest time the `j`th water ride can be boarded.
-  - `waterDuration[j]` – how long the `j`th water ride lasts.
+    - `waterStartTime[j]` – the earliest time the `j`th water ride can be boarded.
+    - `waterDuration[j]` – how long the `j`th water ride lasts.
 
 A tourist must experience **exactly one** ride from **each** category, in **either order**.
 
@@ -28,6 +28,7 @@ Input: `landStartTime = [2,8], landDuration = [4,1], waterStartTime = [6], water
 Output: `9`
 
 Explanation:
+
 - Plan A (land ride 0 → water ride 0): Start land at 2, finish at 6. Water opens at 6, board immediately, finish at 9.
 - Plan A gives the earliest finish time of 9.
 
@@ -38,6 +39,7 @@ Input: `landStartTime = [5], landDuration = [3], waterStartTime = [1], waterDura
 Output: `14`
 
 Explanation:
+
 - Plan A (water ride 0 → land ride 0): Start water at 1, finish at 11. Land opened at 5, board at 11, finish at 14.
 - Plan A provides the earliest finish time of 14.
 

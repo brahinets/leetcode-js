@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {numDecodings}
+export { numDecodings }
 
 function numDecodings(s: string): number {
     if (s.length === 0) {

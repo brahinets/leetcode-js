@@ -1,4 +1,4 @@
-export {applyOperations}
+export { applyOperations }
 
 function applyOperations(nums: number[]): number[] {
     let modifiedNums: number[] = []

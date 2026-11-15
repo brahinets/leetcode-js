@@ -1,11 +1,14 @@
-export {garbageCollection}
+export { garbageCollection }
 
 const HOUSE_CLEANING_COTS: number = 1
-const GARBAGE_TYPES: string[] = ["G", "P", "M"]
+const GARBAGE_TYPES: string[] = ['G', 'P', 'M']
 
-function calculateTravelCost(travelCosts: number[], houseNumber: number): number {
+function calculateTravelCost(
+    travelCosts: number[],
+    houseNumber: number
+): number {
     if (houseNumber > travelCosts.length + 1) {
-        throw new Error("Travel cost is not specified for this house")
+        throw new Error('Travel cost is not specified for this house')
     }
 
     let cost: number = 0

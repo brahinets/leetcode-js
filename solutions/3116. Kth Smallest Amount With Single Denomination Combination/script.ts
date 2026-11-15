@@ -1,4 +1,4 @@
-export {findKthSmallest}
+export { findKthSmallest }
 
 function findKthSmallest(coins: number[], k: number): number {
     const minimumCoin: number = Math.min(...coins)
@@ -31,7 +31,10 @@ function countAmountsUpTo(coins: number[], amount: number): number {
 
         for (let index: number = 0; index < coins.length; index++) {
             if ((subset & (1 << index)) !== 0) {
-                leastCommonMultiple = lowestCommonMultiple(leastCommonMultiple, coins[index])
+                leastCommonMultiple = lowestCommonMultiple(
+                    leastCommonMultiple,
+                    coins[index]
+                )
                 bitCount += 1
 
                 if (leastCommonMultiple > amount) {
@@ -57,10 +60,21 @@ function countAmountsUpTo(coins: number[], amount: number): number {
     return count
 }
 
-function lowestCommonMultiple(firstNumber: number, secondNumber: number): number {
-    return (firstNumber / greatestCommonDivisor(firstNumber, secondNumber)) * secondNumber
+function lowestCommonMultiple(
+    firstNumber: number,
+    secondNumber: number
+): number {
+    return (
+        (firstNumber / greatestCommonDivisor(firstNumber, secondNumber)) *
+        secondNumber
+    )
 }
 
-function greatestCommonDivisor(firstNumber: number, secondNumber: number): number {
-    return secondNumber === 0 ? firstNumber : greatestCommonDivisor(secondNumber, firstNumber % secondNumber)
+function greatestCommonDivisor(
+    firstNumber: number,
+    secondNumber: number
+): number {
+    return secondNumber === 0
+        ? firstNumber
+        : greatestCommonDivisor(secondNumber, firstNumber % secondNumber)
 }

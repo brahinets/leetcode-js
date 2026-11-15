@@ -1,4 +1,4 @@
-import {MyQueue} from '../script'
+import { MyQueue } from '../script'
 
 describe('232. Implement Queue using Stacks', (): void => {
     it('Can add element', (): void => {

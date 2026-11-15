@@ -1,4 +1,4 @@
-export {makeFancyString}
+export { makeFancyString }
 
 function makeFancyString(s: string): string {
     let res: string = s[0]

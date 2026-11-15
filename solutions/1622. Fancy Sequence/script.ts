@@ -35,7 +35,10 @@ class Fancy {
     }
 
     append(val: number): void {
-        const normalized: bigint = (((BigInt(val) - this.add) % MOD + MOD) % MOD * modInverse(this.mult)) % MOD
+        const normalized: bigint =
+            (((((BigInt(val) - this.add) % MOD) + MOD) % MOD) *
+                modInverse(this.mult)) %
+            MOD
 
         this.seq.push(normalized)
     }
@@ -55,6 +58,6 @@ class Fancy {
             return -1
         }
 
-        return Number((this.mult * this.seq[idx] % MOD + this.add) % MOD)
+        return Number((((this.mult * this.seq[idx]) % MOD) + this.add) % MOD)
     }
 }

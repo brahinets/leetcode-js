@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {isZeroArray}
+export { isZeroArray }
 
 function isZeroArray(nums: number[], queries: number[][]): boolean {
     const deltaArray: number[] = arrayOfZeros(nums.length + 1)

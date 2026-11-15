@@ -1,4 +1,4 @@
-export {finalPrices}
+export { finalPrices }
 
 function finalPrices(prices: number[]): number[] {
     const result: number[] = []

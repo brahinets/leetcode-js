@@ -1,4 +1,4 @@
-import {LRUCache} from "../script"
+import { LRUCache } from '../script'
 
 describe('146. LRU Cache', (): void => {
     it('Test cache', (): void => {
@@ -37,7 +37,6 @@ describe('146. LRU Cache', (): void => {
         cache.put(1, 2)
         expect(cache.get(1)).toBe(2)
         expect(cache.get(2)).toBe(6)
-
     })
 
     it('Get should refresh usage log', (): void => {

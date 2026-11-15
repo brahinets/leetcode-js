@@ -1,4 +1,4 @@
-export {minSwaps}
+export { minSwaps }
 
 function minSwaps(s: string): number {
     const stack: string[] = []

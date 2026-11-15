@@ -1,4 +1,4 @@
-export {reverseString}
+export { reverseString }
 
 function reverseString(s: string[]): void {
     for (let i: number = 0; i < Math.floor(s.length / 2); i++) {

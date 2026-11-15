@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {new21Game}
+export { new21Game }
 
 function new21Game(n: number, k: number, maxPts: number): number {
     if (k === 0 || n >= k + maxPts) {

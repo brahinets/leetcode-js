@@ -1,4 +1,4 @@
-export {removeDuplicates}
+export { removeDuplicates }
 
 function removeDuplicates(nums: number[]): number {
     let numsLeft: number = 2

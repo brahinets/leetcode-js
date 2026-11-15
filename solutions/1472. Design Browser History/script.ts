@@ -1,4 +1,4 @@
-export {BrowserHistory}
+export { BrowserHistory }
 
 class BrowserHistory {
     private history: string[]

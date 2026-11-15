@@ -1,11 +1,11 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minimumPushes}
+export { minimumPushes }
 
 function minimumPushes(word: string): number {
     const frequency: number[] = sortCharsByFrequency(word)
 
-    let totalPushes:number = 0
+    let totalPushes: number = 0
     for (let i = 0; i < 26; i++) {
         totalPushes += Math.floor(i / 8 + 1) * frequency[i]
     }

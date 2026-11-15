@@ -2,7 +2,12 @@ import { matrixOf } from '../../common/array-factories'
 
 export { countIslands }
 
-const DIRECTIONS: readonly number[][] = [[-1, 0], [1, 0], [0, -1], [0, 1]]
+const DIRECTIONS: readonly number[][] = [
+    [-1, 0],
+    [1, 0],
+    [0, -1],
+    [0, 1]
+]
 
 function countIslands(grid: number[][], k: number): number {
     const visited: boolean[][] = matrixOf<boolean>(
@@ -60,10 +65,12 @@ function isUnvisitedLand(
     row: number,
     column: number
 ): boolean {
-    return row >= 0
-        && row < grid.length
-        && column >= 0
-        && column < grid[0].length
-        && grid[row][column] > 0
-        && !visited[row][column]
+    return (
+        row >= 0 &&
+        row < grid.length &&
+        column >= 0 &&
+        column < grid[0].length &&
+        grid[row][column] > 0 &&
+        !visited[row][column]
+    )
 }

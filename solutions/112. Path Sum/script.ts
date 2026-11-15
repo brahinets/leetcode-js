@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {hasPathSum}
+export { hasPathSum }
 
 function hasPathSum(root: TreeNode | null, targetSum: number): boolean {
     if (!root) {
@@ -13,5 +13,8 @@ function hasPathSum(root: TreeNode | null, targetSum: number): boolean {
 
     const newTargetSum: number = targetSum - root.val
 
-    return hasPathSum(root.left, newTargetSum) || hasPathSum(root.right, newTargetSum)
+    return (
+        hasPathSum(root.left, newTargetSum) ||
+        hasPathSum(root.right, newTargetSum)
+    )
 }

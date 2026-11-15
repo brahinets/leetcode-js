@@ -1,4 +1,4 @@
-export {searchInsert}
+export { searchInsert }
 
 function searchInsert(nums: number[], target: number): number {
     let start: number = 0

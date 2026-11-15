@@ -1,4 +1,4 @@
-export {getHappyString}
+export { getHappyString }
 
 function getHappyString(n: number, k: number): string {
     const letters: string[] = ['a', 'b', 'c']
@@ -7,7 +7,11 @@ function getHappyString(n: number, k: number): string {
     return result[k - 1] || ''
 }
 
-function generateHappyStrings(n: number, letters: string[], str: string): string[] {
+function generateHappyStrings(
+    n: number,
+    letters: string[],
+    str: string
+): string[] {
     const result: string[] = []
 
     if (str.length === n) {

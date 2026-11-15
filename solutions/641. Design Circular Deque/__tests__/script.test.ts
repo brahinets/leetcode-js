@@ -1,4 +1,4 @@
-import {MyCircularDeque} from '../script'
+import { MyCircularDeque } from '../script'
 
 describe('641. Design Circular Deque', (): void => {
     it('Test', (): void => {

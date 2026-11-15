@@ -1,12 +1,15 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, pseudoPalindromicPaths}
+export { TreeNode, pseudoPalindromicPaths }
 
 function pseudoPalindromicPaths(root: TreeNode): number {
     return countPseudoPalindromicPaths(root, new Set<number>())
 }
 
-function countPseudoPalindromicPaths(node: TreeNode | null, pathElementsWithoutPair: Set<number>): number {
+function countPseudoPalindromicPaths(
+    node: TreeNode | null,
+    pathElementsWithoutPair: Set<number>
+): number {
     if (!node) {
         return 0
     }
@@ -23,5 +26,8 @@ function countPseudoPalindromicPaths(node: TreeNode | null, pathElementsWithoutP
         return currentPath.size <= 1 ? 1 : 0
     }
 
-    return countPseudoPalindromicPaths(node.left, currentPath) + countPseudoPalindromicPaths(node.right, currentPath)
+    return (
+        countPseudoPalindromicPaths(node.left, currentPath) +
+        countPseudoPalindromicPaths(node.right, currentPath)
+    )
 }

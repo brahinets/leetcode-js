@@ -1,4 +1,4 @@
-export {findMinArrowShots}
+export { findMinArrowShots }
 
 function findMinArrowShots(points: number[][]): number {
     points = points.sort((a: number[], b: number[]) => a[0] - b[0])
@@ -10,9 +10,12 @@ function findMinArrowShots(points: number[][]): number {
         const [start, end]: number[] = points[i]
 
         if (start <= commonEnd) {
-            [commonStart, commonEnd] = [Math.max(start, commonStart), Math.min(end, commonEnd)]
+            ;[commonStart, commonEnd] = [
+                Math.max(start, commonStart),
+                Math.min(end, commonEnd)
+            ]
         } else {
-            [commonStart, commonEnd] = [start, end]
+            ;[commonStart, commonEnd] = [start, end]
             count++
         }
     }

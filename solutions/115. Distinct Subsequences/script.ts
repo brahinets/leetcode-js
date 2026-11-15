@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {numDistinct}
+export { numDistinct }
 
 function numDistinct(s: string, t: string): number {
     const dp: number[][] = matrixOfZeros(s.length + 1, t.length + 1)

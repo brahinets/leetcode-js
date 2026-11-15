@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {countPartitions}
+export { countPartitions }
 
 const MOD: number = 1e9 + 7
 
@@ -28,7 +28,9 @@ function countPartitions(nums: number[], k: number): number {
             left++
         }
 
-        dp[right + 1] = (prefixSum[right] - (left > 0 ? prefixSum[left - 1] : 0) + MOD) % MOD
+        dp[right + 1] =
+            (prefixSum[right] - (left > 0 ? prefixSum[left - 1] : 0) + MOD) %
+            MOD
 
         prefixSum[right + 1] = (prefixSum[right] + dp[right + 1]) % MOD
     }

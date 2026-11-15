@@ -1,4 +1,4 @@
-import { arrayOf } from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
 export { maxNumOfSubstrings }
 
@@ -28,7 +28,11 @@ function maxNumOfSubstrings(s: string): string[] {
     return [...bestFromIndex[0].substrings]
 }
 
-function computeValidEnds(s: string, firstIndex: readonly number[], lastIndex: readonly number[]): number[] {
+function computeValidEnds(
+    s: string,
+    firstIndex: readonly number[],
+    lastIndex: readonly number[]
+): number[] {
     const length: number = s.length
     const validEnd: number[] = arrayOf(-1, length)
 
@@ -59,9 +63,14 @@ function computeValidEnds(s: string, firstIndex: readonly number[], lastIndex: r
     return validEnd
 }
 
-function computeBestSelection(s: string, validEnd: readonly number[]): SelectionResult[] {
+function computeBestSelection(
+    s: string,
+    validEnd: readonly number[]
+): SelectionResult[] {
     const length: number = s.length
-    const bestFromIndex: SelectionResult[] = new Array<SelectionResult>(length + 1)
+    const bestFromIndex: SelectionResult[] = new Array<SelectionResult>(
+        length + 1
+    )
     bestFromIndex[length] = { count: 0, totalLength: 0, substrings: [] }
 
     for (let index = length - 1; index >= 0; index--) {
@@ -82,7 +91,8 @@ function computeBestSelection(s: string, validEnd: readonly number[]): Selection
 
         const shouldTake: boolean =
             takeResult.count > skipResult.count ||
-            (takeResult.count === skipResult.count && takeResult.totalLength < skipResult.totalLength)
+            (takeResult.count === skipResult.count &&
+                takeResult.totalLength < skipResult.totalLength)
 
         bestFromIndex[index] = shouldTake ? takeResult : skipResult
     }

@@ -1,24 +1,33 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {jobScheduling}
+export { jobScheduling }
 
-function jobScheduling(startTime: number[], endTime: number[], profit: number[]): number {
+function jobScheduling(
+    startTime: number[],
+    endTime: number[],
+    profit: number[]
+): number {
     if (startTime.length === 0 || endTime.length === 0 || profit.length === 0) {
         return 0
     }
 
-    const jobs: Job[] = mapJobs(startTime, endTime, profit)
-        .sort((a: Job, b: Job): number => a.endTime - b.endTime)
+    const jobs: Job[] = mapJobs(startTime, endTime, profit).sort(
+        (a: Job, b: Job): number => a.endTime - b.endTime
+    )
 
     const maxProfitWithJob: number[] = [jobs[0].profit]
     for (let i: number = 1; i < jobs.length; i++) {
-        const latestCompletedBeforeCurrent: number = findLatestCompletedJobIndex(jobs, i)
-        const profitBeforeCurrent: number = maxProfitWithJob[latestCompletedBeforeCurrent] ?? 0
+        const latestCompletedBeforeCurrent: number =
+            findLatestCompletedJobIndex(jobs, i)
+        const profitBeforeCurrent: number =
+            maxProfitWithJob[latestCompletedBeforeCurrent] ?? 0
 
         const current: Job = jobs[i]
         const profitWithCurrent: number = current.profit + profitBeforeCurrent
 
-        maxProfitWithJob.push(Math.max(profitWithCurrent, maxProfitWithJob[i - 1]))
+        maxProfitWithJob.push(
+            Math.max(profitWithCurrent, maxProfitWithJob[i - 1])
+        )
     }
 
     return last(maxProfitWithJob)!
@@ -49,11 +58,14 @@ class Job {
         readonly startTime: number,
         readonly endTime: number,
         readonly profit: number
-    ) {
-    }
+    ) {}
 }
 
-function mapJobs(startTime: number[], endTime: number[], profit: number[]): Job[] {
+function mapJobs(
+    startTime: number[],
+    endTime: number[],
+    profit: number[]
+): Job[] {
     const jobs: Job[] = []
 
     for (let i: number = 0; i < startTime.length; i++) {

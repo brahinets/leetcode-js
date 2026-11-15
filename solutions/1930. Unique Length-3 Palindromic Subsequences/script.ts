@@ -1,16 +1,22 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {countPalindromicSubsequence}
+export { countPalindromicSubsequence }
 
 const ALPHABET_LENGTH: number = 26
 
 function countPalindromicSubsequence(s: string): number {
-    const [firstOccurrence, lastOccurrence]: [number[], number[]] = findEdgeOccurrences(s)
+    const [firstOccurrence, lastOccurrence]: [number[], number[]] =
+        findEdgeOccurrences(s)
 
     let palindromicSubsequenceCount: number = 0
     for (let i: number = 0; i < ALPHABET_LENGTH; i++) {
-        if (firstOccurrence[i] !== -1 && firstOccurrence[i] !== lastOccurrence[i]) {
-            const uniqueChars: Set<string> = new Set<string>(s.slice(firstOccurrence[i] + 1, lastOccurrence[i]))
+        if (
+            firstOccurrence[i] !== -1 &&
+            firstOccurrence[i] !== lastOccurrence[i]
+        ) {
+            const uniqueChars: Set<string> = new Set<string>(
+                s.slice(firstOccurrence[i] + 1, lastOccurrence[i])
+            )
             palindromicSubsequenceCount += uniqueChars.size
         }
     }

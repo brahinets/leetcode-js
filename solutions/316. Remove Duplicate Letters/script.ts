@@ -1,6 +1,6 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {removeDuplicateLetters}
+export { removeDuplicateLetters }
 
 function removeDuplicateLetters(s: string): string {
     const result: string[] = []
@@ -19,9 +19,9 @@ function removeDuplicateLetters(s: string): string {
         result.push(char)
     }
 
-    return result.join("")
+    return result.join('')
 }
 
 function lastStr(string: string[]): string {
-    return last(string) ?? ""
+    return last(string) ?? ''
 }

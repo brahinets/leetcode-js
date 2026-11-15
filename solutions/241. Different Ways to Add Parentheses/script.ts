@@ -1,4 +1,4 @@
-export {diffWaysToCompute}
+export { diffWaysToCompute }
 
 function diffWaysToCompute(expression: string): number[] {
     const results: number[] = []
@@ -24,8 +24,12 @@ function diffWaysToCompute(expression: string): number[] {
             continue
         }
 
-        const leftResults: number[] = diffWaysToCompute(expression.substring(0, i))
-        const rightResults: number[] = diffWaysToCompute(expression.substring(i + 1))
+        const leftResults: number[] = diffWaysToCompute(
+            expression.substring(0, i)
+        )
+        const rightResults: number[] = diffWaysToCompute(
+            expression.substring(i + 1)
+        )
 
         for (const leftValue of leftResults) {
             for (const rightValue of rightResults) {
@@ -37,7 +41,11 @@ function diffWaysToCompute(expression: string): number[] {
     return results
 }
 
-function evaluate(currentChar: string, leftValue: number, rightValue: number): number {
+function evaluate(
+    currentChar: string,
+    leftValue: number,
+    rightValue: number
+): number {
     switch (currentChar) {
         case '+':
             return leftValue + rightValue

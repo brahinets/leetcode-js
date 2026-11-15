@@ -1,4 +1,4 @@
-export {reductionOperations}
+export { reductionOperations }
 
 function reductionOperations(nums: number[]): number {
     nums = nums.sort((a: number, b: number): number => a - b)

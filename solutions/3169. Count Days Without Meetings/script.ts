@@ -1,4 +1,4 @@
-export {countDays}
+export { countDays }
 
 function countDays(days: number, meetings: number[][]): number {
     let freeDays: number = 0

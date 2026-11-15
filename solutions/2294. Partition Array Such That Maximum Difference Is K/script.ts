@@ -1,4 +1,4 @@
-export {partitionArray}
+export { partitionArray }
 
 function partitionArray(nums: number[], k: number): number {
     nums.sort((a: number, b: number): number => a - b)

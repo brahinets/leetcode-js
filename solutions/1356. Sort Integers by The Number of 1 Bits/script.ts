@@ -1,4 +1,4 @@
-export {sortByBits}
+export { sortByBits }
 
 function sortByBits(arr: number[]): number[] {
     return arr.sort((a: number, b: number): number => {
@@ -10,8 +10,8 @@ function sortByBits(arr: number[]): number[] {
 }
 
 function bitsCount(num: number): number {
-    return num.toString(2)
+    return num
+        .toString(2)
         .split('')
-        .filter((char: string): boolean => char === '1')
-        .length
+        .filter((char: string): boolean => char === '1').length
 }

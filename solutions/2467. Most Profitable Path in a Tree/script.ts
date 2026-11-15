@@ -1,8 +1,12 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {mostProfitablePath}
+export { mostProfitablePath }
 
-function mostProfitablePath(edges: number[][], bob: number, amount: number[]): number {
+function mostProfitablePath(
+    edges: number[][],
+    bob: number,
+    amount: number[]
+): number {
     const tree: number[][] = arrayOf([], amount.length)
     const bobPath: number[] = arrayOf(-1, amount.length)
     const visited: boolean[] = arrayOf(false, amount.length)
@@ -64,7 +68,10 @@ function findBobPath(
     }
 
     for (const neighbor of tree[node]) {
-        if (!visited[neighbor] && findBobPath(tree, neighbor, time + 1, bobPath, visited)) {
+        if (
+            !visited[neighbor] &&
+            findBobPath(tree, neighbor, time + 1, bobPath, visited)
+        ) {
             return true
         }
     }

@@ -1,4 +1,4 @@
-export {countTrapezoids}
+export { countTrapezoids }
 
 const MODULO: bigint = 1_000_000_007n
 

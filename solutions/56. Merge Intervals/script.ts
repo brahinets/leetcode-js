@@ -1,4 +1,4 @@
-export {merge}
+export { merge }
 
 function merge(intervals: number[][]): number[][] {
     intervals.sort((a: number[], b: number[]): number => a[0] - b[0])

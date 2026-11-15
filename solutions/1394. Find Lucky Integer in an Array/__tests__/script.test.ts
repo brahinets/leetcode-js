@@ -1,18 +1,15 @@
-import {findLucky} from '../script'
+import { findLucky } from '../script'
 
 describe('1394. Find Lucky Integer in an Array', (): void => {
     it('One lucky number', (): void => {
-        expect(findLucky([2, 2, 3, 4]))
-            .toBe(2)
+        expect(findLucky([2, 2, 3, 4])).toBe(2)
     })
 
     it('biggest among multiple lucky numbers', (): void => {
-        expect(findLucky([1, 2, 2, 3, 3, 3]))
-            .toBe(3)
+        expect(findLucky([1, 2, 2, 3, 3, 3])).toBe(3)
     })
 
     it('No locky numbers', (): void => {
-        expect(findLucky([2, 2, 2, 3, 3]))
-            .toBe(-1)
+        expect(findLucky([2, 2, 2, 3, 3])).toBe(-1)
     })
 })

@@ -1,4 +1,4 @@
-export {numOfSubarrays}
+export { numOfSubarrays }
 
 const MOD: number = 10 ** 9 + 7
 

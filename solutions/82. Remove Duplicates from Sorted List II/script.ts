@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {deleteDuplicates}
+export { deleteDuplicates }
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
     const dummy: ListNode = new ListNode(0, head)

@@ -1,4 +1,4 @@
-export {tupleSameProduct}
+export { tupleSameProduct }
 
 function tupleSameProduct(nums: number[]): number {
     const map: Map<number, number> = new Map<number, number>()

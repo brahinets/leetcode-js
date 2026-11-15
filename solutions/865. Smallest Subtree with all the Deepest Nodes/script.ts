@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {subtreeWithAllDeepest}
+export { subtreeWithAllDeepest }
 
 function subtreeWithAllDeepest(root: TreeNode | null): TreeNode | null {
     return dfs(root)[0]

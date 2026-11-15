@@ -1,4 +1,4 @@
-import { ListNode } from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
 export { sortList }
 
@@ -19,7 +19,10 @@ function isValidForSorting(head: ListNode | null): boolean {
     return head !== null && head.next !== null
 }
 
-function splitListInHalf(head: ListNode): { leftHalf: ListNode, rightHalf: ListNode } {
+function splitListInHalf(head: ListNode): {
+    leftHalf: ListNode
+    rightHalf: ListNode
+} {
     let slowPointer: ListNode = head
     let fastPointer: ListNode | null = head
     let previousToSlow: ListNode | null = null
@@ -40,7 +43,10 @@ function splitListInHalf(head: ListNode): { leftHalf: ListNode, rightHalf: ListN
     }
 }
 
-function mergeSortedLists(firstList: ListNode | null, secondList: ListNode | null): ListNode | null {
+function mergeSortedLists(
+    firstList: ListNode | null,
+    secondList: ListNode | null
+): ListNode | null {
     const dummyHead = new ListNode(0)
     let current: ListNode = dummyHead
 

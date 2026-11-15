@@ -1,4 +1,4 @@
-export {spiralOrder}
+export { spiralOrder }
 
 function spiralOrder(matrix: number[][]): number[] {
     const result: number[] = []
@@ -28,13 +28,21 @@ function matrixBorder(matrix: number[][], layer: number): number[] {
     }
 
     if (matrix.length > layer * 2 + 1) {
-        for (let col: number = matrix[0].length - 2 - layer; col - layer >= 0; col--) {
+        for (
+            let col: number = matrix[0].length - 2 - layer;
+            col - layer >= 0;
+            col--
+        ) {
             result.push(matrix[matrix.length - 1 - layer][col])
         }
     }
 
     if (matrix[0].length > layer * 2 + 1) {
-        for (let row: number = matrix.length - 2 - layer; row - layer > 0; row--) {
+        for (
+            let row: number = matrix.length - 2 - layer;
+            row - layer > 0;
+            row--
+        ) {
             result.push(matrix[row][layer])
         }
     }

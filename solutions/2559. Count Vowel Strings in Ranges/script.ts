@@ -1,4 +1,4 @@
-export {vowelStrings}
+export { vowelStrings }
 
 const VOWELS: Set<string> = new Set<string>(['a', 'e', 'i', 'o', 'u'])
 
@@ -18,7 +18,10 @@ function prefixSums(words: string[]): number[] {
     let sum: number = 0
 
     for (const word of words) {
-        if (VOWELS.has(word.charAt(0)) && VOWELS.has(word.charAt(word.length - 1))) {
+        if (
+            VOWELS.has(word.charAt(0)) &&
+            VOWELS.has(word.charAt(word.length - 1))
+        ) {
             sum++
         }
 

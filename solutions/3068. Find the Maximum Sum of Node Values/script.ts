@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {maximumValueSum}
+export { maximumValueSum }
 
 function maximumValueSum(nums: number[], k: number, _: number[][]): number {
     const addedValues: number[] = collectAddedValues(nums, k)

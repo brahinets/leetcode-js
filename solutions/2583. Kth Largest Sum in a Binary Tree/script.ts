@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {kthLargestLevelSum}
+export { kthLargestLevelSum }
 
 function kthLargestLevelSum(root: TreeNode | null, k: number): number {
     const sums: number[] = []
@@ -12,7 +12,7 @@ function kthLargestLevelSum(root: TreeNode | null, k: number): number {
     return sums[k - 1] ?? -1
 }
 
-function dfs(root: TreeNode | null, number: number, sums: number[]):void {
+function dfs(root: TreeNode | null, number: number, sums: number[]): void {
     if (!root) {
         return
     }

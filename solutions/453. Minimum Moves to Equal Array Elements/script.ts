@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {minMoves}
+export { minMoves }
 
 function minMoves(numbers: number[]): number {
     const minimum: number = Math.min(...numbers)

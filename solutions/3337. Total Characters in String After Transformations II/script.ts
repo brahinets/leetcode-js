@@ -1,18 +1,31 @@
-import {arrayOfZeros, matrixOfZeros} from '../../common/array-factories'
+import { arrayOfZeros, matrixOfZeros } from '../../common/array-factories'
 
-export {lengthAfterTransformations}
+export { lengthAfterTransformations }
 
 const MOD: number = 1e9 + 7
 const ALPHABET_LENGTH: number = 26
 
-function lengthAfterTransformations(inputString: string, steps: number, transformations: number[]): number {
-    const initialFrequencies: number[] = calculateInitialFrequencies(inputString)
+function lengthAfterTransformations(
+    inputString: string,
+    steps: number,
+    transformations: number[]
+): number {
+    const initialFrequencies: number[] =
+        calculateInitialFrequencies(inputString)
 
     if (steps <= 10_000) {
-        return simulateTransformations(initialFrequencies, steps, transformations)
+        return simulateTransformations(
+            initialFrequencies,
+            steps,
+            transformations
+        )
     }
 
-    return calculateUsingMatrixExponentiation(initialFrequencies, steps, transformations)
+    return calculateUsingMatrixExponentiation(
+        initialFrequencies,
+        steps,
+        transformations
+    )
 }
 
 function calculateInitialFrequencies(inputString: string): number[] {
@@ -26,22 +39,32 @@ function calculateInitialFrequencies(inputString: string): number[] {
     return frequencies
 }
 
-function simulateTransformations(initialFrequencies: number[], steps: number, transformations: number[]): number {
+function simulateTransformations(
+    initialFrequencies: number[],
+    steps: number,
+    transformations: number[]
+): number {
     let currentFrequencies: number[] = [...initialFrequencies]
     let nextFrequencies: number[] = arrayOfZeros(ALPHABET_LENGTH)
 
     for (let step: number = 0; step < steps; step++) {
         nextFrequencies.fill(0)
 
-        for (let letterIndex: number = 0; letterIndex < ALPHABET_LENGTH; letterIndex++) {
+        for (
+            let letterIndex: number = 0;
+            letterIndex < ALPHABET_LENGTH;
+            letterIndex++
+        ) {
             const count: number = currentFrequencies[letterIndex]
 
             if (count !== 0) {
                 const reachSpan: number = transformations[letterIndex]
 
                 for (let offset: number = 1; offset <= reachSpan; offset++) {
-                    const targetIndex: number = (letterIndex + offset) % ALPHABET_LENGTH
-                    nextFrequencies[targetIndex] = (nextFrequencies[targetIndex] + count) % MOD
+                    const targetIndex: number =
+                        (letterIndex + offset) % ALPHABET_LENGTH
+                    nextFrequencies[targetIndex] =
+                        (nextFrequencies[targetIndex] + count) % MOD
                 }
             }
         }
@@ -49,39 +72,74 @@ function simulateTransformations(initialFrequencies: number[], steps: number, tr
         currentFrequencies = [...nextFrequencies]
     }
 
-    return currentFrequencies.reduce((total: number, frequency: number): number => (total + frequency) % MOD, 0)
+    return currentFrequencies.reduce(
+        (total: number, frequency: number): number => (total + frequency) % MOD,
+        0
+    )
 }
 
-function calculateUsingMatrixExponentiation(initialFrequencies: number[], steps: number, transformations: number[]): number {
+function calculateUsingMatrixExponentiation(
+    initialFrequencies: number[],
+    steps: number,
+    transformations: number[]
+): number {
     const MODULO_BIGINT: bigint = BigInt(MOD)
     const baseMatrix: bigint[][] = constructBaseMatrix(transformations)
 
-    let transitionMatrix: bigint[][] = baseMatrix.map((row: bigint[]): bigint[] => [...row])
-    let frequencyVector: bigint[] = initialFrequencies.map((count: number): bigint => BigInt(count))
+    let transitionMatrix: bigint[][] = baseMatrix.map(
+        (row: bigint[]): bigint[] => [...row]
+    )
+    let frequencyVector: bigint[] = initialFrequencies.map(
+        (count: number): bigint => BigInt(count)
+    )
 
-    const intermediateMatrix: bigint[][] = matrixOfZeros(ALPHABET_LENGTH, ALPHABET_LENGTH)
-        .map((row: number[]): bigint[] => row.map((): bigint => 0n))
-    const intermediateVector: bigint[] = arrayOfZeros(ALPHABET_LENGTH).map((): bigint => 0n)
+    const intermediateMatrix: bigint[][] = matrixOfZeros(
+        ALPHABET_LENGTH,
+        ALPHABET_LENGTH
+    ).map((row: number[]): bigint[] => row.map((): bigint => 0n))
+    const intermediateVector: bigint[] = arrayOfZeros(ALPHABET_LENGTH).map(
+        (): bigint => 0n
+    )
 
     let exponent: bigint = BigInt(steps)
     while (exponent > 0n) {
         if (exponent & 1n) {
-            frequencyVector = multiplyMatrixByVector(transitionMatrix, frequencyVector, intermediateVector, MODULO_BIGINT)
+            frequencyVector = multiplyMatrixByVector(
+                transitionMatrix,
+                frequencyVector,
+                intermediateVector,
+                MODULO_BIGINT
+            )
         }
 
-        transitionMatrix = squareMatrix(transitionMatrix, intermediateMatrix, MODULO_BIGINT)
+        transitionMatrix = squareMatrix(
+            transitionMatrix,
+            intermediateMatrix,
+            MODULO_BIGINT
+        )
         exponent >>= 1n
     }
 
-    return Number(frequencyVector.reduce((sum: bigint, value: bigint): bigint => sum + value, 0n) % MODULO_BIGINT)
+    return Number(
+        frequencyVector.reduce(
+            (sum: bigint, value: bigint): bigint => sum + value,
+            0n
+        ) % MODULO_BIGINT
+    )
 }
 
 function constructBaseMatrix(transformations: number[]): bigint[][] {
-    const baseMatrix: bigint[][] = matrixOfZeros(ALPHABET_LENGTH, ALPHABET_LENGTH)
-        .map((row: number[]): bigint[] => row.map((): bigint => 0n))
+    const baseMatrix: bigint[][] = matrixOfZeros(
+        ALPHABET_LENGTH,
+        ALPHABET_LENGTH
+    ).map((row: number[]): bigint[] => row.map((): bigint => 0n))
 
     for (let source: number = 0; source < ALPHABET_LENGTH; source++) {
-        for (let offset: number = 1; offset <= transformations[source]; offset++) {
+        for (
+            let offset: number = 1;
+            offset <= transformations[source];
+            offset++
+        ) {
             const target: number = (source + offset) % ALPHABET_LENGTH
 
             baseMatrix[target][source] += 1n
@@ -109,7 +167,11 @@ function multiplyMatrixByVector(
     return [...result]
 }
 
-function squareMatrix(matrix: bigint[][], result: bigint[][], modulo: bigint): bigint[][] {
+function squareMatrix(
+    matrix: bigint[][],
+    result: bigint[][],
+    modulo: bigint
+): bigint[][] {
     for (let row: number = 0; row < ALPHABET_LENGTH; row++) {
         for (let col: number = 0; col < ALPHABET_LENGTH; col++) {
             let accumulator: bigint = 0n
@@ -122,5 +184,5 @@ function squareMatrix(matrix: bigint[][], result: bigint[][], modulo: bigint): b
         }
     }
 
-    return result.map(row => [...row])
+    return result.map((row) => [...row])
 }

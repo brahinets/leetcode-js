@@ -1,4 +1,4 @@
-import { arrayOf } from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
 export { generateString }
 
@@ -14,7 +14,10 @@ function generateString(str1: string, str2: string): string {
             for (let j: number = 0; j < m; j++) {
                 const position: number = i + j
 
-                if (isLocked[position] && wordCharacters[position] !== str2[j]) {
+                if (
+                    isLocked[position] &&
+                    wordCharacters[position] !== str2[j]
+                ) {
                     return ''
                 }
 

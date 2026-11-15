@@ -22,7 +22,12 @@ function maxActiveSectionsAfterTrade(s: string, queries: number[][]): number[] {
     for (const query of queries) {
         const left: number = query[0]
         const right: number = query[1]
-        const gain: number = computeGain(left, right, zeroBlocks, adjacentSparseTable)
+        const gain: number = computeGain(
+            left,
+            right,
+            zeroBlocks,
+            adjacentSparseTable
+        )
         answer.push(totalOnes + gain)
     }
 
@@ -62,7 +67,9 @@ function findZeroBlocks(s: string): ZeroBlock[] {
 function buildAdjacentSums(zeroBlocks: ZeroBlock[]): number[] {
     const adjacentSums: number[] = []
     for (let i: number = 0; i + 1 < zeroBlocks.length; i++) {
-        adjacentSums.push(fullLength(zeroBlocks[i]) + fullLength(zeroBlocks[i + 1]))
+        adjacentSums.push(
+            fullLength(zeroBlocks[i]) + fullLength(zeroBlocks[i + 1])
+        )
     }
 
     return adjacentSums
@@ -85,7 +92,10 @@ function buildSparseTable(values: number[]): SparseTable {
         const span: number = 1 << level
         const halfSpan: number = 1 << (level - 1)
         for (let i: number = 0; i + span <= length; i++) {
-            table[level][i] = Math.max(table[level - 1][i], table[level - 1][i + halfSpan])
+            table[level][i] = Math.max(
+                table[level - 1][i],
+                table[level - 1][i + halfSpan]
+            )
         }
     }
 
@@ -108,31 +118,51 @@ function computeGain(
         return 0
     }
 
-    const clippedFirst: number = clippedLength(zeroBlocks[firstBlock], left, right)
-    const clippedLast: number = clippedLength(zeroBlocks[lastBlock], left, right)
+    const clippedFirst: number = clippedLength(
+        zeroBlocks[firstBlock],
+        left,
+        right
+    )
+    const clippedLast: number = clippedLength(
+        zeroBlocks[lastBlock],
+        left,
+        right
+    )
 
     let gain: number = 0
 
-    const secondLength: number = firstBlock + 1 === lastBlock
-        ? clippedLast
-        : fullLength(zeroBlocks[firstBlock + 1])
+    const secondLength: number =
+        firstBlock + 1 === lastBlock
+            ? clippedLast
+            : fullLength(zeroBlocks[firstBlock + 1])
     gain = Math.max(gain, clippedFirst + secondLength)
 
-    const secondToLastLength: number = lastBlock - 1 === firstBlock
-        ? clippedFirst
-        : fullLength(zeroBlocks[lastBlock - 1])
+    const secondToLastLength: number =
+        lastBlock - 1 === firstBlock
+            ? clippedFirst
+            : fullLength(zeroBlocks[lastBlock - 1])
     gain = Math.max(gain, secondToLastLength + clippedLast)
 
     const interiorLeft: number = firstBlock + 1
     const interiorRight: number = lastBlock - 2
     if (interiorLeft <= interiorRight) {
-        gain = Math.max(gain, querySparseTableMax(adjacentSparseTable, interiorLeft, interiorRight))
+        gain = Math.max(
+            gain,
+            querySparseTableMax(
+                adjacentSparseTable,
+                interiorLeft,
+                interiorRight
+            )
+        )
     }
 
     return gain
 }
 
-function firstBlockEndingAtOrAfter(zeroBlocks: ZeroBlock[], position: number): number {
+function firstBlockEndingAtOrAfter(
+    zeroBlocks: ZeroBlock[],
+    position: number
+): number {
     let low: number = 0
     let high: number = zeroBlocks.length
     while (low < high) {
@@ -147,7 +177,10 @@ function firstBlockEndingAtOrAfter(zeroBlocks: ZeroBlock[], position: number): n
     return low
 }
 
-function lastBlockStartingAtOrBefore(zeroBlocks: ZeroBlock[], position: number): number {
+function lastBlockStartingAtOrBefore(
+    zeroBlocks: ZeroBlock[],
+    position: number
+): number {
     let low: number = 0
     let high: number = zeroBlocks.length
     while (low < high) {
@@ -162,12 +195,19 @@ function lastBlockStartingAtOrBefore(zeroBlocks: ZeroBlock[], position: number):
     return low - 1
 }
 
-function querySparseTableMax(sparseTable: SparseTable, left: number, right: number): number {
+function querySparseTableMax(
+    sparseTable: SparseTable,
+    left: number,
+    right: number
+): number {
     const length: number = right - left + 1
     const level: number = sparseTable.log[length]
     const span: number = 1 << level
 
-    return Math.max(sparseTable.table[level][left], sparseTable.table[level][right - span + 1])
+    return Math.max(
+        sparseTable.table[level][left],
+        sparseTable.table[level][right - span + 1]
+    )
 }
 
 function clippedLength(block: ZeroBlock, left: number, right: number): number {

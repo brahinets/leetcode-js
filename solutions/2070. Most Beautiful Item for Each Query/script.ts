@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maximumBeauty}
+export { maximumBeauty }
 
 function maximumBeauty(items: number[][], queries: number[]): number[] {
     items.sort((a: number[], b: number[]): number => a[0] - b[0])

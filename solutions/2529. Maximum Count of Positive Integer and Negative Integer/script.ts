@@ -1,4 +1,4 @@
-export {maximumCount}
+export { maximumCount }
 
 function maximumCount(nums: number[]): number {
     let positives: number = 0

@@ -1,7 +1,7 @@
-import {ListNode} from "../../common/ListNode"
-import {TreeNode} from "../../common/TreeNode"
+import { ListNode } from '../../common/ListNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {sortedListToBST, ListNode, TreeNode}
+export { sortedListToBST, ListNode, TreeNode }
 
 function sortedListToBST(head: ListNode | null): TreeNode | null {
     const data: number[] = []
@@ -34,7 +34,7 @@ function toNode(data: number[]): TreeNode | null {
         }
 
         if (val === null) {
-            throw new Error("Val is not defined. Illegal state")
+            throw new Error('Val is not defined. Illegal state')
         }
 
         return new TreeNode(val, toNode(left), toNode(right))

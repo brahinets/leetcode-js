@@ -1,4 +1,4 @@
-export {isValid}
+export { isValid }
 
 function isValid(word: string): boolean {
     if (word.length < 3) {
@@ -12,7 +12,13 @@ function isValid(word: string): boolean {
         if (/[a-zA-Z]/.test(c)) {
             const char: string = c.toLowerCase()
 
-            if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+            if (
+                char === 'a' ||
+                char === 'e' ||
+                char === 'i' ||
+                char === 'o' ||
+                char === 'u'
+            ) {
                 hasVowel = true
             } else {
                 hasConsonant = true

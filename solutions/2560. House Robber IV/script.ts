@@ -1,4 +1,4 @@
-export {minCapability}
+export { minCapability }
 
 function minCapability(nums: number[], k: number): number {
     let minReward: number = 1
@@ -13,7 +13,6 @@ function minCapability(nums: number[], k: number): number {
             if (nums[index] <= midReward) {
                 possibleThefts += 1
                 index++
-
             }
         }
 

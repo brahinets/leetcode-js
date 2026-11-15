@@ -11,7 +11,8 @@ A positive integer `n` is **good** if it satisfies both of the following:
 
 The **score** of a **good** integer `n` is the sum of the squares of digits in `n`.
 
-Return a **string** denoting the **good** integer `n` that achieves the **maximum** **score**. If there are multiple possible integers, return the **maximum** one. If no such integer exists, return an empty string.
+Return a **string** denoting the **good** integer `n` that achieves the **maximum** **score**. If there are multiple
+possible integers, return the **maximum** one. If no such integer exists, return an empty string.
 
 ### Constraints:
 

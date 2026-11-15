@@ -1,4 +1,4 @@
-export {minCost}
+export { minCost }
 
 function minCost(nums: number[], cost: number[]): number {
     let minCost: number = Number.MAX_SAFE_INTEGER
@@ -22,7 +22,8 @@ function minCost(nums: number[], cost: number[]): number {
 }
 
 function calculateCost(nums: number[], cost: number[], target: number) {
-    return nums.reduce((result: number, e: number, index: number) =>
+    return nums.reduce(
+        (result: number, e: number, index: number) =>
             result + Math.abs(target - e) * cost[index],
         0
     )

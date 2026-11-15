@@ -1,4 +1,4 @@
-export {punishmentNumber}
+export { punishmentNumber }
 
 function punishmentNumber(n: number): number {
     let punishmentNum: number = 0

@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {mergeNodes}
+export { mergeNodes }
 
 function mergeNodes(head: ListNode | null): ListNode | null {
     head = head?.next ?? null

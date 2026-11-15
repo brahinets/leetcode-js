@@ -1,13 +1,12 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {partition, ListNode}
+export { partition, ListNode }
 
 function partition(head: ListNode | null, x: number): ListNode | null {
     let newHead: ListNode = new ListNode()
     let newTail: ListNode = new ListNode()
     const origHead: ListNode | null = newHead
     const origTail: ListNode | null = newTail
-
 
     while (head) {
         if (head.val < x) {
@@ -24,7 +23,6 @@ function partition(head: ListNode | null, x: number): ListNode | null {
     if (newHead) {
         newHead.next = origTail.next
     }
-
 
     return origHead.next
 }

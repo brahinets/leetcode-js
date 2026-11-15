@@ -1,4 +1,4 @@
-export {sortPeople}
+export { sortPeople }
 
 function sortPeople(names: string[], heights: number[]): string[] {
     return names
@@ -9,10 +9,13 @@ function sortPeople(names: string[], heights: number[]): string[] {
             }
 
             return a.name.localeCompare(b.name)
-        }).map((person: Person): string => person.name)
+        })
+        .map((person: Person): string => person.name)
 }
 
 class Person {
-    constructor(public name: string, public height: number) {
-    }
+    constructor(
+        public name: string,
+        public height: number
+    ) {}
 }

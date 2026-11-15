@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {specialTriplets}
+export { specialTriplets }
 
 const MOD: number = 1e9 + 7
 
@@ -15,9 +15,10 @@ function specialTriplets(nums: number[]): number {
 
         seenCount.set(num, (seenCount.get(num) ?? 0) + 1)
 
-        const rightCount: number = (totalCount.get(doubleNum) ?? 0) - (seenCount.get(doubleNum) ?? 0)
+        const rightCount: number =
+            (totalCount.get(doubleNum) ?? 0) - (seenCount.get(doubleNum) ?? 0)
 
-        result = (result + (leftCount * rightCount) % MOD) % MOD
+        result = (result + ((leftCount * rightCount) % MOD)) % MOD
     }
 
     return result

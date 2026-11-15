@@ -1,6 +1,6 @@
-import { arrayOfZeros } from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minMoves}
+export { minMoves }
 
 function minMoves(numbers: number[], limit: number): number {
     const differenceArray: number[] = arrayOfZeros(2 * limit + 2)

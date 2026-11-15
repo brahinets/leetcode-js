@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {findAllRecipes}
+export { findAllRecipes }
 
 function findAllRecipes(
     recipes: string[],
@@ -8,7 +8,9 @@ function findAllRecipes(
     supplies: string[]
 ): string[] {
     const available: Set<string> = new Set<string>(supplies)
-    const recipeQueue: number[] = arrayOfZeros(recipes.length).map((_: number, i: number): number => i)
+    const recipeQueue: number[] = arrayOfZeros(recipes.length).map(
+        (_: number, i: number): number => i
+    )
 
     const createdRecipes: string[] = []
     let lastSize: number = -1

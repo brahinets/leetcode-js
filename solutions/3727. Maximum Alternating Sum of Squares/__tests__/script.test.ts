@@ -6,8 +6,7 @@ describe('3727. Maximum Alternating Sum of Squares', (): void => {
 
         const result: number = maxAlternatingSum(nums)
 
-        expect(result)
-            .toBe(12)
+        expect(result).toBe(12)
     })
 
     it('even length with mirrored positive and negative values', (): void => {
@@ -15,8 +14,7 @@ describe('3727. Maximum Alternating Sum of Squares', (): void => {
 
         const result: number = maxAlternatingSum(nums)
 
-        expect(result)
-            .toBe(16)
+        expect(result).toBe(16)
     })
 
     it('single element', (): void => {
@@ -24,8 +22,7 @@ describe('3727. Maximum Alternating Sum of Squares', (): void => {
 
         const result: number = maxAlternatingSum(nums)
 
-        expect(result)
-            .toBe(25)
+        expect(result).toBe(25)
     })
 
     it('two elements subtract the smaller square', (): void => {
@@ -33,8 +30,7 @@ describe('3727. Maximum Alternating Sum of Squares', (): void => {
 
         const result: number = maxAlternatingSum(nums)
 
-        expect(result)
-            .toBe(7)
+        expect(result).toBe(7)
     })
 
     it('all zeros', (): void => {
@@ -42,8 +38,7 @@ describe('3727. Maximum Alternating Sum of Squares', (): void => {
 
         const result: number = maxAlternatingSum(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('all equal values on even length cancel out', (): void => {
@@ -51,8 +46,7 @@ describe('3727. Maximum Alternating Sum of Squares', (): void => {
 
         const result: number = maxAlternatingSum(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('maximum magnitude values at full length', (): void => {
@@ -60,8 +54,7 @@ describe('3727. Maximum Alternating Sum of Squares', (): void => {
 
         const result: number = maxAlternatingSum(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('maximum magnitude with odd length leaves one positive square', (): void => {
@@ -69,7 +62,6 @@ describe('3727. Maximum Alternating Sum of Squares', (): void => {
 
         const result: number = maxAlternatingSum(nums)
 
-        expect(result)
-            .toBe(1600000000)
+        expect(result).toBe(1600000000)
     })
 })

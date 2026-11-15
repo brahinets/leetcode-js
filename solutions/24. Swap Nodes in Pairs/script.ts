@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {swapPairs}
+export { swapPairs }
 
 function swapPairs(head: ListNode | null): ListNode | null {
     let firstNode: ListNode | null = head

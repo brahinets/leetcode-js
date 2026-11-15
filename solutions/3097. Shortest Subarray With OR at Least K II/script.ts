@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minimumSubarrayLength}
+export { minimumSubarrayLength }
 
 function minimumSubarrayLength(nums: number[], k: number): number {
     let minLength: number = Number.MAX_SAFE_INTEGER
@@ -11,7 +11,10 @@ function minimumSubarrayLength(nums: number[], k: number): number {
     while (windowEnd < nums.length) {
         updateBitCounts(bitCounts, nums[windowEnd], 1)
 
-        while (windowStart <= windowEnd && convertBitCountsToNumber(bitCounts) >= k) {
+        while (
+            windowStart <= windowEnd &&
+            convertBitCountsToNumber(bitCounts) >= k
+        ) {
             minLength = Math.min(minLength, windowEnd - windowStart + 1)
 
             updateBitCounts(bitCounts, nums[windowStart], -1)
@@ -24,7 +27,11 @@ function minimumSubarrayLength(nums: number[], k: number): number {
     return minLength === Number.MAX_SAFE_INTEGER ? -1 : minLength
 }
 
-function updateBitCounts(bitCounts: number[], number: number, delta: number): void {
+function updateBitCounts(
+    bitCounts: number[],
+    number: number,
+    delta: number
+): void {
     for (let bitPosition: number = 0; bitPosition < 32; bitPosition++) {
         if (((number >> bitPosition) & 1) !== 0) {
             bitCounts[bitPosition] += delta

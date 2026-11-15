@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {maxTargetNodes}
+export { maxTargetNodes }
 
 function maxTargetNodes(edges1: number[][], edges2: number[][]): number[] {
     const color1: number[] = arrayOfZeros(edges1.length + 1)
@@ -31,7 +31,13 @@ function build(edges: number[][], color: number[]): [number, number] {
     return dfs(0, -1, 0, children, color)
 }
 
-function dfs(node: number, parent: number, depth: number, children: number[][], color: number[]): [number, number] {
+function dfs(
+    node: number,
+    parent: number,
+    depth: number,
+    children: number[][],
+    color: number[]
+): [number, number] {
     color[node] = depth % 2
 
     let even: number = depth % 2 === 0 ? 1 : 0
@@ -41,7 +47,13 @@ function dfs(node: number, parent: number, depth: number, children: number[][], 
             continue
         }
 
-        const [e, o]: [number, number] = dfs(child, node, depth + 1, children, color)
+        const [e, o]: [number, number] = dfs(
+            child,
+            node,
+            depth + 1,
+            children,
+            color
+        )
 
         even += e
         odd += o

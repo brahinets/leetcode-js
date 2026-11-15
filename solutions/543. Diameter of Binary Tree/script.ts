@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {diameterOfBinaryTree, TreeNode}
+export { diameterOfBinaryTree, TreeNode }
 
 function diameterOfBinaryTree(root: TreeNode | null): number {
     if (root === null) {

@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {findMissingAndRepeatedValues}
+export { findMissingAndRepeatedValues }
 
 function findMissingAndRepeatedValues(grid: number[][]): number[] {
     let missing: number = -1

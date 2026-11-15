@@ -1,4 +1,4 @@
-export {minDays}
+export { minDays }
 
 function minDays(bloomDay: number[], m: number, k: number): number {
     const maxDays: number = Math.max(...bloomDay)
@@ -42,4 +42,3 @@ function canPickBouquets(bloomDay: number[], days: number, k: number): number {
 
     return bouquetsPicked
 }
-

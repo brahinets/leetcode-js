@@ -1,4 +1,4 @@
-export {countHillValley}
+export { countHillValley }
 
 function countHillValley(nums: number[]): number {
     let count: number = 0

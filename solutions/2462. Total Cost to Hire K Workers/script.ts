@@ -1,4 +1,4 @@
-export {totalCost}
+export { totalCost }
 
 function totalCost(costs: number[], k: number, candidates: number): number {
     let cost: number = 0
@@ -18,7 +18,11 @@ function findCheapestWorker(costs: number[], candidates: number): number {
 
     if (hasPools) {
         const cheapestLeftIndex: number = findIndexOfMin(costs, 0, candidates)
-        const cheapestRightIndex: number = findIndexOfMin(costs, costs.length - candidates, costs.length)
+        const cheapestRightIndex: number = findIndexOfMin(
+            costs,
+            costs.length - candidates,
+            costs.length
+        )
 
         if (costs[cheapestLeftIndex] <= costs[cheapestRightIndex]) {
             return cheapestLeftIndex
@@ -30,9 +34,13 @@ function findCheapestWorker(costs: number[], candidates: number): number {
     }
 }
 
-function findIndexOfMin(nums: number[], minIndex: number, maxIndex: number): number {
+function findIndexOfMin(
+    nums: number[],
+    minIndex: number,
+    maxIndex: number
+): number {
     if (nums.length === 0) {
-        throw new Error("Not enough data")
+        throw new Error('Not enough data')
     }
 
     let min: number = nums[minIndex]

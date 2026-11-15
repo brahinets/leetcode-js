@@ -1,26 +1,23 @@
-import {removeNthFromEnd} from '../script'
+import { removeNthFromEnd } from '../script'
 
-import {linkedListOf} from "../../../common/list-factories"
+import { linkedListOf } from '../../../common/list-factories'
 
 describe('19. Remove Nth Node From End of List', (): void => {
-
     it('Reverse first element', (): void => {
-        expect(removeNthFromEnd(linkedListOf(1, 2), 2))
-            .toEqual(linkedListOf(2))
+        expect(removeNthFromEnd(linkedListOf(1, 2), 2)).toEqual(linkedListOf(2))
     })
 
     it('Remove middle element', (): void => {
-        expect(removeNthFromEnd(linkedListOf(1, 2, 3, 4, 5), 2))
-            .toEqual(linkedListOf(1, 2, 3, 5))
+        expect(removeNthFromEnd(linkedListOf(1, 2, 3, 4, 5), 2)).toEqual(
+            linkedListOf(1, 2, 3, 5)
+        )
     })
 
     it('Reverse last element', (): void => {
-        expect(removeNthFromEnd(linkedListOf(1, 2), 1))
-            .toEqual(linkedListOf(1))
+        expect(removeNthFromEnd(linkedListOf(1, 2), 1)).toEqual(linkedListOf(1))
     })
 
     it('Remove the only element', (): void => {
-        expect(removeNthFromEnd(linkedListOf(1), 1))
-            .toEqual(linkedListOf())
+        expect(removeNthFromEnd(linkedListOf(1), 1)).toEqual(linkedListOf())
     })
 })

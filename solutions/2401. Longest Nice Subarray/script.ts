@@ -1,4 +1,4 @@
-export {longestNiceSubarray}
+export { longestNiceSubarray }
 
 function longestNiceSubarray(nums: number[]): number {
     let usedBits: number = 0

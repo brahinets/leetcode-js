@@ -2,7 +2,8 @@
 
 ## Medium
 
-Given an integer array `nums` and an integer `k`, an array is **balanced** if the value of its maximum element is at most `k` times the minimum element.
+Given an integer array `nums` and an integer `k`, an array is **balanced** if the value of its maximum element is at
+most `k` times the minimum element.
 
 You may remove any number of elements from `nums` without making it empty.
 

@@ -2,46 +2,71 @@ import { _NodeRandom } from '../../../common/_NodeRandom'
 import { copyRandomList } from '../script'
 
 describe('138. Copy List with Random Pointer', (): void => {
-
     it('Long', (): void => {
-        const head: _NodeRandom | null = linkedListWithRandomOf([[7, null], [13, 0], [11, 4], [10, 2], [1, 0]])
+        const head: _NodeRandom | null = linkedListWithRandomOf([
+            [7, null],
+            [13, 0],
+            [11, 4],
+            [10, 2],
+            [1, 0]
+        ])
 
         const copied: _NodeRandom | null = copyRandomList(head)
 
-        expect(linkedListWithRandomToArray(copied)).toEqual([[7, null], [13, 0], [11, 4], [10, 2], [1, 0]])
+        expect(linkedListWithRandomToArray(copied)).toEqual([
+            [7, null],
+            [13, 0],
+            [11, 4],
+            [10, 2],
+            [1, 0]
+        ])
         expect(isDeepCopyWithRandom(head, copied)).toBe(true)
     })
 
     it('Short', (): void => {
-        const head: _NodeRandom | null = linkedListWithRandomOf([[1, 1], [2, 1]])
+        const head: _NodeRandom | null = linkedListWithRandomOf([
+            [1, 1],
+            [2, 1]
+        ])
 
         const copied: _NodeRandom | null = copyRandomList(head)
 
-        expect(linkedListWithRandomToArray(copied)).toEqual([[1, 1], [2, 1]])
+        expect(linkedListWithRandomToArray(copied)).toEqual([
+            [1, 1],
+            [2, 1]
+        ])
         expect(isDeepCopyWithRandom(head, copied)).toBe(true)
     })
 
     it('Medium', (): void => {
-        const head: _NodeRandom | null = linkedListWithRandomOf([[3, null], [3, 0], [3, null]])
+        const head: _NodeRandom | null = linkedListWithRandomOf([
+            [3, null],
+            [3, 0],
+            [3, null]
+        ])
 
         const copied: _NodeRandom | null = copyRandomList(head)
 
-        expect(linkedListWithRandomToArray(copied)).toEqual([[3, null], [3, 0], [3, null]])
+        expect(linkedListWithRandomToArray(copied)).toEqual([
+            [3, null],
+            [3, 0],
+            [3, null]
+        ])
         expect(isDeepCopyWithRandom(head, copied)).toBe(true)
     })
 
     it('Empty list', (): void => {
         const head: _NodeRandom | null = linkedListWithRandomOf([])
-        
+
         const copied: _NodeRandom | null = copyRandomList(head)
 
         expect(copied).toBeNull()
     })
-
 })
 
-
-function linkedListWithRandomOf(arr: Array<[number, number | null]>): _NodeRandom | null {
+function linkedListWithRandomOf(
+    arr: Array<[number, number | null]>
+): _NodeRandom | null {
     if (arr.length === 0) {
         return null
     }
@@ -65,7 +90,9 @@ function linkedListWithRandomOf(arr: Array<[number, number | null]>): _NodeRando
     return nodes[0]
 }
 
-function linkedListWithRandomToArray(head: _NodeRandom | null): Array<[number, number | null]> {
+function linkedListWithRandomToArray(
+    head: _NodeRandom | null
+): Array<[number, number | null]> {
     if (!head) {
         return []
     }
@@ -85,7 +112,9 @@ function linkedListWithRandomToArray(head: _NodeRandom | null): Array<[number, n
 
     current = head
     while (current) {
-        const randomIndex: number | null = current.random ? nodeToIndex.get(current.random)! : null
+        const randomIndex: number | null = current.random
+            ? nodeToIndex.get(current.random)!
+            : null
 
         result.push([current.val, randomIndex])
 
@@ -95,7 +124,10 @@ function linkedListWithRandomToArray(head: _NodeRandom | null): Array<[number, n
     return result
 }
 
-function isDeepCopyWithRandom(original: _NodeRandom | null, copy: _NodeRandom | null): boolean {
+function isDeepCopyWithRandom(
+    original: _NodeRandom | null,
+    copy: _NodeRandom | null
+): boolean {
     if (!original || !copy) {
         return original === copy
     }

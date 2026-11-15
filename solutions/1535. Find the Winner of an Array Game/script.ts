@@ -1,4 +1,4 @@
-export {getWinner}
+export { getWinner }
 
 function getWinner(arr: number[], k: number): number {
     let currentWinner: number = arr[0]

@@ -1,4 +1,4 @@
-export {countValidSelections}
+export { countValidSelections }
 
 function countValidSelections(nums: number[]): number {
     let count: number = 0
@@ -19,7 +19,12 @@ function countValidSelections(nums: number[]): number {
     return count
 }
 
-function isValid(nums: number[], nonZeros: number, start: number, direction: number): boolean {
+function isValid(
+    nums: number[],
+    nonZeros: number,
+    start: number,
+    direction: number
+): boolean {
     let curr: number = start
 
     while (nonZeros > 0 && curr >= 0 && curr < nums.length) {

@@ -1,4 +1,4 @@
-export {countSubIslands}
+export { countSubIslands }
 
 function countSubIslands(grid1: number[][], grid2: number[][]): number {
     let count: number = 0
@@ -14,8 +14,19 @@ function countSubIslands(grid1: number[][], grid2: number[][]): number {
     return count
 }
 
-function dfs(grid1: number[][], grid2: number[][], i: number, j: number): number {
-    if (i < 0 || i >= grid2.length || j < 0 || j >= grid2[i].length || grid2[i][j] === 0) {
+function dfs(
+    grid1: number[][],
+    grid2: number[][],
+    i: number,
+    j: number
+): number {
+    if (
+        i < 0 ||
+        i >= grid2.length ||
+        j < 0 ||
+        j >= grid2[i].length ||
+        grid2[i][j] === 0
+    ) {
         return 1
     }
 

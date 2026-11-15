@@ -1,4 +1,4 @@
-export {getMaximumGold}
+export { getMaximumGold }
 
 const TURNS: [number, number][] = [
     [-1, 0],

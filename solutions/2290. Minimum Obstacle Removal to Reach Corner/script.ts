@@ -1,11 +1,19 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {minimumObstacles}
+export { minimumObstacles }
 
-const DIRS: number[][] = [[-1, 0], [0, -1], [0, 1], [1, 0]]
+const DIRS: number[][] = [
+    [-1, 0],
+    [0, -1],
+    [0, 1],
+    [1, 0]
+]
 
 function minimumObstacles(grid: number[][]): number {
-    const queues: number[][][] = [[[0, 0]], [[grid.length - 1, grid[0].length - 1]]]
+    const queues: number[][][] = [
+        [[0, 0]],
+        [[grid.length - 1, grid[0].length - 1]]
+    ]
 
     const visited: number[][] = matrixOfZeros(grid.length, grid[0].length)
     visited[0][0] = 1
@@ -25,7 +33,13 @@ function minimumObstacles(grid: number[][]): number {
                 const y2: number = y + dy
                 const x2: number = x + dx
 
-                if (y2 < 0 || y2 >= grid.length || x2 < 0 || x2 >= grid[0].length || visited[y2][x2] === currentQueue + 1) {
+                if (
+                    y2 < 0 ||
+                    y2 >= grid.length ||
+                    x2 < 0 ||
+                    x2 >= grid[0].length ||
+                    visited[y2][x2] === currentQueue + 1
+                ) {
                     continue
                 }
 

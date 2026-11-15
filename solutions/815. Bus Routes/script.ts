@@ -1,8 +1,12 @@
-import {DirectedUnweightedGraph} from "../../common/Graph"
+import { DirectedUnweightedGraph } from '../../common/Graph'
 
-export {numBusesToDestination}
+export { numBusesToDestination }
 
-function numBusesToDestination(routes: number[][], source: number, target: number): number {
+function numBusesToDestination(
+    routes: number[][],
+    source: number,
+    target: number
+): number {
     if (source === target) {
         return 0
     }
@@ -10,7 +14,9 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
     const graph: DirectedUnweightedGraph = buildRoutes(routes)
 
     const queue: number[] = [...graph.getNeighbours(source).keys()]
-    const visitedRoutes: Set<number> = new Set<number>(graph.getNeighbours(source).keys())
+    const visitedRoutes: Set<number> = new Set<number>(
+        graph.getNeighbours(source).keys()
+    )
 
     let busCount: number = 1
     while (queue.length > 0) {
@@ -42,7 +48,7 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
 function buildRoutes(buses: number[][]): DirectedUnweightedGraph {
     const graph: DirectedUnweightedGraph = new DirectedUnweightedGraph()
 
-    for (let bus:number = 0; bus < buses.length; bus++) {
+    for (let bus: number = 0; bus < buses.length; bus++) {
         for (const stop of buses[bus]) {
             graph.addEdge(stop, bus)
         }

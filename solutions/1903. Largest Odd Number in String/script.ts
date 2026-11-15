@@ -1,4 +1,4 @@
-export {largestOddNumber}
+export { largestOddNumber }
 
 function largestOddNumber(num: string): string {
     let index: number = num.length - 1
@@ -11,7 +11,7 @@ function largestOddNumber(num: string): string {
         index--
     }
 
-    return ""
+    return ''
 }
 
 function isOdd(num: string): boolean {

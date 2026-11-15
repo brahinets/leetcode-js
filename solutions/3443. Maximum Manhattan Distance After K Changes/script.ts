@@ -1,4 +1,4 @@
-export {maxDistance}
+export { maxDistance }
 
 function maxDistance(directions: string, k: number): number {
     let maxDist: number = 0
@@ -9,22 +9,26 @@ function maxDistance(directions: string, k: number): number {
 
     for (const dir of directions) {
         switch (dir) {
-            case "N":
+            case 'N':
                 northCount++
                 break
-            case "S":
+            case 'S':
                 southCount++
                 break
-            case "E":
+            case 'E':
                 eastCount++
                 break
-            case "W":
+            case 'W':
                 westCount++
                 break
         }
 
         const verticalChanges: number = Math.min(northCount, southCount, k)
-        const horizontalChanges: number = Math.min(eastCount, westCount, k - verticalChanges)
+        const horizontalChanges: number = Math.min(
+            eastCount,
+            westCount,
+            k - verticalChanges
+        )
 
         const distance: number =
             manhattanComponent(northCount, southCount, verticalChanges) +
@@ -36,6 +40,10 @@ function maxDistance(directions: string, k: number): number {
     return maxDist
 }
 
-function manhattanComponent(count1: number, count2: number, changes: number): number {
+function manhattanComponent(
+    count1: number,
+    count2: number,
+    changes: number
+): number {
     return Math.abs(count1 - count2) + changes * 2
 }

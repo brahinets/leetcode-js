@@ -1,4 +1,4 @@
-export {countPrimeSetBits}
+export { countPrimeSetBits }
 
 function countPrimeSetBits(left: number, right: number): number {
     let countOfNumbersWithPrimeSetBits: number = 0
@@ -15,10 +15,10 @@ function countPrimeSetBits(left: number, right: number): number {
 }
 
 function countSetBits(number: number): number {
-    return number.toString(2)
+    return number
+        .toString(2)
         .split('')
-        .filter((bit: string): boolean => bit === '1')
-        .length
+        .filter((bit: string): boolean => bit === '1').length
 }
 
 function isPrime(number: number): boolean {
@@ -42,4 +42,3 @@ function isPrime(number: number): boolean {
 
     return true
 }
-

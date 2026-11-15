@@ -1,4 +1,4 @@
-export {numberOfBeams}
+export { numberOfBeams }
 
 function numberOfBeams(bank: string[]): number {
     let result: number = 0

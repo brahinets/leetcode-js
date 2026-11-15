@@ -1,4 +1,4 @@
-export {maxSubArray}
+export { maxSubArray }
 
 function maxSubArray(nums: number[]): number {
     let maxSum: number = nums[0]

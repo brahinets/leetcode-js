@@ -1,4 +1,4 @@
-export {smallestRepunitDivByK}
+export { smallestRepunitDivByK }
 
 function smallestRepunitDivByK(k: number): number {
     if (k % 2 === 0 || k % 5 === 0) {

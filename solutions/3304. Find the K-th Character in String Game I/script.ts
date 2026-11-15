@@ -1,4 +1,4 @@
-export {kthCharacter}
+export { kthCharacter }
 
 function kthCharacter(k: number): string {
     let word: string = 'a'
@@ -11,7 +11,8 @@ function kthCharacter(k: number): string {
 }
 
 function nextString(s: string): string {
-    return s.split('')
+    return s
+        .split('')
         .map((c: string): string => nextChar(c))
         .join('')
 }

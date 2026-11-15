@@ -1,4 +1,4 @@
-export {searchMatrix}
+export { searchMatrix }
 
 function searchMatrix(matrix: number[][], target: number): boolean {
     for (const row of matrix) {

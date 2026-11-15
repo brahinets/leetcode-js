@@ -1,12 +1,17 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {pathSum}
+export { pathSum }
 
 function pathSum(root: TreeNode | null, targetSum: number): number[][] {
     return dfs(root, [], 0, targetSum)
 }
 
-function dfs(node: TreeNode | null, currentPath: number[], currentSum: number, targetSum: number): number[][] {
+function dfs(
+    node: TreeNode | null,
+    currentPath: number[],
+    currentSum: number,
+    targetSum: number
+): number[][] {
     if (!node) {
         return []
     }
@@ -27,4 +32,3 @@ function dfs(node: TreeNode | null, currentPath: number[], currentSum: number, t
     currentPath.pop()
     return result
 }
-

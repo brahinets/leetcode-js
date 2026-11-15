@@ -1,12 +1,21 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {smallestSufficientTeam}
+export { smallestSufficientTeam }
 
-function smallestSufficientTeam(req_skills: string[], people: string[][]): number[] {
-    const teams: Array<Set<number>> = formTeams(people, skillsByPopularity(people, req_skills))
+function smallestSufficientTeam(
+    req_skills: string[],
+    people: string[][]
+): number[] {
+    const teams: Array<Set<number>> = formTeams(
+        people,
+        skillsByPopularity(people, req_skills)
+    )
 
-    let minTeam: Set<number> = new Set<number>(arrayOfZeros(people.length)
-        .map((_: number, index: number): number => index))
+    let minTeam: Set<number> = new Set<number>(
+        arrayOfZeros(people.length).map(
+            (_: number, index: number): number => index
+        )
+    )
 
     for (const team of teams) {
         if (team.size <= minTeam.size) {
@@ -17,7 +26,10 @@ function smallestSufficientTeam(req_skills: string[], people: string[][]): numbe
     return [...minTeam]
 }
 
-function formTeams(teammatesPool: string[][], requiredSkills: string[]): Set<number>[] {
+function formTeams(
+    teammatesPool: string[][],
+    requiredSkills: string[]
+): Set<number>[] {
     if (requiredSkills.length === 0) {
         return [new Set<number>()]
     }
@@ -25,7 +37,10 @@ function formTeams(teammatesPool: string[][], requiredSkills: string[]): Set<num
     const teams: Set<number>[] = []
     const requiredSkill: string = requiredSkills[0]
     const otherRequiredSkills: string[] = requiredSkills.slice(1)
-    const possibleTeammatesIds: number[] = findTeammatesWithSkill(teammatesPool, requiredSkill)
+    const possibleTeammatesIds: number[] = findTeammatesWithSkill(
+        teammatesPool,
+        requiredSkill
+    )
     for (const teammateId of possibleTeammatesIds) {
         teams.push(new Set<number>([teammateId]))
     }
@@ -33,7 +48,11 @@ function formTeams(teammatesPool: string[][], requiredSkills: string[]): Set<num
     return fillTeams(teammatesPool, teams, otherRequiredSkills)
 }
 
-function fillTeams(teammatesPool: string[][], teams: Set<number>[], requiredSkills: string[]): Set<number>[] {
+function fillTeams(
+    teammatesPool: string[][],
+    teams: Set<number>[],
+    requiredSkills: string[]
+): Set<number>[] {
     if (requiredSkills.length === 0) {
         return teams
     }
@@ -41,7 +60,10 @@ function fillTeams(teammatesPool: string[][], teams: Set<number>[], requiredSkil
     const newTeams: Set<number>[] = []
     const requiredSkill: string = requiredSkills[0]
     const otherRequiredSkills: string[] = requiredSkills.slice(1)
-    const possibleTeammatesIds: number[] = findTeammatesWithSkill(teammatesPool, requiredSkill)
+    const possibleTeammatesIds: number[] = findTeammatesWithSkill(
+        teammatesPool,
+        requiredSkill
+    )
     for (const team of teams) {
         let teamNeed: boolean = true
         for (const t of team) {
@@ -63,7 +85,10 @@ function fillTeams(teammatesPool: string[][], teams: Set<number>[], requiredSkil
     return fillTeams(teammatesPool, newTeams, otherRequiredSkills)
 }
 
-function findTeammatesWithSkill(teammatesPool: string[][], requiredSkill: string): number[] {
+function findTeammatesWithSkill(
+    teammatesPool: string[][],
+    requiredSkill: string
+): number[] {
     const team: number[] = []
 
     for (let i: number = 0; i < teammatesPool.length; i++) {
@@ -77,8 +102,10 @@ function findTeammatesWithSkill(teammatesPool: string[][], requiredSkill: string
 
 function skillsByPopularity(people: string[][], skills: string[]): string[] {
     const counts: Map<string, number> = peopleHavingSkill(people)
-    return [...skills]
-        .sort((s1: string, s2: string): number => (counts.get(s1) ?? 0) - (counts.get(s2) ?? 0))
+    return [...skills].sort(
+        (s1: string, s2: string): number =>
+            (counts.get(s1) ?? 0) - (counts.get(s2) ?? 0)
+    )
 }
 
 function peopleHavingSkill(people: string[][]): Map<string, number> {

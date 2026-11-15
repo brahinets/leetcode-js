@@ -1,4 +1,4 @@
-export {countSubarrays}
+export { countSubarrays }
 
 function countSubarrays(nums: number[], k: number): number {
     let left: number = 0

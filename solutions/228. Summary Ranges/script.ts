@@ -1,4 +1,4 @@
-export {summaryRanges}
+export { summaryRanges }
 
 function summaryRanges(nums: number[]): string[] {
     const ranges: string[] = []
@@ -10,7 +10,7 @@ function summaryRanges(nums: number[]): string[] {
             end++
         } else {
             if (start !== end) {
-                ranges.push(nums[start] + "->" + nums[end])
+                ranges.push(nums[start] + '->' + nums[end])
             } else {
                 ranges.push(String(nums[start]))
             }

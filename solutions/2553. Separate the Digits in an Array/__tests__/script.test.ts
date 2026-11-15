@@ -1,4 +1,4 @@
-import {separateDigits} from '../script'
+import { separateDigits } from '../script'
 
 describe('2553. Separate the Digits in an Array', (): void => {
     it('separates multi-digit numbers in order', (): void => {

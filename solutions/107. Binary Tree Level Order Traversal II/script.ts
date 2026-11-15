@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {levelOrderBottom}
+export { levelOrderBottom }
 
 function levelOrderBottom(root: TreeNode | null): number[][] {
     const result: number[][] = []

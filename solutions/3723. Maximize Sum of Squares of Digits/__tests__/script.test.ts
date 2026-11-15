@@ -7,8 +7,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('30')
+        expect(result).toBe('30')
     })
 
     it('nine followed by remainder digit', (): void => {
@@ -17,8 +16,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('98')
+        expect(result).toBe('98')
     })
 
     it('single digit cannot reach the sum', (): void => {
@@ -27,8 +25,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 
     it('single digit matches the sum', (): void => {
@@ -37,8 +34,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('7')
+        expect(result).toBe('7')
     })
 
     it('sum divisible by nine fills leading nines then zeros', (): void => {
@@ -47,8 +43,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('9900')
+        expect(result).toBe('9900')
     })
 
     it('every digit is nine', (): void => {
@@ -57,8 +52,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('999')
+        expect(result).toBe('999')
     })
 
     it('sum exceeds the maximum reachable by one', (): void => {
@@ -67,8 +61,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 
     it('sum equal to one produces leading one', (): void => {
@@ -77,8 +70,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('10000')
+        expect(result).toBe('10000')
     })
 
     it('maximum length with maximum reachable sum', (): void => {
@@ -87,8 +79,7 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('9'.repeat(200000))
+        expect(result).toBe('9'.repeat(200000))
     })
 
     it('maximum sum beyond what maximum length can hold', (): void => {
@@ -97,7 +88,6 @@ describe('3723. Maximize Sum of Squares of Digits', (): void => {
 
         const result: string = maxSumOfSquares(num, sum)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 })

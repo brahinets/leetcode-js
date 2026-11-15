@@ -2,8 +2,8 @@
 
 ## Hard
 
-A city is represented as a bi-directional connected graph with n vertices where each vertex is labeled from `1` to `n` (
-inclusive). The edges in the graph are represented as a 2D integer array `edges`, where each `edges[i] = [ui, vi]`
+A city is represented as a bi-directional connected graph with n vertices where each vertex is labeled from `1` to `n`
+(inclusive). The edges in the graph are represented as a 2D integer array `edges`, where each `edges[i] = [ui, vi]`
 denotes a bi-directional edge between vertex `ui` and vertex `vi`. Every vertex pair is connected by at most one edge,
 and no vertex has an edge to itself. The time taken to traverse any edge is `time` minutes. Each vertex has a traffic
 signal which changes its color from green to red and vice versa every `change` minutes. All signals change at the same

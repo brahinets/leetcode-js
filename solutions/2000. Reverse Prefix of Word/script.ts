@@ -1,7 +1,7 @@
-export {reversePrefix}
+export { reversePrefix }
 
 function reversePrefix(word: string, ch: string): string {
-    let result: string = ""
+    let result: string = ''
     let found: boolean = false
 
     for (const char of word) {

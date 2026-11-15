@@ -1,4 +1,4 @@
-export {countSubarrays}
+export { countSubarrays }
 
 function countSubarrays(nums: number[], k: number): number {
     const max: number = Math.max(...nums)

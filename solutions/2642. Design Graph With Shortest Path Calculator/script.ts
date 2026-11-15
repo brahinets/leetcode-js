@@ -1,3 +1,3 @@
-import {DirectedWeightedGraph} from "../../common/Graph"
+import { DirectedWeightedGraph } from '../../common/Graph'
 
-export {DirectedWeightedGraph as Graph}
+export { DirectedWeightedGraph as Graph }

@@ -1,8 +1,12 @@
-export {furthestBuilding}
+export { furthestBuilding }
 
 const RESERVE: number = -1
 
-function furthestBuilding(heights: number[], bricks: number, ladders: number): number {
+function furthestBuilding(
+    heights: number[],
+    bricks: number,
+    ladders: number
+): number {
     const climbs: number[] = []
     let climbsCount: number = 0
 

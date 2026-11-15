@@ -1,4 +1,4 @@
-import { count } from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
 export { maximumLength }
 
@@ -10,7 +10,8 @@ function maximumLength(numbers: number[]): number {
     const onesCount: number = frequencyMap.get(1) ?? 0
 
     if (onesCount > 0) {
-        const onesLength: number = onesCount % 2 === 1 ? onesCount : onesCount - 1
+        const onesLength: number =
+            onesCount % 2 === 1 ? onesCount : onesCount - 1
         maxLength = Math.max(maxLength, onesLength)
     }
 
@@ -26,7 +27,10 @@ function maximumLength(numbers: number[]): number {
     return maxLength
 }
 
-function computeChainLength(startValue: number, frequencyMap: Map<number, number>): number {
+function computeChainLength(
+    startValue: number,
+    frequencyMap: Map<number, number>
+): number {
     let pairs: number = 0
     let current: number = startValue
 

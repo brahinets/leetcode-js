@@ -1,4 +1,4 @@
-export {numberOfSubstrings}
+export { numberOfSubstrings }
 
 function numberOfSubstrings(s: string): number {
     let result: number = 0

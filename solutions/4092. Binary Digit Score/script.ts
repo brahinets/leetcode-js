@@ -1,4 +1,4 @@
-export {binaryDigitScore}
+export { binaryDigitScore }
 
 function binaryDigitScore(a: number, b: number): number {
     const firstCount: number = countSetBits(a)

@@ -1,4 +1,4 @@
-import {sumGame} from '../script'
+import { sumGame } from '../script'
 
 describe('1927. Sum Game', (): void => {
     it('first half sum already equals second half sum with no question marks', (): void => {

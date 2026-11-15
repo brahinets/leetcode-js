@@ -1,7 +1,7 @@
-import {TreeNode} from "../../common/TreeNode"
-import {count} from "../../common/array-utils"
+import { TreeNode } from '../../common/TreeNode'
+import { count } from '../../common/array-utils'
 
-export {TreeNode, findMode}
+export { TreeNode, findMode }
 
 function findMode(root: TreeNode | null): number[] {
     const values: number[] = collect(root)

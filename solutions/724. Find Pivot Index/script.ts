@@ -1,4 +1,4 @@
-export {pivotIndex}
+export { pivotIndex }
 
 function pivotIndex(nums: number[]): number {
     const accumulativeSums: Map<number, number> = accumulateSums(nums)

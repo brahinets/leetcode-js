@@ -1,6 +1,6 @@
-import {first, last} from "../../common/array-utils"
+import { first, last } from '../../common/array-utils'
 
-export {divideArray}
+export { divideArray }
 
 function divideArray(nums: number[], k: number): number[][] {
     if (nums.length % 3 !== 0) {

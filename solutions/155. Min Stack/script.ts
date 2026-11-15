@@ -1,6 +1,6 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {MinStack}
+export { MinStack }
 
 class MinStack {
     private readonly data: number[]
@@ -34,7 +34,7 @@ class MinStack {
 
     getMin(): number {
         if (this.min === undefined) {
-            throw new Error("No data")
+            throw new Error('No data')
         }
 
         return this.min

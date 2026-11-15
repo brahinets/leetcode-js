@@ -15,11 +15,11 @@ request at a time**. The requests are assigned to servers according to a specifi
 
 You are given a **strictly increasing** array `arrival` of positive integers, where `arrival[i]`
 represents the arrival time of the `i^th` request, and another array `load`, where `load[i]`
-represents the load of the `i^th` request (the time it takes to complete). Your goal is to find the
-**busiest server(s)**. A server is considered **busiest** if it handled the most number of requests
+represents the load of the `i^th` request (the time it takes to complete). Your goal is to find the **busiest server (
+s)**. A server is considered **busiest** if it handled the most number of requests
 successfully among all the servers.
 
-Return *a list containing the IDs (0-indexed) of the **busiest server(s)***. You may return the IDs
+Return *a list containing the IDs (0-indexed) of the **busiest server (s)***. You may return the IDs
 in any order.
 
 ### Constraints:

@@ -1,4 +1,4 @@
-export {runningSum}
+export { runningSum }
 
 function runningSum(nums: number[]): number[] {
     const result: number[] = []

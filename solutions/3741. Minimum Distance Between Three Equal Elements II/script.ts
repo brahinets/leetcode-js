@@ -20,8 +20,13 @@ function minimumDistance(nums: number[]): number {
             continue
         }
 
-        for (let position: number = 0; position + 2 < indices.length; position++) {
-            const distance: number = 2 * (indices[position + 2] - indices[position])
+        for (
+            let position: number = 0;
+            position + 2 < indices.length;
+            position++
+        ) {
+            const distance: number =
+                2 * (indices[position + 2] - indices[position])
 
             if (minimumResult === -1 || distance < minimumResult) {
                 minimumResult = distance

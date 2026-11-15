@@ -1,6 +1,12 @@
-export {combine}
+export { combine }
 
-function solve(n: number, k: number, start: number, out: number[], result: number[][]): void {
+function solve(
+    n: number,
+    k: number,
+    start: number,
+    out: number[],
+    result: number[][]
+): void {
     if (out.length === k) {
         result.push([...out])
         return

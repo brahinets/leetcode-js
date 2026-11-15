@@ -1,4 +1,4 @@
-export {minDifference}
+export { minDifference }
 
 function minDifference(nums: number[]): number {
     if (nums.length <= 3) {

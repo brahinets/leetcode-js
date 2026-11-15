@@ -28,7 +28,10 @@ function minSwaps(grid: number[][]): number {
         }
 
         while (j > i) {
-            [trailingZeros[j], trailingZeros[j - 1]] = [trailingZeros[j - 1], trailingZeros[j]]
+            ;[trailingZeros[j], trailingZeros[j - 1]] = [
+                trailingZeros[j - 1],
+                trailingZeros[j]
+            ]
             swaps++
             j--
         }

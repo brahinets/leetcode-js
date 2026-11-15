@@ -1,5 +1,4 @@
-import {sumCounts} from '../script'
-
+import { sumCounts } from '../script'
 
 describe('2916. Subarrays Distinct Element Sum of Squares II', (): void => {
     it('repeated value lowering distinct count of enclosing subarrays', (): void => {
@@ -7,8 +6,7 @@ describe('2916. Subarrays Distinct Element Sum of Squares II', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(15)
+        expect(result).toBe(15)
     })
 
     it('identical values keep distinct count at one', (): void => {
@@ -16,8 +14,7 @@ describe('2916. Subarrays Distinct Element Sum of Squares II', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('single element', (): void => {
@@ -25,8 +22,7 @@ describe('2916. Subarrays Distinct Element Sum of Squares II', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('all distinct values maximize each subarray count', (): void => {
@@ -34,8 +30,7 @@ describe('2916. Subarrays Distinct Element Sum of Squares II', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(20)
+        expect(result).toBe(20)
     })
 
     it('value reappearing after several distinct values', (): void => {
@@ -43,8 +38,7 @@ describe('2916. Subarrays Distinct Element Sum of Squares II', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(43)
+        expect(result).toBe(43)
     })
 
     it('maximum length of identical values wraps around modulo', (): void => {
@@ -52,7 +46,6 @@ describe('2916. Subarrays Distinct Element Sum of Squares II', (): void => {
 
         const result: number = sumCounts(nums)
 
-        expect(result)
-            .toBe(49965)
+        expect(result).toBe(49965)
     })
 })

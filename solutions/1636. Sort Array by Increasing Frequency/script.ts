@@ -1,12 +1,14 @@
-import {count} from "../../common/array-utils"
-import {arrayOf} from "../../common/array-factories"
+import { count } from '../../common/array-utils'
+import { arrayOf } from '../../common/array-factories'
 
-export {frequencySort}
+export { frequencySort }
 
 function frequencySort(nums: number[]): number[] {
     return [...count(nums).entries()]
         .sort(comparatorByFrequency)
-        .flatMap(([number, count]: [number, number]): number[] => arrayOf(number, count))
+        .flatMap(([number, count]: [number, number]): number[] =>
+            arrayOf(number, count)
+        )
 }
 
 function comparatorByFrequency(

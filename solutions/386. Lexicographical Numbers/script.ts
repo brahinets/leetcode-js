@@ -1,4 +1,4 @@
-export {lexicalOrder}
+export { lexicalOrder }
 
 function lexicalOrder(n: number): number[] {
     if (n <= 0) {

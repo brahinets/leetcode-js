@@ -1,4 +1,4 @@
-import {subsequencePairCount} from '../script'
+import { subsequencePairCount } from '../script'
 
 describe('3336. Find the Number of Subsequences With Equal GCD', (): void => {
     it('should handle basic example with array [3, 6, 6]', (): void => {

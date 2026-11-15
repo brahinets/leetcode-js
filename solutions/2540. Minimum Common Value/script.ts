@@ -1,4 +1,4 @@
-export {getCommon}
+export { getCommon }
 
 function getCommon(nums1: number[], nums2: number[]): number {
     let first: number = 0

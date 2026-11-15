@@ -1,4 +1,4 @@
-import {fib} from '../script'
+import { fib } from '../script'
 
 describe('509. Fibonacci Number', (): void => {
     it('Zeros', (): void => {

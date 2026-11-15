@@ -1,11 +1,11 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {reverseParentheses}
+export { reverseParentheses }
 
 function reverseParentheses(s: string): string {
     const pair: number[] = collectBracesIndices(s)
 
-    let result: string = ""
+    let result: string = ''
     for (let i: number = 0, direction = 1; i < s.length; i += direction) {
         if (s.charAt(i) === '(' || s.charAt(i) === ')') {
             i = pair[i]

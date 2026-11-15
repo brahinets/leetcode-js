@@ -1,14 +1,12 @@
 import { numOfWays } from '../script'
 
-
 describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
     it('single alternative interleaving around one root', (): void => {
         const nums: number[] = [2, 1, 3]
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('independent left and right interleavings of one root', (): void => {
@@ -16,8 +14,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(5)
+        expect(result).toBe(5)
     })
 
     it('increasing insertion builds a chain that forbids reordering', (): void => {
@@ -25,8 +22,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('single element', (): void => {
@@ -34,8 +30,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('two elements in increasing order', (): void => {
@@ -43,8 +38,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('two elements in decreasing order', (): void => {
@@ -52,8 +46,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('complete tree of seven nodes', (): void => {
@@ -61,8 +54,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(79)
+        expect(result).toBe(79)
     })
 
     it('eight element chain from increasing insertion', (): void => {
@@ -70,8 +62,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('fifteen element complete tree', (): void => {
@@ -79,8 +70,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(21964799)
+        expect(result).toBe(21964799)
     })
 
     it('maximum length chain of one thousand elements', (): void => {
@@ -88,8 +78,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('maximum length reversed chain of one thousand elements', (): void => {
@@ -97,8 +86,7 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('maximum length perfectly balanced tree', (): void => {
@@ -106,20 +94,20 @@ describe('1569. Number of Ways to Reorder Array to Get Same BST', (): void => {
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(718156653)
+        expect(result).toBe(718156653)
     })
 
     it('maximum length partitioned by parity', (): void => {
-        const nums: number[] = [...rangeWithStep(1, 2, 500), ...rangeWithStep(2, 2, 500)]
+        const nums: number[] = [
+            ...rangeWithStep(1, 2, 500),
+            ...rangeWithStep(2, 2, 500)
+        ]
 
         const result: number = numOfWays(nums)
 
-        expect(result)
-            .toBe(930893647)
+        expect(result).toBe(930893647)
     })
 })
-
 
 function rangeAscending(size: number): number[] {
     return rangeWithStep(1, 1, size)
@@ -152,5 +140,9 @@ function balancedOrder(low: number, high: number): number[] {
 
     const middle: number = Math.floor((low + high) / 2)
 
-    return [middle, ...balancedOrder(low, middle - 1), ...balancedOrder(middle + 1, high)]
+    return [
+        middle,
+        ...balancedOrder(low, middle - 1),
+        ...balancedOrder(middle + 1, high)
+    ]
 }

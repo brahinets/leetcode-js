@@ -1,7 +1,7 @@
-import {matrixOfZeros} from "../../common/array-factories"
-import {sum} from "../../common/array-utils"
+import { matrixOfZeros } from '../../common/array-factories'
+import { sum } from '../../common/array-utils'
 
-export {findJudge}
+export { findJudge }
 
 function findJudge(n: number, trust: number[][]): number {
     const trusts: number[][] = matrixOfZeros(n + 1, n + 1)
@@ -12,7 +12,8 @@ function findJudge(n: number, trust: number[][]): number {
 
     for (let i: number = 1; i <= n; i++) {
         const trustToNoOne: boolean = sum(trusts[i]) === 0
-        const everyoneTrustMe: boolean = sum(trusts.map((t: number[]): number => t[i])) === n - 1
+        const everyoneTrustMe: boolean =
+            sum(trusts.map((t: number[]): number => t[i])) === n - 1
 
         if (trustToNoOne && everyoneTrustMe) {
             return i

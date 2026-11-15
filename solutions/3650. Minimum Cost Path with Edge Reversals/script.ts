@@ -14,8 +14,11 @@ function minCost(n: number, edges: number[][]): number {
     const minDistance: number[] = arrayOf<number>(Infinity, n)
     minDistance[0] = 0
 
-    const queue: PriorityQueue<[number, number]> = new PriorityQueue<[number, number]>(
-        (first: [number, number], second: [number, number]): number => first[0] - second[0]
+    const queue: PriorityQueue<[number, number]> = new PriorityQueue<
+        [number, number]
+    >(
+        (first: [number, number], second: [number, number]): number =>
+            first[0] - second[0]
     )
     queue.enqueue([0, 0])
 

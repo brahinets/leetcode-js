@@ -1,4 +1,4 @@
-export {numTeams}
+export { numTeams }
 
 function numTeams(rating: number[]): number {
     let count: number = 0

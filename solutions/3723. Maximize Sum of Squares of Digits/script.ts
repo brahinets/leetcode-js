@@ -12,5 +12,9 @@ function maxSumOfSquares(num: number, sum: number): string {
     const hasRemainder: boolean = remainder > 0
     const zeroCount: number = num - nineCount - (hasRemainder ? 1 : 0)
 
-    return '9'.repeat(nineCount) + (hasRemainder ? String(remainder) : '') + '0'.repeat(zeroCount)
+    return (
+        '9'.repeat(nineCount) +
+        (hasRemainder ? String(remainder) : '') +
+        '0'.repeat(zeroCount)
+    )
 }

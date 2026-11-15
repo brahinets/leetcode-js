@@ -1,4 +1,4 @@
-export {minimumOneBitOperations}
+export { minimumOneBitOperations }
 
 function minimumOneBitOperations(n: number): number {
     return grayCode(n)

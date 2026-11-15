@@ -1,7 +1,10 @@
-export {minOperations}
+export { minOperations }
 
 function minOperations(numbers: number[], x: number): number {
-    const totalSum: number = numbers.reduce((sum: number, number: number): number => sum + number, 0)
+    const totalSum: number = numbers.reduce(
+        (sum: number, number: number): number => sum + number,
+        0
+    )
     const targetSum: number = totalSum - x
 
     if (targetSum < 0) {
@@ -25,9 +28,14 @@ function minOperations(numbers: number[], x: number): number {
         }
 
         if (windowSum === targetSum) {
-            maximumWindowLength = Math.max(maximumWindowLength, windowEnd - windowStart + 1)
+            maximumWindowLength = Math.max(
+                maximumWindowLength,
+                windowEnd - windowStart + 1
+            )
         }
     }
 
-    return maximumWindowLength === -1 ? -1 : numbers.length - maximumWindowLength
+    return maximumWindowLength === -1
+        ? -1
+        : numbers.length - maximumWindowLength
 }

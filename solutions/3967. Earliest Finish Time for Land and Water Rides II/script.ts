@@ -1,4 +1,4 @@
-import { arrayOf } from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
 export { earliestFinishTime }
 
@@ -6,17 +6,29 @@ function earliestFinishTime(
     landStartTime: number[],
     landDuration: number[],
     waterStartTime: number[],
-    waterDuration: number[],
+    waterDuration: number[]
 ): number {
     const landRides: [number, number][] = landStartTime.map(
-        (start: number, index: number): [number, number] => [start, landDuration[index]],
+        (start: number, index: number): [number, number] => [
+            start,
+            landDuration[index]
+        ]
     )
     const waterRides: [number, number][] = waterStartTime.map(
-        (start: number, index: number): [number, number] => [start, waterDuration[index]],
+        (start: number, index: number): [number, number] => [
+            start,
+            waterDuration[index]
+        ]
     )
 
-    landRides.sort((first: [number, number], second: [number, number]): number => first[0] - second[0])
-    waterRides.sort((first: [number, number], second: [number, number]): number => first[0] - second[0])
+    landRides.sort(
+        (first: [number, number], second: [number, number]): number =>
+            first[0] - second[0]
+    )
+    waterRides.sort(
+        (first: [number, number], second: [number, number]): number =>
+            first[0] - second[0]
+    )
 
     const landCount: number = landRides.length
     const waterCount: number = waterRides.length
@@ -28,20 +40,32 @@ function earliestFinishTime(
 
     prefixMinWaterDuration[0] = waterRides[0][1]
     for (let index: number = 1; index < waterCount; index++) {
-        prefixMinWaterDuration[index] = Math.min(prefixMinWaterDuration[index - 1], waterRides[index][1])
+        prefixMinWaterDuration[index] = Math.min(
+            prefixMinWaterDuration[index - 1],
+            waterRides[index][1]
+        )
     }
 
     for (let index: number = waterCount - 1; index >= 0; index--) {
-        suffixMinWaterEnd[index] = Math.min(suffixMinWaterEnd[index + 1], waterRides[index][0] + waterRides[index][1])
+        suffixMinWaterEnd[index] = Math.min(
+            suffixMinWaterEnd[index + 1],
+            waterRides[index][0] + waterRides[index][1]
+        )
     }
 
     prefixMinLandDuration[0] = landRides[0][1]
     for (let index: number = 1; index < landCount; index++) {
-        prefixMinLandDuration[index] = Math.min(prefixMinLandDuration[index - 1], landRides[index][1])
+        prefixMinLandDuration[index] = Math.min(
+            prefixMinLandDuration[index - 1],
+            landRides[index][1]
+        )
     }
 
     for (let index: number = landCount - 1; index >= 0; index--) {
-        suffixMinLandEnd[index] = Math.min(suffixMinLandEnd[index + 1], landRides[index][0] + landRides[index][1])
+        suffixMinLandEnd[index] = Math.min(
+            suffixMinLandEnd[index + 1],
+            landRides[index][0] + landRides[index][1]
+        )
     }
 
     let result: number = Infinity
@@ -51,7 +75,10 @@ function earliestFinishTime(
         const splitIndex: number = upperBound(waterRides, landEnd)
 
         if (splitIndex > 0) {
-            result = Math.min(result, landEnd + prefixMinWaterDuration[splitIndex - 1])
+            result = Math.min(
+                result,
+                landEnd + prefixMinWaterDuration[splitIndex - 1]
+            )
         }
 
         if (splitIndex < waterCount) {
@@ -64,7 +91,10 @@ function earliestFinishTime(
         const splitIndex: number = upperBound(landRides, waterEnd)
 
         if (splitIndex > 0) {
-            result = Math.min(result, waterEnd + prefixMinLandDuration[splitIndex - 1])
+            result = Math.min(
+                result,
+                waterEnd + prefixMinLandDuration[splitIndex - 1]
+            )
         }
 
         if (splitIndex < landCount) {

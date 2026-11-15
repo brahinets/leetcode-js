@@ -6,8 +6,7 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('reversal followed by rotation left sorts the array in two operations', (): void => {
@@ -15,8 +14,7 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('array unreachable by rotations and reversals cannot be sorted', (): void => {
@@ -24,8 +22,7 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(-1)
+        expect(result).toBe(-1)
     })
 
     it('already sorted array needs no operations', (): void => {
@@ -33,8 +30,7 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('descending array is sorted by a single reversal', (): void => {
@@ -42,8 +38,7 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('rotating the minimum to the front costs one operation per shift', (): void => {
@@ -51,8 +46,7 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('two element array in swapped order is sorted by a single reversal', (): void => {
@@ -60,8 +54,7 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('large rotation replaced by reversal rotation reversal costs three operations', (): void => {
@@ -69,8 +62,7 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('single element array is already sorted', (): void => {
@@ -78,7 +70,6 @@ describe('3942. Minimum Operations to Sort a Permutation', (): void => {
 
         const result: number = minOperations(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 })

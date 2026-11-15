@@ -1,6 +1,6 @@
-import {PriorityQueue} from "../../common/PriorityQueue"
+import { PriorityQueue } from '../../common/PriorityQueue'
 
-export {FoodRatings}
+export { FoodRatings }
 
 interface FoodInfo {
     name: string
@@ -10,7 +10,10 @@ interface FoodInfo {
 class FoodRatings {
     private foodToCuisine: Map<string, string> = new Map<string, string>()
     private foodToRating: Map<string, number> = new Map<string, number>()
-    private cuisineToFoods: Map<string, PriorityQueue<FoodInfo>> = new Map<string, PriorityQueue<FoodInfo>>()
+    private cuisineToFoods: Map<string, PriorityQueue<FoodInfo>> = new Map<
+        string,
+        PriorityQueue<FoodInfo>
+    >()
 
     constructor(foods: string[], cuisines: string[], ratings: number[]) {
         for (let i: number = 0; i < foods.length; i++) {
@@ -24,14 +27,19 @@ class FoodRatings {
             if (!this.cuisineToFoods.has(cuisine)) {
                 this.cuisineToFoods.set(
                     cuisine,
-                    new PriorityQueue<FoodInfo>((a: FoodInfo, b: FoodInfo): number => {
-                        if (a.rating !== b.rating) return b.rating - a.rating
-                        return a.name.localeCompare(b.name)
-                    })
+                    new PriorityQueue<FoodInfo>(
+                        (a: FoodInfo, b: FoodInfo): number => {
+                            if (a.rating !== b.rating)
+                                return b.rating - a.rating
+                            return a.name.localeCompare(b.name)
+                        }
+                    )
                 )
             }
 
-            this.cuisineToFoods.get(cuisine)!.enqueue({name: foods[i], rating: ratings[i]})
+            this.cuisineToFoods
+                .get(cuisine)!
+                .enqueue({ name: foods[i], rating: ratings[i] })
         }
     }
 
@@ -40,11 +48,14 @@ class FoodRatings {
 
         const cuisine: string = this.foodToCuisine.get(food)!
 
-        this.cuisineToFoods.get(cuisine)!.enqueue({name: food, rating: newRating})
+        this.cuisineToFoods
+            .get(cuisine)!
+            .enqueue({ name: food, rating: newRating })
     }
 
     highestRated(cuisine: string): string {
-        const pq: PriorityQueue<FoodInfo> | undefined = this.cuisineToFoods.get(cuisine)
+        const pq: PriorityQueue<FoodInfo> | undefined =
+            this.cuisineToFoods.get(cuisine)
         if (!pq) {
             throw new Error('There is no food with this cuisine')
         }

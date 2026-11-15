@@ -1,4 +1,4 @@
-export {numberOfSubarrays}
+export { numberOfSubarrays }
 
 function numberOfSubarrays(nums: number[], k: number): number {
     let odds: number = 0

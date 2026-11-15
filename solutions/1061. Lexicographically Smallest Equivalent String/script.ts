@@ -1,9 +1,15 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {smallestEquivalentString}
+export { smallestEquivalentString }
 
-function smallestEquivalentString(s1: string, s2: string, baseStr: string): string {
-    const parent: number[] = arrayOfZeros(26).map((_, idx: number): number => idx)
+function smallestEquivalentString(
+    s1: string,
+    s2: string,
+    baseStr: string
+): string {
+    const parent: number[] = arrayOfZeros(26).map(
+        (_, idx: number): number => idx
+    )
     const aCharCode: number = 'a'.charCodeAt(0)
 
     for (let i: number = 0; i < s1.length; i++) {

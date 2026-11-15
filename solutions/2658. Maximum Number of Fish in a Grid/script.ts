@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {findMaxFish}
+export { findMaxFish }
 
 function findMaxFish(grid: number[][]): number {
     let maxFishCount: number = 0
@@ -10,7 +10,10 @@ function findMaxFish(grid: number[][]): number {
     for (let row: number = 0; row < grid.length; row++) {
         for (let col: number = 0; col < grid[0].length; col++) {
             if (grid[row][col] > 0 && !visited[row][col]) {
-                maxFishCount = Math.max(maxFishCount, calculateFishes(grid, visited, row, col))
+                maxFishCount = Math.max(
+                    maxFishCount,
+                    calculateFishes(grid, visited, row, col)
+                )
             }
         }
     }
@@ -18,8 +21,19 @@ function findMaxFish(grid: number[][]): number {
     return maxFishCount
 }
 
-function calculateFishes(grid: number[][], visited: boolean[][], row: number, col: number): number {
-    if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] == 0) {
+function calculateFishes(
+    grid: number[][],
+    visited: boolean[][],
+    row: number,
+    col: number
+): number {
+    if (
+        row < 0 ||
+        row >= grid.length ||
+        col < 0 ||
+        col >= grid[0].length ||
+        grid[row][col] == 0
+    ) {
         return 0
     }
 

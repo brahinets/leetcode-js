@@ -1,8 +1,8 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {findRotateSteps}
+export { findRotateSteps }
 
-const PUSH:number = 1
+const PUSH: number = 1
 
 function findRotateSteps(ring: string, key: string): number {
     const charPositions: Map<string, number[]> = positions(ring)
@@ -17,8 +17,12 @@ function findRotateSteps(ring: string, key: string): number {
         const currentPositions: number[] = charPositions.get(key[i])!
         for (const curPos of currentPositions) {
             for (const prevPos of prevPositions) {
-                const steps: number = minDistance(prevPos, curPos, ring.length) + PUSH
-                subKey[i][curPos] = Math.min(subKey[i][curPos], subKey[i - 1][prevPos] + steps)
+                const steps: number =
+                    minDistance(prevPos, curPos, ring.length) + PUSH
+                subKey[i][curPos] = Math.min(
+                    subKey[i][curPos],
+                    subKey[i - 1][prevPos] + steps
+                )
             }
         }
     }
@@ -26,7 +30,11 @@ function findRotateSteps(ring: string, key: string): number {
     return Math.min(...subKey[key.length - 1])
 }
 
-function minDistance(start: number, target: number, ringLength: number): number {
+function minDistance(
+    start: number,
+    target: number,
+    ringLength: number
+): number {
     const clockwise: number = (target - start + ringLength) % ringLength
     const counterClockwise: number = (start - target + ringLength) % ringLength
     return Math.min(clockwise, counterClockwise)

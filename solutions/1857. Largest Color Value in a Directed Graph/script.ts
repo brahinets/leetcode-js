@@ -1,7 +1,7 @@
-import {DirectedUnweightedGraph} from '../../common/Graph'
-import {arrayOfZeros, matrixOfZeros} from "../../common/array-factories"
+import { DirectedUnweightedGraph } from '../../common/Graph'
+import { arrayOfZeros, matrixOfZeros } from '../../common/array-factories'
 
-export {largestPathValue}
+export { largestPathValue }
 
 function largestPathValue(colors: string, edges: number[][]): number {
     const graph: DirectedUnweightedGraph = new DirectedUnweightedGraph()

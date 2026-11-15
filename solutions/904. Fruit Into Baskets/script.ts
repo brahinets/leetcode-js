@@ -1,4 +1,4 @@
-export {totalFruit}
+export { totalFruit }
 
 function totalFruit(fruits: number[]): number {
     const basket: Record<number, number> = {}

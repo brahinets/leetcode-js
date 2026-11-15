@@ -1,5 +1,5 @@
-import {flatten} from '../script'
-import {arrayToTree, TreeNode} from "../../../common/tree-utils"
+import { flatten } from '../script'
+import { arrayToTree, TreeNode } from '../../../common/tree-utils'
 
 describe('114. Flatten Binary Tree to Linked List', (): void => {
     it('Complex tree', (): void => {
@@ -7,7 +7,9 @@ describe('114. Flatten Binary Tree to Linked List', (): void => {
 
         flatten(tree)
 
-        expect(tree).toEqual(arrayToTree([1, null, 2, null, 3, null, 4, null, 5, null, 6]))
+        expect(tree).toEqual(
+            arrayToTree([1, null, 2, null, 3, null, 4, null, 5, null, 6])
+        )
     })
 
     it('Simple tree', (): void => {

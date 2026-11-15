@@ -1,4 +1,4 @@
-export {myPow}
+export { myPow }
 
 function myPow(x: number, n: number): number {
     if (n === 0) {

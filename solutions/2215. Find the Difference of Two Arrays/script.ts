@@ -1,4 +1,4 @@
-export {findDifference}
+export { findDifference }
 
 function findDifference(nums1: number[], nums2: number[]): number[][] {
     return [getUnique(nums1, nums2), getUnique(nums2, nums1)]

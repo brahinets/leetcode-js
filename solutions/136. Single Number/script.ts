@@ -1,4 +1,4 @@
-export {singleNumber}
+export { singleNumber }
 
 function singleNumber(nums: number[]): number {
     let result: number = 0

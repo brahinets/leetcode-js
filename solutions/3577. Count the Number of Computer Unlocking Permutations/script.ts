@@ -1,4 +1,4 @@
-export {countPermutations}
+export { countPermutations }
 
 const MOD: number = 10 ** 9 + 7
 

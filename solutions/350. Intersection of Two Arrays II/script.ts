@@ -1,7 +1,7 @@
-import {count} from "../../common/array-utils"
-import {arrayOf} from "../../common/array-factories"
+import { count } from '../../common/array-utils'
+import { arrayOf } from '../../common/array-factories'
 
-export {intersect}
+export { intersect }
 
 function intersect(nums1: number[], nums2: number[]): number[] {
     const first: Map<number, number> = count(nums1)

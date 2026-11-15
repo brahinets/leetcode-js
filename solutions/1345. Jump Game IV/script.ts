@@ -1,4 +1,4 @@
-import {arrayOf} from '../../common/array-factories'
+import { arrayOf } from '../../common/array-factories'
 
 export { minJumps }
 
@@ -42,7 +42,9 @@ function minJumps(array: number[]): number {
                 neighbors.push(current + 1)
             }
 
-            const sameValueIndices: number[] | undefined = valueToIndices.get(array[current])
+            const sameValueIndices: number[] | undefined = valueToIndices.get(
+                array[current]
+            )
 
             if (sameValueIndices !== undefined) {
                 for (const neighbor of sameValueIndices) {

@@ -1,4 +1,4 @@
-export {ProductOfNumbers}
+export { ProductOfNumbers }
 
 class ProductOfNumbers {
     private products: number[]
@@ -20,6 +20,9 @@ class ProductOfNumbers {
             return 0
         }
 
-        return this.products[this.products.length - 1] / this.products[this.products.length - 1 - k]
+        return (
+            this.products[this.products.length - 1] /
+            this.products[this.products.length - 1 - k]
+        )
     }
 }

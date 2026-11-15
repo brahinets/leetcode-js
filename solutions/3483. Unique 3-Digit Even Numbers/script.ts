@@ -1,4 +1,4 @@
-import { arrayOfZeros } from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
 export { totalNumbers }
 
@@ -14,7 +14,14 @@ function totalNumbers(digits: number[]): number {
     for (let hundredsDigit: number = 1; hundredsDigit <= 9; hundredsDigit++) {
         for (let tensDigit: number = 0; tensDigit <= 9; tensDigit++) {
             for (let unitsDigit: number = 0; unitsDigit <= 8; unitsDigit += 2) {
-                if (hasEnoughDigits(digitCounts, hundredsDigit, tensDigit, unitsDigit)) {
+                if (
+                    hasEnoughDigits(
+                        digitCounts,
+                        hundredsDigit,
+                        tensDigit,
+                        unitsDigit
+                    )
+                ) {
                     uniqueNumberCount += 1
                 }
             }
@@ -24,7 +31,12 @@ function totalNumbers(digits: number[]): number {
     return uniqueNumberCount
 }
 
-function hasEnoughDigits(digitCounts: number[], hundredsDigit: number, tensDigit: number, unitsDigit: number): boolean {
+function hasEnoughDigits(
+    digitCounts: number[],
+    hundredsDigit: number,
+    tensDigit: number,
+    unitsDigit: number
+): boolean {
     const requiredCounts: number[] = arrayOfZeros(10)
 
     requiredCounts[hundredsDigit] += 1

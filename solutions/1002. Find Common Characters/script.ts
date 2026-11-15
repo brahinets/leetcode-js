@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {commonChars}
+export { commonChars }
 
 function commonChars(words: string[]): string[] {
     const commons: Map<string, number> = collectCounts(words)
@@ -21,11 +21,11 @@ function collectResult(commons: Map<string, number>): string[] {
 }
 
 function collectCounts(words: string[]): Map<string, number> {
-    const commons: Map<string, number> = count(words[0].split(""))
+    const commons: Map<string, number> = count(words[0].split(''))
 
     for (let i: number = 1; i < words.length; i++) {
         const word: string = words[i]
-        const second: Map<string, number> = count(word.split(""))
+        const second: Map<string, number> = count(word.split(''))
 
         for (let [letter, letterCount] of commons) {
             const min: number = Math.min(letterCount, second.get(letter) ?? 0)

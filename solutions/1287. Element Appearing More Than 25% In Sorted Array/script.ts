@@ -1,4 +1,4 @@
-export {findSpecialInteger}
+export { findSpecialInteger }
 
 function findSpecialInteger(arr: number[]): number {
     const threshold: number = arr.length / 4
@@ -23,5 +23,5 @@ function findSpecialInteger(arr: number[]): number {
         }
     }
 
-    throw new Error("No solution found")
+    throw new Error('No solution found')
 }

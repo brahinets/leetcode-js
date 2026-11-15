@@ -2,11 +2,14 @@
 
 ## Medium
 
-You are given an integer array `nums`. A **mirror pair** is a pair of indices `(i, j)` where `0 <= i < j < nums.length` and `reverse(nums[i]) == nums[j]`.
+You are given an integer array `nums`. A **mirror pair** is a pair of indices `(i, j)` where `0 <= i < j < nums.length`
+and `reverse(nums[i]) == nums[j]`.
 
-`reverse(x)` denotes the integer formed by reversing the digits of `x`. Leading zeros are omitted after reversing (for example, `reverse(120) = 21`).
+`reverse(x)` denotes the integer formed by reversing the digits of `x`. Leading zeros are omitted after reversing (for
+example, `reverse(120) = 21`).
 
-Return the **minimum absolute distance** `abs(i - j)` between the indices of any mirror pair. If no mirror pair exists, return `-1`.
+Return the **minimum absolute distance** `abs(i - j)` between the indices of any mirror pair. If no mirror pair exists,
+return `-1`.
 
 ### Constraints:
 

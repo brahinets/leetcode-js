@@ -1,7 +1,7 @@
-import {matrixOf} from "../../common/array-factories"
-import {PriorityQueue} from "../../common/PriorityQueue"
+import { matrixOf } from '../../common/array-factories'
+import { PriorityQueue } from '../../common/PriorityQueue'
 
-export {maximumSafenessFactor}
+export { maximumSafenessFactor }
 
 const TURNS: [number, number][] = [
     [-1, 0],
@@ -16,9 +16,9 @@ const THIEF: number = 1
 function maximumSafenessFactor(grid: number[][]): number {
     const safenessGrid: number[][] = buildSafenessGrid(grid)
 
-    const maxHeap: PriorityQueue<[number, number, number]> = new PriorityQueue<[number, number, number]>(
-        (a, b) => b[2] - a[2]
-    )
+    const maxHeap: PriorityQueue<[number, number, number]> = new PriorityQueue<
+        [number, number, number]
+    >((a, b) => b[2] - a[2])
     maxHeap.enqueue([0, 0, safenessGrid[0][0]])
     safenessGrid[0][0] = VISITED
 
@@ -33,8 +33,15 @@ function maximumSafenessFactor(grid: number[][]): number {
             const newX: number = x + moveX
             const newY: number = y + moveY
 
-            if (inBounds(safenessGrid, newX, newY) && safenessGrid[newX][newY] !== VISITED) {
-                maxHeap.enqueue([newX, newY, Math.min(safeness, safenessGrid[newX][newY])])
+            if (
+                inBounds(safenessGrid, newX, newY) &&
+                safenessGrid[newX][newY] !== VISITED
+            ) {
+                maxHeap.enqueue([
+                    newX,
+                    newY,
+                    Math.min(safeness, safenessGrid[newX][newY])
+                ])
                 safenessGrid[newX][newY] = VISITED
             }
         }
@@ -44,7 +51,11 @@ function maximumSafenessFactor(grid: number[][]): number {
 }
 
 function buildSafenessGrid(grid: number[][]): number[][] {
-    const safenessGrid: number[][] = matrixOf(NOT_VISITED, grid.length, grid[0].length)
+    const safenessGrid: number[][] = matrixOf(
+        NOT_VISITED,
+        grid.length,
+        grid[0].length
+    )
 
     const toVisit: [number, number][] = []
     for (let i: number = 0; i < grid.length; i++) {
@@ -64,7 +75,10 @@ function buildSafenessGrid(grid: number[][]): number[][] {
             const newX: number = x + moveX
             const newY: number = y + moveY
 
-            if (inBounds(safenessGrid, newX, newY) && safenessGrid[newX][newY] === NOT_VISITED) {
+            if (
+                inBounds(safenessGrid, newX, newY) &&
+                safenessGrid[newX][newY] === NOT_VISITED
+            ) {
                 safenessGrid[newX][newY] = safenessGrid[x][y] + 1
                 toVisit.push([newX, newY])
             }

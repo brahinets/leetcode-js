@@ -12,7 +12,8 @@ function restoreIpAddresses(s: string): string[] {
                 const s3: string = s.substring(j, k)
                 const s4: string = s.substring(k)
 
-                if (s4.length <= 3 &&
+                if (
+                    s4.length <= 3 &&
                     isValidSegment(s1) &&
                     isValidSegment(s2) &&
                     isValidSegment(s3) &&
@@ -28,5 +29,8 @@ function restoreIpAddresses(s: string): string[] {
 }
 
 function isValidSegment(segment: string): boolean {
-    return !(segment.startsWith('0') && segment.length > 1) && Number(segment) <= 255
+    return (
+        !(segment.startsWith('0') && segment.length > 1) &&
+        Number(segment) <= 255
+    )
 }

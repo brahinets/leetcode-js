@@ -1,4 +1,4 @@
-export {rearrangeArray}
+export { rearrangeArray }
 
 function rearrangeArray(nums: number[]): number[] {
     const result: number[] = []

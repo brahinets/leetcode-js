@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {getDecimalValue}
+export { getDecimalValue }
 
 function getDecimalValue(head: ListNode | null): number {
     let result: number = 0

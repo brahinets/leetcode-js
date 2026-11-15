@@ -1,4 +1,4 @@
-export {asteroidCollision}
+export { asteroidCollision }
 
 function asteroidCollision(asteroids: number[]): number[] {
     let canExplodeMore: boolean
@@ -10,7 +10,9 @@ function asteroidCollision(asteroids: number[]): number[] {
             if (asteroids[i] > 0 && asteroids[i + 1] < 0) {
                 if (Math.abs(asteroids[i]) > Math.abs(asteroids[i + 1])) {
                     asteroids[i + 1] = Number.NaN
-                } else if (Math.abs(asteroids[i]) < Math.abs(asteroids[i + 1])) {
+                } else if (
+                    Math.abs(asteroids[i]) < Math.abs(asteroids[i + 1])
+                ) {
                     asteroids[i] = Number.NaN
                 } else {
                     asteroids[i] = Number.NaN
@@ -27,5 +29,7 @@ function asteroidCollision(asteroids: number[]): number[] {
 }
 
 function filterNonCrashedAsteroids(asteroids: number[]): number[] {
-    return asteroids.filter((asteroidPower: number): boolean => !Number.isNaN(asteroidPower))
+    return asteroids.filter(
+        (asteroidPower: number): boolean => !Number.isNaN(asteroidPower)
+    )
 }

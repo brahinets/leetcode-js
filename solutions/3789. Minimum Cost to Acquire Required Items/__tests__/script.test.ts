@@ -50,7 +50,13 @@ describe('3789. Minimum Cost to Acquire Required Items', (): void => {
     })
 
     it('handles large requirements without overflow', (): void => {
-        const result: number = minimumCost(1000000, 1000000, 1000000, 1000000000, 1000000000)
+        const result: number = minimumCost(
+            1000000,
+            1000000,
+            1000000,
+            1000000000,
+            1000000000
+        )
 
         expect(result).toBe(1000000000000000)
     })

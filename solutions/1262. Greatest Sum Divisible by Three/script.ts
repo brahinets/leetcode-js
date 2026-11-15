@@ -1,4 +1,4 @@
-export {maxSumDivThree}
+export { maxSumDivThree }
 
 function maxSumDivThree(nums: number[]): number {
     const dp: number[] = [0, Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY]

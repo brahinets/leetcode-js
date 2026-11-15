@@ -2,7 +2,11 @@ import { busiestServers } from '../script'
 
 describe('1606. Find Servers That Handled Most Number of Requests', (): void => {
     it('handles wrap-around to a server freed in the same request cycle', (): void => {
-        const result: number[] = busiestServers(3, [1, 2, 3, 4, 5], [5, 2, 3, 3, 3])
+        const result: number[] = busiestServers(
+            3,
+            [1, 2, 3, 4, 5],
+            [5, 2, 3, 3, 3]
+        )
 
         expect(result).toEqual([1])
     })
@@ -38,7 +42,11 @@ describe('1606. Find Servers That Handled Most Number of Requests', (): void => 
     })
 
     it('places freed servers at their correct position in the request cycle', (): void => {
-        const result: number[] = busiestServers(3, [1, 3, 5, 7, 9], [4, 4, 4, 4, 1])
+        const result: number[] = busiestServers(
+            3,
+            [1, 3, 5, 7, 9],
+            [4, 4, 4, 4, 1]
+        )
 
         expect(result).toEqual([0, 1])
     })

@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {numberOfSubstrings}
+export { numberOfSubstrings }
 
 function numberOfSubstrings(s: string): number {
     const lastZeroStart: number[] = buildLastZeroStart(s)
@@ -31,7 +31,12 @@ function buildLastZeroStart(s: string): number[] {
     return lastZeroStart
 }
 
-function countSubstringsForEnd(s: string, lastZeroStart: number[], end: number, maxZeros: number): number {
+function countSubstringsForEnd(
+    s: string,
+    lastZeroStart: number[],
+    end: number,
+    maxZeros: number
+): number {
     let zerosCount: number = s[end - 1] === '0' ? 1 : 0
     let left: number = end
     let count: number = 0
@@ -40,7 +45,10 @@ function countSubstringsForEnd(s: string, lastZeroStart: number[], end: number, 
         const onesCount: number = end - lastZeroStart[left] - zerosCount
 
         if (zerosCount * zerosCount <= onesCount) {
-            count += Math.min(left - lastZeroStart[left], onesCount - zerosCount * zerosCount + 1)
+            count += Math.min(
+                left - lastZeroStart[left],
+                onesCount - zerosCount * zerosCount + 1
+            )
         }
 
         left = lastZeroStart[left]

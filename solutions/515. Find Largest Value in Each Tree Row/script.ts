@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, largestValues}
+export { TreeNode, largestValues }
 
 function largestValues(root: TreeNode | null): number[] {
     const result: number[] = []

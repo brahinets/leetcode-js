@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {countLargestGroup}
+export { countLargestGroup }
 
 function countLargestGroup(n: number): number {
     const groupCounts: number[] = arrayOfZeros(37)
@@ -11,7 +11,8 @@ function countLargestGroup(n: number): number {
 
     const maxCount: number = Math.max(...groupCounts)
 
-    return groupCounts.filter((count: number): boolean => count === maxCount).length
+    return groupCounts.filter((count: number): boolean => count === maxCount)
+        .length
 }
 
 function digitSum(i: number): number {

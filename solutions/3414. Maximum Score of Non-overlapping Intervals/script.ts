@@ -16,27 +16,48 @@ interface Selection {
 
 function maximumWeight(intervals: number[][]): number[] {
     const sortedIntervals: IndexedInterval[] = sortByEnd(intervals)
-    const ends: number[] = sortedIntervals.map((interval: IndexedInterval): number => interval.end)
-    const emptySelection: Selection = {score: 0, indices: []}
+    const ends: number[] = sortedIntervals.map(
+        (interval: IndexedInterval): number => interval.end
+    )
+    const emptySelection: Selection = { score: 0, indices: [] }
     const bestSelections: Selection[][] = []
 
     for (let count: number = 0; count <= MAXIMUM_INTERVALS_COUNT; count++) {
-        bestSelections.push(new Array<Selection>(sortedIntervals.length + 1).fill(emptySelection))
+        bestSelections.push(
+            new Array<Selection>(sortedIntervals.length + 1).fill(
+                emptySelection
+            )
+        )
     }
 
-    for (let position: number = 0; position < sortedIntervals.length; position++) {
+    for (
+        let position: number = 0;
+        position < sortedIntervals.length;
+        position++
+    ) {
         const interval: IndexedInterval = sortedIntervals[position]
-        const compatiblePrefixLength: number = countEndingBefore(ends, interval.start)
+        const compatiblePrefixLength: number = countEndingBefore(
+            ends,
+            interval.start
+        )
 
         for (let count: number = 1; count <= MAXIMUM_INTERVALS_COUNT; count++) {
             const skipped: Selection = bestSelections[count][position]
-            const taken: Selection = extend(bestSelections[count - 1][compatiblePrefixLength], interval)
+            const taken: Selection = extend(
+                bestSelections[count - 1][compatiblePrefixLength],
+                interval
+            )
 
-            bestSelections[count][position + 1] = isBetter(taken, skipped) ? taken : skipped
+            bestSelections[count][position + 1] = isBetter(taken, skipped)
+                ? taken
+                : skipped
         }
     }
 
-    return [...bestSelections[MAXIMUM_INTERVALS_COUNT][sortedIntervals.length].indices]
+    return [
+        ...bestSelections[MAXIMUM_INTERVALS_COUNT][sortedIntervals.length]
+            .indices
+    ]
 }
 
 function sortByEnd(intervals: number[][]): IndexedInterval[] {
@@ -47,7 +68,10 @@ function sortByEnd(intervals: number[][]): IndexedInterval[] {
             weight: interval[2],
             index
         }))
-        .sort((first: IndexedInterval, second: IndexedInterval): number => first.end - second.end)
+        .sort(
+            (first: IndexedInterval, second: IndexedInterval): number =>
+                first.end - second.end
+        )
 }
 
 function countEndingBefore(ends: number[], start: number): number {
@@ -68,10 +92,11 @@ function countEndingBefore(ends: number[], start: number): number {
 }
 
 function extend(selection: Selection, interval: IndexedInterval): Selection {
-    const indices: number[] = [...selection.indices, interval.index]
-        .sort((first: number, second: number): number => first - second)
+    const indices: number[] = [...selection.indices, interval.index].sort(
+        (first: number, second: number): number => first - second
+    )
 
-    return {score: selection.score + interval.weight, indices}
+    return { score: selection.score + interval.weight, indices }
 }
 
 function isBetter(candidate: Selection, current: Selection): boolean {
@@ -82,7 +107,10 @@ function isBetter(candidate: Selection, current: Selection): boolean {
     return isLexicographicallySmaller(candidate.indices, current.indices)
 }
 
-function isLexicographicallySmaller(first: readonly number[], second: readonly number[]): boolean {
+function isLexicographicallySmaller(
+    first: readonly number[],
+    second: readonly number[]
+): boolean {
     const commonLength: number = Math.min(first.length, second.length)
 
     for (let position: number = 0; position < commonLength; position++) {

@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {findKthLargest}
+export { findKthLargest }
 
 function findKthLargest(nums: number[], k: number): number {
     const counts: Map<number, number> = countsByKeyDescending(nums)
@@ -13,9 +13,11 @@ function findKthLargest(nums: number[], k: number): number {
         }
     }
 
-    throw new Error("Illegal state. Not enough data")
+    throw new Error('Illegal state. Not enough data')
 }
 
 function countsByKeyDescending(nums: number[]): Map<number, number> {
-    return new Map([...count(nums)].sort((e1: number[], e2: number[]) => e2[0] - e1[0]))
+    return new Map(
+        [...count(nums)].sort((e1: number[], e2: number[]) => e2[0] - e1[0])
+    )
 }

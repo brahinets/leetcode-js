@@ -1,4 +1,4 @@
-export {shortestSubarray}
+export { shortestSubarray }
 
 function shortestSubarray(nums: number[], k: number): number {
     const prefixSum: number[] = [0]
@@ -14,7 +14,10 @@ function shortestSubarray(nums: number[], k: number): number {
             result = Math.min(result, i - deque.shift()!)
         }
 
-        while (deque.length > 0 && prefixSum[i] <= prefixSum[deque[deque.length - 1]]) {
+        while (
+            deque.length > 0 &&
+            prefixSum[i] <= prefixSum[deque[deque.length - 1]]
+        ) {
             deque.pop()
         }
 

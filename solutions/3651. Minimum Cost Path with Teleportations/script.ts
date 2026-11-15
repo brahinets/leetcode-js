@@ -1,4 +1,4 @@
-import { matrixOf, arrayOfZeros } from '../../common/array-factories'
+import { arrayOfZeros, matrixOf } from '../../common/array-factories'
 
 export { minCost }
 
@@ -25,9 +25,8 @@ function minCost(grid: number[][], k: number): number {
 
     cells.sort((a: Cell, b: Cell): number => a.val - b.val)
 
-    const dist: number[][][] = Array.from(
-        { length: k + 1 },
-        (): number[][] => matrixOf(INF, m, n)
+    const dist: number[][][] = Array.from({ length: k + 1 }, (): number[][] =>
+        matrixOf(INF, m, n)
     )
     dist[0][0][0] = 0
 

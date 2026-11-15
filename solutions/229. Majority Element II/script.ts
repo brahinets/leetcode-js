@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {majorityElement}
+export { majorityElement }
 
 function majorityElement(nums: number[]): number[] {
     const counts: Map<number, number> = count(nums)

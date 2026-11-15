@@ -16,16 +16,6 @@ class SegmentTree {
         this.build(1, 0, n)
     }
 
-    private build(u: number, l: number, r: number): void {
-        this.tr[u].l = l
-        this.tr[u].r = r
-        this.tr[u].mn = this.tr[u].mx = this.tr[u].lazy = 0
-        if (l === r) return
-        const mid = (l + r) >> 1
-        this.build(u << 1, l, mid)
-        this.build((u << 1) | 1, mid + 1, r)
-    }
-
     modify(u: number, l: number, r: number, v: number): void {
         if (this.tr[u].l >= l && this.tr[u].r <= r) {
             this.apply(u, v)
@@ -47,6 +37,16 @@ class SegmentTree {
             return this.query(lc, target)
         }
         return this.query(rc, target)
+    }
+
+    private build(u: number, l: number, r: number): void {
+        this.tr[u].l = l
+        this.tr[u].r = r
+        this.tr[u].mn = this.tr[u].mx = this.tr[u].lazy = 0
+        if (l === r) return
+        const mid = (l + r) >> 1
+        this.build(u << 1, l, mid)
+        this.build((u << 1) | 1, mid + 1, r)
     }
 
     private apply(u: number, v: number): void {
@@ -79,7 +79,7 @@ function longestBalanced(nums: number[]): number {
 
     for (let i = 1; i <= n; i++) {
         const x = nums[i - 1]
-        const det = (x & 1) ? 1 : -1
+        const det = x & 1 ? 1 : -1
 
         if (last.has(x)) {
             st.modify(1, last.get(x)!, n, -det)

@@ -1,4 +1,4 @@
-export {xorAllNums}
+export { xorAllNums }
 
 function xorAllNums(nums1: number[], nums2: number[]): number {
     const frequencies: Map<number, number> = collectFrequencies(nums1, nums2)
@@ -13,7 +13,10 @@ function xorAllNums(nums1: number[], nums2: number[]): number {
     return result
 }
 
-function collectFrequencies(nums1: number[], nums2: number[]): Map<number, number> {
+function collectFrequencies(
+    nums1: number[],
+    nums2: number[]
+): Map<number, number> {
     const frequencies: Map<number, number> = new Map<number, number>()
 
     for (let num of nums1) {

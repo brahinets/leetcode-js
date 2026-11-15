@@ -1,4 +1,4 @@
-export {numberOfSpecialChars}
+export { numberOfSpecialChars }
 
 function numberOfSpecialChars(word: string): number {
     const characters: Set<string> = new Set<string>(word)

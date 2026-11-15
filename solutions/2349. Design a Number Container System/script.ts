@@ -1,8 +1,11 @@
-import {PriorityQueue} from "../../common/PriorityQueue"
+import { PriorityQueue } from '../../common/PriorityQueue'
 
-export {NumberContainers}
+export { NumberContainers }
 
-const ascendingNumbersSorting: (a: number, b: number) => number = (a: number, b: number): number => a - b
+const ascendingNumbersSorting: (a: number, b: number) => number = (
+    a: number,
+    b: number
+): number => a - b
 
 class NumberContainers {
     private readonly numberToIndices: Map<number, PriorityQueue<number>>
@@ -16,7 +19,9 @@ class NumberContainers {
     public change(index: number, number: number): void {
         this.indexToNumbers.set(index, number)
 
-        const numberPriorityQueue: PriorityQueue<number> = this.numberToIndices.get(number) ?? new PriorityQueue<number>(ascendingNumbersSorting)
+        const numberPriorityQueue: PriorityQueue<number> =
+            this.numberToIndices.get(number) ??
+            new PriorityQueue<number>(ascendingNumbersSorting)
         numberPriorityQueue.enqueue(index)
 
         this.numberToIndices.set(number, numberPriorityQueue)

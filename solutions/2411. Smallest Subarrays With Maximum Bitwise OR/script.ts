@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {smallestSubarrays}
+export { smallestSubarrays }
 
 function smallestSubarrays(nums: number[]): number[] {
     const result: number[] = arrayOfZeros(nums.length)
@@ -13,7 +13,10 @@ function smallestSubarrays(nums: number[]): number[] {
             }
         }
 
-        result[i] = lastSeen.reduce((acc: number, val: number): number => Math.max(acc, val - i + 1), 1)
+        result[i] = lastSeen.reduce(
+            (acc: number, val: number): number => Math.max(acc, val - i + 1),
+            1
+        )
     }
 
     return result

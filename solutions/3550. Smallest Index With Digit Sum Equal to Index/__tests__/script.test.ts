@@ -6,8 +6,7 @@ describe('3550. Smallest Index With Digit Sum Equal to Index', (): void => {
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('earliest match wins when several indices qualify', (): void => {
@@ -15,8 +14,7 @@ describe('3550. Smallest Index With Digit Sum Equal to Index', (): void => {
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('no index satisfies the condition', (): void => {
@@ -24,8 +22,7 @@ describe('3550. Smallest Index With Digit Sum Equal to Index', (): void => {
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(-1)
+        expect(result).toBe(-1)
     })
 
     it('zero at the first index has a digit sum of zero', (): void => {
@@ -33,8 +30,7 @@ describe('3550. Smallest Index With Digit Sum Equal to Index', (): void => {
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('single element that does not match', (): void => {
@@ -42,8 +38,7 @@ describe('3550. Smallest Index With Digit Sum Equal to Index', (): void => {
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(-1)
+        expect(result).toBe(-1)
     })
 
     it('multi digit value carrying the match', (): void => {
@@ -51,8 +46,7 @@ describe('3550. Smallest Index With Digit Sum Equal to Index', (): void => {
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('upper bound value whose digits sum to one', (): void => {
@@ -60,8 +54,7 @@ describe('3550. Smallest Index With Digit Sum Equal to Index', (): void => {
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('largest reachable digit sum at its matching index', (): void => {
@@ -70,18 +63,19 @@ describe('3550. Smallest Index With Digit Sum Equal to Index', (): void => {
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('match found only at the last index of a long array', (): void => {
-        const numbers: number[] = Array.from({ length: 100 }, (): number => 1000)
+        const numbers: number[] = Array.from(
+            { length: 100 },
+            (): number => 1000
+        )
         numbers[0] = 5
         numbers[99] = 7
 
         const result: number = smallestIndex(numbers)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 })

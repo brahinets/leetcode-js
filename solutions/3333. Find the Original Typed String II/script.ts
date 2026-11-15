@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {possibleStringCount}
+export { possibleStringCount }
 
 const mod: number = 10 ** 9 + 7
 
@@ -44,7 +44,11 @@ function getBaseCount(frequencies: number[], mod: number): number {
     return result
 }
 
-function getExcludedCount(frequencies: number[], k: number, mod: number): number {
+function getExcludedCount(
+    frequencies: number[],
+    k: number,
+    mod: number
+): number {
     let g: number[] = arrayOf(1, k)
 
     for (const frequency of frequencies) {

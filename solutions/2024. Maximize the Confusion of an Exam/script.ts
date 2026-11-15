@@ -1,13 +1,17 @@
-export {maxConsecutiveAnswers}
+export { maxConsecutiveAnswers }
 
 function maxConsecutiveAnswers(answerKey: string, k: number): number {
     return Math.max(
-        maxConsecutiveAnswersOf("T", answerKey, k),
-        maxConsecutiveAnswersOf("F", answerKey, k)
+        maxConsecutiveAnswersOf('T', answerKey, k),
+        maxConsecutiveAnswersOf('F', answerKey, k)
     )
 }
 
-function maxConsecutiveAnswersOf(key: string, answerKey: string, limit: number): number {
+function maxConsecutiveAnswersOf(
+    key: string,
+    answerKey: string,
+    limit: number
+): number {
     let maxCount: number = 0
     let start: number = 0
     let end: number = 0

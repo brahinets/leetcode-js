@@ -1,4 +1,4 @@
-export {equalSubstring}
+export { equalSubstring }
 
 function equalSubstring(s: string, t: string, maxCost: number): number {
     const costs: number[] = calculateCosts(s, t)

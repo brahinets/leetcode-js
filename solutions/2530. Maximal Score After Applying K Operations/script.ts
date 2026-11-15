@@ -1,4 +1,4 @@
-export {maxKelements}
+export { maxKelements }
 
 function maxKelements(nums: number[], k: number): number {
     let ans: number = 0
@@ -28,22 +28,6 @@ class MaxHeap {
         this.heap = []
     }
 
-    private parent(i: number): number {
-        return Math.floor((i - 1) / 2)
-    }
-
-    private leftChild(i: number): number {
-        return 2 * i + 1
-    }
-
-    private rightChild(i: number): number {
-        return 2 * i + 2
-    }
-
-    private swap(i: number, j: number): void {
-        [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]]
-    }
-
     add(value: number): void {
         this.heap.push(value)
         this.heapifyUp(this.heap.length - 1)
@@ -65,6 +49,22 @@ class MaxHeap {
         return max
     }
 
+    private parent(i: number): number {
+        return Math.floor((i - 1) / 2)
+    }
+
+    private leftChild(i: number): number {
+        return 2 * i + 1
+    }
+
+    private rightChild(i: number): number {
+        return 2 * i + 2
+    }
+
+    private swap(i: number, j: number): void {
+        ;[this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]]
+    }
+
     private heapifyUp(i: number): void {
         while (i > 0 && this.heap[i] > this.heap[this.parent(i)]) {
             this.swap(i, this.parent(i))
@@ -79,12 +79,18 @@ class MaxHeap {
 
         while (true) {
             const leftChild = this.leftChild(i)
-            if (leftChild < size && this.heap[leftChild] > this.heap[maxIndex]) {
+            if (
+                leftChild < size &&
+                this.heap[leftChild] > this.heap[maxIndex]
+            ) {
                 maxIndex = leftChild
             }
 
             const rightChild = this.rightChild(i)
-            if (rightChild < size && this.heap[rightChild] > this.heap[maxIndex]) {
+            if (
+                rightChild < size &&
+                this.heap[rightChild] > this.heap[maxIndex]
+            ) {
                 maxIndex = rightChild
             }
 

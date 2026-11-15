@@ -1,4 +1,4 @@
-import {setZeroes} from '../script'
+import { setZeroes } from '../script'
 
 describe('73. Set Matrix Zeroes', (): void => {
     it('One', (): void => {

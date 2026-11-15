@@ -1,4 +1,4 @@
-export {removeOccurrences}
+export { removeOccurrences }
 
 function removeOccurrences(s: string, part: string): string {
     let result: string = s

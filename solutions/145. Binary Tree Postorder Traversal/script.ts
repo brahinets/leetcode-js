@@ -1,6 +1,6 @@
-import {TreeNode} from '../../common/TreeNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {postorderTraversal, TreeNode}
+export { postorderTraversal, TreeNode }
 
 function postorderTraversal(root: TreeNode | null): number[] {
     const result: number[] = []

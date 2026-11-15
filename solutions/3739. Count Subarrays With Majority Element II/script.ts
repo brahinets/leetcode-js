@@ -29,7 +29,7 @@ function countMajoritySubarrays(numbers: number[], target: number): number {
 }
 
 function updateBit(bit: number[], index: number, size: number): void {
-    for (let i: number = index; i <= size; i += i & (-i)) {
+    for (let i: number = index; i <= size; i += i & -i) {
         bit[i]++
     }
 }
@@ -37,7 +37,7 @@ function updateBit(bit: number[], index: number, size: number): void {
 function queryBit(bit: number[], index: number): number {
     let sum: number = 0
 
-    for (let i: number = index; i > 0; i -= i & (-i)) {
+    for (let i: number = index; i > 0; i -= i & -i) {
         sum += bit[i]
     }
 

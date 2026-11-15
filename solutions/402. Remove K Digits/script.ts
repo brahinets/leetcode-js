@@ -1,11 +1,11 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {removeKdigits}
+export { removeKdigits }
 
 function removeKdigits(num: string, k: number): string {
     const digits: number[] = []
 
-    for (const char of num.split("")) {
+    for (const char of num.split('')) {
         const digit: number = Number(char)
 
         while (digits && digit < last(digits)! && k > 0) {
@@ -25,5 +25,5 @@ function removeKdigits(num: string, k: number): string {
         digits.shift()
     }
 
-    return digits.map((digit: number): string => String(digit)).join("") || "0"
+    return digits.map((digit: number): string => String(digit)).join('') || '0'
 }

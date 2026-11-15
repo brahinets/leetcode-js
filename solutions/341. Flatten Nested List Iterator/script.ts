@@ -1,4 +1,4 @@
-export {NestedIterator, NestedInteger}
+export { NestedIterator, NestedInteger }
 
 class NestedIterator {
     private readonly stack: number[] = []
@@ -9,7 +9,7 @@ class NestedIterator {
 
     initialise(nestedList: NestedInteger[]) {
         let n: NestedInteger | undefined
-        while (n = nestedList.pop()) {
+        while ((n = nestedList.pop())) {
             if (n.isInteger()) {
                 this.stack.push(n.getInteger())
             } else {

@@ -1,4 +1,4 @@
-export {mySqrt}
+export { mySqrt }
 
 function mySqrt(x: number): number {
     if (x < 2) {

@@ -1,4 +1,4 @@
-export {minNumberOperations}
+export { minNumberOperations }
 
 function minNumberOperations(target: number[]): number {
     let operations: number = target[0]

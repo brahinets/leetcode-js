@@ -1,8 +1,10 @@
-export {fourSum}
+export { fourSum }
 
 function fourSum(nums: number[], target: number): number[][] {
     const result: number[][] = []
-    const sortedNums: number[] = nums.sort((a: number, b: number): number => a - b)
+    const sortedNums: number[] = nums.sort(
+        (a: number, b: number): number => a - b
+    )
 
     for (let i: number = 0; i < sortedNums.length - 3; i++) {
         if (i > 0 && sortedNums[i] === sortedNums[i - 1]) {
@@ -21,7 +23,12 @@ function fourSum(nums: number[], target: number): number[][] {
     return result
 }
 
-function findTwoSum(nums: number[], i: number, j: number, target: number): number[][] {
+function findTwoSum(
+    nums: number[],
+    i: number,
+    j: number,
+    target: number
+): number[][] {
     let result: number[][] = []
     let left: number = j + 1
     let right: number = nums.length - 1
@@ -44,7 +51,12 @@ function findTwoSum(nums: number[], i: number, j: number, target: number): numbe
     return result
 }
 
-function skipDuplicates(nums: number[], left: number, right: number, isLeft: boolean): number {
+function skipDuplicates(
+    nums: number[],
+    left: number,
+    right: number,
+    isLeft: boolean
+): number {
     if (isLeft) {
         while (left < right && nums[left] === nums[left + 1]) {
             left++

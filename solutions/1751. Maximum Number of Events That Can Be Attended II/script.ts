@@ -1,9 +1,12 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {maxValue}
+export { maxValue }
 
 function maxValue(events: number[][], k: number): number {
-    events.sort((a: number[], b: number[]): number => a[1] - b[1] || a[0] - b[0] || b[2] - a[2])
+    events.sort(
+        (a: number[], b: number[]): number =>
+            a[1] - b[1] || a[0] - b[0] || b[2] - a[2]
+    )
 
     const dp: number[][] = matrixOfZeros(events.length + 1, k + 1)
     for (let i: number = 1; i <= events.length; i++) {

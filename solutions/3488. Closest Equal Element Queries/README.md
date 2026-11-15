@@ -4,7 +4,8 @@
 
 You are given a **circular** array `nums` and an array `queries`.
 
-For each query `queries[i]`, find the **minimum distance** between the element at index `queries[i]` and any other index `j` in the circular array where `nums[j] == nums[queries[i]]`.
+For each query `queries[i]`, find the **minimum distance** between the element at index `queries[i]` and any other index
+`j` in the circular array where `nums[j] == nums[queries[i]]`.
 
 If no such index exists, the answer for that query is `-1`.
 

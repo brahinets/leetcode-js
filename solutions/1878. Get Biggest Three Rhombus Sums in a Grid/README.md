@@ -4,9 +4,12 @@
 
 You are given an `m x n` integer matrix `grid`.
 
-A **rhombus sum** is the sum of the elements that form the **border** of a regular rhombus shape in `grid`. The rhombus must fit entirely inside the grid. For a rhombus of size 0, it is a single cell. For a rhombus of size `s > 0`, the border consists of `4s` cells along the four diagonal sides.
+A **rhombus sum** is the sum of the elements that form the **border** of a regular rhombus shape in `grid`. The rhombus
+must fit entirely inside the grid. For a rhombus of size 0, it is a single cell. For a rhombus of size `s > 0`, the
+border consists of `4s` cells along the four diagonal sides.
 
-Return the **biggest three distinct rhombus sums** in the grid in **descending order**. If there are fewer than three distinct values, return all of them.
+Return the **biggest three distinct rhombus sums** in the grid in **descending order**. If there are fewer than three
+distinct values, return all of them.
 
 ### Example 1:
 

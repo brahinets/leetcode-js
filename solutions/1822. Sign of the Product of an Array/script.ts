@@ -1,4 +1,4 @@
-export {arraySign}
+export { arraySign }
 
 function arraySign(nums: number[]): number {
     let positive: boolean = true

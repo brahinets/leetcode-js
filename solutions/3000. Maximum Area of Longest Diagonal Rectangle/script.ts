@@ -1,4 +1,4 @@
-export {areaOfMaxDiagonal}
+export { areaOfMaxDiagonal }
 
 function areaOfMaxDiagonal(dimensions: number[][]): number {
     let maxArea: number = 0

@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {imageSmoother}
+export { imageSmoother }
 
 function imageSmoother(img: number[][]): number[][] {
     const result: number[][] = matrixOf(0, img.length, img[0].length)

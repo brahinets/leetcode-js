@@ -1,4 +1,4 @@
-export {minOperations}
+export { minOperations }
 
 function minOperations(s: string): number {
     const changeZeros: number = minOperationsForChar(s, '0')

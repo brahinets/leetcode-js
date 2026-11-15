@@ -1,6 +1,6 @@
-import {DisjointSetUnion} from "../../common/DisjointSetUnion"
+import { DisjointSetUnion } from '../../common/DisjointSetUnion'
 
-export {findRedundantConnection}
+export { findRedundantConnection }
 
 function findRedundantConnection(edges: number[][]): number[] {
     const dsu: DisjointSetUnion = new DisjointSetUnion(edges.length + 1)

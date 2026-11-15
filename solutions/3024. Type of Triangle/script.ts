@@ -1,19 +1,21 @@
-export {triangleType}
+export { triangleType }
 
 function triangleType(nums: number[]): string {
-    const [a, b, c]: number[] = nums.sort((x: number, y: number): number => x - y)
+    const [a, b, c]: number[] = nums.sort(
+        (x: number, y: number): number => x - y
+    )
 
     if (a + b <= c) {
-        return "none"
+        return 'none'
     }
 
     if (a === b && b === c) {
-        return "equilateral"
+        return 'equilateral'
     }
 
     if (a === b || b === c) {
-        return "isosceles"
+        return 'isosceles'
     }
 
-    return "scalene"
+    return 'scalene'
 }

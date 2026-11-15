@@ -1,5 +1,5 @@
-export {isSymmetric, TreeNode}
-import {TreeNode} from '../../common/TreeNode'
+export { isSymmetric, TreeNode }
+import { TreeNode } from '../../common/TreeNode'
 
 const isSymmetric = (root: TreeNode | null): boolean => {
     if (!root) {
@@ -9,7 +9,10 @@ const isSymmetric = (root: TreeNode | null): boolean => {
     return isSymmetricNode(root.left, root.right)
 }
 
-const isSymmetricNode = (left: TreeNode | null, right: TreeNode | null): boolean => {
+const isSymmetricNode = (
+    left: TreeNode | null,
+    right: TreeNode | null
+): boolean => {
     if (!left && !right) {
         return true
     }
@@ -18,5 +21,8 @@ const isSymmetricNode = (left: TreeNode | null, right: TreeNode | null): boolean
         return false
     }
 
-    return isSymmetricNode(left.left, right.right) && isSymmetricNode(left.right, right.left)
+    return (
+        isSymmetricNode(left.left, right.right) &&
+        isSymmetricNode(left.right, right.left)
+    )
 }

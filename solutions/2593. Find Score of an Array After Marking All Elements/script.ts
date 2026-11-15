@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {findScore}
+export { findScore }
 
 function findScore(nums: number[]): number {
     const marked: boolean[] = arrayOf(false, nums.length)
@@ -34,7 +34,9 @@ function sortWithIndices(nums: number[]): [number, number][] {
         sorted.push([nums[i], i])
     }
 
-    sorted.sort((a: [number, number], b: [number, number]): number => a[0] - b[0])
+    sorted.sort(
+        (a: [number, number], b: [number, number]): number => a[0] - b[0]
+    )
 
     return sorted
 }

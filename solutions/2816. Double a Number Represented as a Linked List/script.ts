@@ -1,8 +1,8 @@
-import {ListNode} from "../../common/ListNode"
-import {linkedListToArray} from "../../common/list-utils"
-import {linkedListOf} from "../../common/list-factories"
+import { ListNode } from '../../common/ListNode'
+import { linkedListToArray } from '../../common/list-utils'
+import { linkedListOf } from '../../common/list-factories'
 
-export {doubleIt, ListNode}
+export { doubleIt, ListNode }
 
 function doubleIt(head: ListNode | null): ListNode | null {
     const digits: number[] = linkedListToArray(head)!

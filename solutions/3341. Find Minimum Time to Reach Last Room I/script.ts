@@ -1,8 +1,13 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {minTimeToReach}
+export { minTimeToReach }
 
-const directions: number[][] = [[-1, 0], [1, 0], [0, -1], [0, 1]]
+const directions: number[][] = [
+    [-1, 0],
+    [1, 0],
+    [0, -1],
+    [0, 1]
+]
 
 function minTimeToReach(moveTime: number[][]): number {
     const totalCells: number = moveTime.length * moveTime[0].length
@@ -47,7 +52,10 @@ function minTimeToReach(moveTime: number[][]): number {
         let minDistance: number = Infinity
         currentCell = -1
         for (let cellIndex: number = 0; cellIndex < totalCells; cellIndex++) {
-            if (distances[cellIndex] >= 0 && distances[cellIndex] < minDistance) {
+            if (
+                distances[cellIndex] >= 0 &&
+                distances[cellIndex] < minDistance
+            ) {
                 minDistance = distances[cellIndex]
                 currentCell = cellIndex
             }

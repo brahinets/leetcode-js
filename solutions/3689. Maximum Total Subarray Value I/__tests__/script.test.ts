@@ -1,4 +1,4 @@
-import {maxTotalValue} from '../script'
+import { maxTotalValue } from '../script'
 
 describe('3689. Maximum Total Subarray Value I', (): void => {
     it('maximizes total by reusing the best subarray across k picks', (): void => {

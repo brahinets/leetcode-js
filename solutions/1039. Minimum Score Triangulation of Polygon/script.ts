@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {minScoreTriangulation}
+export { minScoreTriangulation }
 
 function minScoreTriangulation(values: number[]): number {
     const length: number = values.length
@@ -15,11 +15,12 @@ function minScoreTriangulation(values: number[]): number {
             for (let mid: number = left + 1; mid < right; mid++) {
                 dp[left][right] = Math.min(
                     dp[left][right],
-                    dp[left][mid] + dp[mid][right] + values[left] * values[mid] * values[right],
+                    dp[left][mid] +
+                        dp[mid][right] +
+                        values[left] * values[mid] * values[right]
                 )
             }
         }
-
     }
 
     return dp[0][length - 1]

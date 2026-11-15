@@ -1,4 +1,4 @@
-export {kthCharacter}
+export { kthCharacter }
 
 function kthCharacter(k: number, operations: number[]): string {
     const lengths: number[] = prepareLengths(operations)
@@ -17,7 +17,7 @@ function kthCharacter(k: number, operations: number[]): string {
         }
     }
 
-    return String.fromCharCode(((increments % 26) + 'a'.charCodeAt(0)))
+    return String.fromCharCode((increments % 26) + 'a'.charCodeAt(0))
 }
 
 function prepareLengths(operations: number[]): number[] {

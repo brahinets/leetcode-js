@@ -1,10 +1,10 @@
-export {maximumLength}
+export { maximumLength }
 
 const patterns: number[][] = [
     [0, 0],
     [0, 1],
     [1, 0],
-    [1, 1],
+    [1, 1]
 ]
 
 function maximumLength(nums: number[]): number {

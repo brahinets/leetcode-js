@@ -6,8 +6,7 @@ describe('3644. Maximum K to Sort a Permutation', (): void => {
 
         const result: number = sortPermutation(numbers)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('misplaced elements sharing the second bit allow k of two', (): void => {
@@ -15,8 +14,7 @@ describe('3644. Maximum K to Sort a Permutation', (): void => {
 
         const result: number = sortPermutation(numbers)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('misplaced elements with no common bits allow only k of zero', (): void => {
@@ -24,8 +22,7 @@ describe('3644. Maximum K to Sort a Permutation', (): void => {
 
         const result: number = sortPermutation(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('already sorted array yields zero', (): void => {
@@ -33,8 +30,7 @@ describe('3644. Maximum K to Sort a Permutation', (): void => {
 
         const result: number = sortPermutation(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('single element array is already sorted', (): void => {
@@ -42,8 +38,7 @@ describe('3644. Maximum K to Sort a Permutation', (): void => {
 
         const result: number = sortPermutation(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('swapped pair containing zero allows only k of zero', (): void => {
@@ -51,8 +46,7 @@ describe('3644. Maximum K to Sort a Permutation', (): void => {
 
         const result: number = sortPermutation(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('misplaced elements sharing multiple bits allow their full common mask', (): void => {
@@ -60,8 +54,7 @@ describe('3644. Maximum K to Sort a Permutation', (): void => {
 
         const result: number = sortPermutation(numbers)
 
-        expect(result)
-            .toBe(6)
+        expect(result).toBe(6)
     })
 
     it('cycle of three misplaced elements uses their common bits', (): void => {
@@ -69,7 +62,6 @@ describe('3644. Maximum K to Sort a Permutation', (): void => {
 
         const result: number = sortPermutation(numbers)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 })

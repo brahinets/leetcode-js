@@ -1,4 +1,4 @@
-export {findNumbers}
+export { findNumbers }
 
 function findNumbers(nums: number[]): number {
     let count: number = 0

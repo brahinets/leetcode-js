@@ -1,15 +1,17 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {onesMinusZeros}
+export { onesMinusZeros }
 
 function onesMinusZeros(grid: number[][]): number[][] {
     const rows: number = grid.length
     const cols: number = grid[0].length
 
-    const onesInRow: number[] = arrayOfZeros(rows)
-        .map((_: number, i: number): number => valuesInRow(grid, i, 1))
-    const onesInColumn: number[] = arrayOfZeros(cols)
-        .map((_: number, i: number): number => valuesInColumn(grid, i, 1))
+    const onesInRow: number[] = arrayOfZeros(rows).map(
+        (_: number, i: number): number => valuesInRow(grid, i, 1)
+    )
+    const onesInColumn: number[] = arrayOfZeros(cols).map(
+        (_: number, i: number): number => valuesInColumn(grid, i, 1)
+    )
 
     const result: number[][] = []
     for (let i: number = 0; i < rows; i++) {
@@ -19,7 +21,8 @@ function onesMinusZeros(grid: number[][]): number[][] {
             const zerosInRow: number = cols - onesInRow[i]
             const zerosInColumn: number = rows - onesInColumn[j]
 
-            const diff: number = onesInRow[i] + onesInColumn[j] - zerosInRow - zerosInColumn
+            const diff: number =
+                onesInRow[i] + onesInColumn[j] - zerosInRow - zerosInColumn
             result[i].push(diff)
         }
     }
@@ -31,8 +34,12 @@ function valuesInRow(grid: number[][], row: number, value: number): number {
     return grid[row].filter((n: number): boolean => n === value).length
 }
 
-function valuesInColumn(grid: number[][], column: number, value: number): number {
-    return grid.map((row: number[]): number => row[column])
-        .filter((n: number): boolean => n === value)
-        .length
+function valuesInColumn(
+    grid: number[][],
+    column: number,
+    value: number
+): number {
+    return grid
+        .map((row: number[]): number => row[column])
+        .filter((n: number): boolean => n === value).length
 }

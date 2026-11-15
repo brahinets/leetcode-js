@@ -1,4 +1,4 @@
-export {resultsArray}
+export { resultsArray }
 
 function resultsArray(nums: number[], k: number): number[] {
     const result: number[] = []

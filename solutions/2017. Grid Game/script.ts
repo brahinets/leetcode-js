@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {gridGame}
+export { gridGame }
 
 function gridGame(grid: number[][]): number {
     let firstRowSum: number = sum(grid[0])

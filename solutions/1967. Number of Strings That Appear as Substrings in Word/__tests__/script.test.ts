@@ -1,4 +1,4 @@
-import {numOfStrings} from '../script'
+import { numOfStrings } from '../script'
 
 describe('1967. Number of Strings That Appear as Substrings in Word', (): void => {
     it('all patterns except one appear as substrings', (): void => {
@@ -7,8 +7,7 @@ describe('1967. Number of Strings That Appear as Substrings in Word', (): void =
 
         const result: number = numOfStrings(patterns, word)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('two out of three patterns appear as substrings', (): void => {
@@ -17,8 +16,7 @@ describe('1967. Number of Strings That Appear as Substrings in Word', (): void =
 
         const result: number = numOfStrings(patterns, word)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('duplicate patterns all counted when each appears in word', (): void => {
@@ -27,8 +25,7 @@ describe('1967. Number of Strings That Appear as Substrings in Word', (): void =
 
         const result: number = numOfStrings(patterns, word)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('no patterns appear as substrings', (): void => {
@@ -37,8 +34,7 @@ describe('1967. Number of Strings That Appear as Substrings in Word', (): void =
 
         const result: number = numOfStrings(patterns, word)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('pattern equal to whole word counts as substring', (): void => {
@@ -47,7 +43,6 @@ describe('1967. Number of Strings That Appear as Substrings in Word', (): void =
 
         const result: number = numOfStrings(patterns, word)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 })

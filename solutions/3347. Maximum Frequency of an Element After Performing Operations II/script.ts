@@ -1,4 +1,4 @@
-export {maxFrequency}
+export { maxFrequency }
 
 function maxFrequency(
     numbers: number[],
@@ -11,7 +11,11 @@ function maxFrequency(
     const valueFrequencyMap: Map<number, number> = new Map<number, number>()
     const candidateValues: Set<number> = new Set<number>()
 
-    for (let index: number = 0, start: number = 0; index <= numbers.length; index++) {
+    for (
+        let index: number = 0, start: number = 0;
+        index <= numbers.length;
+        index++
+    ) {
         if (index === numbers.length || numbers[index] !== numbers[start]) {
             const value: number = numbers[start]
             const frequency: number = index - start
@@ -20,7 +24,12 @@ function maxFrequency(
 
             maximumFrequency = Math.max(maximumFrequency, frequency)
 
-            const candidates: Set<number> = getCandidates(value, maxIncrementPerElement, numbers[0], numbers.at(-1)!)
+            const candidates: Set<number> = getCandidates(
+                value,
+                maxIncrementPerElement,
+                numbers[0],
+                numbers.at(-1)!
+            )
             for (const candidate of candidates) {
                 candidateValues.add(candidate)
             }
@@ -30,12 +39,21 @@ function maxFrequency(
     }
 
     for (const candidate of candidateValues) {
-        const left: number = lowerBound(numbers, candidate - maxIncrementPerElement)
-        const right: number = upperBound(numbers, candidate + maxIncrementPerElement)
+        const left: number = lowerBound(
+            numbers,
+            candidate - maxIncrementPerElement
+        )
+        const right: number = upperBound(
+            numbers,
+            candidate + maxIncrementPerElement
+        )
 
         let possibleFrequency: number
         if (valueFrequencyMap.has(candidate)) {
-            possibleFrequency = Math.min(right - left + 1, valueFrequencyMap.get(candidate)! + maxTotalOperations)
+            possibleFrequency = Math.min(
+                right - left + 1,
+                valueFrequencyMap.get(candidate)! + maxTotalOperations
+            )
         } else {
             possibleFrequency = Math.min(right - left + 1, maxTotalOperations)
         }
@@ -68,7 +86,8 @@ function getCandidates(
 }
 
 function lowerBound(array: number[], target: number): number {
-    let left: number = 0, right: number = array.length - 1
+    let left: number = 0,
+        right: number = array.length - 1
 
     while (left < right) {
         const mid: number = Math.floor((left + right) / 2)

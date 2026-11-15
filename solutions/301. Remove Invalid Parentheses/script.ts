@@ -44,18 +44,63 @@ function buildExpressions(
     const character: string = s[index]
 
     if (character === '(' && leftToRemove > 0) {
-        buildExpressions(s, index + 1, openCount, closeCount, leftToRemove - 1, rightToRemove, current, results)
+        buildExpressions(
+            s,
+            index + 1,
+            openCount,
+            closeCount,
+            leftToRemove - 1,
+            rightToRemove,
+            current,
+            results
+        )
     } else if (character === ')' && rightToRemove > 0) {
-        buildExpressions(s, index + 1, openCount, closeCount, leftToRemove, rightToRemove - 1, current, results)
+        buildExpressions(
+            s,
+            index + 1,
+            openCount,
+            closeCount,
+            leftToRemove,
+            rightToRemove - 1,
+            current,
+            results
+        )
     }
 
     if (character === '(') {
-        buildExpressions(s, index + 1, openCount + 1, closeCount, leftToRemove, rightToRemove, current + character, results)
+        buildExpressions(
+            s,
+            index + 1,
+            openCount + 1,
+            closeCount,
+            leftToRemove,
+            rightToRemove,
+            current + character,
+            results
+        )
     } else if (character === ')') {
         if (closeCount < openCount) {
-            buildExpressions(s, index + 1, openCount, closeCount + 1, leftToRemove, rightToRemove, current + character, results)
+            buildExpressions(
+                s,
+                index + 1,
+                openCount,
+                closeCount + 1,
+                leftToRemove,
+                rightToRemove,
+                current + character,
+                results
+            )
         }
     } else {
-        buildExpressions(s, index + 1, openCount, closeCount, leftToRemove, rightToRemove, current + character, results)
+        buildExpressions(
+            s,
+            index + 1,
+            openCount,
+            closeCount,
+            leftToRemove,
+            rightToRemove,
+            current + character,
+            results
+        )
     }
 }

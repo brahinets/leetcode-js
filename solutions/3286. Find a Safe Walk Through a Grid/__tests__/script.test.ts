@@ -1,4 +1,4 @@
-import {findSafeWalk} from '../script'
+import { findSafeWalk } from '../script'
 
 describe('3286. Find a Safe Walk Through a Grid', (): void => {
     it('safe path exists with minimum health', (): void => {
@@ -11,8 +11,7 @@ describe('3286. Find a Safe Walk Through a Grid', (): void => {
 
         const result: boolean = findSafeWalk(grid, health)
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('insufficient health for the safest available path', (): void => {
@@ -26,8 +25,7 @@ describe('3286. Find a Safe Walk Through a Grid', (): void => {
 
         const result: boolean = findSafeWalk(grid, health)
 
-        expect(result)
-            .toBe(false)
+        expect(result).toBe(false)
     })
 
     it('only one safe path through the center of a hazardous grid', (): void => {
@@ -40,8 +38,7 @@ describe('3286. Find a Safe Walk Through a Grid', (): void => {
 
         const result: boolean = findSafeWalk(grid, health)
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('unsafe starting cell reduces health before any move', (): void => {
@@ -53,8 +50,7 @@ describe('3286. Find a Safe Walk Through a Grid', (): void => {
 
         const result: boolean = findSafeWalk(grid, health)
 
-        expect(result)
-            .toBe(false)
+        expect(result).toBe(false)
     })
 
     it('single row grid with no unsafe cells', (): void => {
@@ -63,8 +59,7 @@ describe('3286. Find a Safe Walk Through a Grid', (): void => {
 
         const result: boolean = findSafeWalk(grid, health)
 
-        expect(result)
-            .toBe(true)
+        expect(result).toBe(true)
     })
 
     it('health reaches exactly zero at the destination', (): void => {
@@ -76,7 +71,6 @@ describe('3286. Find a Safe Walk Through a Grid', (): void => {
 
         const result: boolean = findSafeWalk(grid, health)
 
-        expect(result)
-            .toBe(false)
+        expect(result).toBe(false)
     })
 })

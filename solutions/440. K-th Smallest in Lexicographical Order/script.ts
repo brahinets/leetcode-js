@@ -1,4 +1,4 @@
-export {findKthNumber}
+export { findKthNumber }
 
 function findKthNumber(n: number, k: number): number {
     let current: number = 1
@@ -29,4 +29,3 @@ function calculateSteps(n: number, current: number, number: number): number {
 
     return steps
 }
-

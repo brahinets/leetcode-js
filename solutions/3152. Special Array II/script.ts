@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {isArraySpecial}
+export { isArraySpecial }
 
 function isArraySpecial(nums: number[], queries: number[][]): boolean[] {
     const maxReach: number[] = arrayOfZeros(nums.length)

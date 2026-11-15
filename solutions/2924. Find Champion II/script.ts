@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {findChampion}
+export { findChampion }
 
 function findChampion(n: number, edges: number[][]): number {
     const inDegree: number[] = arrayOfZeros(n)

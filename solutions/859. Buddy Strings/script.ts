@@ -1,7 +1,7 @@
-export {buddyStrings}
+export { buddyStrings }
 
 function buddyStrings(s: string, goal: string): boolean {
-    if(s.length !== goal.length) {
+    if (s.length !== goal.length) {
         return false
     }
 
@@ -14,18 +14,22 @@ function buddyStrings(s: string, goal: string): boolean {
     }
 
     if (nonEqualIndex.length === 2) {
-        return s[nonEqualIndex[0]] === goal[nonEqualIndex[1]] && s[nonEqualIndex[1]] === goal[nonEqualIndex[0]]
+        return (
+            s[nonEqualIndex[0]] === goal[nonEqualIndex[1]] &&
+            s[nonEqualIndex[1]] === goal[nonEqualIndex[0]]
+        )
     }
 
     if (nonEqualIndex.length === 0) {
-        const counts:Map<string, number> = s.split('')
+        const counts: Map<string, number> = s
+            .split('')
             .reduce((count: Map<string, number>, char: string) => {
                 count.set(char, (count.get(char) || 0) + 1)
                 return count
             }, new Map<string, number>())
 
-        for(const c of counts) {
-            if(c[1] > 1) {
+        for (const c of counts) {
+            if (c[1] > 1) {
                 return true
             }
         }

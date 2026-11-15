@@ -1,4 +1,4 @@
-export {queryResults}
+export { queryResults }
 
 function queryResults(_limit: number, queries: number[][]): number[] {
     let result = []

@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {FindElements}
+export { FindElements }
 
 class FindElements {
     private readonly seen: Set<number>

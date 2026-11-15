@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maxProfit}
+export { maxProfit }
 
 function maxProfit(prices: number[]): number {
     const leftProfits: number[] = arrayOfZeros(prices.length)
@@ -20,7 +20,10 @@ function maxProfit(prices: number[]): number {
 
     let maxTotalProfit: number = 0
     for (let i: number = 0; i < prices.length; i++) {
-        maxTotalProfit = Math.max(maxTotalProfit, leftProfits[i] + rightProfits[i])
+        maxTotalProfit = Math.max(
+            maxTotalProfit,
+            leftProfits[i] + rightProfits[i]
+        )
     }
 
     return maxTotalProfit

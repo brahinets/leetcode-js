@@ -1,4 +1,4 @@
-export {prefixesDivBy5}
+export { prefixesDivBy5 }
 
 function prefixesDivBy5(nums: number[]): boolean[] {
     const result: boolean[] = []

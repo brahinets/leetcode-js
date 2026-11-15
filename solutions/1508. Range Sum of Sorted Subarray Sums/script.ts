@@ -1,8 +1,13 @@
-export {rangeSum}
+export { rangeSum }
 
 const mod: number = 1e9 + 7
 
-function rangeSum(nums: number[], n: number, left: number, right: number): number {
+function rangeSum(
+    nums: number[],
+    n: number,
+    left: number,
+    right: number
+): number {
     const subarraySums: number[] = generateSubarraySums(n, nums)
 
     return subarraySums

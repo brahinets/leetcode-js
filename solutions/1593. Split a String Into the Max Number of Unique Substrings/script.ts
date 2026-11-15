@@ -1,4 +1,4 @@
-export {maxUniqueSplit}
+export { maxUniqueSplit }
 
 function maxUniqueSplit(s: string): number {
     const seen: Set<string> = new Set<string>()
@@ -6,7 +6,12 @@ function maxUniqueSplit(s: string): number {
     return dfs(s, 0, seen, 0)
 }
 
-function dfs(s: string, start: number, seen: Set<string>, result: number): number {
+function dfs(
+    s: string,
+    start: number,
+    seen: Set<string>,
+    result: number
+): number {
     if (start === s.length) {
         result = Math.max(result, seen.size)
 

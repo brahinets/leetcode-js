@@ -9,7 +9,8 @@ You are given a binary string `s`. You are allowed to perform two types of opera
 
 Return the **minimum** number of type-2 operations you need to perform such that `s` becomes **alternating**.
 
-The string is called alternating if no two adjacent characters are equal. For example, the strings `"010"` and `"1010"` are alternating, while the string `"0100"` is not.
+The string is called alternating if no two adjacent characters are equal. For example, the strings `"010"` and `"1010"`
+are alternating, while the string `"0100"` is not.
 
 ### Constraints:
 

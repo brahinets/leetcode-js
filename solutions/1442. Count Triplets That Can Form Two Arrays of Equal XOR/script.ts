@@ -1,4 +1,4 @@
-export {countTriplets}
+export { countTriplets }
 
 function countTriplets(arr: number[]): number {
     let count: number = 0
@@ -13,8 +13,7 @@ function countTriplets(arr: number[]): number {
             for (let k = j; k < arr.length; k++) {
                 xorEnd ^= arr[k]
 
-                if (xorStart === xorEnd)
-                    count++
+                if (xorStart === xorEnd) count++
             }
         }
     }

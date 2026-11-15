@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {getSumAbsoluteDifferences}
+export { getSumAbsoluteDifferences }
 
 function getSumAbsoluteDifferences(nums: number[]): number[] {
     const totalSum: number = sum(nums)

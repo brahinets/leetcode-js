@@ -4,6 +4,7 @@
 
 You have `n` boxes labeled from `0` to `n - 1`. You are given four arrays: `status`, `candies`, `keys`, and
 `containedBoxes` where:
+
 - `status[i]` is `1` if the `i`th box is open and `0` if the `i`th box is closed,
 - `candies[i]` is the number of candies in the `i`th box,
 - `keys[i]` is a list of the labels of the boxes you can open after opening the `i`th box,

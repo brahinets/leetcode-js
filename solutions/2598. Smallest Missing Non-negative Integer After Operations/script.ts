@@ -1,4 +1,4 @@
-export {findSmallestInteger}
+export { findSmallestInteger }
 
 function findSmallestInteger(nums: number[], value: number): number {
     const modCount: Map<number, number> = new Map<number, number>()

@@ -1,4 +1,4 @@
-export {smallestRange}
+export { smallestRange }
 
 function smallestRange(nums: number[][]): number[] {
     const events: [number, number, number][] = collectEvents(nums)
@@ -11,7 +11,7 @@ function smallestRange(nums: number[][]): number[] {
     let minRangeRight: number = 0
 
     while (right < events.length) {
-        const [num, list,]: [number, number, number] = events[right]
+        const [num, list]: [number, number, number] = events[right]
 
         listCountMap.set(list, (listCountMap.get(list) || 0) + 1)
 
@@ -22,7 +22,10 @@ function smallestRange(nums: number[][]): number[] {
                 minRangeRight = num
             }
 
-            listCountMap.set(events[left][1], listCountMap.get(events[left][1])! - 1)
+            listCountMap.set(
+                events[left][1],
+                listCountMap.get(events[left][1])! - 1
+            )
             if (listCountMap.get(events[left][1]) === 0) {
                 listCountMap.delete(events[left][1])
             }
@@ -44,13 +47,18 @@ function collectEvents(nums: number[][]) {
         }
     }
 
-    events.sort(([aNum, aList,]: [number, number, number], [bNum, bList,]: [number, number, number]): number => {
-        if (aNum === bNum) {
-            return aList - bList
-        } else {
-            return aNum - bNum
+    events.sort(
+        (
+            [aNum, aList]: [number, number, number],
+            [bNum, bList]: [number, number, number]
+        ): number => {
+            if (aNum === bNum) {
+                return aList - bList
+            } else {
+                return aNum - bNum
+            }
         }
-    })
+    )
 
     return events
 }

@@ -2,14 +2,14 @@
 
 ## Medium
 
-You have been tasked with writing a program for a popular bank that will automate all its incoming transactions (
-transfer, deposit, and withdraw). The bank has `n` accounts numbered from `1` to `n`. The initial balance of each
+You have been tasked with writing a program for a popular bank that will automate all its incoming transactions
+(transfer, deposit, and withdraw). The bank has `n` accounts numbered from `1` to `n`. The initial balance of each
 account is stored in a 0-indexed integer array `balance`, with the `(i + 1)th` account having an initial balance of
 `balance[i]`.
 
 Execute all the valid transactions. A transaction is valid if:
 
-The given account number(s) are between `1` and `n`, and
+The given account number (s) are between `1` and `n`, and
 The amount of money withdrawn or transferred from is less than or equal to the balance of the account.
 
 Implement the `Bank` class:

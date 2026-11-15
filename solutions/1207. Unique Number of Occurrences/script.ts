@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {uniqueOccurrences}
+export { uniqueOccurrences }
 
 function uniqueOccurrences(arr: number[]): boolean {
     const counts: Map<number, number> = count(arr)

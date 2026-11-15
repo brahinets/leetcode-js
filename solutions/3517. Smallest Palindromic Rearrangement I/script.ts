@@ -1,6 +1,6 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {smallestPalindrome}
+export { smallestPalindrome }
 
 function smallestPalindrome(s: string): string {
     const characterCounts: number[] = countCharacters(s)
@@ -27,7 +27,9 @@ function buildHalf(characterCounts: number[]): string {
 
     for (let index: number = 0; index < characterCounts.length; index++) {
         const halfCount: number = Math.floor(characterCounts[index] / 2)
-        half += String.fromCharCode(characterCodeOfLetterA + index).repeat(halfCount)
+        half += String.fromCharCode(characterCodeOfLetterA + index).repeat(
+            halfCount
+        )
     }
 
     return half

@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {FindSumPairs}
+export { FindSumPairs }
 
 class FindSumPairs {
     private readonly nums1: number[]

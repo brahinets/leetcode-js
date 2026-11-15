@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {isBalanced, TreeNode}
+export { isBalanced, TreeNode }
 
 function isBalanced(root: TreeNode | null): boolean {
     if (root === null) {
@@ -11,7 +11,11 @@ function isBalanced(root: TreeNode | null): boolean {
     const right: number = depth(root.right)
     const diff: number = Math.abs(left - right)
 
-    return (diff === 1 || diff === 0) && isBalanced(root.left) && isBalanced(root.right)
+    return (
+        (diff === 1 || diff === 0) &&
+        isBalanced(root.left) &&
+        isBalanced(root.right)
+    )
 }
 
 function depth(node: TreeNode | null): number {

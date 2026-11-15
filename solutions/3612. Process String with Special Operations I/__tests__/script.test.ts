@@ -6,8 +6,7 @@ describe('3612. Process String with Special Operations I', (): void => {
 
         const result: string = processStr(input)
 
-        expect(result)
-            .toBe('ba')
+        expect(result).toBe('ba')
     })
 
     it('removes single character then duplicates empty string', (): void => {
@@ -15,8 +14,7 @@ describe('3612. Process String with Special Operations I', (): void => {
 
         const result: string = processStr(input)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 
     it('single lowercase letter', (): void => {
@@ -24,8 +22,7 @@ describe('3612. Process String with Special Operations I', (): void => {
 
         const result: string = processStr(input)
 
-        expect(result)
-            .toBe('a')
+        expect(result).toBe('a')
     })
 
     it('remove on empty string is a no-op', (): void => {
@@ -33,8 +30,7 @@ describe('3612. Process String with Special Operations I', (): void => {
 
         const result: string = processStr(input)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 
     it('reverse of empty string is empty', (): void => {
@@ -42,8 +38,7 @@ describe('3612. Process String with Special Operations I', (): void => {
 
         const result: string = processStr(input)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 
     it('duplicate grows string correctly', (): void => {
@@ -51,8 +46,7 @@ describe('3612. Process String with Special Operations I', (): void => {
 
         const result: string = processStr(input)
 
-        expect(result)
-            .toBe('abab')
+        expect(result).toBe('abab')
     })
 
     it('multiple special operations chained', (): void => {
@@ -60,8 +54,7 @@ describe('3612. Process String with Special Operations I', (): void => {
 
         const result: string = processStr(input)
 
-        expect(result)
-            .toBe('cbacb')
+        expect(result).toBe('cbacb')
     })
 
     it('all removes on single characters leaves empty string', (): void => {
@@ -69,7 +62,6 @@ describe('3612. Process String with Special Operations I', (): void => {
 
         const result: string = processStr(input)
 
-        expect(result)
-            .toBe('')
+        expect(result).toBe('')
     })
 })

@@ -1,4 +1,4 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
 export { canPartitionGrid }
 
@@ -14,7 +14,11 @@ function canPartitionGrid(grid: number[][]): boolean {
     return checkVerticalCuts(grid, rows, columns, total)
 }
 
-function computeTotalSum(grid: number[][], rows: number, columns: number): number {
+function computeTotalSum(
+    grid: number[][],
+    rows: number,
+    columns: number
+): number {
     let total: number = 0
 
     for (let row: number = 0; row < rows; row++) {
@@ -30,15 +34,28 @@ function checkHorizontalCuts(
     grid: number[][],
     rows: number,
     columns: number,
-    total: number,
+    total: number
 ): boolean {
     const sectionDifferences: number[] = arrayOfZeros(rows - 1)
 
-    if (checkHorizontalTopSections(grid, rows, columns, total, sectionDifferences)) {
+    if (
+        checkHorizontalTopSections(
+            grid,
+            rows,
+            columns,
+            total,
+            sectionDifferences
+        )
+    ) {
         return true
     }
 
-    return checkHorizontalBottomSections(grid, rows, columns, sectionDifferences)
+    return checkHorizontalBottomSections(
+        grid,
+        rows,
+        columns,
+        sectionDifferences
+    )
 }
 
 function checkHorizontalTopSections(
@@ -46,7 +63,7 @@ function checkHorizontalTopSections(
     rows: number,
     columns: number,
     total: number,
-    sectionDifferences: number[],
+    sectionDifferences: number[]
 ): boolean {
     const topValues: Set<number> = new Set<number>()
     let prefixRowSum: number = 0
@@ -65,7 +82,16 @@ function checkHorizontalTopSections(
             return true
         }
 
-        if (difference > 0 && isDiscountableFromTopSection(grid, columns, rowIndex, difference, topValues)) {
+        if (
+            difference > 0 &&
+            isDiscountableFromTopSection(
+                grid,
+                columns,
+                rowIndex,
+                difference,
+                topValues
+            )
+        ) {
             return true
         }
     }
@@ -78,14 +104,21 @@ function isDiscountableFromTopSection(
     columns: number,
     rowIndex: number,
     discountValue: number,
-    sectionValues: Set<number>,
+    sectionValues: Set<number>
 ): boolean {
     if (columns === 1) {
-        return rowIndex >= 1 && (grid[0][0] === discountValue || grid[rowIndex][0] === discountValue)
+        return (
+            rowIndex >= 1 &&
+            (grid[0][0] === discountValue ||
+                grid[rowIndex][0] === discountValue)
+        )
     }
 
     if (rowIndex === 0) {
-        return grid[0][0] === discountValue || grid[0][columns - 1] === discountValue
+        return (
+            grid[0][0] === discountValue ||
+            grid[0][columns - 1] === discountValue
+        )
     }
 
     return sectionValues.has(discountValue)
@@ -95,7 +128,7 @@ function checkHorizontalBottomSections(
     grid: number[][],
     rows: number,
     columns: number,
-    sectionDifferences: number[],
+    sectionDifferences: number[]
 ): boolean {
     const bottomValues: Set<number> = new Set<number>()
 
@@ -108,7 +141,16 @@ function checkHorizontalBottomSections(
         if (difference < 0) {
             const discountValue: number = -difference
 
-            if (isDiscountableFromBottomSection(grid, rows, columns, rowIndex, discountValue, bottomValues)) {
+            if (
+                isDiscountableFromBottomSection(
+                    grid,
+                    rows,
+                    columns,
+                    rowIndex,
+                    discountValue,
+                    bottomValues
+                )
+            ) {
                 return true
             }
         }
@@ -123,14 +165,21 @@ function isDiscountableFromBottomSection(
     columns: number,
     rowIndex: number,
     discountValue: number,
-    sectionValues: Set<number>,
+    sectionValues: Set<number>
 ): boolean {
     if (columns === 1) {
-        return rowIndex <= rows - 3 && (grid[rowIndex + 1][0] === discountValue || grid[rows - 1][0] === discountValue)
+        return (
+            rowIndex <= rows - 3 &&
+            (grid[rowIndex + 1][0] === discountValue ||
+                grid[rows - 1][0] === discountValue)
+        )
     }
 
     if (rowIndex === rows - 2) {
-        return grid[rows - 1][0] === discountValue || grid[rows - 1][columns - 1] === discountValue
+        return (
+            grid[rows - 1][0] === discountValue ||
+            grid[rows - 1][columns - 1] === discountValue
+        )
     }
 
     return sectionValues.has(discountValue)
@@ -140,11 +189,19 @@ function checkVerticalCuts(
     grid: number[][],
     rows: number,
     columns: number,
-    total: number,
+    total: number
 ): boolean {
     const sectionDifferences: number[] = arrayOfZeros(columns - 1)
 
-    if (checkVerticalLeftSections(grid, rows, columns, total, sectionDifferences)) {
+    if (
+        checkVerticalLeftSections(
+            grid,
+            rows,
+            columns,
+            total,
+            sectionDifferences
+        )
+    ) {
         return true
     }
 
@@ -156,13 +213,17 @@ function checkVerticalLeftSections(
     rows: number,
     columns: number,
     total: number,
-    sectionDifferences: number[],
+    sectionDifferences: number[]
 ): boolean {
     const leftValues: Set<number> = new Set<number>()
 
     let prefixColumnSum: number = 0
 
-    for (let columnIndex: number = 0; columnIndex < columns - 1; columnIndex++) {
+    for (
+        let columnIndex: number = 0;
+        columnIndex < columns - 1;
+        columnIndex++
+    ) {
         for (let row: number = 0; row < rows; row++) {
             leftValues.add(grid[row][columnIndex])
 
@@ -175,7 +236,16 @@ function checkVerticalLeftSections(
             return true
         }
 
-        if (difference > 0 && isDiscountableFromLeftSection(grid, rows, columnIndex, difference, leftValues)) {
+        if (
+            difference > 0 &&
+            isDiscountableFromLeftSection(
+                grid,
+                rows,
+                columnIndex,
+                difference,
+                leftValues
+            )
+        ) {
             return true
         }
     }
@@ -188,14 +258,20 @@ function isDiscountableFromLeftSection(
     rows: number,
     columnIndex: number,
     discountValue: number,
-    sectionValues: Set<number>,
+    sectionValues: Set<number>
 ): boolean {
     if (rows === 1) {
-        return columnIndex >= 1 && (grid[0][0] === discountValue || grid[0][columnIndex] === discountValue)
+        return (
+            columnIndex >= 1 &&
+            (grid[0][0] === discountValue ||
+                grid[0][columnIndex] === discountValue)
+        )
     }
 
     if (columnIndex === 0) {
-        return grid[0][0] === discountValue || grid[rows - 1][0] === discountValue
+        return (
+            grid[0][0] === discountValue || grid[rows - 1][0] === discountValue
+        )
     }
 
     return sectionValues.has(discountValue)
@@ -205,11 +281,15 @@ function checkVerticalRightSections(
     grid: number[][],
     rows: number,
     columns: number,
-    sectionDifferences: number[],
+    sectionDifferences: number[]
 ): boolean {
     const rightValues: Set<number> = new Set<number>()
 
-    for (let columnIndex: number = columns - 2; columnIndex >= 0; columnIndex--) {
+    for (
+        let columnIndex: number = columns - 2;
+        columnIndex >= 0;
+        columnIndex--
+    ) {
         for (let row: number = 0; row < rows; row++) {
             rightValues.add(grid[row][columnIndex + 1])
         }
@@ -219,7 +299,16 @@ function checkVerticalRightSections(
         if (difference < 0) {
             const discountValue: number = -difference
 
-            if (isDiscountableFromRightSection(grid, rows, columns, columnIndex, discountValue, rightValues)) {
+            if (
+                isDiscountableFromRightSection(
+                    grid,
+                    rows,
+                    columns,
+                    columnIndex,
+                    discountValue,
+                    rightValues
+                )
+            ) {
                 return true
             }
         }
@@ -234,14 +323,21 @@ function isDiscountableFromRightSection(
     columns: number,
     columnIndex: number,
     discountValue: number,
-    sectionValues: Set<number>,
+    sectionValues: Set<number>
 ): boolean {
     if (rows === 1) {
-        return columnIndex <= columns - 3 && (grid[0][columnIndex + 1] === discountValue || grid[0][columns - 1] === discountValue)
+        return (
+            columnIndex <= columns - 3 &&
+            (grid[0][columnIndex + 1] === discountValue ||
+                grid[0][columns - 1] === discountValue)
+        )
     }
 
     if (columnIndex === columns - 2) {
-        return grid[0][columns - 1] === discountValue || grid[rows - 1][columns - 1] === discountValue
+        return (
+            grid[0][columns - 1] === discountValue ||
+            grid[rows - 1][columns - 1] === discountValue
+        )
     }
 
     return sectionValues.has(discountValue)

@@ -1,14 +1,10 @@
-export {Bank}
+export { Bank }
 
 class Bank {
     private readonly balances: number[]
 
     constructor(initialBalances: number[]) {
         this.balances = initialBalances
-    }
-
-    private isValid(account: number): boolean {
-        return account >= 1 && account <= this.balances.length
     }
 
     transfer(account1: number, account2: number, money: number): boolean {
@@ -52,5 +48,9 @@ class Bank {
         this.balances[idx] -= money
 
         return true
+    }
+
+    private isValid(account: number): boolean {
+        return account >= 1 && account <= this.balances.length
     }
 }

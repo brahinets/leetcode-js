@@ -1,6 +1,12 @@
-export {isReachableAtTime}
+export { isReachableAtTime }
 
-function isReachableAtTime(sx: number, sy: number, fx: number, fy: number, t: number): boolean {
+function isReachableAtTime(
+    sx: number,
+    sy: number,
+    fx: number,
+    fy: number,
+    t: number
+): boolean {
     const deltaX: number = Math.abs(sx - fx)
     const deltaY: number = Math.abs(sy - fy)
 

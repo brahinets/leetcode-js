@@ -1,4 +1,4 @@
-export {possibleStringCount}
+export { possibleStringCount }
 
 function possibleStringCount(word: string): number {
     let count: number = 1

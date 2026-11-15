@@ -1,7 +1,7 @@
-export {deleteDuplicateFolder}
+export { deleteDuplicateFolder }
 
 class Trie {
-    serial: string = ""
+    serial: string = ''
     children: Map<string, Trie> = new Map<string, Trie>()
 }
 
@@ -41,7 +41,7 @@ function serializeTrie(node: Trie, serialCount: Map<string, number>): void {
     }
 
     childSerials.sort()
-    node.serial = childSerials.join("")
+    node.serial = childSerials.join('')
     serialCount.set(node.serial, (serialCount.get(node.serial) || 0) + 1)
 }
 

@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {findMaxForm}
+export { findMaxForm }
 
 function findMaxForm(strs: string[], m: number, n: number): number {
     const dp: number[][] = matrixOfZeros(m + 1, n + 1)

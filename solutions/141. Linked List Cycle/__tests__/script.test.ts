@@ -1,10 +1,9 @@
-import {hasCycle, ListNode} from '../script'
-import {linkedListOf} from "../../../common/list-factories"
+import { hasCycle, ListNode } from '../script'
+import { linkedListOf } from '../../../common/list-factories'
 
 describe('141. Linked List Cycle', (): void => {
     it('Does not cycle', (): void => {
-        expect(hasCycle(linkedListOf(1)))
-            .toBe(false)
+        expect(hasCycle(linkedListOf(1))).toBe(false)
     })
 
     it('Cycles with start', (): void => {
@@ -13,8 +12,7 @@ describe('141. Linked List Cycle', (): void => {
         node0.next = node1
         node1.next = node0
 
-        expect(hasCycle(node0))
-            .toBe(true)
+        expect(hasCycle(node0)).toBe(true)
     })
 
     it('Cycles with non start', (): void => {
@@ -27,7 +25,6 @@ describe('141. Linked List Cycle', (): void => {
         node2.next = node3
         node3.next = node1
 
-        expect(hasCycle(node0))
-            .toBe(true)
+        expect(hasCycle(node0)).toBe(true)
     })
 })

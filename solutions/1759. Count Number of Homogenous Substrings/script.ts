@@ -1,4 +1,4 @@
-export {countHomogenous}
+export { countHomogenous }
 
 const MOD: number = 1e9 + 7
 

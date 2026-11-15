@@ -1,4 +1,4 @@
-export {checkSubarraySum}
+export { checkSubarraySum }
 
 const MIN_GOOD_LENGTH: number = 2
 

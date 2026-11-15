@@ -1,9 +1,9 @@
-export {zeroFilledSubarray}
+export { zeroFilledSubarray }
 
 function countSubArrays(zeroSubArrayLength: number): number {
     let count: number = 0
 
-    for (let step:number = 1; step <= zeroSubArrayLength; step++) {
+    for (let step: number = 1; step <= zeroSubArrayLength; step++) {
         count += zeroSubArrayLength - (step - 1)
     }
 

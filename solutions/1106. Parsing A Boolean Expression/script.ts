@@ -1,4 +1,4 @@
-export {parseBoolExpr}
+export { parseBoolExpr }
 
 function parseBoolExpr(expression: string): boolean {
     const stack: string[] = []
@@ -19,9 +19,13 @@ function parseBoolExpr(expression: string): boolean {
 
             const operator: string = stack.pop()!
             if (operator === '&') {
-                stack.push(seen.every((s: string): boolean => s === 't') ? 't' : 'f')
+                stack.push(
+                    seen.every((s: string): boolean => s === 't') ? 't' : 'f'
+                )
             } else if (operator === '|') {
-                stack.push(seen.some((s: string): boolean => s === 't') ? 't' : 'f')
+                stack.push(
+                    seen.some((s: string): boolean => s === 't') ? 't' : 'f'
+                )
             } else if (operator === '!') {
                 stack.push(seen[0] === 't' ? 'f' : 't')
             }

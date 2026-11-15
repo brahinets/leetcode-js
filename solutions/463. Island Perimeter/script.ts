@@ -1,4 +1,4 @@
-export {islandPerimeter}
+export { islandPerimeter }
 
 function islandPerimeter(grid: number[][]): number {
     let islands: number = 0

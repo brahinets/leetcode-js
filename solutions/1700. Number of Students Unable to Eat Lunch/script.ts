@@ -1,4 +1,4 @@
-export {countStudents}
+export { countStudents }
 
 function countStudents(students: number[], sandwiches: number[]): number {
     let feed: boolean

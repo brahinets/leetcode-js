@@ -7,8 +7,7 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 0, 0)
 
-        expect(result)
-            .toBe(579)
+        expect(result).toBe(579)
     })
 
     it('modifications split between both arrays', (): void => {
@@ -17,8 +16,7 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 1, 1)
 
-        expect(result)
-            .toBe(43)
+        expect(result).toBe(43)
     })
 
     it('modifications are enough to zero every difference', (): void => {
@@ -27,8 +25,7 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 10, 10)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('identical arrays', (): void => {
@@ -37,8 +34,7 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 5, 5)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('single element with partial reduction', (): void => {
@@ -47,8 +43,7 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 3, 0)
 
-        expect(result)
-            .toBe(49)
+        expect(result).toBe(49)
     })
 
     it('modification spread across equal differences', (): void => {
@@ -57,8 +52,7 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 1, 0)
 
-        expect(result)
-            .toBe(41)
+        expect(result).toBe(41)
     })
 
     it('largest difference leveled down to the next one before spreading', (): void => {
@@ -67,8 +61,7 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 0, 4)
 
-        expect(result)
-            .toBe(8)
+        expect(result).toBe(8)
     })
 
     it('negative differences are treated as absolute values', (): void => {
@@ -77,8 +70,7 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 2, 0)
 
-        expect(result)
-            .toBe(8)
+        expect(result).toBe(8)
     })
 
     it('large values stay within safe integer range', (): void => {
@@ -87,7 +79,6 @@ describe('2333. Minimum Sum of Squared Difference', (): void => {
 
         const result: number = minSumSquareDiff(nums1, nums2, 0, 0)
 
-        expect(result)
-            .toBe(1000000000000000)
+        expect(result).toBe(1000000000000000)
     })
 })

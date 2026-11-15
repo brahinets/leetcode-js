@@ -1,6 +1,6 @@
-import {TreeNode} from '../../common/TreeNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {zigzagLevelOrder, TreeNode}
+export { zigzagLevelOrder, TreeNode }
 
 const zigzagLevelOrder = function (root: TreeNode | null): number[][] {
     const result: number[][] = []
@@ -10,7 +10,11 @@ const zigzagLevelOrder = function (root: TreeNode | null): number[][] {
     return result
 }
 
-const collect = function (node: TreeNode | null, level: number, result: number[][]): void {
+const collect = function (
+    node: TreeNode | null,
+    level: number,
+    result: number[][]
+): void {
     if (!node) {
         return
     }

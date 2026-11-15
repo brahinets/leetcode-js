@@ -1,6 +1,6 @@
-import {arrayOf} from '../../common/array-factories'
+import { arrayOf } from '../../common/array-factories'
 
-export {getResults}
+export { getResults }
 
 const MAX_POSITION: number = 50001
 const EMPTY: number = -1
@@ -14,12 +14,17 @@ interface SegmentTreeNode {
 function merge(left: SegmentTreeNode, right: SegmentTreeNode): SegmentTreeNode {
     const result: SegmentTreeNode = {
         maxGap: Math.max(left.maxGap, right.maxGap),
-        leftActive: left.leftActive !== EMPTY ? left.leftActive : right.leftActive,
-        rightActive: right.rightActive !== EMPTY ? right.rightActive : left.rightActive,
+        leftActive:
+            left.leftActive !== EMPTY ? left.leftActive : right.leftActive,
+        rightActive:
+            right.rightActive !== EMPTY ? right.rightActive : left.rightActive
     }
 
     if (left.rightActive !== EMPTY && right.leftActive !== EMPTY) {
-        result.maxGap = Math.max(result.maxGap, right.leftActive - left.rightActive)
+        result.maxGap = Math.max(
+            result.maxGap,
+            right.leftActive - left.rightActive
+        )
     }
 
     return result
@@ -31,12 +36,19 @@ class SegmentTree {
 
     constructor(size: number) {
         this.size = size
-        this.tree = arrayOf<SegmentTreeNode>({maxGap: 0, leftActive: EMPTY, rightActive: EMPTY}, 4 * size)
+        this.tree = arrayOf<SegmentTreeNode>(
+            { maxGap: 0, leftActive: EMPTY, rightActive: EMPTY },
+            4 * size
+        )
     }
 
     insert(node: number, start: number, end: number, position: number): void {
         if (start === end) {
-            this.tree[node] = {maxGap: 0, leftActive: position, rightActive: position}
+            this.tree[node] = {
+                maxGap: 0,
+                leftActive: position,
+                rightActive: position
+            }
             return
         }
 
@@ -51,7 +63,13 @@ class SegmentTree {
         this.tree[node] = merge(this.tree[2 * node], this.tree[2 * node + 1])
     }
 
-    query(node: number, start: number, end: number, left: number, right: number): SegmentTreeNode {
+    query(
+        node: number,
+        start: number,
+        end: number,
+        left: number,
+        right: number
+    ): SegmentTreeNode {
         if (left <= start && end <= right) {
             return this.tree[node]
         }
@@ -66,8 +84,20 @@ class SegmentTree {
             return this.query(2 * node + 1, mid + 1, end, left, right)
         }
 
-        const leftResult: SegmentTreeNode = this.query(2 * node, start, mid, left, right)
-        const rightResult: SegmentTreeNode = this.query(2 * node + 1, mid + 1, end, left, right)
+        const leftResult: SegmentTreeNode = this.query(
+            2 * node,
+            start,
+            mid,
+            left,
+            right
+        )
+        const rightResult: SegmentTreeNode = this.query(
+            2 * node + 1,
+            mid + 1,
+            end,
+            left,
+            right
+        )
 
         return merge(leftResult, rightResult)
     }
@@ -96,7 +126,10 @@ function getResults(queries: readonly (readonly number[])[]): boolean[] {
             const position: number = query[1]
             const size: number = query[2]
             const rangeResult: SegmentTreeNode = tree.queryRange(0, position)
-            const rightGap: number = rangeResult.rightActive !== EMPTY ? position - rangeResult.rightActive : position
+            const rightGap: number =
+                rangeResult.rightActive !== EMPTY
+                    ? position - rangeResult.rightActive
+                    : position
             const maxFit: number = Math.max(rangeResult.maxGap, rightGap)
 
             results.push(maxFit >= size)

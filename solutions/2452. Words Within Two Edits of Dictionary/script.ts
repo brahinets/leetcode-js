@@ -2,7 +2,9 @@ export { twoEditWords }
 
 function twoEditWords(queries: string[], dictionary: string[]): string[] {
     return queries.filter((query: string): boolean =>
-        dictionary.some((word: string): boolean => hammingDistance(query, word) <= 2)
+        dictionary.some(
+            (word: string): boolean => hammingDistance(query, word) <= 2
+        )
     )
 }
 

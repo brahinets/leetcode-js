@@ -1,4 +1,4 @@
-export {stoneGameIX}
+export { stoneGameIX }
 
 function stoneGameIX(stones: number[]): boolean {
     const remainderCount: number[] = [0, 0, 0]

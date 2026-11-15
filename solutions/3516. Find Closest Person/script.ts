@@ -1,4 +1,4 @@
-export {findClosest}
+export { findClosest }
 
 function findClosest(x: number, y: number, z: number): number {
     const distanceToX: number = Math.abs(z - x)

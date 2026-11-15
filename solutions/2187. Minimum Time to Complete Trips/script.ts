@@ -1,16 +1,22 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {minimumTime}
+export { minimumTime }
 
 function minimumTime(time: number[], totalTrips: number): number {
     let left: number = 1
-    let right: number = totalTrips * time
-        .reduce((prev: number, curr: number): number => prev > curr ? prev : curr, time[0])
+    let right: number =
+        totalTrips *
+        time.reduce(
+            (prev: number, curr: number): number => (prev > curr ? prev : curr),
+            time[0]
+        )
 
     while (left < right) {
         const mid: number = Math.floor((left + right) / 2)
 
-        const tripsForTime: number = sum(time.map((t: number): number => Math.floor(mid / t)))
+        const tripsForTime: number = sum(
+            time.map((t: number): number => Math.floor(mid / t))
+        )
 
         if (tripsForTime >= totalTrips) {
             right = mid

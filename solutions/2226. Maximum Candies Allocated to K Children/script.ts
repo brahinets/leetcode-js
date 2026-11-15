@@ -1,4 +1,4 @@
-export {maximumCandies}
+export { maximumCandies }
 
 function maximumCandies(candies: number[], k: number): number {
     let maxCandiesInPile: number = 0
@@ -22,7 +22,11 @@ function maximumCandies(candies: number[], k: number): number {
     return left
 }
 
-function canAllocateCandies(candies: number[], k: number, numOfCandies: number): boolean {
+function canAllocateCandies(
+    candies: number[],
+    k: number,
+    numOfCandies: number
+): boolean {
     let maxNumOfChildren: number = 0
 
     for (let pileIndex: number = 0; pileIndex < candies.length; pileIndex++) {

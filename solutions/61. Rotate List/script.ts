@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {rotateRight}
+export { rotateRight }
 
 function rotateRight(head: ListNode | null, k: number): ListNode | null {
     if (!head || !head.next) {

@@ -1,4 +1,4 @@
-export {wordBreak}
+export { wordBreak }
 
 function wordBreak(s: string, wordDict: string[]): string[] {
     const dictionary: Set<string> = new Set<string>(wordDict)
@@ -7,7 +7,11 @@ function wordBreak(s: string, wordDict: string[]): string[] {
     return dfs(s, dictionary, memo)
 }
 
-function dfs(remaining: string, dict: Set<string>, memo: Map<string, string[]>): string[] {
+function dfs(
+    remaining: string,
+    dict: Set<string>,
+    memo: Map<string, string[]>
+): string[] {
     if (memo.has(remaining)) {
         return memo.get(remaining)!
     }
@@ -22,7 +26,7 @@ function dfs(remaining: string, dict: Set<string>, memo: Map<string, string[]>):
 
         if (dict.has(current)) {
             for (const next of dfs(remaining.substring(i), dict, memo)) {
-                results.push(current + (next.length > 0 ? " " : "") + next)
+                results.push(current + (next.length > 0 ? ' ' : '') + next)
             }
         }
     }

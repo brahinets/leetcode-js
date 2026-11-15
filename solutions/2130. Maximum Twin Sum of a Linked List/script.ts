@@ -1,7 +1,7 @@
-import {ListNode} from "../../common/ListNode"
-import {linkedListToArray} from "../../common/list-utils"
+import { ListNode } from '../../common/ListNode'
+import { linkedListToArray } from '../../common/list-utils'
 
-export {pairSum, ListNode}
+export { pairSum, ListNode }
 
 function pairSum(head: ListNode | null): number {
     const data: number[] | null = linkedListToArray(head)
@@ -19,7 +19,7 @@ function pairSum(head: ListNode | null): number {
     }
 
     if (max === undefined) {
-        throw new Error("Not enough data to define max")
+        throw new Error('Not enough data to define max')
     }
 
     return max

@@ -1,4 +1,4 @@
-export {maxProfit}
+export { maxProfit }
 
 function maxProfit(prices: number[], fee: number): number {
     let sell: number = 0

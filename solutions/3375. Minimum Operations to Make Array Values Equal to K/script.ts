@@ -1,4 +1,4 @@
-export {minOperations}
+export { minOperations }
 
 function minOperations(nums: number[], k: number): number {
     const bigger: Set<number> = new Set<number>()

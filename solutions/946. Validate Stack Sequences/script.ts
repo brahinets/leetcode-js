@@ -1,4 +1,4 @@
-export {validateStackSequences}
+export { validateStackSequences }
 
 function validateStackSequences(pushed: number[], popped: number[]): boolean {
     const result: number[] = []
@@ -12,7 +12,10 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
         const elementThatCanBePopped: number | undefined = popped.shift()
         if (elementThatCanBePopped !== undefined) {
             const elementThatNeedBePopped: number | undefined = result.pop()
-            if (elementThatNeedBePopped !== undefined && elementThatNeedBePopped === elementThatCanBePopped) {
+            if (
+                elementThatNeedBePopped !== undefined &&
+                elementThatNeedBePopped === elementThatCanBePopped
+            ) {
                 canPop = true
             } else {
                 popped.unshift(elementThatCanBePopped)

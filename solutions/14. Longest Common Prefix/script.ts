@@ -1,7 +1,7 @@
-export {longestCommonPrefix}
+export { longestCommonPrefix }
 
 function longestCommonPrefix(strs: string[]): string {
-    let prefix: string = ""
+    let prefix: string = ''
 
     if (strs.length === 0) {
         return prefix

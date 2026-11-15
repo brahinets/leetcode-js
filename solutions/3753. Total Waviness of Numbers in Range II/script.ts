@@ -20,13 +20,22 @@ function countWavinessUpTo(n: number): number {
     const completionsMemo: Map<number, number> = new Map<number, number>()
     const wavinessMemo: Map<number, number> = new Map<number, number>()
 
-    return dpWaviness(0, -1, -1, true, false, digits, completionsMemo, wavinessMemo)
+    return dpWaviness(
+        0,
+        -1,
+        -1,
+        true,
+        false,
+        digits,
+        completionsMemo,
+        wavinessMemo
+    )
 }
 
 function encodeCompletion(
     position: number,
     tight: boolean,
-    started: boolean,
+    started: boolean
 ): number {
     return (position * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)
 }
@@ -36,7 +45,7 @@ function countCompletions(
     tight: boolean,
     started: boolean,
     digits: number[],
-    memo: Map<number, number>,
+    memo: Map<number, number>
 ): number {
     if (position === digits.length) {
         return started ? 1 : 0
@@ -56,9 +65,21 @@ function countCompletions(
         const newTight: boolean = tight && digit === limit
 
         if (!started && digit === 0) {
-            count += countCompletions(position + 1, newTight, false, digits, memo)
+            count += countCompletions(
+                position + 1,
+                newTight,
+                false,
+                digits,
+                memo
+            )
         } else {
-            count += countCompletions(position + 1, newTight, true, digits, memo)
+            count += countCompletions(
+                position + 1,
+                newTight,
+                true,
+                digits,
+                memo
+            )
         }
     }
 
@@ -72,10 +93,10 @@ function encodeWaviness(
     previousPrevious: number,
     previous: number,
     tight: boolean,
-    started: boolean,
+    started: boolean
 ): number {
     return (
-        ((((position * 11 + (previousPrevious + 1)) * 11 + (previous + 1)) * 2) +
+        (((position * 11 + (previousPrevious + 1)) * 11 + (previous + 1)) * 2 +
             (tight ? 1 : 0)) *
             2 +
         (started ? 1 : 0)
@@ -90,13 +111,19 @@ function dpWaviness(
     started: boolean,
     digits: number[],
     completionsMemo: Map<number, number>,
-    wavinessMemo: Map<number, number>,
+    wavinessMemo: Map<number, number>
 ): number {
     if (position === digits.length) {
         return 0
     }
 
-    const key: number = encodeWaviness(position, previousPrevious, previous, tight, started)
+    const key: number = encodeWaviness(
+        position,
+        previousPrevious,
+        previous,
+        tight,
+        started
+    )
     const cached: number | undefined = wavinessMemo.get(key)
 
     if (cached !== undefined) {
@@ -110,7 +137,16 @@ function dpWaviness(
         const newTight: boolean = tight && digit === limit
 
         if (!started && digit === 0) {
-            total += dpWaviness(position + 1, -1, -1, newTight, false, digits, completionsMemo, wavinessMemo)
+            total += dpWaviness(
+                position + 1,
+                -1,
+                -1,
+                newTight,
+                false,
+                digits,
+                completionsMemo,
+                wavinessMemo
+            )
         } else {
             let waviness: number = 0
 
@@ -123,8 +159,23 @@ function dpWaviness(
                 }
             }
 
-            const subCompletions: number = countCompletions(position + 1, newTight, true, digits, completionsMemo)
-            const subWaviness: number = dpWaviness(position + 1, previous, digit, newTight, true, digits, completionsMemo, wavinessMemo)
+            const subCompletions: number = countCompletions(
+                position + 1,
+                newTight,
+                true,
+                digits,
+                completionsMemo
+            )
+            const subWaviness: number = dpWaviness(
+                position + 1,
+                previous,
+                digit,
+                newTight,
+                true,
+                digits,
+                completionsMemo,
+                wavinessMemo
+            )
 
             total += waviness * subCompletions + subWaviness
         }

@@ -1,9 +1,13 @@
-import {ListNode} from "../../common/ListNode"
-import {TreeNode} from "../../common/TreeNode"
+import { ListNode } from '../../common/ListNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {addOneRow, ListNode, TreeNode}
+export { addOneRow, ListNode, TreeNode }
 
-function addOneRow(root: TreeNode | null, val: number, depth: number): TreeNode | null {
+function addOneRow(
+    root: TreeNode | null,
+    val: number,
+    depth: number
+): TreeNode | null {
     if (!root) {
         return null
     }
@@ -22,4 +26,3 @@ function addOneRow(root: TreeNode | null, val: number, depth: number): TreeNode 
 
     return root
 }
-

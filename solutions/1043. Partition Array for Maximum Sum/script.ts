@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maxSumAfterPartitioning}
+export { maxSumAfterPartitioning }
 
 function maxSumAfterPartitioning(arr: number[], k: number): number {
     const maxSumAchievableFromIndex: number[] = arrayOfZeros(arr.length + 1)
@@ -13,8 +13,13 @@ function maxSumAfterPartitioning(arr: number[], k: number): number {
             const subArrayLength: number = subArrayEnd - from + 1
             subArrayMax = Math.max(subArrayMax, arr[subArrayEnd])
 
-            const valueWithSubArray:number = maxSumAchievableFromIndex[subArrayEnd + 1] + subArrayMax * subArrayLength
-            maxSumAchievableFromIndex[from] = Math.max(maxSumAchievableFromIndex[from], valueWithSubArray)
+            const valueWithSubArray: number =
+                maxSumAchievableFromIndex[subArrayEnd + 1] +
+                subArrayMax * subArrayLength
+            maxSumAchievableFromIndex[from] = Math.max(
+                maxSumAchievableFromIndex[from],
+                valueWithSubArray
+            )
         }
     }
 

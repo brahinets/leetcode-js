@@ -1,6 +1,9 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export function countCoveredBuildings(n: number, buildings: number[][]): number {
+export function countCoveredBuildings(
+    n: number,
+    buildings: number[][]
+): number {
     const maxRow: number[] = arrayOf(0, n + 1)
     const minRow: number[] = arrayOf(n + 1, n + 1)
     const maxCol: number[] = arrayOf(0, n + 1)

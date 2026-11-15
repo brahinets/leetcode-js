@@ -1,7 +1,7 @@
-import {PriorityQueue} from '../../common/PriorityQueue'
-import {arrayOfZeros} from "../../common/array-factories"
+import { PriorityQueue } from '../../common/PriorityQueue'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minimumDifference}
+export { minimumDifference }
 
 function minimumDifference(nums: number[]): number {
     const partitionSize = Math.floor(nums.length / 3)
@@ -21,7 +21,9 @@ function calculateLeftSums(nums: number[], partitionSize: number): number[] {
     const leftSums: number[] = arrayOfZeros(partitionSize + 1)
 
     let leftSum: number = 0
-    const maxHeap = new PriorityQueue<number>((a: number, b: number): number => b - a)
+    const maxHeap = new PriorityQueue<number>(
+        (a: number, b: number): number => b - a
+    )
     for (let i: number = 0; i < partitionSize; i++) {
         leftSum += nums[i]
         maxHeap.enqueue(nums[i])
@@ -42,7 +44,9 @@ function calculateRightSums(nums: number[], partitionSize: number): number[] {
     const rightSums: number[] = arrayOfZeros(partitionSize + 1)
 
     let rightSum: number = 0
-    const minHeap = new PriorityQueue<number>((a: number, b: number): number => a - b)
+    const minHeap = new PriorityQueue<number>(
+        (a: number, b: number): number => a - b
+    )
     for (let i = nums.length - 1; i >= partitionSize * 2; i--) {
         rightSum += nums[i]
         minHeap.enqueue(nums[i])

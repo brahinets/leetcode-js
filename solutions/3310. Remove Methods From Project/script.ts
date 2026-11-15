@@ -1,11 +1,16 @@
-import { DirectedUnweightedGraph } from "../../common/Graph"
-import { directedUnweightedGraphFromEdges } from "../../common/graph-factories"
-import { arrayOf } from "../../common/array-factories"
+import { DirectedUnweightedGraph } from '../../common/Graph'
+import { directedUnweightedGraphFromEdges } from '../../common/graph-factories'
+import { arrayOf } from '../../common/array-factories'
 
 export { remainingMethods }
 
-function remainingMethods(n: number, k: number, invocations: number[][]): number[] {
-    const graph: DirectedUnweightedGraph = directedUnweightedGraphFromEdges(invocations)
+function remainingMethods(
+    n: number,
+    k: number,
+    invocations: number[][]
+): number[] {
+    const graph: DirectedUnweightedGraph =
+        directedUnweightedGraphFromEdges(invocations)
     const suspiciousMethods: boolean[] = findSuspiciousMethods(graph, k, n)
 
     if (isRemovalBlocked(invocations, suspiciousMethods)) {
@@ -15,7 +20,11 @@ function remainingMethods(n: number, k: number, invocations: number[][]): number
     return remainingNonSuspiciousMethods(suspiciousMethods, n)
 }
 
-function findSuspiciousMethods(graph: DirectedUnweightedGraph, k: number, n: number): boolean[] {
+function findSuspiciousMethods(
+    graph: DirectedUnweightedGraph,
+    k: number,
+    n: number
+): boolean[] {
     const suspiciousMethods: boolean[] = arrayOf(false, n)
     suspiciousMethods[k] = true
 
@@ -34,7 +43,10 @@ function findSuspiciousMethods(graph: DirectedUnweightedGraph, k: number, n: num
     return suspiciousMethods
 }
 
-function isRemovalBlocked(invocations: number[][], suspiciousMethods: boolean[]): boolean {
+function isRemovalBlocked(
+    invocations: number[][],
+    suspiciousMethods: boolean[]
+): boolean {
     for (const [caller, callee] of invocations) {
         if (suspiciousMethods[callee] && !suspiciousMethods[caller]) {
             return true
@@ -53,7 +65,10 @@ function allMethods(n: number): number[] {
     return methods
 }
 
-function remainingNonSuspiciousMethods(suspiciousMethods: boolean[], n: number): number[] {
+function remainingNonSuspiciousMethods(
+    suspiciousMethods: boolean[],
+    n: number
+): number[] {
     const remaining: number[] = []
     for (let method: number = 0; method < n; method++) {
         if (!suspiciousMethods[method]) {

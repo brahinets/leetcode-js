@@ -1,4 +1,4 @@
-export {clearDigits}
+export { clearDigits }
 
 function clearDigits(s: string): string {
     let result: string[] = []

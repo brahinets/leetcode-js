@@ -1,4 +1,4 @@
-export {missingInteger}
+export { missingInteger }
 
 function missingInteger(numbers: number[]): number {
     const sequentialPrefixSum: number = calculateSequentialPrefixSum(numbers)

@@ -1,10 +1,17 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {minimumCost}
+export { minimumCost }
 
 // TODO Use Graph for simplicity
-function minimumCost(n: number, edges: number[][], queries: number[][]): number[] {
-    const adjList: Map<number, [number, number][]> = new Map<number, [number, number][]>()
+function minimumCost(
+    n: number,
+    edges: number[][],
+    queries: number[][]
+): number[] {
+    const adjList: Map<number, [number, number][]> = new Map<
+        number,
+        [number, number][]
+    >()
     for (let i: number = 0; i < n; i++) {
         adjList.set(i, [])
     }
@@ -21,13 +28,23 @@ function minimumCost(n: number, edges: number[][], queries: number[][]): number[
     let componentId: number = 0
     for (let node: number = 0; node < n; node++) {
         if (!visited[node]) {
-            componentCost.push(getComponentCost(node, adjList, visited, components, componentId))
+            componentCost.push(
+                getComponentCost(
+                    node,
+                    adjList,
+                    visited,
+                    components,
+                    componentId
+                )
+            )
             componentId++
         }
     }
 
     return queries.map(([start, end]: number[]): number =>
-        components[start] === components[end] ? componentCost[components[start]] : -1
+        components[start] === components[end]
+            ? componentCost[components[start]]
+            : -1
     )
 }
 
@@ -47,7 +64,13 @@ function getComponentCost(
         currentCost &= weight
 
         if (!visited[neighbor]) {
-            currentCost &= getComponentCost(neighbor, adjList, visited, components, componentId)
+            currentCost &= getComponentCost(
+                neighbor,
+                adjList,
+                visited,
+                components,
+                componentId
+            )
         }
     }
 

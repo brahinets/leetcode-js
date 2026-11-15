@@ -1,7 +1,10 @@
-export {singleNumber}
+export { singleNumber }
 
 function singleNumber(nums: number[]): number[] {
-    const xor: number = nums.reduce((result: number, value: number): number => result ^ value, 0)
+    const xor: number = nums.reduce(
+        (result: number, value: number): number => result ^ value,
+        0
+    )
     const set: number = xor & -xor
 
     const result: number[] = [0, 0]

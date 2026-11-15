@@ -6,8 +6,7 @@ describe('1520. Maximum Number of Non-Overlapping Substrings', (): void => {
 
         const result: string[] = maxNumOfSubstrings(input)
 
-        expect([...result].sort())
-            .toEqual(['ccc', 'e', 'f'])
+        expect([...result].sort()).toEqual(['ccc', 'e', 'f'])
     })
 
     it('prefers the selection with the smaller total length among equal counts', (): void => {
@@ -15,8 +14,7 @@ describe('1520. Maximum Number of Non-Overlapping Substrings', (): void => {
 
         const result: string[] = maxNumOfSubstrings(input)
 
-        expect([...result].sort())
-            .toEqual(['bb', 'cc', 'd'])
+        expect([...result].sort()).toEqual(['bb', 'cc', 'd'])
     })
 
     it('single character string', (): void => {
@@ -24,8 +22,7 @@ describe('1520. Maximum Number of Non-Overlapping Substrings', (): void => {
 
         const result: string[] = maxNumOfSubstrings(input)
 
-        expect(result)
-            .toEqual(['a'])
+        expect(result).toEqual(['a'])
     })
 
     it('string where every character is unique', (): void => {
@@ -33,8 +30,7 @@ describe('1520. Maximum Number of Non-Overlapping Substrings', (): void => {
 
         const result: string[] = maxNumOfSubstrings(input)
 
-        expect(result)
-            .toEqual(['a', 'b', 'c', 'd', 'e', 'f'])
+        expect(result).toEqual(['a', 'b', 'c', 'd', 'e', 'f'])
     })
 
     it('entire string forms a single valid substring', (): void => {
@@ -42,8 +38,7 @@ describe('1520. Maximum Number of Non-Overlapping Substrings', (): void => {
 
         const result: string[] = maxNumOfSubstrings(input)
 
-        expect(result)
-            .toEqual(['abab'])
+        expect(result).toEqual(['abab'])
     })
 
     it('repeated single character', (): void => {
@@ -51,7 +46,6 @@ describe('1520. Maximum Number of Non-Overlapping Substrings', (): void => {
 
         const result: string[] = maxNumOfSubstrings(input)
 
-        expect(result)
-            .toEqual(['aaaa'])
+        expect(result).toEqual(['aaaa'])
     })
 })

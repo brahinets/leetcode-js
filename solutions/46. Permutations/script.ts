@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {permute}
+export { permute }
 
 function permute(nums: number[]): number[][] {
     const result: number[][] = []
@@ -11,7 +11,12 @@ function permute(nums: number[]): number[][] {
     return result
 }
 
-function backtrack(result: number[][], nums: number[], used: boolean[], current: number[]): void {
+function backtrack(
+    result: number[][],
+    nums: number[],
+    used: boolean[],
+    current: number[]
+): void {
     if (current.length === nums.length) {
         result.push([...current])
         return

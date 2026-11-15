@@ -1,4 +1,4 @@
-export {countConsistentStrings}
+export { countConsistentStrings }
 
 function countConsistentStrings(allowed: string, words: string[]): number {
     const allowedCharacters: Set<string> = new Set<string>(allowed.split(''))

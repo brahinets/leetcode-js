@@ -1,4 +1,4 @@
-export {continuousSubarrays}
+export { continuousSubarrays }
 
 function continuousSubarrays(nums: number[]): number {
     let right: number = 0
@@ -14,7 +14,7 @@ function continuousSubarrays(nums: number[]): number {
 
         if (max - min > 2) {
             windowLen = right - left
-            total += ((windowLen * (windowLen + 1)) / 2)
+            total += (windowLen * (windowLen + 1)) / 2
 
             left = right
             min = max = nums[right]
@@ -27,13 +27,13 @@ function continuousSubarrays(nums: number[]): number {
 
             if (left < right) {
                 windowLen = right - left
-                total -= ((windowLen * (windowLen + 1)) / 2)
+                total -= (windowLen * (windowLen + 1)) / 2
             }
         }
     }
 
     windowLen = right - left
-    total += ((windowLen * (windowLen + 1)) / 2)
+    total += (windowLen * (windowLen + 1)) / 2
 
     return total
 }

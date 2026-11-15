@@ -1,7 +1,7 @@
-import {UndirectedUnweightedGraph} from "../../common/Graph"
-import {arrayOf} from "../../common/array-factories"
+import { UndirectedUnweightedGraph } from '../../common/Graph'
+import { arrayOf } from '../../common/array-factories'
 
-export {countCompleteComponents}
+export { countCompleteComponents }
 
 function countCompleteComponents(n: number, edges: number[][]): number {
     const graph: UndirectedUnweightedGraph = new UndirectedUnweightedGraph()
@@ -27,19 +27,26 @@ function countCompleteComponents(n: number, edges: number[][]): number {
     return count
 }
 
-
-function dfs(visited: boolean[], graph:UndirectedUnweightedGraph, node: number, component: number[]): void {
+function dfs(
+    visited: boolean[],
+    graph: UndirectedUnweightedGraph,
+    node: number,
+    component: number[]
+): void {
     visited[node] = true
     component.push(node)
 
-    for (const [neighbor,] of graph.getNeighbours(node)) {
+    for (const [neighbor] of graph.getNeighbours(node)) {
         if (!visited[neighbor]) {
             dfs(visited, graph, neighbor, component)
         }
     }
 }
 
-function isCompleteComponent(graph: UndirectedUnweightedGraph, component: number[]): boolean {
+function isCompleteComponent(
+    graph: UndirectedUnweightedGraph,
+    component: number[]
+): boolean {
     const size: number = component.length
 
     for (const node of component) {

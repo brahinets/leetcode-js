@@ -1,4 +1,4 @@
-export {checkDivisibility}
+export { checkDivisibility }
 
 function checkDivisibility(number: number): boolean {
     let digitSum: number = 0

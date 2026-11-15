@@ -1,15 +1,19 @@
-import {DirectedUnweightedGraph} from "../../common/Graph"
-import {arrayOf} from "../../common/array-factories"
+import { DirectedUnweightedGraph } from '../../common/Graph'
+import { arrayOf } from '../../common/array-factories'
 
-export {getAncestors}
+export { getAncestors }
 
 function getAncestors(n: number, edges: number[][]): number[][] {
     const transposedGraph: DirectedUnweightedGraph = buildTransposedGraph(edges)
 
     const answer: number[][] = arrayOf([], n)
     for (let node: number = 0; node < n; node++) {
-        answer[node] = collectAncestors(transposedGraph, node, node, arrayOf(false, n))
-            .sort((a: number, b: number): number => a - b)
+        answer[node] = collectAncestors(
+            transposedGraph,
+            node,
+            node,
+            arrayOf(false, n)
+        ).sort((a: number, b: number): number => a - b)
     }
 
     return answer
@@ -30,7 +34,9 @@ function collectAncestors(
 
     for (const [neighbor] of graph.getNeighbours(current)) {
         if (!visited[neighbor]) {
-            ancestors = ancestors.concat(collectAncestors(graph, neighbor, original, visited))
+            ancestors = ancestors.concat(
+                collectAncestors(graph, neighbor, original, visited)
+            )
         }
     }
 

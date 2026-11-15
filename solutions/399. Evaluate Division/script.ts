@@ -1,18 +1,23 @@
-import {DirectedWeightedGraph} from "../../common/Graph"
+import { DirectedWeightedGraph } from '../../common/Graph'
 
-export {calcEquation}
+export { calcEquation }
 
-function calcEquation(equations: string[][], values: number[], queries: string[][]): number[] {
+function calcEquation(
+    equations: string[][],
+    values: number[],
+    queries: string[][]
+): number[] {
     const graph: DirectedWeightedGraph = buildGraph(equations, values)
 
     return queries.map(([start, end]: string[]): number =>
-        Number(
-            graph.dfs(code(start), code(end), new Set<number>).toFixed(5)
-        )
+        Number(graph.dfs(code(start), code(end), new Set<number>()).toFixed(5))
     )
 }
 
-function buildGraph(equations: string[][], values: number[]): DirectedWeightedGraph {
+function buildGraph(
+    equations: string[][],
+    values: number[]
+): DirectedWeightedGraph {
     const graph: DirectedWeightedGraph = new DirectedWeightedGraph()
 
     for (let i: number = 0; i < equations.length; i++) {

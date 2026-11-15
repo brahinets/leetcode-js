@@ -1,7 +1,7 @@
-import {count} from "../../common/array-utils"
-import {arrayOfZeros} from "../../common/array-factories"
+import { count } from '../../common/array-utils'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {findErrorNums}
+export { findErrorNums }
 
 function findErrorNums(nums: number[]): number[] {
     const counts: Map<number, number> = count(nums)
@@ -10,8 +10,7 @@ function findErrorNums(nums: number[]): number[] {
 }
 
 function findDuplicated(counts: Map<number, number>): number {
-    return [...counts.entries()]
-        .find(([, count]): boolean => count > 1)![0]
+    return [...counts.entries()].find(([, count]): boolean => count > 1)![0]
 }
 
 function findMissing(totalCount: number, counts: Map<number, number>): number {

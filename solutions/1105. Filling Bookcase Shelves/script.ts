@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minHeightShelves}
+export { minHeightShelves }
 
 function minHeightShelves(books: number[][], shelfWidth: number): number {
     const dp: number[] = arrayOfZeros(books.length + 1)
@@ -11,7 +11,11 @@ function minHeightShelves(books: number[][], shelfWidth: number): number {
         let height: number = books[i - 1][1]
         dp[i] = dp[i - 1] + height
 
-        for (let j = i - 1; j > 0 && width + books[j - 1][0] <= shelfWidth; j--) {
+        for (
+            let j = i - 1;
+            j > 0 && width + books[j - 1][0] <= shelfWidth;
+            j--
+        ) {
             width += books[j - 1][0]
             height = Math.max(height, books[j - 1][1])
             dp[i] = Math.min(dp[i], dp[j - 1] + height)

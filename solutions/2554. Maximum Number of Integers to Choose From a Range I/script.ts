@@ -1,4 +1,4 @@
-export {maxCount}
+export { maxCount }
 
 function maxCount(banned: number[], n: number, maxSum: number): number {
     banned.sort((a: number, b: number): number => a - b)

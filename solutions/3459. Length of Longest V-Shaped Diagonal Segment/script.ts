@@ -1,4 +1,4 @@
-export {lenOfVDiagonal}
+export { lenOfVDiagonal }
 
 function lenOfVDiagonal(grid: number[][]): number {
     const n: number = grid.length
@@ -9,7 +9,7 @@ function lenOfVDiagonal(grid: number[][]): number {
         [1, 1],
         [1, -1],
         [-1, -1],
-        [-1, 1],
+        [-1, 1]
     ]
 
     for (let startR: number = 0; startR < n; startR++) {
@@ -19,7 +19,16 @@ function lenOfVDiagonal(grid: number[][]): number {
             }
 
             for (let dirIdx: number = 0; dirIdx < 4; dirIdx++) {
-                const straightLength: number = extendPath(startR, startC, dirIdx, 0, grid, directions, n, m)
+                const straightLength: number = extendPath(
+                    startR,
+                    startC,
+                    dirIdx,
+                    0,
+                    grid,
+                    directions,
+                    n,
+                    m
+                )
                 maxLength = Math.max(maxLength, straightLength)
 
                 const [dr, dc]: number[] = directions[dirIdx]
@@ -27,7 +36,11 @@ function lenOfVDiagonal(grid: number[][]): number {
                     const turnR: number = startR + dr * steps
                     const turnC: number = startC + dc * steps
 
-                    for (let newDirIdx: number = 0; newDirIdx < 4; newDirIdx++) {
+                    for (
+                        let newDirIdx: number = 0;
+                        newDirIdx < 4;
+                        newDirIdx++
+                    ) {
                         if (newDirIdx === dirIdx) {
                             continue
                         }
@@ -37,7 +50,16 @@ function lenOfVDiagonal(grid: number[][]): number {
                             continue
                         }
 
-                        const totalLength: number = extendPath(turnR, turnC, newDirIdx, steps, grid, directions, n, m)
+                        const totalLength: number = extendPath(
+                            turnR,
+                            turnC,
+                            newDirIdx,
+                            steps,
+                            grid,
+                            directions,
+                            n,
+                            m
+                        )
                         maxLength = Math.max(maxLength, totalLength)
                     }
                 }
@@ -60,7 +82,16 @@ function getExpectedValue(index: number): number {
     return index % 2 === 1 ? 2 : 0
 }
 
-function extendPath(startR: number, startC: number, dirIdx: number, startIndex: number, grid: number[][], directions: number[][], n: number, m: number): number {
+function extendPath(
+    startR: number,
+    startC: number,
+    dirIdx: number,
+    startIndex: number,
+    grid: number[][],
+    directions: number[][],
+    n: number,
+    m: number
+): number {
     const [dr, dc]: number[] = directions[dirIdx]
     let r: number = startR
     let c: number = startC

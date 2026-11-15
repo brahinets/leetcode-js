@@ -1,5 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
-export {TreeNode, minDiffInBST}
+import { TreeNode } from '../../common/TreeNode'
+
+export { TreeNode, minDiffInBST }
 
 const collectValues = function (root: TreeNode): number[] {
     const values: number[] = [root.val]
@@ -15,8 +16,9 @@ const collectValues = function (root: TreeNode): number[] {
 }
 
 const minDiffInBST = function (root: TreeNode): number {
-    const values: number[] = collectValues(root)
-        .sort((a: number, b: number) => a - b)
+    const values: number[] = collectValues(root).sort(
+        (a: number, b: number) => a - b
+    )
 
     let minDiff: number = Number.MAX_VALUE
     for (let i: number = 0; i < values.length - 1; i++) {

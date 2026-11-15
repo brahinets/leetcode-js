@@ -1,4 +1,4 @@
-import { arrayOfZeros } from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
 export { maxStability }
 
@@ -22,8 +22,15 @@ function maxStability(n: number, edges: number[][], k: number): number {
     return result
 }
 
-function canAchieve(n: number, edges: number[][], k: number, middle: number): boolean {
-    const parent: number[] = arrayOfZeros(n).map((_: number, index: number): number => index)
+function canAchieve(
+    n: number,
+    edges: number[][],
+    k: number,
+    middle: number
+): boolean {
+    const parent: number[] = arrayOfZeros(n).map(
+        (_: number, index: number): number => index
+    )
     const rank: number[] = arrayOfZeros(n)
 
     for (const [source, target, strength, isMandatory] of edges) {
@@ -77,7 +84,12 @@ function find(parent: number[], node: number): number {
     return node
 }
 
-function union(parent: number[], rank: number[], nodeX: number, nodeY: number): boolean {
+function union(
+    parent: number[],
+    rank: number[],
+    nodeX: number,
+    nodeY: number
+): boolean {
     const rootX: number = find(parent, nodeX)
     const rootY: number = find(parent, nodeY)
     if (rootX === rootY) {
@@ -89,7 +101,8 @@ function union(parent: number[], rank: number[], nodeX: number, nodeY: number): 
     } else if (rank[rootX] > rank[rootY]) {
         parent[rootY] = rootX
     } else {
-        parent[rootY] = rootX; rank[rootX]++
+        parent[rootY] = rootX
+        rank[rootX]++
     }
 
     return true

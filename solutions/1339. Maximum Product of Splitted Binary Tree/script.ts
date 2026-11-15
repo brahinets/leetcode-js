@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {maxProduct}
+export { maxProduct }
 
 const MOD: number = 1e9 + 7
 

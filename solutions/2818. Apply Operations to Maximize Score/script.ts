@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {maximumScore}
+export { maximumScore }
 
 const MOD: number = 1e9 + 7
 
@@ -41,14 +41,17 @@ function maximumScore(nums: number[], k: number): number {
     for (let index: number = 0; index < n; index++) {
         while (
             decreasingPrimeScoreStack.length > 0 &&
-            primeScores[decreasingPrimeScoreStack[decreasingPrimeScoreStack.length - 1]] < primeScores[index]
-            ) {
+            primeScores[
+                decreasingPrimeScoreStack[decreasingPrimeScoreStack.length - 1]
+            ] < primeScores[index]
+        ) {
             const topIndex: number = decreasingPrimeScoreStack.pop()!
             nextDominant[topIndex] = index
         }
 
         if (decreasingPrimeScoreStack.length > 0) {
-            prevDominant[index] = decreasingPrimeScoreStack[decreasingPrimeScoreStack.length - 1]
+            prevDominant[index] =
+                decreasingPrimeScoreStack[decreasingPrimeScoreStack.length - 1]
         }
 
         decreasingPrimeScoreStack.push(index)
@@ -56,11 +59,16 @@ function maximumScore(nums: number[], k: number): number {
 
     const numOfSubarrays: number[] = arrayOfZeros(n)
     for (let index: number = 0; index < n; index++) {
-        numOfSubarrays[index] = (nextDominant[index] - index) * (index - prevDominant[index])
+        numOfSubarrays[index] =
+            (nextDominant[index] - index) * (index - prevDominant[index])
     }
 
-    const sortedArray: [number, number][] = nums.map((num: number, index: number): [number, number] => [num, index])
-    sortedArray.sort((a: [number, number], b: [number, number]): number => b[0] - a[0])
+    const sortedArray: [number, number][] = nums.map(
+        (num: number, index: number): [number, number] => [num, index]
+    )
+    sortedArray.sort(
+        (a: [number, number], b: [number, number]): number => b[0] - a[0]
+    )
 
     let score: bigint = 1n
     let processingIndex: number = 0
@@ -101,7 +109,11 @@ function getPrimes(limit: number): number[] {
 
         primes.push(number)
 
-        for (let multiple: number = number * number; multiple <= limit; multiple += number) {
+        for (
+            let multiple: number = number * number;
+            multiple <= limit;
+            multiple += number
+        ) {
             isPrime[multiple] = false
         }
     }

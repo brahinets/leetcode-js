@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {numRollsToTarget}
+export { numRollsToTarget }
 
 const MOD: number = 10 ** 9 + 7
 
@@ -10,7 +10,12 @@ function numRollsToTarget(n: number, k: number, target: number): number {
     return countWays(n, k, target, memo)
 }
 
-function countWays(n: number, k: number, target: number, memo: number[][]): number {
+function countWays(
+    n: number,
+    k: number,
+    target: number,
+    memo: number[][]
+): number {
     if (n === 0 && target === 0) {
         return 1
     }

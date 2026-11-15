@@ -1,4 +1,4 @@
-export {countMaxOrSubsets}
+export { countMaxOrSubsets }
 
 function countMaxOrSubsets(nums: number[]): number {
     let maxOrValue: number = 0

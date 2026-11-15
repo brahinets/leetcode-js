@@ -1,4 +1,4 @@
-export {canReach}
+export { canReach }
 
 function canReach(source: string, minJump: number, maxJump: number): boolean {
     const length: number = source.length

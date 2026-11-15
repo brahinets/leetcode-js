@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {minimumBoxes}
+export { minimumBoxes }
 
 function minimumBoxes(apple: number[], capacity: number[]): number {
     const totalApples: number = sum(apple)

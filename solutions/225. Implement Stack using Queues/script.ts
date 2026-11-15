@@ -1,4 +1,4 @@
-export {MyStack}
+export { MyStack }
 
 class MyStack {
     private readonly queue: HomebrewQueue
@@ -45,7 +45,7 @@ class HomebrewQueue {
         const value: number | undefined = this.queue[0]
 
         if (value === undefined) {
-            throw new Error("Illegal state")
+            throw new Error('Illegal state')
         }
 
         return value

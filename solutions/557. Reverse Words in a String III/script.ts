@@ -1,6 +1,6 @@
-import {reverseString} from "../344. Reverse String/script"
+import { reverseString } from '../344. Reverse String/script'
 
-export {reverseWords}
+export { reverseWords }
 
 function reverseWords(s: string): string {
     const words: string[] = s.split(' ')

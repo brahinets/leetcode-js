@@ -1,6 +1,10 @@
-export {kthSmallestProduct}
+export { kthSmallestProduct }
 
-function kthSmallestProduct(nums1: number[], nums2: number[], k: number): number {
+function kthSmallestProduct(
+    nums1: number[],
+    nums2: number[],
+    k: number
+): number {
     let left: number = -1e10
     let right: number = 1e10
 
@@ -19,7 +23,11 @@ function kthSmallestProduct(nums1: number[], nums2: number[], k: number): number
     return left
 }
 
-function countLessEqual(nums1: number[], nums2: number[], target: number): number {
+function countLessEqual(
+    nums1: number[],
+    nums2: number[],
+    target: number
+): number {
     let count: number = 0
 
     for (const num1 of nums1) {

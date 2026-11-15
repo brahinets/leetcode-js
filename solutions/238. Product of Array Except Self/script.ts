@@ -1,4 +1,4 @@
-export {productExceptSelf}
+export { productExceptSelf }
 
 function productExceptSelf(nums: number[]): number[] {
     let product: number = 1

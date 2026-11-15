@@ -30,11 +30,13 @@ function countWays(values: number[], binomialTable: number[][]): number {
         }
     }
 
-    const interleaveWays: bigint = BigInt(binomialTable[size - 1][leftValues.length])
+    const interleaveWays: bigint = BigInt(
+        binomialTable[size - 1][leftValues.length]
+    )
     const leftWays: bigint = BigInt(countWays(leftValues, binomialTable))
     const rightWays: bigint = BigInt(countWays(rightValues, binomialTable))
 
-    return Number(interleaveWays * leftWays * rightWays % BIGINT_MODULO)
+    return Number((interleaveWays * leftWays * rightWays) % BIGINT_MODULO)
 }
 
 function buildBinomialTable(maxSize: number): number[][] {
@@ -44,7 +46,8 @@ function buildBinomialTable(maxSize: number): number[][] {
         const currentRow: number[] = arrayOf<number>(1, row + 1)
 
         for (let column: number = 1; column < row; column++) {
-            currentRow[column] = (table[row - 1][column - 1] + table[row - 1][column]) % MODULO
+            currentRow[column] =
+                (table[row - 1][column - 1] + table[row - 1][column]) % MODULO
         }
 
         table.push(currentRow)

@@ -1,6 +1,6 @@
-import {Trie} from "../208. Implement Trie (Prefix Tree)/script"
+import { Trie } from '../208. Implement Trie (Prefix Tree)/script'
 
-export {sumPrefixScores}
+export { sumPrefixScores }
 
 function sumPrefixScores(words: string[]): number[] {
     const trie: Trie = new Trie()

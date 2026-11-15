@@ -1,4 +1,4 @@
-export {getNoZeroIntegers}
+export { getNoZeroIntegers }
 
 function getNoZeroIntegers(n: number): number[] {
     for (let i: number = 1; i < n; i++) {

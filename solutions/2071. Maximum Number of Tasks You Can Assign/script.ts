@@ -1,4 +1,4 @@
-export {maxTaskAssign}
+export { maxTaskAssign }
 
 function maxTaskAssign(
     tasks: number[],
@@ -25,7 +25,13 @@ function maxTaskAssign(
     return low
 }
 
-function canAssign(taskCount: number, strength: number, workers: number[], pills: number, tasks: number[]): boolean {
+function canAssign(
+    taskCount: number,
+    strength: number,
+    workers: number[],
+    pills: number,
+    tasks: number[]
+): boolean {
     const boosted: number[] = []
     let workerIndex: number = workers.length - 1
     let pillsLeft: number = pills
@@ -38,7 +44,10 @@ function canAssign(taskCount: number, strength: number, workers: number[], pills
         } else if (workerIndex >= 0 && workers[workerIndex] >= task) {
             workerIndex--
         } else {
-            while (workerIndex >= 0 && workers[workerIndex] + strength >= task) {
+            while (
+                workerIndex >= 0 &&
+                workers[workerIndex] + strength >= task
+            ) {
                 boosted.push(workers[workerIndex])
                 workerIndex--
             }

@@ -1,4 +1,4 @@
-export {minPatches}
+export { minPatches }
 
 function minPatches(nums: number[], n: number): number {
     let miss: number = 1

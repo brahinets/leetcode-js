@@ -1,4 +1,4 @@
-export {transpose}
+export { transpose }
 
 function transpose(matrix: number[][]): number[][] {
     const result: number[][] = []

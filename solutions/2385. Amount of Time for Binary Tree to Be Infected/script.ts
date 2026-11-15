@@ -1,7 +1,7 @@
-import {TreeNode} from "../../common/TreeNode"
-import {treeToGraph} from "../../common/tree-utils"
+import { TreeNode } from '../../common/TreeNode'
+import { treeToGraph } from '../../common/tree-utils'
 
-export {TreeNode, amountOfTime}
+export { TreeNode, amountOfTime }
 
 function amountOfTime(root: TreeNode, from: number): number {
     const graph: Map<number, Set<number>> = treeToGraph(root)

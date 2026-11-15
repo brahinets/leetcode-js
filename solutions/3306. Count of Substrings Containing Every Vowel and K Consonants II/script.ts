@@ -1,4 +1,4 @@
-export {countOfSubstrings}
+export { countOfSubstrings }
 
 function countOfSubstrings(word: string, k: number): number {
     return atLeastK(word, k) - atLeastK(word, k + 1)

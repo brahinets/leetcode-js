@@ -1,4 +1,4 @@
-export {maxCoins}
+export { maxCoins }
 
 function maxCoins(piles: number[]): number {
     piles = piles.sort((a: number, b: number): number => a - b)

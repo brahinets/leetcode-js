@@ -1,4 +1,4 @@
-export {search}
+export { search }
 
 function search(nums: number[], target: number): number {
     let left: number = 0
@@ -9,7 +9,7 @@ function search(nums: number[], target: number): number {
 
         if (nums[mid] === target) {
             return mid
-        } else if(nums[mid] > target) {
+        } else if (nums[mid] > target) {
             right = mid
         } else {
             left = mid + 1

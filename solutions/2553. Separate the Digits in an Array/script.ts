@@ -1,4 +1,4 @@
-export {separateDigits}
+export { separateDigits }
 
 function separateDigits(numbers: number[]): number[] {
     const result: number[] = []

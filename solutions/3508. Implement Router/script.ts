@@ -1,4 +1,4 @@
-export {Router}
+export { Router }
 
 interface Packet {
     source: number
@@ -26,12 +26,8 @@ class Router {
         this.destinationToTimestamps = new Map<number, Timestamps>()
     }
 
-    private convertPacketToString(packet: Packet): string {
-        return `${packet.source},${packet.destination},${packet.timestamp}`
-    }
-
     addPacket(source: number, destination: number, timestamp: number): boolean {
-        const packet = {source, destination, timestamp}
+        const packet = { source, destination, timestamp }
         const packetAsString = this.convertPacketToString(packet)
         if (this.quickAccessPackets.has(packetAsString)) {
             return false
@@ -45,9 +41,14 @@ class Router {
         this.packets.enqueue(packet)
         this.quickAccessPackets.add(packetAsString)
         if (!this.destinationToTimestamps.has(destination)) {
-            this.destinationToTimestamps.set(destination, {startIndex: 0, timestamps: []})
+            this.destinationToTimestamps.set(destination, {
+                startIndex: 0,
+                timestamps: []
+            })
         }
-        this.destinationToTimestamps.get(destination)!.timestamps.push(timestamp)
+        this.destinationToTimestamps
+            .get(destination)!
+            .timestamps.push(timestamp)
         return true
     }
 
@@ -69,9 +70,11 @@ class Router {
             return Router.PACKETS_NOT_FOUND_FOR_GIVEN_TIMESTAMP_RANGE
         }
 
-        const timestamps = this.destinationToTimestamps.get(destination)!.timestamps
+        const timestamps =
+            this.destinationToTimestamps.get(destination)!.timestamps
 
-        let startIndex = this.destinationToTimestamps.get(destination)!.startIndex
+        let startIndex =
+            this.destinationToTimestamps.get(destination)!.startIndex
         let endIndex = timestamps.length - 1
         if (
             startIndex > endIndex ||
@@ -91,6 +94,10 @@ class Router {
         }
 
         return endIndex - startIndex + 1
+    }
+
+    private convertPacketToString(packet: Packet): string {
+        return `${packet.source},${packet.destination},${packet.timestamp}`
     }
 }
 

@@ -1,4 +1,4 @@
-export {minDeletionSize}
+export { minDeletionSize }
 
 function minDeletionSize(strs: string[]): number {
     let deleteCount: number = 0

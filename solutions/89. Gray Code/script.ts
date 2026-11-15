@@ -1,4 +1,4 @@
-export {grayCode}
+export { grayCode }
 
 function grayCode(n: number): number[] {
     const result: number[] = []

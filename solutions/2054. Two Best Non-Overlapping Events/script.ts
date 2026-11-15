@@ -1,4 +1,4 @@
-export {maxTwoEvents}
+export { maxTwoEvents }
 
 function maxTwoEvents(events: number[][]): number {
     const times: number[][] = []
@@ -8,7 +8,9 @@ function maxTwoEvents(events: number[][]): number {
         times.push([event[1] + 1, 0, event[2]])
     }
 
-    times.sort((a: number[], b: number[]): number => a[0] === b[0] ? a[1] - b[1] : a[0] - b[0])
+    times.sort((a: number[], b: number[]): number =>
+        a[0] === b[0] ? a[1] - b[1] : a[0] - b[0]
+    )
 
     let result: number = 0
     let maxValue: number = 0

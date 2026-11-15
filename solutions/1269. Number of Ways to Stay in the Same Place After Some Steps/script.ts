@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {numWays}
+export { numWays }
 
 const MOD: number = 1e9 + 7
 

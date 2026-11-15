@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from '../../common/array-factories'
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {longestRepeating}
+export { longestRepeating }
 
 interface SegmentTreeNode {
     length: number
@@ -11,18 +11,36 @@ interface SegmentTreeNode {
     maxRunLength: number
 }
 
-function longestRepeating(inputString: string, queryCharacters: string, queryIndices: number[]): number[] {
+function longestRepeating(
+    inputString: string,
+    queryCharacters: string,
+    queryIndices: number[]
+): number[] {
     const characters: string[] = inputString.split('')
     const treeSize: number = characters.length
-    const segmentTree: SegmentTreeNode[] = arrayOf<SegmentTreeNode>(createEmptyNode(), 4 * treeSize)
+    const segmentTree: SegmentTreeNode[] = arrayOf<SegmentTreeNode>(
+        createEmptyNode(),
+        4 * treeSize
+    )
 
     buildSegmentTree(segmentTree, characters, 1, 0, treeSize - 1)
 
     const lengths: number[] = arrayOfZeros(queryCharacters.length)
 
-    for (let queryIndex: number = 0; queryIndex < queryCharacters.length; queryIndex++) {
+    for (
+        let queryIndex: number = 0;
+        queryIndex < queryCharacters.length;
+        queryIndex++
+    ) {
         characters[queryIndices[queryIndex]] = queryCharacters[queryIndex]
-        updateSegmentTree(segmentTree, characters, 1, 0, treeSize - 1, queryIndices[queryIndex])
+        updateSegmentTree(
+            segmentTree,
+            characters,
+            1,
+            0,
+            treeSize - 1,
+            queryIndices[queryIndex]
+        )
         lengths[queryIndex] = segmentTree[1].maxRunLength
     }
 
@@ -53,10 +71,25 @@ function buildSegmentTree(
     }
 
     const segmentMiddle: number = Math.floor((segmentStart + segmentEnd) / 2)
-    buildSegmentTree(segmentTree, characters, nodeIndex * 2, segmentStart, segmentMiddle)
-    buildSegmentTree(segmentTree, characters, nodeIndex * 2 + 1, segmentMiddle + 1, segmentEnd)
+    buildSegmentTree(
+        segmentTree,
+        characters,
+        nodeIndex * 2,
+        segmentStart,
+        segmentMiddle
+    )
+    buildSegmentTree(
+        segmentTree,
+        characters,
+        nodeIndex * 2 + 1,
+        segmentMiddle + 1,
+        segmentEnd
+    )
 
-    segmentTree[nodeIndex] = mergeNodes(segmentTree[nodeIndex * 2], segmentTree[nodeIndex * 2 + 1])
+    segmentTree[nodeIndex] = mergeNodes(
+        segmentTree[nodeIndex * 2],
+        segmentTree[nodeIndex * 2 + 1]
+    )
 }
 
 function createLeafNode(character: string): SegmentTreeNode {
@@ -70,7 +103,10 @@ function createLeafNode(character: string): SegmentTreeNode {
     }
 }
 
-function mergeNodes(leftNode: SegmentTreeNode, rightNode: SegmentTreeNode): SegmentTreeNode {
+function mergeNodes(
+    leftNode: SegmentTreeNode,
+    rightNode: SegmentTreeNode
+): SegmentTreeNode {
     const mergedNode: SegmentTreeNode = {
         length: leftNode.length + rightNode.length,
         leftCharacter: leftNode.leftCharacter,
@@ -80,11 +116,17 @@ function mergeNodes(leftNode: SegmentTreeNode, rightNode: SegmentTreeNode): Segm
         maxRunLength: Math.max(leftNode.maxRunLength, rightNode.maxRunLength)
     }
 
-    if (leftNode.leftRunLength === leftNode.length && leftNode.leftCharacter === rightNode.leftCharacter) {
+    if (
+        leftNode.leftRunLength === leftNode.length &&
+        leftNode.leftCharacter === rightNode.leftCharacter
+    ) {
         mergedNode.leftRunLength = leftNode.length + rightNode.leftRunLength
     }
 
-    if (rightNode.rightRunLength === rightNode.length && rightNode.rightCharacter === leftNode.rightCharacter) {
+    if (
+        rightNode.rightRunLength === rightNode.length &&
+        rightNode.rightCharacter === leftNode.rightCharacter
+    ) {
         mergedNode.rightRunLength = rightNode.length + leftNode.rightRunLength
     }
 
@@ -114,10 +156,27 @@ function updateSegmentTree(
     const segmentMiddle: number = Math.floor((segmentStart + segmentEnd) / 2)
 
     if (targetIndex <= segmentMiddle) {
-        updateSegmentTree(segmentTree, characters, nodeIndex * 2, segmentStart, segmentMiddle, targetIndex)
+        updateSegmentTree(
+            segmentTree,
+            characters,
+            nodeIndex * 2,
+            segmentStart,
+            segmentMiddle,
+            targetIndex
+        )
     } else {
-        updateSegmentTree(segmentTree, characters, nodeIndex * 2 + 1, segmentMiddle + 1, segmentEnd, targetIndex)
+        updateSegmentTree(
+            segmentTree,
+            characters,
+            nodeIndex * 2 + 1,
+            segmentMiddle + 1,
+            segmentEnd,
+            targetIndex
+        )
     }
 
-    segmentTree[nodeIndex] = mergeNodes(segmentTree[nodeIndex * 2], segmentTree[nodeIndex * 2 + 1])
+    segmentTree[nodeIndex] = mergeNodes(
+        segmentTree[nodeIndex * 2],
+        segmentTree[nodeIndex * 2 + 1]
+    )
 }

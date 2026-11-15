@@ -1,9 +1,11 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {isNStraightHand}
+export { isNStraightHand }
 
 function isNStraightHand(hand: number[], groupSize: number): boolean {
-    const counts: Map<number, number> = count(hand.sort((a: number, b: number): number => a - b))
+    const counts: Map<number, number> = count(
+        hand.sort((a: number, b: number): number => a - b)
+    )
 
     while (counts.size >= groupSize) {
         let start: number = [...counts.keys()][0]

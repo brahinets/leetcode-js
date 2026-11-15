@@ -1,4 +1,4 @@
-export {fullJustify}
+export { fullJustify }
 
 function fullJustify(words: string[], maxWidth: number): string[] {
     const result: string[] = []
@@ -6,8 +6,18 @@ function fullJustify(words: string[], maxWidth: number): string[] {
     let currentLineLength: number = 0
 
     for (const word of words) {
-        if (currentLineLength + currentLineWords.length + word.length > maxWidth) {
-            result.push(justifyLine(currentLineWords, currentLineLength, maxWidth, false))
+        if (
+            currentLineLength + currentLineWords.length + word.length >
+            maxWidth
+        ) {
+            result.push(
+                justifyLine(
+                    currentLineWords,
+                    currentLineLength,
+                    maxWidth,
+                    false
+                )
+            )
             currentLineWords = []
             currentLineLength = 0
         }
@@ -17,21 +27,33 @@ function fullJustify(words: string[], maxWidth: number): string[] {
     }
 
     if (currentLineWords.length > 0) {
-        result.push(justifyLine(currentLineWords, currentLineLength, maxWidth, true))
+        result.push(
+            justifyLine(currentLineWords, currentLineLength, maxWidth, true)
+        )
     }
 
     return result
 }
 
-function justifyLine(currentLineWords: string[], currentLineLength: number, maxWidth: number, b: boolean): string {
+function justifyLine(
+    currentLineWords: string[],
+    currentLineLength: number,
+    maxWidth: number,
+    b: boolean
+): string {
     const numberOfWords: number = currentLineWords.length
     const totalSpaces: number = maxWidth - currentLineLength
 
     if (numberOfWords === 1 || b) {
-        return currentLineWords.join(' ') + ' '.repeat(maxWidth - (currentLineLength + numberOfWords - 1))
+        return (
+            currentLineWords.join(' ') +
+            ' '.repeat(maxWidth - (currentLineLength + numberOfWords - 1))
+        )
     }
 
-    const spacesBetweenWords: number = Math.floor(totalSpaces / (numberOfWords - 1))
+    const spacesBetweenWords: number = Math.floor(
+        totalSpaces / (numberOfWords - 1)
+    )
     let extraSpaces: number = totalSpaces % (numberOfWords - 1)
 
     let line: string = ''

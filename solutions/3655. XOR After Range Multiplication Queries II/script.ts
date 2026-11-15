@@ -4,8 +4,12 @@ const MODULUS: number = 1_000_000_007
 
 function mulmod(first: number, second: number): number {
     const secondHigh: number = second >>> 15
-    const secondLow: number = second & 0x7FFF
-    return ((first * secondLow % MODULUS) + (first * secondHigh % MODULUS) * 32768) % MODULUS
+    const secondLow: number = second & 0x7fff
+    return (
+        (((first * secondLow) % MODULUS) +
+            ((first * secondHigh) % MODULUS) * 32768) %
+        MODULUS
+    )
 }
 
 function modPow(base: number, exponent: number): number {
@@ -32,7 +36,8 @@ function xorAfterQueries(nums: number[], queries: number[][]): number {
     for (const [left, right, step, multiplier] of queries) {
         if (step >= blockSize) {
             for (let index = left; index <= right; index += step) {
-                totalMultiplier[index] = totalMultiplier[index] * multiplier % MODULUS
+                totalMultiplier[index] =
+                    (totalMultiplier[index] * multiplier) % MODULUS
             }
         } else {
             if (queriesByStep[step] === undefined) {
@@ -50,7 +55,9 @@ function xorAfterQueries(nums: number[], queries: number[][]): number {
 
     for (let step = 1; step < blockSize; step++) {
         const stepQueries: number[] | undefined = queriesByStep[step]
-        if (stepQueries === undefined) { continue }
+        if (stepQueries === undefined) {
+            continue
+        }
 
         for (let qi = 0; qi < stepQueries.length; qi += 3) {
             const left: number = stepQueries[qi]
@@ -63,8 +70,8 @@ function xorAfterQueries(nums: number[], queries: number[][]): number {
                 activeResidues.push(residue)
             }
 
-            const last: number = left + ((right - left) / step | 0) * step
-            diff[left] = diff[left] * multiplier % MODULUS
+            const last: number = left + (((right - left) / step) | 0) * step
+            diff[left] = (diff[left] * multiplier) % MODULUS
             touchedPositions.push(left)
 
             if (last + step < length) {
@@ -80,18 +87,28 @@ function xorAfterQueries(nums: number[], queries: number[][]): number {
 
         for (let ri = 0; ri < activeResidues.length; ri++) {
             let prefixProduct: number = 1
-            for (let index = activeResidues[ri]; index < length; index += step) {
+            for (
+                let index = activeResidues[ri];
+                index < length;
+                index += step
+            ) {
                 const diffValue: number = diff[index]
                 if (diffValue !== 1) {
                     const dhi: number = diffValue >>> 15
-                    const dlo: number = diffValue & 0x7FFF
-                    prefixProduct = ((prefixProduct * dlo % MODULUS) + (prefixProduct * dhi % MODULUS) * 32768) % MODULUS
+                    const dlo: number = diffValue & 0x7fff
+                    prefixProduct =
+                        (((prefixProduct * dlo) % MODULUS) +
+                            ((prefixProduct * dhi) % MODULUS) * 32768) %
+                        MODULUS
                 }
                 if (prefixProduct !== 1) {
                     const tm: number = totalMultiplier[index]
                     const phi: number = prefixProduct >>> 15
-                    const plo: number = prefixProduct & 0x7FFF
-                    totalMultiplier[index] = ((tm * plo % MODULUS) + (tm * phi % MODULUS) * 32768) % MODULUS
+                    const plo: number = prefixProduct & 0x7fff
+                    totalMultiplier[index] =
+                        (((tm * plo) % MODULUS) +
+                            ((tm * phi) % MODULUS) * 32768) %
+                        MODULUS
                 }
             }
         }

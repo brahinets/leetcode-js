@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minExtraChar}
+export { minExtraChar }
 
 function minExtraChar(s: string, dictionary: string[]): number {
     let dp: number[] = arrayOfZeros(s.length + 1)

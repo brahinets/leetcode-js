@@ -8,7 +8,9 @@ There is an endless straight line populated with robots and walls. You are given
 - `distance[i]` — maximum distance the i-th robot's bullet can travel
 - `walls[j]` — position of the j-th wall
 
-Each robot fires **one bullet** either left or right. A bullet destroys every wall in its path within range, but **stops immediately when it hits another robot**. A wall at the same position as a robot can be destroyed by the robot at that position.
+Each robot fires **one bullet** either left or right. A bullet destroys every wall in its path within range, but **stops
+immediately when it hits another robot**. A wall at the same position as a robot can be destroyed by the robot at that
+position.
 
 Return the **maximum number of unique walls** that can be destroyed.
 

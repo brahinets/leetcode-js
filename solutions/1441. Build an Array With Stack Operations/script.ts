@@ -1,4 +1,4 @@
-export {buildArray}
+export { buildArray }
 
 function buildArray(target: number[], n: number): string[] {
     const result: string[] = []
@@ -10,11 +10,11 @@ function buildArray(target: number[], n: number): string[] {
         }
 
         if (target[targetIndex] === i) {
-            result.push("Push")
+            result.push('Push')
             targetIndex++
         } else {
-            result.push("Push")
-            result.push("Pop")
+            result.push('Push')
+            result.push('Pop')
         }
     }
 

@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {singleNumber}
+export { singleNumber }
 
 function singleNumber(nums: number[]): number {
     const counts: Map<number, number> = count(nums)
@@ -11,5 +11,5 @@ function singleNumber(nums: number[]): number {
         }
     }
 
-    throw new Error("Element not found")
+    throw new Error('Element not found')
 }

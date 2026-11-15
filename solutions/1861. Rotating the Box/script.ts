@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {rotateTheBox}
+export { rotateTheBox }
 
 function rotateTheBox(box: string[][]): string[][] {
     const rotatedBox: string[][] = matrixOf('.', box[0].length, box.length)

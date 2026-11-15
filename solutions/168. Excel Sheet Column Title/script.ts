@@ -1,14 +1,14 @@
-export {convertToTitle}
+export { convertToTitle }
 
 function convertToTitle(columnNumber: number): string {
     const ALPHABET: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    let result: string = ""
+    let result: string = ''
 
     if (columnNumber > ALPHABET.length) {
-        const n: number = Math.floor((columnNumber-1) / ALPHABET.length)
+        const n: number = Math.floor((columnNumber - 1) / ALPHABET.length)
         result = convertToTitle(n) + result
-        columnNumber -= (n * ALPHABET.length)
+        columnNumber -= n * ALPHABET.length
     }
 
     return result + ALPHABET[columnNumber - 1]

@@ -1,8 +1,12 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {checkIfPrerequisite}
+export { checkIfPrerequisite }
 
-function checkIfPrerequisite(numCourses: number, prerequisites: number[][], queries: number[][]): boolean[] {
+function checkIfPrerequisite(
+    numCourses: number,
+    prerequisites: number[][],
+    queries: number[][]
+): boolean[] {
     const graph: boolean[][] = matrixOf(false, numCourses, numCourses)
     for (const [course, prerequisite] of prerequisites) {
         graph[course][prerequisite] = true
@@ -16,5 +20,8 @@ function checkIfPrerequisite(numCourses: number, prerequisites: number[][], quer
         }
     }
 
-    return queries.map(([course, prerequisite]: number[]): boolean => graph[course][prerequisite])
+    return queries.map(
+        ([course, prerequisite]: number[]): boolean =>
+            graph[course][prerequisite]
+    )
 }

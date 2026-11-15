@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {modifiedList}
+export { modifiedList }
 
 function modifiedList(nums: number[], head: ListNode | null): ListNode | null {
     const valuesToRemove: Set<number> = new Set<number>(nums)

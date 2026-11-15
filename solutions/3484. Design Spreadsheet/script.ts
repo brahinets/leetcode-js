@@ -1,4 +1,4 @@
-export {Spreadsheet}
+export { Spreadsheet }
 
 class Spreadsheet {
     private readonly cells: Map<string, number>
@@ -82,25 +82,38 @@ class Spreadsheet {
             if (values.length === 0) {
                 throw new Error('No cells to average')
             }
-            return Math.floor(values.reduce((a: number, b: number): number => a + b, 0) / values.length)
+            return Math.floor(
+                values.reduce((a: number, b: number): number => a + b, 0) /
+                    values.length
+            )
         }
 
         if (formula.includes(':')) {
-            const [start, end]: [string, string] = formula.split(':').map((s: string): string => s.trim()) as [string, string]
+            const [start, end]: [string, string] = formula
+                .split(':')
+                .map((s: string): string => s.trim()) as [string, string]
             const cells: string[] = this.expandRange(start, end)
-            return cells.reduce((sum: number, cell: string): number => sum + (this.cells.get(cell) ?? 0), 0)
+            return cells.reduce(
+                (sum: number, cell: string): number =>
+                    sum + (this.cells.get(cell) ?? 0),
+                0
+            )
         }
 
         throw new Error('Cell not set')
     }
 
     private parseArgs(args: string): number[] {
-        const parts: string[] = args.split(',').map((s: string): string => s.trim())
+        const parts: string[] = args
+            .split(',')
+            .map((s: string): string => s.trim())
         const values: number[] = []
 
         for (const part of parts) {
             if (part.includes(':')) {
-                const [start, end]: [string, string] = part.split(':').map((s: string): string => s.trim()) as [string, string]
+                const [start, end]: [string, string] = part
+                    .split(':')
+                    .map((s: string): string => s.trim()) as [string, string]
                 const cells: string[] = this.expandRange(start, end)
                 for (const cell of cells) {
                     values.push(this.cells.get(cell) ?? 0)
@@ -126,7 +139,11 @@ class Spreadsheet {
         const cells: string[] = []
 
         for (let col: number = startCol; col <= endCol; col++) {
-            for (let row: number = Math.max(1, startRow); row <= Math.min(this.rows, endRow); row++) {
+            for (
+                let row: number = Math.max(1, startRow);
+                row <= Math.min(this.rows, endRow);
+                row++
+            ) {
                 cells.push(this.cellName(col, row))
             }
         }
@@ -162,7 +179,7 @@ class Spreadsheet {
         col++
 
         while (col > 0) {
-            name = String.fromCharCode(65 + (col - 1) % 26) + name
+            name = String.fromCharCode(65 + ((col - 1) % 26)) + name
             col = Math.floor((col - 1) / 26)
         }
 

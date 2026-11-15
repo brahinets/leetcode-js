@@ -1,4 +1,4 @@
-export {asteroidsDestroyed}
+export { asteroidsDestroyed }
 
 function asteroidsDestroyed(mass: number, asteroids: number[]): boolean {
     asteroids.sort((a: number, b: number): number => a - b)

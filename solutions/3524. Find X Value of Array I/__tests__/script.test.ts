@@ -7,8 +7,7 @@ describe('3524. Find X Value of Array I', (): void => {
 
         const result: number[] = resultArray(nums, k)
 
-        expect(result)
-            .toEqual([9, 2, 4])
+        expect(result).toEqual([9, 2, 4])
     })
 
     it('powers of two with no way to reach one residue', (): void => {
@@ -17,8 +16,7 @@ describe('3524. Find X Value of Array I', (): void => {
 
         const result: number[] = resultArray(nums, k)
 
-        expect(result)
-            .toEqual([18, 1, 2, 0])
+        expect(result).toEqual([18, 1, 2, 0])
     })
 
     it('repeated values with duplicates', (): void => {
@@ -27,8 +25,7 @@ describe('3524. Find X Value of Array I', (): void => {
 
         const result: number[] = resultArray(nums, k)
 
-        expect(result)
-            .toEqual([9, 6])
+        expect(result).toEqual([9, 6])
     })
 
     it('single element array', (): void => {
@@ -37,8 +34,7 @@ describe('3524. Find X Value of Array I', (): void => {
 
         const result: number[] = resultArray(nums, k)
 
-        expect(result)
-            .toEqual([0, 0, 1, 0, 0])
+        expect(result).toEqual([0, 0, 1, 0, 0])
     })
 
     it('k equal to one collects every subarray into residue zero', (): void => {
@@ -47,8 +43,7 @@ describe('3524. Find X Value of Array I', (): void => {
 
         const result: number[] = resultArray(nums, k)
 
-        expect(result)
-            .toEqual([6])
+        expect(result).toEqual([6])
     })
 
     it('large values that require modular reduction before multiplication', (): void => {
@@ -57,7 +52,6 @@ describe('3524. Find X Value of Array I', (): void => {
 
         const result: number[] = resultArray(nums, k)
 
-        expect(result)
-            .toEqual([2, 0, 0, 0, 1])
+        expect(result).toEqual([2, 0, 0, 0, 1])
     })
 })

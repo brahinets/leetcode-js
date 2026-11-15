@@ -1,4 +1,4 @@
-export {triangleNumber}
+export { triangleNumber }
 
 function triangleNumber(nums: number[]): number {
     nums.sort((a: number, b: number): number => a - b)

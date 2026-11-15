@@ -1,4 +1,4 @@
-export {singleNonDuplicate}
+export { singleNonDuplicate }
 
 function singleNonDuplicate(nums: number[]): number {
     const counts: Map<number, number> = count(nums)
@@ -12,7 +12,7 @@ function singleNonDuplicate(nums: number[]): number {
         }
     }
 
-    throw new Error("Non duplicate not detected")
+    throw new Error('Non duplicate not detected')
 }
 
 function count(nums: number[]): Map<number, number> {

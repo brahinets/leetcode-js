@@ -1,8 +1,13 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {mergeInBetween, ListNode}
+export { mergeInBetween, ListNode }
 
-function mergeInBetween(list1: ListNode | null, a: number, b: number, list2: ListNode | null): ListNode | null {
+function mergeInBetween(
+    list1: ListNode | null,
+    a: number,
+    b: number,
+    list2: ListNode | null
+): ListNode | null {
     let start: ListNode | null = null
     let end: ListNode | null = list1
 

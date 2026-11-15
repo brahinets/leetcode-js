@@ -1,4 +1,4 @@
-export {findPeakElement}
+export { findPeakElement }
 
 function findPeakElement(nums: number[]): number {
     let low: number = 0

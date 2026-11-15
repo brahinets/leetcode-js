@@ -1,7 +1,7 @@
-import {PriorityQueue} from '../../common/PriorityQueue'
-import {arrayOfZeros} from '../../common/array-factories'
+import { PriorityQueue } from '../../common/PriorityQueue'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minimumPairRemoval}
+export { minimumPairRemoval }
 
 function minimumPairRemoval(nums: number[]): number {
     const length = nums.length
@@ -11,8 +11,12 @@ function minimumPairRemoval(nums: number[]): number {
     }
 
     const values: bigint[] = nums.map((value) => BigInt(value))
-    const previousIndex: number[] = arrayOfZeros(length).map((_: number, index: number): number => index - 1)
-    const nextIndex: number[] = arrayOfZeros(length).map((_: number, index: number): number => index + 1)
+    const previousIndex: number[] = arrayOfZeros(length).map(
+        (_: number, index: number): number => index - 1
+    )
+    const nextIndex: number[] = arrayOfZeros(length).map(
+        (_: number, index: number): number => index + 1
+    )
 
     let inversions = countInversions(values)
 
@@ -20,13 +24,15 @@ function minimumPairRemoval(nums: number[]): number {
         return 0
     }
 
-    const queue = new PriorityQueue<[bigint, number, bigint, bigint]>((first, second) => {
-        if (first[0] !== second[0]) {
-            return first[0] < second[0] ? -1 : 1
-        }
+    const queue = new PriorityQueue<[bigint, number, bigint, bigint]>(
+        (first, second) => {
+            if (first[0] !== second[0]) {
+                return first[0] < second[0] ? -1 : 1
+            }
 
-        return first[1] - second[1]
-    })
+            return first[1] - second[1]
+        }
+    )
 
     for (let index = 0; index < length - 1; index++) {
         const sum = values[index] + values[index + 1]
@@ -39,9 +45,10 @@ function minimumPairRemoval(nums: number[]): number {
         const [pairSum, left, expectedLeft, expectedRight] = queue.dequeue()!
         const right = nextIndex[left]
 
-        const isInvalid = right >= length
-            || values[left] !== expectedLeft
-            || values[right] !== expectedRight
+        const isInvalid =
+            right >= length ||
+            values[left] !== expectedLeft ||
+            values[right] !== expectedRight
 
         if (isInvalid) {
             continue

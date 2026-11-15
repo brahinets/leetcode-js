@@ -1,4 +1,4 @@
-export {maximumDifference}
+export { maximumDifference }
 
 function maximumDifference(nums: number[]): number {
     let maxDiff: number = -1

@@ -6,13 +6,20 @@ function largestInteger(numbers: number[], windowSize: number): number {
 
     const valueToWindowCount: Map<number, number> = new Map<number, number>()
 
-    for (let windowStart: number = 0; windowStart < windowCount; windowStart++) {
+    for (
+        let windowStart: number = 0;
+        windowStart < windowCount;
+        windowStart++
+    ) {
         const valuesInWindow: Set<number> = new Set<number>(
             numbers.slice(windowStart, windowStart + windowSize)
         )
 
         for (const value of valuesInWindow) {
-            valueToWindowCount.set(value, (valueToWindowCount.get(value) ?? 0) + 1)
+            valueToWindowCount.set(
+                value,
+                (valueToWindowCount.get(value) ?? 0) + 1
+            )
         }
     }
 

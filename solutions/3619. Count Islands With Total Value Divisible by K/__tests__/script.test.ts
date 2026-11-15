@@ -1,7 +1,6 @@
 import { countIslands } from '../script'
 
 describe('3619. Count Islands With Total Value Divisible by K', (): void => {
-
     it('two of several islands have divisible totals', (): void => {
         // Arrange
         const grid: number[][] = [
@@ -17,8 +16,7 @@ describe('3619. Count Islands With Total Value Divisible by K', (): void => {
         const result: number = countIslands(grid, k)
 
         // Assert
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('isolated cells each form a divisible island', (): void => {
@@ -34,8 +32,7 @@ describe('3619. Count Islands With Total Value Divisible by K', (): void => {
         const result: number = countIslands(grid, k)
 
         // Assert
-        expect(result)
-            .toBe(6)
+        expect(result).toBe(6)
     })
 
     it('grid without land has no islands', (): void => {
@@ -50,8 +47,7 @@ describe('3619. Count Islands With Total Value Divisible by K', (): void => {
         const result: number = countIslands(grid, k)
 
         // Assert
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('single land cell not divisible by k', (): void => {
@@ -63,8 +59,7 @@ describe('3619. Count Islands With Total Value Divisible by K', (): void => {
         const result: number = countIslands(grid, k)
 
         // Assert
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('every island counts when k is one', (): void => {
@@ -80,8 +75,7 @@ describe('3619. Count Islands With Total Value Divisible by K', (): void => {
         const result: number = countIslands(grid, k)
 
         // Assert
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('diagonal neighbours form separate islands', (): void => {
@@ -96,8 +90,7 @@ describe('3619. Count Islands With Total Value Divisible by K', (): void => {
         const result: number = countIslands(grid, k)
 
         // Assert
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('winding island is summed as a whole', (): void => {
@@ -115,8 +108,7 @@ describe('3619. Count Islands With Total Value Divisible by K', (): void => {
         const result: number = countIslands(grid, k)
 
         // Assert
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('large values in a single row island', (): void => {
@@ -128,7 +120,6 @@ describe('3619. Count Islands With Total Value Divisible by K', (): void => {
         const result: number = countIslands(grid, k)
 
         // Assert
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 })

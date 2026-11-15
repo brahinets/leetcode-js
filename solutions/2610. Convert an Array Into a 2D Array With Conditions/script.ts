@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {findMatrix}
+export { findMatrix }
 
 function findMatrix(nums: number[]): number[][] {
     const counts: Map<number, number> = count(nums)
@@ -8,7 +8,7 @@ function findMatrix(nums: number[]): number[][] {
     const result: number[][] = []
 
     for (const [number, count] of counts.entries()) {
-        for (let i:number = 0; i < count; i++) {
+        for (let i: number = 0; i < count; i++) {
             if (!result[i]) {
                 result.push([])
             }

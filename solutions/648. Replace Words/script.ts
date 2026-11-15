@@ -1,14 +1,14 @@
-export {replaceWords}
+export { replaceWords }
 
 function replaceWords(dictionary: string[], sentence: string): string {
-    const words: string[] = sentence.split(" ")
+    const words: string[] = sentence.split(' ')
 
-    let result: string = ""
+    let result: string = ''
     for (let i = 0; i < words.length; i++) {
         result += findPrefix(dictionary, words[i])
 
         if (i < words.length - 1) {
-            result += " "
+            result += ' '
         }
     }
 

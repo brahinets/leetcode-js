@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {largestCombination}
+export { largestCombination }
 
 function largestCombination(candidates: number[]): number {
     const bitCount: number[] = arrayOfZeros(24)

@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {swapNodes}
+export { swapNodes }
 
 function swapNodes(head: ListNode | null, k: number): ListNode | null {
     let count: number = 1
@@ -18,7 +18,7 @@ function swapNodes(head: ListNode | null, k: number): ListNode | null {
     }
 
     if (!firstNode || !secondNode) {
-        throw new Error("Element not found")
+        throw new Error('Element not found')
     }
 
     const tmp: number = firstNode.val

@@ -7,7 +7,8 @@ A robot is placed at `(0, 0)` on a grid of size `width x height`, initially faci
 - `Robot(width, height)`: Initializes the robot on the grid.
 - `step(num)`: Moves the robot `num` steps along the perimeter (counterclockwise: North → East → South → West).
 - `getPos()`: Returns the current position `[x, y]`.
-- `getDir()`: Returns the current direction (`"North"`, `"East"`, `"South"`, or `"West"`). Returns `"South"` if no steps have been taken.
+- `getDir()`: Returns the current direction (`"North"`, `"East"`, `"South"`, or `"West"`). Returns `"South"` if no steps
+  have been taken.
 
 ### Constraints:
 

@@ -1,4 +1,4 @@
-export {findKthPositive}
+export { findKthPositive }
 
 function findKthPositive(arr: number[], k: number): number {
     let missedCount: number = 0

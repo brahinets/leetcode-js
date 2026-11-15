@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from "../../common/array-factories"
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {countGoodIntegers}
+export { countGoodIntegers }
 
 function countGoodIntegers(n: number, k: number): number {
     const dict: Set<string> = new Set<string>()
@@ -9,11 +9,11 @@ function countGoodIntegers(n: number, k: number): number {
 
     for (let i: number = base; i < base * 10; i++) {
         let s: string = i.toString()
-        s += s.split("").reverse().slice(skip).join("")
+        s += s.split('').reverse().slice(skip).join('')
 
         const palindromicInteger: number = parseInt(s)
         if (palindromicInteger % k === 0) {
-            const sorted: string = s.split("").sort().join("")
+            const sorted: string = s.split('').sort().join('')
             dict.add(sorted)
         }
     }

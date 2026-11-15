@@ -1,4 +1,4 @@
-export {lengthOfLongestSubstring}
+export { lengthOfLongestSubstring }
 
 function lengthOfLongestSubstring(s: string): number {
     const count: Map<string, number> = new Map<string, number>()

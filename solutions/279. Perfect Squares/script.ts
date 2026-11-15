@@ -1,9 +1,9 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {numSquares}
+export { numSquares }
 
 function numSquares(n: number): number {
-    const squares: number [] = arrayOf(n, n + 1)
+    const squares: number[] = arrayOf(n, n + 1)
     squares[0] = 0
 
     for (let number: number = 1; number <= n; number++) {

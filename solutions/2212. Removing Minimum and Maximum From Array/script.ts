@@ -21,7 +21,12 @@ function minimumDeletions(numbers: number[]): number {
 
     const deletionsFromFront: number = secondIndex + 1
     const deletionsFromBack: number = arrayLength - firstIndex
-    const deletionsFromBothSides: number = firstIndex + 1 + (arrayLength - secondIndex)
+    const deletionsFromBothSides: number =
+        firstIndex + 1 + (arrayLength - secondIndex)
 
-    return Math.min(deletionsFromFront, deletionsFromBack, deletionsFromBothSides)
+    return Math.min(
+        deletionsFromFront,
+        deletionsFromBack,
+        deletionsFromBothSides
+    )
 }

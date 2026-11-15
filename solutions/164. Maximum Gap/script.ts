@@ -17,7 +17,12 @@ function maximumGap(nums: number[]): number {
 
     const bucketSize: number = getBucketSize(minVal, maxVal, nums.length)
     const bucketCount: number = Math.floor((maxVal - minVal) / bucketSize) + 1
-    const [bucketMin, bucketMax] = fillBuckets(nums, minVal, bucketSize, bucketCount)
+    const [bucketMin, bucketMax] = fillBuckets(
+        nums,
+        minVal,
+        bucketSize,
+        bucketCount
+    )
 
     return findMaxGap(bucketMin, bucketMax, bucketCount)
 }
@@ -30,7 +35,7 @@ function fillBuckets(
     nums: number[],
     minVal: number,
     bucketSize: number,
-    bucketCount: number,
+    bucketCount: number
 ): [number[], number[]] {
     const bucketMin: number[] = arrayOf(Infinity, bucketCount)
     const bucketMax: number[] = arrayOf(-Infinity, bucketCount)
@@ -44,7 +49,11 @@ function fillBuckets(
     return [bucketMin, bucketMax]
 }
 
-function findMaxGap(bucketMin: number[], bucketMax: number[], bucketCount: number): number {
+function findMaxGap(
+    bucketMin: number[],
+    bucketMax: number[],
+    bucketCount: number
+): number {
     let maxGap: number = 0
     let prevMax: number = first(bucketMax)!
 

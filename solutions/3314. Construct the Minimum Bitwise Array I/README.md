@@ -4,7 +4,8 @@
 
 You are given an array `nums` consisting of `n` prime numbers.
 
-You need to construct an array `ans` of length `n`, such that, for each index `i`, the bitwise `OR` of `ans[i]` and `ans[i] + 1` is equal to `nums[i]`, i.e. `ans[i] OR (ans[i] + 1) == nums[i]`.
+You need to construct an array `ans` of length `n`, such that, for each index `i`, the bitwise `OR` of `ans[i]` and
+`ans[i] + 1` is equal to `nums[i]`, i.e. `ans[i] OR (ans[i] + 1) == nums[i]`.
 
 Additionally, you must minimize each value of `ans[i]` in the resulting array.
 

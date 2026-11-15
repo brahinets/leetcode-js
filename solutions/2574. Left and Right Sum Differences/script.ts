@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {leftRightDifference}
+export { leftRightDifference }
 
 function leftRightDifference(numbers: number[]): number[] {
     const totalSum: number = sum(numbers)

@@ -1,4 +1,4 @@
-export {largestLocal}
+export { largestLocal }
 
 function largestLocal(grid: number[][]): number[][] {
     const result: number[][] = []
@@ -16,7 +16,13 @@ function largestLocal(grid: number[][]): number[][] {
     return result
 }
 
-function max(grid: number[][], rowStart: number, rowEnd: number, colStart: number, colEnd: number): number {
+function max(
+    grid: number[][],
+    rowStart: number,
+    rowEnd: number,
+    colStart: number,
+    colEnd: number
+): number {
     let max: number = Number.MIN_SAFE_INTEGER
 
     for (let i: number = rowStart; i <= rowEnd; i++) {

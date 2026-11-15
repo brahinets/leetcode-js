@@ -2,7 +2,8 @@
 
 ## Medium
 
-You're given a binary string `s` where `'1'` represents an active section and `'0'` represents an inactive section. You may perform at most one trade to maximize active sections:
+You're given a binary string `s` where `'1'` represents an active section and `'0'` represents an inactive section. You
+may perform at most one trade to maximize active sections:
 
 - Convert a contiguous block of `'1'`s surrounded by `'0'`s to all `'0'`s
 - Then convert a contiguous block of `'0'`s surrounded by `'1'`s to all `'1'`s

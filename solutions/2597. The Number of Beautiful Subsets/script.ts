@@ -1,6 +1,6 @@
-import {subsets} from "../78. Subsets/script"
+import { subsets } from '../78. Subsets/script'
 
-export {beautifulSubsets}
+export { beautifulSubsets }
 
 function beautifulSubsets(nums: number[], k: number): number {
     let result: number = 0

@@ -1,4 +1,4 @@
-export {minimumSize}
+export { minimumSize }
 
 function minimumSize(nums: number[], maxOperations: number): number {
     let left: number = 1

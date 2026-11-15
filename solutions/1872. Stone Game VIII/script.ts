@@ -1,6 +1,6 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {stoneGameVIII}
+export { stoneGameVIII }
 
 function stoneGameVIII(stones: number[]): number {
     const stoneCount: number = stones.length
@@ -15,7 +15,10 @@ function stoneGameVIII(stones: number[]): number {
     let bestScoreDifference: number = prefixSums[stoneCount - 1]
 
     for (let index: number = stoneCount - 2; index >= 1; index--) {
-        bestScoreDifference = Math.max(bestScoreDifference, prefixSums[index] - bestScoreDifference)
+        bestScoreDifference = Math.max(
+            bestScoreDifference,
+            prefixSums[index] - bestScoreDifference
+        )
     }
 
     return bestScoreDifference

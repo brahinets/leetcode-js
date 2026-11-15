@@ -1,9 +1,11 @@
-export {customSortString}
+export { customSortString }
 
 function customSortString(order: string, s: string): string {
-    return [...s.split("")]
-        .sort((first: string, second: string): number => comparatorByCustom(first, second, order))
-        .join("")
+    return [...s.split('')]
+        .sort((first: string, second: string): number =>
+            comparatorByCustom(first, second, order)
+        )
+        .join('')
 }
 
 function comparatorByCustom(

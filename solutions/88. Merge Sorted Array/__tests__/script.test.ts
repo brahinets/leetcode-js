@@ -1,4 +1,4 @@
-import {merge} from '../script'
+import { merge } from '../script'
 
 describe('88. Merge Sorted Array', (): void => {
     it('Merge', (): void => {

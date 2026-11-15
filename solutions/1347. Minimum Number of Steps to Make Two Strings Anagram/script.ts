@@ -1,10 +1,10 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {minSteps}
+export { minSteps }
 
 function minSteps(s: string, t: string): number {
-    const sCounts: Map<string, number> = count(s.split(""))
-    const tCounts: Map<string, number> = count(t.split(""))
+    const sCounts: Map<string, number> = count(s.split(''))
+    const tCounts: Map<string, number> = count(t.split(''))
 
     let steps: number = 0
     for (const [letter, count] of sCounts.entries()) {

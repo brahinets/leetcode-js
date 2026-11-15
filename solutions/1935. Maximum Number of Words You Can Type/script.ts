@@ -1,4 +1,4 @@
-export {canBeTypedWords}
+export { canBeTypedWords }
 
 function canBeTypedWords(text: string, brokenLetters: string): number {
     const broken: Set<string> = new Set<string>(brokenLetters)

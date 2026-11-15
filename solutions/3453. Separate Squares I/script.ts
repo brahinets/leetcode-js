@@ -1,4 +1,4 @@
-export {separateSquares}
+export { separateSquares }
 
 function separateSquares(squares: number[][]): number {
     const diff: Map<bigint, bigint> = buildDiff(squares)
@@ -59,7 +59,11 @@ function compareBigInt(a: bigint, b: bigint): number {
     return a < b ? -1 : a > b ? 1 : 0
 }
 
-function computeBreakPosition(keys: bigint[], diff: Map<bigint, bigint>, total: bigint): number {
+function computeBreakPosition(
+    keys: bigint[],
+    diff: Map<bigint, bigint>,
+    total: bigint
+): number {
     let accumulatedArea: bigint = 0n
     let activeWidth: bigint = 0n
 

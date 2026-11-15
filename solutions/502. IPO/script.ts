@@ -1,4 +1,4 @@
-export {findMaximizedCapital}
+export { findMaximizedCapital }
 
 function findMaximizedCapital(
     numProjects: number,
@@ -24,7 +24,9 @@ function findMaximizedCapital(
         }
 
         const maxProfit: number = Math.max(...maxHeap)
-        const maxProfitIndex: number = maxHeap.findIndex((profit: number): boolean => profit === maxProfit)
+        const maxProfitIndex: number = maxHeap.findIndex(
+            (profit: number): boolean => profit === maxProfit
+        )
         maxHeap.splice(maxProfitIndex, 1)
         result += maxProfit
         numProjects--
@@ -46,11 +48,11 @@ function collectProjects(profits: number[], capital: number[]): Project[] {
 }
 
 class Project {
+    readonly profit: number
+    readonly capital: number
+
     constructor(profit: number, capital: number) {
         this.profit = profit
         this.capital = capital
     }
-
-    readonly profit: number
-    readonly capital: number
 }

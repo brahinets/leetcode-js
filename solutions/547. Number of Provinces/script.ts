@@ -1,4 +1,4 @@
-export {findCircleNum}
+export { findCircleNum }
 
 const PROVINCE: number = 1
 const VISITED: number = 2
@@ -37,7 +37,11 @@ function gatherProvince(map: number[][], cityId: number): number[] {
     map[cityId][cityId] = VISITED
 
     const neighbours: number[] = map[cityId]
-    for (let neighbourId: number = 0; neighbourId < neighbours.length; neighbourId++) {
+    for (
+        let neighbourId: number = 0;
+        neighbourId < neighbours.length;
+        neighbourId++
+    ) {
         if (map[cityId][neighbourId] === PROVINCE) {
             map[cityId][neighbourId] = VISITED
             province.push(neighbourId)

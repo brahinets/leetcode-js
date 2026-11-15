@@ -10,5 +10,5 @@ Allowed swaps transitively connect indices into components (Union-Find). Within 
 component, source values can be freely rearranged. For each component, greedily match
 source values to target values; unmatched positions contribute to the Hamming distance.
 
-**Time:** O(n · α(n) + k) where k = allowedSwaps length  
-**Space:** O(n)
+**Time:** O (n · α (n) + k) where k = allowedSwaps length
+**Space:** O (n)

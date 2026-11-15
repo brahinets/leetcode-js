@@ -1,7 +1,7 @@
-import {reverse} from "../7. Reverse Integer/script"
-import {count} from "../../common/array-utils"
+import { reverse } from '../7. Reverse Integer/script'
+import { count } from '../../common/array-utils'
 
-export {countNicePairs}
+export { countNicePairs }
 
 const MOD: number = 10 ** 9 + 7
 
@@ -14,7 +14,7 @@ function countNicePairs(nums: number[]): number {
     let nicePairs: number = 0
     const counts: Map<number, number> = count(data)
     for (const [, value] of counts) {
-        nicePairs = (nicePairs + value * (value - 1) / 2) % MOD
+        nicePairs = (nicePairs + (value * (value - 1)) / 2) % MOD
     }
 
     return nicePairs

@@ -1,16 +1,17 @@
-import {TreeNode} from "../../common/TreeNode"
-import {arrayOfZeros} from "../../common/array-factories"
-import {undirectedUnweightedGraphFromEdges} from "../../common/graph-factories"
-import {UndirectedUnweightedGraph} from "../../common/Graph"
+import { TreeNode } from '../../common/TreeNode'
+import { arrayOfZeros } from '../../common/array-factories'
+import { undirectedUnweightedGraphFromEdges } from '../../common/graph-factories'
+import { UndirectedUnweightedGraph } from '../../common/Graph'
 
-export {findMinHeightTrees, TreeNode}
+export { findMinHeightTrees, TreeNode }
 
 function findMinHeightTrees(n: number, edges: number[][]): number[] {
     if (edges.length == 0) {
         return [0]
     }
 
-    let graph: UndirectedUnweightedGraph = undirectedUnweightedGraphFromEdges(edges)
+    let graph: UndirectedUnweightedGraph =
+        undirectedUnweightedGraphFromEdges(edges)
     let depth: number[] = arrayOfZeros(n)
     for (const [from, to] of edges) {
         depth[from]++
@@ -41,7 +42,6 @@ function findMinHeightTrees(n: number, edges: number[][]): number[] {
                     queue.push(neighbour)
                 }
             }
-
         }
     }
 

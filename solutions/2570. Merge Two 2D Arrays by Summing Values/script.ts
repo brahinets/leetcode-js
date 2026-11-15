@@ -1,4 +1,4 @@
-export {mergeArrays}
+export { mergeArrays }
 
 function mergeArrays(nums1: number[][], nums2: number[][]): number[][] {
     let first: number = 0

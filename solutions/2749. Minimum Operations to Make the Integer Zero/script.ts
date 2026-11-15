@@ -1,4 +1,4 @@
-export {makeTheIntegerZero}
+export { makeTheIntegerZero }
 
 function makeTheIntegerZero(num1: number, num2: number): number {
     let k: number = 1

@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {TreeNode, maxLevelSum}
+export { TreeNode, maxLevelSum }
 
 function maxLevelSum(root: TreeNode | null): number {
     const levelsSum: Map<number, number> = collect(root, 1)
@@ -21,7 +21,10 @@ function collect(root: TreeNode | null, level: number): Map<number, number> {
     return map
 }
 
-function sumMaps(first: Map<number, number>, second: Map<number, number>): Map<number, number> {
+function sumMaps(
+    first: Map<number, number>,
+    second: Map<number, number>
+): Map<number, number> {
     const map: Map<number, number> = new Map<number, number>()
 
     for (const kv of first) {

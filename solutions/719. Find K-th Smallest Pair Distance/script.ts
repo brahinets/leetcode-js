@@ -1,4 +1,4 @@
-export {smallestDistancePair}
+export { smallestDistancePair }
 
 function smallestDistancePair(nums: number[], k: number): number {
     nums.sort((a: number, b: number): number => a - b)

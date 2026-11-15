@@ -1,4 +1,4 @@
-export {KthLargest}
+export { KthLargest }
 
 class KthLargest {
     private readonly limit: number

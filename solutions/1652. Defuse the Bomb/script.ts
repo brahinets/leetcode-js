@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {decrypt}
+export { decrypt }
 
 function decrypt(code: number[], k: number): number[] {
     const result: number[] = arrayOfZeros(code.length)

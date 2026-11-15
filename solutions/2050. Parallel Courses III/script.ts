@@ -1,7 +1,7 @@
-import {DirectedUnweightedGraph} from "../../common/Graph"
-import {arrayOfZeros} from "../../common/array-factories"
+import { DirectedUnweightedGraph } from '../../common/Graph'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minimumTime}
+export { minimumTime }
 
 function minimumTime(n: number, relations: number[][], time: number[]): number {
     const graph: DirectedUnweightedGraph = new DirectedUnweightedGraph()
@@ -25,7 +25,10 @@ function minimumTime(n: number, relations: number[][], time: number[]): number {
         const neighbors: Map<number, number> = graph.getNeighbours(course)
 
         for (const nextCourse of neighbors.keys()) {
-            maxTime[nextCourse] = Math.max(maxTime[nextCourse], maxTime[course] + time[nextCourse])
+            maxTime[nextCourse] = Math.max(
+                maxTime[nextCourse],
+                maxTime[course] + time[nextCourse]
+            )
             inDegree[nextCourse]--
 
             if (inDegree[nextCourse] === 0) {

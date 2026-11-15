@@ -1,6 +1,6 @@
-import {TreeNode} from '../../common/TreeNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {sumNumbers, TreeNode}
+export { sumNumbers, TreeNode }
 
 function sumNumbers(root: TreeNode | null): number {
     if (!root) {

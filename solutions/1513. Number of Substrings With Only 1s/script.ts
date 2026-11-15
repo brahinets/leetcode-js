@@ -1,9 +1,8 @@
-export {numSub}
+export { numSub }
 
 const MOD: number = 10 ** 9 + 7
 
 function numSub(s: string): number {
-
     let count: number = 0
     let consecutiveOnes: number = 0
 

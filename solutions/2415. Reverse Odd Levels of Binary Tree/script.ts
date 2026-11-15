@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {reverseOddLevels}
+export { reverseOddLevels }
 
 function reverseOddLevels(root: TreeNode | null): TreeNode | null {
     if (!root) {
@@ -12,7 +12,11 @@ function reverseOddLevels(root: TreeNode | null): TreeNode | null {
     return root
 }
 
-function traverseDFS(leftChild: TreeNode | null, rightChild: TreeNode | null, level: number): void {
+function traverseDFS(
+    leftChild: TreeNode | null,
+    rightChild: TreeNode | null,
+    level: number
+): void {
     if (!leftChild || !rightChild) {
         return
     }

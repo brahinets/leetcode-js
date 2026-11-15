@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {maxScore}
+export { maxScore }
 
 function maxScore(nums: number[]): number {
     const memo: Map<string, number> = new Map<string, number>()
@@ -41,7 +41,8 @@ function backtrack(
             used[i] = true
             used[j] = true
 
-            const currentScore: number = step * gcdValue + backtrack(nums, num, step + 1, memo, used)
+            const currentScore: number =
+                step * gcdValue + backtrack(nums, num, step + 1, memo, used)
             used[i] = false
             used[j] = false
 

@@ -1,4 +1,4 @@
-export {generate}
+export { generate }
 
 function generate(numRows: number): number[][] {
     const result: number[][] = []

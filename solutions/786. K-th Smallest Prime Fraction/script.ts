@@ -1,4 +1,4 @@
-export {kthSmallestPrimeFraction}
+export { kthSmallestPrimeFraction }
 
 function kthSmallestPrimeFraction(arr: number[], k: number): number[] {
     const fractions: number[][] = []
@@ -13,6 +13,9 @@ function kthSmallestPrimeFraction(arr: number[], k: number): number[] {
     return [fractions[k - 1][0], fractions[k - 1][1]]
 }
 
-function compareByFraction([firstDividend, firstDivisor]: number[], [secondDividend, secondDivisor]: number[]): number {
+function compareByFraction(
+    [firstDividend, firstDivisor]: number[],
+    [secondDividend, secondDivisor]: number[]
+): number {
     return firstDividend / firstDivisor - secondDividend / secondDivisor
 }

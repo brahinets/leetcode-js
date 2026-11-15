@@ -1,6 +1,11 @@
 export { reverseSubmatrix }
 
-function reverseSubmatrix(grid: number[][], x: number, y: number, k: number): number[][] {
+function reverseSubmatrix(
+    grid: number[][],
+    x: number,
+    y: number,
+    k: number
+): number[][] {
     let top: number = x
     let bottom: number = x + k - 1
 

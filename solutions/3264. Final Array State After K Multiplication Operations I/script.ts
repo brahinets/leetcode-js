@@ -1,6 +1,10 @@
-export {getFinalState}
+export { getFinalState }
 
-function getFinalState(nums: number[], k: number, multiplier: number): number[] {
+function getFinalState(
+    nums: number[],
+    k: number,
+    multiplier: number
+): number[] {
     for (let j: number = 0; j < k; j++) {
         let minIndex: number = 0
 

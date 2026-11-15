@@ -1,6 +1,10 @@
-export {successfulPairs}
+export { successfulPairs }
 
-function successfulPairs(spells: number[], potions: number[], success: number): number[] {
+function successfulPairs(
+    spells: number[],
+    potions: number[],
+    success: number
+): number[] {
     potions = potions.sort((a: number, b: number) => a - b)
 
     const successfulPairsCounts: number[] = []

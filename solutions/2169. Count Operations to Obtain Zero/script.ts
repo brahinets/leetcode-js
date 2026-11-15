@@ -1,4 +1,4 @@
-export {countOperations}
+export { countOperations }
 
 function countOperations(num1: number, num2: number): number {
     let a: number = num1

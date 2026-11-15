@@ -17,7 +17,9 @@ function countCommas(n: number): number {
         }
 
         const numberCount: number = intersectionEnd - intersectionStart + 1
-        const commasPerNumber: number = Math.floor((length - 1) / DIGITS_PER_COMMA_GROUP)
+        const commasPerNumber: number = Math.floor(
+            (length - 1) / DIGITS_PER_COMMA_GROUP
+        )
 
         totalCommaCount += numberCount * commasPerNumber
     }

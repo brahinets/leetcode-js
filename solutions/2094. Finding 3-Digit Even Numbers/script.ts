@@ -1,4 +1,4 @@
-export {findEvenNumbers}
+export { findEvenNumbers }
 
 function findEvenNumbers(digits: number[]): number[] {
     const nums: Set<number> = new Set<number>()

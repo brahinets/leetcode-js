@@ -1,6 +1,6 @@
-import {TreeNode} from "../../common/TreeNode"
+import { TreeNode } from '../../common/TreeNode'
 
-export {buildTree}
+export { buildTree }
 
 function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
     if (preorder.length === 0 || inorder.length === 0) {

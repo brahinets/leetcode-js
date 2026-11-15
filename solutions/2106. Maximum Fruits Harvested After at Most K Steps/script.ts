@@ -1,8 +1,12 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {maxTotalFruits}
+export { maxTotalFruits }
 
-function maxTotalFruits(fruits: number[][], startPos: number, k: number): number {
+function maxTotalFruits(
+    fruits: number[][],
+    startPos: number,
+    k: number
+): number {
     const sum: number[] = arrayOfZeros(fruits.length + 1)
     const indices: number[] = arrayOfZeros(fruits.length)
     for (let i: number = 0; i < fruits.length; i++) {
@@ -33,7 +37,12 @@ function maxTotalFruits(fruits: number[][], startPos: number, k: number): number
     return maxTotal
 }
 
-function lowerBound(arr: number[], left: number, right: number, val: number): number {
+function lowerBound(
+    arr: number[],
+    left: number,
+    right: number,
+    val: number
+): number {
     let res: number = right + 1
 
     while (left <= right) {
@@ -50,7 +59,12 @@ function lowerBound(arr: number[], left: number, right: number, val: number): nu
     return res
 }
 
-function upperBound(arr: number[], left: number, right: number, val: number): number {
+function upperBound(
+    arr: number[],
+    left: number,
+    right: number,
+    val: number
+): number {
     let res: number = right + 1
 
     while (left <= right) {

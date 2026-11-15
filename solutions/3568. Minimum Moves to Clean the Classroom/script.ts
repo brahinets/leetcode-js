@@ -1,6 +1,11 @@
-export {minMoves}
+export { minMoves }
 
-const DIRECTIONS: number[][] = [[-1, 0], [1, 0], [0, -1], [0, 1]]
+const DIRECTIONS: number[][] = [
+    [-1, 0],
+    [1, 0],
+    [0, -1],
+    [0, 1]
+]
 
 function minMoves(classroom: string[], energy: number): number {
     const rowCount: number = classroom.length
@@ -17,7 +22,10 @@ function minMoves(classroom: string[], energy: number): number {
                 startRow = row
                 startColumn = column
             } else if (cell === 'L') {
-                litterIndexByPosition.set(row * columnCount + column, litterIndexByPosition.size)
+                litterIndexByPosition.set(
+                    row * columnCount + column,
+                    litterIndexByPosition.size
+                )
             }
         }
     }
@@ -29,9 +37,21 @@ function minMoves(classroom: string[], energy: number): number {
 
     const energyLevelCount: number = energy + 1
     const maskCount: number = fullLitterMask + 1
-    const visited: Uint8Array = new Uint8Array(rowCount * columnCount * energyLevelCount * maskCount)
+    const visited: Uint8Array = new Uint8Array(
+        rowCount * columnCount * energyLevelCount * maskCount
+    )
 
-    visited[encodeState(startRow, startColumn, energy, 0, columnCount, energyLevelCount, maskCount)] = 1
+    visited[
+        encodeState(
+            startRow,
+            startColumn,
+            energy,
+            0,
+            columnCount,
+            energyLevelCount,
+            maskCount
+        )
+    ] = 1
     let queue: number[][] = [[startRow, startColumn, energy, 0]]
     let moveCount: number = 0
 
@@ -48,7 +68,11 @@ function minMoves(classroom: string[], energy: number): number {
                 const newRow: number = row + direction[0]
                 const newColumn: number = column + direction[1]
 
-                const outOfBounds: boolean = newRow < 0 || newRow >= rowCount || newColumn < 0 || newColumn >= columnCount
+                const outOfBounds: boolean =
+                    newRow < 0 ||
+                    newRow >= rowCount ||
+                    newColumn < 0 ||
+                    newColumn >= columnCount
                 if (outOfBounds) {
                     continue
                 }
@@ -58,21 +82,39 @@ function minMoves(classroom: string[], energy: number): number {
                     continue
                 }
 
-                const newRemainingEnergy: number = cell === 'R' ? energy : remainingEnergy - 1
-                const litterIndex: number | undefined = litterIndexByPosition.get(newRow * columnCount + newColumn)
-                const newLitterMask: number = litterIndex === undefined ? litterMask : litterMask | (1 << litterIndex)
+                const newRemainingEnergy: number =
+                    cell === 'R' ? energy : remainingEnergy - 1
+                const litterIndex: number | undefined =
+                    litterIndexByPosition.get(newRow * columnCount + newColumn)
+                const newLitterMask: number =
+                    litterIndex === undefined
+                        ? litterMask
+                        : litterMask | (1 << litterIndex)
 
                 if (newLitterMask === fullLitterMask) {
                     return moveCount + 1
                 }
 
-                const stateKey: number = encodeState(newRow, newColumn, newRemainingEnergy, newLitterMask, columnCount, energyLevelCount, maskCount)
+                const stateKey: number = encodeState(
+                    newRow,
+                    newColumn,
+                    newRemainingEnergy,
+                    newLitterMask,
+                    columnCount,
+                    energyLevelCount,
+                    maskCount
+                )
                 if (visited[stateKey] === 1) {
                     continue
                 }
 
                 visited[stateKey] = 1
-                nextQueue.push([newRow, newColumn, newRemainingEnergy, newLitterMask])
+                nextQueue.push([
+                    newRow,
+                    newColumn,
+                    newRemainingEnergy,
+                    newLitterMask
+                ])
             }
         }
 
@@ -92,5 +134,9 @@ function encodeState(
     energyLevelCount: number,
     maskCount: number
 ): number {
-    return ((row * columnCount + column) * energyLevelCount + remainingEnergy) * maskCount + litterMask
+    return (
+        ((row * columnCount + column) * energyLevelCount + remainingEnergy) *
+            maskCount +
+        litterMask
+    )
 }

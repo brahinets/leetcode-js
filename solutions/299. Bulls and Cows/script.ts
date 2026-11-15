@@ -1,4 +1,4 @@
-export {getHint}
+export { getHint }
 
 function getHint(secret: string, guess: string): string {
     let bulls: number = 0

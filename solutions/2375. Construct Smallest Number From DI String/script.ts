@@ -1,4 +1,4 @@
-export {smallestNumber}
+export { smallestNumber }
 
 function smallestNumber(pattern: string): string {
     let result: string = ''

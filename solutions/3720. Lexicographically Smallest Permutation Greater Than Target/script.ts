@@ -1,6 +1,6 @@
-import {arrayOf, arrayOfZeros} from '../../common/array-factories'
+import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export {lexGreaterPermutation}
+export { lexGreaterPermutation }
 
 const ALPHABET_SIZE: number = 26
 const LOWERCASE_A_CHARACTER_CODE: number = 'a'.charCodeAt(0)
@@ -8,14 +8,20 @@ const LOWERCASE_A_CHARACTER_CODE: number = 'a'.charCodeAt(0)
 function lexGreaterPermutation(s: string, target: string): string {
     const length: number = s.length
     const letterFrequency: number[] = countLetterFrequency(s)
-    const greaterAlternativeAtIndex: Array<number | null> = arrayOf<number | null>(null, length)
+    const greaterAlternativeAtIndex: Array<number | null> = arrayOf<
+        number | null
+    >(null, length)
 
     let matchedLength: number = length
 
     for (let index: number = 0; index < length; index++) {
-        const targetLetterIndex: number = target.charCodeAt(index) - LOWERCASE_A_CHARACTER_CODE
+        const targetLetterIndex: number =
+            target.charCodeAt(index) - LOWERCASE_A_CHARACTER_CODE
 
-        greaterAlternativeAtIndex[index] = findSmallestGreaterLetterIndex(letterFrequency, targetLetterIndex)
+        greaterAlternativeAtIndex[index] = findSmallestGreaterLetterIndex(
+            letterFrequency,
+            targetLetterIndex
+        )
 
         if (letterFrequency[targetLetterIndex] > 0) {
             letterFrequency[targetLetterIndex] -= 1
@@ -40,21 +46,34 @@ function lexGreaterPermutation(s: string, target: string): string {
         return ''
     }
 
-    return buildResult(s, target, pivotIndex, greaterAlternativeAtIndex[pivotIndex] as number)
+    return buildResult(
+        s,
+        target,
+        pivotIndex,
+        greaterAlternativeAtIndex[pivotIndex] as number
+    )
 }
 
 function countLetterFrequency(word: string): number[] {
     const letterFrequency: number[] = arrayOfZeros(ALPHABET_SIZE)
 
     for (const character of word) {
-        letterFrequency[character.charCodeAt(0) - LOWERCASE_A_CHARACTER_CODE] += 1
+        letterFrequency[character.charCodeAt(0) - LOWERCASE_A_CHARACTER_CODE] +=
+            1
     }
 
     return letterFrequency
 }
 
-function findSmallestGreaterLetterIndex(letterFrequency: number[], letterIndex: number): number | null {
-    for (let candidateIndex: number = letterIndex + 1; candidateIndex < letterFrequency.length; candidateIndex++) {
+function findSmallestGreaterLetterIndex(
+    letterFrequency: number[],
+    letterIndex: number
+): number | null {
+    for (
+        let candidateIndex: number = letterIndex + 1;
+        candidateIndex < letterFrequency.length;
+        candidateIndex++
+    ) {
         if (letterFrequency[candidateIndex] > 0) {
             return candidateIndex
         }
@@ -63,11 +82,18 @@ function findSmallestGreaterLetterIndex(letterFrequency: number[], letterIndex: 
     return null
 }
 
-function buildResult(s: string, target: string, pivotIndex: number, chosenLetterIndex: number): string {
+function buildResult(
+    s: string,
+    target: string,
+    pivotIndex: number,
+    chosenLetterIndex: number
+): string {
     const remainingFrequency: number[] = countLetterFrequency(s)
 
     for (let index: number = 0; index < pivotIndex; index++) {
-        remainingFrequency[target.charCodeAt(index) - LOWERCASE_A_CHARACTER_CODE] -= 1
+        remainingFrequency[
+            target.charCodeAt(index) - LOWERCASE_A_CHARACTER_CODE
+        ] -= 1
     }
 
     remainingFrequency[chosenLetterIndex] -= 1
@@ -78,11 +104,23 @@ function buildResult(s: string, target: string, pivotIndex: number, chosenLetter
         resultCharacters.push(target[index])
     }
 
-    resultCharacters.push(String.fromCharCode(chosenLetterIndex + LOWERCASE_A_CHARACTER_CODE))
+    resultCharacters.push(
+        String.fromCharCode(chosenLetterIndex + LOWERCASE_A_CHARACTER_CODE)
+    )
 
-    for (let letterIndex: number = 0; letterIndex < ALPHABET_SIZE; letterIndex++) {
-        for (let count: number = 0; count < remainingFrequency[letterIndex]; count++) {
-            resultCharacters.push(String.fromCharCode(letterIndex + LOWERCASE_A_CHARACTER_CODE))
+    for (
+        let letterIndex: number = 0;
+        letterIndex < ALPHABET_SIZE;
+        letterIndex++
+    ) {
+        for (
+            let count: number = 0;
+            count < remainingFrequency[letterIndex];
+            count++
+        ) {
+            resultCharacters.push(
+                String.fromCharCode(letterIndex + LOWERCASE_A_CHARACTER_CODE)
+            )
         }
     }
 

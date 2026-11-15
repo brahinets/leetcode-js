@@ -1,14 +1,29 @@
-export {findInMountainArray, MountainArray}
+export { findInMountainArray, MountainArray }
 
-function findInMountainArray(target: number, mountainArr: MountainArray): number {
+function findInMountainArray(
+    target: number,
+    mountainArr: MountainArray
+): number {
     const peakIndex: number = findMountainPeak(mountainArr)
 
-    const leftIndex: number = binarySearch(0, peakIndex, target, mountainArr, true)
+    const leftIndex: number = binarySearch(
+        0,
+        peakIndex,
+        target,
+        mountainArr,
+        true
+    )
     if (leftIndex !== -1) {
         return leftIndex
     }
 
-    return binarySearch(peakIndex + 1, mountainArr.length() - 1, target, mountainArr, false)
+    return binarySearch(
+        peakIndex + 1,
+        mountainArr.length() - 1,
+        target,
+        mountainArr,
+        false
+    )
 }
 
 function findMountainPeak(mountainArr: MountainArray) {
@@ -28,7 +43,13 @@ function findMountainPeak(mountainArr: MountainArray) {
     return left
 }
 
-function binarySearch(left: number, right: number, target: number, mountainArr: MountainArray, ascending: boolean): number {
+function binarySearch(
+    left: number,
+    right: number,
+    target: number,
+    mountainArr: MountainArray,
+    ascending: boolean
+): number {
     while (left < right) {
         const mid: number = Math.floor((left + right) / 2)
         const midValue: number = mountainArr.get(mid)

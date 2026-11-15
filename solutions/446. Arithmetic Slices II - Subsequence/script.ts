@@ -1,4 +1,4 @@
-export {numberOfArithmeticSlices}
+export { numberOfArithmeticSlices }
 
 function numberOfArithmeticSlices(nums: number[]): number {
     let count: number = 0

@@ -1,4 +1,4 @@
-export {maxWidthRamp}
+export { maxWidthRamp }
 
 function maxWidthRamp(nums: number[]): number {
     const stack: number[] = []

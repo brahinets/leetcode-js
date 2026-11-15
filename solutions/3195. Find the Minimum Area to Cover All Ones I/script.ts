@@ -1,4 +1,4 @@
-export {minimumArea}
+export { minimumArea }
 
 function minimumArea(grid: number[][]): number {
     let minRow: number = grid.length

@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {maxCollectedFruits}
+export { maxCollectedFruits }
 
 function maxCollectedFruits(fruits: number[][]): number {
     let totalFruits: number = collectDiagonalFruits(fruits)

@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {magicalSum}
+export { magicalSum }
 
 const MOD: bigint = 1000000007n
 
@@ -9,16 +9,30 @@ function magicalSum(m: number, k: number, nums: number[]): number {
     const inverseFactorial: bigint[] = computeInverseFactorials(m, MOD)
     const powers: bigint[][] = computePowers(nums, m, MOD)
 
-    const magicalSequenceStates: bigint[][][][] = initializeMagicalSequenceStates(nums.length, m, k)
+    const magicalSequenceStates: bigint[][][][] =
+        initializeMagicalSequenceStates(nums.length, m, k)
     initializeFirst(magicalSequenceStates, powers, inverseFactorial, m)
 
-    fillMagicalSequenceStates(magicalSequenceStates, powers, inverseFactorial, nums.length, m, k, MOD)
+    fillMagicalSequenceStates(
+        magicalSequenceStates,
+        powers,
+        inverseFactorial,
+        nums.length,
+        m,
+        k,
+        MOD
+    )
 
     let result: bigint = 0n
     for (let p: number = 0; p <= m * 2; p++) {
         for (let q: number = 0; q <= k; q++) {
             if (countBits(p) + q === k) {
-                result = (result + (magicalSequenceStates[nums.length - 1][m][p][q] * factorial[m]) % MOD) % MOD
+                result =
+                    (result +
+                        ((magicalSequenceStates[nums.length - 1][m][p][q] *
+                            factorial[m]) %
+                            MOD)) %
+                    MOD
             }
         }
     }
@@ -64,7 +78,11 @@ function computePowers(nums: number[], m: number, mod: bigint): bigint[][] {
     return powers
 }
 
-function initializeMagicalSequenceStates(n: number, m: number, k: number): bigint[][][][] {
+function initializeMagicalSequenceStates(
+    n: number,
+    m: number,
+    k: number
+): bigint[][][][] {
     const states: bigint[][][][] = []
 
     for (let i: number = 0; i < n; i++) {
@@ -87,7 +105,8 @@ function initializeFirst(
     m: number
 ): void {
     for (let j: number = 0; j <= m; j++) {
-        magicalSequenceStates[0][j][j][0] = (powers[0][j] * inverseFactorial[j]) % 1000000007n
+        magicalSequenceStates[0][j][j][0] =
+            (powers[0][j] * inverseFactorial[j]) % 1000000007n
     }
 }
 
@@ -121,7 +140,12 @@ function fillMagicalSequenceStates(
 
                         magicalSequenceStates[i + 1][j + r][nextP][nextQ] =
                             (magicalSequenceStates[i + 1][j + r][nextP][nextQ] +
-                                (((magicalSequenceStates[i][j][p][q] * powers[i + 1][r]) % mod) * inverseFactorial[r]) % mod) % mod
+                                ((((magicalSequenceStates[i][j][p][q] *
+                                    powers[i + 1][r]) %
+                                    mod) *
+                                    inverseFactorial[r]) %
+                                    mod)) %
+                            mod
                     }
                 }
             }

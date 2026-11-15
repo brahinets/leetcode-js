@@ -1,9 +1,9 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {longestPalindrome}
+export { longestPalindrome }
 
 function longestPalindrome(s: string): number {
-    const counts: Map<string, number> = count(s.split(""))
+    const counts: Map<string, number> = count(s.split(''))
 
     let pairedLetters: number = 0
     for (const count of counts.values()) {

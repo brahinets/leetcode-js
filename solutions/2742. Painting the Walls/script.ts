@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {paintWalls}
+export { paintWalls }
 
 function paintWalls(cost: number[], time: number[]): number {
     const dp: number[] = arrayOf(Number.POSITIVE_INFINITY, cost.length + 1)

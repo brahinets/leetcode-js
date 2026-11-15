@@ -1,6 +1,6 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {maxSlidingWindow}
+export { maxSlidingWindow }
 
 function maxSlidingWindow(nums: number[], k: number): number[] {
     const windowSize: number = k

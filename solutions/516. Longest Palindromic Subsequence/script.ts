@@ -1,9 +1,12 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {longestPalindromeSubseq}
+export { longestPalindromeSubseq }
 
 function longestPalindromeSubseq(s: string): number {
-    const longestPalindromicSubsequences: number[][] = matrixOfZeros(s.length, s.length)
+    const longestPalindromicSubsequences: number[][] = matrixOfZeros(
+        s.length,
+        s.length
+    )
 
     for (let start: number = s.length - 1; start >= 0; start--) {
         longestPalindromicSubsequences[start][start] = 1
@@ -11,12 +14,17 @@ function longestPalindromeSubseq(s: string): number {
         for (let end: number = start + 1; end < s.length; end++) {
             let maxPalindromicSubsequenceBetweenStartAndEnd: number
             if (s.charAt(start) === s.charAt(end)) {
-                maxPalindromicSubsequenceBetweenStartAndEnd = longestPalindromicSubsequences[start + 1][end - 1] + 2
+                maxPalindromicSubsequenceBetweenStartAndEnd =
+                    longestPalindromicSubsequences[start + 1][end - 1] + 2
             } else {
-                maxPalindromicSubsequenceBetweenStartAndEnd = Math.max(longestPalindromicSubsequences[start + 1][end], longestPalindromicSubsequences[start][end - 1])
+                maxPalindromicSubsequenceBetweenStartAndEnd = Math.max(
+                    longestPalindromicSubsequences[start + 1][end],
+                    longestPalindromicSubsequences[start][end - 1]
+                )
             }
 
-            longestPalindromicSubsequences[start][end] = maxPalindromicSubsequenceBetweenStartAndEnd
+            longestPalindromicSubsequences[start][end] =
+                maxPalindromicSubsequenceBetweenStartAndEnd
         }
     }
 

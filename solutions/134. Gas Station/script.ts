@@ -1,4 +1,4 @@
-export {canCompleteCircuit}
+export { canCompleteCircuit }
 
 function canCompleteCircuit(gas: number[], cost: number[]): number {
     const n: number = gas.length

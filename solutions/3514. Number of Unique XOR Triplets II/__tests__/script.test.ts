@@ -48,5 +48,4 @@ describe('3514. Number of Unique XOR Triplets II', (): void => {
 
         expect(result).toBe(4)
     })
-
 })

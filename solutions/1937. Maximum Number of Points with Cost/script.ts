@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {maxPoints}
+export { maxPoints }
 
 function maxPoints(points: number[][]): number {
     const dp: number[][] = matrixOfZeros(points.length, points[0].length)

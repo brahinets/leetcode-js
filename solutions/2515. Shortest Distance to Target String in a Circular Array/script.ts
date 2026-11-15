@@ -1,6 +1,10 @@
 export { closestTarget }
 
-function closestTarget(words: string[], target: string, startIndex: number): number {
+function closestTarget(
+    words: string[],
+    target: string,
+    startIndex: number
+): number {
     const length: number = words.length
     let minimumDistance: number = -1
 
@@ -10,12 +14,14 @@ function closestTarget(words: string[], target: string, startIndex: number): num
         }
 
         const absoluteDistance: number = Math.abs(index - startIndex)
-        const circularDistance: number = Math.min(absoluteDistance, length - absoluteDistance)
+        const circularDistance: number = Math.min(
+            absoluteDistance,
+            length - absoluteDistance
+        )
 
         if (minimumDistance === -1 || circularDistance < minimumDistance) {
             minimumDistance = circularDistance
         }
-
     }
 
     return minimumDistance

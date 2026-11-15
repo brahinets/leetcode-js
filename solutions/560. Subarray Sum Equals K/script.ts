@@ -1,4 +1,4 @@
-export {subarraySum}
+export { subarraySum }
 
 function subarraySum(nums: number[], k: number): number {
     let sum: number = 0

@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {findLucky}
+export { findLucky }
 
 function findLucky(arr: number[]): number {
     const counts: Map<number, number> = count(arr)

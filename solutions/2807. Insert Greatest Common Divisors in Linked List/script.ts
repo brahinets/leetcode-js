@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {insertGreatestCommonDivisors}
+export { insertGreatestCommonDivisors }
 
 function insertGreatestCommonDivisors(head: ListNode | null): ListNode | null {
     if (head === null) {
@@ -30,4 +30,3 @@ function gcd(a: number, b: number): number {
 
     return gcd(b, a % b)
 }
-

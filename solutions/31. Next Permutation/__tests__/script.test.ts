@@ -1,4 +1,4 @@
-import {nextPermutation} from '../script'
+import { nextPermutation } from '../script'
 
 describe('31. Next Permutation', (): void => {
     it('Next change minor', (): void => {

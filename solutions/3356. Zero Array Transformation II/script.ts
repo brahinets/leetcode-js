@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minZeroArray}
+export { minZeroArray }
 
 function minZeroArray(nums: number[], queries: number[][]): number {
     let sum: number = 0

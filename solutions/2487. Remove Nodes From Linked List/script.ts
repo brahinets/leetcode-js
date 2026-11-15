@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {removeNodes, ListNode}
+export { removeNodes, ListNode }
 
 function removeNodes(head: ListNode | null): ListNode | null {
     if (!head || !head.next) {

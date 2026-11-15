@@ -1,7 +1,6 @@
 import { countDaysTogether } from '../script'
 
 describe('2409. Count Days Spent Together', (): void => {
-
     it('partially overlapping stays within the same month', (): void => {
         // Arrange
         const arriveAlice: string = '08-15'
@@ -10,11 +9,15 @@ describe('2409. Count Days Spent Together', (): void => {
         const leaveBob: string = '08-19'
 
         // Act
-        const result: number = countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob)
+        const result: number = countDaysTogether(
+            arriveAlice,
+            leaveAlice,
+            arriveBob,
+            leaveBob
+        )
 
         // Assert
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('stays in different months without overlap', (): void => {
@@ -25,11 +28,15 @@ describe('2409. Count Days Spent Together', (): void => {
         const leaveBob: string = '12-31'
 
         // Act
-        const result: number = countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob)
+        const result: number = countDaysTogether(
+            arriveAlice,
+            leaveAlice,
+            arriveBob,
+            leaveBob
+        )
 
         // Assert
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('one stay fully contains the other', (): void => {
@@ -40,11 +47,15 @@ describe('2409. Count Days Spent Together', (): void => {
         const leaveBob: string = '04-05'
 
         // Act
-        const result: number = countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob)
+        const result: number = countDaysTogether(
+            arriveAlice,
+            leaveAlice,
+            arriveBob,
+            leaveBob
+        )
 
         // Assert
-        expect(result)
-            .toBe(27)
+        expect(result).toBe(27)
     })
 
     it('stays touch on a single shared day', (): void => {
@@ -55,11 +66,15 @@ describe('2409. Count Days Spent Together', (): void => {
         const leaveBob: string = '03-15'
 
         // Act
-        const result: number = countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob)
+        const result: number = countDaysTogether(
+            arriveAlice,
+            leaveAlice,
+            arriveBob,
+            leaveBob
+        )
 
         // Assert
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('overlap spans the end of February in a non-leap year', (): void => {
@@ -70,11 +85,15 @@ describe('2409. Count Days Spent Together', (): void => {
         const leaveBob: string = '03-31'
 
         // Act
-        const result: number = countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob)
+        const result: number = countDaysTogether(
+            arriveAlice,
+            leaveAlice,
+            arriveBob,
+            leaveBob
+        )
 
         // Assert
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('identical single day stays', (): void => {
@@ -85,8 +104,7 @@ describe('2409. Count Days Spent Together', (): void => {
         const result: number = countDaysTogether(date, date, date, date)
 
         // Assert
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('whole year spent together', (): void => {
@@ -98,8 +116,7 @@ describe('2409. Count Days Spent Together', (): void => {
         const result: number = countDaysTogether(arrive, leave, arrive, leave)
 
         // Assert
-        expect(result)
-            .toBe(365)
+        expect(result).toBe(365)
     })
 
     it('later traveller leaves before the other arrives', (): void => {
@@ -110,10 +127,14 @@ describe('2409. Count Days Spent Together', (): void => {
         const leaveBob: string = '09-09'
 
         // Act
-        const result: number = countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob)
+        const result: number = countDaysTogether(
+            arriveAlice,
+            leaveAlice,
+            arriveBob,
+            leaveBob
+        )
 
         // Assert
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 })

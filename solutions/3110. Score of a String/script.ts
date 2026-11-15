@@ -1,4 +1,4 @@
-export {scoreOfString}
+export { scoreOfString }
 
 function scoreOfString(s: string): number {
     let score: number = 0

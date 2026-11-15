@@ -1,11 +1,16 @@
-export {validateCoupons}
+export { validateCoupons }
 
 type Coupon = {
     code: string
     businessLine: string
 }
 const CODE_REGEX: RegExp = /^\w+$/
-const ALLOWED_CATEGORIES: Set<string> = new Set<string>(['electronics', 'grocery', 'pharmacy', 'restaurant'])
+const ALLOWED_CATEGORIES: Set<string> = new Set<string>([
+    'electronics',
+    'grocery',
+    'pharmacy',
+    'restaurant'
+])
 const CATEGORY_ORDER: Record<string, number> = {
     electronics: 0,
     grocery: 1,
@@ -20,8 +25,12 @@ function validateCoupons(
 ): string[] {
     const valid: Coupon[] = []
     for (let i: number = 0; i < code.length; i++) {
-        if (ALLOWED_CATEGORIES.has(businessLine[i]) && isActive[i] && isValidCode(code[i])) {
-            valid.push({code: code[i], businessLine: businessLine[i]})
+        if (
+            ALLOWED_CATEGORIES.has(businessLine[i]) &&
+            isActive[i] &&
+            isValidCode(code[i])
+        ) {
+            valid.push({ code: code[i], businessLine: businessLine[i] })
         }
     }
 

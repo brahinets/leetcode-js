@@ -1,4 +1,4 @@
-export {numSpecial}
+export { numSpecial }
 
 function numSpecial(mat: number[][]): number {
     let count: number = 0
@@ -23,8 +23,9 @@ function isOnlyOneInRow(mat: number[][], row: number): boolean {
 }
 
 function isOnlyOneInColumn(mat: number[][], column: number): boolean {
-    return mat
-        .map((row: number[]): number => row[column])
-        .filter((n: number): boolean => n === 1)
-        .length === 1
+    return (
+        mat
+            .map((row: number[]): number => row[column])
+            .filter((n: number): boolean => n === 1).length === 1
+    )
 }

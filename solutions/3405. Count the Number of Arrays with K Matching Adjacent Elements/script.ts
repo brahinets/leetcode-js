@@ -1,4 +1,4 @@
-export {countGoodArrays}
+export { countGoodArrays }
 
 const MOD: number = 10 ** 9 + 7
 const modBI: bigint = BigInt(MOD)
@@ -9,7 +9,7 @@ let maxNProcessedForFactorials: number = 0
 
 function countGoodArrays(n: number, m: number, k: number): number {
     if (m === 1) {
-        return (k === n - 1) ? 1 : 0
+        return k === n - 1 ? 1 : 0
     }
 
     const nForC: number = n - 1
@@ -17,7 +17,7 @@ function countGoodArrays(n: number, m: number, k: number): number {
 
     const cVal: bigint = combinations(nForC, kForC)
 
-    const powerExponent: number = (n - 1) - k
+    const powerExponent: number = n - 1 - k
     const mMinus1Val: bigint = BigInt(m - 1)
     const mMinus1PowVal: bigint = power(mMinus1Val, powerExponent)
 

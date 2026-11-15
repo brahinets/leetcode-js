@@ -1,4 +1,4 @@
-import {minMoves} from "../script"
+import { minMoves } from '../script'
 
 describe('453. Minimum Moves to Equal Array Elements', (): void => {
     it('makes all elements equal by raising them to the maximum', (): void => {
@@ -6,8 +6,7 @@ describe('453. Minimum Moves to Equal Array Elements', (): void => {
 
         const result: number = minMoves(numbers)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('requires no moves when elements are already equal', (): void => {
@@ -15,8 +14,7 @@ describe('453. Minimum Moves to Equal Array Elements', (): void => {
 
         const result: number = minMoves(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('handles a single element array', (): void => {
@@ -24,8 +22,7 @@ describe('453. Minimum Moves to Equal Array Elements', (): void => {
 
         const result: number = minMoves(numbers)
 
-        expect(result)
-            .toBe(0)
+        expect(result).toBe(0)
     })
 
     it('handles negative values in the array', (): void => {
@@ -33,8 +30,7 @@ describe('453. Minimum Moves to Equal Array Elements', (): void => {
 
         const result: number = minMoves(numbers)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('requires moves proportional to the range with many duplicates', (): void => {
@@ -42,7 +38,6 @@ describe('453. Minimum Moves to Equal Array Elements', (): void => {
 
         const result: number = minMoves(numbers)
 
-        expect(result)
-            .toBe(999999999)
+        expect(result).toBe(999999999)
     })
 })

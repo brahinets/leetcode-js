@@ -1,4 +1,4 @@
-import { matrixOfZeros } from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
 export { calculateMinimumHP }
 
@@ -16,7 +16,10 @@ function calculateMinimumHP(dungeon: number[][]): number {
             } else if (j === n - 1) {
                 dp[i][j] = Math.max(1, dp[i + 1][j] - dungeon[i][j])
             } else {
-                dp[i][j] = Math.max(1, Math.min(dp[i + 1][j], dp[i][j + 1]) - dungeon[i][j])
+                dp[i][j] = Math.max(
+                    1,
+                    Math.min(dp[i + 1][j], dp[i][j + 1]) - dungeon[i][j]
+                )
             }
         }
     }

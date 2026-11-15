@@ -1,7 +1,14 @@
-export {findAllPeople}
+export { findAllPeople }
 
-function findAllPeople(_n: number, meetings: number[][], firstPerson: number): number[] {
-    const timeMap: Map<number, [number, number][]> = new Map<number, [number, number][]>()
+function findAllPeople(
+    _n: number,
+    meetings: number[][],
+    firstPerson: number
+): number[] {
+    const timeMap: Map<number, [number, number][]> = new Map<
+        number,
+        [number, number][]
+    >()
     for (const [a, b, t] of meetings) {
         if (!timeMap.has(t)) {
             timeMap.set(t, [])
@@ -10,7 +17,9 @@ function findAllPeople(_n: number, meetings: number[][], firstPerson: number): n
         timeMap.get(t)!.push([a, b])
     }
 
-    const times: number[] = Array.from(timeMap.keys()).sort((a: number, b: number): number => a - b)
+    const times: number[] = Array.from(timeMap.keys()).sort(
+        (a: number, b: number): number => a - b
+    )
     const known: Set<number> = new Set<number>([0, firstPerson])
 
     for (const t of times) {

@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {countSubstrings}
+export { countSubstrings }
 
 function countSubstrings(s: string): number {
     let palindromesCount: number = 0
@@ -22,7 +22,7 @@ function countSubstrings(s: string): number {
         for (let i: number = 0; i < s.length - radius + 1; i++) {
             const j: number = i + radius - 1
 
-            if (s[i] === s[j] && palindromeFromTo[i + 1] [j - 1]) {
+            if (s[i] === s[j] && palindromeFromTo[i + 1][j - 1]) {
                 palindromeFromTo[i][j] = true
                 palindromesCount++
             }

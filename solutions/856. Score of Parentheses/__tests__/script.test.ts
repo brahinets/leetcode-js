@@ -6,8 +6,7 @@ describe('856. Score of Parentheses', (): void => {
 
         const result: number = scoreOfParentheses(s)
 
-        expect(result)
-            .toBe(1)
+        expect(result).toBe(1)
     })
 
     it('one pair nested inside another', (): void => {
@@ -15,8 +14,7 @@ describe('856. Score of Parentheses', (): void => {
 
         const result: number = scoreOfParentheses(s)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('two pairs concatenated side by side', (): void => {
@@ -24,8 +22,7 @@ describe('856. Score of Parentheses', (): void => {
 
         const result: number = scoreOfParentheses(s)
 
-        expect(result)
-            .toBe(2)
+        expect(result).toBe(2)
     })
 
     it('mix of nesting and concatenation', (): void => {
@@ -33,8 +30,7 @@ describe('856. Score of Parentheses', (): void => {
 
         const result: number = scoreOfParentheses(s)
 
-        expect(result)
-            .toBe(6)
+        expect(result).toBe(6)
     })
 
     it('concatenation inside a wrapping pair', (): void => {
@@ -42,8 +38,7 @@ describe('856. Score of Parentheses', (): void => {
 
         const result: number = scoreOfParentheses(s)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('three pairs concatenated side by side', (): void => {
@@ -51,8 +46,7 @@ describe('856. Score of Parentheses', (): void => {
 
         const result: number = scoreOfParentheses(s)
 
-        expect(result)
-            .toBe(3)
+        expect(result).toBe(3)
     })
 
     it('deep nesting multiplies the score at each level', (): void => {
@@ -60,8 +54,7 @@ describe('856. Score of Parentheses', (): void => {
 
         const result: number = scoreOfParentheses(s)
 
-        expect(result)
-            .toBe(4)
+        expect(result).toBe(4)
     })
 
     it('maximum length allowed by the constraints', (): void => {
@@ -69,7 +62,6 @@ describe('856. Score of Parentheses', (): void => {
 
         const result: number = scoreOfParentheses(s)
 
-        expect(result)
-            .toBe(48)
+        expect(result).toBe(48)
     })
 })

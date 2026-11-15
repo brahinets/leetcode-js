@@ -1,4 +1,4 @@
-export {lastStoneWeight}
+export { lastStoneWeight }
 
 function lastStoneWeight(stones: number[]): number {
     while (stones.length > 1) {

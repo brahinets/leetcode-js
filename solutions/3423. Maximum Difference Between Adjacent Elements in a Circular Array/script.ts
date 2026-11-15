@@ -1,4 +1,4 @@
-export {maxAdjacentDistance}
+export { maxAdjacentDistance }
 
 function maxAdjacentDistance(nums: number[]): number {
     let maxDiff: number = 0

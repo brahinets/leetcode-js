@@ -1,4 +1,4 @@
-import {ParkingSystem} from "../script"
+import { ParkingSystem } from '../script'
 
 describe('1603. Design Parking System', (): void => {
     it('Test Valid', (): void => {
@@ -21,7 +21,6 @@ describe('1603. Design Parking System', (): void => {
     it('Test illegal car type', (): void => {
         const system: ParkingSystem = new ParkingSystem(1, 1, 0)
 
-        expect(() => system.addCar(0))
-            .toThrow("Unsupported car type provided")
+        expect(() => system.addCar(0)).toThrow('Unsupported car type provided')
     })
 })

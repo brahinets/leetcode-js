@@ -6,10 +6,11 @@ function countServers(
     intervalLength: number,
     queries: number[]
 ): number[] {
-    const queryIndices: number[] = Array.from<number>(queries.keys())
-        .sort((first: number, second: number): number => {
+    const queryIndices: number[] = Array.from<number>(queries.keys()).sort(
+        (first: number, second: number): number => {
             return queries[first] - queries[second]
-        })
+        }
+    )
 
     const sortedLogs: number[][] = [...logs].sort(
         (first: number[], second: number[]): number => first[1] - second[1]
@@ -24,8 +25,10 @@ function countServers(
     for (const queryIndex of queryIndices) {
         const queryTime: number = queries[queryIndex]
 
-        while (nextLogIndex < sortedLogs.length
-            && sortedLogs[nextLogIndex][1] <= queryTime) {
+        while (
+            nextLogIndex < sortedLogs.length &&
+            sortedLogs[nextLogIndex][1] <= queryTime
+        ) {
             const serverId: number = sortedLogs[nextLogIndex][0]
             const count: number = requestCounts.get(serverId) ?? 0
 
@@ -39,8 +42,10 @@ function countServers(
 
         const earliestTime: number = queryTime - intervalLength
 
-        while (oldestLogIndex < nextLogIndex
-            && sortedLogs[oldestLogIndex][1] < earliestTime) {
+        while (
+            oldestLogIndex < nextLogIndex &&
+            sortedLogs[oldestLogIndex][1] < earliestTime
+        ) {
             const serverId: number = sortedLogs[oldestLogIndex][0]
             const count: number = requestCounts.get(serverId) ?? 0
 

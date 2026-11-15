@@ -1,9 +1,15 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {champagneTower}
+export { champagneTower }
 
-function champagneTower(poured: number, query_row: number, query_glass: number): number {
-    const tower: number[][] = Array.from({length: query_row + 1}, (_, i) => arrayOfZeros(i + 1))
+function champagneTower(
+    poured: number,
+    query_row: number,
+    query_glass: number
+): number {
+    const tower: number[][] = Array.from({ length: query_row + 1 }, (_, i) =>
+        arrayOfZeros(i + 1)
+    )
     tower[0][0] = poured
 
     for (let row: number = 0; row < query_row; row++) {

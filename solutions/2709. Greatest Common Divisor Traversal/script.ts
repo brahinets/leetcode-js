@@ -1,4 +1,4 @@
-export {canTraverseAllPairs}
+export { canTraverseAllPairs }
 
 function canTraverseAllPairs(nums: number[]): boolean {
     const graph: Graph = buildGraph(nums)
@@ -44,7 +44,11 @@ function getPrimeFactors(num: number): number[] {
     return [...factors]
 }
 
-function traverse(graph: Graph, node: number, visited: Set<number>): Set<number> {
+function traverse(
+    graph: Graph,
+    node: number,
+    visited: Set<number>
+): Set<number> {
     visited.add(node)
 
     for (const neighbor of graph.getNeighbours(node)) {

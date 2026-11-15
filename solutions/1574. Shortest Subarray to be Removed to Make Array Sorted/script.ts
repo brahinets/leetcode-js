@@ -1,4 +1,4 @@
-export {findLengthOfShortestSubarray}
+export { findLengthOfShortestSubarray }
 
 function findLengthOfShortestSubarray(arr: number[]): number {
     let left: number = 0

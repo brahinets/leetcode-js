@@ -1,4 +1,4 @@
-export {maxWidthOfVerticalArea}
+export { maxWidthOfVerticalArea }
 
 function maxWidthOfVerticalArea(points: number[][]): number {
     const x: number[] = points

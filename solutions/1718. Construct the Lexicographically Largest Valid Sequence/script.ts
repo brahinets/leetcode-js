@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {constructDistancedSequence}
+export { constructDistancedSequence }
 
 function constructDistancedSequence(n: number): number[] {
     const size: number = 2 * n - 1
@@ -14,7 +14,12 @@ function constructDistancedSequence(n: number): number[] {
     }
 }
 
-function backtrack(result: number[], used: Set<number>, n: number, index: number): boolean {
+function backtrack(
+    result: number[],
+    used: Set<number>,
+    n: number,
+    index: number
+): boolean {
     if (index === result.length) {
         return true
     }

@@ -1,6 +1,6 @@
-import {ListNode} from '../../common/ListNode'
+import { ListNode } from '../../common/ListNode'
 
-export {deleteMiddle}
+export { deleteMiddle }
 
 function deleteMiddle(head: ListNode | null): ListNode | null {
     const dummy: ListNode = new ListNode(0, head)

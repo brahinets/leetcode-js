@@ -1,6 +1,6 @@
-import {arrayOfZeros} from '../../common/array-factories'
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {earliestAndLatest}
+export { earliestAndLatest }
 
 type PlayerId = number
 
@@ -8,14 +8,23 @@ type RoundResult = [number, number]
 
 const memo: Map<string, RoundResult> = new Map<string, RoundResult>()
 
-function earliestAndLatest(n: number, firstPlayer: PlayerId, secondPlayer: PlayerId): RoundResult {
+function earliestAndLatest(
+    n: number,
+    firstPlayer: PlayerId,
+    secondPlayer: PlayerId
+): RoundResult {
     if (firstPlayer > secondPlayer) {
-        [firstPlayer, secondPlayer] = [secondPlayer, firstPlayer]
+        ;[firstPlayer, secondPlayer] = [secondPlayer, firstPlayer]
     }
 
     memo.clear()
 
-    return dfs(arrayOfZeros(n).map((_: number, i: number): number => i + 1), 1, firstPlayer, secondPlayer)
+    return dfs(
+        arrayOfZeros(n).map((_: number, i: number): number => i + 1),
+        1,
+        firstPlayer,
+        secondPlayer
+    )
 }
 
 function backtrack(
@@ -61,7 +70,12 @@ function backtrack(
     }
 }
 
-function dfs(players: PlayerId[], round: number, firstPlayer: PlayerId, secondPlayer: PlayerId): RoundResult {
+function dfs(
+    players: PlayerId[],
+    round: number,
+    firstPlayer: PlayerId,
+    secondPlayer: PlayerId
+): RoundResult {
     const key: string = players.join(',') + ':' + round
     if (memo.has(key)) {
         return memo.get(key)!
@@ -74,9 +88,13 @@ function dfs(players: PlayerId[], round: number, firstPlayer: PlayerId, secondPl
     let found: boolean = false
 
     while (i < j) {
-        const a: number = players[i], b = players[j]
+        const a: number = players[i],
+            b = players[j]
 
-        if ((a === firstPlayer && b === secondPlayer) || (a === secondPlayer && b === firstPlayer)) {
+        if (
+            (a === firstPlayer && b === secondPlayer) ||
+            (a === secondPlayer && b === firstPlayer)
+        ) {
             earliest = Math.min(earliest, round)
             latest = Math.max(latest, round)
             found = true
@@ -96,7 +114,12 @@ function dfs(players: PlayerId[], round: number, firstPlayer: PlayerId, secondPl
     for (const next of nextRounds) {
         next.sort((x: number, y: number): number => x - y)
 
-        const [e, l]: [number, number] = dfs(next, round + 1, firstPlayer, secondPlayer)
+        const [e, l]: [number, number] = dfs(
+            next,
+            round + 1,
+            firstPlayer,
+            secondPlayer
+        )
         earliest = Math.min(earliest, e)
         latest = Math.max(latest, l)
     }

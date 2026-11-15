@@ -1,4 +1,4 @@
-export {threeSum}
+export { threeSum }
 
 function threeSum(nums: number[]): number[][] {
     nums = nums.sort((a: number, b: number): number => a - b)

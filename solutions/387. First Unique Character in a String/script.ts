@@ -1,9 +1,9 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {firstUniqChar}
+export { firstUniqChar }
 
 function firstUniqChar(s: string): number {
-    const counts: Map<string, number> = count(s.split(""))
+    const counts: Map<string, number> = count(s.split(''))
 
     for (let i: number = 0; i < s.length; i++) {
         const char = s.charAt(i)

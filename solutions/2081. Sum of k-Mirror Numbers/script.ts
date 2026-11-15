@@ -1,4 +1,4 @@
-export {kMirror}
+export { kMirror }
 
 function kMirror(base: number, targetCount: number): number {
     const digitBuffer: number[] = []
@@ -10,9 +10,14 @@ function kMirror(base: number, targetCount: number): number {
         const rightBound: number = leftBound * 10
 
         for (let isEven: number = 0; isEven < 2; isEven++) {
-            for (let half: number = leftBound; half < rightBound && foundCount < targetCount; half++) {
+            for (
+                let half: number = leftBound;
+                half < rightBound && foundCount < targetCount;
+                half++
+            ) {
                 let palindrome: bigint = BigInt(half)
-                let mirrorPart: number = isEven === 0 ? Math.floor(half / 10) : half
+                let mirrorPart: number =
+                    isEven === 0 ? Math.floor(half / 10) : half
 
                 while (mirrorPart > 0) {
                     palindrome = palindrome * 10n + BigInt(mirrorPart % 10)
@@ -32,7 +37,11 @@ function kMirror(base: number, targetCount: number): number {
     return Number(totalSum)
 }
 
-function isPalindromeInBase(num: bigint, base: number, digitBuffer: number[]): boolean {
+function isPalindromeInBase(
+    num: bigint,
+    base: number,
+    digitBuffer: number[]
+): boolean {
     let length: number = -1
     let temp: bigint = num
 

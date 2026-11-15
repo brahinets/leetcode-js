@@ -16,7 +16,10 @@ function areSimilar(mat: number[][], k: number): boolean {
                     return false
                 }
             } else {
-                if (mat[row][column] !== mat[row][(column - shift + columns) % columns]) {
+                if (
+                    mat[row][column] !==
+                    mat[row][(column - shift + columns) % columns]
+                ) {
                     return false
                 }
             }

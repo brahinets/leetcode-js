@@ -1,6 +1,10 @@
-import {arrayOf, arrayOfZeros, matrixOfZeros} from "../../common/array-factories"
+import {
+    arrayOf,
+    arrayOfZeros,
+    matrixOfZeros
+} from '../../common/array-factories'
 
-export {idealArrays}
+export { idealArrays }
 
 const mod: number = 1e9 + 7
 const MAX_N: number = 10010
@@ -16,7 +20,9 @@ function idealArrays(n: number, maxValue: number): number {
         let product: bigint = 1n
 
         for (const count of primeFactorCountsArray[x]) {
-            product = (product * BigInt(binomialCoefficients[n + count - 1][count])) % BigInt(mod)
+            product =
+                (product * BigInt(binomialCoefficients[n + count - 1][count])) %
+                BigInt(mod)
         }
 
         total = (total + product) % BigInt(mod)
@@ -71,7 +77,8 @@ function getBinomialCoefficients(): number[][] {
         combinations[i][0] = 1
 
         for (let j: number = 1; j <= Math.min(i, MAX_P); j++) {
-            combinations[i][j] = (combinations[i - 1][j] + combinations[i - 1][j - 1]) % mod
+            combinations[i][j] =
+                (combinations[i - 1][j] + combinations[i - 1][j - 1]) % mod
         }
     }
 

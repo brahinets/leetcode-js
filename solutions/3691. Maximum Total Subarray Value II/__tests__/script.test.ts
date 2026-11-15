@@ -1,4 +1,4 @@
-import {maxTotalValue} from '../script'
+import { maxTotalValue } from '../script'
 
 describe('3691. Maximum Total Subarray Value II', (): void => {
     it('sums the two largest distinct subarray values', (): void => {

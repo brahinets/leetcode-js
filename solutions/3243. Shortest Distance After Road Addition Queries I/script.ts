@@ -1,8 +1,11 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {shortestDistanceAfterQueries}
+export { shortestDistanceAfterQueries }
 
-function shortestDistanceAfterQueries(n: number, queries: number[][]): number[] {
+function shortestDistanceAfterQueries(
+    n: number,
+    queries: number[][]
+): number[] {
     const distances: number[] = arrayOf(-1, n)
 
     const neighbours: number[][] = arrayOf([], n)
@@ -43,5 +46,5 @@ function findMinDistance(
         )
     }
 
-    return distances[currentNode] = minDistance
+    return (distances[currentNode] = minDistance)
 }

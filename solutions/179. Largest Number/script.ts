@@ -1,4 +1,4 @@
-export {largestNumber}
+export { largestNumber }
 
 function largestNumber(nums: number[]): string {
     return nums

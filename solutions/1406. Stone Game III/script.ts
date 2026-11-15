@@ -8,9 +8,16 @@ function stoneGameIII(piles: number[]): string {
     for (let start: number = pileCount - 1; start >= 0; start--) {
         let takenSum: number = 0
         let bestDifference: number = Number.NEGATIVE_INFINITY
-        for (let takeCount: number = 1; takeCount <= 3 && start + takeCount <= pileCount; takeCount++) {
+        for (
+            let takeCount: number = 1;
+            takeCount <= 3 && start + takeCount <= pileCount;
+            takeCount++
+        ) {
             takenSum += piles[start + takeCount - 1]
-            bestDifference = Math.max(bestDifference, takenSum - scoreDifference[start + takeCount])
+            bestDifference = Math.max(
+                bestDifference,
+                takenSum - scoreDifference[start + takeCount]
+            )
         }
 
         scoreDifference[start] = bestDifference

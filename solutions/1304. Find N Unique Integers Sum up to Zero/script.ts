@@ -1,4 +1,4 @@
-export {sumZero}
+export { sumZero }
 
 function sumZero(count: number): number[] {
     const result: number[] = []
@@ -14,4 +14,3 @@ function sumZero(count: number): number[] {
 
     return result
 }
-

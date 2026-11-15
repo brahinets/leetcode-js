@@ -1,7 +1,6 @@
-import {TreeNode} from '../../common/TreeNode'
+import { TreeNode } from '../../common/TreeNode'
 
-export {isEvenOddTree, TreeNode}
-
+export { isEvenOddTree, TreeNode }
 
 function isEvenOddTree(root: TreeNode): boolean {
     return check(true, [root])

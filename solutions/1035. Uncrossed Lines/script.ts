@@ -1,12 +1,24 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {maxUncrossedLines}
+export { maxUncrossedLines }
 
 function maxUncrossedLines(up: number[], bottom: number[]): number {
-    return uncrossedLines(up, bottom, 0, 0, matrixOf(-1, up.length, bottom.length))
+    return uncrossedLines(
+        up,
+        bottom,
+        0,
+        0,
+        matrixOf(-1, up.length, bottom.length)
+    )
 }
 
-function uncrossedLines(up: number[], bottom: number[], start: number, end: number, memo: number[][]): number {
+function uncrossedLines(
+    up: number[],
+    bottom: number[],
+    start: number,
+    end: number,
+    memo: number[][]
+): number {
     if (start === up.length || end === bottom.length) {
         return 0
     }

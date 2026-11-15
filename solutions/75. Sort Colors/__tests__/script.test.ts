@@ -1,7 +1,6 @@
-import {sortColors} from '../script'
+import { sortColors } from '../script'
 
 describe('75. Sort Colors', (): void => {
-
     it('First', (): void => {
         const colors: number[] = [2, 0, 2, 1, 1, 0]
 

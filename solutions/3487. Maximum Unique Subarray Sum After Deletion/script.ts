@@ -1,6 +1,6 @@
-import {sum} from "../../common/array-utils"
+import { sum } from '../../common/array-utils'
 
-export {maxSum}
+export { maxSum }
 
 function maxSum(nums: number[]): number {
     const positive: number[] = nums.filter((num: number): boolean => num > 0)

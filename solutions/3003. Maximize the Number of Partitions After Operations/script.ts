@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {maxPartitionsAfterOperations}
+export { maxPartitionsAfterOperations }
 
 function maxPartitionsAfterOperations(s: string, k: number): number {
     const n: number = s.length
@@ -13,7 +13,12 @@ function maxPartitionsAfterOperations(s: string, k: number): number {
     return findMaxPartitions(s, k, left, right)
 }
 
-function calculateSegments(s: string, k: number, segments: number[][], isLeft: boolean): void {
+function calculateSegments(
+    s: string,
+    k: number,
+    segments: number[][],
+    isLeft: boolean
+): void {
     const n: number = s.length
     let num: number = 0
     let mask: number = 0
@@ -45,7 +50,12 @@ function calculateSegments(s: string, k: number, segments: number[][], isLeft: b
     }
 }
 
-function findMaxPartitions(s: string, k: number, left: number[][], right: number[][]): number {
+function findMaxPartitions(
+    s: string,
+    k: number,
+    left: number[][],
+    right: number[][]
+): number {
     const n: number = s.length
     let max: number = 0
 
@@ -70,7 +80,7 @@ function countBits(mask: number): number {
     let count: number = 0
 
     while (mask) {
-        mask &= (mask - 1)
+        mask &= mask - 1
         count++
     }
 

@@ -1,6 +1,6 @@
-import {matrixOf} from "../../common/array-factories"
+import { matrixOf } from '../../common/array-factories'
 
-export {minDifficulty}
+export { minDifficulty }
 
 function minDifficulty(jobDifficulty: number[], days: number): number {
     const jobsCount: number = jobDifficulty.length
@@ -11,7 +11,10 @@ function minDifficulty(jobDifficulty: number[], days: number): number {
     for (let job: number = 1; job <= jobsCount; job++) {
         for (let day: number = 1; day <= days; day++) {
             for (let k: number = job - 1; k >= day - 1; k--) {
-                dp[job][day] = Math.min(dp[job][day], dp[k][day - 1] + Math.max(...jobDifficulty.slice(k, job)))
+                dp[job][day] = Math.min(
+                    dp[job][day],
+                    dp[k][day - 1] + Math.max(...jobDifficulty.slice(k, job))
+                )
             }
         }
     }

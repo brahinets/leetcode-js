@@ -1,4 +1,4 @@
-export {bulbSwitch}
+export { bulbSwitch }
 
 function bulbSwitch(n: number): number {
     let on: number = 0

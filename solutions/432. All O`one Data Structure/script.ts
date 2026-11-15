@@ -1,4 +1,4 @@
-export {AllOne}
+export { AllOne }
 
 class AllOne {
     private readonly map: Map<string, Node>
@@ -7,22 +7,10 @@ class AllOne {
 
     constructor() {
         this.map = new Map<string, Node>()
-        this.head = new Node("", 0)
-        this.tail = new Node("", Infinity)
+        this.head = new Node('', 0)
+        this.tail = new Node('', Infinity)
         this.head.next = this.tail
         this.tail.prev = this.head
-    }
-
-    private insertAfter(node: Node, newNode: Node): void {
-        newNode.prev = node
-        newNode.next = node.next
-        node.next!.prev = newNode
-        node.next = newNode
-    }
-
-    private remove(node: Node): void {
-        node.prev!.next = node.next
-        node.next!.prev = node.prev
     }
 
     inc(key: string): void {
@@ -60,11 +48,23 @@ class AllOne {
     }
 
     getMaxKey(): string {
-        return this.tail.prev === this.head ? "" : this.tail.prev!.key
+        return this.tail.prev === this.head ? '' : this.tail.prev!.key
     }
 
     getMinKey(): string {
-        return this.head.next === this.tail ? "" : this.head.next!.key
+        return this.head.next === this.tail ? '' : this.head.next!.key
+    }
+
+    private insertAfter(node: Node, newNode: Node): void {
+        newNode.prev = node
+        newNode.next = node.next
+        node.next!.prev = newNode
+        node.next = newNode
+    }
+
+    private remove(node: Node): void {
+        node.prev!.next = node.next
+        node.next!.prev = node.prev
     }
 }
 
@@ -74,6 +74,5 @@ class Node {
         public count: number,
         public prev: Node | null = null,
         public next: Node | null = null
-    ) {
-    }
+    ) {}
 }

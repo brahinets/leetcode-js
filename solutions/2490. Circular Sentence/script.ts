@@ -1,6 +1,6 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {isCircularSentence}
+export { isCircularSentence }
 
 function isCircularSentence(sentence: string): boolean {
     const words: string[] = sentence.split(' ')

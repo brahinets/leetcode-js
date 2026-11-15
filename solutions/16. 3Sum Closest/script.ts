@@ -1,4 +1,4 @@
-export {threeSumClosest}
+export { threeSumClosest }
 
 function threeSumClosest(nums: number[], target: number): number {
     let closest: number = Number.POSITIVE_INFINITY

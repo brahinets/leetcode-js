@@ -1,4 +1,4 @@
-export {minCost}
+export { minCost }
 
 function minCost(basket1: number[], basket2: number[]): number {
     const countsDelta: Map<number, number> = new Map<number, number>()

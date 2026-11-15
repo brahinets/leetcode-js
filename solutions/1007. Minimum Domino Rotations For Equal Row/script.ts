@@ -1,6 +1,6 @@
-import {arrayOfZeros} from "../../common/array-factories"
+import { arrayOfZeros } from '../../common/array-factories'
 
-export {minDominoRotations}
+export { minDominoRotations }
 
 function minDominoRotations(tops: number[], bottoms: number[]): number {
     const count: number[] = arrayOfZeros(7)
@@ -13,7 +13,10 @@ function minDominoRotations(tops: number[], bottoms: number[]): number {
 
     for (let i: number = 1; i <= 6; i++) {
         if (count[i] >= tops.length) {
-            const rotations: number = Math.min(getRotations(tops, bottoms, i), getRotations(bottoms, tops, i))
+            const rotations: number = Math.min(
+                getRotations(tops, bottoms, i),
+                getRotations(bottoms, tops, i)
+            )
 
             minRotations = Math.min(minRotations, rotations)
         }

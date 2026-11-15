@@ -1,4 +1,4 @@
-export {containsDuplicate}
+export { containsDuplicate }
 
 function containsDuplicate(nums: number[]): boolean {
     const counts: Set<number> = new Set<number>()

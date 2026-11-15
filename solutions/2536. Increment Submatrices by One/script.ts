@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {rangeAddQueries}
+export { rangeAddQueries }
 
 function rangeAddQueries(n: number, queries: number[][]): number[][] {
     const matrix: number[][] = matrixOfZeros(n, n)

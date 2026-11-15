@@ -1,4 +1,4 @@
-export {maxBuilding}
+export { maxBuilding }
 
 function compareByFirstElement(a: number[], b: number[]): number {
     return a[0] - b[0]
@@ -33,7 +33,10 @@ function maxBuilding(n: number, restrictions: number[][]): number {
         const distance: number = points[i][0] - points[i - 1][0]
         const leftHeight: number = points[i - 1][1]
         const rightHeight: number = points[i][1]
-        maxHeight = Math.max(maxHeight, Math.floor((distance + leftHeight + rightHeight) / 2))
+        maxHeight = Math.max(
+            maxHeight,
+            Math.floor((distance + leftHeight + rightHeight) / 2)
+        )
     }
 
     return maxHeight

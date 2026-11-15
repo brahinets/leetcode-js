@@ -1,4 +1,4 @@
-export {CustomStack}
+export { CustomStack }
 
 class CustomStack {
     private readonly stack: number[]

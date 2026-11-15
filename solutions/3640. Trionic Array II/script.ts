@@ -1,4 +1,4 @@
-import { arrayOf } from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
 export function maxSumTrionic(nums: number[]): number {
     const n: number = nums.length

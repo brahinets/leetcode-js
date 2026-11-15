@@ -1,4 +1,4 @@
-export {isArraySpecial}
+export { isArraySpecial }
 
 function isArraySpecial(nums: number[]): boolean {
     for (let i: number = 0; i < nums.length - 1; i++) {

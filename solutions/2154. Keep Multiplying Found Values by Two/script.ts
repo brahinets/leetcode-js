@@ -1,4 +1,4 @@
-export {findFinalValue}
+export { findFinalValue }
 
 function findFinalValue(nums: number[], original: number): number {
     const unique: Set<number> = new Set<number>(nums)

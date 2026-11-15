@@ -2,7 +2,8 @@
 
 ## Problem
 
-Write a solution to find the nth highest distinct salary from the Employee table. If there is no nth highest salary, return null.
+Write a solution to find the nth highest distinct salary from the Employee table. If there is no nth highest salary,
+return null.
 
 - Return `null` if there are fewer than `n` distinct salaries
 

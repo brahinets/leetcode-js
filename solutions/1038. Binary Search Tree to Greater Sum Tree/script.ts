@@ -1,7 +1,7 @@
-import {TreeNode} from "../../common/TreeNode"
-import {sum} from "../../common/array-utils"
+import { TreeNode } from '../../common/TreeNode'
+import { sum } from '../../common/array-utils'
 
-export {TreeNode, bstToGst}
+export { TreeNode, bstToGst }
 
 function bstToGst(root: TreeNode | null): TreeNode | null {
     const values: number[] = collect(root)

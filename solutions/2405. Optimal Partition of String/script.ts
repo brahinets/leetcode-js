@@ -1,4 +1,4 @@
-export {partitionString}
+export { partitionString }
 
 function partitionString(s: string): number {
     let count: number = 0

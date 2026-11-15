@@ -1,6 +1,6 @@
-import {count} from "../../common/array-utils"
+import { count } from '../../common/array-utils'
 
-export {change}
+export { change }
 
 function change(amount: number, coins: number[]): number {
     const combinations: number[][] = []
@@ -10,7 +10,12 @@ function change(amount: number, coins: number[]): number {
     return combinations.length
 }
 
-function collectCombinations(amount: number, coins: number[], currentCombination: number[], combinations: number[][]): void {
+function collectCombinations(
+    amount: number,
+    coins: number[],
+    currentCombination: number[],
+    combinations: number[][]
+): void {
     if (amount === 0) {
         combinations.push(currentCombination)
         return
@@ -26,7 +31,12 @@ function collectCombinations(amount: number, coins: number[], currentCombination
         } else {
             if (coin <= amount) {
                 if (!includes(combinations, newCombination)) {
-                    collectCombinations(amount - coin, coins, newCombination, combinations)
+                    collectCombinations(
+                        amount - coin,
+                        coins,
+                        newCombination,
+                        combinations
+                    )
                 }
             }
         }
@@ -48,7 +58,10 @@ function includes(combinations: number[][], another: number[]): boolean {
     return false
 }
 
-function equal(first: Map<number, number>, second: Map<number, number>): boolean {
+function equal(
+    first: Map<number, number>,
+    second: Map<number, number>
+): boolean {
     for (const kv of first) {
         const secondValue: number | undefined = second.get(kv[0])
 

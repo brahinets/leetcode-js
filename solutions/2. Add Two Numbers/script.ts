@@ -1,13 +1,14 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {ListNode, addTwoNumbers}
+export { ListNode, addTwoNumbers }
 
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode {
     const head: ListNode = new ListNode()
     let incrementNextRadix: boolean = false
 
     while (l1 || l2 || incrementNextRadix) {
-        const sum: number = (incrementNextRadix ? 1 : 0) + (l1 ? l1.val : 0) + (l2 ? l2.val : 0)
+        const sum: number =
+            (incrementNextRadix ? 1 : 0) + (l1 ? l1.val : 0) + (l2 ? l2.val : 0)
 
         let end: ListNode = head
         while (end.next) {

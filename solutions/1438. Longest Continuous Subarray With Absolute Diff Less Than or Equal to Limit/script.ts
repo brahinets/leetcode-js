@@ -1,6 +1,6 @@
-import {first, last} from "../../common/array-utils"
+import { first, last } from '../../common/array-utils'
 
-export {longestSubarray}
+export { longestSubarray }
 
 function longestSubarray(nums: number[], limit: number): number {
     let maxLength: number = 0

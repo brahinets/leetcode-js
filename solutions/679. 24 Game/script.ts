@@ -1,4 +1,4 @@
-export {judgePoint24}
+export { judgePoint24 }
 
 const operations: ((a: number, b: number) => number)[] = [
     (a: number, b: number): number => a + b,
@@ -21,8 +21,10 @@ function dfs(nums: number[], target: number): boolean {
     for (let i: number = 0; i < nums.length; i++) {
         for (let j: number = 0; j < nums.length; j++) {
             if (i !== j) {
-                const nextNums: number[] = nums
-                    .filter((_: number, index: number): boolean => index !== i && index !== j)
+                const nextNums: number[] = nums.filter(
+                    (_: number, index: number): boolean =>
+                        index !== i && index !== j
+                )
 
                 for (const op of operations) {
                     if (op === operations[3] && nums[j] === 0) {

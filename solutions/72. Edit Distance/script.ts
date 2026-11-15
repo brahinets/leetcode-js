@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {minDistance}
+export { minDistance }
 
 function minDistance(word1: string, word2: string): number {
     const m: number = word1.length
@@ -19,11 +19,13 @@ function minDistance(word1: string, word2: string): number {
             if (word1[i - 1] === word2[j - 1]) {
                 dp[i][j] = dp[i - 1][j - 1]
             } else {
-                dp[i][j] = 1 + Math.min(
-                    dp[i - 1][j],    // delete
-                    dp[i][j - 1],    // insert
-                    dp[i - 1][j - 1] // replace
-                )
+                dp[i][j] =
+                    1 +
+                    Math.min(
+                        dp[i - 1][j], // delete
+                        dp[i][j - 1], // insert
+                        dp[i - 1][j - 1] // replace
+                    )
             }
         }
     }

@@ -1,4 +1,4 @@
-export {maximumUniqueSubarray}
+export { maximumUniqueSubarray }
 
 function maximumUniqueSubarray(nums: number[]): number {
     const seen: Set<number> = new Set<number>()

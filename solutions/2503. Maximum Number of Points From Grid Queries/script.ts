@@ -1,9 +1,14 @@
-import {PriorityQueue} from "../../common/PriorityQueue"
-import {matrixOf, matrixOfZeros} from "../../common/array-factories"
+import { PriorityQueue } from '../../common/PriorityQueue'
+import { matrixOf, matrixOfZeros } from '../../common/array-factories'
 
-export {maxPoints}
+export { maxPoints }
 
-const DIRECTIONS: number[][] = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+const DIRECTIONS: number[][] = [
+    [0, 1],
+    [1, 0],
+    [0, -1],
+    [-1, 0]
+]
 
 function maxPoints(grid: number[][], queries: number[]): number[] {
     let result: number[] = []
@@ -33,7 +38,13 @@ function maxPoints(grid: number[][], queries: number[]): number[] {
                 const newRow: number = currentRow + dir[0]
                 const newCol: number = currentCol + dir[1]
 
-                if (newRow >= 0 && newCol >= 0 && newRow < grid.length && newCol < grid[0].length && !visited[newRow][newCol]) {
+                if (
+                    newRow >= 0 &&
+                    newCol >= 0 &&
+                    newRow < grid.length &&
+                    newCol < grid[0].length &&
+                    !visited[newRow][newCol]
+                ) {
                     minHeap.enqueue([grid[newRow][newCol], newRow, newCol])
                     visited[newRow][newCol] = true
                 }

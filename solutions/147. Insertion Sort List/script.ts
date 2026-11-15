@@ -1,6 +1,6 @@
-import {ListNode} from "../../common/ListNode"
+import { ListNode } from '../../common/ListNode'
 
-export {ListNode, insertionSortList}
+export { ListNode, insertionSortList }
 
 function insertionSortList(head: ListNode | null): ListNode | null {
     if (!head || !head.next) {

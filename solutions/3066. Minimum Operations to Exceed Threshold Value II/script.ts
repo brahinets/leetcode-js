@@ -1,4 +1,4 @@
-export {minOperations}
+export { minOperations }
 
 function minOperations(nums: number[], k: number): number {
     nums.sort((x: number, y: number): number => x - y)

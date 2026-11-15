@@ -1,6 +1,6 @@
-import {PriorityQueue} from "../../common/PriorityQueue"
+import { PriorityQueue } from '../../common/PriorityQueue'
 
-export {maxEvents}
+export { maxEvents }
 
 function maxEvents(events: number[][]): number {
     let maxDay: number = 0
@@ -11,7 +11,7 @@ function maxEvents(events: number[][]): number {
     events.sort((a: number[], b: number[]): number => a[0] - b[0])
 
     const pq: PriorityQueue<number> = new PriorityQueue<number>(
-        (a: number, b: number): number => a - b,
+        (a: number, b: number): number => a - b
     )
     let max: number = 0
     for (let i: number = 1, j = 0; i <= maxDay; i++) {

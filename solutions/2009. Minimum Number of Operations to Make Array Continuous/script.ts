@@ -1,12 +1,14 @@
-import {binarySearch} from "../../common/array-utils"
+import { binarySearch } from '../../common/array-utils'
 
-export {minOperations}
+export { minOperations }
 
 function minOperations(nums: number[]): number {
     let result: number = nums.length
 
     const unique: Set<number> = new Set<number>(nums)
-    const sortedUnique: number[] = Array.from(unique).sort((a: number, b: number): number => a - b)
+    const sortedUnique: number[] = Array.from(unique).sort(
+        (a: number, b: number): number => a - b
+    )
 
     for (let i: number = 0; i < sortedUnique.length; i++) {
         const left: number = sortedUnique[i]

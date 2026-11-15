@@ -1,4 +1,4 @@
-export {isNumber}
+export { isNumber }
 
 const NUMBER_REGEXP: RegExp = /^[+-]?((\d+(\.\d*)?)|(\.\d+))([eE][+-]?\d+)?$/
 

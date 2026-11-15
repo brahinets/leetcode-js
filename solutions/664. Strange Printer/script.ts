@@ -1,6 +1,6 @@
-import {matrixOfZeros} from "../../common/array-factories"
+import { matrixOfZeros } from '../../common/array-factories'
 
-export {strangePrinter}
+export { strangePrinter }
 
 function strangePrinter(s: string): number {
     const minTurns: number[][] = matrixOfZeros(s.length, s.length)
@@ -15,7 +15,10 @@ function strangePrinter(s: string): number {
                 let minSplitTurns: number = Infinity
 
                 for (let k: number = i; k < j; k++) {
-                    minSplitTurns = Math.min(minSplitTurns, minTurns[i][k] + minTurns[k + 1][j])
+                    minSplitTurns = Math.min(
+                        minSplitTurns,
+                        minTurns[i][k] + minTurns[k + 1][j]
+                    )
                 }
 
                 minTurns[i][j] = minSplitTurns

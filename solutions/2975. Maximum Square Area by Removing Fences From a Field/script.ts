@@ -1,8 +1,13 @@
-export {maximizeSquareArea}
+export { maximizeSquareArea }
 
 const MOD: number = 10 ** 9 + 7
 
-function maximizeSquareArea(m: number, n: number, hFences: number[], vFences: number[]): number {
+function maximizeSquareArea(
+    m: number,
+    n: number,
+    hFences: number[],
+    vFences: number[]
+): number {
     const horizontalGaps: Set<number> = findAllGaps(hFences, m)
 
     const verticalGaps: Set<number> = findAllGaps(vFences, n)
@@ -30,7 +35,10 @@ function findAllGaps(fences: number[], boundary: number): Set<number> {
     return gaps
 }
 
-function findMaxCommonGap(horizontalGaps: Set<number>, verticalGaps: Set<number>): number {
+function findMaxCommonGap(
+    horizontalGaps: Set<number>,
+    verticalGaps: Set<number>
+): number {
     let maxGap: number = 0
 
     for (const gap of horizontalGaps) {

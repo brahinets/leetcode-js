@@ -1,4 +1,4 @@
-export {longestSubsequence}
+export { longestSubsequence }
 
 function longestSubsequence(nums: number[]): number {
     const totalXor: number = getTotalXor(nums)
@@ -7,7 +7,9 @@ function longestSubsequence(nums: number[]): number {
         return nums.length
     }
 
-    const hasNonZeroElement: boolean = nums.some((num: number): boolean => num !== 0)
+    const hasNonZeroElement: boolean = nums.some(
+        (num: number): boolean => num !== 0
+    )
 
     if (hasNonZeroElement) {
         return nums.length - 1

@@ -1,4 +1,4 @@
-export {countCompleteSubarrays}
+export { countCompleteSubarrays }
 
 function countCompleteSubarrays(nums: number[]): number {
     const uniqueCount: number = new Set<number>(nums).size

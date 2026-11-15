@@ -1,6 +1,6 @@
-import {arrayOf} from "../../common/array-factories"
+import { arrayOf } from '../../common/array-factories'
 
-export {getRow}
+export { getRow }
 
 function getRow(rowIndex: number): number[] {
     const result: number[][] = []

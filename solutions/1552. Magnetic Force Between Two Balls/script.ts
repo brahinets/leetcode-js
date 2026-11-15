@@ -1,6 +1,6 @@
-import {last} from "../../common/array-utils"
+import { last } from '../../common/array-utils'
 
-export {maxDistance}
+export { maxDistance }
 
 function maxDistance(position: number[], m: number): number {
     position.sort((a: number, b: number): number => a - b)
@@ -38,4 +38,3 @@ function canPlaceBalls(gap: number, position: number[], balls: number): number {
 
     return ballsPlaced
 }
-

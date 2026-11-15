@@ -1,4 +1,4 @@
-export {findDuplicates}
+export { findDuplicates }
 
 function findDuplicates(nums: number[]): number[] {
     const duplicates: number[] = []
