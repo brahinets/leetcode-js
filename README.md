@@ -1010,6 +1010,7 @@
 1. № [2901. Longest Unequal Adjacent Groups Subsequence II](solutions/2901.%20Longest%20Unequal%20Adjacent%20Groups%20Subsequence%20II/script.ts)
 1. № [2904. Shortest and Lexicographically Smallest Beautiful String](solutions/2904.%20Shortest%20and%20Lexicographically%20Smallest%20Beautiful%20String/script.ts)
 1. № [2906. Construct Product Matrix](solutions/2906.%20Construct%20Product%20Matrix/script.ts)
+1. № [2911. Minimum Changes to Make K Semi-palindromes](solutions/2911.%20Minimum%20Changes%20to%20Make%20K%20Semi-palindromes/script.ts)
 1. № [2913. Subarrays Distinct Element Sum of Squares I](solutions/2913.%20Subarrays%20Distinct%20Element%20Sum%20of%20Squares%20I/script.ts)
 1. № [2914. Minimum Number of Changes to Make Binary String Beautiful](solutions/2914.%20Minimum%20Number%20of%20Changes%20to%20Make%20Binary%20String%20Beautiful/script.ts)
 1. № [2916. Subarrays Distinct Element Sum of Squares II](solutions/2916.%20Subarrays%20Distinct%20Element%20Sum%20of%20Squares%20II/script.ts)
