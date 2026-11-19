@@ -945,6 +945,7 @@
 1. № [2561. Rearranging Fruits](solutions/2561.%20Rearranging%20Fruits/script.ts)
 1. № [2563. Count the Number of Fair Pairs](solutions/2563.%20Count%20the%20Number%20of%20Fair%20Pairs/script.ts)
 1. № [2566. Maximum Difference by Remapping a Digit](solutions/2566.%20Maximum%20Difference%20by%20Remapping%20a%20Digit/script.ts)
+1. № [2567. Minimum Score by Changing Two Elements](solutions/2567.%20Minimum%20Score%20by%20Changing%20Two%20Elements/script.ts)
 1. № [2570. Merge Two 2D Arrays by Summing Values](solutions/2570.%20Merge%20Two%202D%20Arrays%20by%20Summing%20Values/script.ts)
 1. № [2573. Find the String with LCP](solutions/2573.%20Find%20the%20String%20with%20LCP/script.ts)
 1. № [2574. Left and Right Sum Differences](solutions/2574.%20Left%20and%20Right%20Sum%20Differences/script.ts)
