@@ -1118,6 +1118,7 @@
 1. № [3318. Find X-Sum of All K-Long Subarrays I](solutions/3318.%20Find%20X-Sum%20of%20All%20K-Long%20Subarrays%20I/script.ts)
 1. № [3321. Find X-Sum of All K-Long Subarrays II](solutions/3321.%20Find%20X-Sum%20of%20All%20K-Long%20Subarrays%20II/script.ts)
 1. № [3330. Find the Original Typed String I](solutions/3330.%20Find%20the%20Original%20Typed%20String%20I/script.ts)
+1. № [3331. Find Subtree Sizes After Changes](solutions/3331.%20Find%20Subtree%20Sizes%20After%20Changes/script.ts)
 1. № [3333. Find the Original Typed String II](solutions/3333.%20Find%20the%20Original%20Typed%20String%20II/script.ts)
 1. № [3335. Total Characters in String After Transformations I](solutions/3335.%20Total%20Characters%20in%20String%20After%20Transformations%20I/script.ts)
 1. № [3336. Find the Number of Subsequences With Equal GCD](solutions/3336.%20Find%20the%20Number%20of%20Subsequences%20With%20Equal%20GCD/script.ts)
