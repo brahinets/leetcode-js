@@ -803,6 +803,7 @@
 1. № [2110. Number of Smooth Descent Periods of a Stock](solutions/2110.%20Number%20of%20Smooth%20Descent%20Periods%20of%20a%20Stock/script.ts)
 1. № [2115. Find All Possible Recipes from Given Supplies](solutions/2115.%20Find%20All%20Possible%20Recipes%20from%20Given%20Supplies/script.ts)
 1. № [2116. Check if a Parentheses String Can Be Valid](solutions/2116.%20Check%20if%20a%20Parentheses%20String%20Can%20Be%20Valid/script.ts)
+1. № [2124. Check if All A's Appears Before All B's](solutions/2124.%20Check%20if%20All%20A's%20Appears%20Before%20All%20B's/script.ts)
 1. № [2125. Number of Laser Beams in a Bank](solutions/2125.%20Number%20of%20Laser%20Beams%20in%20a%20Bank/script.ts)
 1. № [2126. Destroying Asteroids](solutions/2126.%20Destroying%20Asteroids/script.ts)
 1. № [2127. Maximum Employees to Be Invited to a Meeting](solutions/2127.%20Maximum%20Employees%20to%20Be%20Invited%20to%20a%20Meeting/script.ts)
