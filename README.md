@@ -1152,6 +1152,7 @@
 1. № [3403. Find the Lexicographically Largest String From the Box I](solutions/3403.%20Find%20the%20Lexicographically%20Largest%20String%20From%20the%20Box%20I/script.ts)
 1. № [3405. Count the Number of Arrays with K Matching Adjacent Elements](solutions/3405.%20Count%20the%20Number%20of%20Arrays%20with%20K%20Matching%20Adjacent%20Elements/script.ts)
 1. № [3408. Design Task Manager](solutions/3408.%20Design%20Task%20Manager/script.ts)
+1. № [3411. Maximum Subarray With Equal Products](solutions/3411.%20Maximum%20Subarray%20With%20Equal%20Products/script.ts)
 1. № [3414. Maximum Score of Non-overlapping Intervals](solutions/3414.%20Maximum%20Score%20of%20Non-overlapping%20Intervals/script.ts)
 1. № [3418. Maximum Amount of Money Robot Can Earn](solutions/3418.%20Maximum%20Amount%20of%20Money%20Robot%20Can%20Earn/script.ts)
 1. № [3420. Count Non-Decreasing Subarrays After K Operations](solutions/3420.%20Count%20Non-Decreasing%20Subarrays%20After%20K%20Operations/script.ts)
