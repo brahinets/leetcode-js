@@ -1,6 +1,6 @@
 import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
-export { smallestUniqueSubarrayLength }
+export { smallestUniqueSubarray }
 
 const MODULUS_ONE: number = 67_108_859
 const MODULUS_TWO: number = 33_554_429
@@ -13,7 +13,7 @@ interface HashPair {
     readonly powers: number[]
 }
 
-function smallestUniqueSubarrayLength(nums: number[]): number {
+function smallestUniqueSubarray(nums: number[]): number {
     const arrayLength: number = nums.length
     const first: HashPair = buildHashPair(nums, BASE_ONE, MODULUS_ONE)
     const second: HashPair = buildHashPair(nums, BASE_TWO, MODULUS_TWO)
