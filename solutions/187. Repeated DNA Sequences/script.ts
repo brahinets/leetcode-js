@@ -1,3 +1,5 @@
+export { findRepeatedDnaSequences }
+
 function findRepeatedDnaSequences(s: string): string[] {
     const sequenceLength: number = 10
     const sequenceCount: Map<string, number> = new Map<string, number>()
@@ -19,5 +21,3 @@ function findRepeatedDnaSequences(s: string): string[] {
 
     return result
 }
-
-export { findRepeatedDnaSequences }

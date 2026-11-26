@@ -1,9 +1,9 @@
 import { arrayOf, arrayOfZeros } from '../../common/array-factories'
 
+export { findSubtreeSizes }
+
 const LOWERCASE_CHARACTER_COUNT = 26
 const FIRST_LOWERCASE_CHARACTER_CODE = 97
-
-export { findSubtreeSizes }
 
 function findSubtreeSizes(parent: number[], s: string): number[] {
     const nodeCount: number = parent.length
