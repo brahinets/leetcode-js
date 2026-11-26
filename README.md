@@ -1136,6 +1136,7 @@
 1. № [3354. Make Array Elements Equal to Zero](solutions/3354.%20Make%20Array%20Elements%20Equal%20to%20Zero/script.ts)
 1. № [3355. Zero Array Transformation I](solutions/3355.%20Zero%20Array%20Transformation%20I/script.ts)
 1. № [3356. Zero Array Transformation II](solutions/3356.%20Zero%20Array%20Transformation%20II/script.ts)
+1. № [3360. Stone Removal Game](solutions/3360.%20Stone%20Removal%20Game/script.ts)
 1. № [3362. Zero Array Transformation III](solutions/3362.%20Zero%20Array%20Transformation%20III/script.ts)
 1. № [3363. Find the Maximum Number of Fruits Collected](solutions/3363.%20Find%20the%20Maximum%20Number%20of%20Fruits%20Collected/script.ts)
 1. № [3364. Minimum Positive Sum Subarray ](solutions/3364.%20Minimum%20Positive%20Sum%20Subarray%20/script.ts)
